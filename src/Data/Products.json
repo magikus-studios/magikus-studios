@@ -1,0 +1,20 @@
+[
+    {
+        "image": "images/Library - Icon Color (512).png",
+        "title": "Methods",
+        "description": "Set of helper C# static and extension methods.",
+        "link": "/library/methods"
+    },
+    {
+        "image": "images/Library - Icon Wire (512).png",
+        "title": "Structures",
+        "description": "Set of C# objects and data structures usefull for game developing.",
+        "link": "/library/structures"
+    },
+    {
+        "image": "images/Magikus - Icon Color (512).png",
+        "title": "Tools",
+        "description": "Set of components and tools for the unity editor.",
+        "link": "/library/tools"
+    }
+]
