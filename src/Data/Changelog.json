@@ -1,0 +1,22 @@
+[
+    {
+        "version": "Unreleased",
+        "date": "TBA",
+        "fixed": [
+            { "feature": "Modifiers utilities added." },
+            { "feature": "Modifiers utilities added." }
+        ],
+        "added": [
+            { "feature": "Modifiers utilities added." },
+            { "feature": "Modifiers utilities added." }
+        ]
+    },
+    {
+        "version": "1.0.0",
+        "date":"2022-08-01",
+        "added": [
+            { "feature": "Modifiers utilities added." },
+            { "feature": "Modifiers utilities added." }
+        ]
+    }
+]

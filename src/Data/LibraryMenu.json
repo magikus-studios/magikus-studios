@@ -2,53 +2,42 @@
     {
         "label": "Library",
         "items": [
-            { "label": "Introduction" , "link": "/library/introduction" },
-            { "label": "Methods", "link": "/library/methods" },
-            { "label": "Structures", "link": "/library/structures" },
-            { "label": "Tools", "link": "/library/tools" }
+            { "label": "Getting Started" , "link": "/library/gettingStarted" },
+            { "label": "Changelog", "link": "/library/changelog" },
+            { "label": "License", "link": "/library/license" }
         ]
     },
     {
-        "label": "Methods",
+        "label": "Utilities",
         "items": [
-            {
-                "label": "Modifiers",
-                "items": [
-                    { "label": "Introduction", "link": "/library/methods/modifiers/introduction" },
-                    { "label": "Value and Ref Modes", "link": "/library/methods/modifiers/modes" },
-                    { "label": "Mutable Values", "link": "/library/methods/modifiers/mutableValues" },
-                    { "label": "Operations: Basic", "link": "/library/methods/modifiers/operationsBasic" },
-                    { "label": "Operations: No Input", "link": "/library/methods/modifiers/operationsNoInput" },
-                    { "label": "Operations: Clamp", "link": "/library/methods/modifiers/operationsClamp" },
-                    { "label": "Operations: Wrap", "link": "/library/methods/modifiers/operationsWrap" },
-                    { "label": "Target Components", "link": "/library/methods/modifiers/targetComponents" },
-                    { "label": "Input & Output Types", "link": "/library/methods/modifiers/inputAndOutputTypes" }
-                ]
-            },
-            { "label": "Adapters" },
-            { "label": "Utilities" },
-            { "label": "Randomizers" },
-            { "label": "Files" }
+            { "label": "[Utilities]", "link": "/library/utilities" },
+            { "label": "Modifiers", "link": "/library/utilities/modifiers" },
+            { "label": "Adapters", "link": "/library/inConstruction" },
+            { "label": "Helpers", "link": "/library/inConstruction" },
+            { "label": "Randomizers", "link": "/library/inConstruction" },
+            { "label": "Files", "link": "/library/inConstruction" }
         ]
     },
     {
         "label": "Structures",
         "items": [
-            { "label": "Loops" },
-            { "label": "Grids" },
-            { "label": "Clocks" },
-            { "label": "State Machines" },
-            { "label": "Task Managers" },
-            { "label": "Pool Managers" }
+            { "label": "[Structures]", "link": "/library/structures" },
+            { "label": "Loops", "link": "/library/inConstruction" },
+            { "label": "Grids", "link": "/library/inConstruction" },
+            { "label": "Clocks", "link": "/library/inConstruction"},
+            { "label": "State Machines", "link": "/library/inConstruction" },
+            { "label": "Task Managers", "link": "/library/inConstruction" },
+            { "label": "Pool Managers", "link": "/library/inConstruction" }
         ]
     },
     {
         "label": "Tools",
         "items": [
-            { "label": "Body" },
-            { "label": "Labels" },
-            { "label": "Colorables" },
-            { "label": "Resources" }
+            { "label": "[Tools]", "link": "/library/tools" },
+            { "label": "Body", "link": "/library/inConstruction" },
+            { "label": "Labels", "link": "/library/inConstruction" },
+            { "label": "Colorables", "link": "/library/inConstruction" },
+            { "label": "Resources", "link": "/library/inConstruction" }
         ]
     }
 ]

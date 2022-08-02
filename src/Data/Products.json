@@ -1,9 +1,9 @@
 [
     {
         "image": "images/Library - Icon Color (512).png",
-        "title": "Methods",
+        "title": "Utilities",
         "description": "Set of helper C# static and extension methods.",
-        "link": "/library/methods"
+        "link": "/library/utilities"
     },
     {
         "image": "images/Library - Icon Wire (512).png",
