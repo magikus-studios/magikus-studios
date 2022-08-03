@@ -12,17 +12,14 @@ export default function Function() {
                     It will speed up your development proces and will help your team by to write more readable code.
                     The library is composed of three main pillars that are the Methods, the Structures and the Tools. 
                 </p>
-                <ul>
-                    <li>
-                        <b>Methods:</b> This is a set of static and extension methods.
-                    </li>
-                    <li>
-                        <b>Structures:</b> This is a set of data structures and systems.
-                    </li>
-                    <li>
-                        <b>Tools:</b> This is a set of components and serialized objects.
-                    </li>
-                </ul>
+
+                <h3 className="c-light-1">Methods</h3>
+                <p>This is a set of static and extension methods.</p>
+                <h3 className="c-light-1">Structures</h3>
+                <p>This is a set of data structures and systems.</p>
+                <h3 className="c-light-1">Tools</h3>
+                <p>This is a set of components and serialized objects.</p>
+
                 <h1>How to Use</h1>
                 <p>
                     To start using the Magikus Library first you need to download the package from the

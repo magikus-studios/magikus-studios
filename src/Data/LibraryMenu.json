@@ -22,22 +22,17 @@
         "label": "Structures",
         "items": [
             { "label": "[Structures]", "link": "/library/structures" },
-            { "label": "Loops", "link": "/library/inConstruction" },
-            { "label": "Grids", "link": "/library/inConstruction" },
-            { "label": "Clocks", "link": "/library/inConstruction"},
-            { "label": "State Machines", "link": "/library/inConstruction" },
-            { "label": "Task Managers", "link": "/library/inConstruction" },
-            { "label": "Pool Managers", "link": "/library/inConstruction" }
+            { "label": "Data", "link": "/library/inConstruction" },
+            { "label": "Logic", "link": "/library/inConstruction" },
+            { "label": "Game", "link": "/library/inConstruction" }
         ]
     },
     {
         "label": "Tools",
         "items": [
             { "label": "[Tools]", "link": "/library/tools" },
-            { "label": "Body", "link": "/library/inConstruction" },
-            { "label": "Labels", "link": "/library/inConstruction" },
-            { "label": "Colorables", "link": "/library/inConstruction" },
-            { "label": "Resources", "link": "/library/inConstruction" }
+            { "label": "Managers", "link": "/library/inConstruction" },
+            { "label": "Systems", "link": "/library/inConstruction" }
         ]
     }
 ]

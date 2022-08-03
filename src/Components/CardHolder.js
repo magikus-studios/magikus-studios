@@ -5,7 +5,7 @@ export default function Function(props) {
             
     return (
         <div className="container d-flex justify-content-center align-items-center h-100">
-            <div className="row">
+            <div className="row justify-content-center">
                 {
                     props.cards.map((card, index) => {
                         return (

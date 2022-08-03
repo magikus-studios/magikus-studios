@@ -7,23 +7,16 @@ export default function Function() {
             <div className="pb-4">
                 <h1>Tools</h1>
                 <p>
-                    Set of components and tools for the unity editor.
+                    Set of components and scriptable objects for the unity editor.
                 </p>
-                <h5 className="text-center p-3"><b>Operation + Aspect Specifier + Target Components + Mode</b></h5>
-                <ul>
-                    <li><b>Operation:</b> This refers to the type of operation to apply (e.g.: Set, Add, Abs, etc.).</li>
-                    <li>
-                        <b>Aspect Specifier:</b> This only applies to mutable values (e.g.: Transforms,
-                        GameObjects, etc.) and refers to the specific aspect (e.g.: position, rotation, scale,
-                        etc.) of the mutable value that the modifier is going to be applied to.
-                    </li>
-                    <li>
-                        <b>Target Components:</b> This refers to the components (e.g.: x component of a vector, a
-                        component of a color, etc.) that the modifier should modify. It doesn’t apply to int
-                        and float types.
-                    </li>
-                    <li><b>Mode:</b> This applies only to reference values.</li>
-                </ul>
+
+                <h3 className="c-light-1 d-inline">Managers</h3>
+                <h6 className="c-light-0 d-inline"> [Not yet implemented]</h6>
+                <p>Manager tools are a set of components that help manage certain aspects of gameObjects.</p>
+
+                <h3 className="c-light-1 d-inline">Systems</h3>
+                <h6 className="c-light-0 d-inline"> [Not yet implemented]</h6>
+                <p>System tools are a set of components that work together in order to achive a certain goal.</p>
             </div>
         </div>
     );

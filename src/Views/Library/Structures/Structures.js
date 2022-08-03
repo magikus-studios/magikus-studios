@@ -7,23 +7,20 @@ export default function Function() {
             <div className="pb-4">
                 <h1>Structures</h1>
                 <p>
-                    Set of C# objects and data structures usefull for game developing.
+                    The Magikus Structures is a set of C# data structures and systems usefull for game developing.
                 </p>
-                <h5 className="text-center p-3"><b>Operation + Aspect Specifier + Target Components + Mode</b></h5>
-                <ul>
-                    <li><b>Operation:</b> This refers to the type of operation to apply (e.g.: Set, Add, Abs, etc.).</li>
-                    <li>
-                        <b>Aspect Specifier:</b> This only applies to mutable values (e.g.: Transforms,
-                        GameObjects, etc.) and refers to the specific aspect (e.g.: position, rotation, scale,
-                        etc.) of the mutable value that the modifier is going to be applied to.
-                    </li>
-                    <li>
-                        <b>Target Components:</b> This refers to the components (e.g.: x component of a vector, a
-                        component of a color, etc.) that the modifier should modify. It doesn’t apply to int
-                        and float types.
-                    </li>
-                    <li><b>Mode:</b> This applies only to reference values.</li>
-                </ul>
+
+                <h3 className="c-light-1 d-inline">Data</h3>
+                <h6 className="c-light-0 d-inline"> [Not yet implemented]</h6>
+                <p>Data structures are a set of classes that manages data.</p>
+
+                <h3 className="c-light-1 d-inline">Logic</h3>
+                <h6 className="c-light-0 d-inline"> [Not yet implemented]</h6>
+                <p>Logic structures are a set of classes that manages certain logic.</p>
+
+                <h3 className="c-light-1 d-inline">Game</h3>
+                <h6 className="c-light-0 d-inline"> [Not yet implemented]</h6>
+                <p>Game structures are a set of classes that manages certain game logic.</p>
             </div>
         </div>
     );

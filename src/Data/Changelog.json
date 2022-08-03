@@ -2,21 +2,28 @@
     {
         "version": "Unreleased",
         "date": "TBA",
-        "fixed": [
-            { "feature": "Modifiers utilities added." },
-            { "feature": "Modifiers utilities added." }
-        ],
         "added": [
-            { "feature": "Modifiers utilities added." },
-            { "feature": "Modifiers utilities added." }
+            { "feature": "Adapter utilities implemented." },
+            { "feature": "Boolean adapters implemented." },
+            { "feature": "String adapters implemented." },
+            { "feature": "IList adapters implemented." },
+            { "feature": "Color adapters implemented." },
+            { "feature": "Helper utilities implemented." },
+            { "feature": "Map helpers implemented." }
         ]
     },
     {
         "version": "1.0.0",
         "date":"2022-08-01",
         "added": [
-            { "feature": "Modifiers utilities added." },
-            { "feature": "Modifiers utilities added." }
+            { "feature": "Modifiers utilities implemented." },
+            { "feature": "float, int, Vector2, Vector2Int, Vector3, Vector3Int, Color, Rect type modifiers implemented." },
+            { "feature": "Ref mode for value type modifiers implemented." },
+            { "feature": "GameObject, Transform and RectTransform mutable modifiers implemented." },
+            { "feature": "Set, Add, Sub, Comp, Prod, Div, Mod, Power, Root, Square, Cube, Square Root, Cube Root, Log, LogTen, LogN, Exp modifiers implemented." },
+            { "feature": "Inverse, Swap, Flat, SetOne, Neg, Round, Floor, Ceil, Abs, AbsNeg, Sign modifiers implemented." },
+            { "feature": "Clamp, Clamp Range, Clamp Pos, Clamp Neg, Clamp Max, Clamp Min, Clamp Abs, Clamp Abs One, Clamp Bin modifiers implemented." },
+            { "feature": "Wrap, Wrap Range, Wrap Max, Wrap Min, Wrap Abs, Wrap Abs One, Wrap Bin modifiers implemented." }
         ]
     }
 ]

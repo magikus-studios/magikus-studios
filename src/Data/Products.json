@@ -1,20 +1,8 @@
 [
     {
         "image": "images/Library - Icon Color (512).png",
-        "title": "Utilities",
-        "description": "Set of helper C# static and extension methods.",
-        "link": "/library/utilities"
-    },
-    {
-        "image": "images/Library - Icon Wire (512).png",
-        "title": "Structures",
-        "description": "Set of C# objects and data structures usefull for game developing.",
-        "link": "/library/structures"
-    },
-    {
-        "image": "images/Magikus - Icon Color (512).png",
-        "title": "Tools",
-        "description": "Set of components and tools for the unity editor.",
-        "link": "/library/tools"
+        "title": "Magikus Library",
+        "description": "The Magikus Library is a C# framework for game development in Unity3D. It provides static methods, data structures and component tools that speeds up development times.",
+        "link": "/library"
     }
 ]
