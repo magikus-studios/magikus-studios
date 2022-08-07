@@ -24,7 +24,7 @@ export default function Function() {
                     { line: "Vector2 X_Vector = new Vector2(1, 0);" },
                     { line: "Vector2 Y_Vector = new Vector2(0, 2);" },
                     { line: " " },
-                    { line: "transform.SetPositionXY(X_Vector, Y_Vector);" },
+                    { line: "transform.Set_Position_XY(X_Vector, Y_Vector);" },
                     { line: "print(transform.position);", comment: "// this prints: (1, 2, 0)" },
                 ]}
             />
@@ -36,6 +36,7 @@ export default function Function() {
                 mutables) the modifier will take the component of the input that corresponds to the
                 component it is modifying.
             </p>
+            
             <p>
                 Also, except for Clamp and Bound operations, all operations can take either one
                 input for one or more components or one input per component to modify. For Example:
@@ -43,10 +44,32 @@ export default function Function() {
             <p>To set the X and Y component of a certain Vector3 named vector with 1</p>
             <VectorCode
                 value="(0, 0, 0)"
-                operation="SetXY"
+                operation="Set_XY"
                 parameter="(1)"
                 result="(1, 1, 0)" 
             />
+
+            <p>
+                At the same time, when value to modify has more than one component, all
+                operations, except for Clamp and Wrap operations, can take different types as inputs for
+                each component. To do this, it is needed first to import the “Magikus.Crosstypes”
+                namespace. To use a crosstype modifier just add the next line at the top of the script
+            </p>
+            <CodeSnippet lines={[ { line: "Using Magikus.Crosstypes;" } ]} />
+            <p>
+                For example:
+            </p>
+            <p>
+                To set the X and Y component of a certain Vector3 named vector with 1 to the X
+                component and false (equal to 0) to the Y component
+            </p>
+            <VectorCode
+                value="(0, 1, 0)"
+                operation="Set_XY"
+                parameter="(1, false)"
+                result="(1, 0, 0)"
+            />
+
             <h1>Output Types</h1>
             <p>
                 All modifiers return the same type parameter that it modifies. If it modifies a

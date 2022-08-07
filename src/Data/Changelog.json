@@ -8,8 +8,8 @@
             { "feature": "String adapters implemented." },
             { "feature": "IList adapters implemented." },
             { "feature": "Color adapters implemented." },
-            { "feature": "Helper utilities implemented." },
-            { "feature": "Map helpers implemented." }
+            { "feature": "Operation utilities implemented." },
+            { "feature": "Map operations implemented." }
         ]
     },
     {

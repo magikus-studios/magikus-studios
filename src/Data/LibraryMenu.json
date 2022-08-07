@@ -13,7 +13,7 @@
             { "label": "[Utilities]", "link": "/library/utilities" },
             { "label": "Modifiers", "link": "/library/utilities/modifiers" },
             { "label": "Adapters", "link": "/library/inConstruction" },
-            { "label": "Helpers", "link": "/library/inConstruction" },
+            { "label": "Operations", "link": "/library/inConstruction" },
             { "label": "Randomizers", "link": "/library/inConstruction" },
             { "label": "Files", "link": "/library/inConstruction" }
         ]
@@ -31,6 +31,7 @@
         "label": "Tools",
         "items": [
             { "label": "[Tools]", "link": "/library/tools" },
+            { "label": "Controllers", "link": "/library/inConstruction" },
             { "label": "Managers", "link": "/library/inConstruction" },
             { "label": "Systems", "link": "/library/inConstruction" }
         ]

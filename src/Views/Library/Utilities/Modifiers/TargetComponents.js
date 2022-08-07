@@ -13,7 +13,7 @@ export default function Function() {
             <p>To set the X and Y component of a certain Vector3 named vector with 1 and 2</p>
             <VectorCode 
                 value="(0, 0, 0)"
-                operation="SetXY"
+                operation="Set_XY"
                 parameter="(1, 2)"
                 result="(1, 2, 0)"
             />

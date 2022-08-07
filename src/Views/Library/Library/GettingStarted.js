@@ -13,7 +13,7 @@ export default function Function() {
                     The library is composed of three main pillars that are the Methods, the Structures and the Tools. 
                 </p>
 
-                <h3 className="c-light-1">Methods</h3>
+                <h3 className="c-light-1">Utilities</h3>
                 <p>This is a set of static and extension methods.</p>
                 <h3 className="c-light-1">Structures</h3>
                 <p>This is a set of data structures and systems.</p>

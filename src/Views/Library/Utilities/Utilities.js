@@ -17,9 +17,9 @@ export default function Function() {
                 <h6 className="c-light-0 d-inline"> [Not yet implemented]</h6>
                 <p>Adapter utilities are a set of static and extension methods that transforms the current type of the targeted object into another type of object.</p>
 
-                <h3 className="c-light-1 d-inline">Helpers</h3>
+                <h3 className="c-light-1 d-inline">Operations</h3>
                 <h6 className="c-light-0 d-inline"> [Not yet implemented]</h6>
-                <p>Helper utilities are a set of static and extension methods that apply a certain algorithm to the targeted object.</p>
+                <p>Operation utilities are a set of static and extension methods that apply a certain algorithm to the targeted object.</p>
 
                 <h3 className="c-light-1 d-inline">Randomizers</h3>
                 <h6 className="c-light-0 d-inline"> [Not yet implemented]</h6>

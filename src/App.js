@@ -19,8 +19,8 @@ import LibraryTools from "Views/Library/Tools/Tools";
 import LibraryUtilitiesModifiers from "Views/Library/Utilities/Modifiers/Introduction";
 import LibraryUtilitiesModifiersValueMode from "Views/Library/Utilities/Modifiers/Modes";
 import LibraryUtilitiesModifiersMutableValues from "Views/Library/Utilities/Modifiers/MutuableValues";
-import LibraryUtilitiesModifiersOperationsBasic from "Views/Library/Utilities/Modifiers/OperationsBasic";
-import LibraryUtilitiesModifiersOperationsNoInput from "Views/Library/Utilities/Modifiers/OperationsNoInput";
+import LibraryUtilitiesModifiersOperationsMath from "Views/Library/Utilities/Modifiers/OperationsMath";
+import LibraryUtilitiesModifiersOperationsIntrinsic from "Views/Library/Utilities/Modifiers/OperationsIntrinsic";
 import LibraryUtilitiesModifiersOperationsClamp from "Views/Library/Utilities/Modifiers/OperationsClamp";
 import LibraryUtilitiesModifiersOperationsWrap from "Views/Library/Utilities/Modifiers/OperationsWrap";
 import LibraryUtilitiesModifiersTargetComponents from "Views/Library/Utilities/Modifiers/TargetComponents";
@@ -47,8 +47,8 @@ export default function App() {
           <Route exact path="/library/utilities/modifiers" element={<Library content={<LibraryUtilitiesModifiers />} menu={LibraryMenu} submenu={UtilitiesModifiersMenu} />}></Route>
           <Route exact path="/library/utilities/modifiers/modes" element={<Library content={<LibraryUtilitiesModifiersValueMode />} menu={LibraryMenu} submenu={UtilitiesModifiersMenu} />}></Route>
           <Route exact path="/library/utilities/modifiers/mutableValues" element={<Library content={<LibraryUtilitiesModifiersMutableValues />} menu={LibraryMenu} submenu={UtilitiesModifiersMenu} />}></Route>
-          <Route exact path="/library/utilities/modifiers/operationsBasic" element={<Library content={<LibraryUtilitiesModifiersOperationsBasic />} menu={LibraryMenu} submenu={UtilitiesModifiersMenu} />}></Route>
-          <Route exact path="/library/utilities/modifiers/operationsNoInput" element={<Library content={<LibraryUtilitiesModifiersOperationsNoInput />} menu={LibraryMenu} submenu={UtilitiesModifiersMenu} />}></Route>
+          <Route exact path="/library/utilities/modifiers/operationsMath" element={<Library content={<LibraryUtilitiesModifiersOperationsMath />} menu={LibraryMenu} submenu={UtilitiesModifiersMenu} />}></Route>
+          <Route exact path="/library/utilities/modifiers/operationsIntrinsic" element={<Library content={<LibraryUtilitiesModifiersOperationsIntrinsic />} menu={LibraryMenu} submenu={UtilitiesModifiersMenu} />}></Route>
           <Route exact path="/library/utilities/modifiers/operationsClamp" element={<Library content={<LibraryUtilitiesModifiersOperationsClamp />} menu={LibraryMenu} submenu={UtilitiesModifiersMenu} />}></Route>
           <Route exact path="/library/utilities/modifiers/operationsWrap" element={<Library content={<LibraryUtilitiesModifiersOperationsWrap />} menu={LibraryMenu} submenu={UtilitiesModifiersMenu} />}></Route>
           <Route exact path="/library/utilities/modifiers/targetComponents" element={<Library content={<LibraryUtilitiesModifiersTargetComponents />} menu={LibraryMenu} submenu={UtilitiesModifiersMenu} />}></Route>

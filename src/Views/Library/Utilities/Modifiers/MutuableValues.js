@@ -13,7 +13,7 @@ export default function Function() {
                     { line: "Transform transform = gameObject.transform;" },
                     { line: "Transform.position = new Vector3(1, 1, 1);" },
                     { line: " " },
-                    { line: "transform.SetPositionZX(0);" },
+                    { line: "transform.Set_Position_ZX(0);" },
                     { line: "print(transform.position);", comment: "// this prints: (0, 1, 0)" },
                 ]
                 }
@@ -31,7 +31,7 @@ export default function Function() {
                     { line: "Transform transform = gameObject.transform;" },
                     { line: "Transform.position = new Vector3(1, 1, 1);" },
                     { line: " " },
-                    { line: "transform.SetPositionXY(1, 2);" },
+                    { line: "transform.Set_Position_XY(1, 2);" },
                     { line: "print(transform.position);", comment: "// this prints: (1, 2, 0)" },
                 ]}
             />
