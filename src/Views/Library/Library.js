@@ -7,12 +7,12 @@ export default function Function(props) {
     let submenu;
     if (props.submenu != null) { submenu = <TreeView menu={props.submenu} /> }
 
-    let fullPath = window.location.pathname;
+    let fullPath = window.location.hash.substring(1, window.location.hash.length);
     let pathSteps = fullPath.substring(1, fullPath.length).split('/');
     let links = [];
     // eslint-disable-next-line array-callback-return
     pathSteps.map((i, index) => {
-        if (index === 0) { links.push("/" + i); }
+        if (index === 0) { links.push("/#/" + i); }
         else { links.push(links[index - 1] + "/" + i); }
     });
     let path = <h6 className="c-light-0 pt-md-2 pb-2">

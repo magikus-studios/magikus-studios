@@ -27,10 +27,11 @@ import LibraryUtilitiesModifiersTargetComponents from "Views/Library/Utilities/M
 import LibraryUtilitiesModifiersInputAndOutputTypes from "Views/Library/Utilities/Modifiers/InputAndOutputTypes";
 
 export default function App() {
+
   return (
     <div className='app bg-dark-4'>
       <Router>
-        <Header />
+        <Header/>
         <Routes>
           <Route exact path="/" element={<Home/>}></Route>
           <Route exact path="/library" element={<Navigate to="/library/gettingStarted" />}></Route>
