@@ -3,27 +3,28 @@
         "version": "Unreleased",
         "date": "TBA",
         "added": [
-            { "feature": "Adapter utilities implemented." },
-            { "feature": "Boolean adapters implemented." },
-            { "feature": "String adapters implemented." },
-            { "feature": "IList adapters implemented." },
-            { "feature": "Color adapters implemented." },
-            { "feature": "Operation utilities implemented." },
-            { "feature": "Map operations implemented." }
+            { "feature": "Adapter utilities." },
+            { "feature": "Number adapters." },
+            { "feature": "Text adapters." },
+            { "feature": "Vector adapters." },
+            { "feature": "IList adapters." },
+            { "feature": "Color adapters." },
+            { "feature": "Operation utilities." },
+            { "feature": "Map operations." }
         ]
     },
     {
         "version": "1.0.0",
         "date":"2022-08-01",
         "added": [
-            { "feature": "Modifiers utilities implemented." },
-            { "feature": "float, int, Vector2, Vector2Int, Vector3, Vector3Int, Color, Rect type modifiers implemented." },
-            { "feature": "Ref mode for value type modifiers implemented." },
-            { "feature": "GameObject, Transform and RectTransform mutable modifiers implemented." },
-            { "feature": "Set, Add, Sub, Comp, Prod, Div, Mod, Power, Root, Square, Cube, Square Root, Cube Root, Log, LogTen, LogN, Exp modifiers implemented." },
-            { "feature": "Inverse, Swap, Flat, SetOne, Neg, Round, Floor, Ceil, Abs, AbsNeg, Sign modifiers implemented." },
-            { "feature": "Clamp, Clamp Range, Clamp Pos, Clamp Neg, Clamp Max, Clamp Min, Clamp Abs, Clamp Abs One, Clamp Bin modifiers implemented." },
-            { "feature": "Wrap, Wrap Range, Wrap Max, Wrap Min, Wrap Abs, Wrap Abs One, Wrap Bin modifiers implemented." }
+            { "feature": "Modifiers utilities." },
+            { "feature": "float, int, Vector2, Vector2Int, Vector3, Vector3Int, Color, Rect value types modifiers." },
+            { "feature": "Ref mode for value type modifiers." },
+            { "feature": "GameObject, Transform and RectTransform mutable types modifiers." },
+            { "feature": "Set, Add, Sub, Comp, Prod, Div, Mod, Power, Root, Square, Cube, Square Root, Cube Root, Log, LogTen, LogN, Exp modifiers." },
+            { "feature": "Inverse, Swap, Flat, SetOne, Neg, Round, Floor, Ceil, Abs, AbsNeg, Sign modifiers." },
+            { "feature": "Clamp, Clamp Range, Clamp Pos, Clamp Neg, Clamp Max, Clamp Min, Clamp Abs, Clamp Abs One, Clamp Bin modifiers." },
+            { "feature": "Wrap, Wrap Range, Wrap Max, Wrap Min, Wrap Abs, Wrap Abs One, Wrap Bin modifiers." }
         ]
     }
 ]
