@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.edd928f2.css",
-    "main.js": "/static/js/main.ffffff1b.js",
+    "main.css": "/static/css/main.e6528794.css",
+    "main.js": "/static/js/main.2d97d709.js",
     "static/js/787.005324cb.chunk.js": "/static/js/787.005324cb.chunk.js",
     "static/media/Magikus - Label with Logo (512).png": "/static/media/Magikus - Label with Logo (512).0c3e39908e571813b85b.png",
     "index.html": "/index.html",
-    "main.edd928f2.css.map": "/static/css/main.edd928f2.css.map",
-    "main.ffffff1b.js.map": "/static/js/main.ffffff1b.js.map",
+    "main.e6528794.css.map": "/static/css/main.e6528794.css.map",
+    "main.2d97d709.js.map": "/static/js/main.2d97d709.js.map",
     "787.005324cb.chunk.js.map": "/static/js/787.005324cb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.edd928f2.css",
-    "static/js/main.ffffff1b.js"
+    "static/css/main.e6528794.css",
+    "static/js/main.2d97d709.js"
   ]
 }
