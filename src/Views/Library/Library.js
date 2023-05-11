@@ -28,7 +28,7 @@ export default function Function(props) {
     console.log('current Pathname 👉️', links);
 
     return (
-        <div className="bg-dark-4 min-vh-100">
+        <div className="bg-dark-4 min-vh-100 pb-1">
             <div className="container pt-3 pb-5 mb-5">
                 <div className="row">
                     <div className="col-lg-3 col-md-4 col-sm-12 pb-4">

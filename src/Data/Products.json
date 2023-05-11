@@ -2,7 +2,13 @@
     {
         "image": "images/Library - Icon Color (512).png",
         "title": "Magikus Library",
-        "description": "The Magikus Library is a C# framework for game development in Unity3D. It provides static methods, data structures and component tools that speeds up development times.",
+        "description": "The Magikus Library is a C# framework for game development in Unity. It provides static methods, data structures and component tools that speeds up development times.",
         "link": "/#/library"
+    },
+    {
+        "image": "images/IAM - Thumbnail [512].png",
+        "title": "Incredible Arcade Machine",
+        "description": "Get ready to experience the nostalgia of classic arcade games with Incredible Arcade Machine! This collection of retro-inspired games includes clones of Snake, Tetris, Pong, Asteroids, and Breakout, offering hours of addictive and challenging gameplay. Whether you're a fan of vintage gaming or simply looking for a fun and engaging introduction to game development, Incredible Arcade Machine is the perfect choice.",
+        "link": "https://magikus-studios.itch.io/incredible-arcade-machine"
     }
 ]

@@ -6,6 +6,7 @@ import UtilitiesModifiersMenu from "./Data/UtilitiesModifiersMenu.json";
 import Header from 'Views/Main/Header';
 import Footer from 'Views/Main/Footer';
 import Home from 'Views/Main/Home';
+import AboutUs from 'Views/Main/AboutUs';
 import Library from 'Views/Library/Library';
 import LibraryInConstruction from "Views/Library/InConstruction";
 
@@ -33,7 +34,9 @@ export default function App() {
       <Router>
         <Header/>
         <Routes>
-          <Route exact path="/" element={<Home/>}></Route>
+          <Route exact path="/" element={<Home />}></Route>
+          <Route exact path="/aboutUs" element={<AboutUs/>}></Route>
+          
           <Route exact path="/library" element={<Navigate to="/library/gettingStarted" />}></Route>
           <Route exact path="/library/inConstruction" element={<Library content={<LibraryInConstruction />} menu={LibraryMenu} />}></Route>
 

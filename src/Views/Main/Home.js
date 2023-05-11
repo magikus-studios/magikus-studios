@@ -4,10 +4,10 @@ import Products from "./Products";
 
 export default function Function() {
     return (
-        <div className="bg-dark-4 min-vh-100 pb-5 c-light-2">
-            <Institutional />
-            <div className="container pb-5 mb-5 w-75 c-light-2">
-                <Products/>
+        <div className="bg-dark-4 h-100 pb-5 c-light-2">           
+            <div className="container w-75 h-100">
+                <Institutional />
+                <Products />
             </div>
         </div>
     );

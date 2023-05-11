@@ -9,7 +9,7 @@ export default function Function(props) {
                 {
                     props.cards.map((card, index) => {
                         return (
-                            <div className="col-lg-4 col-md-6 col-sm-12 p-3" key={ index }>
+                            <div className="col-12 p-3" key={ index }>
                                 <Card
                                     image={ card.image }
                                     title={ card.title }
