@@ -23,7 +23,7 @@ export default function Function() {
                 <h1>How to Use</h1>
                 <p>
                     To start using the Magikus Library first you need to download the package from the
-                    <a className="t-dec-none c-light-0 c-light-4-h" href="https://assetstore.unity.com/" target="_blank" rel="noopener noreferrer"> Asset Store</a> and
+                    <a className="t-dec-none c-light-0 c-light-4-h" href="https://assetstore.unity.com/packages/tools/utilities/magikus-library-230098" target="_blank" rel="noopener noreferrer"> Asset Store</a> and
                     <a className="t-dec-none c-light-0 c-light-4-h" href="https://docs.unity3d.com/Manual/upm-ui-import.html" target="_blank" rel="noopener noreferrer"> import</a> it into your project.
                 </p>
                 <p>
