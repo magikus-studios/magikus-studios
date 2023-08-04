@@ -16,7 +16,7 @@ export default function Function() {
                 </p>
 
                 <h2>Properties</h2>
-                <ul>
+                <ul className="property-list">
                     <li> 
                         <b>Volume (float): </b>Sets the volume level of the master asset. The volume range is
                         between 0 and 2. This volume level will affect all sounds that use this master
@@ -33,7 +33,7 @@ export default function Function() {
                 </ul>
 
                 <h2>Methods</h2>
-                <ul>
+                <ul className="property-list">
                     <li>
                         <b>OnChangeSubscribe(Action action): </b>Subscribes to the event triggered when the
                         volume or pitch of the master asset changes. This feature is used for internal

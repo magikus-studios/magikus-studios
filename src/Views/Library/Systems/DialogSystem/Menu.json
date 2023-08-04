@@ -1,9 +1,10 @@
 [
     { "label": "<- Systems", "link": "/#/library/systems" },
     { "label": "Dialog System", "link": "/#/library/systems/dialogSystem" },
-    { "label": "Dialog Manager Component", "link": "/#/library/inConstruction" },
-    { "label": "Dialog Asset", "link": "/#/library/inConstruction" },
-    { "label": "Dialog Line Asset", "link": "/#/library/inConstruction" },
-    { "label": "Dialog Character Asset", "link": "/#/library/inConstruction" },
+    { "label": "Dialog Manager Component", "link": "/#/library/systems/dialogSystem/dialogManagerComponent" },
+    { "label": "Dialog Asset", "link": "/#/library/systems/dialogSystem/dialogAsset" },
+    { "label": "Dialog Line", "link": "/#/library/systems/dialogSystem/dialogLine" },
+    { "label": "Dialog Character Asset", "link": "/#/library/systems/dialogSystem/dialogCharacterAsset" },
+    { "label": "Dialog Settings Asset", "link": "/#/library/systems/dialogSystem/dialogSettingsAsset" },
     { "label": "Change Log", "link": "/#/library/systems/dialogSystem/changelog" }
 ]

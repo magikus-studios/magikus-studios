@@ -30,7 +30,7 @@ export default function Function() {
     return (
         <div className="c-light-2 pb-4">
             <div className="pb-4">
-                <h1>Magikus Button Tool</h1>
+                <h1>Magikus Tweak System</h1>
                 <h2>Changelog</h2>
                 <p>All notable changes to this project will be documented in this file.</p>
                 <p>

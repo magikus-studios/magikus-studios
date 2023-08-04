@@ -1,30 +1,20 @@
 [
     {
-        "version": "Unreleased",
-        "date": "TBA",
+        "version": "1.1.0",
+        "date": "2023-08-04",
         "added": [
-            { "feature": "Adapter utilities." },
-            { "feature": "Number adapters." },
-            { "feature": "Text adapters." },
-            { "feature": "Vector adapters." },
-            { "feature": "IList adapters." },
-            { "feature": "Color adapters." },
-            { "feature": "Operation utilities." },
-            { "feature": "Map operations." }
+            { "feature": "Magikus Button Tool." },
+            { "feature": "Magikus Sprite Animation System." },
+            { "feature": "Magikus Audio System." },
+            { "feature": "Magikus Dialog System." },
+            { "feature": "Magikus Tweak System." }
         ]
     },
     {
         "version": "1.0.0",
         "date":"2022-08-01",
         "added": [
-            { "feature": "Modifiers utilities." },
-            { "feature": "float, int, Vector2, Vector2Int, Vector3, Vector3Int, Color, Rect value types modifiers." },
-            { "feature": "Ref mode for value type modifiers." },
-            { "feature": "GameObject, Transform and RectTransform mutable types modifiers." },
-            { "feature": "Set, Add, Sub, Comp, Prod, Div, Mod, Power, Root, Square, Cube, Square Root, Cube Root, Log, LogTen, LogN, Exp modifiers." },
-            { "feature": "Inverse, Swap, Flat, SetOne, Neg, Round, Floor, Ceil, Abs, AbsNeg, Sign modifiers." },
-            { "feature": "Clamp, Clamp Range, Clamp Pos, Clamp Neg, Clamp Max, Clamp Min, Clamp Abs, Clamp Abs One, Clamp Bin modifiers." },
-            { "feature": "Wrap, Wrap Range, Wrap Max, Wrap Min, Wrap Abs, Wrap Abs One, Wrap Bin modifiers." }
+            { "feature": "Magikus Operation Utilities Library." }
         ]
     }
 ]

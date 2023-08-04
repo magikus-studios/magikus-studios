@@ -15,7 +15,7 @@ export default function Function() {
                 </p>
 
                 <h2>Properties</h2>
-                <ul>
+                <ul className="property-list">
                     <li>
                         <b>Volume (float): </b>
                         Sets the volume level of the entire library. The volume range is

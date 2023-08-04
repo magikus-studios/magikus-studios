@@ -1,5 +1,4 @@
 import React from "react";
-import CodeSnippet from "Components/CodeSnippet";
 
 export default function Function() {
 
@@ -8,143 +7,129 @@ export default function Function() {
             <div className="pb-4">
                 <h1>Magikus Dialog System</h1>
                 <p>
-                    Magikus Button Tool is a powerful tool designed to enhance the Unity inspector
-                    editor by allowing developers to easily introduce buttons directly into the inspector
-                    interface. These buttons can trigger specific actions or function calls, providing a
-                    convenient way to interact with scripts and components. This documentation will guide
-                    you through the usage and features of the Magikus Button tool.
+                    The Magikus Dialog System is a powerful tool that enables you to easily create and
+                    integrate dialogues into your game. With this system, you can craft dialogues line by line,
+                    add pauses, customize settings for different characters (such as font style, text color,
+                    images, and writing speed), and utilize prefix and suffix text. The system also supports a
+                    blinking pointer at the end of each line. Designed to be user-friendly and robust, it saves
+                    you valuable time by eliminating the need for custom implementation. Moreover, you can
+                    conveniently create your own dialogs directly through the Unity editor without requiring any
+                    coding.
                 </p>
 
                 <h2>Installation</h2>
                 <p>
-                    To use the Magikus Button Tool in your Unity project, follow these steps:
+                    To use Magikus Dialog System in your Unity project, follow these steps:
                 </p>
                 <ol>
                     <li>
-                        Download the Magikus Button Tool package from the official website or the Unity
-                        Asset Store.
+                        Download the Magikus Dialog System package from the official website or the
+                        Unity Asset Store.
                     </li>
                     <li>
                         Import the package into your Unity project by going to <b>Assets {'->'} Import Package {'->'}
                             Custom Package</b> and selecting the downloaded package file.
                     </li>
                     <li>
-                        Make sure the Magikus Button Tool package is successfully imported and visible in
-                        your project's assets.
+                        Make sure the Magikus Dialog System package is successfully imported and visible
+                        in your project's assets.
                     </li>
                 </ol>
 
-                <h2>Usage</h2>
+                <h2>How it Works</h2>
                 <p>
-                    To use Magikus Button Tool in your scripts, follow these guidelines:
+                    The Magikus Dialog System comprises three primary components: the Dialog
+                    Manager, the Dialog Asset, and the Character Asset. The Dialog Asset, implemented as a
+                    scriptable object, contains a list of dialog lines in sequential order. It also encompasses
+                    various dialog settings, including speed, default fonts, pauses, prefixes, and suffixes. Each
+                    line in the dialog asset contains specific information and settings, such as the character
+                    delivering the line, writing speed, pauses between lines, and more. The Character Asset
+                    holds information about each character involved in the dialog, such as their name,
+                    preferred text colors, fonts, portrait images, and overall writing speed. These character
+                    assets can be reused across different dialogs. The Dialog Manager, attached to a game
+                    object, provides control and management of the Dialog Asset, facilitating playback and
+                    manipulation of dialog text. It offers extensive customization options for dialog
+                    management, such as framerate control, the use of pointers, timescale manipulation, and
+                    events for custom actions. Additionally, the system incorporates a Dialog Settings Asset
+                    that allows global control over settings such as speed, prefixes, suffixes, pointer usage,
+                    speed and duration, text color, and font settings.
+                </p>
+
+                <h2>How to Use</h2>
+                <p>
+                    To add the <b>Dialog Manager Component</b> to a GameObject, follow these steps:
                 </p>
                 <ol>
                     <li>
-                        Make sure you have the <b>using Magikus;</b> statement at the top of your script to
-                        access the Magikus namespace.
+                        Select the GameObject to which you want to add the Manager component.
                     </li>
                     <li>
-                        Place the <b>[Button]</b> attribute before any property in your script that you want to turn
-                        into a button.
+                        Open the Components menu.
                     </li>
                     <li>
-                        Provide the name of the method to be called when the button is pressed as a
-                        parameter within the <b>[Button]</b> attribute.
+                        Navigate to Magikus {'->'} Dialog Manager.
+                    </li>
+                    <li>
+                        Click on the desired option to add the corresponding Manager component to the
+                        selected GameObject.
                     </li>
                 </ol>
+
                 <p>
-                    Example:
+                    To create a new <b>Dialog Asset</b>, follow these steps:
                 </p>
-                <CodeSnippet lines={[
-                    { line: "using Magikus;" },
-                    { line: "" },
-                    { line: "public class MyScript : MonoBehaviour" },
-                    { line: "{" },
-                    { line: "" },
-                    { line: '[Button("MethodName")]' },
-                    { line: "public bool myButton;" },
-                    { line: "" },
-                    { line: "private void MethodName()" },
-                    { line: "{" },
-                    { line: "// Code to execute when the button is pressed" },
-                    { line: "}" },
-                    { line: "" },
-                    { line: "}" },
-                ]} />
+                <ol>
+                    <li>
+                        Right-click on the desired folder in the Project window (where you want to create
+                        the asset).
+                    </li>
+                    <li>
+                        From the context menu, go to Create {'->'} Magikus {'->'} Dialog System {'->'} Dialog Asset.
+                    </li>
+                    <li>
+                        A new Dialog Asset will be created in the selected folder, ready for
+                        customization and configuration.
+                    </li>
+                </ol>
 
-                <h2>Customization</h2>
                 <p>
-                    Magikus Button Tool offers various customization options to tailor the appearance
-                    and behavior of the buttons. Here are some additional attributes that can be used in
-                    combination with the <b>[Button]</b> attribute:
+                    To create a new <b>Dialog Character Asset</b>, follow these steps:
                 </p>
-                <ul>
+                <ol>
                     <li>
-                        <b>Title:</b>
-                        Specify a custom title for the button by appending it to the method name
-                        separated by a slash (/).
-                        <CodeSnippet lines={[
-                            { line: '[Button("MethodName/Custom Title")]' },
-                            { line: "public bool myButton;" },
-                        ]} />
+                        Right-click on the desired folder in the Project window (where you want to create
+                        the asset).
                     </li>
                     <li>
-                        <b>Label:</b>
-                        Add a label before the button by setting the first string parameter of the
-                        <b>[Button]</b> attribute to <b>"label:LabelName"</b>, replacing <b>LabelName</b> with the desired label
-                        text.
-                        <CodeSnippet lines={[
-                            { line: '[Button("label:MyLabel","MethodName")]' },
-                            { line: "public bool myButton;" },
-                        ]} />
+                        From the context menu, go to Create {'->'} Magikus {'->'} Dialog System {'->'} Character Asset
+                        Asset.
                     </li>
                     <li>
-                        <b>Size:</b>
-                        Adjust the size of the button by providing width and height parameters as
-                        floats, representing the relative size compared to the inspector.
-                        <CodeSnippet lines={[
-                            { line: '[Button(0.5f, 1.25f,"MethodName")]' },
-                            { line: "public bool myButton;" },
-                        ]} />
+                        A new Dialog Character Asset will be created in the selected folder, ready for
+                        customization and configuration.
                     </li>
-                    <li>
-                        <b>Multiple Buttons:</b>
-                        Add multiple buttons or a single label within a single line by separating them with commas.
-                        <CodeSnippet lines={[
-                            { line: '[Button("label:MyLabel","MethodName1","MethodName2")]' },
-                            { line: "public bool myButton;" },
-                        ]} />
-                    </li>
-                </ul>
-
-                <h2>Notes</h2>
-                <ul>
-                    <li>
-                        Magikus Button Tool is designed to work seamlessly with any properties within
-                        your scripts. While the button functionality is typically associated with bool types, it
-                        is important to note that the Magikus Button Tool can be used with properties of
-                        any type.
-                    </li>
-                    <li>
-                        Please note that only one label is allowed, and it must be specified as the first
-                        string parameter. Additional parameters should correspond to separate method
-                        names, each representing a distinct button.
-                    </li>
-                    <li>
-                        Make sure to adjust the method names, labels, and property names according to
-                        your specific implementation needs.
-                    </li>
-                    <li>
-                        Magikus Button Tool seamlessly functions in both Edit Mode and Play Mode. This
-                        ensures that your buttons remain active and responsive throughout your game
-                        development process.
-                    </li>
-                </ul>
+                </ol>
 
                 <p>
-                    That concludes the documentation for the Magikus Button Tool. Feel free to
-                    experiment with the customization options and integrate buttons into your Unity project for
-                    enhanced interactivity and workflow efficiency.
+                    To create a new <b>Dialog Settings Asset</b>, follow these steps:
+                </p>
+                <ol>
+                    <li>
+                        Right-click on the desired folder in the Project window (where you want to create
+                        the asset).
+                    </li>
+                    <li>
+                        From the context menu, go to Create {'->'} Magikus {'->'} Dialog System {'->'} Dialog Settings Asset.
+                    </li>
+                    <li>
+                        A new Dialog Settings Asset will be created in the selected folder, ready for
+                        customization and configuration.
+                    </li>
+                </ol>
+
+                <p>
+                    These steps allow you to conveniently access the Dialog Manager component and create
+                    new Dialogs, Characters and Dialog Settings Assets within the Unity editor.
                 </p>
             </div>
         </div>

@@ -15,7 +15,7 @@ export default function Function() {
                 </p>
 
                 <h2>Properties</h2>
-                <ul>
+                <ul className="property-list">
                     <li>
                         <b>Clip (AudioClip): </b>The AudioClip that contains the sound to be used.
                     </li>

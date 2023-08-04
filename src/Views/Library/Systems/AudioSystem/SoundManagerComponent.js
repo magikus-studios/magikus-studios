@@ -16,7 +16,7 @@ export default function Function() {
                 </p>
 
                 <h2>Properties</h2>
-                <ul>
+                <ul className="property-list">
                     <li>
                         <b>Library (SoundLibraryAsset): </b>
                         Specifies the SoundLibraryAsset that contains the
@@ -81,7 +81,7 @@ export default function Function() {
                 </ul>
 
                 <h2>Events</h2>
-                <ul>
+                <ul className="property-list">
                     <li>
                         <b>OnPlay (UnityEvent{'<'}string{'>'}): </b>
                         Invoked every time a sound is played. The string
@@ -113,7 +113,7 @@ export default function Function() {
                 </ul>
 
                 <h2>Methods</h2>
-                <ul>
+                <ul className="property-list">
                     <li>
                         <b>Play(): </b>
                         Plays the sound at the current index in the SoundLibraryAsset. If

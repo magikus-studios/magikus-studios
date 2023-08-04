@@ -52,7 +52,7 @@ export default function Function() {
                 </p>
                 <ol>
                     <li>
-                        Select the GameObject to which you want to add the Animator component.
+                        Select the GameObject to which you want to add the Manager component.
                     </li>
                     <li>
                         Open the Components menu.

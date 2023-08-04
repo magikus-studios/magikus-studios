@@ -1,12 +1,11 @@
 [
     { "label": "<- Systems", "link": "/#/library/systems" },
     { "label": "Tweak System", "link": "/#/library/systems/tweakSystem" },
-    { "label": "Tweak Manager Component", "link": "/#/library/inConstruction" },
-    { "label": "Tweak Asset", "link": "/#/library/inConstruction" },
-    { "label": "Tweak Position Asset", "link": "/#/library/inConstruction" },
-    { "label": "Tweak Rotation Asset", "link": "/#/library/inConstruction" },
-    { "label": "Tweak Scale Asset", "link": "/#/library/inConstruction" },
-    { "label": "Tweak Color Asset", "link": "/#/library/inConstruction" },
-    { "label": "Tweak Sequence Asset", "link": "/#/library/inConstruction" },
+    { "label": "Tweak Manager Component", "link": "/#/library/systems/tweakSystem/tweakManagerComponent" },
+    { "label": "Tweak Position Asset", "link": "/#/library/systems/tweakSystem/tweakPositionAsset" },
+    { "label": "Tweak Rotation Asset", "link": "/#/library/systems/tweakSystem/tweakRotationAsset" },
+    { "label": "Tweak Scale Asset", "link": "/#/library/systems/tweakSystem/tweakScaleAsset" },
+    { "label": "Tweak Color Asset", "link": "/#/library/systems/tweakSystem/tweakColorAsset" },
+    { "label": "Tweak Sequence Asset", "link": "/#/library/systems/tweakSystem/tweakSequenceAsset" },
     { "label": "Change Log", "link": "/#/library/systems/tweakSystem/changelog" }
 ]

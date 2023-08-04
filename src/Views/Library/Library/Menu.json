@@ -2,7 +2,7 @@
     {
         "label": "Library",
         "items": [
-            { "label": "Getting Started" , "link": "/#/library/gettingStarted" },
+            { "label": "Magikus Library" , "link": "/#/library/gettingStarted" },
             { "label": "Changelog", "link": "/#/library/changelog" },
             { "label": "License", "link": "/#/library/license" }
         ]

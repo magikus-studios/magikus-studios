@@ -8,5 +8,6 @@
     { "label": "Operations: Clamp", "link": "/#/library/utilities/operations/operationsClamp" },
     { "label": "Operations: Wrap", "link": "/#/library/utilities/operations/operationsWrap" },
     { "label": "Target Components", "link": "/#/library/utilities/operations/targetComponents" },
-    { "label": "Input & Output Types", "link": "/#/library/utilities/operations/inputAndOutputTypes" }
+    { "label": "Input & Output Types", "link": "/#/library/utilities/operations/inputAndOutputTypes" },
+    { "label": "Changelog", "link": "/#/library/utilities/operations/changelog" }
 ]

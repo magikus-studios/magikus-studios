@@ -18,6 +18,7 @@
 .img-center { display: inline-block; }
 .ft-mono { font-family: monospace; }
 .text-justify { text-align: justify; }
+.property-list b { color: var(--light-0); }
 
 .c-dark-4 { color: var(--dark-4); }
 .c-dark-3 { color: var(--dark-3); }

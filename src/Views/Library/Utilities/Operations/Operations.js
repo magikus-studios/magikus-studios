@@ -1,10 +1,32 @@
 import React from "react";
-import DocBlockVector from "../../../../Components/DocBlockVector";
+import CodeSnippet from "Components/CodeSnippet";
+import DocBlockVector from "Components/DocBlockVector";
 
 export default function Function() {
 
     return (
         <div className="c-light-2 pb-4">
+            
+            <h1>How to Use</h1>
+            <p>
+                To start using the Magikus Utilities Library first you need to download the package from the
+                <a className="t-dec-none c-light-0 c-light-4-h" href="https://assetstore.unity.com/packages/tools/utilities/magikus-library-230098" target="_blank" rel="noopener noreferrer"> Asset Store</a> and
+                <a className="t-dec-none c-light-0 c-light-4-h" href="https://docs.unity3d.com/Manual/upm-ui-import.html" target="_blank" rel="noopener noreferrer"> import</a> it into your project.
+            </p>
+            <p>
+                After that, just remember to import the library to any of your scripts by adding the <i className="c-light-3">"using Magikus;"</i> line at the top.
+            </p>
+            <CodeSnippet
+                lines={[
+                    { line: "using UnityEngine;" },
+                    { line: "using Magikus;" },
+                    { line: " " },
+                    { line: "public class MyComponent : MonoBehaviour {" },
+                    { line: " " },
+                    { line: "}" }
+                ]}
+            />
+
             <DocBlockVector
                 title="Definition"
                 description="Modifiers are a set of helper methods that modify the inner value of the target object. All modifiers are designed as extended methods, this means that you can access them through the targeted object. For example:"

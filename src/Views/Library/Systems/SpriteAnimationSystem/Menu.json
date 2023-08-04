@@ -1,7 +1,7 @@
 [
     { "label": "<- Systems", "link": "/#/library/systems" },
     { "label": "Sprite Animation System", "link": "/#/library/systems/spriteAnimationSystem" },
-    { "label": "Sprite Animator Component", "link": "/#/library/inConstruction" },
-    { "label": "Sprite Animation Asset", "link": "/#/library/inConstruction" },
+    { "label": "Sprite Animator Component", "link": "/#/library/systems/spriteAnimationSystem/spriteAnimatorComponent" },
+    { "label": "Sprite Animation Asset", "link": "/#/library/systems/spriteAnimationSystem/spriteAnimationAsset" },
     { "label": "Change Log", "link": "/#/library/systems/spriteAnimationSystem/changelog" }
 ]

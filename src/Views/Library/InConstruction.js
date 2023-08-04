@@ -11,7 +11,7 @@ export default function Function() {
                 </p>
                 <p>
                     For more information, go to the 
-                    <a className="t-dec-none c-light-0 c-light-4-h" href="/library/changelog"> changelog</a>
+                    <a className="t-dec-none c-light-0 c-light-4-h" href="#/library/changelog"> changelog</a>
                     , under the unreleased section, and see when will this feature be implemented.
                 </p>
             </div>

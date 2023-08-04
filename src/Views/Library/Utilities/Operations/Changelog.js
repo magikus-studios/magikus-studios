@@ -1,6 +1,6 @@
 import React from "react";
 import Log from "Components/VersionLog";
-import ChangeLog from "Views/Library/Systems/DialogSystem/Changelog.json";
+import ChangeLog from "Views/Library/Utilities/Operations/Changelog.json";
 
 export default function Function() {
 
@@ -30,7 +30,7 @@ export default function Function() {
     return (
         <div className="c-light-2 pb-4">
             <div className="pb-4">
-                <h1>Magikus Dialog System</h1>
+                <h1>Magikus Operation Utilities</h1>
                 <h2>Changelog</h2>
                 <p>All notable changes to this project will be documented in this file.</p>
                 <p>
