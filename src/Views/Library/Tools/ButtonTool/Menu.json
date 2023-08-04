@@ -1,0 +1,5 @@
+[
+    { "label": "<- Tools", "link": "/#/library/tools" },
+    { "label": "Button Tool", "link": "/#/library/tools/buttonTool" },
+    { "label": "Changelog", "link": "/#/library/tools/buttonTool/changelog" }
+]

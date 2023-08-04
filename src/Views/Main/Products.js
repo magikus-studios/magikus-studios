@@ -1,6 +1,6 @@
 import React from "react";
 import CardHolder from "Components/CardHolder";
-import Products from "Data/Products.json";
+import Products from "Views/Main/Products.json";
 
 export default function Function() {
     return (
@@ -8,6 +8,5 @@ export default function Function() {
             <CardHolder cards={Products} />
             <div className="bg-dark-4 pb-5"></div>
         </div>
-        
     );
 }

@@ -1,0 +1,28 @@
+[
+    {
+        "version": "1.0.0",
+        "date":"2023-07-31",
+        "added": [
+            { "feature": "Tweak Manager Component." },
+            { "feature": "Multiple targets." },
+            { "feature": "Play, Pause, Unpause, Stop and Reset Functionality." },
+            { "feature": "Dynamic Asset Setting functionality." },
+            { "feature": "Tweak Asset." },
+            { "feature": "Loop functionality." },
+            { "feature": "Speed and intensity modifiers." },
+            { "feature": "Tweak Position Asset." },
+            { "feature": "Tweak Rotation Asset." },
+            { "feature": "Tweak Scale Asset." },
+            { "feature": "Vector Modes." },
+            { "feature": "Tweak Modes." },
+            { "feature": "Tweak Color Asset." },
+            { "feature": "Curve transitions." },
+            { "feature": "Flow Settings." },
+            { "feature": "Noise Settings." },
+            { "feature": "Individual Axis Overriding." },
+            { "feature": "Tweak Sequence Asste." },
+            { "feature": "Grouping Tweaks." },
+            { "feature": "Sequencing Tweaks." }
+        ]
+    }
+]

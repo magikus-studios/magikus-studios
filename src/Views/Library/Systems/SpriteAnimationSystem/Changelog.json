@@ -1,0 +1,30 @@
+[
+    {
+        "version": "1.0.0",
+        "date":"2023-07-04",
+        "added": [
+            { "feature": "Simple Animation." },
+            { "feature": "Infinit Loop Animation." },
+            { "feature": "Multiple Cycle Animation." },
+            { "feature": "Animator Playback Speed." },
+            { "feature": "Animator Play On Awake." },
+            { "feature": "Animator Play One Frame." },
+            { "feature": "Animator Restart After Setting Asset." },
+            { "feature": "Animator TimeScale." },
+            { "feature": "Animator OnCycleEnd and OnAnimationEnd Events." },
+            { "feature": "Animation Framerate." },
+            { "feature": "Animation Framerate Curve." },
+            { "feature": "Animation Random Framerate." },
+            { "feature": "Animation End in First Frame." },
+            { "feature": "Animation Playback." },
+            { "feature": "Animation Reverse Frames." },
+            { "feature": "Animation Skip First Frame On Cycle." },
+            { "feature": "Animation Frames Per Cycle." },
+            { "feature": "Animation Random Order." },
+            { "feature": "Animation Avoid Repeating Last Frame." },
+            { "feature": "Animation Random Frame Range." },
+            { "feature": "Animation Color and Alpha Curves." },
+            { "feature": "Image Sprite Animator Component." }
+        ]
+    }
+]

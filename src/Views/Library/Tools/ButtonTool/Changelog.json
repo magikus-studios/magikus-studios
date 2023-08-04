@@ -1,0 +1,13 @@
+[
+    {
+        "version": "1.0.0",
+        "date":"2023-06-27",
+        "added": [
+            { "feature": "Inspector buttons from script." },
+            { "feature": "Multiple buttons in one line." },
+            { "feature": "Button label property." },
+            { "feature": "Button group width property." },
+            { "feature": "Button group heigt property." }
+        ]
+    }
+]

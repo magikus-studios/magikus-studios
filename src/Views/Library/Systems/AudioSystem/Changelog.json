@@ -1,0 +1,21 @@
+[
+    {
+        "version": "1.0.0",
+        "date":"2023-07-07",
+        "added": [
+            { "feature": "Sound Manager component." },
+            { "feature": "Sound Library Asset object." },
+            { "feature": "Sound Asset object." },
+            { "feature": "Sound Master Asset object." },
+            { "feature": "Sound Label Asset object." },
+            { "feature": "Pool system for each sound." },
+            { "feature": "Unscaled time implementation." },
+            { "feature": "Fade effects on managers." },
+            { "feature": "Play, Pause, Unpause and Stop functionality." },
+            { "feature": "Sound reference by index, name or label." },
+            { "feature": "Independant volume level in managers, masters, library and sounds." },
+            { "feature": "Independant pitch level in masters, library and sounds." },
+            { "feature": "Reproduction modes: loop, random and repeat." }
+        ]
+    }
+]

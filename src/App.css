@@ -17,6 +17,7 @@
 .t-dec-none { text-decoration: none; }
 .img-center { display: inline-block; }
 .ft-mono { font-family: monospace; }
+.text-justify { text-align: justify; }
 
 .c-dark-4 { color: var(--dark-4); }
 .c-dark-3 { color: var(--dark-3); }
@@ -367,3 +368,76 @@
 .fs-lx { font-size: larger; }
 .fs-lxx { font-size: x-large; }
 .fs-lxxx { font-size: xx-large; }
+
+
+@media screen and (max-width: 576px) {
+    .fs-xs-sxxx { font-size: xx-small; }
+    .fs-xs-sxx { font-size: x-small; } 
+    .fs-xs-sx { font-size: smaller; }
+    .fs-xs-sm { font-size: small; }
+    .fs-xs-md { font-size: medium; }
+    .fs-xs-lg { font-size: large; }
+    .fs-xs-lx { font-size: larger; }
+    .fs-xs-lxx { font-size: x-large; } 
+    .fs-xs-lxxx { font-size: xx-large; }
+}
+
+@media screen and (max-width: 768px) {
+    .fs-sm-sxxx { font-size: xx-small; }
+    .fs-sm-sxx { font-size: x-small; }
+    .fs-sm-sx { font-size: smaller; }
+    .fs-sm-sm { font-size: small; }
+    .fs-sm-md { font-size: medium; }
+    .fs-sm-lg { font-size: large; }
+    .fs-sm-lx { font-size: larger;}
+    .fs-sm-lxx { font-size: x-large; }
+    .fs-sm-lxxx { font-size: xx-large; }
+}
+
+@media screen and (max-width: 992px) {
+    .fs-md-sxxx { font-size: xx-small; }
+    .fs-md-sxx { font-size: x-small; }
+    .fs-md-sx { font-size: smaller; }
+    .fs-md-sm { font-size: small; }
+    .fs-md-md { font-size: medium; }
+    .fs-md-lg { font-size: large; }
+    .fs-md-lx { font-size: larger; }
+    .fs-md-lxx { font-size: x-large; }        
+    .fs-md-lxxx { font-size: xx-large; }
+}
+
+@media screen and (max-width: 1200px) {
+    .fs-lg-sxxx { font-size: xx-small; }
+    .fs-lg-sxx { font-size: x-small; }
+    .fs-lg-sx { font-size: smaller; }
+    .fs-lg-sm { font-size: small; }
+    .fs-lg-md { font-size: medium; }
+    .fs-lg-lg { font-size: large; }
+    .fs-lg-lx { font-size: larger; }
+    .fs-lg-lxx { font-size: x-large; }
+    .fs-lg-lxxx { font-size: xx-large; }
+}
+
+@media screen and (max-width: 1400px) {
+    .fs-lx-sxxx { font-size: xx-small; }
+    .fs-lx-sxx { font-size: x-small; }
+    .fs-lx-sx { font-size: smaller; }
+    .fs-lx-sm { font-size: small; }
+    .fs-lx-md { font-size: medium; }
+    .fs-lx-lg { font-size: large; }
+    .fs-lx-lx { font-size: larger; }
+    .fs-lx-lxx { font-size: x-large; }
+    .fs-lx-lxxx { font-size: xx-large; }
+}
+
+@media screen and (min-width: 1400px) {
+    .fs-lxx-sxxx { font-size: xx-small; }
+    .fs-lxx-sxx { font-size: x-small; }
+    .fs-lxx-sx { font-size: smaller; }
+    .fs-lxx-sm { font-size: small; }
+    .fs-lxx-md { font-size: medium; }
+    .fs-lxx-lg { font-size: large; }
+    .fs-lxx-lx { font-size: larger; }
+    .fs-lxx-lxx { font-size: x-large; }
+    .fs-lxx-lxxx { font-size: xx-large; }
+}

@@ -1,0 +1,36 @@
+[
+    {
+        "label": "Library",
+        "items": [
+            { "label": "Getting Started" , "link": "/#/library/gettingStarted" },
+            { "label": "Changelog", "link": "/#/library/changelog" },
+            { "label": "License", "link": "/#/library/license" }
+        ]
+    },
+    {
+        "label": "Utilities",
+        "items": [
+            { "label": "[Utilities]", "link": "/#/library/utilities" },
+            { "label": "Operations", "link": "/#/library/utilities/operations" },
+            { "label": "Structures", "link": "/#/library/inConstruction" },
+            { "label": "Machines", "link": "/#/library/inConstruction" }
+        ]
+    },
+    {
+        "label": "Systems",
+        "items": [
+            { "label": "[Systems]", "link": "/#/library/systems" },
+            { "label": "Audio System", "link": "/#/library/systems/audioSystem" },
+            { "label": "Dialog System", "link": "/#/library/systems/dialogSystem" },
+            { "label": "Sprite Animation System", "link": "/#/library/systems/spriteAnimationSystem" },
+            { "label": "Tweak System", "link": "/#/library/systems/tweakSystem" }
+        ]
+    },
+    {
+        "label": "Tools",
+        "items": [
+            { "label": "[Tools]", "link": "/#/library/tools" },
+            { "label": "Button Tool", "link": "/#/library/tools/buttonTool" }
+        ]
+    }
+]

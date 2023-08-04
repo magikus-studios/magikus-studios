@@ -1,0 +1,9 @@
+[
+    { "label": "<- Systems", "link": "/#/library/systems" },
+    { "label": "Dialog System", "link": "/#/library/systems/dialogSystem" },
+    { "label": "Dialog Manager Component", "link": "/#/library/inConstruction" },
+    { "label": "Dialog Asset", "link": "/#/library/inConstruction" },
+    { "label": "Dialog Line Asset", "link": "/#/library/inConstruction" },
+    { "label": "Dialog Character Asset", "link": "/#/library/inConstruction" },
+    { "label": "Change Log", "link": "/#/library/systems/dialogSystem/changelog" }
+]
