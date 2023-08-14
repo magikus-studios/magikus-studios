@@ -73,7 +73,7 @@ import LibraryToolsButtonToolChangelog from "Views/Library/Tools/ButtonTool/Chan
 export default function App() {
 
   return (
-    <div className='app bg-dark-4'>
+    <div className='app bg-dark-4 star'>
       <Router>
         <Header/>
         <Routes>

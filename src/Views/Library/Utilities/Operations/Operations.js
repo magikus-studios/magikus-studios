@@ -5,7 +5,7 @@ import DocBlockVector from "Components/DocBlockVector";
 export default function Function() {
 
     return (
-        <div className="c-light-2 pb-4">
+        <div className="c-light-2">
             
             <h1>How to Use</h1>
             <p>

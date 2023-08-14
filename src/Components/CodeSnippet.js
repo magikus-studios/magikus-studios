@@ -4,7 +4,7 @@ import 'CSS/CodeSpinnet.css';
 export default function Function(props) {
 
     return (
-        <p className="code">
+        <p className="code ft-mono">
             {
                 props.lines.map((line, index) => {
                     return (

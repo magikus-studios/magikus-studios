@@ -9,16 +9,51 @@
     --light-2: rgba(135, 170, 222, 100);
     --light-3: rgba(175, 198, 233, 100);
     --light-4: rgba(215, 227, 244, 100);
+
+    --font-0: 'Montserrat', sans-serif;
+    --font-1: 'Karla', sans-serif;
+    --font-2: monospace;
 }
 
-.app { font-family: monospace; }
+.app { font-family: var(--font-1); }
+.star {
+    background-image: url("../build/images/Star Seamless Pattern - Blur 1.png");
+    background-repeat: repeat;
+    background-size: 200px;
+}
+.star-border
+{
+    border: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: var(--dark-2);
+}
+h1, h2, h3, h4, h5, h6 
+{
+     font-family: var(--font-0); 
+     text-shadow: var(--dark-5) 3px 3px 3px;
+}
+.ft-mono { font-family: var(--font-2); }
+.ft-secondary {
+    font-family: var(--font-1);
+    font-weight: 200;
+    font-style: italic;
+    text-shadow: none;
+}
+
+.ft-primary {
+    font-family: var(--font-0);
+    font-weight: 900;
+    text-shadow: var(--dark-5) 4px 4px 4px;
+}
+
 .o-hiden { overflow: hidden; }
 .l-style-none { list-style: none; }
 .t-dec-none { text-decoration: none; }
 .img-center { display: inline-block; }
-.ft-mono { font-family: monospace; }
 .text-justify { text-align: justify; }
 .property-list b { color: var(--light-0); }
+
 
 .c-dark-4 { color: var(--dark-4); }
 .c-dark-3 { color: var(--dark-3); }

@@ -5,7 +5,7 @@ import DocBlock from "Components/DocBlock";
 export default function Function() {
 
     return (
-        <div className="c-light-2 pb-4">
+        <div className="c-light-2">
             <DocBlock
                 title="Mutable Values"
                 description="You can modify the inner aspects of component based objects. As all of these types are mutable objects, whenever they are changed, the internal vectors of these instances are changed (just as in the ref mode). For example:"

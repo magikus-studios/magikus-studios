@@ -4,7 +4,7 @@ import SimpleDocBlock from "../../../../Components/SimpleDocBlock"
 export default function Function() {
 
     return (
-        <div className="c-light-2 pb-4">
+        <div className="c-light-2">
             <h1>Math Operations</h1>
             <SimpleDocBlock 
                 title="Set:"

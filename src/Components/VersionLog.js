@@ -17,8 +17,8 @@ export default function Function(props) {
 
     return (
         <div className="pt-4">
-            <h3 className="text-center c-light-3">--- Version {props.version} ---</h3>
-            <h5 className="text-center c-light-3">[{props.date}]</h5>
+            <h3 className="text-center c-light-2">--- Version {props.version} ---</h3>
+            <h5 className="text-center c-light-2">[{props.date}]</h5>
             {addedFeatures}
             {changedFeatures}
             {depricatedFeatures}

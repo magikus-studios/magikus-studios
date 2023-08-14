@@ -4,7 +4,7 @@ import VectorCode from "Components/VectorCode";
 export default function Function() {
 
     return (
-        <div className="c-light-2 pb-4">
+        <div className="c-light-2">
             <h1>Target Components</h1>
             <p>
                 To define which components to modify, all modifiers have to specify the
