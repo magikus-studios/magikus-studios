@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.3f91802d.css",
-    "main.js": "/static/js/main.894d3a30.js",
+    "main.css": "/static/css/main.da056a31.css",
+    "main.js": "/static/js/main.af49e13f.js",
     "static/js/787.005324cb.chunk.js": "/static/js/787.005324cb.chunk.js",
     "static/media/Magikus - Label with Logo (512).png": "/static/media/Magikus - Label with Logo (512).0c3e39908e571813b85b.png",
+    "static/media/Star Seamless Pattern - Blur 1.png": "/static/media/Star Seamless Pattern - Blur 1.1e14ac740cfa9a19d2c3.png",
     "index.html": "/index.html",
-    "main.3f91802d.css.map": "/static/css/main.3f91802d.css.map",
-    "main.894d3a30.js.map": "/static/js/main.894d3a30.js.map",
+    "main.da056a31.css.map": "/static/css/main.da056a31.css.map",
+    "main.af49e13f.js.map": "/static/js/main.af49e13f.js.map",
     "787.005324cb.chunk.js.map": "/static/js/787.005324cb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f91802d.css",
-    "static/js/main.894d3a30.js"
+    "static/css/main.da056a31.css",
+    "static/js/main.af49e13f.js"
   ]
 }
