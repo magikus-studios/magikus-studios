@@ -17,7 +17,7 @@
 
 .app { font-family: var(--font-1); }
 .star {
-    background-image: url("../build/images/Star Seamless Pattern - Blur 1.png");
+    background-image: url("../public/images/Star Seamless Pattern - Blur 1.png");
     background-repeat: repeat;
     background-size: 200px;
 }
