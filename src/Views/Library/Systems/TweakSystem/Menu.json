@@ -6,6 +6,5 @@
     { "label": "Tweak Rotation Asset", "link": "/#/library/systems/tweakSystem/tweakRotationAsset" },
     { "label": "Tweak Scale Asset", "link": "/#/library/systems/tweakSystem/tweakScaleAsset" },
     { "label": "Tweak Color Asset", "link": "/#/library/systems/tweakSystem/tweakColorAsset" },
-    { "label": "Tweak Sequence Asset", "link": "/#/library/systems/tweakSystem/tweakSequenceAsset" },
-    { "label": "Change Log", "link": "/#/library/systems/tweakSystem/changelog" }
+    { "label": "Tweak Sequence Asset", "link": "/#/library/systems/tweakSystem/tweakSequenceAsset" }
 ]

@@ -1,5 +1,4 @@
 import React from "react";
-import Label from "Assets/Magikus - Label with Logo (512).png";
 
 export default function Function() {
     return (
@@ -7,7 +6,7 @@ export default function Function() {
             <div className="d-inline-flex container-fluid row">
                 <div className="col-md-3 col-sm-12 align-self-center text-center">
                     <a href="/">
-                        <img src={Label} alt="" className=".img-center" height={70}/>
+                        <img src="images/Assets/Magikus - Label with Logo (512).png" alt="" className=".img-center" height={70} />
                     </a>
                 </div>
                 <div className="col-md-6 align-self-center d-none d-md-block">

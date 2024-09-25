@@ -20,7 +20,9 @@ export default function Function(props) {
     
     return (
         <div className={`${open ? "tree-nested-open" : "tree-nested-close"}` } >
-            <li className={`${open ? "tree-nested-label-open" : "tree-nested-label-close"}`} onClick={() => { setOpen(!open) }}><div className="tree-item">{props.menu.label}</div></li>
+            <li className={`${open ? "tree-nested-label-open" : "tree-nested-label-close"}`} onClick={() => { setOpen(!open) }}>
+                <div className="tree-item">{props.menu.label}</div>
+            </li>
             { content }      
         </div>
     );

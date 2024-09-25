@@ -5,6 +5,5 @@
     { "label": "Sound Library Asset", "link": "/#/library/systems/audioSystem/soundLibraryAsset" },
     { "label": "Sound Asset", "link": "/#/library/systems/audioSystem/soundAsset" },
     { "label": "Sound Master Asset", "link": "/#/library/systems/audioSystem/soundMasterAsset" },
-    { "label": "Sound Label Asset", "link": "/#/library/systems/audioSystem/soundLabelAsset" },
-    { "label": "Change Log", "link": "/#/library/systems/audioSystem/changelog" }
+    { "label": "Sound Label Asset", "link": "/#/library/systems/audioSystem/soundLabelAsset" }
 ]

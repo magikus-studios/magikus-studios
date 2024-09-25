@@ -1,20 +1,168 @@
 [
     {
-        "version": "1.1.0",
+        "version": "3.0.0",
+        "date": "2024-09-23",
+        "added": [
+            { "feature": "Decorators" },
+            { "feature": "Structures" },
+            { "feature": "Machines" }
+        ],
+        "changed": [
+            { "feature": "Utilities" }
+        ]
+    },
+    {
+        "version": "2.0.0",
         "date": "2023-08-04",
         "added": [
-            { "feature": "Magikus Button Tool." },
-            { "feature": "Magikus Sprite Animation System." },
-            { "feature": "Magikus Audio System." },
-            { "feature": "Magikus Dialog System." },
-            { "feature": "Magikus Tweak System." }
+            { "feature": "Button Tool" },
+            { "feature": "Animation System" },
+            { "feature": "Audio System" },
+            { "feature": "Dialog System" },
+            { "feature": "Tweak System" }
+        ]
+    },
+    {
+        "version": "1.1.0",
+        "date":"2023-07-31",
+        "added": [
+            { "feature": "Tweak System: Tweak Manager Component" },
+            { "feature": "Tweak System: Multiple targets" },
+            { "feature": "Tweak System: Play, Pause, Unpause, Stop and Reset Functionality" },
+            { "feature": "Tweak System: Dynamic Asset Setting functionality" },
+            { "feature": "Tweak System: Tweak Asset" },
+            { "feature": "Tweak System: Loop functionality" },
+            { "feature": "Tweak System: Speed and intensity modifiers" },
+            { "feature": "Tweak System: Tweak Position Asset" },
+            { "feature": "Tweak System: Tweak Rotation Asset" },
+            { "feature": "Tweak System: Tweak Scale Asset" },
+            { "feature": "Tweak System: Vector Modes" },
+            { "feature": "Tweak System: Tweak Modes" },
+            { "feature": "Tweak System: Tweak Color Asset" },
+            { "feature": "Tweak System: Curve transitions" },
+            { "feature": "Tweak System: Flow Settings" },
+            { "feature": "Tweak System: Noise Settings" },
+            { "feature": "Tweak System: Individual Axis Overriding" },
+            { "feature": "Tweak System: Tweak Sequence Asste" },
+            { "feature": "Tweak System: Grouping Tweaks" },
+            { "feature": "Tweak System: Sequencing Tweaks" }
+        ]
+    },
+    {
+        "version": "1.1.0",
+        "date":"2023-07-18",
+        "added": [
+            { "feature": "Dialog System: Dialog Manager Component" },
+            { "feature": "Dialog System: Dialog Asset Scriptable Object" },
+            { "feature": "Dialog System: Dialog Line Object" },
+            { "feature": "Dialog System: Dialog Character Asset Scriptable Object" },
+            { "feature": "Dialog System: Dialog Settings Asset Scriptable Object" },
+            { "feature": "Dialog System: Manager Framerate" },
+            { "feature": "Dialog System: Manager FLow Settings" },
+            { "feature": "Dialog System: Blinking Pointer" },
+            { "feature": "Dialog System: TimeScale Functionality" },
+            { "feature": "Dialog System: Dialog Events" },
+            { "feature": "Dialog System: TextMeshPro and UI Text Functionality" },
+            { "feature": "Dialog System: SetDialog Method" },
+            { "feature": "Dialog System: SetDialogSettings Method" },
+            { "feature": "Dialog System: Pause, Unpause and Restart Methods" },
+            { "feature": "Dialog System: Next Line Method" },
+            { "feature": "Dialog System: Dialog Asset Prefix and Suffix for Character and Dialog Labels" },
+            { "feature": "Dialog System: Pause Between Dialog Lines" },
+            { "feature": "Dialog System: Dialog Asset Font Defaults" },
+            { "feature": "Dialog System: Dialog Asset Font Overrides" },
+            { "feature": "Dialog System: Dialog Lines Characters" },
+            { "feature": "Dialog System: Dialog Lines Speed Change" },
+            { "feature": "Dialog System: Dialog Lines Pauses" },
+            { "feature": "Dialog System: Dialog Lines Add to Previous Functionality" },
+            { "feature": "Dialog System: Dialog Lines Auto Play Functionality" },
+            { "feature": "Dialog System: Dialog Lines Trigger Event OnFinish Functionality" },
+            { "feature": "Dialog System: Dialog Character Asset Speed Change" },
+            { "feature": "Dialog System: Dialog Character Asset Name" },
+            { "feature": "Dialog System: Dialog Character Asset Portrait Image" },
+            { "feature": "Dialog System: Dialog Character Asset Character and Label Color" },
+            { "feature": "Dialog System: Dialog Character Asset Character and Label Font" },
+            { "feature": "Dialog System: Dialog Settings Asset Speed Change" },
+            { "feature": "Dialog System: Dialog Settings Asset Amount of Letters Per Step" },
+            { "feature": "Dialog System: Dialog Settings Asset FrameCurve" },
+            { "feature": "Dialog System: Dialog Settings Asset Prefix and Suffix Settings" },
+            { "feature": "Dialog System: Dialog Settings Asset Pointer Settings" },
+            { "feature": "Dialog System: Dialog Settings Asset Set Color Settings" },
+            { "feature": "Dialog System: Dialog Settings Asset Font Defaults" },
+            { "feature": "Dialog System: Dialog Settings Asset Font Overrides" }
+        ]
+    },
+    {
+        "version": "1.1.0",
+        "date":"2023-07-07",
+        "added": [
+            { "feature": "Audio System: Sound Manager component" },
+            { "feature": "Audio System: Sound Library Asset object" },
+            { "feature": "Audio System: Sound Asset object" },
+            { "feature": "Audio System: Sound Master Asset object" },
+            { "feature": "Audio System: Sound Label Asset object" },
+            { "feature": "Audio System: Pool system for each sound" },
+            { "feature": "Audio System: Unscaled time implementation" },
+            { "feature": "Audio System: Fade effects on managers" },
+            { "feature": "Audio System: Play, Pause, Unpause and Stop functionality" },
+            { "feature": "Audio System: Sound reference by index, name or label" },
+            { "feature": "Audio System: Independant volume level in managers, masters, library and sounds" },
+            { "feature": "Audio System: Independant pitch level in masters, library and sounds" },
+            { "feature": "Audio System: Reproduction modes: loop, random and repeat" }
+        ]
+    },
+    {
+        "version": "1.1.0",
+        "date":"2023-07-04",
+        "added": [
+            { "feature": "Animation System: Simple Animation" },
+            { "feature": "Animation System: Infinit Loop Animation" },
+            { "feature": "Animation System: Multiple Cycle Animation" },
+            { "feature": "Animation System: Animator Playback Speed" },
+            { "feature": "Animation System: Animator Play On Awake" },
+            { "feature": "Animation System: Animator Play One Frame" },
+            { "feature": "Animation System: Animator Restart After Setting Asset" },
+            { "feature": "Animation System: Animator TimeScale" },
+            { "feature": "Animation System: Animator OnCycleEnd and OnAnimationEnd Events" },
+            { "feature": "Animation System: Animation Framerate" },
+            { "feature": "Animation System: Animation Framerate Curve" },
+            { "feature": "Animation System: Animation Random Framerate" },
+            { "feature": "Animation System: Animation End in First Frame" },
+            { "feature": "Animation System: Animation Playback" },
+            { "feature": "Animation System: Animation Reverse Frames" },
+            { "feature": "Animation System: Animation Skip First Frame On Cycle" },
+            { "feature": "Animation System: Animation Frames Per Cycle" },
+            { "feature": "Animation System: Animation Random Order" },
+            { "feature": "Animation System: Animation Avoid Repeating Last Frame" },
+            { "feature": "Animation System: Animation Random Frame Range" },
+            { "feature": "Animation System: Animation Color and Alpha Curves" },
+            { "feature": "Animation System: Image Sprite Animator Component" }
+        ]
+    },
+    {
+        "version": "1.1.0",
+        "date":"2023-06-27",
+        "added": [
+            { "feature": "Button Tool: Inspector buttons from script" },
+            { "feature": "Button Tool: Multiple buttons in one line" },
+            { "feature": "Button Tool: Button label property" },
+            { "feature": "Button Tool: Button group width property" },
+            { "feature": "Button Tool: Button group heigt property" }
         ]
     },
     {
         "version": "1.0.0",
         "date":"2022-08-01",
         "added": [
-            { "feature": "Magikus Operation Utilities Library." }
+            { "feature": "Magikus Operation Utilities Library" },
+            { "feature": "Magikus Operation Utilities: Modifiers utilities" },
+            { "feature": "Magikus Operation Utilities: float, int, Vector2, Vector2Int, Vector3, Vector3Int, Color, Rect value types modifiers" },
+            { "feature": "Magikus Operation Utilities: Ref mode for value type modifiers" },
+            { "feature": "Magikus Operation Utilities: GameObject, Transform and RectTransform mutable types modifiers" },
+            { "feature": "Magikus Operation Utilities: Set, Add, Sub, Comp, Prod, Div, Mod, Power, Root, Square, Cube, Square Root, Cube Root, Log, LogTen, LogN, Exp modifiers" },
+            { "feature": "Magikus Operation Utilities: Inverse, Swap, Flat, SetOne, Neg, Round, Floor, Ceil, Abs, AbsNeg, Sign modifiers" },
+            { "feature": "Magikus Operation Utilities: Clamp, Clamp Range, Clamp Pos, Clamp Neg, Clamp Max, Clamp Min, Clamp Abs, Clamp Abs One, Clamp Bin modifiers" },
+            { "feature": "Magikus Operation Utilities: Wrap, Wrap Range, Wrap Max, Wrap Min, Wrap Abs, Wrap Abs One, Wrap Bin modifiers" }
         ]
     }
 ]

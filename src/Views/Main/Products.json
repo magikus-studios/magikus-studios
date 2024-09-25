@@ -1,12 +1,12 @@
 [
     {
-        "image": "images/Library - Icon Color (512).png",
+        "image": "images/Products/Library - Icon Color (512).png",
         "title": "Magikus Library",
         "description": "A Unity3D C# framework speeding up development, enhancing team collaboration, and offering utilities, systems, and tools to streamline your game development journey. Elevate your game development experience.",
         "link": "/#/library"
     },
     {
-        "image": "images/IAM - Thumbnail [512].png",
+        "image": "images/Products/IAM - Thumbnail [512].png",
         "title": "Incredible Arcade Machine",
         "description": "Get ready to experience the nostalgia of classic arcade games with Incredible Arcade Machine! This collection of retro-inspired games includes clones of Snake, Tetris, Pong, Asteroids, and Breakout, offering hours of addictive and challenging gameplay. Whether you're a fan of vintage gaming or simply looking for a fun and engaging introduction to game development, Incredible Arcade Machine is the perfect choice.",
         "link": "https://magikus-studios.itch.io/incredible-arcade-machine"

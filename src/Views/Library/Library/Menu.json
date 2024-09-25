@@ -2,35 +2,90 @@
     {
         "label": "Library",
         "items": [
-            { "label": "Magikus Library" , "link": "/#/library/gettingStarted" },
+            { "label": "Introduction" , "link": "/#/library" },
             { "label": "Changelog", "link": "/#/library/changelog" },
             { "label": "License", "link": "/#/library/license" }
+        ]
+    },
+    {
+        "label": "Decorators",
+        "items": [
+            { "label": "[Decorators]", "link": "/#/library/decorators" },
+            { "label": "Button", "link": "/#/library/inConstruction" },
+            { "label": "Line", "link": "/#/library/inConstruction" },
+            { "label": "Text Box", "link": "/#/library/inConstruction" },
+            { "label": "Title", "link": "/#/library/inConstruction" },
+            { "label": "Toggle", "link": "/#/library/inConstruction" },
+            { "label": "Show IF", "link": "/#/library/inConstruction" },
+            { "label": "Collapsable", "link": "/#/library/inConstruction" },
+            { "label": "Non Editable", "link": "/#/library/inConstruction" },
+            { "label": "Progress Bar", "link": "/#/library/inConstruction" },
+            { "label": "Reference Value", "link": "/#/library/inConstruction" },
+            { "label": "Collapsable List", "link": "/#/library/inConstruction" },
+            { "label": "Key Binding", "link": "/#/library/inConstruction" }
         ]
     },
     {
         "label": "Utilities",
         "items": [
             { "label": "[Utilities]", "link": "/#/library/utilities" },
-            { "label": "Operations", "link": "/#/library/utilities/operations" },
-            { "label": "Structures", "link": "/#/library/inConstruction" },
-            { "label": "Machines", "link": "/#/library/inConstruction" }
+            { "label": "Create", "link": "/#/library/inConstruction" },
+            { "label": "Adapt", "link": "/#/library/inConstruction" },
+            { "label": "Randget", "link": "/#/library/inConstruction" },
+            { "label": "Looping", "link": "/#/library/inConstruction" },
+            { "label": "Easing", "link": "/#/library/inConstruction" },
+            { "label": "Files", "link": "/#/library/inConstruction" },
+            { "label": "Control", "link": "/#/library/inConstruction" },
+            { "label": "Math", "link": "/#/library/inConstruction" },
+            { "label": "Text", "link": "/#/library/inConstruction" },
+            { "label": "List", "link": "/#/library/inConstruction" }
+        ]
+    },
+    {
+        "label": "Structures",
+        "items": [
+            { "label": "[Structures]", "link": "/#/library/structures" },
+            { "label": "Grids", "link": "/#/library/inConstruction" },
+            { "label": "Toggles", "link": "/#/library/inConstruction" },
+            { "label": "Vectors", "link": "/#/library/inConstruction" },
+            { "label": "Couples", "link": "/#/library/inConstruction" },
+            { "label": "Ranges", "link": "/#/library/inConstruction" },
+            { "label": "Tier", "link": "/#/library/inConstruction" },
+            { "label": "Debug State", "link": "/#/library/inConstruction" },
+            { "label": "Label", "link": "/#/library/inConstruction" },
+            { "label": "Time Scale", "link": "/#/library/inConstruction" },
+            { "label": "Events", "link": "/#/library/inConstruction" },
+            { "label": "Value Assets", "link": "/#/library/inConstruction" },
+            { "label": "Switches", "link": "/#/library/inConstruction" }
+        ]
+    },
+    {
+        "label": "Machines",
+        "items": [
+            { "label": "[Machines]", "link": "/#/library/machines" },
+            { "label": "Updater Machine", "link": "/#/library/machines/updater" },
+            { "label": "Cycle Machine", "link": "/#/library/machines/cycle" },
+            { "label": "State Machine", "link": "/#/library/machines/state" },
+            { "label": "Tween Machine", "link": "/#/library/machines/tween" }
         ]
     },
     {
         "label": "Systems",
         "items": [
             { "label": "[Systems]", "link": "/#/library/systems" },
+            { "label": "Animation System", "link": "/#/library/systems/spriteAnimationSystem" },
+            { "label": "Tweak System", "link": "/#/library/systems/tweakSystem" },
             { "label": "Audio System", "link": "/#/library/systems/audioSystem" },
-            { "label": "Dialog System", "link": "/#/library/systems/dialogSystem" },
-            { "label": "Sprite Animation System", "link": "/#/library/systems/spriteAnimationSystem" },
-            { "label": "Tweak System", "link": "/#/library/systems/tweakSystem" }
+            { "label": "Dialog System", "link": "/#/library/systems/dialogSystem" }
         ]
     },
     {
         "label": "Tools",
         "items": [
             { "label": "[Tools]", "link": "/#/library/tools" },
-            { "label": "Button Tool", "link": "/#/library/tools/buttonTool" }
+            { "label": "Curve Editor", "link": "/#/library/tools/curveEditor" },
+            { "label": "Reference Console", "link": "/#/library/tools/referenceConsole" },
+            { "label": "Hierarchy Tool", "link": "/#/library/tools/hierarchyTool" }
         ]
     }
 ]

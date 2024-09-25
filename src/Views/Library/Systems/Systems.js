@@ -4,68 +4,68 @@ export default function Function() {
 
     return (
         <div className="c-light-2">
-            <h1>Welcome to Magikus Systems</h1>
+            <h1 className="text-center">Systems</h1>
             <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                - Empowering Your Game Development with a Comprehensive Set of Systems and Solutions -
+                The Systems module offers a suite of pre-built and robust systems that cater to a variety of 
+                common game development tasks. These systems are designed to seamlessly integrate into Unity, 
+                making it easy for developers to handle complex features such as animation, audio management, 
+                dialog creation and more with minimal effort. Whether you're a seasoned developer or a newcomer 
+                to Unity, these systems empower you to manage core game functionalities without needing to 
+                write extensive custom scripts. The Systems module is designed to work out of the box, streamlining 
+                the development process while still offering extensive flexibility and customization.
+                A key feature of these systems is their low-to-no-code approach, allowing developers and designers 
+                alike to create and manage game components through Unity's intuitive editor interface. Most systems 
+                can be used without any scripting knowledge, making them accessible to teams with diverse skill sets. 
+                Each system is also designed with modularity and extensibility in mind, ensuring that developers 
+                can tailor each solution to the specific needs of their project.
             </h6>
-            <p>
-                Explore the power of Magikus Systems,
-                a collection of simple yet powerful systems designed to tackle common mechanics used in game development.
-                These systems are meticulously crafted to be accessible and efficient,
-                providing a seamless solution to enhance your game development process.
+
+            <h3 className="p-2">Introduction</h3>
+            <p className="pad-left-2">
+                The Systems module of the Magikus Library provides developers with ready-to-use solutions for handling 
+                key game development tasks. With systems designed for animation, audio, tweaking, dialogs, event management 
+                and object pooling, the module covers a wide array of core game functionalities. Each system is designed 
+                to work seamlessly within Unity and requires minimal setup, making it easy to manage game components without 
+                extensive scripting. Whether you're a programmer or designer, these systems offer the flexibility to implement 
+                complex game features with ease, saving time and improving workflow efficiency. 
             </p>
             
-            <h2>What Sets Magikus Systems Apart?</h2>
-            <h5 className="c-light-1">Inexpensive</h5>
-            <p>
-                Magikus Systems offer exceptional value without breaking the bank,
-                making them accessible to developers of all levels.
-            </p>
-            <h5 className="c-light-1">Robust</h5>
-            <p>
-                Rest assured that these systems have been rigorously tested to ensure
-                reliable and consistent performance in your projects.
-            </p>
-            <h5 className="c-light-1">Easy to Implement and Use</h5>
-            <p>
-                Integration into your projects is a breeze,
-                and the user-friendly interfaces make utilizing these systems a joy.
-            </p>
-            <h5 className="c-light-1">Minimal Scripting Required</h5>
-            <p>
-                Say goodbye to lengthy custom scripts.
-                Magikus Systems are designed to minimize the need for extensive coding,
-                saving you valuable development time.
-            </p>
-            <h5 className="c-light-1">Well-Documented</h5>
-            <p>
-                We understand the importance of clear documentation.
-                Magikus Systems come with comprehensive guides,
-                making it easy to harness their potential.
-            </p>
-            <h5 className="c-light-1">Well-Tested</h5>
-            <p>
-                Our systems have been put through their paces to ensure they function smoothly and efficiently,
-                so you can focus on crafting your game without worries.
-            </p>
-            <h5 className="c-light-1">Time Saver</h5>
-            <p>
-                Embrace efficiency and let Magikus Systems handle the heavy lifting,
-                allowing you to dedicate more time to refining your game's core mechanics and features.
+            <h3 className="p-2">Summary</h3>
+            <p className="pad-left-2">
+                This section provides an overview of the different systems available in the Magikus Library. Each system 
+                addresses a specific area of game development, allowing for quick integration and customization within the Unity environment.
             </p>
 
-            <h2>Unlock New Possibilities</h2>
-            <p>
-                Magikus Systems are here to empower you,
-                allowing you to dive deeper into game development with ease.
-                Whether you're a seasoned developer or just starting your journey,
-                these systems provide the tools you need to bring your game to life and captivate your players.
+            <h4 className="c-light-1 p-3">Animation</h4>
+            <p className="pad-left-3">
+                The Animation system is designed to simplify the creation and management of sprite-based animations in Unity. 
+                It consists of two core components: the Sprite Animator and the Sprite Animation Asset. Together, these tools 
+                make it easy to create, edit and control animations for SpriteRenderer and UI Image components.
             </p>
-            <h2>Discover the Magic of Magikus Systems Today</h2>
-            <p>
-                Don't miss out on the opportunity to elevate your game development experience.
-                Unleash the potential of Magikus Systems and streamline your game development process with systems that are affordable, reliable, and time-saving.
-                Start creating captivating games that stand out from the crowd and leave a lasting impression on players worldwide.
+
+            <h4 className="c-light-1 p-3">Tweak</h4>
+            <p className="pad-left-3">
+                The Tweak system provides a dynamic solution for adjusting the position, rotation, scale and color of GameObjects 
+                with ease. It enables developers to create intricate, animated changes to objects without having to write 
+                custom scripts. The Tweak system supports complex tweaks, including sequences and randomized effects, for both 2D and 3D objects.
+            </p>
+
+            <h4 className="c-light-1 p-3">Audio</h4>
+            <p className="pad-left-3">
+                The Audio system simplifies the process of managing background music, sound effects and audio events in your game. 
+                Designed for ease of use, this system enables you to control audio playback without needing to write complex audio 
+                management code. The Audio system allows developers to manage complex audio setups for their games without needing 
+                extensive scripting knowledge, making it ideal for both designers and programmers.
+            </p>
+
+            <h4 className="c-light-1 p-3">Dialog</h4>
+            <p className="pad-left-3">
+                The Dialog system provides an easy-to-use tool for creating and managing in-game dialogues. It allows developers to 
+                write lines of dialogue, customize character settings (such as text color, font and speed) and integrate dynamic 
+                behaviors such as pauses and blinking pointers. The system can be easily configured within the Unity editor, 
+                eliminating the need for custom dialog scripting. This system is perfect for creating dynamic conversations or 
+                tutorials in games, and it provides enough customization options to cater to various dialogue needs without the 
+                need for custom implementations.
             </p>
         </div>
     );

@@ -5,6 +5,5 @@
     { "label": "Dialog Asset", "link": "/#/library/systems/dialogSystem/dialogAsset" },
     { "label": "Dialog Line", "link": "/#/library/systems/dialogSystem/dialogLine" },
     { "label": "Dialog Character Asset", "link": "/#/library/systems/dialogSystem/dialogCharacterAsset" },
-    { "label": "Dialog Settings Asset", "link": "/#/library/systems/dialogSystem/dialogSettingsAsset" },
-    { "label": "Change Log", "link": "/#/library/systems/dialogSystem/changelog" }
+    { "label": "Dialog Settings Asset", "link": "/#/library/systems/dialogSystem/dialogSettingsAsset" }
 ]
