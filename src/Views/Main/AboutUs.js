@@ -3,10 +3,17 @@ import React from "react";
 export default function Function() {
 
     return (
-        <div className="ar-100 c-light-2">
+        <div className="p-2 c-light-2">
             <div className="p-2 w-75 m-auto bg-dark-4 star-border">
                 <h1 className="p-2 text-center">About the Studio</h1>
                 
+                <h6 className="ts-i text-center pad-top-4 c-light-4 ft-secondary">
+                    A passionate game designer exploring new ideas and approaches to game development
+                </h6>
+                <h6 className="ts-i text-center pad-bottom-4 c-light-4 ft-secondary">
+                    Crafting Games and Tools that Inspire
+                </h6>
+
                 <p className="p-3">
                     My mission at Magikus Studios is to create immersive and engaging games that push the boundaries of what's possible in the gaming industry.
                     I believe that games can be more than just entertainment and strive to create experiences that inspire and educate players.

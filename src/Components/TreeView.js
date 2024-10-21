@@ -9,7 +9,7 @@ export default function Function(props)
         <ul className="tree">
             { 
                 props.menu.map((item, index) => {
-                    if (item.items == null) { return <TreeViewItem label={item.label} link={ item.link } key={ index } /> }
+                    if (item.items == null) { return <TreeViewItem item={item} key={ index }/> }
                     else { return <TreeViewNested menu={ item } key={ index } /> }
                 })
             }

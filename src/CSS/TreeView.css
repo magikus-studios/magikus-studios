@@ -42,7 +42,8 @@
     color: rgba(135, 170, 222, 100);
 }
 
-.tree-nested-label-close {
+.tree-nested-close {
+
     transition: all 0.2s ease-in-out;
 }
 

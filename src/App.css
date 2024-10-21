@@ -9,6 +9,7 @@
     --light-2: rgba(135, 170, 222, 100);
     --light-3: rgba(175, 198, 233, 100);
     --light-4: rgba(215, 227, 244, 100);
+    --light-5: rgb(20, 20, 20);
 
     --font-0: 'Montserrat', sans-serif;
     --font-1: 'Karla', sans-serif;
@@ -17,9 +18,21 @@
 
 .app { font-family: var(--font-1); }
 .star {
-    background-image: url("../public/images/Assets/Star Seamless Pattern - Blur 1.png");
+    height: 5120px;
+    width: 5120px;
+    background-image: url("../public/images/Assets/Seamless Pattern - Star - Blur 1.png");
     background-repeat: repeat;
     background-size: 200px;
+    animation: slide-star 100s linear infinite;
+}
+.star-container{
+    overflow: hidden;
+    position: fixed;
+    z-index: -2;
+}
+@keyframes slide-star{ 
+    0% { transform: translate3d(-200px, 0, 0); }
+    100% { transform: translate3d(0, 0, 0); }
 }
 .star-border
 {
@@ -28,6 +41,70 @@
     border-radius: 5px;
     border-color: var(--dark-2);
 }
+
+.clouds1 {
+    position: fixed;
+    height: 100px;
+    width: 5120px;
+    background-image: url("../public/images/Assets/Seamless Pattern - Clouds - 1 - V5.png");
+    background-repeat: repeat;
+    background-size: 100px;
+    animation: slide-clouds 262s linear infinite;
+}
+.clouds2 {
+    position: fixed;
+    height: 100px;
+    width: 5120px;
+    background-image: url("../public/images/Assets/Seamless Pattern - Clouds - 2 - V5.png");
+    background-repeat: repeat;
+    background-size: 100px;
+    animation: slide-clouds 162s linear infinite;
+}
+.clouds3 {
+    position: fixed;
+    height: 100px;
+    width: 5120px;
+    background-image: url("../public/images/Assets/Seamless Pattern - Clouds - 3 - V5.png");
+    background-repeat: repeat;
+    background-size: 100px;
+    animation: slide-clouds 38s linear infinite;
+}
+.clouds4 {
+    position: fixed;
+    height: 100px;
+    width: 5120px;
+    background-image: url("../public/images/Assets/Seamless Pattern - Clouds - 4 - V5.png");
+    background-repeat: repeat;
+    background-size: 100px;
+    animation: slide-clouds 62s linear infinite;
+}
+.clouds-container{
+    overflow: hidden;
+    position: fixed;
+    z-index: -1;
+}
+@keyframes slide-clouds{ 
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-100px, 0, 0); }
+}
+.ground {
+    height: 100px;
+    width: 200vw;
+    background-image: url("../public/images/Assets/Seamless Pattern - Ground - Blur 0.png");
+    background-repeat: repeat;
+    background-size: 300px;
+    animation: slide-ground 38s linear infinite;
+}
+.ground-container{
+    overflow: hidden;
+    position: fixed;
+    z-index: -1;
+}
+@keyframes slide-ground{ 
+    0% { transform: translate3d(-300px, 0, 0); }
+    100% { transform: translate3d(0, 0, 0); }
+}
+
 h1, h2, h3, h4, h5, h6 
 {
      font-family: var(--font-0); 
@@ -42,11 +119,26 @@ h1, h2, h3, h4, h5, h6
 }
 
 .ft-primary {
+    font-size: 300%;
+    color: var(--light-2);
     font-family: var(--font-0);
     font-weight: 900;
-    text-shadow: var(--dark-5) 4px 4px 4px;
+    text-shadow: var(--dark-4) 4px 4px 4px;
 }
-
+.ft-primary:hover {
+    font-size: 250%;
+    color: var(--light-3);
+    font-family: var(--font-0);
+    font-weight: 900;
+    text-shadow: var(--dark-4) 4px 8px 4px;
+    transition: all 0.3s ease-out; 
+}
+.vertical-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 .o-hiden { overflow: hidden; }
 .l-style-none { list-style: none; }
 .t-dec-none { text-decoration: none; }
@@ -59,84 +151,100 @@ h1, h2, h3, h4, h5, h6
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 75%;
 }
-.hide 
+.hide { display: none; }
+.open-group
 {
-    display: none;
+    max-height: 1000em;
+    overflow: auto;
+    overflow-y: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.close-group
+{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.1s ease-in-out;
+}
+.img-border
+{
+    border: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: var(--dark-2);
 }
 
-.c-dark-4 { color: var(--dark-4); }
-.c-dark-3 { color: var(--dark-3); }
-.c-dark-2 { color: var(--dark-2); }
-.c-dark-1 { color: var(--dark-1); }
-.c-light-0 { color: var(--light-0); }
-.c-light-1 { color: var(--light-1); }
-.c-light-2 { color: var(--light-2); }
-.c-light-3 { color: var(--light-3); }
-.c-light-4 { color: var(--light-4); }
+.c-dark-4 { color: var(--dark-4); transition: all 0.3s ease-in-out; }
+.c-dark-3 { color: var(--dark-3); transition: all 0.3s ease-in-out; }
+.c-dark-2 { color: var(--dark-2); transition: all 0.3s ease-in-out; }
+.c-dark-1 { color: var(--dark-1); transition: all 0.3s ease-in-out; }
+.c-light-0 { color: var(--light-0); transition: all 0.3s ease-in-out; }
+.c-light-1 { color: var(--light-1); transition: all 0.3s ease-in-out; }
+.c-light-2 { color: var(--light-2); transition: all 0.3s ease-in-out; }
+.c-light-3 { color: var(--light-3); transition: all 0.3s ease-in-out; }
+.c-light-4 { color: var(--light-4); transition: all 0.3s ease-in-out; }
 
-.c-dark-4-h:hover { color: var(--dark-4); }
-.c-dark-3-h:hover { color: var(--dark-3); }
-.c-dark-2-h:hover { color: var(--dark-2); }
-.c-dark-1-h:hover { color: var(--dark-1); }
-.c-light-0-h:hover { color: var(--light-0); }
-.c-light-1-h:hover { color: var(--light-1); }
-.c-light-2-h:hover { color: var(--light-2); }
-.c-light-3-h:hover { color: var(--light-3); }
-.c-light-4-h:hover { color: var(--light-4); }
-
-.bg-dark-5 { background-color: var(--dark-5); }
-.bg-dark-4 { background-color: var(--dark-4); }
-.bg-dark-3 { background-color: var(--dark-3); }
-.bg-dark-2 { background-color: var(--dark-2); }
-.bg-dark-1 { background-color: var(--dark-1); }
-.bg-light-0 { background-color: var(--light-0); }
-.bg-light-1 { background-color: var(--light-1); }
-.bg-light-2 { background-color: var(--light-2); }
-.bg-light-3 { background-color: var(--light-3); }
-.bg-light-4 { background-color: var(--light-4); }
-
-.bg-dark-40 { background: linear-gradient(0deg, var(--dark-4) 0%, var(--dark-3) 15%, var(--dark-4) 25%); }
-.bg-dark-43 { background: linear-gradient(0deg, var(--dark-4) 0%, var(--dark-3) 15%); }
-.bg-dark-34 { background: linear-gradient(0deg, var(--dark-3) 85%, var(--dark-4) 100%); }
-.bg-dark-20 { background: linear-gradient(0deg, var(--dark-5) 0%, var(--dark-3) 5%, var(--dark-3) 95%, var(--dark-5) 100%); }
+.c-dark-4-h:hover { color: var(--dark-4); transition: all 0.3s ease-out; }
+.c-dark-3-h:hover { color: var(--dark-3); transition: all 0.3s ease-out; }
+.c-dark-2-h:hover { color: var(--dark-2); transition: all 0.3s ease-out; }
+.c-dark-1-h:hover { color: var(--dark-1); transition: all 0.3s ease-out; }
+.c-light-0-h:hover { color: var(--light-0); transition: all 0.3s ease-out; }
+.c-light-1-h:hover { color: var(--light-1); transition: all 0.3s ease-out; }
+.c-light-2-h:hover { color: var(--light-2); transition: all 0.3s ease-out; }
+.c-light-3-h:hover { color: var(--light-3); transition: all 0.3s ease-out; }
+.c-light-4-h:hover { color: var(--light-4); transition: all 0.3s ease-out; }
 
 .fade-in { opacity: 0; transition: all 0.5s ease-in-out; }
 .fade-in:hover { opacity: 100; transition: all 0.5s ease-in-out; }
 .fade-out { opacity: 100; transition: all 0.5s ease-in-out; }
 .fade-out:hover { opacity: 0; transition: all 0.5s ease-in-out; }
 
+.bg-dark-40 { background: linear-gradient(0deg, var(--dark-4) 0%, var(--dark-3) 15%, var(--dark-4) 25%); }
+.bg-dark-43 { background: linear-gradient(0deg, var(--dark-4) 0%, var(--dark-3) 15%); }
+.bg-dark-34 { background: linear-gradient(0deg, var(--dark-3) 85%, var(--dark-4) 100%); }
+.bg-dark-20 { background: linear-gradient(0deg, var(--dark-5) 0%, var(--dark-3) 5%, var(--dark-3) 95%, var(--dark-5) 100%); }
 
-.bg-dark-4-h:hover { background-color: var(--dark-4); }
-.bg-dark-3-h:hover { background-color: var(--dark-3); }
-.bg-dark-2-h:hover { background-color: var(--dark-2); }
-.bg-dark-1-h:hover { background-color: var(--dark-1); }
-.bg-light-0-h:hover { background-color: var(--light-0); }
-.bg-light-1-h:hover { background-color: var(--light-1); }
-.bg-light-2-h:hover { background-color: var(--light-2); }
-.bg-light-3-h:hover { background-color: var(--light-3); }
-.bg-light-4-h:hover { background-color: var(--light-4); }
+.bg-dark-5 { background-color: var(--dark-5); transition: all 0.3s ease-in-out; }
+.bg-dark-4 { background-color: var(--dark-4); transition: all 0.3s ease-in-out; }
+.bg-dark-3 { background-color: var(--dark-3); transition: all 0.3s ease-in-out; }
+.bg-dark-2 { background-color: var(--dark-2); transition: all 0.3s ease-in-out; }
+.bg-dark-1 { background-color: var(--dark-1); transition: all 0.3s ease-in-out; }
+.bg-light-0 { background-color: var(--light-0); transition: all 0.3s ease-in-out; }
+.bg-light-1 { background-color: var(--light-1); transition: all 0.3s ease-in-out; }
+.bg-light-2 { background-color: var(--light-2); transition: all 0.3s ease-in-out; }
+.bg-light-3 { background-color: var(--light-3); transition: all 0.3s ease-in-out; }
+.bg-light-4 { background-color: var(--light-4); transition: all 0.3s ease-in-out; }
 
-.br-dark-4 { border-color: var(--dark-4); }
-.br-dark-3 { border-color: var(--dark-3); }
-.br-dark-2 { border-color: var(--dark-2); }
-.br-dark-1 { border-color: var(--dark-1); }
-.br-light-0 { border-color: var(--light-0); }
-.br-light-1 { border-color: var(--light-1); }
-.br-light-2 { border-color: var(--light-2); }
-.br-light-3 { border-color: var(--light-3); }
-.br-light-4 { border-color: var(--light-4); }
+.bg-dark-4-h:hover { background-color: var(--dark-4); transition: all 0.3s ease-out; }
+.bg-dark-3-h:hover { background-color: var(--dark-3); transition: all 0.3s ease-out; }
+.bg-dark-2-h:hover { background-color: var(--dark-2); transition: all 0.3s ease-out; }
+.bg-dark-1-h:hover { background-color: var(--dark-1); transition: all 0.3s ease-out; }
+.bg-light-0-h:hover { background-color: var(--light-0); transition: all 0.3s ease-out; }
+.bg-light-1-h:hover { background-color: var(--light-1); transition: all 0.3s ease-out; }
+.bg-light-2-h:hover { background-color: var(--light-2); transition: all 0.3s ease-out; }
+.bg-light-3-h:hover { background-color: var(--light-3); transition: all 0.3s ease-out; }
+.bg-light-4-h:hover { background-color: var(--light-4); transition: all 0.3s ease-out; }
 
-.br-dark-4-h:hover { border-color: var(--dark-4); }
-.br-dark-3-h:hover { border-color: var(--dark-3); }
-.br-dark-2-h:hover { border-color: var(--dark-2); }
-.br-dark-1-h:hover { border-color: var(--dark-1); }
-.br-light-0-h:hover { border-color: var(--light-0); }
-.br-light-1-h:hover { border-color: var(--light-1); }
-.br-light-2-h:hover { border-color: var(--light-2); }
-.br-light-3-h:hover { border-color: var(--light-3); }
-.br-light-4-h:hover { border-color: var(--light-4); }
+.br-dark-4 { border-color: var(--dark-4); transition: all 0.3s ease-in-out; }
+.br-dark-3 { border-color: var(--dark-3); transition: all 0.3s ease-in-out; }
+.br-dark-2 { border-color: var(--dark-2); transition: all 0.3s ease-in-out; }
+.br-dark-1 { border-color: var(--dark-1); transition: all 0.3s ease-in-out; }
+.br-light-0 { border-color: var(--light-0); transition: all 0.3s ease-in-out; }
+.br-light-1 { border-color: var(--light-1); transition: all 0.3s ease-in-out; }
+.br-light-2 { border-color: var(--light-2); transition: all 0.3s ease-in-out; }
+.br-light-3 { border-color: var(--light-3); transition: all 0.3s ease-in-out; }
+.br-light-4 { border-color: var(--light-4); transition: all 0.3s ease-in-out; }
+
+.br-dark-4-h:hover { border-color: var(--dark-4); transition: all 0.3s ease-out; }
+.br-dark-3-h:hover { border-color: var(--dark-3); transition: all 0.3s ease-out; }
+.br-dark-2-h:hover { border-color: var(--dark-2); transition: all 0.3s ease-out; }
+.br-dark-1-h:hover { border-color: var(--dark-1); transition: all 0.3s ease-out; }
+.br-light-0-h:hover { border-color: var(--light-0); transition: all 0.3s ease-out; }
+.br-light-1-h:hover { border-color: var(--light-1); transition: all 0.3s ease-out; }
+.br-light-2-h:hover { border-color: var(--light-2); transition: all 0.3s ease-out; }
+.br-light-3-h:hover { border-color: var(--light-3); transition: all 0.3s ease-out; }
+.br-light-4-h:hover { border-color: var(--light-4); transition: all 0.3s ease-out; }
 
 .w-0 { width: 0%; }
 .w-5 { width: 5%; }

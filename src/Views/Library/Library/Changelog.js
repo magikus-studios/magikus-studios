@@ -29,7 +29,8 @@ export default function Function() {
 
     return (
         <div className="c-light-2">
-            <h1>Changelog</h1>
+            <h1 className="text-center">Magikus Library</h1>
+            <h2 className="text-center">Changelog</h2>
             <p>All notable changes to this project will be documented in this file.</p>
             <p>
                 The format is based on

@@ -11,18 +11,18 @@
         "label": "Decorators",
         "items": [
             { "label": "[Decorators]", "link": "/#/library/decorators" },
-            { "label": "Button", "link": "/#/library/inConstruction" },
-            { "label": "Line", "link": "/#/library/inConstruction" },
-            { "label": "Text Box", "link": "/#/library/inConstruction" },
-            { "label": "Title", "link": "/#/library/inConstruction" },
-            { "label": "Toggle", "link": "/#/library/inConstruction" },
-            { "label": "Show IF", "link": "/#/library/inConstruction" },
-            { "label": "Collapsable", "link": "/#/library/inConstruction" },
-            { "label": "Non Editable", "link": "/#/library/inConstruction" },
-            { "label": "Progress Bar", "link": "/#/library/inConstruction" },
-            { "label": "Reference Value", "link": "/#/library/inConstruction" },
-            { "label": "Collapsable List", "link": "/#/library/inConstruction" },
-            { "label": "Key Binding", "link": "/#/library/inConstruction" }
+            { "label": "Button", "link": "/#/library/decorators/button" },
+            { "label": "Line", "link": "/#/library/decorators/line" },
+            { "label": "Text Box", "link": "/#/library/decorators/textBox" },
+            { "label": "Title", "link": "/#/library/decorators/title" },
+            { "label": "Toggle", "link": "/#/library/decorators/toggle" },
+            { "label": "Show If", "link": "/#/library/decorators/showIf" },
+            { "label": "Collapsable", "link": "/#/library/decorators/collapsable" },
+            { "label": "Non Editable", "link": "/#/library/decorators/nonEditable" },
+            { "label": "Progress Bar", "link": "/#/library/decorators/progressBar" },
+            { "label": "Reference Value", "link": "/#/library/decorators/referenceValue" },
+            { "label": "Collapsable List", "link": "/#/library/decorators/collapsableList" },
+            { "label": "Key Binding", "link": "/#/library/decorators/keyBinding" }
         ]
     },
     {
@@ -45,18 +45,18 @@
         "label": "Structures",
         "items": [
             { "label": "[Structures]", "link": "/#/library/structures" },
-            { "label": "Grids", "link": "/#/library/inConstruction" },
-            { "label": "Toggles", "link": "/#/library/inConstruction" },
-            { "label": "Vectors", "link": "/#/library/inConstruction" },
-            { "label": "Couples", "link": "/#/library/inConstruction" },
-            { "label": "Ranges", "link": "/#/library/inConstruction" },
-            { "label": "Tier", "link": "/#/library/inConstruction" },
-            { "label": "Debug State", "link": "/#/library/inConstruction" },
-            { "label": "Label", "link": "/#/library/inConstruction" },
-            { "label": "Time Scale", "link": "/#/library/inConstruction" },
-            { "label": "Events", "link": "/#/library/inConstruction" },
-            { "label": "Value Assets", "link": "/#/library/inConstruction" },
-            { "label": "Switches", "link": "/#/library/inConstruction" }
+            { "label": "Grids", "link": "/#/library/structures/grids" },
+            { "label": "Toggles", "link": "/#/library/structures/toggles" },
+            { "label": "Vectors", "link": "/#/library/structures/vectors" },
+            { "label": "Couples", "link": "/#/library/structures/couples" },
+            { "label": "Ranges", "link": "/#/library/structures/ranges" },
+            { "label": "Tier", "link": "/#/library/structures/tier" },
+            { "label": "Debug State", "link": "/#/library/structures/debugState" },
+            { "label": "Label", "link": "/#/library/structures/label" },
+            { "label": "Time Scale", "link": "/#/library/structures/timeScale" },
+            { "label": "Events", "link": "/#/library/structures/events" },
+            { "label": "Value Assets", "link": "/#/library/structures/valueAssets" },
+            { "label": "Switches", "link": "/#/library/structures/switches" }
         ]
     },
     {
@@ -73,19 +73,19 @@
         "label": "Systems",
         "items": [
             { "label": "[Systems]", "link": "/#/library/systems" },
-            { "label": "Animation System", "link": "/#/library/systems/spriteAnimationSystem" },
-            { "label": "Tweak System", "link": "/#/library/systems/tweakSystem" },
-            { "label": "Audio System", "link": "/#/library/systems/audioSystem" },
-            { "label": "Dialog System", "link": "/#/library/systems/dialogSystem" }
+            { "label": "Animation System", "link": "/#/library/systems/animationSystem", "pro": true },
+            { "label": "Tweak System", "link": "/#/library/systems/tweakSystem", "pro": true },
+            { "label": "Audio System", "link": "/#/library/systems/audioSystem", "pro": true },
+            { "label": "Dialog System", "link": "/#/library/systems/dialogSystem", "pro": true }
         ]
     },
     {
         "label": "Tools",
         "items": [
             { "label": "[Tools]", "link": "/#/library/tools" },
-            { "label": "Curve Editor", "link": "/#/library/tools/curveEditor" },
-            { "label": "Reference Console", "link": "/#/library/tools/referenceConsole" },
-            { "label": "Hierarchy Tool", "link": "/#/library/tools/hierarchyTool" }
+            { "label": "Curve Editor", "link": "/#/library/tools/curveEditor", "pro": true},
+            { "label": "Reference Console", "link": "/#/library/tools/referenceConsole", "pro": true },
+            { "label": "Hierarchy Tool", "link": "/#/library/tools/hierarchyTool", "pro": true }
         ]
     }
 ]

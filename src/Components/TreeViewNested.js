@@ -11,7 +11,7 @@ export default function Function(props) {
             <ul>
                 {
                     props.menu.items.map((item, index) => {
-                        if (item.items == null) { return <TreeViewItem label={item.label} link={item.link} key={index} /> }
+                        if (item.items == null) { return <TreeViewItem item={item} key={index}/> }
                         else { return <Function menu={item} key={index} /> }
                     })
                 }

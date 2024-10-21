@@ -1,3 +1,15 @@
+import LibraryUtilitiesOperationsMenu from "Views/Library/Utilities/Operations/Menu.json";
+import LibraryUtilitiesOperations from "Views/Library/Utilities/Operations/Operations.js";
+import LibraryUtilitiesOperationsValueMode from "Views/Library/Utilities/Operations/Modes.js";
+import LibraryUtilitiesOperationsMutableValues from "Views/Library/Utilities/Operations/MutuableValues.js";
+import LibraryUtilitiesOperationsOperationsMath from "Views/Library/Utilities/Operations/OperationsMath.js";
+import LibraryUtilitiesOperationsOperationsIntrinsic from "Views/Library/Utilities/Operations/OperationsIntrinsic.js";
+import LibraryUtilitiesOperationsOperationsClamp from "Views/Library/Utilities/Operations/OperationsClamp.js";
+import LibraryUtilitiesOperationsOperationsWrap from "Views/Library/Utilities/Operations/OperationsWrap.js";
+import LibraryUtilitiesOperationsTargetComponents from "Views/Library/Utilities/Operations/TargetComponents.js";
+import LibraryUtilitiesOperationsInputAndOutputTypes from "Views/Library/Utilities/Operations/InputAndOutputTypes.js";
+
+
 import './App.css';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -13,73 +25,60 @@ import LibraryLibrary from "Views/Library/Library/Library";
 import LibraryChangelog from "Views/Library/Library/Changelog";
 import LibraryLicense from "Views/Library/Library/License";
 
-import LibraryDecorators from "Views/Library/Decorators/Decorators.js";
+import LibraryDecorators from "Views/Library/Decorators/_Decorators.js";
+import LibraryDecoratorsButton from "Views/Library/Decorators/Button.js";
+import LibraryDecoratorsLine from "Views/Library/Decorators/Line.js";
+import LibraryDecoratorsTextBox from "Views/Library/Decorators/TextBox.js";
+import LibraryDecoratorsTitle from "Views/Library/Decorators/Title.js";
+import LibraryDecoratorsToggle from "Views/Library/Decorators/Toggle.js";
+import LibraryDecoratorsShowIf from "Views/Library/Decorators/ShowIf.js";
+import LibraryDecoratorsCollapsable from "Views/Library/Decorators/Collapsable.js";
+import LibraryDecoratorsNonEditable from "Views/Library/Decorators/NonEditable.js";
+import LibraryDecoratorsProgressBar from "Views/Library/Decorators/ProgressBar.js";
+import LibraryDecoratorsReferenceValue from "Views/Library/Decorators/ReferenceValue.js";
+import LibraryDecoratorsCollapsableList from "Views/Library/Decorators/CollapsableList.js";
+import LibraryDecoratorsKeyBinding from "Views/Library/Decorators/KeyBinding.js";
 
+import LibraryUtilities from "Views/Library/Utilities/_Utilities.js";
 
-import LibraryUtilities from "Views/Library/Utilities/Utilities.js";
+import LibraryStructures from "Views/Library/Structures/_Structures.js";
+import LibraryStructuresGrids from "Views/Library/Structures/Grids.js";
+import LibraryStructuresToggles from "Views/Library/Structures/Toggles.js";
+import LibraryStructuresVectors from "Views/Library/Structures/Vectors.js";
+import LibraryStructuresCouples from "Views/Library/Structures/Couples.js";
+import LibraryStructuresRanges from "Views/Library/Structures/Ranges.js";
+import LibraryStructuresTier from "Views/Library/Structures/Tier.js";
+import LibraryStructuresDebugState from "Views/Library/Structures/DebugState.js";
+import LibraryStructuresLabel from "Views/Library/Structures/Label.js";
+import LibraryStructuresTimeScale from "Views/Library/Structures/TimeScale.js";
+import LibraryStructuresEvents from "Views/Library/Structures/Events.js";
+import LibraryStructuresValueAssets from "Views/Library/Structures/ValueAssets.js";
+import LibraryStructuresSwitches from "Views/Library/Structures/Switches.js";
 
-import LibraryUtilitiesOperationsMenu from "Views/Library/Utilities/Operations/Menu.json";
-import LibraryUtilitiesOperations from "Views/Library/Utilities/Operations/Operations.js";
-import LibraryUtilitiesOperationsValueMode from "Views/Library/Utilities/Operations/Modes.js";
-import LibraryUtilitiesOperationsMutableValues from "Views/Library/Utilities/Operations/MutuableValues.js";
-import LibraryUtilitiesOperationsOperationsMath from "Views/Library/Utilities/Operations/OperationsMath.js";
-import LibraryUtilitiesOperationsOperationsIntrinsic from "Views/Library/Utilities/Operations/OperationsIntrinsic.js";
-import LibraryUtilitiesOperationsOperationsClamp from "Views/Library/Utilities/Operations/OperationsClamp.js";
-import LibraryUtilitiesOperationsOperationsWrap from "Views/Library/Utilities/Operations/OperationsWrap.js";
-import LibraryUtilitiesOperationsTargetComponents from "Views/Library/Utilities/Operations/TargetComponents.js";
-import LibraryUtilitiesOperationsInputAndOutputTypes from "Views/Library/Utilities/Operations/InputAndOutputTypes.js";
+import LibraryMachines from "Views/Library/Machines/_Machines.js";
+import LibraryMachinesUpdater from "Views/Library/Machines/Updater.js";
+import LibraryMachinesCycle from "Views/Library/Machines/Cycle.js";
+import LibraryMachinesState from "Views/Library/Machines/State.js";
+import LibraryMachinesTween from "Views/Library/Machines/Tween.js";
 
+import LibrarySystems from "Views/Library/Systems/_Systems.js";
+import LibrarySystemsSpriteAnimationSystem from "Views/Library/Systems/AnimationSystem.js";
+import LibrarySystemsTweakSystem from "Views/Library/Systems/TweakSystem.js";
+import LibrarySystemsAudioSystem from "Views/Library/Systems/AudioSystem.js";
+import LibrarySystemsDialogSystem from "Views/Library/Systems/DialogSystem.js";
 
-import LibraryStructures from "Views/Library/Structures/Structures.js";
-
-
-import LibraryMachines from "Views/Library/Machines/Machines.js";
-import LibraryMachinesUpdater from "Views/Library/Machines/Updater/Updater.js";
-import LibraryMachinesCycle from "Views/Library/Machines/Cycle/Cycle.js";
-import LibraryMachinesState from "Views/Library/Machines/State/State.js";
-import LibraryMachinesTween from "Views/Library/Machines/Tween/Tween.js";
-
-import LibrarySystems from "Views/Library/Systems/Systems.js";
-
-import LibrarySystemsAudioSystemMenu from "Views/Library/Systems/AudioSystem/Menu.json";
-import LibrarySystemsAudioSystem from "Views/Library/Systems/AudioSystem/AudioSystem.js";
-import LibrarySystemsAudioSystemSoundManagerComponent from "Views/Library/Systems/AudioSystem/SoundManagerComponent.js";
-import LibrarySystemsAudioSystemSoundLibraryAsset from "Views/Library/Systems/AudioSystem/SoundLibraryAsset.js";
-import LibrarySystemsAudioSystemSoundAsset from "Views/Library/Systems/AudioSystem/SoundAsset.js";
-import LibrarySystemsAudioSystemSoundMasterAsset from "Views/Library/Systems/AudioSystem/SoundMasterAsset.js";
-import LibrarySystemsAudioSystemSoundLabelAsset from "Views/Library/Systems/AudioSystem/SoundLabelAsset.js";
-
-import LibrarySystemsDialogSystemMenu from "Views/Library/Systems/DialogSystem/Menu.json";
-import LibrarySystemsDialogSystem from "Views/Library/Systems/DialogSystem/DialogSystem.js";
-import LibrarySystemsDialogSystemDialogManagerComponent from "Views/Library/Systems/DialogSystem/DialogManagerComponent.js";
-import LibrarySystemsDialogSystemDialogAsset from "Views/Library/Systems/DialogSystem/DialogAsset.js";
-import LibrarySystemsDialogSystemDialogLine from "Views/Library/Systems/DialogSystem/DialogLine.js";
-import LibrarySystemsDialogSystemDialogCharacterAsset from "Views/Library/Systems/DialogSystem/DialogCharacterAsset.js";
-import LibrarySystemsDialogSystemDialogSettingsAsset from "Views/Library/Systems/DialogSystem/DialogSettingsAsset.js";
-
-import LibrarySystemsSpriteAnimationSystemMenu from "Views/Library/Systems/SpriteAnimationSystem/Menu.json";
-import LibrarySystemsSpriteAnimationSystem from "Views/Library/Systems/SpriteAnimationSystem/SpriteAnimationSystem.js";
-import LibrarySystemsSpriteAnimationSystemSpriteAnimatorComponent from "Views/Library/Systems/SpriteAnimationSystem/SpriteAnimatorComponent.js";
-import LibrarySystemsSpriteAnimationSystemSpriteAnimationAsset from "Views/Library/Systems/SpriteAnimationSystem/SpriteAnimationAsset.js";
-
-import LibrarySystemsTweakSystemMenu from "Views/Library/Systems/TweakSystem/Menu.json";
-import LibrarySystemsTweakSystem from "Views/Library/Systems/TweakSystem/TweakSystem.js";
-import LibrarySystemsTweakSystemTweakManagerComponent from "Views/Library/Systems/TweakSystem/TweakManagerComponent.js";
-import LibrarySystemsTweakSystemTweakPositionAsset from "Views/Library/Systems/TweakSystem/TweakPositionAsset.js";
-import LibrarySystemsTweakSystemTweakRotationAsset from "Views/Library/Systems/TweakSystem/TweakRotationAsset.js";
-import LibrarySystemsTweakSystemTweakScaleAsset from "Views/Library/Systems/TweakSystem/TweakScaleAsset.js";
-import LibrarySystemsTweakSystemTweakColorAsset from "Views/Library/Systems/TweakSystem/TweakColorAsset.js";
-import LibrarySystemsTweakSystemTweakSequenceAsset from "Views/Library/Systems/TweakSystem/TweakSequenceAsset.js";
-
-import LibraryTools from "Views/Library/Tools/Tools.js";
-import LibraryToolsCurveEditor from "Views/Library/Tools/CurveEditor/CurveEditor.js";
-import LibraryToolsReferenceConsole from "Views/Library/Tools/ReferenceConsole/ReferenceConsole.js";
-import LibraryToolsHierarchyTool from "Views/Library/Tools/HierarchyTool/HierarchyTool.js";
+import LibraryTools from "Views/Library/Tools/_Tools.js";
+import LibraryToolsCurveEditor from "Views/Library/Tools/CurveEditor.js";
+import LibraryToolsReferenceConsole from "Views/Library/Tools/ReferenceConsole.js";
+import LibraryToolsHierarchyTool from "Views/Library/Tools/HierarchyTool.js";
 
 export default function App() {
 
   return (
-    <div className='app bg-dark-4 star'>
+    <div className='app'>
+      <div className="star-container">
+        <div className="star"></div>
+      </div>
       <Router>
         <Header/>
         <Routes>
@@ -91,11 +90,54 @@ export default function App() {
           <Route exact path="/library/License" element={<Library content={<LibraryLicense />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/inConstruction" element={<Library content={<LibraryInConstruction />} menu={LibraryMenu} />}></Route>
 
-
           <Route exact path="/library/decorators" element={<Library content={<LibraryDecorators />} menu={LibraryMenu} />}></Route>
-
+          <Route exact path="/library/decorators/button" element={<Library content={<LibraryDecoratorsButton />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/decorators/line" element={<Library content={<LibraryDecoratorsLine />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/decorators/textBox" element={<Library content={<LibraryDecoratorsTextBox />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/decorators/title" element={<Library content={<LibraryDecoratorsTitle />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/decorators/toggle" element={<Library content={<LibraryDecoratorsToggle />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/decorators/showIf" element={<Library content={<LibraryDecoratorsShowIf />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/decorators/collapsable" element={<Library content={<LibraryDecoratorsCollapsable />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/decorators/nonEditable" element={<Library content={<LibraryDecoratorsNonEditable />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/decorators/progressBar" element={<Library content={<LibraryDecoratorsProgressBar />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/decorators/referenceValue" element={<Library content={<LibraryDecoratorsReferenceValue />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/decorators/collapsableList" element={<Library content={<LibraryDecoratorsCollapsableList />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/decorators/keyBinding" element={<Library content={<LibraryDecoratorsKeyBinding />} menu={LibraryMenu} />}></Route>
 
           <Route exact path="/library/utilities" element={<Library content={<LibraryUtilities />} menu={LibraryMenu} />}></Route>
+
+          <Route exact path="/library/structures" element={<Library content={<LibraryStructures />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/structures/grids" element={<Library content={<LibraryStructuresGrids />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/structures/toggles" element={<Library content={<LibraryStructuresToggles />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/structures/vectors" element={<Library content={<LibraryStructuresVectors />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/structures/couples" element={<Library content={<LibraryStructuresCouples />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/structures/ranges" element={<Library content={<LibraryStructuresRanges />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/structures/tier" element={<Library content={<LibraryStructuresTier />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/structures/debugState" element={<Library content={<LibraryStructuresDebugState />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/structures/label" element={<Library content={<LibraryStructuresLabel />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/structures/timeScale" element={<Library content={<LibraryStructuresTimeScale />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/structures/events" element={<Library content={<LibraryStructuresEvents />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/structures/valueAssets" element={<Library content={<LibraryStructuresValueAssets />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/structures/switches" element={<Library content={<LibraryStructuresSwitches />} menu={LibraryMenu} />}></Route>
+
+          <Route exact path="/library/machines" element={<Library content={<LibraryMachines />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/machines/updater" element={<Library content={<LibraryMachinesUpdater />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/machines/cycle" element={<Library content={<LibraryMachinesCycle />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/machines/state" element={<Library content={<LibraryMachinesState />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/machines/tween" element={<Library content={<LibraryMachinesTween />} menu={LibraryMenu} />}></Route>
+
+          <Route exact path="/library/systems" element={<Library content={<LibrarySystems />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/systems/animationSystem" element={<Library content={<LibrarySystemsSpriteAnimationSystem />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/systems/tweakSystem" element={<Library content={<LibrarySystemsTweakSystem />} menu={LibraryMenu} />}></Route>          
+          <Route exact path="/library/systems/audioSystem" element={<Library content={<LibrarySystemsAudioSystem />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/systems/dialogSystem" element={<Library content={<LibrarySystemsDialogSystem />} menu={LibraryMenu} />}></Route>
+
+          <Route exact path="/library/tools" element={<Library content={<LibraryTools />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/tools/curveEditor" element={<Library content={<LibraryToolsCurveEditor />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/tools/referenceConsole" element={<Library content={<LibraryToolsReferenceConsole />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/tools/hierarchyTool" element={<Library content={<LibraryToolsHierarchyTool />} menu={LibraryMenu} />}></Route>
+ 
+
 
           <Route exact path="/library/utilities/operations" element={<Library content={<LibraryUtilitiesOperations />} menu={LibraryMenu} submenu={LibraryUtilitiesOperationsMenu} />}></Route>
           <Route exact path="/library/utilities/operations/modes" element={<Library content={<LibraryUtilitiesOperationsValueMode />} menu={LibraryMenu} submenu={LibraryUtilitiesOperationsMenu} />}></Route>
@@ -106,49 +148,6 @@ export default function App() {
           <Route exact path="/library/utilities/operations/operationsWrap" element={<Library content={<LibraryUtilitiesOperationsOperationsWrap />} menu={LibraryMenu} submenu={LibraryUtilitiesOperationsMenu} />}></Route>
           <Route exact path="/library/utilities/operations/targetComponents" element={<Library content={<LibraryUtilitiesOperationsTargetComponents />} menu={LibraryMenu} submenu={LibraryUtilitiesOperationsMenu} />}></Route>
           <Route exact path="/library/utilities/operations/inputAndOutputTypes" element={<Library content={<LibraryUtilitiesOperationsInputAndOutputTypes />} menu={LibraryMenu} submenu={LibraryUtilitiesOperationsMenu} />}></Route>
-
-          <Route exact path="/library/structures" element={<Library content={<LibraryStructures />} menu={LibraryMenu} />}></Route>
-
-
-          <Route exact path="/library/machines" element={<Library content={<LibraryMachines />} menu={LibraryMenu} />}></Route>
-          <Route exact path="/library/machines/updater" element={<Library content={<LibraryMachinesUpdater />} menu={LibraryMenu} />}></Route>
-          <Route exact path="/library/machines/cycle" element={<Library content={<LibraryMachinesCycle />} menu={LibraryMenu} />}></Route>
-          <Route exact path="/library/machines/state" element={<Library content={<LibraryMachinesState />} menu={LibraryMenu} />}></Route>
-          <Route exact path="/library/machines/tween" element={<Library content={<LibraryMachinesTween />} menu={LibraryMenu} />}></Route>
-
-
-          <Route exact path="/library/systems" element={<Library content={<LibrarySystems />} menu={LibraryMenu} />}></Route>
-
-          <Route exact path="/library/systems/audioSystem" element={<Library content={<LibrarySystemsAudioSystem />} menu={LibraryMenu} submenu={LibrarySystemsAudioSystemMenu} />}></Route>
-          <Route exact path="/library/systems/audioSystem/soundManagerComponent" element={<Library content={<LibrarySystemsAudioSystemSoundManagerComponent />} menu={LibraryMenu} submenu={LibrarySystemsAudioSystemMenu} />}></Route>
-          <Route exact path="/library/systems/audioSystem/soundLibraryAsset" element={<Library content={<LibrarySystemsAudioSystemSoundLibraryAsset />} menu={LibraryMenu} submenu={LibrarySystemsAudioSystemMenu} />}></Route>
-          <Route exact path="/library/systems/audioSystem/soundAsset" element={<Library content={<LibrarySystemsAudioSystemSoundAsset />} menu={LibraryMenu} submenu={LibrarySystemsAudioSystemMenu} />}></Route>
-          <Route exact path="/library/systems/audioSystem/soundMasterAsset" element={<Library content={<LibrarySystemsAudioSystemSoundMasterAsset />} menu={LibraryMenu} submenu={LibrarySystemsAudioSystemMenu} />}></Route>
-          <Route exact path="/library/systems/audioSystem/soundLabelAsset" element={<Library content={<LibrarySystemsAudioSystemSoundLabelAsset />} menu={LibraryMenu} submenu={LibrarySystemsAudioSystemMenu} />}></Route>
-          
-          <Route exact path="/library/systems/dialogSystem" element={<Library content={<LibrarySystemsDialogSystem />} menu={LibraryMenu} submenu={LibrarySystemsDialogSystemMenu} />}></Route>
-          <Route exact path="/library/systems/dialogSystem/dialogManagerComponent" element={<Library content={<LibrarySystemsDialogSystemDialogManagerComponent />} menu={LibraryMenu} submenu={LibrarySystemsDialogSystemMenu} />}></Route>
-          <Route exact path="/library/systems/dialogSystem/dialogAsset" element={<Library content={<LibrarySystemsDialogSystemDialogAsset />} menu={LibraryMenu} submenu={LibrarySystemsDialogSystemMenu} />}></Route>
-          <Route exact path="/library/systems/dialogSystem/dialogLine" element={<Library content={<LibrarySystemsDialogSystemDialogLine />} menu={LibraryMenu} submenu={LibrarySystemsDialogSystemMenu} />}></Route>
-          <Route exact path="/library/systems/dialogSystem/dialogCharacterAsset" element={<Library content={<LibrarySystemsDialogSystemDialogCharacterAsset />} menu={LibraryMenu} submenu={LibrarySystemsDialogSystemMenu} />}></Route>
-          <Route exact path="/library/systems/dialogSystem/dialogSettingsAsset" element={<Library content={<LibrarySystemsDialogSystemDialogSettingsAsset />} menu={LibraryMenu} submenu={LibrarySystemsDialogSystemMenu} />}></Route>
-
-          <Route exact path="/library/systems/spriteAnimationSystem" element={<Library content={<LibrarySystemsSpriteAnimationSystem />} menu={LibraryMenu} submenu={LibrarySystemsSpriteAnimationSystemMenu} />}></Route>
-          <Route exact path="/library/systems/spriteAnimationSystem/spriteAnimatorComponent" element={<Library content={<LibrarySystemsSpriteAnimationSystemSpriteAnimatorComponent />} menu={LibraryMenu} submenu={LibrarySystemsSpriteAnimationSystemMenu} />}></Route>
-          <Route exact path="/library/systems/spriteAnimationSystem/spriteAnimationAsset" element={<Library content={<LibrarySystemsSpriteAnimationSystemSpriteAnimationAsset />} menu={LibraryMenu} submenu={LibrarySystemsSpriteAnimationSystemMenu} />}></Route>
-
-          <Route exact path="/library/systems/tweakSystem" element={<Library content={<LibrarySystemsTweakSystem />} menu={LibraryMenu} submenu={LibrarySystemsTweakSystemMenu} />}></Route>
-          <Route exact path="/library/systems/tweakSystem/tweakManagerComponent" element={<Library content={<LibrarySystemsTweakSystemTweakManagerComponent />} menu={LibraryMenu} submenu={LibrarySystemsTweakSystemMenu} />}></Route>
-          <Route exact path="/library/systems/tweakSystem/tweakPositionAsset" element={<Library content={<LibrarySystemsTweakSystemTweakPositionAsset />} menu={LibraryMenu} submenu={LibrarySystemsTweakSystemMenu} />}></Route>
-          <Route exact path="/library/systems/tweakSystem/tweakRotationAsset" element={<Library content={<LibrarySystemsTweakSystemTweakRotationAsset />} menu={LibraryMenu} submenu={LibrarySystemsTweakSystemMenu} />}></Route>
-          <Route exact path="/library/systems/tweakSystem/tweakScaleAsset" element={<Library content={<LibrarySystemsTweakSystemTweakScaleAsset />} menu={LibraryMenu} submenu={LibrarySystemsTweakSystemMenu} />}></Route>
-          <Route exact path="/library/systems/tweakSystem/tweakColorAsset" element={<Library content={<LibrarySystemsTweakSystemTweakColorAsset />} menu={LibraryMenu} submenu={LibrarySystemsTweakSystemMenu} />}></Route>
-          <Route exact path="/library/systems/tweakSystem/tweakSequenceAsset" element={<Library content={<LibrarySystemsTweakSystemTweakSequenceAsset />} menu={LibraryMenu} submenu={LibrarySystemsTweakSystemMenu} />}></Route>
-
-          <Route exact path="/library/tools" element={<Library content={<LibraryTools />} menu={LibraryMenu} />}></Route>
-          <Route exact path="/library/tools/curveEditor" element={<Library content={<LibraryToolsCurveEditor />} menu={LibraryMenu} />}></Route>
-          <Route exact path="/library/tools/referenceConsole" element={<Library content={<LibraryToolsReferenceConsole />} menu={LibraryMenu} />}></Route>
-          <Route exact path="/library/tools/hierarchyTool" element={<Library content={<LibraryToolsHierarchyTool />} menu={LibraryMenu} />}></Route>
         </Routes>
         <Footer />
       </Router>
