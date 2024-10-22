@@ -6,7 +6,7 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Value Assets</h1>
+            <h1 className="text-center">Value Asset Structure</h1>
             <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
                 The Value Asset structure represents different value types (bool, int, float, string, Vector2 and Vector3) as Scriptable Objects, implementing a framework for scriptable object architecture. 
                 This structure provides a modular and decoupled way to share and manage data across different components and scenes in Unity projects. 

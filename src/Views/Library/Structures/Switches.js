@@ -6,7 +6,7 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Switches</h1>
+            <h1 className="text-center">Switch Structure</h1>
             <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
                 The Switch structures are designed to enhance script flexibility by allowing developers to choose among different types of values within a single script component, based on the current state. 
                 This state is set through the Inspector in development environments and the Switch structure will show and use only the type value selected for that state. 

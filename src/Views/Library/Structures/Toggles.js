@@ -5,7 +5,7 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Toggles</h1>
+            <h1 className="text-center">Toggle Structure</h1>
             <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
                 The Toggle structures in the Magikus Library provide a flexible mechanism for managing binary states (on/off) associated with a value of any type. 
                 This structure is highly useful in game development where you might need to toggle certain behaviors or states based on user input, game events or other conditions. 

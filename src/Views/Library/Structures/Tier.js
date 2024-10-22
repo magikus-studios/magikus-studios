@@ -6,7 +6,7 @@ export default function Function() {
     
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Tier</h1>
+            <h1 className="text-center">Tier Structure</h1>
             <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
                 The Tier structures are specialized data structures designed to enhance the functionality of the Range structures by adding event-driven logic that automatically triggers when a value is evaluated against a defined range. 
                 This event-driven mechanism is particularly useful when working with both int (IntTier) and float (FloatTier) ranges, where certain actions need to be performed when a value enters, exits, remains inside or remains outside the specified range.

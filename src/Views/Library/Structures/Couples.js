@@ -5,7 +5,7 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Couples</h1>
+            <h1 className="text-center">Couple Structure</h1>
             <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
                 The Couple{"<A, B>"} and Couple{"<A, B, C>"} structures are specialized data containers designed to hold two or three values of different types. 
                 These structures are particularly useful when there is a need to group together multiple values of different types, such as a pair of coordinates (e.g., int and float) or a combination of various properties (e.g., string, int, and bool).

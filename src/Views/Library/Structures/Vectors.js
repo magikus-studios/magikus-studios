@@ -5,7 +5,7 @@ export default function Function() {
     
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Vectors</h1>
+            <h1 className="text-center">Vector Structure</h1>
             <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
                 The Vector structures in the Magikus Library provide a generic way to manage multi-dimensional data for independent axes settings like bool, AnimationCurves, enums or other types. 
                 These structures include Vector2{"<T>"}, Vector3{"<T>"} and Color{"<T>"}, each capable of holding values of a specified type T for their respective axes. 

@@ -6,7 +6,7 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Debug State</h1>
+            <h1 className="text-center">Debug State Structure</h1>
             <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
                 The DebugState structure is designed to simplify debugging and enable or disable functionality within MonoBehaviour or ScriptableObject scripts in Unity. 
                 It is an effective tool for developers who need to toggle debugging and disabling features during runtime, making the development and testing processes more flexible and efficient. 

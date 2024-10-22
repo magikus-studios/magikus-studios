@@ -6,7 +6,7 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Label</h1>
+            <h1 className="text-center">Label Structure</h1>
             <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
                 The Label structure in the Magikus Library is a set of scriptable objects designed to function as tags, replacing string identifiers in Unity. 
                 This structure offers an organized and flexible approach for tagging gameObjects and other assets. 

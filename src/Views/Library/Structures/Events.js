@@ -6,7 +6,7 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Events</h1>
+            <h1 className="text-center">Event Structure</h1>
             <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
                 The Event structure is an advanced implementation of the UnityEvent system, designed to enhance usability and modularity in Unity projects. 
                 It reimagines the UnityEvent drawer and functionalities, allowing developers to collapse events into a single line within the Unity Inspector and display a count of list items. 

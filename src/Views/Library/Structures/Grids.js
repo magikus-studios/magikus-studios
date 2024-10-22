@@ -7,7 +7,7 @@ export default function Function() {
     
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Grids</h1>
+            <h1 className="text-center">Grid Structure</h1>
             <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
                 The Grid structures module provides classes for creating and manipulating 2D grids, which can be useful for various applications such as game development, pathfinding and spatial data representation. 
             </h6>

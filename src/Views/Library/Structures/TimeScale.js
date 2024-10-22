@@ -6,7 +6,7 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Time Scale</h1>
+            <h1 className="text-center">Time Scale Structure</h1>
             <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
                 The TimeScale structure is designed to facilitate the synchronization of time and time scale management between different objects in Unity. 
                 By sharing the same TimeScale object, multiple objects can maintain consistent time values, ensuring uniform behavior throughout the application. 

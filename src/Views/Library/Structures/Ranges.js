@@ -5,7 +5,7 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Ranges</h1>
+            <h1 className="text-center">Range Structure</h1>
             <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
                 The Range structure is a versatile and generic data structure designed to hold a minimum and maximum value of a specified type. 
                 It is highly flexible and can be used with any type that implements the IComparable interface. 
