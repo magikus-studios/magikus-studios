@@ -24,14 +24,6 @@ export default function Function() {
 
             <h3 className="p-2">Summary</h3>
 
-            <h4 className="c-light-1 p-3">Button</h4>
-            <p className="pad-left-3">
-                The Button attribute allows developers to create button elements within the Unity Inspector.
-                These buttons can be linked to methods, with options to customize labels, widths and heights. This
-                feature simplifies invoking methods directly from the Inspector, making it more efficient to trigger
-                actions during development. 
-            </p>
-
             <h4 className="c-light-1 p-3">Line</h4>
             <p className="pad-left-3">
                 The Line attribute adds visual line separators to the Unity Inspector. It provides options to
@@ -61,13 +53,6 @@ export default function Function() {
                 The Toggle attribute converts boolean (bool) fields in the Unity Inspector into toggle buttons. This
                 decorator improves usability by providing a clear visual representation of boolean values, making
                 it easier to interact with options or features directly from the Inspector. 
-            </p>
-
-            <h4 className="c-light-1 p-3">Show If</h4>
-            <p className="pad-left-3">
-                The ShowIf attribute provides conditional visibility for fields in the Unity Inspector. It allows fields
-                to be displayed based on the value of another property, which helps in decluttering the Inspector
-                and making it more intuitive by showing only relevant fields under specific conditions.
             </p>
 
             <h4 className="c-light-1 p-3">Collapsable</h4>
@@ -104,13 +89,6 @@ export default function Function() {
                 The ListC{"<"}T{">"} class is a custom collection that extends Unity's built-in List{"<"}T{">"}. It offers a serialized,
                 editable list with a flexible interface for managing items directly within the Unity Editor. Users can
                 expand and collapse the list, improving navigation and management of large data collections.
-            </p>
-
-            <h4 className="c-light-1 p-3">Key Binding</h4>
-            <p className="pad-left-3">
-                The KeyBinding Decorator is a custom property drawer that enhances the editing experience of
-                KeyCode fields in inspector windows. This tool simplifies the process of setting KeyCode values,
-                making it easier and more intuitive.
             </p>
        </div>
     );

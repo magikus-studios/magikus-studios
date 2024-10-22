@@ -21,9 +21,9 @@ import Library from 'Views/Library/Library';
 import LibraryInConstruction from "Views/Library/InConstruction";
 
 import LibraryMenu from "Views/Library/Library/Menu.json";
-import LibraryLibrary from "Views/Library/Library/Library";
-import LibraryChangelog from "Views/Library/Library/Changelog";
-import LibraryLicense from "Views/Library/Library/License";
+import LibraryLibrary from "Views/Library/Library/Introduction.js";
+import LibraryChangelog from "Views/Library/Library/Changelog.js";
+import LibraryLicense from "Views/Library/Library/License.js";
 
 import LibraryDecorators from "Views/Library/Decorators/_Decorators.js";
 import LibraryDecoratorsLine from "Views/Library/Decorators/Line.js";
