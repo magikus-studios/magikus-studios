@@ -5,7 +5,7 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Non Editable</h1>
+            <h1 className="text-center">Non Editable Decorator</h1>
             <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
                 The NonEditable attribute is a custom attribute designed to make fields in Unity's Inspector read-only. This is useful for fields that should display data without allowing the user to modify them directly in the Inspector.
             </h6>

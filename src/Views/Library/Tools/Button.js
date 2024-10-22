@@ -5,7 +5,7 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Button</h1>
+            <h1 className="text-center">Button Tool</h1>
             <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
                 The Button attribute class is a custom attribute used in Unity to define button-related properties that can be used in the Unity Inspector.
                 This attribute allows you to specify methods that can be invoked via buttons, along with optional labels, widths, and heights for these buttons.
@@ -37,37 +37,37 @@ export default function Function() {
                 <li>Apply the Button attribute to a public field in your script</li>
                 <li>Define the method that the button will invoke</li>
             </ul>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Decorators/Button/Button - 01.jpg" alt=""/>            
+            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/Button/Button - 01.jpg" alt=""/>            
             <p className="pad-left-3">
                 In this example, a button labeled SayHello will appear in the Unity Inspector. 
                 Clicking this button will invoke the SayHello method, which logs a message to the console.
             </p>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Decorators/Button/Button - 02.jpg" alt=""/>            
+            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/Button/Button - 02.jpg" alt=""/>            
 
             <h4 className="c-light-1 p-3">Example 02: Button with Custom Label and Multiple Methods</h4>
             <p className="pad-left-3">
                 You can also specify multiple methods and a custom label for your button by setting the first parameter to “label:” followed by the label. 
                 After that, you can add as many method names as you need. They will show next to each other.
             </p>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Decorators/Button/Button - 03.jpg" alt=""/>            
+            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/Button/Button - 03.jpg" alt=""/>            
             <p className="pad-left-3">
                 In this case, two buttons next to each other labeled Actions will be displayed. 
                 Notice that Method Two is referenced with nameof() method. 
                 This allows to avoid using string as references and prevents from possible errors.
             </p>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Decorators/Button/Button - 04.jpg" alt=""/>            
+            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/Button/Button - 04.jpg" alt=""/>            
                                
             <h4 className="c-light-1 p-3">Example 03: Button with Custom Size</h4>
             <p className="pad-left-3">
                 You can also adjust the width, height and title of the button by setting the first and second parameters of the 
                 attribute to a width and height float value respectively and adding the title to the method name separated by a dash.
             </p>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Decorators/Button/Button - 05.jpg" alt=""/>            
+            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/Button/Button - 05.jpg" alt=""/>            
             <p className="pad-left-3">
                 Here, the button will be 0.5 times the default width and 2 times the default height. 
                 It will also display the Click Me title in the button instead of the method name.
             </p>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Decorators/Button/Button - 06.jpg" alt=""/>            
+            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/Button/Button - 06.jpg" alt=""/>            
             
             <h3 className="p-2">Notes</h3>
             <ul>

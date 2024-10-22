@@ -5,7 +5,7 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Toggle</h1>
+            <h1 className="text-center">Toggle Decorator</h1>
             <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
                 The Toggle attribute is a custom Unity attribute designed to change the appearance of a boolean (bool) value in the Unity Inspector to look like a toggle button. 
                 This attribute allows developers to easily visualize and interact with boolean properties as buttons, improving the usability and clarity of the Inspector for toggling features or options.

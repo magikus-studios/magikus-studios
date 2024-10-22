@@ -5,7 +5,7 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Text Box</h1>
+            <h1 className="text-center">Text Box Decorator</h1>
             <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
                 The TextBox attribute is a custom Unity attribute used to display informative text boxes in the Unity Inspector. 
                 It allows developers to add messages of varying types (Info, Warning, Error, or None) to enhance the readability and context of their fields. 

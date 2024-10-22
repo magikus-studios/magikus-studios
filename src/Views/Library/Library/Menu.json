@@ -11,34 +11,31 @@
         "label": "Decorators",
         "items": [
             { "label": "[Decorators]", "link": "/#/library/decorators" },
-            { "label": "Button", "link": "/#/library/decorators/button" },
             { "label": "Line", "link": "/#/library/decorators/line" },
             { "label": "Text Box", "link": "/#/library/decorators/textBox" },
             { "label": "Title", "link": "/#/library/decorators/title" },
             { "label": "Toggle", "link": "/#/library/decorators/toggle" },
-            { "label": "Show If", "link": "/#/library/decorators/showIf" },
             { "label": "Collapsable", "link": "/#/library/decorators/collapsable" },
             { "label": "Non Editable", "link": "/#/library/decorators/nonEditable" },
             { "label": "Progress Bar", "link": "/#/library/decorators/progressBar" },
             { "label": "Reference Value", "link": "/#/library/decorators/referenceValue" },
-            { "label": "Collapsable List", "link": "/#/library/decorators/collapsableList" },
-            { "label": "Key Binding", "link": "/#/library/decorators/keyBinding" }
+            { "label": "Collapsable List", "link": "/#/library/decorators/collapsableList" }
         ]
     },
     {
         "label": "Utilities",
         "items": [
             { "label": "[Utilities]", "link": "/#/library/utilities" },
-            { "label": "Create", "link": "/#/library/inConstruction" },
-            { "label": "Adapt", "link": "/#/library/inConstruction" },
-            { "label": "Randget", "link": "/#/library/inConstruction" },
-            { "label": "Looping", "link": "/#/library/inConstruction" },
-            { "label": "Easing", "link": "/#/library/inConstruction" },
-            { "label": "Files", "link": "/#/library/inConstruction" },
-            { "label": "Control", "link": "/#/library/inConstruction" },
-            { "label": "Math", "link": "/#/library/inConstruction" },
-            { "label": "Text", "link": "/#/library/inConstruction" },
-            { "label": "List", "link": "/#/library/inConstruction" }
+            { "label": "Create", "link": "/#/library/utilities/create" },
+            { "label": "Adapt", "link": "/#/library/utilities/adapt" },
+            { "label": "Randget", "link": "/#/library/utilities/randget" },
+            { "label": "Looping", "link": "/#/library/utilities/looping" },
+            { "label": "Easing", "link": "/#/library/utilities/easing" },
+            { "label": "Files", "link": "/#/library/utilities/files" },
+            { "label": "Control", "link": "/#/library/utilities/control" },
+            { "label": "Math", "link": "/#/library/utilities/math" },
+            { "label": "Text", "link": "/#/library/utilities/text" },
+            { "label": "List", "link": "/#/library/utilities/list" }
         ]
     },
     {
@@ -52,7 +49,7 @@
             { "label": "Ranges", "link": "/#/library/structures/ranges" },
             { "label": "Tier", "link": "/#/library/structures/tier" },
             { "label": "Debug State", "link": "/#/library/structures/debugState" },
-            { "label": "Label", "link": "/#/library/structures/label" },
+            { "label": "Labels", "link": "/#/library/structures/label" },
             { "label": "Time Scale", "link": "/#/library/structures/timeScale" },
             { "label": "Events", "link": "/#/library/structures/events" },
             { "label": "Value Assets", "link": "/#/library/structures/valueAssets" },
@@ -83,9 +80,12 @@
         "label": "Tools",
         "items": [
             { "label": "[Tools]", "link": "/#/library/tools" },
+            { "label": "Button Tool", "link": "/#/library/tools/button" },
+            { "label": "Show If Tool", "link": "/#/library/tools/showIf" },
+            { "label": "Key Binding Tool", "link": "/#/library/tools/keyBinding" },
+            { "label": "Hierarchy Tool", "link": "/#/library/tools/hierarchyTool", "pro": true },
             { "label": "Curve Editor", "link": "/#/library/tools/curveEditor", "pro": true},
-            { "label": "Reference Console", "link": "/#/library/tools/referenceConsole", "pro": true },
-            { "label": "Hierarchy Tool", "link": "/#/library/tools/hierarchyTool", "pro": true }
+            { "label": "Reference Console", "link": "/#/library/tools/referenceConsole", "pro": true }
         ]
     }
 ]

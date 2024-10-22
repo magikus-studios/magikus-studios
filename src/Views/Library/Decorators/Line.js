@@ -5,7 +5,7 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Line</h1>
+            <h1 className="text-center">Line Decorator</h1>
             <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
                 The Line attribute is a custom Unity attribute designed to add visual line separators in the Unity Inspector. 
                 It allows developers to create clear and customizable dividers between fields, making the inspector layout more organized and easier to navigate. 

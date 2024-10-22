@@ -5,7 +5,7 @@ export default function Function() {
     
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Reference Value</h1>
+            <h1 className="text-center">Reference Value Decorator</h1>
             <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
                 The ReferenceValue attribute is a custom attribute that provides a convenient interface for handling ObjectReference fields in Unity's Inspector. 
                 It allows you to create or remove object references directly from the Inspector using customizable buttons. 

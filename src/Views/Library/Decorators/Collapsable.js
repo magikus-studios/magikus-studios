@@ -5,7 +5,7 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Collapsable</h1>
+            <h1 className="text-center">Collapsable Decorator</h1>
             <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
                 The Collapsable attribute is a custom Unity attribute designed to make classes and structs collapsible in the Unity Inspector. 
                 This functionality is particularly useful for improving the organization and readability of complex data structures by allowing developers to expand and collapse the fields of classes and structs. 

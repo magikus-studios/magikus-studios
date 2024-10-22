@@ -5,7 +5,7 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Title</h1>
+            <h1 className="text-center">Title Decorator</h1>
             <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
                 The Title attribute is a custom Unity attribute used to display a stylized title above fields in the Unity Inspector. 
                 This attribute allows developers to group and label sections of the Inspector, enhancing the readability and organization of component properties. 

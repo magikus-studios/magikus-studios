@@ -5,7 +5,7 @@ export default function Function() {
     
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Collapsable List</h1>
+            <h1 className="text-center">Collapsable List Decorator</h1>
             <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
                 The ListC{"<T>"} class is a custom collection, designed to offer a serialized, editable list of items in Unity's Inspector. 
                 It extends the functionality of Unity's built-in List{"<T>"} by providing a flexible and user-friendly interface for managing lists directly within the Unity editor. 
