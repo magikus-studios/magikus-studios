@@ -2,7 +2,7 @@
     {
         "image": "images/Products/Library - Icon Color (512).png",
         "title": "Magikus Library",
-        "description": "A Unity3D C# framework speeding up development, enhancing team collaboration, and offering utilities, systems, and tools to streamline your game development journey. Elevate your game development experience.",
+        "description": "The Magikus Library is a comprehensive toolkit for Unity development, designed to streamline workflows, improve code quality and simplify complex tasks. It offers a unified framework that enhances productivity with features like decorators, utilities, machines, systems and tools, making game development faster and more efficient.",
         "link": "/#/library"
     },
     {
