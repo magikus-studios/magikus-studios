@@ -18,8 +18,7 @@
             { "label": "Collapsable", "link": "/#/library/decorators/collapsable" },
             { "label": "Non Editable", "link": "/#/library/decorators/nonEditable" },
             { "label": "Progress Bar", "link": "/#/library/decorators/progressBar" },
-            { "label": "Reference Value", "link": "/#/library/decorators/referenceValue" },
-            { "label": "Collapsable List", "link": "/#/library/decorators/collapsableList" }
+            { "label": "Reference Value", "link": "/#/library/decorators/referenceValue" }
         ]
     },
     {

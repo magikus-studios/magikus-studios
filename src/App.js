@@ -1,15 +1,3 @@
-import LibraryUtilitiesOperationsMenu from "Views/Library/Utilities/Operations/Menu.json";
-import LibraryUtilitiesOperations from "Views/Library/Utilities/Operations/Operations.js";
-import LibraryUtilitiesOperationsValueMode from "Views/Library/Utilities/Operations/Modes.js";
-import LibraryUtilitiesOperationsMutableValues from "Views/Library/Utilities/Operations/MutuableValues.js";
-import LibraryUtilitiesOperationsOperationsMath from "Views/Library/Utilities/Operations/OperationsMath.js";
-import LibraryUtilitiesOperationsOperationsIntrinsic from "Views/Library/Utilities/Operations/OperationsIntrinsic.js";
-import LibraryUtilitiesOperationsOperationsClamp from "Views/Library/Utilities/Operations/OperationsClamp.js";
-import LibraryUtilitiesOperationsOperationsWrap from "Views/Library/Utilities/Operations/OperationsWrap.js";
-import LibraryUtilitiesOperationsTargetComponents from "Views/Library/Utilities/Operations/TargetComponents.js";
-import LibraryUtilitiesOperationsInputAndOutputTypes from "Views/Library/Utilities/Operations/InputAndOutputTypes.js";
-
-
 import './App.css';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -34,7 +22,6 @@ import LibraryDecoratorsCollapsable from "Views/Library/Decorators/Collapsable.j
 import LibraryDecoratorsNonEditable from "Views/Library/Decorators/NonEditable.js";
 import LibraryDecoratorsProgressBar from "Views/Library/Decorators/ProgressBar.js";
 import LibraryDecoratorsReferenceValue from "Views/Library/Decorators/ReferenceValue.js";
-import LibraryDecoratorsCollapsableList from "Views/Library/Decorators/CollapsableList.js";
 
 import LibraryUtilities from "Views/Library/Utilities/_Utilities.js";
 import LibraryUtilitiesCreate from "Views/Library/Utilities/Create.js";
@@ -114,7 +101,6 @@ export default function App() {
           <Route exact path="/library/decorators/nonEditable" element={<Library content={<LibraryDecoratorsNonEditable />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/decorators/progressBar" element={<Library content={<LibraryDecoratorsProgressBar />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/decorators/referenceValue" element={<Library content={<LibraryDecoratorsReferenceValue />} menu={LibraryMenu} />}></Route>
-          <Route exact path="/library/decorators/collapsableList" element={<Library content={<LibraryDecoratorsCollapsableList />} menu={LibraryMenu} />}></Route>
 
           <Route exact path="/library/utilities" element={<Library content={<LibraryUtilities />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/utilities/create" element={<Library content={<LibraryUtilitiesCreate />} menu={LibraryMenu} />}></Route>
@@ -162,17 +148,6 @@ export default function App() {
           <Route exact path="/library/tools/referenceConsole" element={<Library content={<LibraryToolsReferenceConsole />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/tools/hierarchyTool" element={<Library content={<LibraryToolsHierarchyTool />} menu={LibraryMenu} />}></Route>
  
-
-
-          <Route exact path="/library/utilities/operations" element={<Library content={<LibraryUtilitiesOperations />} menu={LibraryMenu} submenu={LibraryUtilitiesOperationsMenu} />}></Route>
-          <Route exact path="/library/utilities/operations/modes" element={<Library content={<LibraryUtilitiesOperationsValueMode />} menu={LibraryMenu} submenu={LibraryUtilitiesOperationsMenu} />}></Route>
-          <Route exact path="/library/utilities/operations/mutableValues" element={<Library content={<LibraryUtilitiesOperationsMutableValues />} menu={LibraryMenu} submenu={LibraryUtilitiesOperationsMenu} />}></Route>
-          <Route exact path="/library/utilities/operations/operationsMath" element={<Library content={<LibraryUtilitiesOperationsOperationsMath />} menu={LibraryMenu} submenu={LibraryUtilitiesOperationsMenu} />}></Route>
-          <Route exact path="/library/utilities/operations/operationsIntrinsic" element={<Library content={<LibraryUtilitiesOperationsOperationsIntrinsic />} menu={LibraryMenu} submenu={LibraryUtilitiesOperationsMenu} />}></Route>
-          <Route exact path="/library/utilities/operations/operationsClamp" element={<Library content={<LibraryUtilitiesOperationsOperationsClamp />} menu={LibraryMenu} submenu={LibraryUtilitiesOperationsMenu} />}></Route>
-          <Route exact path="/library/utilities/operations/operationsWrap" element={<Library content={<LibraryUtilitiesOperationsOperationsWrap />} menu={LibraryMenu} submenu={LibraryUtilitiesOperationsMenu} />}></Route>
-          <Route exact path="/library/utilities/operations/targetComponents" element={<Library content={<LibraryUtilitiesOperationsTargetComponents />} menu={LibraryMenu} submenu={LibraryUtilitiesOperationsMenu} />}></Route>
-          <Route exact path="/library/utilities/operations/inputAndOutputTypes" element={<Library content={<LibraryUtilitiesOperationsInputAndOutputTypes />} menu={LibraryMenu} submenu={LibraryUtilitiesOperationsMenu} />}></Route>
         </Routes>
         <Footer />
       </Router>
