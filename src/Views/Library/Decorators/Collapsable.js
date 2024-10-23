@@ -61,27 +61,27 @@ export default function Function() {
                 Below are examples demonstrating how to use this attribute:
             </p>
 
-            <h4 className="c-light-1 p-3">Example 01: Making a Struct Collapsible</h4>
+            <h4 className="c-light-1 p-3">Example 01: Making a Struct Collapsable</h4>
             <img className="block-center mar-bottom-3 img-border" src="images/Library/Decorators/Collapsable/Collapsable - 01.jpg" alt=""/>            
             <p className="pad-left-3">
-                In this example, the PlayerSettings struct is made collapsible in the Inspector. 
+                In this example, the PlayerSettings struct is made collapsable in the Inspector. 
                 When the component is selected, the PlayerSettings field can be expanded or collapsed.
             </p>
             <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Collapsable/Collapsable - 02.jpg" alt=""/>            
             <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Collapsable/Collapsable - 03.jpg" alt=""/>            
 
-            <h4 className="c-light-1 p-3">Example 02: Making a Class Collapsible with a Custom Label</h4>
+            <h4 className="c-light-1 p-3">Example 02: Making a Class Collapsable with a Custom Label</h4>
             <img className="block-center mar-bottom-3 img-border" src="images/Library/Decorators/Collapsable/Collapsable - 04.jpg" alt=""/>            
             <p className="pad-left-3">
-                Here, the AdvancedSettings class is collapsible and uses a custom label "Advanced" for the collapsible section in the Inspector.
+                Here, the AdvancedSettings class is collapsable and uses a custom label "Advanced" for the collapsible section in the Inspector.
             </p>
             <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Collapsable/Collapsable - 05.jpg" alt=""/>            
             <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Collapsable/Collapsable - 06.jpg" alt=""/>            
 
-            <h4 className="c-light-1 p-3">Example 03: Nested Collapsible Classes</h4>
+            <h4 className="c-light-1 p-3">Example 03: Nested Collapsable Classes</h4>
             <img className="block-center mar-bottom-3 img-border" src="images/Library/Decorators/Collapsable/Collapsable - 07.jpg" alt=""/>            
             <p className="pad-left-3"> 
-                In this example, GraphicsSettings is a class nested inside GeneralSettings and are both made collapsible with custom labels. 
+                In this example, GraphicsSettings is a class nested inside GeneralSettings and are both made collapsable with custom labels. 
                 Each section can be expanded or collapsed independently in the Inspector.
             </p>
             <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Collapsable/Collapsable - 08.jpg" alt=""/>            

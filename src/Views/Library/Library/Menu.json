@@ -84,7 +84,8 @@
             { "label": "Key Binding Tool", "link": "/#/library/tools/keyBinding" },
             { "label": "Hierarchy Tool", "link": "/#/library/tools/hierarchyTool", "pro": true },
             { "label": "Curve Editor", "link": "/#/library/tools/curveEditor", "pro": true},
-            { "label": "Reference Console", "link": "/#/library/tools/referenceConsole", "pro": true }
+            { "label": "Reference Console", "link": "/#/library/tools/referenceConsole", "pro": true },
+            { "label": "Script Manager", "link": "/#/library/tools/scriptManager", "pro": true }
         ]
     }
 ]

@@ -65,9 +65,10 @@ import LibraryTools from "Views/Library/Tools/_Tools.js";
 import LibraryToolsButton from "Views/Library/Tools/Button.js";
 import LibraryToolsShowIf from "Views/Library/Tools/ShowIf.js";
 import LibraryToolsKeyBinding from "Views/Library/Tools/KeyBinding.js";
+import LibraryToolsHierarchyTool from "Views/Library/Tools/HierarchyTool.js";
 import LibraryToolsCurveEditor from "Views/Library/Tools/CurveEditor.js";
 import LibraryToolsReferenceConsole from "Views/Library/Tools/ReferenceConsole.js";
-import LibraryToolsHierarchyTool from "Views/Library/Tools/HierarchyTool.js";
+import LibraryToolsScriptManager from "Views/Library/Tools/ScriptManager.js";
 
 export default function App() {
 
@@ -144,10 +145,11 @@ export default function App() {
           <Route exact path="/library/tools/button" element={<Library content={<LibraryToolsButton />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/tools/showIf" element={<Library content={<LibraryToolsShowIf />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/tools/keyBinding" element={<Library content={<LibraryToolsKeyBinding />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/tools/hierarchyTool" element={<Library content={<LibraryToolsHierarchyTool />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/tools/curveEditor" element={<Library content={<LibraryToolsCurveEditor />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/tools/referenceConsole" element={<Library content={<LibraryToolsReferenceConsole />} menu={LibraryMenu} />}></Route>
-          <Route exact path="/library/tools/hierarchyTool" element={<Library content={<LibraryToolsHierarchyTool />} menu={LibraryMenu} />}></Route>
- 
+          <Route exact path="/library/tools/scriptManager" element={<Library content={<LibraryToolsScriptManager />} menu={LibraryMenu} />}></Route>
+          
         </Routes>
         <Footer />
       </Router>
