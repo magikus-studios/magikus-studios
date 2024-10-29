@@ -5,12 +5,23 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Title Decorator</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                The Title attribute is a custom Unity attribute used to display a stylized title above fields in the Unity Inspector. 
+            <h1 className="text-center pad-top-4">Title Decorator</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Custom Unity attribute used to Display a Stylized Title above fields in the Unity Inspector.
+            </h6>
+
+            <h3 className="p-2">Overview</h3>
+            <p className="pad-left-2 pad-bottom-2">
+                The Title attribute is a powerful tool for enhancing the Unity Inspector by adding customizable titles above fields. 
                 This attribute allows developers to group and label sections of the Inspector, enhancing the readability and organization of component properties. 
                 By customizing the title's text, font size, alignment, style, color and vertical offset, developers can create visually appealing and informative headers that improve the user experience in the Unity Inspector.
-            </h6>
+                It helps organize and label sections of the Inspector, making it easier to navigate and understand the properties of a component or scriptable object. 
+                Title attribute offers a versatile way to improve the user experience and readability of your Unity projects.
+            </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Title/Title - 06.jpg" alt=""/>            
+            </div>
+
 
             <h3 className="p-2">How it Works</h3>
 
@@ -21,13 +32,13 @@ export default function Function() {
                 </p>
                 <h5 className="c-light-1 pad-left-3">Constructors</h5>
                 <ul className="property-list">
-                    <li><b1>TitleAttribute</b1>(<b2>string</b2> <b1>title</b1>): Creates a title with the specified text.</li>
-                    <li><b1>TitleAttribute</b1>(<b2>string</b2> <b1>title</b1>, <b2>int</b2> <b1>fontSize</b1>): Creates a title with the specified text and font size.</li>
-                    <li><b1>TitleAttribute</b1>(<b2>string</b2> <b1>title</b1>, <b2>TextAnchor</b2> <b1>alignment</b1>): Creates a title with the specified text and alignment.</li>
-                    <li><b1>TitleAttribute</b1>(<b2>string</b2> <b1>title</b1>, <b2>FontStyle</b2> <b1>fontStyle</b1>): Creates a title with the specified text and font style.</li>
-                    <li><b1>TitleAttribute</b1>(<b2>string</b2> <b1>title</b1>, <b2>string</b2> <b1>textColorHex</b1>): Creates a title with the specified text and text color (in hexadecimal format).</li>
-                    <li><b1>TitleAttribute</b1>(<b2>string</b2> <b1>title</b1>, <b2>float</b2> <b1>offset</b1>): Initializes with a title and a uniform vertical offset.</li>
-                    <li><b1>TitleAttribute</b1>(<b2>string</b2> <b1>title</b1>, <b2>float</b2> <b1>topOffset</b1>, <b2>float</b2> <b1>bottomOffset</b1>): Initializes with a title and separate top and bottom offsets.</li>
+                    <li><b1>TitleAttribute</b1>(<b2>string</b2> <b1>title</b1>)</li>
+                    <li><b1>TitleAttribute</b1>(<b2>string</b2> <b1>title</b1>, <b2>int</b2> <b1>fontSize</b1>)</li>
+                    <li><b1>TitleAttribute</b1>(<b2>string</b2> <b1>title</b1>, <b2>TextAnchor</b2> <b1>alignment</b1>)</li>
+                    <li><b1>TitleAttribute</b1>(<b2>string</b2> <b1>title</b1>, <b2>FontStyle</b2> <b1>fontStyle</b1>)</li>
+                    <li><b1>TitleAttribute</b1>(<b2>string</b2> <b1>title</b1>, <b2>string</b2> <b1>textColorHex</b1>)</li>
+                    <li><b1>TitleAttribute</b1>(<b2>string</b2> <b1>title</b1>, <b2>float</b2> <b1>offset</b1>)</li>
+                    <li><b1>TitleAttribute</b1>(<b2>string</b2> <b1>title</b1>, <b2>float</b2> <b1>topOffset</b1>, <b2>float</b2> <b1>bottomOffset</b1>)</li>
                 </ul>
                 <p className="pad-left-3">
                     Additional constructors combine these parameters to provide further customization, allowing for a flexible and tailored presentation.
@@ -83,14 +94,6 @@ export default function Function() {
                 <li>The TextColorHex can be set using a hexadecimal color code, enabling precise color customization for the title text.</li>                
                 <li>The TopOffset and BottomOffset parameters control the vertical spacing above and below the title, helping to separate it from adjacent fields.</li>                
             </ul>
-
-
-            <h3 className="p-2">Conclusion</h3>
-            <p className="pad-left-2">
-                The Title attribute is a powerful tool for enhancing the Unity Inspector by adding customizable titles above fields. 
-                It helps organize and label sections of the Inspector, making it easier to navigate and understand the properties of a component or scriptable object. 
-                With options for text, font size, alignment, style, color and vertical offset, the Title attribute offers a versatile way to improve the user experience and readability of your Unity projects.
-            </p>
        </div>
     );
 }

@@ -5,11 +5,21 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Toggle Decorator</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                The Toggle attribute is a custom Unity attribute designed to change the appearance of a boolean (bool) value in the Unity Inspector to look like a toggle button. 
-                This attribute allows developers to easily visualize and interact with boolean properties as buttons, improving the usability and clarity of the Inspector for toggling features or options.
+            <h1 className="text-center pad-top-4">Toggle Decorator</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Custom Unity attribute designed to Change the Appearance of a Boolean value in the Unity Inspector to look like a Toggle Button. 
             </h6>
+
+            <h3 className="p-2">Overview</h3>
+            <p className="pad-left-2 pad-bottom-2">
+                The Toggle attribute is a powerful and easy-to-use tool for converting boolean fields into intuitive toggle buttons in the Unity Inspector. 
+                This attribute allows developers to easily visualize and interact with boolean properties as buttons, improving the usability and clarity of the Inspector for toggling features or options.
+                It helps to create a more user-friendly and visually appealing interface for toggling features or settings. 
+                With options for custom labels, colors and label visibility, the Toggle attribute provides flexible customization to suit various project needs.
+            </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Toggle/Toggle - 02.jpg" alt=""/>            
+            </div>
 
             <h3 className="p-2">How it Works</h3>
 
@@ -21,12 +31,12 @@ export default function Function() {
                 </p>
                 <h5 className="c-light-1 pad-left-3">Constructors</h5>
                 <ul className="property-list">
-                    <li><b1>ToggleAttribute</b1>(): Initializes with default settings.</li>
-                    <li><b1>ToggleAttribute</b1>(<b2>bool</b2> <b1>displayLabel</b1>): Initializes with an option to display the label.</li>
-                    <li><b1>ToggleAttribute</b1>(<b2>string</b2> <b1>onLabel</b1>, <b2>string</b2> <b1>offLabel</b1>): Initializes with custom labels for the "On" and "Off" states.</li>
-                    <li><b1>ToggleAttribute</b1>(<b2>bool</b2> <b1>displayLabel</b1>, <b2>string</b2> <b1>onLabel</b1>, <b2>string</b2> <b1>offLabel</b1>, <b2>string</b2> <b1>onColor</b1>, <b2>string</b2> <b1>offColor</b1>): Initializes with custom labels and colors for the "On" and "Off" states.</li>
-                    <li><b1>ToggleAttribute</b1>(<b2>bool</b2> <b1>displayLabel</b1>, <b2>string</b2> <b1>onLabel</b1>, <b2>string</b2> <b1>offLabel</b1>): Initializes with an option to display the label and custom labels for the "On" and "Off" states.</li>
-                    <li><b1>ToggleAttribute</b1>(<b2>bool</b2> <b1>displayLabel</b1>, <b2>string</b2> <b1>onLabel</b1>, <b2>string</b2> <b1>offLabel</b1>, <b2>string</b2> <b1>onColor</b1>, <b2>string</b2> <b1>offColor</b1>): Initializes with an option to display the label, custom labels, and custom colors for the "On" and "Off" states.</li>
+                    <li><b1>ToggleAttribute</b1>()</li>
+                    <li><b1>ToggleAttribute</b1>(<b2>bool</b2> <b1>displayLabel</b1>)</li>
+                    <li><b1>ToggleAttribute</b1>(<b2>string</b2> <b1>onLabel</b1>, <b2>string</b2> <b1>offLabel</b1>)</li>
+                    <li><b1>ToggleAttribute</b1>(<b2>bool</b2> <b1>displayLabel</b1>, <b2>string</b2> <b1>onLabel</b1>, <b2>string</b2> <b1>offLabel</b1>, <b2>string</b2> <b1>onColor</b1>, <b2>string</b2> <b1>offColor</b1>)</li>
+                    <li><b1>ToggleAttribute</b1>(<b2>bool</b2> <b1>displayLabel</b1>, <b2>string</b2> <b1>onLabel</b1>, <b2>string</b2> <b1>offLabel</b1>)</li>
+                    <li><b1>ToggleAttribute</b1>(<b2>bool</b2> <b1>displayLabel</b1>, <b2>string</b2> <b1>onLabel</b1>, <b2>string</b2> <b1>offLabel</b1>, <b2>string</b2> <b1>onColor</b1>, <b2>string</b2> <b1>offColor</b1>)</li>
                 </ul>
                 <h5 className="c-light-1 pad-left-3">Parameters</h5>
                 <ul className="property-list">
@@ -74,13 +84,6 @@ export default function Function() {
                 <li>The custom colors can be specified using standard color names (e.g., "Blue", "Red", “Yellow”, “White”) or hexadecimal values for more precise color control.</li>
                 <li>The displayLabel parameter is useful for cases where the label is unnecessary or might clutter the UI, allowing for a cleaner look.</li>
             </ul>
-
-            <h3 className="p-2">Conclusion</h3>
-            <p className="pad-left-2">
-                The Toggle attribute is a powerful and easy-to-use tool for converting boolean fields into intuitive toggle buttons in the Unity Inspector. 
-                It helps to create a more user-friendly and visually appealing interface for toggling features or settings. 
-                With options for custom labels, colors and label visibility, the Toggle attribute provides flexible customization to suit various project needs.
-            </p>
        </div>
     );
 }

@@ -2,36 +2,53 @@ import React from "react";
 
 export default function Function() {
 
+    let scrollUp = () => { window.scrollTo({ top: 0, behavior: "smooth" }); }
+
     return (
         <div className="c-light-2">
-            <h1 className="text-center p-3">Magikus Library</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                The Magikus Library provides a rich set of tools and utilities that address many of the most common challenges in
-                Unity development. By offering a unified and well-structured framework, the library empowers
-                developers to streamline their workflow, write cleaner and more maintainable code, and tackle
-                complex game development tasks with confidence. From decorators and utilities to machines and
-                systems, Magikus Library accelerates the development process and enhances productivity.
+            <h1 className="text-center pad-top-4">Magikus Library</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Unity Development Toolkit
             </h6>
 
-            <h2 className="p-2">Introduction</h2>
+            <h2 className="p-2">Overview</h2>
             <p className="pad-left-2">
-                The Magikus Library is a powerful and versatile C# framework designed specifically for the
-                Unity3D game engine. It aims to streamline the game development process by providing a
-                comprehensive toolkit that improves code readability and enhances team collaboration. The
-                framework is organized into six core pillars - Decorators, Utilities, Structures, Machines, Systems
-                and Tools - each offering a unique set of functionalities that address common development tasks.
-                Whether you are looking to simplify data management, improve the inspector experience or
-                implement state machines, the Magikus Library delivers the necessary resources to accelerate
-                your development journey.
-            </p>
-            <p className="pad-left-2">
-                It is particularly effective in reducing development time while promoting clean, maintainable code.
-                Its flexible design allows developers to focus on creative and game-specific logic, without getting
-                bogged down in repetitive tasks. Whether you're working on a large-scale project or a small indie
-                game, the Magikus Library provides the building blocks for success, making it easier to tackle
-                complex challenges and enhance productivity.
+                The Magikus Library is a versatile toolkit for Unity development that offers utilities, tools and pre-built solutions to simplify common development challenges. 
+                This comprehensive toolkit is designed to streamline workflows, improve code quality and simplify complex tasks.                 
+                By reducing repetitive work, the library allows developers to focus on creative aspects and game-specific logic, making game development faster and more efficient.
+                Whether for large projects or small indie games, the Magikus Library offers the essential building blocks for success, boosting productivity and simplifying the development process.
             </p>
 
+            <a href="/#/library/decorators" className="t-dec-none" onClick={scrollUp}><h3 className="c-light-1 c-light-3-h p-3">Decorators</h3></a>
+            <p className="pad-left-3">
+                The Decorators module offers custom attributes and property drawers that enhance data visualization in the Unity Inspector, improving the organization, readability and interactivity of serialized fields for a more effective workflow.
+            </p>
+
+            <a href="/#/library/utilities" className="t-dec-none" onClick={scrollUp}><h3 className="c-light-1 c-light-3-h p-3">Utilities</h3></a>
+            <p className="pad-left-3">
+                The Utilities module offers a wide range of static and extension methods that simplify script development, allowing developers to handle common tasks efficiently while maintaining a clean and manageable codebase.
+            </p>
+
+            <a href="/#/library/structures" className="t-dec-none" onClick={scrollUp}><h3 className="c-light-1 c-light-3-h p-3">Structures</h3></a>
+            <p className="pad-left-3">
+                The Structures module offers essential building blocks that streamline game development by simplifying code, enhancing flexibility and promoting a modular, decoupled architecture for easier maintenance and adaptation in Unity.
+            </p>
+
+            <a href="/#/library/machines" className="t-dec-none" onClick={scrollUp}><h3 className="c-light-1 c-light-3-h p-3">Machines</h3></a>
+            <p className="pad-left-3">
+                The Machines module provides dynamic data structures that simplify time-based, state-driven and animated tasks, enabling developers to focus on creativity over complex implementation.    
+            </p>
+
+            <a href="/#/library/systems" className="t-dec-none" onClick={scrollUp}><h3 className="c-light-1 c-light-3-h p-3">Systems</h3></a>
+            <p className="pad-left-3">
+                The Systems module offers pre-built, easily integrable solutions that simplify essential game development tasks, allowing developers to focus on gameplay with minimal coding, while providing flexibility and customization directly through Unity’s editor.                
+            </p>
+
+            <a href="/#/library/tools" className="t-dec-none" onClick={scrollUp}><h3 className="c-light-1 c-light-3-h p-3">Tools</h3></a>
+            <p className="pad-left-3">
+                The Tools module provides attributes, property drawers and editors that enhance Unity Editor workflows, increasing productivity and simplifying game design and project management tasks.
+            </p>
+            
             <h2 className="p-2">Installation</h2>
             <p className="pad-left-2">
                 Getting started with the Magikus Library is straightforward and quick. Follow the steps below to
@@ -57,77 +74,6 @@ export default function Function() {
                         the library are organized within the Magikus namespace. 
                     </li>
                 </ul>
-            </p>
-
-            <h2 className="p-2">How it Works</h2>
-            <p className="pad-left-2">
-                The Magikus Library is structured into six distinct sections, each providing a set of tools tailored to
-                different aspects of Unity game development. Here's a breakdown of how each section works and
-                what it offers:
-           </p>
-
-            <h3 className="c-light-1 p-3">Decorators</h3>
-            <p className="pad-left-3">
-                The Decorators module contains a set of custom Unity Inspector attributes that enhance the visual
-                organization and interactivity of serialized fields. Decorators allow you to customize how variables
-                appear in the Unity Inspector, enabling better categorization and formatting. Whether you're
-                displaying numbers, colors or complex data, decorators provide a user-friendly way to manipulate
-                values. By using decorators, developers can present data in a more structured and intuitive
-                manner within the Unity Editor, improving the workflow for both developers and designers. 
-            </p>
-
-            <h3 className="c-light-1 p-3">Utilities</h3>
-            <p className="pad-left-3">
-                The Utilities module includes a comprehensive set of methods that help simplify common game
-                development tasks. The utilities cover a wide range of common tasks, including converting
-                between types, looping through collections, creating random values and more. These methods
-                allow developers to write less code, resulting in a cleaner and more maintainable codebase.
-                Whether you're working with collections, handling file operations, performing mathematical
-                calculations or generating random values, the Utilities module gives you the flexibility to handle
-                data efficiently. 
-            </p>
-
-            <h3 className="c-light-1 p-3">Structures</h3>
-            <p className="pad-left-3">
-                The Structures module provides data structures that facilitate the management of game data,
-                grids, binary states, ranges, time management and event handling. By offering predefined
-                structures for grids, states and other game elements, the Structures module reduces the
-                complexity of game logic. Developers can focus on the higher-level design and rely on these robust
-                structures to handle core functionalities like pathfinding, event-driven systems or time
-                synchronization. These structures make it easy to implement complex game mechanics and
-                systems while promoting modularity and scalability. 
-            </p>
-
-            <h3 className="c-light-1 p-3">Machines</h3>
-            <p className="pad-left-3">
-                The Machines module provides tools for managing state-based behaviors, animation and periodic
-                updates. This module includes State Machines, Tween Machines, Cycle Machines and Updater
-                Machines which handle complex behavior patterns and transitions in a structured manner.
-                Machines abstract common tasks such as animations, state transitions and behavior updates into
-                reusable components. For example, the State Machine simplifies the process of managing game
-                states, while the Tween Machine helps you create smooth transitions and animations without
-                complex coding. 
-            </p>
-
-            <h3 className="c-light-1 p-3">Systems</h3>
-            <p className="pad-left-3">
-                The Systems module offers a range of pre-built solutions for commonly encountered game
-                development needs. These systems, including audio, animation, dialog, event-driven systems and
-                pooling systems, are designed to integrate seamlessly into Unity. Importantly, most systems do
-                not require scripting knowledge to implement. These systems are designed to handle core aspects
-                of game development with minimal setup. For example, you can easily manage audio playback or
-                animations without writing custom scripts for each action. The event-driven systems enable better
-                communication between game components, enhancing responsiveness and modularity.
-            </p>
-
-            <h3 className="c-light-1 p-3">Tools</h3>
-            <p className="pad-left-3">
-                The Tools module includes several development tools that streamline specific tasks within the
-                Unity Editor. This includes tools like the Curve Tool, which simplifies animation curve editing, and
-                the Hierarchy Tool, which enhances hierarchy navigation. These Tools are integrated directly into
-                the Unity Editor, allowing developers to perform specific tasks more efficiently. Whether you're
-                editing curves, monitoring references or navigating the hierarchy, these tools improve your overall
-                development workflow by providing enhanced capabilities. 
             </p>
         </div>
     );

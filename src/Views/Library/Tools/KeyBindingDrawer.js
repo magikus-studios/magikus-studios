@@ -5,7 +5,7 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Key Binding Tool</h1>
+            <h1 className="text-center">Key Binding Drawer</h1>
             <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
                 The KeyBinding tool is a custom property drawer for the Unity Editor, designed to enhance the editing experience of KeyCode fields in inspector windows. This tool allows developers to bind keyboard keys directly by pressing them, making it easier to set KeyCode values. Additionally, it provides a reset button to quickly revert to the default key binding.
             </h6>
@@ -15,7 +15,7 @@ export default function Function() {
 
             <h4 className="c-light-1 p-3">Implementation</h4>
             <p className="pad-left-3">
-                To use the KeyBinding tool, ensure your script includes the KeyCode property you want to modify. 
+                To use the KeyBinding drawer, ensure your script includes the KeyCode property you want to modify. 
                 The custom property drawer will automatically apply to all KeyCode fields in your scripts.
             </p>
 
@@ -34,12 +34,12 @@ export default function Function() {
             <p className="pad-left-3">
                 Add a KeyCode property to your script: Attach the next script to a GameObject in your scene.
             </p>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/KeyBinding/Key Binding - 01.jpg" alt=""/>            
+            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/KeyBindingDrawer/Key Binding Drawer - 01.jpg" alt=""/>            
             <ul className="property-list">
                 <li>Select the GameObject and view the KeyCode property in the Inspector.</li>
                 <li>Locate the KeyCode property in the Inspector. You will see the enhanced UI with the Key Code Field, Bind Button, and Reset Button.</li>
             </ul>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/KeyBinding/Key Binding - 02.jpg" alt=""/>            
+            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/KeyBindingDrawer/Key Binding Drawer - 02.jpg" alt=""/>            
             <ul className="property-list">
                 <li>Click the Bind Button to enter listening mode. The button will change to Listening. Press the desired key on your keyboard. The key code will update to the pressed key.</li>
                 <li>If you click the Listening Button again or press a mouse button, listening mode will cancel without binding a key.</li>

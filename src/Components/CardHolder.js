@@ -15,6 +15,7 @@ export default function Function(props) {
                                     title={ card.title }
                                     description={ card.description }
                                     link={ card.link } 
+                                    newTab={ card.newTab }
                                     />
                             </div>
                         )

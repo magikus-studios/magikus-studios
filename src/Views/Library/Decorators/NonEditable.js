@@ -5,11 +5,21 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Non Editable Decorator</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                The NonEditable attribute is a custom attribute designed to make fields in Unity's Inspector read-only. This is useful for fields that should display data without allowing the user to modify them directly in the Inspector.
+            <h1 className="text-center pad-top-4">Non Editable Decorator</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Custom attribute designed to Make Fields in Unity's Inspector Read-Only. 
             </h6>
       
+            <h3 className="p-2">Overview</h3>
+            <p className="pad-left-2 pad-bottom-2">
+                The NonEditable attribute is a simple yet powerful tool for ensuring certain fields remain read-only in the Unity Inspector, helping maintain data integrity by preventing accidental modifications. 
+                This is useful for fields that should display data without allowing the user to modify them directly in the Inspector.
+                Whether you are working with simple variables or complex data structures, the NonEditable attribute provides a straightforward way to safeguard your data presentation in Unity's editing environment.
+            </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/NonEditable/Non Editable - 02.jpg" alt=""/>            
+            </div>
+
             <h3 className="p-2">How to Use</h3>
             <p className="pad-left-2">
                 To use the NonEditable attribute, simply apply it to any field in your script that you want to make read-only in the Unity Inspector. 
@@ -46,11 +56,6 @@ export default function Function() {
                 <li>Ensure that your fields are properly serialized for them to appear in the Inspector.</li>
             </ul>
 
-            <h3 className="p-2">Conclusion</h3>
-            <p className="pad-left-2">
-                The NonEditable attribute is a simple yet powerful tool for ensuring certain fields remain read-only in the Unity Inspector, helping maintain data integrity by preventing accidental modifications. 
-                Whether you are working with simple variables or complex data structures, the NonEditable attribute provides a straightforward way to safeguard your data presentation in Unity's editing environment.
-            </p>
        </div>
     );
 }

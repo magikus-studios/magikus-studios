@@ -15,10 +15,9 @@
             { "label": "Text Box", "link": "/#/library/decorators/textBox" },
             { "label": "Title", "link": "/#/library/decorators/title" },
             { "label": "Toggle", "link": "/#/library/decorators/toggle" },
-            { "label": "Collapsable", "link": "/#/library/decorators/collapsable" },
+            { "label": "Collapse", "link": "/#/library/decorators/collapse" },
             { "label": "Non Editable", "link": "/#/library/decorators/nonEditable" },
-            { "label": "Progress Bar", "link": "/#/library/decorators/progressBar" },
-            { "label": "Reference Value", "link": "/#/library/decorators/referenceValue" }
+            { "label": "Progress Bar", "link": "/#/library/decorators/progressBar" }
         ]
     },
     {
@@ -47,7 +46,6 @@
             { "label": "Couples", "link": "/#/library/structures/couples" },
             { "label": "Ranges", "link": "/#/library/structures/ranges" },
             { "label": "Tier", "link": "/#/library/structures/tier" },
-            { "label": "Debug State", "link": "/#/library/structures/debugState" },
             { "label": "Labels", "link": "/#/library/structures/label" },
             { "label": "Time Scale", "link": "/#/library/structures/timeScale" },
             { "label": "Events", "link": "/#/library/structures/events" },
@@ -79,10 +77,12 @@
         "label": "Tools",
         "items": [
             { "label": "[Tools]", "link": "/#/library/tools" },
-            { "label": "Button Tool", "link": "/#/library/tools/button" },
-            { "label": "Show If Tool", "link": "/#/library/tools/showIf" },
-            { "label": "Key Binding Tool", "link": "/#/library/tools/keyBinding" },
-            { "label": "Hierarchy Tool", "link": "/#/library/tools/hierarchyTool", "pro": true },
+            { "label": "Base Component", "link": "/#/library/tools/baseComponent" },
+            { "label": "Button Attribute", "link": "/#/library/tools/buttonAttribute" },
+            { "label": "Show If Attribute", "link": "/#/library/tools/showIfAttribute" },
+            { "label": "Reference Value Attribute", "link": "/#/library/tools/referenceValueAttribute" },
+            { "label": "Key Binding Drawer", "link": "/#/library/tools/keyBindingDrawer" },
+            { "label": "Hierarchy Editor", "link": "/#/library/tools/hierarchyEditor", "pro": true },
             { "label": "Curve Editor", "link": "/#/library/tools/curveEditor", "pro": true},
             { "label": "Reference Console", "link": "/#/library/tools/referenceConsole", "pro": true },
             { "label": "Script Manager", "link": "/#/library/tools/scriptManager", "pro": true }

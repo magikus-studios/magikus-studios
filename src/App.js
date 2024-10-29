@@ -18,10 +18,9 @@ import LibraryDecoratorsLine from "Views/Library/Decorators/Line.js";
 import LibraryDecoratorsTextBox from "Views/Library/Decorators/TextBox.js";
 import LibraryDecoratorsTitle from "Views/Library/Decorators/Title.js";
 import LibraryDecoratorsToggle from "Views/Library/Decorators/Toggle.js";
-import LibraryDecoratorsCollapsable from "Views/Library/Decorators/Collapsable.js";
+import LibraryDecoratorsCollapse from "Views/Library/Decorators/Collapse.js";
 import LibraryDecoratorsNonEditable from "Views/Library/Decorators/NonEditable.js";
 import LibraryDecoratorsProgressBar from "Views/Library/Decorators/ProgressBar.js";
-import LibraryDecoratorsReferenceValue from "Views/Library/Decorators/ReferenceValue.js";
 
 import LibraryUtilities from "Views/Library/Utilities/_Utilities.js";
 import LibraryUtilitiesCreate from "Views/Library/Utilities/Create.js";
@@ -42,7 +41,6 @@ import LibraryStructuresVectors from "Views/Library/Structures/Vectors.js";
 import LibraryStructuresCouples from "Views/Library/Structures/Couples.js";
 import LibraryStructuresRanges from "Views/Library/Structures/Ranges.js";
 import LibraryStructuresTier from "Views/Library/Structures/Tier.js";
-import LibraryStructuresDebugState from "Views/Library/Structures/DebugState.js";
 import LibraryStructuresLabel from "Views/Library/Structures/Label.js";
 import LibraryStructuresTimeScale from "Views/Library/Structures/TimeScale.js";
 import LibraryStructuresEvents from "Views/Library/Structures/Events.js";
@@ -56,22 +54,24 @@ import LibraryMachinesState from "Views/Library/Machines/State.js";
 import LibraryMachinesTween from "Views/Library/Machines/Tween.js";
 
 import LibrarySystems from "Views/Library/Systems/_Systems.js";
-import LibrarySystemsSpriteAnimationSystem from "Views/Library/Systems/AnimationSystem.js";
+import LibrarySystemsAnimationSystem from "Views/Library/Systems/AnimationSystem.js";
 import LibrarySystemsTweakSystem from "Views/Library/Systems/TweakSystem.js";
 import LibrarySystemsAudioSystem from "Views/Library/Systems/AudioSystem.js";
 import LibrarySystemsDialogSystem from "Views/Library/Systems/DialogSystem.js";
 
 import LibraryTools from "Views/Library/Tools/_Tools.js";
-import LibraryToolsButton from "Views/Library/Tools/Button.js";
-import LibraryToolsShowIf from "Views/Library/Tools/ShowIf.js";
-import LibraryToolsKeyBinding from "Views/Library/Tools/KeyBinding.js";
-import LibraryToolsHierarchyTool from "Views/Library/Tools/HierarchyTool.js";
+import LibraryToolsBaseComponent from "Views/Library/Tools/BaseComponent.js";
+import LibraryToolsButtonAttribute from "Views/Library/Tools/ButtonAttribute.js";
+import LibraryToolsShowIfAttribute from "Views/Library/Tools/ShowIfAttribute.js";
+import LibraryToolsReferenceValueAttribute from "Views/Library/Tools/ReferenceValueAttribute.js";
+import LibraryToolsKeyBindingDrawer from "Views/Library/Tools/KeyBindingDrawer.js";
+import LibraryToolsHierarchyEditor from "Views/Library/Tools/HierarchyEditor.js";
 import LibraryToolsCurveEditor from "Views/Library/Tools/CurveEditor.js";
 import LibraryToolsReferenceConsole from "Views/Library/Tools/ReferenceConsole.js";
 import LibraryToolsScriptManager from "Views/Library/Tools/ScriptManager.js";
 
 export default function App() {
-
+  
   return (
     <div className='app'>
       <div className="star-container">
@@ -98,10 +98,9 @@ export default function App() {
           <Route exact path="/library/decorators/textBox" element={<Library content={<LibraryDecoratorsTextBox />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/decorators/title" element={<Library content={<LibraryDecoratorsTitle />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/decorators/toggle" element={<Library content={<LibraryDecoratorsToggle />} menu={LibraryMenu} />}></Route>
-          <Route exact path="/library/decorators/collapsable" element={<Library content={<LibraryDecoratorsCollapsable />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/decorators/collapse" element={<Library content={<LibraryDecoratorsCollapse />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/decorators/nonEditable" element={<Library content={<LibraryDecoratorsNonEditable />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/decorators/progressBar" element={<Library content={<LibraryDecoratorsProgressBar />} menu={LibraryMenu} />}></Route>
-          <Route exact path="/library/decorators/referenceValue" element={<Library content={<LibraryDecoratorsReferenceValue />} menu={LibraryMenu} />}></Route>
 
           <Route exact path="/library/utilities" element={<Library content={<LibraryUtilities />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/utilities/create" element={<Library content={<LibraryUtilitiesCreate />} menu={LibraryMenu} />}></Route>
@@ -122,7 +121,6 @@ export default function App() {
           <Route exact path="/library/structures/couples" element={<Library content={<LibraryStructuresCouples />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/structures/ranges" element={<Library content={<LibraryStructuresRanges />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/structures/tier" element={<Library content={<LibraryStructuresTier />} menu={LibraryMenu} />}></Route>
-          <Route exact path="/library/structures/debugState" element={<Library content={<LibraryStructuresDebugState />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/structures/label" element={<Library content={<LibraryStructuresLabel />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/structures/timeScale" element={<Library content={<LibraryStructuresTimeScale />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/structures/events" element={<Library content={<LibraryStructuresEvents />} menu={LibraryMenu} />}></Route>
@@ -136,16 +134,18 @@ export default function App() {
           <Route exact path="/library/machines/tween" element={<Library content={<LibraryMachinesTween />} menu={LibraryMenu} />}></Route>
 
           <Route exact path="/library/systems" element={<Library content={<LibrarySystems />} menu={LibraryMenu} />}></Route>
-          <Route exact path="/library/systems/animationSystem" element={<Library content={<LibrarySystemsSpriteAnimationSystem />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/systems/animationSystem" element={<Library content={<LibrarySystemsAnimationSystem />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/systems/tweakSystem" element={<Library content={<LibrarySystemsTweakSystem />} menu={LibraryMenu} />}></Route>          
           <Route exact path="/library/systems/audioSystem" element={<Library content={<LibrarySystemsAudioSystem />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/systems/dialogSystem" element={<Library content={<LibrarySystemsDialogSystem />} menu={LibraryMenu} />}></Route>
 
           <Route exact path="/library/tools" element={<Library content={<LibraryTools />} menu={LibraryMenu} />}></Route>
-          <Route exact path="/library/tools/button" element={<Library content={<LibraryToolsButton />} menu={LibraryMenu} />}></Route>
-          <Route exact path="/library/tools/showIf" element={<Library content={<LibraryToolsShowIf />} menu={LibraryMenu} />}></Route>
-          <Route exact path="/library/tools/keyBinding" element={<Library content={<LibraryToolsKeyBinding />} menu={LibraryMenu} />}></Route>
-          <Route exact path="/library/tools/hierarchyTool" element={<Library content={<LibraryToolsHierarchyTool />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/tools/baseComponent" element={<Library content={<LibraryToolsBaseComponent />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/tools/buttonAttribute" element={<Library content={<LibraryToolsButtonAttribute />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/tools/showIfAttribute" element={<Library content={<LibraryToolsShowIfAttribute />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/tools/referenceValueAttribute" element={<Library content={<LibraryToolsReferenceValueAttribute />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/tools/keyBindingDrawer" element={<Library content={<LibraryToolsKeyBindingDrawer />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/tools/hierarchyEditor" element={<Library content={<LibraryToolsHierarchyEditor />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/tools/curveEditor" element={<Library content={<LibraryToolsCurveEditor />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/tools/referenceConsole" element={<Library content={<LibraryToolsReferenceConsole />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/tools/scriptManager" element={<Library content={<LibraryToolsScriptManager />} menu={LibraryMenu} />}></Route>

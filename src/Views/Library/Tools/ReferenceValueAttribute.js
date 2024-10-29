@@ -5,7 +5,7 @@ export default function Function() {
     
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Reference Value Decorator</h1>
+            <h1 className="text-center">Reference Value Attribute</h1>
             <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
                 The ReferenceValue attribute is a custom attribute that provides a convenient interface for handling ObjectReference fields in Unity's Inspector. 
                 It allows you to create or remove object references directly from the Inspector using customizable buttons. 
@@ -40,31 +40,31 @@ export default function Function() {
             </p>
 
             <h4 className="c-light-1 p-3">Example 01: Simple Object Reference with Default Buttons</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Decorators/ReferenceValue/Reference Value - 01.jpg" alt=""/>            
+            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 01.jpg" alt=""/>            
             <p className="pad-left-3">
                 This example shows how to apply the ReferenceValue attribute to a GameObject field. 
                 The menu path "GameObject/Create Empty" is triggered when the create button is clicked.
             </p>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Decorators/ReferenceValue/Reference Value - 02.jpg" alt=""/>            
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Decorators/ReferenceValue/Reference Value - 03.jpg" alt=""/>                     
+            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 02.jpg" alt=""/>            
+            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 03.jpg" alt=""/>                     
 
             <h4 className="c-light-1 p-3">Example 02: Custom Ratio for Reference Field Width</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Decorators/ReferenceValue/Reference Value - 04.jpg" alt=""/>            
+            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 04.jpg" alt=""/>            
             <p className="pad-left-3">
                 Here, the reference field width for myMaterial is set to 70% of the total field width. 
                 The menu path "Assets/Create/Material" is used for creating a new reference. 
             </p>
-            <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/ReferenceValue/Reference Value - 05.jpg" alt=""/>            
-            <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/ReferenceValue/Reference Value - 06.jpg" alt=""/>            
+            <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 05.jpg" alt=""/>            
+            <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 06.jpg" alt=""/>            
 
             <h4 className="c-light-1 p-3">Example 03: Custom Button Labels</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Decorators/ReferenceValue/Reference Value - 07.jpg" alt=""/>            
+            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 07.jpg" alt=""/>            
             <p className="pad-left-3">
                 This example sets custom labels for the “create” and “remove” buttons. 
                 Clicking "Add Prefab" will create a new Prefab asset using the menu path "Assets/Create/Prefab", while clicking "Remove Prefab" will clear the reference.
             </p>
-            <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/ReferenceValue/Reference Value - 08.jpg" alt=""/>            
-            <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/ReferenceValue/Reference Value - 09.jpg" alt=""/>            
+            <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 08.jpg" alt=""/>            
+            <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 09.jpg" alt=""/>            
 
             
             <h3 className="p-2">Notes</h3>

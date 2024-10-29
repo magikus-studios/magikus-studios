@@ -2,33 +2,21 @@ import React from "react";
 
 export default function Function() {
 
+    let scrollUp = () => { window.scrollTo({ top: 0, behavior: "smooth" }); }
+
     return (
         <div className="c-light-2">
-            <h1 className="text-center">Machines</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                The Magikus Library provides a suite of powerful tools designed to facilitate various repetitive, 
-                state-based and animated behaviors in Unity. These tools, or "machines", include the Updater Machine, 
-                Cycle Machine, State Machine and Tween Machines. Each machine serves a specific purpose, ranging from 
-                managing update cycles to creating smooth animations, ensuring that developers can implement complex 
-                behaviors in a structured and efficient manner.
-                The purpose of these machines is to abstract and simplify common tasks in game development, such as
-                periodic updates, state management, looping behaviors and animations. By leveraging these utilities, 
-                developers can write cleaner, more maintainable code, and focus on the creative aspects of game 
-                development rather than the intricacies of implementation.
+            <h1 className="text-center pad-top-4">Machines</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Dynamic Structures that exploit In-Game Time Cycles
             </h6>
-
-            <h3 className="p-2">Introduction</h3>
+            <h3 className="p-2">Overview</h3>
             <p className="pad-left-2">
-                The Magikus Library Machines (Updaters, Cycles, State Machine and Tween Machines) are essential tools 
-                for game developers using Unity. They simplify the implementation of complex behaviors, enhance 
-                performance and promote code maintainability. By abstracting common tasks such as update cycles, 
-                looping behaviors, state management and animations, these machines allow developers to focus on the 
-                creative aspects of game development.             
+                The Machines module offers a suite of dynamic data structures designed to change state over time, simplifying time-based and regularly updated tasks in game development. 
+                These structures excel in managing repetitive, state-driven and animated behaviors, allowing developers to focus more on creativity and design rather than the complexities of implementation.
             </p>
 
-            <h3 className="p-2">Summary</h3>
-
-            <h4 className="c-light-1 p-3">Updaters</h4>
+            <a href="/#/library/machines/updater" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Updaters</h4></a>
             <p className="pad-left-3">
                 The Updater Machine in the Magikus Library is a utility designed to handle different types of update 
                 cycles within Unity. By abstracting the update mechanisms, it provides a flexible and modular approach 
@@ -38,7 +26,7 @@ export default function Function() {
                 controlled and organized execution of periodic tasks.
             </p>
 
-            <h4 className="c-light-1 p-3">Cycles</h4>
+            <a href="/#/library/machines/cycle" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Cycles</h4></a>
             <p className="pad-left-3">
                 The Cycle Machine is designed to facilitate the creation and management of cycles within the context of 
                 Unity game development. It allows developers to define and control various looping behaviors, such as 
@@ -47,7 +35,7 @@ export default function Function() {
                 It can be used to manage animations, periodic updates or any repetitive tasks that need to be executed at regular intervals.
             </p>
 
-            <h4 className="c-light-1 p-3">State Machine</h4>
+            <a href="/#/library/machines/state" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">State Machine</h4></a>
             <p className="pad-left-3">
                 The State Machine is a versatile and powerful tool designed to manage states and their transitions within an application. 
                 It is commonly used in scenarios such as game mechanics, user interfaces and workflow management where various states and 
@@ -56,7 +44,7 @@ export default function Function() {
                 during and after a state transition.
             </p>
 
-            <h4 className="c-light-1 p-3">Tween Machines</h4>
+            <a href="/#/library/machines/tween" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Tween Machines</h4></a>
             <p className="pad-left-3">
                 Tween Machines are utilities designed to facilitate smooth animations and transitions for game objects in Unity. 
                 They provide a way to animate various properties of game objects, such as position, rotation, scale and color, over time. 

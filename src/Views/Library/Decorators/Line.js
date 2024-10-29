@@ -5,12 +5,24 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Line Decorator</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                The Line attribute is a custom Unity attribute designed to add visual line separators in the Unity Inspector. 
-                It allows developers to create clear and customizable dividers between fields, making the inspector layout more organized and easier to navigate. 
-                The attribute provides various customization options, including width, height, color, and offsets for top and bottom margins.
+            <h1 className="text-center pad-top-4">Line Decorator</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Custom Unity attribute designed to add Visual Line Separators in the Unity Inspector
+
             </h6>
+
+            <h3 className="p-2">Overview</h3>
+            <p className="pad-left-2 pad-bottom-2">
+                The Line attribute is a simple yet effective decorator for enhancing the layout of the Unity Inspector. 
+                It allows developers to create clear and customizable dividers between fields, making the inspector layout more organized and easier to navigate. 
+                The attribute provides various customization options, including width, height, color and offsets for top and bottom margins.
+                It helps developers create clean and organized interfaces, making it easier to manage and navigate complex components. 
+                The Line attribute offers flexibility to suit various design preferences and organizational needs. 
+                Use it to create visually distinct sections in your Inspector and improve your workflow in Unity.
+            </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Line/Line - 02.jpg" alt=""/>            
+            </div>
 
             <h3 className="p-2">How it Works</h3>
 
@@ -21,15 +33,15 @@ export default function Function() {
                 </p>
                 <h5 className="c-light-1 pad-left-3">Constructors</h5>
                 <ul className="property-list">
-                    <li><b1>LineAttribute</b1>(): Creates a default line with standard width, height, and color.</li>
-                    <li><b1>LineAttribute</b1>(<b2>float</b2> <b1>width</b1>): Sets the width of the line.</li>
-                    <li><b1>LineAttribute</b1>(<b2>float</b2> <b1>width</b1>, <b2>string</b2> <b1>colorHex</b1>): Sets the width and color of the line using a hex color code.</li>
-                    <li><b1>LineAttribute</b1>(<b2>float</b2> <b1>width</b1>, <b2>float</b2> <b1>height</b1>): Sets the width and height of the line.</li>
-                    <li><b1>LineAttribute</b1>(<b2>float</b2> <b1>width</b1>, <b2>float</b2> <b1>height</b1>, <b2>string</b2> <b1>colorHex</b1>): Sets the width, height, and color of the line using a hex color code.</li>
-                    <li><b1>LineAttribute</b1>(<b2>float</b2> <b1>width</b1>, <b2>float</b2> <b1>height</b1>, <b2>float</b2> <b1>offset</b1>): Sets the width, height, and both top and bottom offsets.</li>
-                    <li><b1>LineAttribute</b1>(<b2>float</b2> <b1>width</b1>, <b2>float</b2> <b1>height</b1>, <b2>float</b2> <b1>offset</b1>, <b2>string</b2> <b1>colorHex</b1>): Sets the width, height, both offsets, and the color using a hex color code.</li>
-                    <li><b1>LineAttribute</b1>(<b2>float</b2> <b1>width</b1>, <b2>float</b2> <b1>height</b1>, <b2>float</b2> <b1>topOffset</b1>, <b2>float</b2> <b1>bottomOffset</b1>): Sets the width, height, and separate top and bottom offsets.</li>
-                    <li><b1>LineAttribute</b1>(<b2>float</b2> <b1>width</b1>, <b2>float</b2> <b1>height</b1>, <b2>float</b2> <b1>topOffset</b1>, <b2>float</b2> <b1>bottomOffset</b1>, <b2>string</b2> <b1>colorHex</b1>): Sets the width, height, separate offsets, and color using a hex color code.</li>
+                    <li><b1>LineAttribute</b1>()</li>
+                    <li><b1>LineAttribute</b1>(<b2>float</b2> <b1>width</b1>)</li>
+                    <li><b1>LineAttribute</b1>(<b2>float</b2> <b1>width</b1>, <b2>string</b2> <b1>colorHex</b1>)</li>
+                    <li><b1>LineAttribute</b1>(<b2>float</b2> <b1>width</b1>, <b2>float</b2> <b1>height</b1>)</li>
+                    <li><b1>LineAttribute</b1>(<b2>float</b2> <b1>width</b1>, <b2>float</b2> <b1>height</b1>, <b2>string</b2> <b1>colorHex</b1>)</li>
+                    <li><b1>LineAttribute</b1>(<b2>float</b2> <b1>width</b1>, <b2>float</b2> <b1>height</b1>, <b2>float</b2> <b1>offset</b1>)</li>
+                    <li><b1>LineAttribute</b1>(<b2>float</b2> <b1>width</b1>, <b2>float</b2> <b1>height</b1>, <b2>float</b2> <b1>offset</b1>, <b2>string</b2> <b1>colorHex</b1>)</li>
+                    <li><b1>LineAttribute</b1>(<b2>float</b2> <b1>width</b1>, <b2>float</b2> <b1>height</b1>, <b2>float</b2> <b1>topOffset</b1>, <b2>float</b2> <b1>bottomOffset</b1>)</li>
+                    <li><b1>LineAttribute</b1>(<b2>float</b2> <b1>width</b1>, <b2>float</b2> <b1>height</b1>, <b2>float</b2> <b1>topOffset</b1>, <b2>float</b2> <b1>bottomOffset</b1>, <b2>string</b2> <b1>colorHex</b1>)</li>
                 </ul>
                 <h5 className="c-light-1 pad-left-3">Parameters</h5>
                 <ul className="property-list">
@@ -81,14 +93,6 @@ export default function Function() {
                 <li>The Width parameter scales the line relative to the Inspector's width, while Height specifies the line's pixel height.</li>
                 <li>Offsets allow for additional spacing above and below the line, ensuring that it doesn't crowd the surrounding fields.</li>
             </ul>
-
-            <h3 className="p-2">Conclusion</h3>
-            <p className="pad-left-2">
-                The Line attribute is a simple yet effective tool for enhancing the layout of the Unity Inspector. 
-                By providing customizable line separators, it helps developers create clean and organized interfaces, making it easier to manage and navigate complex scripts. 
-                With options for width, height, color, and offsets, the Line attribute offers flexibility to suit various design preferences and organizational needs. 
-                Use it to create visually distinct sections in your Inspector and improve your workflow in Unity.
-            </p>
        </div>
     );
 }

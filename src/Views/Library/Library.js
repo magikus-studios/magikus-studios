@@ -15,7 +15,7 @@ export default function Function(props) {
         if (index === 0) { links.push("/#/" + i); }
         else { links.push(links[index - 1] + "/" + i); }
     });
-    let path = <h6 className="c-light-0 pt-md-2 pb-2">
+    let path = <h6 className="c-light-0 pt-2 pb-2">
         {
             pathSteps.map((i, index) => {
                 i = i.substring(0, 1).toUpperCase() + i.substring(1, i.length);
@@ -37,7 +37,16 @@ export default function Function(props) {
                         { submenu }
                     </div>
                     <div className="col-lg-9 col-md-8 col-sm-12 bg-dark-4 star-border">
-                        {path}
+                        <div className="row">
+                            <div className="ta-left col-6">{path}</div>
+                            <div className="ta-right col-6">
+                                <h6 className="c-light-0 pt-2 pb-2">
+                                    <a className="t-dec-none c-light-0 c-light-4-h" href="https://assetstore.unity.com/publishers/72471" target="_blank">
+                                            Download
+                                    </a>
+                                </h6>
+                                </div>
+                        </div>
                         {props.content}
                     </div>
                 </div>

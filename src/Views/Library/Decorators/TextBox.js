@@ -5,12 +5,22 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Text Box Decorator</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                The TextBox attribute is a custom Unity attribute used to display informative text boxes in the Unity Inspector. 
-                It allows developers to add messages of varying types (Info, Warning, Error, or None) to enhance the readability and context of their fields. 
-                This attribute is particularly useful for providing additional information or warnings directly within the Inspector interface.
+            <h1 className="text-center pad-top-4">Text Box Decorator</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Custom Unity attribute used to Display Informative Text Boxes in the Unity Inspector. 
             </h6>
+
+            <h3 className="p-2">Overview</h3>
+            <p className="pad-left-2 pad-bottom-2">
+                The TextBox attribute is a powerful tool for enhancing the Unity Inspector by providing additional context and information directly within the interface. 
+                It allows developers to add messages to enhance the readability and context of their fields. 
+                It supports different message types (Info, Warning, Error, or None), allowing for flexible and informative text boxes that can guide and inform users. 
+                This attribute is particularly useful for providing additional information or warnings directly within the Inspector interface.
+                By using this attribute, developers can create a more user-friendly and informative Inspector, leading to improved workflows and a better understanding of the underlying code and data.
+            </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/TextBox/Text Box - 04.jpg" alt=""/>              
+            </div>
 
             <h3 className="p-2">How it Works</h3>
 
@@ -21,15 +31,15 @@ export default function Function() {
                 </p>
                 <h5 className="c-light-1 pad-left-3">Constructors</h5>
                 <ul className="property-list">
-                    <li><b1>TextBoxAttribute</b1>(<b2>string</b2> <b1>text</b1>): Creates a text box with a default message type of None and the specified text.</li>                        
-                    <li><b1>TextBoxAttribute</b1>(<b2>string</b2> <b1>type</b1>, <b2>string</b2> <b1>text</b1>): Creates a text box with a specified message type as a string (Info, Warning, Error, or None) and the specified text.</li>
-                    <li><b1>TextBoxAttribute</b1>(<b2>MessageType</b2> <b1>type</b1>, <b2>string</b2> <b1>text</b1>): Creates a text box with a specified MessageType and the specified text.</li>
+                    <li><b1>TextBoxAttribute</b1>(<b2>string</b2> <b1>text</b1>)</li>                        
+                    <li><b1>TextBoxAttribute</b1>(<b2>string</b2> <b1>type</b1>, <b2>string</b2> <b1>text</b1>)</li>
+                    <li><b1>TextBoxAttribute</b1>(<b2>MessageType</b2> <b1>type</b1>, <b2>string</b2> <b1>text</b1>)</li>
                 </ul>
                 <h5 className="c-light-1 pad-left-3">Parameters</h5>
                 <ul className="property-list">
                     <li><b2>string</b2> <b1>text</b1>: The text message to display in the text box.</li>
-                    <li><b2>string</b2> <b1>type</b1> (optional): A string representing the type of message ("Info", "Warning", "Error"). If omitted, the default type is none.</li>            
-                    <li><b2>MessageType</b2> <b1>type</b1> (optional): A MessageType enum value (MessageType.Info, MessageType.Warning, MessageType.Error). If omitted, the default type is none.</li>
+                    <li><b2>string</b2> <b1>type</b1>: A string representing the type of message ("Info", "Warning", "Error"). Default type is none.</li>            
+                    <li><b2>MessageType</b2> <b1>type</b1>: A MessageType enum value (MessageType.Info, MessageType.Warning, MessageType.Error). Default type is none.</li>
                 </ul>
             </div>
             
@@ -86,14 +96,6 @@ export default function Function() {
                 <li>The TextBox attribute is versatile and can be used to display various types of messages, from simple notes to critical error warnings.</li>
                 <li>Ensure that the text provided to the TextBox attribute is concise and relevant to the field it accompanies to maintain clarity and readability in the Inspector.</li>
             </ul>
-
-            <h3 className="p-2">Conclusion</h3>
-            <p className="pad-left-2">
-                The TextBox attribute is a powerful tool for enhancing the Unity Inspector by providing additional context and information directly within 
-                the interface. It supports different message types, allowing for flexible and informative text boxes that can guide and inform users. 
-                By using this attribute, developers can create a more user-friendly and informative Inspector, leading to improved workflows and a better 
-                understanding of the underlying code and data.
-            </p>
        </div>
     );
 }

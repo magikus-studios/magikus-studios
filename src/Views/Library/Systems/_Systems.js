@@ -2,55 +2,39 @@ import React from "react";
 
 export default function Function() {
 
+    let scrollUp = () => { window.scrollTo({ top: 0, behavior: "smooth" }); }
+
     return (
         <div className="c-light-2">
-            <h1 className="text-center">Systems</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                The Systems module offers a suite of pre-built and robust systems that cater to a variety of 
-                common game development tasks. These systems are designed to seamlessly integrate into Unity, 
-                making it easy for developers to handle complex features such as animation, audio management, 
-                dialog creation and more with minimal effort. Whether you're a seasoned developer or a newcomer 
-                to Unity, these systems empower you to manage core game functionalities without needing to 
-                write extensive custom scripts. The Systems module is designed to work out of the box, streamlining 
-                the development process while still offering extensive flexibility and customization.
-                A key feature of these systems is their low-to-no-code approach, allowing developers and designers 
-                alike to create and manage game components through Unity's intuitive editor interface. Most systems 
-                can be used without any scripting knowledge, making them accessible to teams with diverse skill sets. 
-                Each system is also designed with modularity and extensibility in mind, ensuring that developers 
-                can tailor each solution to the specific needs of their project.
+            <h1 className="text-center pad-top-4">Systems</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Pre-built Solutions for Game Development
             </h6>
 
-            <h3 className="p-2">Introduction</h3>
+            <h3 className="p-2">Overview</h3>
             <p className="pad-left-2">
-                The Systems module of the Magikus Library provides developers with ready-to-use solutions for handling 
-                key game development tasks. With systems designed for animation, audio, tweaking, dialogs, event management 
-                and object pooling, the module covers a wide array of core game functionalities. Each system is designed 
-                to work seamlessly within Unity and requires minimal setup, making it easy to manage game components without 
-                extensive scripting. Whether you're a programmer or designer, these systems offer the flexibility to implement 
-                complex game features with ease, saving time and improving workflow efficiency. 
-            </p>
-            
-            <h3 className="p-2">Summary</h3>
-            <p className="pad-left-2">
-                This section provides an overview of the different systems available in the Magikus Library. Each system 
-                addresses a specific area of game development, allowing for quick integration and customization within the Unity environment.
+                The Systems module provides a suite of robust, pre-built solutions that address a wide range of essential game development tasks. 
+                Seamlessly integrating into Unity, these systems simplify the process of managing complex features, allowing developers to focus on gameplay rather than building everything from scratch. 
+                Designed to work out of the box, the Systems module streamlines development while offering flexibility and customization to adapt to specific project needs. 
+                A standout feature is its low-to-no-code approach, which enables both developers and designers to create and manage game components directly through Unity's editor, making it accessible to teams with varied skill sets. 
+                Each system is crafted with modularity and extensibility, ensuring easy adaptation and customization for any game project.
             </p>
 
-            <h4 className="c-light-1 p-3">Animation</h4>
+            <a href="/#/library/systems/animationSystem" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Animation System</h4></a>
             <p className="pad-left-3">
                 The Animation system is designed to simplify the creation and management of sprite-based animations in Unity. 
                 It consists of two core components: the Sprite Animator and the Sprite Animation Asset. Together, these tools 
                 make it easy to create, edit and control animations for SpriteRenderer and UI Image components.
             </p>
 
-            <h4 className="c-light-1 p-3">Tweak</h4>
+            <a href="/#/library/systems/tweakSystem" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Tweak System</h4></a>
             <p className="pad-left-3">
                 The Tweak system provides a dynamic solution for adjusting the position, rotation, scale and color of GameObjects 
                 with ease. It enables developers to create intricate, animated changes to objects without having to write 
                 custom scripts. The Tweak system supports complex tweaks, including sequences and randomized effects, for both 2D and 3D objects.
             </p>
 
-            <h4 className="c-light-1 p-3">Audio</h4>
+            <a href="/#/library/systems/audioSystem" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Audio System</h4></a>
             <p className="pad-left-3">
                 The Audio system simplifies the process of managing background music, sound effects and audio events in your game. 
                 Designed for ease of use, this system enables you to control audio playback without needing to write complex audio 
@@ -58,7 +42,7 @@ export default function Function() {
                 extensive scripting knowledge, making it ideal for both designers and programmers.
             </p>
 
-            <h4 className="c-light-1 p-3">Dialog</h4>
+            <a href="/#/library/systems/dialogSystem" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Dialog System</h4></a>
             <p className="pad-left-3">
                 The Dialog system provides an easy-to-use tool for creating and managing in-game dialogues. It allows developers to 
                 write lines of dialogue, customize character settings (such as text color, font and speed) and integrate dynamic 

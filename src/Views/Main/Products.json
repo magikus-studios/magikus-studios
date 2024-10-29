@@ -2,13 +2,15 @@
     {
         "image": "images/Products/Library - Icon Color (512).png",
         "title": "Magikus Library",
-        "description": "The Magikus Library is a comprehensive toolkit for Unity development, designed to streamline workflows, improve code quality and simplify complex tasks. It offers a unified framework that enhances productivity with features like decorators, utilities, machines, systems and tools, making game development faster and more efficient.",
-        "link": "/#/library"
+        "description": "The Magikus Library is a versatile toolkit for Unity that streamlines development, improves code quality and enhances productivity by simplifying common challenges and complex tasks.",
+        "link": "/#/library",
+        "newTab": false
     },
     {
         "image": "images/Products/IAM - Thumbnail [512].png",
         "title": "Incredible Arcade Machine",
         "description": "Get ready to experience the nostalgia of classic arcade games with Incredible Arcade Machine! This collection of retro-inspired games includes clones of Snake, Tetris, Pong, Asteroids, and Breakout, offering hours of addictive and challenging gameplay. Whether you're a fan of vintage gaming or simply looking for a fun and engaging introduction to game development, Incredible Arcade Machine is the perfect choice.",
-        "link": "https://magikus-studios.itch.io/incredible-arcade-machine"
+        "link": "https://magikus-studios.itch.io/incredible-arcade-machine",
+        "newTab": true
     }
 ]

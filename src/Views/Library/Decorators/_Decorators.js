@@ -2,93 +2,55 @@ import React from "react";
 
 export default function Function() {
 
+    let scrollUp = () => { window.scrollTo({ top: 0, behavior: "smooth" }); }
+
     return (
         <div className="c-light-2">
-            <h1 className="text-center">Decorators</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                The Magikus Library provides a suite of custom decorators designed to enhance and streamline
-                the Unity Inspector experience. These decorators offer a range of functionalities that improve the
-                organization, readability and interactivity of serialized fields. By utilizing these decorators,
-                developers can customize the Inspector to better suit their workflow and present data more
-                effectively. 
+            <h1 className="text-center pad-top-4">Decorators</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Attributes that enhance Data Visualization
             </h6>
 
-            <h3 className="p-2">Introduction</h3>
+            <h3 className="p-2">Overview</h3>
             <p className="pad-left-2">
-                Decorators in the Magikus Library are custom Unity attributes that extend the capabilities of the
-                Unity Inspector. They are designed to address common needs and challenges faced by developers,
-                such as visual organization, interactive elements and conditional visibility. Each decorator provides
-                specific enhancements, making it easier to manage and interact with component properties in
-                Unity. 
+                The Decorators module provides a suite of custom attributes and property drawers designed to enhance data visualization in the Unity Inspector. 
+                These decorators offer a range of functionalities that improve the organization, readability and interactivity of serialized fields. 
+                By utilizing these decorators, developers can customize the Inspector to better suit their workflow and present data more effectively. 
             </p>
 
-            <h3 className="p-2">Summary</h3>
-
-            <h4 className="c-light-1 p-3">Line</h4>
+            <a href="/#/library/decorators/line" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Line</h4></a>
             <p className="pad-left-3">
-                The Line attribute adds visual line separators to the Unity Inspector. It provides options to
-                customize the line's width, height, color and offsets for top and bottom margins. This helps in
-                creating clear visual dividers between fields, which enhances the layout and readability of the
-                Inspector. 
+                The Line attribute enhances Unity Inspector layout by creating customizable dividers between fields, improving organization, readability and workflow flexibility.
             </p>
 
-            <h4 className="c-light-1 p-3">Text Box</h4>
+            <a href="/#/library/decorators/textBox" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Text Box</h4></a>
             <p className="pad-left-3">
-                The TextBox attribute enables the display of informative text boxes in the Unity Inspector. It
-                supports various message types, including Info, Warning, Error or None. This decorator is useful 
-                for adding contextual information or warnings to fields, improving the clarity and guidance
-                provided in the Inspector. 
+                The TextBox attribute enhances the Unity Inspector by allowing developers to add informative messages (Info, Warning, Error or None) directly within the interface, improving readability, context and user guidance.
             </p>
 
-            <h4 className="c-light-1 p-3">Title</h4>
+            <a href="/#/library/decorators/title" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Title</h4></a>
             <p className="pad-left-3">
-                The Title attribute allows developers to display a stylized title above fields in the Unity Inspector. It
-                provides customization options for the title's text, font size, alignment, style, color and vertical
-                offset. This attribute is ideal for grouping and labeling sections, thereby enhancing the
-                organization and readability of component properties. 
+                The Title attribute enhances the Unity Inspector by adding customizable, visually appealing headers above fields, improving readability, organization and user experience.
             </p>
 
-            <h4 className="c-light-1 p-3">Toggle</h4>
+            <a href="/#/library/decorators/toggle" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Toggle</h4></a>
             <p className="pad-left-3">
-                The Toggle attribute converts boolean (bool) fields in the Unity Inspector into toggle buttons. This
-                decorator improves usability by providing a clear visual representation of boolean values, making
-                it easier to interact with options or features directly from the Inspector. 
+                The Toggle attribute transforms boolean fields into customizable toggle buttons in the Unity Inspector, enhancing usability and clarity with options for custom labels, colors and label visibility.
             </p>
 
-            <h4 className="c-light-1 p-3">Collapsable</h4>
+            <a href="/#/library/decorators/collapse" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Collapse</h4></a>
             <p className="pad-left-3">
-                The Collapsable attribute makes classes and structs collapsible in the Unity Inspector. This
-                functionality enhances the organization and readability of complex data structures by allowing
-                developers to expand and collapse fields as needed, thus reducing clutter.
+                The Collapse decorator enhances Unity's Inspector by making complex data structures collapsible, improving usability, organization and overall data visualization.
             </p>
 
-            <h4 className="c-light-1 p-3">Non Editable</h4>
+            <a href="/#/library/decorators/nonEditable" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Non Editable</h4></a>
             <p className="pad-left-3">
-                The NonEditable attribute makes fields read-only in the Unity Inspector. This is useful for
-                displaying data without allowing modifications directly from the Inspector, ensuring data integrity
-                and preventing accidental changes.
+                The NonEditable attribute is a Unity Inspector tool that keeps fields read-only, ensuring data integrity by preventing unintended modifications.
             </p>
 
-            <h4 className="c-light-1 p-3">Progress Bar</h4>
+            <a href="/#/library/decorators/progressBar" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Progress Bar</h4></a>
             <p className="pad-left-3">
-                The ProgressBar attribute displays a float field as a progress bar in the Unity Inspector. It is
-                particularly useful for visualizing percentage-based values such as health, experience or progress
-                metrics in a user-friendly and intuitive manner.
-            </p>
-
-            <h4 className="c-light-1 p-3">Reference Value</h4>
-            <p className="pad-left-3">
-                The ReferenceValue attribute provides a convenient interface for managing ObjectReference fields
-                in the Unity Inspector. It allows for the creation or removal of object references directly from the
-                Inspector using customizable buttons, streamlining the management of references to assets like
-                prefabs, materials or scriptable objects.
-            </p>
-
-            <h4 className="c-light-1 p-3">Collapsable List</h4>
-            <p className="pad-left-3">
-                The ListC{"<"}T{">"} class is a custom collection that extends Unity's built-in List{"<"}T{">"}. It offers a serialized,
-                editable list with a flexible interface for managing items directly within the Unity Editor. Users can
-                expand and collapse the list, improving navigation and management of large data collections.
+                The ProgressBar attribute allows for intuitive visualization of float values as progress bars in Unity's Inspector, ideal for displaying metrics like health or experience, with options for custom labels for added clarity.
             </p>
        </div>
     );

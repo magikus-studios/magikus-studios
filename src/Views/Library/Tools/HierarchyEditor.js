@@ -4,9 +4,9 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Hierarchy Tool</h1>
+            <h1 className="text-center">Hierarchy Editor</h1>
             <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                The Hierarchy Tool is a custom Unity editor tool designed to enhance the workflow within 
+                The Hierarchy editor is a custom Unity editor tool designed to enhance the workflow within 
                 the Unity Editor by providing additional functionalities for managing and organizing the 
                 hierarchy of game objects in a scene. This tool allows users to move selected objects up, 
                 down, top, bottom, nest them inside other objects, and group them efficiently.
@@ -14,16 +14,16 @@ export default function Function() {
 
             <h3 className="p-2">How to Use</h3>
 
-            <h4 className="c-light-1 p-3">Accessing the Hierarchy Tool</h4>
+            <h4 className="c-light-1 p-3">Accessing the Hierarchy editor</h4>
             <p className="pad-left-3">
-                In Unity, navigate to Magikus {">"} Hierarchy Tools from the top menu to open the Hierarchy Tools window.
+                In Unity, navigate to Magikus {">"} Hierarchy editor from the top menu to open the Hierarchy editor window.
             </p>
 
-            <h4 className="c-light-1 p-3">Using the Hierarchy Tool</h4>
+            <h4 className="c-light-1 p-3">Using the Hierarchy editor</h4>
 
             <h5 className="c-light-0 pad-left-3">Interface</h5>
             <p className="pad-left-3">
-                The Hierarchy Tools window consists of several buttons:
+                The Hierarchy editor window consists of several buttons:
             </p>
             <ul className="property-list">
                 <li><b1>|--</b1>: Move the selected objects to the top of their sibling list.</li>
@@ -34,7 +34,7 @@ export default function Function() {
                 <li><b1>{">"}</b1>: Nest the selected object inside the next sibling object in the hierarchy.</li>
                 <li><b1>[-]</b1>: Group the selected objects under a new empty parent object named "Group".</li>
             </ul>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/HierarchyTool/Hierarchy Tool - 01.jpg" alt=""/>
+            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/HierarchyEditor/Hierarchy Editor - 01.jpg" alt=""/>
             
             <h5 className="c-light-0 pad-left-3">Functionality</h5>
             <p className="pad-left-3">
@@ -61,7 +61,7 @@ export default function Function() {
 
             <h3 className="p-2">Conclusion</h3>
             <p className="pad-left-2">
-                The Hierarchy Tool enhances the Unity Editor by providing an easy-to-use interface for managing the 
+                The Hierarchy editor enhances the Unity Editor by providing an easy-to-use interface for managing the 
                 hierarchy of game objects. By using this tool, developers can save time and maintain a well-organized 
                 project structure, leading to a more efficient and streamlined workflow.
             </p>

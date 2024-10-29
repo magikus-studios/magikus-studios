@@ -5,12 +5,20 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Progress Bar Decorator</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                The ProgressBar attribute is a custom attribute designed to display a float field as a progress bar in Unity's Inspector. 
-                This is particularly useful for visualizing percentage-based values, such as health, experience, or progress metrics in an intuitive and user-friendly way.
+            <h1 className="text-center pad-top-4">Progress Bar Decorator</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Custom attribute designed to Display a Float Field as a Progress Bar in Unity's Inspector 
             </h6>
 
+            <h3 className="p-2">Overview</h3>
+            <p className="pad-left-2 pad-bottom-2">
+                The ProgressBar attribute offers a straightforward yet powerful way to visualize float values as progress bars in Unity's Inspector. 
+                It's especially useful for displaying percentage-based metrics like health, experience or progress in a clear and intuitive manner. 
+                Additionally, you can add a custom label to make the Inspector more informative and visually appealing.
+            </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/ProgressBar/Progress Bar - 04.jpg" alt=""/>            
+            </div>
 
             <h3 className="p-2">How it Works</h3>
 
@@ -18,8 +26,8 @@ export default function Function() {
                 <h4 className="c-light-1 pad-left-2">ProgressBar Attribute</h4>
                 <h5 className="c-light-1 pad-left-3">Constructors</h5>
                 <ul className="property-list">
-                    <li><b1>ProgressBarAttribute</b1>(): This constructor initializes the ProgressBar attribute without any label, defaulting to displaying the value as a percentage.</li>
-                    <li><b1>ProgressBarAttribute</b1>(<b2>string</b2> <b1>label</b1>): This constructor initializes the ProgressBar attribute with a custom label.</li>
+                    <li><b1>ProgressBarAttribute</b1>()</li>
+                    <li><b1>ProgressBarAttribute</b1>(<b2>string</b2> <b1>label</b1>)</li>
                 </ul>
                 <h5 className="c-light-1 pad-left-3">Parameters</h5>
                 <ul className="property-list">
@@ -62,13 +70,6 @@ export default function Function() {
                 <li>The progress bar is designed to handle values between 0 and 1. Values outside this range may not render as expected in the Inspector.</li>
                 <li>Adding a custom label can provide better context for what the progress bar represents, making the Inspector more informative.</li>
             </ul>
-
-            <h3 className="p-2">Conclusion</h3>
-            <p className="pad-left-2">
-                The ProgressBar attribute is a simple and effective way to visualize float values as progress bars in Unity's Inspector. 
-                Whether you are displaying health, experience, or any other percentage-based metric, this attribute offers a clear and visually appealing representation. 
-                By customizing the label, you can make your Inspector more user-friendly and informative.
-            </p>
        </div>
     );
 }

@@ -124,7 +124,7 @@
     background-size: 1000px;
     animation: slide-mountain 160s linear infinite;
 }
-.mountain-container{
+.mountain-container {
     overflow: hidden;
     position: fixed;
     z-index: -2;
@@ -188,8 +188,6 @@ pro {
 }
 .o-hiden { overflow: hidden; }
 .l-style-none { list-style: none; }
-.t-dec-none { text-decoration: none; }
-.text-justify { text-align: justify; }
 .property-list b { color: var(--light-0); }
 .property-list b1 { color: var(--light-3); font-weight: bold; }
 .property-list b2 { color: var(--light-1); font-weight: bold; font-style: italic; }
@@ -659,6 +657,34 @@ pro {
 .pos-left-100 { left: 100%; }
 
 .ts-i { font-style: italic; }
+.t-dec-none { text-decoration: none; }
+.text-justify { text-align: justify; }
+
+.ta-center { text-align: center; }
+.ta-justify { text-align: justify; }
+.ta-left { text-align: left; }
+.ta-right { text-align: right; }
+.ta-start { text-align: start; }
+.ta-end { text-align: end; }
+
+.tc-none { text-transform: none; }
+.tc-cap { text-transform: capitalize; }
+.tc-upper { text-transform: uppercase; }
+.tc-lower { text-transform: lowercase; }
+
+.fw-normal { font-weight: normal; }
+.fw-lighter { font-weight: lighter; }
+.fw-bold { font-weight: bold; }
+.fw-bolder { font-weight: bolder; }
+.fw-100 { font-weight: 100; }
+.fw-200 { font-weight: 200; }
+.fw-300 { font-weight: 300; }
+.fw-400 { font-weight: 400; }
+.fw-500 { font-weight: 500; }
+.fw-600 { font-weight: 600; }
+.fw-700 { font-weight: 700; }
+.fw-800 { font-weight: 800; }
+.fw-900 { font-weight: 900; }
 
 .fs-sxxx { font-size: xx-small; }
 .fs-sxx { font-size: x-small; }
