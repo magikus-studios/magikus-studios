@@ -7,10 +7,16 @@ export default function Function() {
     
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Grid Structure</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                The Grid structures module provides classes for creating and manipulating 2D grids, which can be useful for various applications such as game development, pathfinding and spatial data representation. 
+            <h1 className="text-center pad-top-4">Grid Structure</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Robust Data Structures for Working with Grids 
             </h6>
+
+            <h3 className="p-2">Overview</h3>
+            <p className="pad-left-2 pad-bottom-2">
+                The Grid structures module offers classes for creating and manipulating grids, making it ideal for tasks such as pathfinding and spatial data representation in game development. 
+                Utilizing these Grid structures allows developers to efficiently manage grid-based data, implement sophisticated spatial logic and simplify pathfinding operations.
+            </p>
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">
@@ -877,12 +883,6 @@ export default function Function() {
                 <li>When using Pathfinder2D, make sure the start and end positions are within the bounds of the matrix.</li>
                 <li>The Map methods are powerful for applying actions to multiple cells but should be used with care to avoid performance issues on large grids.</li>
             </ul>
-
-            <h3 className="p-2">Conclusion</h3>
-            <p className="pad-left-2">
-                The Grid structures module provides a robust set of tools for working with 2D grids in a variety of contexts. 
-                By leveraging Matrix2D, Grid2D and Pathfinder2D, developers can efficiently manage grid-based data, implement complex spatial logic and perform pathfinding operations with ease.
-            </p>
-       </div>
+      </div>
     );
 }

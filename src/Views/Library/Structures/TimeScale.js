@@ -6,13 +6,21 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Time Scale Structure</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                The TimeScale structure is designed to facilitate the synchronization of time and time scale management between different objects in Unity. 
-                By sharing the same TimeScale object, multiple objects can maintain consistent time values, ensuring uniform behavior throughout the application. 
-                This can be particularly useful in scenarios where there is a need to pause game time independently from UI animations, to apply various time effects 
-                like slow motion or fast-forwarding across different entities or ensuring multiple objects operate with a unified sense of time, such as aligning animation frames or physics calculations.
+            <h1 className="text-center pad-top-4">Time Scale Structure</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Structure designed to Facilitate the Synchronization of Time and Time Scale between different Objects
             </h6>
+            
+            <h3 className="p-2">Overview</h3>
+            <p className="pad-left-2 pad-bottom-2">
+                The TimeScale structure offers a robust and adaptable solution for managing and synchronizing time across multiple objects within a Unity project. 
+                By utilizing a shared TimeScale, objects can maintain consistent time values, ensuring cohesive behavior throughout the application. 
+                This feature is especially beneficial for independently pausing game time while UI animations continue, applying time effects like slow motion or fast-forwarding across different entities or synchronizing objects to operate in a unified timeframe, such as aligning animation frames or physics calculations. 
+                Leveraging the TimeScale structure's properties and methods enables developers to create immersive and responsive gameplay experiences.
+            </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/TimeScale/Time Scale - 02.jpg" alt=""/>            
+            </div>
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">
@@ -114,13 +122,6 @@ export default function Function() {
                 <li>The TimeScale and TimeScaleAsset structures both implement the ITimeScale interface, allowing for consistent interaction across different implementations.</li>
                 <li>Custom property drawers enable enhanced visualization and serialization in the Unity Editor, making it easier to configure and manage TimeScale objects.</li>
             </ul>
-            
-            <h3 className="p-2">Conclusion</h3>
-            <p className="pad-left-2">
-                The TimeScale structure provides a powerful and flexible way to manage and synchronize time across various objects in a Unity project. 
-                Whether you need to pause the game, create time manipulation effects or synchronize animations, the TimeScale structure and its associated asset can help streamline these processes and enhance the functionality of your game. 
-                By leveraging the properties and methods provided by the TimeScale structure, developers can create dynamic and responsive gameplay experiences.
-            </p>
        </div>
     );
 }

@@ -35,13 +35,6 @@ export default function Function() {
                 actions during development. 
             </p>
 
-            <a href="/#/library/tools/showIfAttribute" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Show If Attribute</h4></a>
-            <p className="pad-left-3">
-                The ShowIf attribute provides conditional visibility for fields in the Unity Inspector. It allows fields
-                to be displayed based on the value of another property, which helps in decluttering the Inspector
-                and making it more intuitive by showing only relevant fields under specific conditions.
-            </p>
-
             <a href="/#/library/tools/referenceValueAttribute" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Reference Value Attribute</h4></a>
             <p className="pad-left-3">
                 The ReferenceValue attribute provides a convenient interface for managing ObjectReference fields

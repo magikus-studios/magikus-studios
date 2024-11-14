@@ -6,10 +6,17 @@ export default function Function() {
     
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Text Utilities</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                The Text utilities provide a comprehensive set of static and extension methods for string and character manipulation. 
+            <h1 className="text-center pad-top-4">Text Utilities</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Methods for String and Character Manipulation 
             </h6>
+                        
+            <h3 className="p-2">Overview</h3>
+            <p className="pad-left-2 pad-bottom-2">
+                The Text utilities provide a rich set of static and extension methods to manipulate and analyze strings in an efficient and flexible manner. 
+                Whether you're counting occurrences, modifying content or checking for specific patterns, these utilities are designed to make string manipulation easy and intuitive. 
+                By using the powerful methods available, developers can streamline complex string-related tasks and ensure that their applications handle text data effectively.
+            </p>
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">
@@ -19,27 +26,20 @@ export default function Function() {
 
             <h3 className="p-2">How it Works</h3>
  
-            <Group title="Vector2" content={(
+            <Group title="" content={(
                 <div className="p-3">
                     <p className="pad-left-3">
-                        Creates a Vector2 instance with both components set to the same value, by copying the values from another Vector2 or with specified x and y components.
                     </p>
                     <h5 className="c-light-1 pad-left-3">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>static Vector2</b2> <b1>Vector2</b1>(<b2>float</b2> <b1>value</b1>)</li>
-                        <li><b2>static Vector2</b2> <b1>Vector2</b1>(<b2>Vector2</b2> <b1>vector</b1>)</li>
-                        <li><b2>static Vector2</b2> <b1>Vector2</b1>(<b2>float</b2> <b1>x</b1>, <b2>float</b2> <b1>y</b1>)</li>
+                        <li><b2></b2> <b1></b1>(<b2></b2> <b1></b1>)</li>
                     </ul>
                     <h5 className="c-light-1 pad-left-3">Parameters</h5>
                     <ul className="property-list">
-                        <li><b2>float</b2> <b1>value</b1>: The value to set for both the x and y components</li>                    
-                        <li><b2>Vector2</b2> <b1>vector</b1>: The source Vector2 from which to copy values</li>                    
-                        <li><b2>float</b2> <b1>x</b1>: The value for the x component</li>                    
-                        <li><b2>float</b2> <b1>y</b1>: The value for the y component</li>                    
+                        <li><b2></b2> <b1></b1>: </li>                    
                     </ul>
                 </div>
             )}/>
-
 
 
             <h3 className="p-2">How to Use</h3>
@@ -59,13 +59,6 @@ export default function Function() {
                 <li>Many methods accept enums such as SPECIAL_CHAR and COMPARISON to allow for highly customizable conditions and operations.</li>
                 <li>Methods that involve shifting or moving characters like ShiftLeft or MoveToEnd modify the order but do not change the original string. Instead, they return a new string.</li>
             </ul>
-                        
-            <h3 className="p-2">Conclusion</h3>
-            <p className="pad-left-2">
-                The Text utilities provide a rich set of tools to manipulate and analyze strings in an efficient and flexible manner. 
-                Whether you're counting occurrences, modifying content or checking for specific patterns, these utilities are designed to make string manipulation easy and intuitive. 
-                By using the powerful methods available, developers can streamline complex string-related tasks and ensure that their applications handle text data effectively.
-            </p>
        </div>
     );
 }

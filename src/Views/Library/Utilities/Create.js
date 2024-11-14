@@ -6,14 +6,21 @@ export default function Function() {
     
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Create Utilities</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                The Create class is a static utility class in the Magikus Library. 
-                It provides a set of static methods to create and manipulate various Unity data types, such as Vector2, Vector3, Vector2Int, Vector3Int, Color and Rect. 
+            <h1 className="text-center pad-top-4">Create Utilities</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Methods for Creating various Unity Data Types                
             </h6>
+                        
+            <h3 className="p-2">Overview</h3>
+            <p className="pad-left-2 pad-bottom-2">
+                The Create class is a static utility class that contains a set of static methods to create various Unity data types.
+                Its methods support various ways of initializing these types, making it easier to handle different scenarios in Unity development. 
+                By using the Create class, you can write more concise and readable code, enhancing your workflow in Unity projects.
+            </p>
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">
+                The Create class provides a versatile and straightforward way to create common Unity types such as Vector2, Vector2Int, Vector3, Vector3Int, Color and Rect. 
                 This class simplifies the process of creating instances of these types with various initialization options, making it easier to handle common values in Unity projects.
             </p>
 
@@ -178,13 +185,6 @@ export default function Function() {
                 <li>The hex color values should be valid HTML color codes.</li>
                 <li>The methods involving Vector2, Vector2Int, Vector3, Vector3Int, and Rect facilitate creating instances with default or specified values, simplifying the initialization process in Unity.</li>
             </ul>
-                        
-            <h3 className="p-2">Conclusion</h3>
-            <p className="pad-left-2">
-                The Create class provides a versatile and straightforward way to create and manipulate common Unity types such as Vector2, Vector2Int, Vector3, Vector3Int, Color and Rect. 
-                Its methods support various ways of initializing these types, making it easier to handle different scenarios in Unity development. 
-                By using the Create class, you can write more concise and readable code, enhancing your workflow in Unity projects.
-            </p>
        </div>
     );
 }

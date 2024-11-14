@@ -6,36 +6,273 @@ export default function Function() {
     
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Easing Utilities</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                The Easing utilities are a comprehensive set of static methods housed within the Easing static class, designed to provide developers with a wide array of easing functions for creating smooth animations, transitions and subtle effects in their code.
+            <h1 className="text-center pad-top-4">Easing Utilities</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Methods for creating Smooth Animations, Transitions and Subtle Effects
             </h6>
+                        
+            <h3 className="p-2">Overview</h3>
+            <p className="pad-left-2 pad-bottom-2">
+                The Easing utilities provide a powerful set of tools for creating smooth and visually appealing transitions in your animations. 
+                With different easing types and multiple variations, you can fine-tune the motion effects to fit your specific needs. 
+                Whether you're animating UI elements, creating game effects or just adding a touch of polish to your project, these utilities offer a wide range of possibilities for enhancing the user experience.
+            </p>
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">
+                The Easing utilities are housed within the Easing static class and provide developers with a wide array of easing functions. 
                 These utilities include 13 different easing types, each with three variations: In, Out and Both.
                 These variations describe how the easing function will be applied over time, whether at the beginning (In), the end (Out) or both (Both).
             </p>
 
             <h3 className="p-2">How it Works</h3>
  
-            <Group title="Vector2" content={(
+            <Group title="GetEasingFunc" content={(
                 <div className="p-3">
                     <p className="pad-left-3">
-                        Creates a Vector2 instance with both components set to the same value, by copying the values from another Vector2 or with specified x and y components.
+                        Returns a Func{"<float, float>"} that represents the specified easing function.
                     </p>
                     <h5 className="c-light-1 pad-left-3">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>static Vector2</b2> <b1>Vector2</b1>(<b2>float</b2> <b1>value</b1>)</li>
-                        <li><b2>static Vector2</b2> <b1>Vector2</b1>(<b2>Vector2</b2> <b1>vector</b1>)</li>
-                        <li><b2>static Vector2</b2> <b1>Vector2</b1>(<b2>float</b2> <b1>x</b1>, <b2>float</b2> <b1>y</b1>)</li>
+                        <li><b2>Func{"<float, float>"}</b2> <b1>GetEasingFunc</b1>(<b2>EASING_TYPE</b2> <b1>easingType</b1>)</li>
                     </ul>
                     <h5 className="c-light-1 pad-left-3">Parameters</h5>
                     <ul className="property-list">
-                        <li><b2>float</b2> <b1>value</b1>: The value to set for both the x and y components</li>                    
-                        <li><b2>Vector2</b2> <b1>vector</b1>: The source Vector2 from which to copy values</li>                    
-                        <li><b2>float</b2> <b1>x</b1>: The value for the x component</li>                    
-                        <li><b2>float</b2> <b1>y</b1>: The value for the y component</li>                    
+                        <li><b2>EASING_TYPE</b2> <b1>easingType</b1>: An EASING_TYPE enum value indicating which easing function to retrieve</li>                    
+                    </ul>
+                </div>
+            )}/>
+
+            <Group title="Linear" content={(
+                <div className="p-3">
+                    <p className="pad-left-3">
+                        A constant rate of change applying the easing at the beginning, at the endo or both. 
+                    </p>
+                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <ul className="property-list">
+                        <li><b2>float</b2> <b1>LinearIn</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                        <li><b2>float</b2> <b1>LinearOut</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                        <li><b2>float</b2> <b1>LinearBoth</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                    </ul>
+                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <ul className="property-list">
+                        <li><b2>float</b2> <b1>x</b1>: The value to convert with the easing functions</li>                    
+                    </ul>
+                </div>
+            )}/>
+
+            <Group title="Sin" content={(
+                <div className="p-3">
+                    <p className="pad-left-3">
+                        Eases using the sine function applying the easing at the beginning, at the endo or both. 
+                    </p>
+                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <ul className="property-list">
+                        <li><b2>float</b2> <b1>SinIn</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                        <li><b2>float</b2> <b1>SinOut</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                        <li><b2>float</b2> <b1>SinBoth</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                    </ul>
+                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <ul className="property-list">
+                        <li><b2>float</b2> <b1>x</b1>: The value to convert with the easing functions</li>                    
+                    </ul>
+                </div>
+            )}/>
+
+            <Group title="Cos" content={(
+                <div className="p-3">
+                    <p className="pad-left-3">
+                        Eases using the cosine function applying the easing at the beginning, at the endo or both. 
+                    </p>
+                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <ul className="property-list">
+                        <li><b2>float</b2> <b1>CosIn</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                        <li><b2>float</b2> <b1>CosOut</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                        <li><b2>float</b2> <b1>CosBoth</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                    </ul>
+                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <ul className="property-list">
+                        <li><b2>float</b2> <b1>x</b1>: The value to convert with the easing functions</li>                    
+                    </ul>
+                </div>
+            )}/>
+
+            <Group title="Trig" content={(
+                <div className="p-3">
+                    <p className="pad-left-3">
+                        Trigonometric easing that smoothly accelerates or decelerates applying the easing at the beginning, at the endo or both. 
+                    </p>
+                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <ul className="property-list">
+                        <li><b2>float</b2> <b1>TrigIn</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                        <li><b2>float</b2> <b1>TrigOut</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                        <li><b2>float</b2> <b1>TrigBoth</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                    </ul>
+                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <ul className="property-list">
+                        <li><b2>float</b2> <b1>x</b1>: The value to convert with the easing functions</li>                    
+                    </ul>
+                </div>
+            )}/>
+
+            <Group title="Quad" content={(
+                <div className="p-3">
+                    <p className="pad-left-3">
+                        Quadratic easing, accelerating or decelerating at a constant rate applying the easing at the beginning, at the endo or both. 
+                    </p>
+                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <ul className="property-list">
+                        <li><b2>float</b2> <b1>QuadIn</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                        <li><b2>float</b2> <b1>QuadOut</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                        <li><b2>float</b2> <b1>QuadBoth</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                    </ul>
+                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <ul className="property-list">
+                        <li><b2>float</b2> <b1>x</b1>: The value to convert with the easing functions</li>                    
+                    </ul>
+                </div>
+            )}/>
+
+            <Group title="Cubic" content={(
+                <div className="p-3">
+                    <p className="pad-left-3">
+                        Cubic easing, for smoother, more pronounced accelerations or decelerations applying the easing at the beginning, at the endo or both. 
+                    </p>
+                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <ul className="property-list">
+                        <li><b2>float</b2> <b1>CubicIn</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                        <li><b2>float</b2> <b1>CubicOut</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                        <li><b2>float</b2> <b1>CubicBoth</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                    </ul>
+                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <ul className="property-list">
+                        <li><b2>float</b2> <b1>x</b1>: The value to convert with the easing functions</li>                    
+                    </ul>
+                </div>
+            )}/>
+
+            <Group title="Quart" content={(
+                <div className="p-3">
+                    <p className="pad-left-3">
+                        Quartic easing, even smoother and more pronounced than cubic applying the easing at the beginning, at the endo or both. 
+                    </p>
+                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <ul className="property-list">
+                        <li><b2>float</b2> <b1>QuartIn</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                        <li><b2>float</b2> <b1>QuartOut</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                        <li><b2>float</b2> <b1>QuartBoth</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                    </ul>
+                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <ul className="property-list">
+                        <li><b2>float</b2> <b1>x</b1>: The value to convert with the easing functions</li>                    
+                    </ul>
+                </div>
+            )}/>
+
+            <Group title="Quint" content={(
+                <div className="p-3">
+                    <p className="pad-left-3">
+                        Quintic easing, with a very steep curve applying the easing at the beginning, at the endo or both. 
+                    </p>
+                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <ul className="property-list">
+                        <li><b2>float</b2> <b1>QuintIn</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                        <li><b2>float</b2> <b1>QuintOut</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                        <li><b2>float</b2> <b1>QuintBoth</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                    </ul>
+                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <ul className="property-list">
+                        <li><b2>float</b2> <b1>x</b1>: The value to convert with the easing functions</li>                    
+                    </ul>
+                </div>
+            )}/>
+
+            <Group title="Exp" content={(
+                <div className="p-3">
+                    <p className="pad-left-3">
+                        Exponential easing, for sharp accelerations or decelerations applying the easing at the beginning, at the endo or both. 
+                    </p>
+                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <ul className="property-list">
+                        <li><b2>float</b2> <b1>ExpIn</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                        <li><b2>float</b2> <b1>ExpOut</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                        <li><b2>float</b2> <b1>ExpBoth</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                    </ul>
+                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <ul className="property-list">
+                        <li><b2>float</b2> <b1>x</b1>: The value to convert with the easing functions</li>                    
+                    </ul>
+                </div>
+            )}/>
+
+            <Group title="Circular" content={(
+                <div className="p-3">
+                    <p className="pad-left-3">
+                        Easing that follows a circular curve applying the easing at the beginning, at the endo or both. 
+                    </p>
+                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <ul className="property-list">
+                        <li><b2>float</b2> <b1>CircularIn</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                        <li><b2>float</b2> <b1>CircularOut</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                        <li><b2>float</b2> <b1>CircularBoth</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                    </ul>
+                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <ul className="property-list">
+                        <li><b2>float</b2> <b1>x</b1>: The value to convert with the easing functions</li>                    
+                    </ul>
+                </div>
+            )}/>
+
+            <Group title="Back" content={(
+                <div className="p-3">
+                    <p className="pad-left-3">
+                        Easing with a slight overshoot at the beginning, at the endo or both. 
+                    </p>
+                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <ul className="property-list">
+                        <li><b2>float</b2> <b1>BackIn</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                        <li><b2>float</b2> <b1>BackOut</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                        <li><b2>float</b2> <b1>BackBoth</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                    </ul>
+                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <ul className="property-list">
+                        <li><b2>float</b2> <b1>x</b1>: The value to convert with the easing functions</li>                    
+                    </ul>
+                </div>
+            )}/>
+
+            <Group title="Elastic" content={(
+                <div className="p-3">
+                    <p className="pad-left-3">
+                        Easing that mimics an elastic, with a bouncy effect applying the easing at the beginning, at the endo or both. 
+                    </p>
+                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <ul className="property-list">
+                        <li><b2>float</b2> <b1>ElasticIn</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                        <li><b2>float</b2> <b1>ElasticOut</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                        <li><b2>float</b2> <b1>ElasticBoth</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                    </ul>
+                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <ul className="property-list">
+                        <li><b2>float</b2> <b1>x</b1>: The value to convert with the easing functions</li>                    
+                    </ul>
+                </div>
+            )}/>
+
+            <Group title="Bounce" content={(
+                <div className="p-3">
+                    <p className="pad-left-3">
+                        Easing that bounces, like a ball dropping to the ground applying the easing at the beginning, at the endo or both. 
+                    </p>
+                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <ul className="property-list">
+                        <li><b2>float</b2> <b1>BounceIn</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                        <li><b2>float</b2> <b1>BounceOut</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                        <li><b2>float</b2> <b1>BounceBoth</b1>(<b2>float</b2> <b1>x</b1>)</li>
+                    </ul>
+                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <ul className="property-list">
+                        <li><b2>float</b2> <b1>x</b1>: The value to convert with the easing functions</li>                    
                     </ul>
                 </div>
             )}/>
@@ -70,13 +307,6 @@ export default function Function() {
                 <li>All easing functions take a float value (typically representing time normalized between 0 and 1) and return a float value that represents the eased output.</li>
                 <li>Using GetEasingFunc can simplify your code if you need to switch between different easing functions dynamically.</li>
             </ul>
-                        
-            <h3 className="p-2">Conclusion</h3>
-            <p className="pad-left-2">
-                The Easing utilities provide a powerful set of tools for creating smooth and visually appealing transitions in your animations. 
-                With 13 different types and multiple variations, you can fine-tune the motion effects to fit your specific needs. 
-                Whether you're animating UI elements, creating game effects or just adding a touch of polish to your project, these utilities offer a wide range of possibilities for enhancing the user experience.
-            </p>
        </div>
     );
 }

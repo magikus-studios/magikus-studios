@@ -5,16 +5,27 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Range Structure</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                The Range structure is a versatile and generic data structure designed to hold a minimum and maximum value of a specified type. 
-                It is highly flexible and can be used with any type that implements the IComparable interface. 
-                The primary use case for Range{"<T>"} is to define a range or interval between two values, such as minimum and maximum thresholds for numerical values, ranges for colors or even ranges for more complex types like dates or strings.
+            <h1 className="text-center pad-top-4">Range Structure</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Data Structure designed to hold a Minimum and Maximum Value of a Specified Type.                
             </h6>
+
+            <h3 className="p-2">Overview</h3>
+            <p className="pad-left-2 pad-bottom-2">
+                The Range structure is a highly versatile tool for defining and manipulating ranges of values. 
+                It is designed to work with any type that implements the IComparable interface, offering broad applicability. 
+                With its comprehensive set of methods, the Range structure simplifies range checks and comparisons, making it indispensable for projects that require range-based logic. 
+                By supporting generic types, it provides developers the flexibility to use it in diverse scenarios, whether dealing with basic numeric values, complex objects or custom data types.
+            </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Ranges/Ranges - 05.jpg" alt=""/>            
+            </div>
+
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">
                 This structure is particularly useful in scenarios where you need to validate, compare or operate on values that fall within a specific range. 
+                The primary use case for Range{"<T>"} is to define a range or interval between two values, such as minimum and maximum thresholds for numerical values, ranges for colors or even ranges for more complex types like dates or strings.
                 For instance, it can be used to check if a value lies within the defined range (InRange), if it is exactly at one of the limits (InLimit) or if it falls outside the range (IsOutside). 
                 The generic nature of Range{"<T>"} allows it to be adapted to various types and contexts, making it a powerful tool for handling ranges in a type-safe and consistent manner.
             </p>
@@ -111,13 +122,6 @@ export default function Function() {
                 <li>The fields Min and Max are serialized, allowing them to be used in Unity’s inspector for easy editing during development.</li>
                 <li>The setter methods for Min and Max ensure that Min is always less than or equal to Max and vice versa. If an invalid assignment is made, the values are automatically corrected.</li>
             </ul>
-
-            <h3 className="p-2">Conclusion</h3>
-            <p className="pad-left-2">
-                The Range{"<T>"} structure is a highly flexible tool for defining and operating on ranges of values. 
-                By implementing generic types, it allows developers to use it in a wide variety of scenarios, whether working with simple numeric values, complex objects or custom data types. 
-                Its rich set of methods ensures that you can easily perform range checks and comparisons, making it an essential part of any project that requires range-based logic.
-            </p>
        </div>
     );
 }

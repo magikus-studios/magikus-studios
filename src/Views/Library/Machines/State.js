@@ -6,21 +6,24 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">State Machine</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                The State Machine is a versatile and powerful tool designed to manage states and their transitions within an application. 
-                It is commonly used in scenarios such as game mechanics, user interfaces and workflow management where various states and 
-                state transitions need to be managed effectively.
+            <h1 className="text-center pad-top-4">State Machine</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Structure designed to Manage States and their Transitions
             </h6>
 
+            <h3 className="p-2">Overview</h3>
+            <p className="pad-left-2 pad-bottom-2">
+                The State machine is a powerful and versatile structure for managing states and transitions across various applications, including game mechanics, user interfaces and gameflow control. 
+                It provides a well-organized framework for handling complex state transitions, improving code organization and enhancing maintainability. 
+                With its structured approach, the State machine is an essential solution for efficiently managing dynamic states and interactions in Unity projects.
+            </p>
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">
                 The primary purpose of the State Machine is to provide a structured way to manage states and the transitions between them. 
                 It allows developers to define states and the actions that occur before, during and after a state transition. 
                 This helps in organizing code, making it more readable, maintainable and scalable. 
-            </p>
-            <p className="pad-left-2">
+                <br/>
                 Some use cases are:
             </p>
             <ul className="property-list">
@@ -105,13 +108,6 @@ export default function Function() {
                 <li>The Play method must be called to start the state machine.</li>
                 <li>The Pause method can be used to temporarily halt state transitions.</li>                
             </ul>
-
-            <h3 className="p-2">Conclusion</h3>
-            <p className="pad-left-2">
-                The State Machine is a robust and flexible tool for managing states and transitions in various applications. 
-                By providing a structured way to handle state management, it simplifies code organization and enhances maintainability. 
-                Whether used in game mechanics, user interfaces or workflow management, the State Machine offers a powerful solution for state handling needs.
-            </p>
        </div>
     );
 }

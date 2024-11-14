@@ -6,12 +6,24 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Switch Structure</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                The Switch structures are designed to enhance script flexibility by allowing developers to choose among different types of values within a single script component, based on the current state. 
-                This state is set through the Inspector in development environments and the Switch structure will show and use only the type value selected for that state. 
-                This mechanism reduces the need to write repetitive code and simplifies the adjustment of types in various scenarios.
+            <h1 className="text-center pad-top-4">Switch Structure</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Structure for Selecting and Managing Different Data Types Based on State
             </h6>
+            
+            <h3 className="p-2">Overview</h3>
+            <p className="pad-left-2 pad-bottom-2">                
+                The Switch structure and its variations are essential tools for developers aiming to create flexible, maintainable, and scalable scripts. 
+                Designed to enhance flexibility, these structures allow developers to select and manage different types of values within a single object, depending on the current state, which is easily set through the Inspector in Unity.
+                The Switch structure only displays and uses the specific type selected for the active state, reducing repetitive code and simplifying the modification of types in various scenarios.
+                By enabling seamless selection and manipulation of values through the Inspector, Switch structures streamline script management, reduce complexity and significantly enhance the efficiency of script editing and maintenance, making them invaluable for developing versatile applications.
+            </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 05.jpg" alt=""/>            
+                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 06.jpg" alt=""/>            
+                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 07.jpg" alt=""/>            
+                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 08.jpg" alt=""/>            
+            </div>
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">
@@ -277,13 +289,6 @@ export default function Function() {
                 <li>The Switch structures facilitate easy maintenance and updates to scripts without the need to directly modify code for changing types.</li>
                 <li>These structures can be extended to other types as needed, ensuring flexibility and scalability.</li>
             </ul>
-            
-            <h3 className="p-2">Conclusion</h3>
-            <p className="pad-left-2">
-                The Switch structure and its composed variations are invaluable tools for developers seeking to write more flexible, maintainable and scalable scripts. 
-                By enabling the easy selection and manipulation of different type values through the Inspector, these structures reduce the complexity of script management and provide a streamlined approach to developing versatile applications. 
-                Utilizing Switch structures can significantly improve the efficiency of script editing and maintenance.
-            </p>
        </div>
     );
 }

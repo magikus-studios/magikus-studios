@@ -6,19 +6,24 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Tween Machine</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                Tween Machines are utilities designed to facilitate smooth animations and transitions for game objects in Unity. 
-                They provide a way to animate various properties of game objects, such as position, rotation, scale and color, over time. 
+            <h1 className="text-center pad-top-4">Tween Machine</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Smooth Animations and Transitions for GameObjects in Unity
             </h6>
 
+            <h3 className="p-2">Overview</h3>
+            <p className="pad-left-2 pad-bottom-2">
+                Tween machines offer a robust and flexible way to animate GameObjects in Unity through scripting. 
+                They allow developers to animate various properties of GameObjects (such as position, rotation, scale and color) over time. 
+                By leveraging these tools via code, developers can create smooth, polished animations with minimal effort. 
+                Whether you need to move, rotate, scale, fade or tint an object, Tween machines provide the scripting functionality necessary to achieve professional-grade animations.
+            </p>
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">
                 The purpose of Tween Machines is to create fluid, non-blocking animations that can be easily controlled and sequenced. 
                 They are especially useful for creating user interface animations, character movements, object transformations and other dynamic visual effects.
-            </p>
-            <p className="pad-left-2">
+                <br/>
                 Some use cases are:
             </p>
             <ul className="property-list">
@@ -190,14 +195,6 @@ export default function Function() {
                 <li>Combining multiple tweens can create complex animations. Use the OnFinish callback to chain animations.</li>
                 <li>Easing functions determine the speed curve of the animation. Choose the appropriate easing function based on the desired effect.</li>
             </ul>
-
-            <h3 className="p-2">Conclusion</h3>
-            <p className="pad-left-2">
-                Tween Machines offer a robust and flexible way to animate GameObjects in Unity. 
-                By leveraging these tools, developers can create smooth and polished animations with minimal effort. 
-                Whether you need to move, rotate, scale, fade or tint an object, Tween Machines provide the necessary 
-                functionality to achieve professional-grade animations.
-            </p>
        </div>
     );
 }

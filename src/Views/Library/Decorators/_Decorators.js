@@ -23,14 +23,26 @@ export default function Function() {
                 The Line attribute enhances Unity Inspector layout by creating customizable dividers between fields, improving organization, readability and workflow flexibility.
             </p>
 
-            <a href="/#/library/decorators/textBox" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Text Box</h4></a>
-            <p className="pad-left-3">
-                The TextBox attribute enhances the Unity Inspector by allowing developers to add informative messages (Info, Warning, Error or None) directly within the interface, improving readability, context and user guidance.
-            </p>
-
             <a href="/#/library/decorators/title" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Title</h4></a>
             <p className="pad-left-3">
                 The Title attribute enhances the Unity Inspector by adding customizable, visually appealing headers above fields, improving readability, organization and user experience.
+            </p>
+
+            <a href="/#/library/decorators/message" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Message</h4></a>
+            <p className="pad-left-3">
+                The Message attribute enhances the Unity Inspector by allowing developers to add informative messages (Info, Warning, Error or None) directly within the interface, improving readability, context and user guidance.
+            </p>
+
+            <a href="/#/library/decorators/hide" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Hide</h4></a>
+            <p className="pad-left-3">
+                The ShowIf attribute provides conditional visibility for fields in the Unity Inspector. It allows fields
+                to be displayed based on the value of another property, which helps in decluttering the Inspector
+                and making it more intuitive by showing only relevant fields under specific conditions.
+            </p>
+
+            <a href="/#/library/decorators/block" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Block</h4></a>
+            <p className="pad-left-3">
+                The Block attribute is a Unity Inspector tool that keeps fields read-only, ensuring data integrity by preventing unintended modifications.
             </p>
 
             <a href="/#/library/decorators/toggle" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Toggle</h4></a>
@@ -41,11 +53,6 @@ export default function Function() {
             <a href="/#/library/decorators/collapse" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Collapse</h4></a>
             <p className="pad-left-3">
                 The Collapse decorator enhances Unity's Inspector by making complex data structures collapsible, improving usability, organization and overall data visualization.
-            </p>
-
-            <a href="/#/library/decorators/nonEditable" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Non Editable</h4></a>
-            <p className="pad-left-3">
-                The NonEditable attribute is a Unity Inspector tool that keeps fields read-only, ensuring data integrity by preventing unintended modifications.
             </p>
 
             <a href="/#/library/decorators/progressBar" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Progress Bar</h4></a>

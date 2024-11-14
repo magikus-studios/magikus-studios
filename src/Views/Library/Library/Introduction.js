@@ -19,11 +19,6 @@ export default function Function() {
                 Whether for large projects or small indie games, the Magikus Library offers the essential building blocks for success, boosting productivity and simplifying the development process.
             </p>
 
-            <a href="/#/library/decorators" className="t-dec-none" onClick={scrollUp}><h3 className="c-light-1 c-light-3-h p-3">Decorators</h3></a>
-            <p className="pad-left-3">
-                The Decorators module offers custom attributes and property drawers that enhance data visualization in the Unity Inspector, improving the organization, readability and interactivity of serialized fields for a more effective workflow.
-            </p>
-
             <a href="/#/library/utilities" className="t-dec-none" onClick={scrollUp}><h3 className="c-light-1 c-light-3-h p-3">Utilities</h3></a>
             <p className="pad-left-3">
                 The Utilities module offers a wide range of static and extension methods that simplify script development, allowing developers to handle common tasks efficiently while maintaining a clean and manageable codebase.
@@ -42,6 +37,11 @@ export default function Function() {
             <a href="/#/library/systems" className="t-dec-none" onClick={scrollUp}><h3 className="c-light-1 c-light-3-h p-3">Systems</h3></a>
             <p className="pad-left-3">
                 The Systems module offers pre-built, easily integrable solutions that simplify essential game development tasks, allowing developers to focus on gameplay with minimal coding, while providing flexibility and customization directly through Unity’s editor.                
+            </p>
+
+            <a href="/#/library/decorators" className="t-dec-none" onClick={scrollUp}><h3 className="c-light-1 c-light-3-h p-3">Decorators</h3></a>
+            <p className="pad-left-3">
+                The Decorators module offers custom attributes and property drawers that enhance data visualization in the Unity Inspector, improving the organization, readability and interactivity of serialized fields for a more effective workflow.
             </p>
 
             <a href="/#/library/tools" className="t-dec-none" onClick={scrollUp}><h3 className="c-light-1 c-light-3-h p-3">Tools</h3></a>

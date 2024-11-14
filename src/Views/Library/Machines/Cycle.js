@@ -6,26 +6,29 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Cycle Machine</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                The Cycle Machine is designed to facilitate the creation and management of cycles within the context of 
-                Unity game development. It allows developers to define and control various cycling behaviors, such as 
-                timed or frame-based cycles, with options to handle start, finish, and cycle events.
+            <h1 className="text-center pad-top-4">Cycle Machine</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Structure for Managing Repetitive Actions in Unity 
             </h6>
 
+            <h3 className="p-2">Overview</h3>
+            <p className="pad-left-2 pad-bottom-2">
+                The Cycle machine is a versatile structure built to streamline the creation and management of cycling behaviors in Unity game development. 
+                It enables developers to define and control various types of cycles, whether based on time intervals or frames, and offers event handling for start, finish and cycle events. 
+                With its flexible configuration options and robust control features, the Cycle machine simplifies the implementation of looping behaviors, making game development more efficient and enhancing the gameplay experience.                
+            </p>
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">
                 The primary purpose of the Cycle Machine is to provide a flexible and robust mechanism for executing repeated actions in a game. 
-                It can be used to manage animations, periodic updates, or any repetitive tasks that need to be executed at regular intervals.
-            </p>
-            <p className="pad-left-2">
+                It can be used to manage animations, periodic updates or any repetitive tasks that need to be executed at regular intervals.
+                <br/>
                 Some of the use cases are:
             </p>
             <ul className="property-list">
                 <li>Trigger animations at specified intervals.</li>
                 <li>Execute periodic checks or updates within the game.</li>
-                <li>Manage timed events such as power-ups, buffs, or debuffs.</li>
+                <li>Manage timed events such as power-ups, buffs or debuffs.</li>
                 <li>Control the timing of AI actions and reactions.</li>
             </ul>
 
@@ -224,13 +227,6 @@ export default function Function() {
                 <li>Ensure that the cycleAction provided is not null to avoid runtime exceptions.</li>
                 <li>The timeScale parameter allows you to control the timing behavior of the cycles, making them dependent or independent of the game's time scale.</li>                
             </ul>
-
-            <h3 className="p-2">Conclusion</h3>
-            <p className="pad-left-2">
-                The Cycle Machine is a powerful tool for managing repetitive actions in Unity. 
-                By providing flexible configuration options and robust control mechanisms, 
-                it simplifies the implementation of various looping behaviors, enhancing the overall game development experience.
-            </p>
        </div>
     );
 }

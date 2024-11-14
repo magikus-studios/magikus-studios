@@ -20,81 +20,52 @@ export default function Function() {
 
             <a href="/#/library/utilities/create" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Create</h4></a>
             <p className="pad-left-3">
-                Create is a utility class that simplifies the process of generating instances of Unity data types like
-                Vector2, Vector3, Vector2Int, Vector3Int, Color and Rect. It offers flexible initialization methods
-                with various starting parameters, making it easier to generate values commonly used in game
-                development. 
+                The Create utility is a static class that simplifies the initialization of Unity data types, allowing for more concise and readable code in diverse development scenarios.
             </p>
 
             <a href="/#/library/utilities/adapt" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Adapt</h4></a>
             <p className="pad-left-3">
-                Adapt offers a comprehensive set of methods for data type conversion and formatting. These
-                methods allow for transforming bool, int, float, vectors, arrays, lists, colors and actions into
-                different forms, enabling seamless data manipulation within Unity. 
+                The Adapt utilities class offers a versatile set of type transformation methods, streamlining common conversions in Unity game development to improve code readability and reduce boilerplate.
             </p>
 
-            <a href="/#/library/utilities/randget" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Randget</h4></a>
+            <a href="/#/library/utilities/controls" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Controls</h4></a>
             <p className="pad-left-3">
-                The Randget utilities are designed to generate random values such as booleans, integers, floats,
-                vectors, colors and even random selections from lists or arrays. These methods are particularly
-                useful for adding randomness to game mechanics, enhancing realism, and introducing variation in
-                gameplay.
-            </p>
-
-            <a href="/#/library/utilities/looping" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Looping</h4></a>
-            <p className="pad-left-3">
-                The Looping utilities offer methods for iterating over collections like arrays, lists and dictionaries,
-                as well as complex structures such as vectors, colors and AnimationCurves. It supports both
-                forward and backward looping, giving developers the flexibility to work with collections in
-                different orders. This utility is essential when processing large amounts of data, creating
-                algorithms, or animating objects.
+                The Controls utilities streamline input handling and debugging in Unity, allowing developers to focus on core game logic by simplifying common input operations and enhancing console output.
             </p>
 
             <a href="/#/library/utilities/easing" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Easing</h4></a>
             <p className="pad-left-3">
-                Easing provides a set of easing functions to enable smooth animations, transitions and effects
-                within Unity. It includes 13 types of easing functions, each with three variations: In, Out and Both.
-                These variations allow developers to customize how an animation eases in (starts slowly), eases
-                out (ends slowly) or eases both in and out. The easing functions are ideal for fine-tuning
-                animations and transitions for UI elements or game objects. 
+                The Easing utilities offer versatile methods for crafting smooth, customizable transitions, perfect for enhancing animations, UI elements and game effects.
             </p>
 
-            <a href="/#/library/utilities/files" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Files</h4></a>
+            <a href="/#/library/utilities/looping" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Looping</h4></a>
             <p className="pad-left-3">
-                The Files utilities simplify file management by allowing developers to save and load data in
-                formats like Text, Json, Binary, XML and CSV. These utilities are invaluable for managing game
-                saves, player preferences or any persistent data required for game functionality.
+                The Looping utilities simplify collection iteration in Unity, enabling forward and backward looping with improved code readability and maintainability.
             </p>
 
-            <a href="/#/library/utilities/control" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Control</h4></a>
+            <a href="/#/library/utilities/datafile" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Datafile</h4></a>
             <p className="pad-left-3">
-                Control enhances input handling by providing methods for directional input, mouse input, touch
-                input and extending console debugging. It allows for capturing the direction of arrow keys,
-                tracking the mouse or touch positions and extending console output with formatted messages. 
+                The Datafile utilities offer flexible methods for managing save files in Unity, making it easy to handle persistent data across multiple formats in game development.
+            </p>
+
+            <a href="/#/library/utilities/randop" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Randop</h4></a>
+            <p className="pad-left-3">
+                The Randop utilities offer developers a powerful toolkit for adding randomness to game interactions, enhancing realism and accelerating development with efficient, easy-to-implement methods for generating random points, selecting items and applying colors.
             </p>
 
             <a href="/#/library/utilities/math" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Math</h4></a>
             <p className="pad-left-3">
-                The Math utilities provide operations for various mathematical calculations such as addition,
-                multiplication, complement, modulo, power, root, inverse and more. These utilities support data
-                types like int, float, vectors (Vector2, Vector3), colors and Rect. It simplifies complex mathematical
-                computations often needed in game development.
+                The Math utilities offer a versatile set of methods for simplifying mathematical operations across various data types, making complex calculations effortless and ideal for game development.
             </p>
 
             <a href="/#/library/utilities/text" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Text</h4></a>
             <p className="pad-left-3">
-                Text utilities provide flexible methods for manipulating strings and characters. The utilities allow
-                developers to check, count and modify strings in various ways. This includes operations like
-                reversing strings, checking string lengths or replacing specific characters. They can also be used for
-                enum-based operations on strings, such as working with ASCII tables or specific characters.
+                The Text utilities offer powerful methods for efficient and flexible string manipulation, simplifying tasks like counting, modifying and pattern-checking.
             </p>
 
             <a href="/#/library/utilities/list" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">List</h4></a>
             <p className="pad-left-3">
-                The List utilities enhance the functionality of lists and arrays, making it easier to manipulate and
-                access elements. Developers can perform operations such as accessing the last element, reversing
-                lists, shuffling, swapping elements or splitting lists. These utilities make array and list handling
-                more efficient, particularly in dynamic game environments.
+                The List utilities offer powerful and flexible methods for manipulating arrays and lists, simplifying complex operations and streamlining workflows in game development.
             </p>
        </div>
     );

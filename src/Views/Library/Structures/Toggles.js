@@ -5,12 +5,21 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Toggle Structure</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                The Toggle structures in the Magikus Library provide a flexible mechanism for managing binary states (on/off) associated with a value of any type. 
-                This structure is highly useful in game development where you might need to toggle certain behaviors or states based on user input, game events or other conditions. 
-                The Toggle structure supports attaching an action or logging a message when the state is either "on" or "off", enabling controlled and context-aware execution. 
+            <h1 className="text-center pad-top-4">Toggle Structure</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Versatile Structure for Associating Any Value Type with a Binary On/Off State
             </h6>
+
+            <h3 className="p-2">Overview</h3>
+            <p className="pad-left-2 pad-bottom-2">
+                The Toggle structure provides a powerful and flexible solution for managing binary states alongside associated values, making it especially useful in game development scenarios where behaviors or states need to toggle based on designer configurations, user inputs or game events. 
+                This structure allows you to attach actions or log messages whenever the state changes to "on" or "off," enabling controlled and context-aware functionality. 
+                Whether used for enabling/disabling game features, controlling UI elements or managing player abilities, the Toggle structure helps to organize and streamline code, making it more maintainable and comprehensible. 
+                The utility methods ensure that actions are executed only when relevant, resulting in cleaner and more efficient code.
+            </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Toggles/Toggles - 03.jpg" alt=""/>            
+            </div>
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">
@@ -97,13 +106,6 @@ export default function Function() {
                 <li>The IfOn and IfOff methods provide flexibility by allowing you to pass in a delegate or lambda expression that gets executed based on the toggle's state.</li>
                 <li>The Toggle structures are integrated with Unity’s Editor through custom property drawers, making them easy to manipulate within the Inspector.</li>
             </ul>
-
-            <h3 className="p-2">Conclusion</h3>
-            <p className="pad-left-2">
-                The Toggle structures in the Magikus Library offer a robust and flexible solution for managing binary states alongside associated values. 
-                Whether it's enabling/disabling game features, controlling UI elements or managing player abilities, these structures help organize and streamline the code, making it more maintainable and understandable. 
-                The utility methods provided ensure that actions are performed only when relevant, contributing to cleaner, more efficient code.
-            </p>
        </div>
     );
 }

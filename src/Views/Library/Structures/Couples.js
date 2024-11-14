@@ -5,12 +5,22 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Couple Structure</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                The Couple{"<A, B>"} and Couple{"<A, B, C>"} structures are specialized data containers designed to hold two or three values of different types. 
-                These structures are particularly useful when there is a need to group together multiple values of different types, such as a pair of coordinates (e.g., int and float) or a combination of various properties (e.g., string, int, and bool).
-                Unlike vectors, where all components are of the same type, the Couple structures allow for flexibility by allowing different types for each value.
+            <h1 className="text-center pad-top-4">Couple Structure</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Specialized Data Containers designed to hold Two or Three Values of Different Types 
             </h6>
+
+            <h3 className="p-2">Overview</h3>
+            <p className="pad-left-2 pad-bottom-2">
+                The Couple structures are powerful tools for managing pairs or trios of related values of different types. 
+                They are particularly useful in Unity projects where data needs to be coupled and easily visualized in the Inspector. 
+                Unlike vectors, where all components are of the same type, the Couple structures allow for flexibility by allowing different types for each value.
+                The ability to customize the Inspector layout using the Couple attribute further enhances their usability, making them a valuable addition to any developer's toolkit. 
+                Whether you're working with simple pairs of values or more complex combinations, these structures provide a robust and flexible solution.
+            </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Couples/Couples - 04.jpg" alt=""/>            
+            </div>
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">
@@ -92,14 +102,6 @@ export default function Function() {
                 <li>The Couple{"<A, B>"} and Couple{"<A, B, C>"} structures provide a flexible way to couple values of different types, enabling easy grouping and management of related data.</li>
                 <li>The Couple attribute allows developers to fine-tune the display of coupled values in the Unity Inspector, ensuring a clean and efficient layout.</li>
             </ul>            
-
-            <h3 className="p-2">Conclusion</h3>
-            <p className="pad-left-2">
-                The Couple{"<A, B>"} and Couple{"<A, B, C>"} structures are powerful tools for managing pairs or trios of related values of different types. 
-                They are particularly useful in Unity projects where data needs to be coupled and easily visualized in the Inspector. 
-                The ability to customize the Inspector layout using the Couple attribute further enhances their usability, making them a valuable addition to any developer's toolkit. 
-                Whether you're working with simple pairs of values or more complex combinations, these structures provide a robust and flexible solution.
-            </p>
        </div>
     );
 }

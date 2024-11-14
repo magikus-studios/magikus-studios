@@ -6,11 +6,19 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Value Asset Structure</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                The Value Asset structure represents different value types (bool, int, float, string, Vector2 and Vector3) as Scriptable Objects, implementing a framework for scriptable object architecture. 
-                This structure provides a modular and decoupled way to share and manage data across different components and scenes in Unity projects. 
+            <h1 className="text-center pad-top-4">Value Asset Structure</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Different Value Types (bool, int, float, string, Vector2 and Vector3) as Scriptable Objects
             </h6>
+
+            <h3 className="p-2">Overview</h3>
+            <p className="pad-left-2 pad-bottom-2">
+                The Value Asset structure is a powerful tool in Unity that facilitates a modular and decoupled code architecture. 
+                By leveraging a scriptable object framework, it provides a streamlined approach for sharing and managing data across different components and scenes, promoting efficient and maintainable Unity projects.
+            </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/ValueAssets/Value Assets - 03.jpg" alt=""/>            
+            </div>
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">
@@ -192,12 +200,6 @@ export default function Function() {
                 <li>Ensure that all event handlers are properly unsubscribed when the script is destroyed or no longer needed to prevent memory leaks.</li>
                 <li>Value Assets can be expanded or customized to support additional types or behaviors, enhancing their utility.</li>
             </ul>
-
-            <h3 className="p-2">Conclusion</h3>
-            <p className="pad-left-2">
-                The Value Asset structure is a powerful tool in Unity for creating a robust, modular and decoupled code architecture. 
-                By leveraging Scriptable Objects and event-driven updates, developers can manage data more efficiently and maintain cleaner codebases, ultimately leading to more flexible and scalable projects.
-            </p>
        </div>
     );
 }

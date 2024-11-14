@@ -6,37 +6,38 @@ export default function Function() {
     
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Math Utilities</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                The Math utilities consist of a collection of extension methods that provide operations for basic number and mathematical manipulations. 
-                These methods are applicable to types like int, float, Vector2, Vector3, Vector2Int, Vector3Int, Color and Rect. 
+            <h1 className="text-center pad-top-4">Math Utilities</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Methods that provide Operations for Basic Number and Mathematical Manipulations
             </h6>
+                        
+            <h3 className="p-2">Overview</h3>
+            <p className="pad-left-2 pad-bottom-2">
+                The Math utilities provide a powerful set of static and extension methods for performing mathematical operations across a variety of data types. 
+                These methods simplify common tasks like clamping, wrapping or applying arithmetic transformations, making them invaluable for game development and UI manipulation. 
+                By offering consistent method signatures across different types, they ensure that developers can handle complex mathematical computations with minimal effort.
+            </p>
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">
                 The methods are designed to simplify complex mathematical operations while offering flexibility across multiple data types. 
+                These methods are applicable to types like int, float, Vector2, Vector3, Vector2Int, Vector3Int, Color and Rect. 
                 They include operations such as Add, Multiply, Complement, Modulo, Power, Root, Inverse, Abs, Sign, Min, Max, Clamp, ClampRange, Wrap and WrapRange.
             </p>
 
             <h3 className="p-2">How it Works</h3>
  
-            <Group title="Vector2" content={(
+            <Group title="" content={(
                 <div className="p-3">
                     <p className="pad-left-3">
-                        Creates a Vector2 instance with both components set to the same value, by copying the values from another Vector2 or with specified x and y components.
                     </p>
                     <h5 className="c-light-1 pad-left-3">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>static Vector2</b2> <b1>Vector2</b1>(<b2>float</b2> <b1>value</b1>)</li>
-                        <li><b2>static Vector2</b2> <b1>Vector2</b1>(<b2>Vector2</b2> <b1>vector</b1>)</li>
-                        <li><b2>static Vector2</b2> <b1>Vector2</b1>(<b2>float</b2> <b1>x</b1>, <b2>float</b2> <b1>y</b1>)</li>
+                        <li><b2></b2> <b1></b1>(<b2></b2> <b1></b1>)</li>
                     </ul>
                     <h5 className="c-light-1 pad-left-3">Parameters</h5>
                     <ul className="property-list">
-                        <li><b2>float</b2> <b1>value</b1>: The value to set for both the x and y components</li>                    
-                        <li><b2>Vector2</b2> <b1>vector</b1>: The source Vector2 from which to copy values</li>                    
-                        <li><b2>float</b2> <b1>x</b1>: The value for the x component</li>                    
-                        <li><b2>float</b2> <b1>y</b1>: The value for the y component</li>                    
+                        <li><b2></b2> <b1></b1>: </li>                    
                     </ul>
                 </div>
             )}/>
@@ -56,13 +57,6 @@ export default function Function() {
                 <li>The Wrap and Clamp functions are particularly useful for keeping values within limits, for example, to ensure that colors stay within valid ranges or positions remain bounded.</li>
                 <li>Methods such as Inverse and Power are helpful for mathematical transformations on game objects, such as scaling or positioning.</li>
             </ul>
-                        
-            <h3 className="p-2">Conclusion</h3>
-            <p className="pad-left-2">
-                The Math utilities provide a powerful toolkit for performing mathematical operations across a variety of data types. 
-                These methods simplify common tasks like clamping, wrapping or applying arithmetic transformations, making them invaluable for game development and UI manipulation. 
-                By offering consistent method signatures across different types, they ensure that developers can handle complex mathematical computations with minimal effort.
-            </p>
        </div>
     );
 }

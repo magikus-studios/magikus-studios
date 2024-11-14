@@ -5,14 +5,14 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center pad-top-4">Text Box Decorator</h1>
+            <h1 className="text-center pad-top-4">Message Decorator</h1>
             <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
                 Custom Unity attribute used to Display Informative Text Boxes in the Unity Inspector. 
             </h6>
 
             <h3 className="p-2">Overview</h3>
             <p className="pad-left-2 pad-bottom-2">
-                The TextBox attribute is a powerful tool for enhancing the Unity Inspector by providing additional context and information directly within the interface. 
+                The Message attribute is a powerful tool for enhancing the Unity Inspector by providing additional context and information directly within the interface. 
                 It allows developers to add messages to enhance the readability and context of their fields. 
                 It supports different message types (Info, Warning, Error, or None), allowing for flexible and informative text boxes that can guide and inform users. 
                 This attribute is particularly useful for providing additional information or warnings directly within the Inspector interface.
@@ -25,15 +25,15 @@ export default function Function() {
             <h3 className="p-2">How it Works</h3>
 
             <div className="p-3">
-                <h4 className="c-light-1 pad-left-2">TextBox Attribute</h4>
+                <h4 className="c-light-1 pad-left-2">Message Attribute</h4>
                 <p className="pad-left-3">
-                    The TextBox attribute class offers several constructors to provide flexibility in specifying the message type and text content:
+                    The Message attribute class offers several constructors to provide flexibility in specifying the message type and text content:
                 </p>
                 <h5 className="c-light-1 pad-left-3">Constructors</h5>
                 <ul className="property-list">
-                    <li><b1>TextBoxAttribute</b1>(<b2>string</b2> <b1>text</b1>)</li>                        
-                    <li><b1>TextBoxAttribute</b1>(<b2>string</b2> <b1>type</b1>, <b2>string</b2> <b1>text</b1>)</li>
-                    <li><b1>TextBoxAttribute</b1>(<b2>MessageType</b2> <b1>type</b1>, <b2>string</b2> <b1>text</b1>)</li>
+                    <li><b1>MessageAttribute</b1>(<b2>string</b2> <b1>text</b1>)</li>                        
+                    <li><b1>MessageAttribute</b1>(<b2>string</b2> <b1>type</b1>, <b2>string</b2> <b1>text</b1>)</li>
+                    <li><b1>MessageAttribute</b1>(<b2>MessageType</b2> <b1>type</b1>, <b2>string</b2> <b1>text</b1>)</li>
                 </ul>
                 <h5 className="c-light-1 pad-left-3">Parameters</h5>
                 <ul className="property-list">
@@ -46,28 +46,28 @@ export default function Function() {
             <h3 className="p-2">How to Use</h3>
 
             <p className="pad-left-2">
-                The TextBox attribute can be applied to any field within a MonoBehaviour or ScriptableObject class. 
+                The Message attribute can be applied to any field within a MonoBehaviour or ScriptableObject class. 
                 It displays a styled text box in the Unity Inspector, making it an effective way to provide context or 
                 guidance to developers and users of the Inspector.
             </p>
 
-            <h4 className="c-light-1 p-3">Example 01: Basic Text Box</h4>
+            <h4 className="c-light-1 p-3">Example 01: Basic Message</h4>
             <img className="block-center mar-bottom-3 img-border" src="images/Library/Decorators/TextBox/Text Box - 01.jpg" alt=""/>
             <p className="pad-left-3">
-                In this example, the TextBox attribute is used to add an informational text box above exampleField. 
+                In this example, the Message attribute is used to add an informational text box above exampleField. 
                 The text box will display the message "This is a basic informational text box." without any specific message type styling.
             </p>
             <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/TextBox/Text Box - 02.jpg" alt=""/>             
 
-            <h4 className="c-light-1 p-3">Example 02: Text Box with Info Type</h4>
+            <h4 className="c-light-1 p-3">Example 02: Message with Info Type</h4>
             <img className="block-center mar-bottom-3 img-border" src="images/Library/Decorators/TextBox/Text Box - 03.jpg" alt=""/>
             <p className="pad-left-3">
-                Here, the TextBox attribute displays a text box with an informational message style. 
+                Here, the Message attribute displays a text box with an informational message style. 
                 The message "This is an informational message." will appear above exampleField with an information icon, indicating that it is an informational note.
             </p>
             <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/TextBox/Text Box - 04.jpg" alt=""/>              
 
-            <h4 className="c-light-1 p-3">Example 03: Text Box with Warning Type</h4>
+            <h4 className="c-light-1 p-3">Example 03: Message with Warning Type</h4>
             <img className="block-center mar-bottom-3 img-border" src="images/Library/Decorators/TextBox/Text Box - 05.jpg" alt=""/>
             <p className="pad-left-3">
                 In this example, the text box is styled as a warning. 
@@ -75,7 +75,7 @@ export default function Function() {
             </p>
             <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/TextBox/Text Box - 06.jpg" alt=""/>              
  
-            <h4 className="c-light-1 p-3">Example 04: Text Box with Error Type</h4>
+            <h4 className="c-light-1 p-3">Example 04: Message with Error Type</h4>
             <img className="block-center mar-bottom-3 img-border" src="images/Library/Decorators/TextBox/Text Box - 07.jpg" alt=""/>
             <p className="pad-left-3">
                 This example demonstrates the use of an error message. 
@@ -83,7 +83,7 @@ export default function Function() {
             </p>
             <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/TextBox/Text Box - 08.jpg" alt=""/>              
 
-            <h4 className="c-light-1 p-3">Example 05: Text Box with MessageType Enum</h4>
+            <h4 className="c-light-1 p-3">Example 05: Message with MessageType Enum</h4>
             <img className="block-center mar-bottom-3 img-border" src="images/Library/Decorators/TextBox/Text Box - 09.jpg" alt=""/>
             <p className="pad-left-3">
                 This example shows how to use the MessageType enum to specify the type of message. 
@@ -93,8 +93,8 @@ export default function Function() {
 
             <h3 className="p-2">Notes</h3>
             <ul>
-                <li>The TextBox attribute is versatile and can be used to display various types of messages, from simple notes to critical error warnings.</li>
-                <li>Ensure that the text provided to the TextBox attribute is concise and relevant to the field it accompanies to maintain clarity and readability in the Inspector.</li>
+                <li>The Message attribute is versatile and can be used to display various types of messages, from simple notes to critical error warnings.</li>
+                <li>Ensure that the text provided to the Message attribute is concise and relevant to the field it accompanies to maintain clarity and readability in the Inspector.</li>
             </ul>
        </div>
     );

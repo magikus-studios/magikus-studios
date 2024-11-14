@@ -5,11 +5,21 @@ export default function Function() {
     
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Vector Structure</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                The Vector structures in the Magikus Library provide a generic way to manage multi-dimensional data for independent axes settings like bool, AnimationCurves, enums or other types. 
-                These structures include Vector2{"<T>"}, Vector3{"<T>"} and Color{"<T>"}, each capable of holding values of a specified type T for their respective axes. 
+            <h1 className="text-center pad-top-4">Vector Structure</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Generic Structures to manage Multi-Dimensional Data for Independent Axes Settings 
             </h6>
+            
+            <h3 className="p-2">Overview</h3>
+            <p className="pad-left-2 pad-bottom-2">
+                The Vector structures provide a robust and versatile solution for managing multi-axis data in Unity. 
+                This includes Vector2{"<T>"}, Vector3{"<T>"} and Color{"<T>"}, each designed to store values of a specified type T (such as bool, AnimationCurves, enums, or custom types) across their respective axes. 
+                These structures are ideal for handling complex animations, conditional states, and game settings, offering a clean, reusable framework adaptable to diverse applications. 
+                Seamlessly integrated into the Unity Editor, these Vector structures enhance both the functionality and maintainability of projects, streamlining development workflows.
+            </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Vectors/Vectors - 02.jpg" alt=""/>            
+            </div>
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">
@@ -88,13 +98,6 @@ export default function Function() {
                 <li>The structures are fully integrated into Unity's Inspector through custom property drawers, making it easy to visualize and modify the values during development.</li>
                 <li>These structures provide independent control over each axis, which is beneficial when different conditions or behaviors are needed for each dimension.</li>
             </ul>
-            
-            <h3 className="p-2">Conclusion</h3>
-            <p className="pad-left-2">
-                The Vector structures in the Magikus Library offer a powerful and flexible way to manage multi-axis data in Unity. 
-                Whether for complex animations, conditional states or game settings, these structures provide a clean, reusable solution that can be tailored to a wide range of applications. 
-                With their seamless integration into the Unity Editor, developers can leverage these structures to enhance both the functionality and maintainability of their projects.
-            </p>
        </div>
     );
 }

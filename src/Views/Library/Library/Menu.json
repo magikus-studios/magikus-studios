@@ -8,32 +8,19 @@
         ]
     },
     {
-        "label": "Decorators",
-        "items": [
-            { "label": "[Decorators]", "link": "/#/library/decorators" },
-            { "label": "Line", "link": "/#/library/decorators/line" },
-            { "label": "Text Box", "link": "/#/library/decorators/textBox" },
-            { "label": "Title", "link": "/#/library/decorators/title" },
-            { "label": "Toggle", "link": "/#/library/decorators/toggle" },
-            { "label": "Collapse", "link": "/#/library/decorators/collapse" },
-            { "label": "Non Editable", "link": "/#/library/decorators/nonEditable" },
-            { "label": "Progress Bar", "link": "/#/library/decorators/progressBar" }
-        ]
-    },
-    {
         "label": "Utilities",
         "items": [
             { "label": "[Utilities]", "link": "/#/library/utilities" },
             { "label": "Create", "link": "/#/library/utilities/create" },
             { "label": "Adapt", "link": "/#/library/utilities/adapt" },
-            { "label": "Randget", "link": "/#/library/utilities/randget" },
-            { "label": "Looping", "link": "/#/library/utilities/looping" },
+            { "label": "Controls", "link": "/#/library/utilities/controls" },
             { "label": "Easing", "link": "/#/library/utilities/easing" },
-            { "label": "Files", "link": "/#/library/utilities/files" },
-            { "label": "Control", "link": "/#/library/utilities/control" },
-            { "label": "Math", "link": "/#/library/utilities/math" },
-            { "label": "Text", "link": "/#/library/utilities/text" },
-            { "label": "List", "link": "/#/library/utilities/list" }
+            { "label": "Looping", "link": "/#/library/utilities/looping" },
+            { "label": "Datafile", "link": "/#/library/utilities/datafile" },
+            { "label": "Randop", "link": "/#/library/utilities/randop" },
+            { "label": "Mathop", "link": "/#/library/utilities/math" },
+            { "label": "Textop", "link": "/#/library/utilities/text" },
+            { "label": "Listop", "link": "/#/library/utilities/list" }
         ]
     },
     {
@@ -67,10 +54,25 @@
         "label": "Systems",
         "items": [
             { "label": "[Systems]", "link": "/#/library/systems" },
-            { "label": "Animation System", "link": "/#/library/systems/animationSystem", "pro": true },
-            { "label": "Tweak System", "link": "/#/library/systems/tweakSystem", "pro": true },
-            { "label": "Audio System", "link": "/#/library/systems/audioSystem", "pro": true },
-            { "label": "Dialog System", "link": "/#/library/systems/dialogSystem", "pro": true }
+            { "label": "Animation System *", "link": "/#/library/systems/animationSystem", "pro": true },
+            { "label": "Tweak System *", "link": "/#/library/systems/tweakSystem", "pro": true },
+            { "label": "Audio System *", "link": "/#/library/systems/audioSystem", "pro": true },
+            { "label": "Dialog System *", "link": "/#/library/systems/dialogSystem", "pro": true }
+        ]
+    },
+    {
+        "label": "Decorators",
+        "items": [
+            { "label": "[Decorators]", "link": "/#/library/decorators" },
+            { "label": "If * ", "link": "/#/library/decorators/line" },
+            { "label": "Line", "link": "/#/library/decorators/line" },
+            { "label": "Title", "link": "/#/library/decorators/title" },
+            { "label": "Message *", "link": "/#/library/decorators/message" },
+            { "label": "Hide *", "link": "/#/library/decorators/show" },
+            { "label": "Block *", "link": "/#/library/decorators/block" },
+            { "label": "Toggle", "link": "/#/library/decorators/toggle" },
+            { "label": "Collapse", "link": "/#/library/decorators/collapse" },
+            { "label": "Progress Bar", "link": "/#/library/decorators/progressBar" }
         ]
     },
     {
@@ -79,13 +81,12 @@
             { "label": "[Tools]", "link": "/#/library/tools" },
             { "label": "Base Component", "link": "/#/library/tools/baseComponent" },
             { "label": "Button Attribute", "link": "/#/library/tools/buttonAttribute" },
-            { "label": "Show If Attribute", "link": "/#/library/tools/showIfAttribute" },
             { "label": "Reference Value Attribute", "link": "/#/library/tools/referenceValueAttribute" },
             { "label": "Key Binding Drawer", "link": "/#/library/tools/keyBindingDrawer" },
             { "label": "Hierarchy Editor", "link": "/#/library/tools/hierarchyEditor", "pro": true },
             { "label": "Curve Editor", "link": "/#/library/tools/curveEditor", "pro": true},
             { "label": "Reference Console", "link": "/#/library/tools/referenceConsole", "pro": true },
-            { "label": "Script Manager", "link": "/#/library/tools/scriptManager", "pro": true }
+            { "label": "Script Manager *", "link": "/#/library/tools/scriptManager", "pro": true }
         ]
     }
 ]

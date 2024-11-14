@@ -6,12 +6,22 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Event Structure</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                The Event structure is an advanced implementation of the UnityEvent system, designed to enhance usability and modularity in Unity projects. 
-                It reimagines the UnityEvent drawer and functionalities, allowing developers to collapse events into a single line within the Unity Inspector and display a count of list items. 
-                The Event structure's key feature is its integration with a scriptable object architecture framework, using Event assets to facilitate communication between components through a centralized event system.
+            <h1 className="text-center pad-top-4">Event Structure</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Advanced Implementation of the UnityEvent structure, designed to enhance Usability and Modularity
             </h6>
+
+            <h3 className="p-2">Overview</h3>
+            <p className="pad-left-2 pad-bottom-2">
+                The Event structure is a robust tool designed to enhance project architecture and efficiency. 
+                By reimagining the UnityEvent drawer, it enables events to be neatly collapsed into a single line in the Unity Inspector, complete with item count display, improving inspector clarity. 
+                Its primary strength lies in its integration with a scriptable object framework, utilizing Event assets to streamline communication between components via a centralized event system. 
+                This approach allows developers to create decoupled, modular systems that are both maintainable and extendable. 
+                The Event structure’s adaptability makes it ideal for various applications, from straightforward event handling to intricate asynchronous scene management.            
+            </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Events/Events - 02.jpg" alt=""/>            
+            </div>
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">
@@ -102,13 +112,6 @@ export default function Function() {
                 </div>
             )}/>
 
-
-
- 
-
-
-
-
             <h3 className="p-2">How to Use</h3>
             <p className="pad-left-2">
                 To use the Event structure, you must first define the event in your script using the EventVoid or Event{"<T>"} structure depending on whether you need to pass parameters (make sure that the Event is publicly available to visualize it in the inspector).
@@ -177,13 +180,6 @@ export default function Function() {
                 <li>The Event drawer allows easy management of event settings and assignments directly from the Unity Inspector.</li>
                 <li>Ensure that the event assets are properly configured in the inspector to prevent runtime errors.</li>
             </ul>
-
-            <h3 className="p-2">Conclusion</h3>
-            <p className="pad-left-2">
-                The Event structure is a powerful tool for developers looking to improve their project's architecture and efficiency. 
-                By leveraging the scriptable object framework, developers can create decoupled and modular systems that are easy to maintain and extend. 
-                The Event structure's versatility makes it suitable for a wide range of use cases, from simple event handling to complex asynchronous scene management.
-            </p>
        </div>
     );
 }

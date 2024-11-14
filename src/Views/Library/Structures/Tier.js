@@ -6,11 +6,22 @@ export default function Function() {
     
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Tier Structure</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                The Tier structures are specialized data structures designed to enhance the functionality of the Range structures by adding event-driven logic that automatically triggers when a value is evaluated against a defined range. 
-                This event-driven mechanism is particularly useful when working with both int (IntTier) and float (FloatTier) ranges, where certain actions need to be performed when a value enters, exits, remains inside or remains outside the specified range.
+            <h1 className="text-center pad-top-4">Tier Structure</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Data Structures designed to enhance the Range structures with Event-Driven Logic
             </h6>
+
+            <h3 className="p-2">Overview</h3>
+            <p className="pad-left-2 pad-bottom-2">
+                The Tier structures offer a powerful and flexible way to integrate event-driven logic into your game or application, specifically tailored for handling ranges of values in a systematic and efficient manner. 
+                This event-driven mechanism is particularly useful when working with both int (IntTier) and float (FloatTier) ranges, where certain actions need to be performed when a value enters, exits, remains inside or remains outside the specified range.
+                Proper use of these structures can significantly reduce the complexity of range-based evaluations and enhance the overall performance and maintainability of your codebase.                
+                Whether you’re working with health systems, experience tracking or environmental effects, Tier structures provide a robust framework to react to changes within defined ranges, ensuring your game logic remains responsive and dynamic. 
+            </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Tier/Tier - 02.jpg" alt=""/>            
+            </div>
+
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">
@@ -135,13 +146,6 @@ export default function Function() {
                 <li>The EventMode(EVENT_MODE.Sender) attribute in events ensures that events of Tier structures are always senders of events and not listeners. For further information, see documentation on Event structures.</li>
                 <li>The Tier structures are fully compatible with Unity's inspector, allowing developers to visualize and configure ranges and events directly in the editor.</li>
             </ul>
-            
-            <h3 className="p-2">Conclusion</h3>
-            <p className="pad-left-2">
-                The Tier structures offer a powerful and flexible way to integrate event-driven logic into your game or application, specifically tailored for handling ranges of values in a systematic and efficient manner. 
-                Whether you’re working with health systems, experience tracking or environmental effects, Tier structures provide a robust framework to react to changes within defined ranges, ensuring your game logic remains responsive and dynamic. 
-                Proper use of these structures can significantly reduce the complexity of range-based evaluations and enhance the overall performance and maintainability of your codebase.
-            </p>
        </div>
     );
 }
