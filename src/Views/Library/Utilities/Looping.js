@@ -27,47 +27,47 @@ export default function Function() {
             <h3 className="p-2">How it Works</h3>
  
             <Group title="Numbers" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Loops a specified number of times (amount), executing the provided action on each iteration or Loops backward, starting from amount and decreasing, executing the action on each iteration.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>Action</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>Action</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>Action{"<int>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>Action{"<int>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>Func{"<int, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>Func{"<int, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>Action</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>Action</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>Action{"<int>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>Action{"<int>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>Func{"<int, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>Func{"<int, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, bool>"}</b2> <b1>condition</b1>)</li>
                         <br/>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>Action</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>Action</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>Action{"<int>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>Action{"<int>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>Func{"<int, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>Func{"<int, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>Action</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>Action</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>Action{"<int>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>Action{"<int>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>Func{"<int, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>Func{"<int, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this int</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this float</b2> <b1>amount</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, bool>"}</b2> <b1>condition</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>int</b2> <b1>amount</b1>: The number of iterations for the loop. Defines how many times the loop should run. In LoopBack, it represents the starting index for reverse looping.</li>                    
                         <li><b2>float</b2> <b1>amount</b1>: A floating-point alternative for the amount parameter. It functions similarly to the integer version, but provides flexibility for floating-point calculations.</li>                    
@@ -81,31 +81,31 @@ export default function Function() {
             )}/>
 
             <Group title="Vectors" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Loops through the components of a Vector and executes an action using each component as the argument or Loops backward through the components of a Vector, executing the action with each component.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>Action{"<float>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>Action{"<float>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>, <b2>Action{"<int>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>Action{"<int>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>Action{"<int, float>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>Action{"<int, float>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>, <b2>Action{"<int, int>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>Action{"<int, int>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>Action{"<float>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>Action{"<float>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>, <b2>Action{"<int>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>Action{"<int>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>Action{"<int, float>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>Action{"<int, float>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>, <b2>Action{"<int, int>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>Action{"<int, int>"}</b2> <b1>action</b1>)</li>
                         <br/>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>Action{"<float>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>Action{"<float>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>, <b2>Action{"<int>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>Action{"<int>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>Action{"<int, float>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>Action{"<int, float>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>, <b2>Action{"<int, int>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>Action{"<int, int>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>Action{"<float>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>Action{"<float>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>, <b2>Action{"<int>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>Action{"<int>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>Action{"<int, float>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>Action{"<int, float>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>, <b2>Action{"<int, int>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>Action{"<int, int>"}</b2> <b1>action</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>Vector2</b2> <b1>vector</b1>: Represents a 2D vector with x and y float components. The method loops through each component and performs actions based on the current float value or index-value pair.</li>                    
                         <li><b2>Vector3</b2> <b1>vector</b1>: Represents a 3D vector with x, y, and z float components. The method loops through each component, performing actions based on the float value or index-value pair.</li>                    
@@ -120,22 +120,22 @@ export default function Function() {
             )}/>
 
             <Group title="Color" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Loops through the color components (Red, Green, Blue and optionally Alpha), passing each component's float value to the provided action or Loops backwards through the color components.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>Action{"<float>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>Action{"<int, float>"}</b2> <b1>action</b1>)</li>                    
-                        <li><b2>void</b2> <b1>LoopA</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>Action{"<float>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopA</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>Action{"<int, float>"}</b2> <b1>action</b1>)</li>                    
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>Action{"<float>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>Action{"<int, float>"}</b2> <b1>action</b1>)</li>                                        
-                        <li><b2>void</b2> <b1>LoopBackA</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>Action{"<float>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBackA</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>Action{"<int, float>"}</b2> <b1>action</b1>)</li>                    
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>Action{"<float>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>Action{"<int, float>"}</b2> <b1>action</b1>)</li>                    
+                        <li><b2>static void</b2> <b1>LoopA</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>Action{"<float>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopA</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>Action{"<int, float>"}</b2> <b1>action</b1>)</li>                    
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>Action{"<float>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>Action{"<int, float>"}</b2> <b1>action</b1>)</li>                                        
+                        <li><b2>static void</b2> <b1>LoopBackA</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>Action{"<float>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBackA</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>Action{"<int, float>"}</b2> <b1>action</b1>)</li>                    
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>Color</b2> <b1>color</b1>: Represents a Unity color with Red, Green, Blue, and optionally Alpha (transparency) components. The methods loop through these components, allowing actions to be performed on each.</li>                    
                         <li><b2>Action{"<float>"}</b2> <b1>action</b1>: A delegate or lambda function that accepts a float parameter. It is executed for each color component during the loop, passing the component value (e.g., Red, Green, Blue, or Alpha) to the action.</li>                    
@@ -145,61 +145,61 @@ export default function Function() {
             )}/>
 
             <Group title="Color Array" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         The Color Array looping methods provide a flexible set of static extension methods that allow you to loop through the pixel colors of a Texture2D or Sprite image. 
                         These methods support both forward and backward looping, starting from the first or a specified pixel index. 
                         The loop can perform actions on each pixel or execute based on conditions. 
                         The methods allow developers to work with either simple actions or more complex lambda functions involving pixel indices and color values. 
                         You can apply various operations on each pixel's color, making them ideal for tasks such as image manipulation, pixel-based effects or color mapping.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>Action{"<Color>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>Action{"<Color>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>Action{"<int, Color>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>Action{"<int, Color>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>Func{"<Color, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>Func{"<Color, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>Func{"<int, Color, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>Func{"<int, Color, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>Action{"<Color>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>Action{"<Color>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>Action{"<int, Color>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>Action{"<int, Color>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>Func{"<Color, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>Func{"<Color, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>Func{"<int, Color, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>Func{"<int, Color, bool>"}</b2> <b1>condition</b1>)</li>
                         <br/>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<Color>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<Color>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, Color>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, Color>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<Color, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<Color, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, Color, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, Color, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<Color>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<Color>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, Color>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, Color>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<Color, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<Color, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, Color, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, Color, bool>"}</b2> <b1>condition</b1>)</li>
                         <br/>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>Action{"<Color>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>Action{"<Color>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>Action{"<int, Color>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>Action{"<int, Color>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>Func{"<Color, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>Func{"<Color, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>Func{"<int, Color, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>Func{"<int, Color, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>Action{"<Color>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>Action{"<Color>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>Action{"<int, Color>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>Action{"<int, Color>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>Func{"<Color, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>Func{"<Color, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>Func{"<int, Color, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>Func{"<int, Color, bool>"}</b2> <b1>condition</b1>)</li>
                         <br/>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<Color>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<Color>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, Color>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, Color>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<Color, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<Color, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, Color, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, Color, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<Color>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<Color>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, Color>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, Color>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<Color, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<Color, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this Texture2D</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, Color, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this Sprite</b2> <b1>image</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, Color, bool>"}</b2> <b1>condition</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>Texture2D</b2> <b1>image</b1>: This parameter refers to the Texture2D object from Unity that represents a 2D texture. The methods loop through all the pixels in the texture, allowing you to perform actions or evaluations based on the pixel color.</li>                    
                         <li><b2>Sprite</b2> <b1>image</b1>: Refers to the Sprite object in Unity, which is a 2D image that can be rendered in the scene. The methods loop through each pixel in the sprite and perform the actions or conditions on the color values of these pixels.</li>                    
@@ -214,67 +214,67 @@ export default function Function() {
             )}/>
 
             <Group title="Lists and Arrays" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         The Lists and Arrays looping methods provide a versatile and generic set of static extension methods that enable developers to iterate through elements of both arrays and lists (T[] and List{"<T>"}, respectively). 
                         These methods offer the flexibility to loop through the elements either from the first to the last element or in reverse order using LoopBack. 
                         Furthermore, you can specify the starting index of the loop and provide custom actions or conditions that will be evaluated during each iteration.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>void</b2> <b1>Loop{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>Action</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>Action</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>Action{"<T>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>Action{"<T>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>Action{"<int, T>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>Action{"<int, T>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>Func{"<T, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>Func{"<T, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>Func{"<int, T, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>Func{"<int, T, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>Action</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>Action</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>Action{"<T>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>Action{"<T>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>Action{"<int, T>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>Action{"<int, T>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>Func{"<T, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>Func{"<T, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>Func{"<int, T, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>Func{"<int, T, bool>"}</b2> <b1>condition</b1>)</li>
                         <br/>
-                        <li><b2>void</b2> <b1>Loop{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<T>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<T>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, T>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, T>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<T, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<T, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, T, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, T, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<T>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<T>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, T>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, T>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<T, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<T, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, T, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, T, bool>"}</b2> <b1>condition</b1>)</li>
                         <br/>
-                        <li><b2>void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>Action</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>Action</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>Action{"<T>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>Action{"<T>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>Action{"<int, T>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>Action{"<int, T>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>Func{"<T, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>Func{"<T, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>Func{"<int, T, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>Func{"<int, T, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>Action</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>Action</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>Action{"<T>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>Action{"<T>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>Action{"<int, T>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>Action{"<int, T>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>Func{"<T, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>Func{"<T, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>Func{"<int, T, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>Func{"<int, T, bool>"}</b2> <b1>condition</b1>)</li>
                         <br/>
-                        <li><b2>void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<T>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<T>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, T>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, T>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<T, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<T, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, T, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, T, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<T>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<T>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, T>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, T>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<T, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<T, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, T, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, T, bool>"}</b2> <b1>condition</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>T[]</b2> <b1>array</b1>: Represents a one-dimensional array of type T. The looping methods iterate over the array elements, performing actions or checking conditions for each element. T can be any data type, including primitive types (like int, float) or complex objects (like Color, Vector3).</li>                    
                         <li><b2>List{"<T>"}</b2> <b1>list</b1>: Represents a generic list of elements of type T. Similar to the array, the looping methods iterate through the elements of the list, allowing operations on each element.</li>                    
@@ -290,51 +290,51 @@ export default function Function() {
             )}/>
 
             <Group title="Dictonary" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         The Dictionary looping methods provide a series of static extension methods that allow developers to iterate over dictionaries (Dictionary{"<K, V>"}). 
                         These methods support various looping patterns that can iterate over the dictionary's key-value pairs, the values alone or execute actions based on conditions for each element. 
                         LoopBack methods allow for iteration in reverse order, starting from the last key-value pair in the dictionary.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Action</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Action{"<V>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Action{"<K, V>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Action{"<int, K, V>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Func{"<V, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Func{"<K, V, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Func{"<int, K, V, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Action</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Action{"<V>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Action{"<K, V>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Action{"<int, K, V>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Func{"<V, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Func{"<K, V, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Func{"<int, K, V, bool>"}</b2> <b1>condition</b1>)</li>
                         <br/>
-                        <li><b2>void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<V>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<K, V>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, K, V>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<V, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<K, V, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, K, V, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<V>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<K, V>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, K, V>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<V, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<K, V, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, K, V, bool>"}</b2> <b1>condition</b1>)</li>
                         <br/>
-                        <li><b2>void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Action</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Action{"<V>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Action{"<K, V>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Action{"<int, K, V>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Func{"<V, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Func{"<K, V, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Func{"<int, K, V, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Action</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Action{"<V>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Action{"<K, V>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Action{"<int, K, V>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Func{"<V, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Func{"<K, V, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>Func{"<int, K, V, bool>"}</b2> <b1>condition</b1>)</li>
                         <br/>
-                        <li><b2>void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<V>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<K, V>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, K, V>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<V, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<K, V, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, K, V, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<V>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<K, V>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, K, V>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<V, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<K, V, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack{"<K, V>"}</b1>(<b2>this Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, K, V, bool>"}</b2> <b1>condition</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>Dictionary{"<K, V>"}</b2> <b1>dictionary</b1>: Represents a dictionary where each element is a key-value pair, with K being the type of the key and V being the type of the value. The looping methods allow iterating over both the keys and values or just the values. The dictionary can store any type for K and V.</li>                    
                         <li><b2>int</b2> <b1>startIndex</b1>: Specifies the starting index in the dictionary from which the loop should begin. This allows you to skip over earlier entries and start processing elements from a specific position in the dictionary.</li>                    
@@ -351,52 +351,52 @@ export default function Function() {
             )}/>
 
             <Group title="AnimationCurve" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         The AnimationCurve looping methods provide a set of extension methods that allow developers to iterate through keyframes in an AnimationCurve. 
                         These methods enable the developer to execute a specified action on each keyframe, index or properties of the keyframe. 
                         They also allow for iteration based on conditions, providing flexibility to loop through the keyframes based on custom logic. 
                         The primary use of these methods is to simplify the process of interacting with and modifying keyframes in an animation curve, either in forward or reverse (LoopBack) order, with the option to start from a specific index or conditionally stop the iteration.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<Keyframe>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<int, Keyframe>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<int, float, float>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Func{"<Keyframe, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Func{"<int, Keyframe, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Func{"<int, float, float, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<Keyframe>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<int, Keyframe>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<int, float, float>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Func{"<Keyframe, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Func{"<int, Keyframe, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Func{"<int, float, float, bool>"}</b2> <b1>condition</b1>)</li>
                         <br/>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<Keyframe>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, Keyframe>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, float, float>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<Keyframe, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, Keyframe, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, float, float, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<Keyframe>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, Keyframe>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, float, float>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<Keyframe, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, Keyframe, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, float, float, bool>"}</b2> <b1>condition</b1>)</li>
                         <br/>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<Keyframe>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<int, Keyframe>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<int, float, float>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Func{"<Keyframe, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Func{"<int, Keyframe, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Func{"<int, float, float, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<Keyframe>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<int, Keyframe>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<int, float, float>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Func{"<Keyframe, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Func{"<int, Keyframe, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Func{"<int, float, float, bool>"}</b2> <b1>condition</b1>)</li>
                         <br/>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<Keyframe>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, Keyframe>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, float, float>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<Keyframe, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, Keyframe, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, float, float, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<Keyframe>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, Keyframe>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, float, float>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<Keyframe, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, Keyframe, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, float, float, bool>"}</b2> <b1>condition</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>AnimationCurve</b2> <b1>curve</b1>: Represents the curve that stores keyframes used in an animation. This curve is defined by a series of Keyframe objects, which include information about the time and value of a curve at certain points. These methods iterate through the keyframes in this curve.</li>                    
                         <li><b2>int</b2> <b1>startIndex</b1>: Specifies the starting index from which the loop should begin. It allows the developer to begin processing keyframes at a specific position in the curve rather than starting from the first keyframe.</li>                                            
@@ -413,23 +413,23 @@ export default function Function() {
             )}/>
 
             <Group title="Text" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         The Text looping methods provide a series of simple loops for common character and string-based tasks, allowing developers to interact with ASCII characters, weekdays and months through various actions. 
                         These methods aim to reduce repetitive code by handling basic looping structures around ASCII characters, weekdays and months, applying an Action delegate for each element within these sets.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>void</b2> <b1>ASCI</b1>(<b2>Action{"<char>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>ASCI</b1>(<b2>Action{"<string>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Weekdays</b1>(<b2>Action{"<int>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Weekdays</b1>(<b2>Action{"<string>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Weekdays</b1>(<b2>Action{"<int, string>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Months</b1>(<b2>Action{"<int>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Months</b1>(<b2>Action{"<string>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Months</b1>(<b2>Action{"<int, string>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>ASCI</b1>(<b2>Action{"<char>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>ASCI</b1>(<b2>Action{"<string>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Weekdays</b1>(<b2>Action{"<int>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Weekdays</b1>(<b2>Action{"<string>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Weekdays</b1>(<b2>Action{"<int, string>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Months</b1>(<b2>Action{"<int>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Months</b1>(<b2>Action{"<string>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Months</b1>(<b2>Action{"<int, string>"}</b2> <b1>action</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>Action{"<char>"}</b2> <b1>action</b1>: A delegate or lambda function that takes a single char parameter and performs an action on it. This is used when working with individual characters (e.g., looping through ASCII characters).</li>                    
                         <li><b2>Action{"<string>"}</b2> <b1>action</b1>: A delegate or lambda function that takes a single string parameter and performs an action on it. This is useful for string-based data, such as weekday or month names.</li>                    
@@ -440,77 +440,77 @@ export default function Function() {
             )}/>
 
             <Group title="String" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         The String looping methods provide a comprehensive set of looping mechanisms to interact with the individual characters or substrings of a string, allowing developers to apply different actions and conditions during these iterations. 
                         These methods offer flexibility in looping through the content of a string, with variations allowing for additive looping, backward looping and indexed looping, among others. 
                         They allow for a wide range of operations, including performing actions on specific characters or substrings, evaluating conditions and controlling the starting point for the loop.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Action</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Action{"<string>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Action{"<int, string>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Func{"<string, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Func{"<int, string, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<string>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, string>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<string, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>Loop</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, string, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Action</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Action{"<string>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Action{"<int, string>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Func{"<string, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Func{"<int, string, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<string>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, string>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<string, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>Loop</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, string, bool>"}</b2> <b1>condition</b1>)</li>
                         <br/>
-                        <li><b2>void</b2> <b1>LoopChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Action{"<char>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Action{"<int, char>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Func{"<char, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Func{"<int, char, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<char>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, char>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<char, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, char, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Action{"<char>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Action{"<int, char>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Func{"<char, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Func{"<int, char, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<char>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, char>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<char, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, char, bool>"}</b2> <b1>condition</b1>)</li>
                         <br/>
-                        <li><b2>void</b2> <b1>LoopAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Action{"<string>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Action{"<int, string>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Func{"<string, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Func{"<int, string, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<string>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, string>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<string, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, string, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Action{"<string>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Action{"<int, string>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Func{"<string, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Func{"<int, string, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<string>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, string>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<string, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, string, bool>"}</b2> <b1>condition</b1>)</li>
                         <br/>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Action</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Action{"<string>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Action{"<int, string>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Func{"<string, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Func{"<int, string, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<string>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, string>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<string, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBack</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, string, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Action</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Action{"<string>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Action{"<int, string>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Func{"<string, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Func{"<int, string, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<string>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, string>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<string, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBack</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, string, bool>"}</b2> <b1>condition</b1>)</li>
                         <br/>
-                        <li><b2>void</b2> <b1>LoopBackChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Action{"<char>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBackChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Action{"<int, char>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBackChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Func{"<char, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBackChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Func{"<int, char, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBackChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<char>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBackChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, char>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBackChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<char, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBackChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, char, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBackChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Action{"<char>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBackChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Action{"<int, char>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBackChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Func{"<char, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBackChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Func{"<int, char, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBackChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<char>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBackChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, char>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBackChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<char, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBackChar</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, char, bool>"}</b2> <b1>condition</b1>)</li>
                         <br/>
-                        <li><b2>void</b2> <b1>LoopBackAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Action{"<string>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBackAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Action{"<int, string>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBackAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Func{"<string, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBackAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Func{"<int, string, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBackAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<string>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBackAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, string>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBackAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<string, bool>"}</b2> <b1>condition</b1>)</li>
-                        <li><b2>void</b2> <b1>LoopBackAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, string, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBackAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Action{"<string>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBackAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Action{"<int, string>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBackAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Func{"<string, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBackAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Func{"<int, string, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBackAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<string>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBackAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Action{"<int, string>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBackAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<string, bool>"}</b2> <b1>condition</b1>)</li>
+                        <li><b2>static void</b2> <b1>LoopBackAditive</b1>(<b2>this string</b2> <b1>text</b1>, <b2>int</b2> <b1>startIndex</b1>, <b2>Func{"<int, string, bool>"}</b2> <b1>condition</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>string</b2> <b1>text</b1>: This parameter represents the input string on which the looping operations are performed. It is the base text whose characters or substrings will be iterated.</li>                    
                         <li><b2>int</b2> <b1>startIndex</b1>: Specifies the index in the string where the loop should begin. This allows for partial looping starting from any given position in the string.</li>                    

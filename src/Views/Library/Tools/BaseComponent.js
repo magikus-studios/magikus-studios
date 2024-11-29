@@ -6,12 +6,21 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Base Component</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
+            <h1 className="text-center pad-top-4">Base Component</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Base script for MonoBehaviours and ScriptableObjects
+            </h6>
+
+            <h3 className="p-2">Overview</h3>
+            <p className="pad-left-2 pad-bottom-2">
                 The Base component is designed to simplify debugging and enable or disable functionality within MonoBehaviour or ScriptableObject scripts in Unity. 
                 It is an effective tool for developers who need to toggle debugging and disabling features during runtime, making the development and testing processes more flexible and efficient. 
-                By using custom property drawers, developers can easily control these states through buttons in the Unity Inspector.
-            </h6>
+                By incorporating this tool, developers can streamline their workflow, enhance their testing capabilities and maintain cleaner codebases. 
+            </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Tools/BaseComponent/Base Component - 10.jpg" alt=""/>            
+            </div>
+
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">
@@ -21,15 +30,15 @@ export default function Function() {
                 Together, these elements allow developers to conditionally enable or disable script functionalities and output debug information, making it easier to adjust script behavior directly within the Unity Editor or during runtime without needing to modify the code.            
             </p>
 
-
             <h3 className="p-2">How it Works</h3>
+            
             <Group title="MonoBaseMK and AssetBaseMK" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>DebugState</b2> <b1>State</b1>: DebugState value</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Print</h5>
+                    <h5 className="c-light-1">Print</h5>
                     <ul className="property-list">
                         <li><b2>void</b2> <b1>Print</b1>(<b2>string</b2> <b1>message</b1>): Prints a message to the console</li>
                         <li><b2>void</b2> <b1>Print</b1>(<b2>Color</b2> <b1>color</b1>, <b2>string</b2> <b1>message</b1>): Prints a message to the console</li>
@@ -40,7 +49,7 @@ export default function Function() {
                         <li><b2>void</b2> <b1>Print</b1>(<b2>string</b2> <b1>colorHex</b1>, <b2>string</b2> <b1>message</b1>, <b2>UnityEngine.Object</b2> <b1>context</b1>): Prints a message to the console</li>
                         <li><b2>void</b2> <b1>Print</b1>(<b2>MESSAGE_TYPE</b2> <b1>type</b1>, <b2>string</b2> <b1>message</b1>, <b2>UnityEngine.Object</b2> <b1>context</b1>): Prints a message to the console</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">IfDebug</h5>
+                    <h5 className="c-light-1">IfDebug</h5>
                     <ul className="property-list">
                         <li><b2>void</b2> <b1>IfDebug</b1>(<b2>string</b2> <b1>message</b1>): Prints a message to the console if debug value is on</li>
                         <li><b2>void</b2> <b1>IfDebug</b1>(<b2>Color</b2> <b1>color</b1>, <b2>string</b2> <b1>message</b1>): Prints a message to the console if debug value is on</li>
@@ -54,13 +63,13 @@ export default function Function() {
                 </div>
             )}/>
             <Group title="DebugState Class" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>Disable</b1>: Enables/Disables the component state</li>
                         <li><b2>bool</b2> <b1>Debug</b1>: Enables/Disables the debug state</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Print</h5>
+                    <h5 className="c-light-1">Print</h5>
                     <ul className="property-list">
                         <li><b2>void</b2> <b1>Print</b1>(<b2>string</b2> <b1>message</b1>): Prints a message to the console</li>
                         <li><b2>void</b2> <b1>Print</b1>(<b2>Color</b2> <b1>color</b1>, <b2>string</b2> <b1>message</b1>): Prints a message to the console</li>
@@ -71,7 +80,7 @@ export default function Function() {
                         <li><b2>void</b2> <b1>Print</b1>(<b2>string</b2> <b1>colorHex</b1>, <b2>string</b2> <b1>message</b1>, <b2>UnityEngine.Object</b2> <b1>context</b1>): Prints a message to the console</li>
                         <li><b2>void</b2> <b1>Print</b1>(<b2>MESSAGE_TYPE</b2> <b1>type</b1>, <b2>string</b2> <b1>message</b1>, <b2>UnityEngine.Object</b2> <b1>context</b1>): Prints a message to the console</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">IfDebug</h5>
+                    <h5 className="c-light-1">IfDebug</h5>
                     <ul className="property-list">
                         <li><b2>void</b2> <b1>IfDebug</b1>(<b2>string</b2> <b1>message</b1>): Prints a message to the console if debug value is on</li>
                         <li><b2>void</b2> <b1>IfDebug</b1>(<b2>Color</b2> <b1>color</b1>, <b2>string</b2> <b1>message</b1>): Prints a message to the console if debug value is on</li>
@@ -125,13 +134,6 @@ export default function Function() {
                 <li>To ensure that performance is not affected during build time, all DebugState functionality is enclosed in #if UNITY_EDITOR and #endif preprocessor instructions. This ensures that the debug code is not compiled into the final build, thus avoiding any runtime overhead.</li>
                 <li>The DebugState structure is intended for use within the Unity Editor and may not be suitable for builds where performance is critical.</li>
             </ul>
-
-            <h3 className="p-2">Conclusion</h3>
-            <p className="pad-left-2">
-                The Base component is a versatile tool for managing debugging and enabling or disabling functionality in Unity scripts. 
-                By incorporating this structure, developers can streamline their workflow, enhance their testing capabilities, and maintain cleaner codebases. 
-                Whether you’re toggling debug messages or disabling scripts during runtime, DebugState provides a simple yet powerful solution.
-            </p>
        </div>
     );
 }

@@ -26,15 +26,15 @@ export default function Function() {
             <h3 className="p-2">How it Works</h3>
  
             <Group title="ToBin" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Converts a bool value to its binary integer representation (0 or 1).
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>int</b2> <b1>ToBin</b1>(<b2>this bool</b2> <b1>value</b1>)</li>
+                        <li><b2>static int</b2> <b1>ToBin</b1>(<b2>this bool</b2> <b1>value</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>value</b1>: The boolean value to convert</li>                    
                     </ul>
@@ -42,15 +42,15 @@ export default function Function() {
             )}/>
 
             <Group title="ToSign" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Converts a bool value to a signed integer (1 for true, -1 for false).
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>int</b2> <b1>ToSign</b1>(<b2>this bool</b2> <b1>value</b1>)</li>
+                        <li><b2>static int</b2> <b1>ToSign</b1>(<b2>this bool</b2> <b1>value</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>value</b1>: The boolean value to convert</li>                    
                     </ul>
@@ -58,15 +58,15 @@ export default function Function() {
             )}/>
 
             <Group title="ToLabel" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Converts a bool value to a string label based on the specified label mode.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>string</b2> <b1>ToLabel</b1>(<b2>this bool</b2> <b1>value</b1>, <b2>BOOL_LABEL_MODE</b2> <b1>mode = BOOL_LABEL_MODE.TrueFalse</b1>)</li>
+                        <li><b2>static string</b2> <b1>ToLabel</b1>(<b2>this bool</b2> <b1>value</b1>, <b2>BOOL_LABEL_MODE</b2> <b1>mode = BOOL_LABEL_MODE.TrueFalse</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>value</b1>: The boolean value to convert</li>
                         <li><b2>BOOL_LABEL_MODE</b2> <b1>mode</b1>: An optional label mode specifying the format of the label (TrueFalse, YesNo, HitMiss, OnOff, OkError or AcceptDecline)</li>
@@ -75,25 +75,25 @@ export default function Function() {
             )}/>
 
             <Group title="ToVector2" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Converts an int, float, Vector3, Vector2Int, Vector3Int values and array and lists of int and floats to a Vector2.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>Vector2</b2> <b1>ToVector2</b1>(<b2>this int</b2> <b1>value</b1>)</li>
-                        <li><b2>Vector2</b2> <b1>ToVector2</b1>(<b2>this float</b2> <b1>value</b1>)</li>
-                        <li><b2>Vector2</b2> <b1>ToVector2</b1>(<b2>this Vector3</b2> <b1>vector</b1>)</li>
-                        <li><b2>Vector2</b2> <b1>ToVector2</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>)</li>
-                        <li><b2>Vector2</b2> <b1>ToVector2</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>)</li>
-                        <li><b2>Vector2</b2> <b1>ToVector2</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>)</li>
-                        <li><b2>Vector2</b2> <b1>ToVector2</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>)</li>
-                        <li><b2>Vector2</b2> <b1>ToVector2</b1>(<b2>this int[]</b2> <b1>array</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
-                        <li><b2>Vector2</b2> <b1>ToVector2</b1>(<b2>this float[]</b2> <b1>array</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
-                        <li><b2>Vector2</b2> <b1>ToVector2</b1>(<b2>this List{"<int>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
-                        <li><b2>Vector2</b2> <b1>ToVector2</b1>(<b2>this List{"<float>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>ToVector2</b1>(<b2>this int</b2> <b1>value</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>ToVector2</b1>(<b2>this float</b2> <b1>value</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>ToVector2</b1>(<b2>this Vector3</b2> <b1>vector</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>ToVector2</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>ToVector2</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>ToVector2</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>ToVector2</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>ToVector2</b1>(<b2>this int[]</b2> <b1>array</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>ToVector2</b1>(<b2>this float[]</b2> <b1>array</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>ToVector2</b1>(<b2>this List{"<int>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>ToVector2</b1>(<b2>this List{"<float>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>int</b2> <b1>value</b1>: The integer value to convert</li>                    
                         <li><b2>float</b2> <b1>value</b1>: The float value to convert</li>                    
@@ -111,24 +111,24 @@ export default function Function() {
             )}/>
 
             <Group title="ToVector3" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Converts an int, float, Vector2, Vector2Int, Vector3Int values and array and lists of int and floats to a Vector3.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>Vector3</b2> <b1>ToVector3</b1>(<b2>this int</b2> <b1>value</b1>)</li>
-                        <li><b2>Vector3</b2> <b1>ToVector3</b1>(<b2>this float</b2> <b1>value</b1>)</li>
-                        <li><b2>Vector3</b2> <b1>ToVector3</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>float</b2> <b1>extraValue = 0</b1>)</li>
-                        <li><b2>Vector3</b2> <b1>ToVector3</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>, <b2>float</b2> <b1>extraValue = 0</b1>)</li>
-                        <li><b2>Vector3</b2> <b1>ToVector3</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>)</li>
-                        <li><b2>Vector3</b2> <b1>ToVector3</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>)</li>
-                        <li><b2>Vector3</b2> <b1>ToVector3</b1>(<b2>this int[]</b2> <b1>array</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
-                        <li><b2>Vector3</b2> <b1>ToVector3</b1>(<b2>this float[]</b2> <b1>array</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
-                        <li><b2>Vector3</b2> <b1>ToVector3</b1>(<b2>this List{"<int>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
-                        <li><b2>Vector3</b2> <b1>ToVector3</b1>(<b2>this List{"<float>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>ToVector3</b1>(<b2>this int</b2> <b1>value</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>ToVector3</b1>(<b2>this float</b2> <b1>value</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>ToVector3</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>float</b2> <b1>extraValue = 0</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>ToVector3</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>, <b2>float</b2> <b1>extraValue = 0</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>ToVector3</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>ToVector3</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>ToVector3</b1>(<b2>this int[]</b2> <b1>array</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>ToVector3</b1>(<b2>this float[]</b2> <b1>array</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>ToVector3</b1>(<b2>this List{"<int>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>ToVector3</b1>(<b2>this List{"<float>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>int</b2> <b1>value</b1>: The integer value to convert</li>                    
                         <li><b2>float</b2> <b1>value</b1>: The float value to convert</li>                    
@@ -147,25 +147,25 @@ export default function Function() {
             )}/>
          
             <Group title="ToVector2Int" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Converts an int, float, Vector2, Vector3, Vector3Int values and array and lists of int and floats to a Vector2Int.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>Vector2Int</b2> <b1>ToVector2Int</b1>(<b2>this int</b2> <b1>value</b1>)</li>
-                        <li><b2>Vector2Int</b2> <b1>ToVector2Int</b1>(<b2>this float</b2> <b1>value</b1>)</li>
-                        <li><b2>Vector2Int</b2> <b1>ToVector2Int</b1>(<b2>this Vector2</b2> <b1>vector</b1>)</li>
-                        <li><b2>Vector2Int</b2> <b1>ToVector2Int</b1>(<b2>this Vector3</b2> <b1>vector</b1>)</li>
-                        <li><b2>Vector2Int</b2> <b1>ToVector2Int</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>)</li>
-                        <li><b2>Vector2Int</b2> <b1>ToVector2Int</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>)</li>
-                        <li><b2>Vector2Int</b2> <b1>ToVector2Int</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>)</li>
-                        <li><b2>Vector2Int</b2> <b1>ToVector2Int</b1>(<b2>this int[]</b2> <b1>array</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
-                        <li><b2>Vector2Int</b2> <b1>ToVector2Int</b1>(<b2>this float[]</b2> <b1>array</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
-                        <li><b2>Vector2Int</b2> <b1>ToVector2Int</b1>(<b2>this List{"<int>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
-                        <li><b2>Vector2Int</b2> <b1>ToVector2Int</b1>(<b2>this List{"<float>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>ToVector2Int</b1>(<b2>this int</b2> <b1>value</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>ToVector2Int</b1>(<b2>this float</b2> <b1>value</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>ToVector2Int</b1>(<b2>this Vector2</b2> <b1>vector</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>ToVector2Int</b1>(<b2>this Vector3</b2> <b1>vector</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>ToVector2Int</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>ToVector2Int</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>ToVector2Int</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>ToVector2Int</b1>(<b2>this int[]</b2> <b1>array</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>ToVector2Int</b1>(<b2>this float[]</b2> <b1>array</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>ToVector2Int</b1>(<b2>this List{"<int>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>ToVector2Int</b1>(<b2>this List{"<float>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>int</b2> <b1>value</b1>: The integer value to convert</li>                    
                         <li><b2>float</b2> <b1>value</b1>: The float value to convert</li>                    
@@ -183,24 +183,24 @@ export default function Function() {
             )}/>
 
             <Group title="ToVector3Int" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Converts an int, float, Vector2, Vector3, Vector2Int values and array and lists of int and floats to a Vector3Int.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>Vector3Int</b2> <b1>ToVector3Int</b1>(<b2>this int</b2> <b1>value</b1>)</li>
-                        <li><b2>Vector3Int</b2> <b1>ToVector3Int</b1>(<b2>this float</b2> <b1>value</b1>)</li>
-                        <li><b2>Vector3Int</b2> <b1>ToVector3Int</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>int</b2> <b1>extraValue = 0</b1>)</li>
-                        <li><b2>Vector3Int</b2> <b1>ToVector3Int</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>, <b2>int</b2> <b1>extraValue = 0</b1>)</li>
-                        <li><b2>Vector3Int</b2> <b1>ToVector3Int</b1>(<b2>this Vector3</b2> <b1>vector</b1>)</li>
-                        <li><b2>Vector3Int</b2> <b1>ToVector3Int</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>)</li>
-                        <li><b2>Vector3Int</b2> <b1>ToVector3Int</b1>(<b2>this int[]</b2> <b1>array</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
-                        <li><b2>Vector3Int</b2> <b1>ToVector3Int</b1>(<b2>this float[]</b2> <b1>array</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
-                        <li><b2>Vector3Int</b2> <b1>ToVector3Int</b1>(<b2>this List{"<int>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
-                        <li><b2>Vector3Int</b2> <b1>ToVector3Int</b1>(<b2>this List{"<float>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>ToVector3Int</b1>(<b2>this int</b2> <b1>value</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>ToVector3Int</b1>(<b2>this float</b2> <b1>value</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>ToVector3Int</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>int</b2> <b1>extraValue = 0</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>ToVector3Int</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>, <b2>int</b2> <b1>extraValue = 0</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>ToVector3Int</b1>(<b2>this Vector3</b2> <b1>vector</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>ToVector3Int</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>ToVector3Int</b1>(<b2>this int[]</b2> <b1>array</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>ToVector3Int</b1>(<b2>this float[]</b2> <b1>array</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>ToVector3Int</b1>(<b2>this List{"<int>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>ToVector3Int</b1>(<b2>this List{"<float>"}</b2> <b1>list</b1>, <b2>int</b2> <b1>indexOffset = 0</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>int</b2> <b1>value</b1>: The integer value to convert</li>                    
                         <li><b2>float</b2> <b1>value</b1>: The float value to convert</li>                    
@@ -219,18 +219,18 @@ export default function Function() {
             )}/>
 
             <Group title="ToArray" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         These methods convert Unity's Vector2, Vector3, Vector2Int and Vector3Int structures to arrays of float or int.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>float[]</b2> <b1>ToArray</b1>(<b2>this Vector2</b2> <b1>vector</b1>)</li>
-                        <li><b2>float[]</b2> <b1>ToArray</b1>(<b2>this Vector3</b2> <b1>vector</b1>)</li>
-                        <li><b2>int[]</b2> <b1>ToArray</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>)</li>
-                        <li><b2>int[]</b2> <b1>ToArray</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>)</li>
+                        <li><b2>static float[]</b2> <b1>ToArray</b1>(<b2>this Vector2</b2> <b1>vector</b1>)</li>
+                        <li><b2>static float[]</b2> <b1>ToArray</b1>(<b2>this Vector3</b2> <b1>vector</b1>)</li>
+                        <li><b2>static int[]</b2> <b1>ToArray</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>)</li>
+                        <li><b2>static int[]</b2> <b1>ToArray</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>Vector2</b2> <b1>vector</b1>: The vector to convert</li>                    
                         <li><b2>Vector3</b2> <b1>vector</b1>: The vector to convert</li>                    
@@ -241,18 +241,18 @@ export default function Function() {
             )}/>
 
             <Group title="ToList" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         These methods convert Unity's Vector2, Vector3, Vector2Int and Vector3Int structures to lists of float or int.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>List{"<float>"}</b2> <b1>ToList</b1>(<b2>this Vector2</b2> <b1>vector</b1>)</li>
-                        <li><b2>List{"<float>"}</b2> <b1>ToList</b1>(<b2>this Vector3</b2> <b1>vector</b1>)</li>
-                        <li><b2>List{"<int>"}</b2> <b1>ToList</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>)</li>
-                        <li><b2>List{"<int>"}</b2> <b1>ToList</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>)</li>
+                        <li><b2>static List{"<float>"}</b2> <b1>ToList</b1>(<b2>this Vector2</b2> <b1>vector</b1>)</li>
+                        <li><b2>static List{"<float>"}</b2> <b1>ToList</b1>(<b2>this Vector3</b2> <b1>vector</b1>)</li>
+                        <li><b2>static List{"<int>"}</b2> <b1>ToList</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>)</li>
+                        <li><b2>static List{"<int>"}</b2> <b1>ToList</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>Vector2</b2> <b1>vector</b1>: The vector to convert</li>                    
                         <li><b2>Vector3</b2> <b1>vector</b1>: The vector to convert</li>                    
@@ -263,24 +263,24 @@ export default function Function() {
             )}/>
 
             <Group title="ToHex" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         These methods convert various data types to their hexadecimal string representations.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>string</b2> <b1>ToHex</b1>(<b2>this int</b2> <b1>value</b1>)</li>
-                        <li><b2>string</b2> <b1>ToHex</b1>(<b2>this int</b2> <b1>value</b1>, <b2>int</b2> <b1>a</b1>)</li>
-                        <li><b2>string</b2> <b1>ToHex</b1>(<b2>this float</b2> <b1>value</b1>)</li>
-                        <li><b2>string</b2> <b1>ToHex</b1>(<b2>this float</b2> <b1>value</b1>, <b2>float</b2> <b1>a</b1>)</li>
-                        <li><b2>string</b2> <b1>ToHex</b1>(<b2>this Color</b2> <b1>color</b1>)</li>
-                        <li><b2>string</b2> <b1>ToHex</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>float</b2> <b1>a</b1>)</li>
+                        <li><b2>static string</b2> <b1>ToHex</b1>(<b2>this int</b2> <b1>value</b1>)</li>
+                        <li><b2>static string</b2> <b1>ToHex</b1>(<b2>this int</b2> <b1>value</b1>, <b2>int</b2> <b1>a</b1>)</li>
+                        <li><b2>static string</b2> <b1>ToHex</b1>(<b2>this float</b2> <b1>value</b1>)</li>
+                        <li><b2>static string</b2> <b1>ToHex</b1>(<b2>this float</b2> <b1>value</b1>, <b2>float</b2> <b1>a</b1>)</li>
+                        <li><b2>static string</b2> <b1>ToHex</b1>(<b2>this Color</b2> <b1>color</b1>)</li>
+                        <li><b2>static string</b2> <b1>ToHex</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>float</b2> <b1>a</b1>)</li>
                         <li><b2>static string</b2> <b1>ToHex</b1>(<b2>int</b2> <b1>r</b1>, <b2>int</b2> <b1>g</b1>, <b2>int</b2> <b1>b</b1>)</li>
                         <li><b2>static string</b2> <b1>ToHex</b1>(<b2>int</b2> <b1>r</b1>, <b2>int</b2> <b1>g</b1>, <b2>int</b2> <b1>b</b1>, <b2>int</b2> <b1>a</b1>)</li>
                         <li><b2>static string</b2> <b1>ToHex</b1>(<b2>float</b2> <b1>r</b1>, <b2>float</b2> <b1>g</b1>, <b2>float</b2> <b1>b</b1>)</li>
                         <li><b2>static string</b2> <b1>ToHex</b1>(<b2>float</b2> <b1>r</b1>, <b2>float</b2> <b1>g</b1>, <b2>float</b2> <b1>b</b1>, <b2>float</b2> <b1>a</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>int</b2> <b1>value</b1>: The 0 to 255 value to convert</li>                    
                         <li><b2>float</b2> <b1>value</b1>: The 0f to 1f value to convert</li>                    
@@ -298,19 +298,19 @@ export default function Function() {
             )}/>
 
             <Group title="ToColor" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Converts a hexadecimal string, a denormalized int or a normalized float representation of a color to a Color object.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>Color</b2> <b1>ToColor</b1>(<b2>this string</b2> <b1>hex</b1>)</li>
-                        <li><b2>Color</b2> <b1>ToColor</b1>(<b2>this int</b2> <b1>value</b1>)</li>
-                        <li><b2>Color</b2> <b1>ToColor</b1>(<b2>this float</b2> <b1>value</b1>)</li>
-                        <li><b2>Color</b2> <b1>ToColor</b1>(<b2>this int</b2> <b1>value</b1>, <b2>int</b2> <b1>a</b1>)</li>
-                        <li><b2>Color</b2> <b1>ToColor</b1>(<b2>this float</b2> <b1>value</b1>, <b2>float</b2> <b1>a</b1>)</li>
+                        <li><b2>static Color</b2> <b1>ToColor</b1>(<b2>this string</b2> <b1>hex</b1>)</li>
+                        <li><b2>static Color</b2> <b1>ToColor</b1>(<b2>this int</b2> <b1>value</b1>)</li>
+                        <li><b2>static Color</b2> <b1>ToColor</b1>(<b2>this float</b2> <b1>value</b1>)</li>
+                        <li><b2>static Color</b2> <b1>ToColor</b1>(<b2>this int</b2> <b1>value</b1>, <b2>int</b2> <b1>a</b1>)</li>
+                        <li><b2>static Color</b2> <b1>ToColor</b1>(<b2>this float</b2> <b1>value</b1>, <b2>float</b2> <b1>a</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>string</b2> <b1>hex</b1>: The hexadecimal string to convert</li>                    
                         <li><b2>int</b2> <b1>value</b1>: The 0 to 255 value to convert</li>                    
@@ -322,18 +322,18 @@ export default function Function() {
             )}/>
 
             <Group title="ToColorValue" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Converts either an int or string value into a float value between 0f and 1f or a float or string value into an int value between 0 and 255.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>int</b2> <b1>ToColorInt</b1>(<b2>this float</b2> <b1>value</b1>)</li>
-                        <li><b2>int</b2> <b1>ToColorInt</b1>(<b2>this string</b2> <b1>hex</b1>)</li>
-                        <li><b2>float</b2> <b1>ToColorFloat</b1>(<b2>this int</b2> <b1>value</b1>)</li>
-                        <li><b2>float</b2> <b1>ToColorFloat</b1>(<b2>this string</b2> <b1>hex</b1>)</li>
+                        <li><b2>static int</b2> <b1>ToColorInt</b1>(<b2>this float</b2> <b1>value</b1>)</li>
+                        <li><b2>static int</b2> <b1>ToColorInt</b1>(<b2>this string</b2> <b1>hex</b1>)</li>
+                        <li><b2>static float</b2> <b1>ToColorFloat</b1>(<b2>this int</b2> <b1>value</b1>)</li>
+                        <li><b2>static float</b2> <b1>ToColorFloat</b1>(<b2>this string</b2> <b1>hex</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>int</b2> <b1>value</b1>: The value to normalize</li>                    
                         <li><b2>float</b2> <b1>value</b1>: The value to denormalize</li>                    
@@ -342,26 +342,25 @@ export default function Function() {
                 </div>
             )}/>
 
-
             <Group title="ToAction" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Converts a standard Action delegate to a UnityAction or a UnityEvent into a standard Action delegate.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>UnityAction</b2> <b1>ToAction</b1>(<b2>this Action</b2> <b1>action</b1>)</li>
-                        <li><b2>UnityAction{"<T0>"}</b2> <b1>ToAction{"<T0>"}</b1>(<b2>this Action{"<T0>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>UnityAction{"<T0, T1>"}</b2> <b1>ToAction{"<T0, T1>"}</b1>(<b2>this Action{"<T0, T1>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>UnityAction{"<T0, T1, T2>"}</b2> <b1>ToAction{"<T0, T1, T2>"}</b1>(<b2>this Action{"<T0, T1, T2>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>UnityAction{"<T0, T1, T2, T3>"}</b2> <b1>ToAction{"<T0, T1, T2, T3>"}</b1>(<b2>this Action{"<T0, T1, T2, T3>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>Action</b2> <b1>ToAction</b1>(<b2>this UnityEvent</b2> <b1>action</b1>)</li>
-                        <li><b2>Action{"<T0>"}</b2> <b1>ToAction{"<T0>"}</b1>(<b2>this UnityEvent{"<T0>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>Action{"<T0, T1>"}</b2> <b1>ToAction{"<T0, T1>"}</b1>(<b2>this UnityEvent{"<T0, T1>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>Action{"<T0, T1, T2>"}</b2> <b1>ToAction{"<T0, T1, T2>"}</b1>(<b2>this UnityEvent{"<T0, T1, T2>"}</b2> <b1>action</b1>)</li>
-                        <li><b2>Action{"<T0, T1, T2, T3>"}</b2> <b1>ToAction{"<T0, T1, T2, T3>"}</b1>(<b2>this UnityEvent{"<T0, T1, T2, T3>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static UnityAction</b2> <b1>ToAction</b1>(<b2>this Action</b2> <b1>action</b1>)</li>
+                        <li><b2>static UnityAction{"<T0>"}</b2> <b1>ToAction{"<T0>"}</b1>(<b2>this Action{"<T0>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static UnityAction{"<T0, T1>"}</b2> <b1>ToAction{"<T0, T1>"}</b1>(<b2>this Action{"<T0, T1>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static UnityAction{"<T0, T1, T2>"}</b2> <b1>ToAction{"<T0, T1, T2>"}</b1>(<b2>this Action{"<T0, T1, T2>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static UnityAction{"<T0, T1, T2, T3>"}</b2> <b1>ToAction{"<T0, T1, T2, T3>"}</b1>(<b2>this Action{"<T0, T1, T2, T3>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static Action</b2> <b1>ToAction</b1>(<b2>this UnityEvent</b2> <b1>action</b1>)</li>
+                        <li><b2>static Action{"<T0>"}</b2> <b1>ToAction{"<T0>"}</b1>(<b2>this UnityEvent{"<T0>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static Action{"<T0, T1>"}</b2> <b1>ToAction{"<T0, T1>"}</b1>(<b2>this UnityEvent{"<T0, T1>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static Action{"<T0, T1, T2>"}</b2> <b1>ToAction{"<T0, T1, T2>"}</b1>(<b2>this UnityEvent{"<T0, T1, T2>"}</b2> <b1>action</b1>)</li>
+                        <li><b2>static Action{"<T0, T1, T2, T3>"}</b2> <b1>ToAction{"<T0, T1, T2, T3>"}</b1>(<b2>this UnityEvent{"<T0, T1, T2, T3>"}</b2> <b1>action</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>Action</b2> <b1>action</b1>: The Action delegate with no parameters to convert</li>                    
                         <li><b2>Action{"<T0>"}</b2> <b1>action</b1>: The Action delegate with one parameter to convert</li>                    

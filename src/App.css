@@ -188,9 +188,16 @@ pro {
 }
 .o-hiden { overflow: hidden; }
 .l-style-none { list-style: none; }
+
+b1 { color: var(--light-3); font-weight: bold; }
+b2 { color: var(--light-1); font-weight: bold; font-style: italic; }
+.oList { list-style-type:upper-roman; }
+.oList li::marker { color: var(--light-3); font-weight: bold; }
+
 .property-list b { color: var(--light-0); }
-.property-list b1 { color: var(--light-3); font-weight: bold; }
-.property-list b2 { color: var(--light-1); font-weight: bold; font-style: italic; }
+.property-list b1 { color: var(--light-3); font-weight: bold; font-size: small; }
+.property-list b2 { color: var(--light-1); font-weight: bold; font-style: italic; font-size: small;}
+.property-list { list-style-type: "═  "; margin-left: -1rem; font-size: smaller; }
 .block-center 
 {
     display: block;

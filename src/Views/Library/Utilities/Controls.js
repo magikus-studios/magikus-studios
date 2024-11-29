@@ -27,15 +27,15 @@ export default function Function() {
             <h3 className="p-2">How it Works</h3>
  
             <Group title="Axis" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Retrieves a Vector2 direction based on the "Horizontal" and "Vertical" input axes.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>Vector2</b2> <b1>Axis</b1>(<b2>bool</b2> <b1>normilized = true</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>Axis</b1>(<b2>bool</b2> <b1>normilized = true</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>normalized</b1>: Indicates whether to normalize the vector</li>                    
                     </ul>
@@ -43,15 +43,15 @@ export default function Function() {
             )}/>
 
             <Group title="Arrows" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Retrieves a Vector2 direction based on arrow keys.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>Vector2</b2> <b1>Arrows</b1>(<b2>bool</b2> <b1>normilized = true</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>Arrows</b1>(<b2>bool</b2> <b1>normilized = true</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>normalized</b1>: Indicates whether to normalize the vector</li>                    
                     </ul>
@@ -59,15 +59,15 @@ export default function Function() {
             )}/>
 
             <Group title="ArrowsDown" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Retrieves a Vector2 direction when arrow keys are pressed down.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>Vector2</b2> <b1>ArrowsDown</b1>(<b2>bool</b2> <b1>normilized = true</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>ArrowsDown</b1>(<b2>bool</b2> <b1>normilized = true</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>normalized</b1>: Indicates whether to normalize the vector</li>                    
                     </ul>
@@ -75,15 +75,15 @@ export default function Function() {
             )}/>
 
             <Group title="ArrowsUp" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Retrieves a Vector2 direction when arrow keys are released.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>Vector2</b2> <b1>ArrowsUp</b1>(<b2>bool</b2> <b1>normilized = true</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>ArrowsUp</b1>(<b2>bool</b2> <b1>normilized = true</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>normalized</b1>: Indicates whether to normalize the vector</li>                    
                     </ul>
@@ -91,17 +91,17 @@ export default function Function() {
             )}/>
 
             <Group title="DirToMouse" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Calculates the direction from a GameObject or Transform to the mouse position.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>Vector2</b2> <b1>DirToMouse</b1>(<b2>this GameObject</b2> <b1>origin</b1>, <b2>bool</b2> <b1>normilized = false</b1>)</li>
-                        <li><b2>Vector2</b2> <b1>DirToMouse</b1>(<b2>this Transform</b2> <b1>origin</b1>, <b2>bool</b2> <b1>normilized = false</b1>)</li>
-                        <li><b2>Vector2</b2> <b1>DirToMouse</b1>(<b2>Vector3</b2> <b1>origin</b1>, <b2>bool</b2> <b1>normilized = false</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>DirToMouse</b1>(<b2>this GameObject</b2> <b1>origin</b1>, <b2>bool</b2> <b1>normilized = false</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>DirToMouse</b1>(<b2>this Transform</b2> <b1>origin</b1>, <b2>bool</b2> <b1>normilized = false</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>DirToMouse</b1>(<b2>Vector3</b2> <b1>origin</b1>, <b2>bool</b2> <b1>normilized = false</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>normalized</b1>: Indicates whether to normalize the vector</li>                    
                     </ul>
@@ -109,17 +109,17 @@ export default function Function() {
             )}/>
 
             <Group title="DirToTouch" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Calculates the direction from a GameObject or Transform to a touch position.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>Vector2</b2> <b1>DirToTouch</b1>(<b2>this GameObject</b2> <b1>origin</b1>, <b2>int</b2> <b1>touchId</b1>, <b2>bool</b2> <b1>normilized = false</b1>)</li>
-                        <li><b2>Vector2</b2> <b1>DirToTouch</b1>(<b2>this Transform</b2> <b1>origin</b1>, <b2>int</b2> <b1>touchId</b1>, <b2>bool</b2> <b1>normilized = false</b1>)</li>
-                        <li><b2>Vector2</b2> <b1>DirToTouch</b1>(<b2>Vector3</b2> <b1>origin</b1>, <b2>int</b2> <b1>touchId</b1>, <b2>bool</b2> <b1>normilized = false</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>DirToTouch</b1>(<b2>this GameObject</b2> <b1>origin</b1>, <b2>int</b2> <b1>touchId</b1>, <b2>bool</b2> <b1>normilized = false</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>DirToTouch</b1>(<b2>this Transform</b2> <b1>origin</b1>, <b2>int</b2> <b1>touchId</b1>, <b2>bool</b2> <b1>normilized = false</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>DirToTouch</b1>(<b2>Vector3</b2> <b1>origin</b1>, <b2>int</b2> <b1>touchId</b1>, <b2>bool</b2> <b1>normilized = false</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>int</b2> <b1>touchId</b1>: The ID of the touch</li>                    
                         <li><b2>bool</b2> <b1>normalized</b1>: Indicates whether to normalize the vector</li>                    
@@ -128,15 +128,15 @@ export default function Function() {
             )}/>
 
             <Group title="MouseScreenPosition" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Gets the mouse position on the screen.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>Vector3</b2> <b1>MouseScreenPosition</b1>(<b2>bool</b2> <b1>flat = false</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>MouseScreenPosition</b1>(<b2>bool</b2> <b1>flat = false</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>flat</b1>: Indicates whether to set the z-value to 0</li>                    
                     </ul>
@@ -144,15 +144,15 @@ export default function Function() {
             )}/>
 
             <Group title="MouseWorldPosition" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Gets the mouse position in world space.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>Vector3</b2> <b1>MouseWorldPosition</b1>(<b2>bool</b2> <b1>flat = false</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>MouseWorldPosition</b1>(<b2>bool</b2> <b1>flat = false</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>flat</b1>: Indicates whether to set the z-value to 0</li>                    
                     </ul>
@@ -160,15 +160,15 @@ export default function Function() {
             )}/>
 
             <Group title="MouseRectPosition" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Converts mouse position to a local position within a RectTransform.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>Vector2</b2> <b1>MouseRectPosition</b1>(<b2>this RectTransform</b2> <b1>rect</b1>, <b2>Camera</b2> <b1>UICamera = null</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>MouseRectPosition</b1>(<b2>this RectTransform</b2> <b1>rect</b1>, <b2>Camera</b2> <b1>UICamera = null</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>RectTransform</b2> <b1>rect</b1>: The rectangle to calculate the local position in</li>                    
                         <li><b2>Camera</b2> <b1>UICamera</b1>: The camera used for UI rendering</li>                    
@@ -177,15 +177,15 @@ export default function Function() {
             )}/>
 
             <Group title="ScreenPosition" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Calculates the screen position based on alignment and offset.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>Vector3</b2> <b1>ScreenPosition</b1>(<b2>ALIGMENT</b2> <b1>aligment = ALIGMENT.Center</b1>, <b2>float</b2> <b1>horizontalOffset = 0</b1>, <b2>float</b2> <b1>verticalOffset = 0</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>ScreenPosition</b1>(<b2>ALIGMENT</b2> <b1>aligment = ALIGMENT.Center</b1>, <b2>float</b2> <b1>horizontalOffset = 0</b1>, <b2>float</b2> <b1>verticalOffset = 0</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>ALIGMENT</b2> <b1>alignment</b1>: Specifies the alignment of the position</li>                    
                         <li><b2>float</b2> <b1>horizontalOffset</b1>: Horizontal offset from the alignment point</li>                    
@@ -195,15 +195,15 @@ export default function Function() {
             )}/>
 
             <Group title="ScreenWorldPosition" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Calculates the world position corresponding to a screen alignment and offset.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>Vector3</b2> <b1>ScreenWorldPosition</b1>(<b2>ALIGMENT</b2> <b1>aligment = ALIGMENT.Center</b1>, <b2>float</b2> <b1>horizontalOffset = 0</b1>, <b2>float</b2> <b1>verticalOffset = 0</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>ScreenWorldPosition</b1>(<b2>ALIGMENT</b2> <b1>aligment = ALIGMENT.Center</b1>, <b2>float</b2> <b1>horizontalOffset = 0</b1>, <b2>float</b2> <b1>verticalOffset = 0</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>ALIGMENT</b2> <b1>alignment</b1>: Specifies the alignment of the position</li>                    
                         <li><b2>float</b2> <b1>horizontalOffset</b1>: Horizontal offset from the alignment point</li>                    
@@ -213,27 +213,27 @@ export default function Function() {
             )}/>
 
             <Group title="Screen" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Retrieves the current screen width and height as a Vector2.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>Vector2</b2> <b1>Screen</b1>()</li>
+                        <li><b2>static Vector2</b2> <b1>Screen</b1>()</li>
                     </ul>
                 </div>
             )}/>
 
             <Group title="ScreenFlat" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Retrieves the current screen dimensions as a Vector3 with a specified z-value.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>Vector3</b2> <b1>ScreenFlat</b1>(<b2>float</b2> <b1>z = 0f</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>ScreenFlat</b1>(<b2>float</b2> <b1>z = 0f</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>float</b2> <b1>z</b1>: The z-value for the vector</li>                    
                     </ul>
@@ -241,27 +241,27 @@ export default function Function() {
             )}/>
 
             <Group title="WorldScreen" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Converts the screen dimensions to world coordinates.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>Vector2</b2> <b1>WorldScreen</b1>()</li>
+                        <li><b2>static Vector2</b2> <b1>WorldScreen</b1>()</li>
                     </ul>
                 </div>
             )}/>
 
             <Group title="WorldScreenFlat" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Converts the screen dimensions to world coordinates with a specified z-value.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>Vector3</b2> <b1>WorldScreenFlat</b1>(<b2>float</b2> <b1>z = 0f</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>WorldScreenFlat</b1>(<b2>float</b2> <b1>z = 0f</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>float</b2> <b1>z</b1>: The z-value for the vector</li>                    
                     </ul>
@@ -269,22 +269,22 @@ export default function Function() {
             )}/>
 
             <Group title="Print" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Prints an object to the console with optional styling and context.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>void</b2> <b1>Print</b1>(<b2>this object</b2> <b1>obj</b1>)</li>
-                        <li><b2>void</b2> <b1>Print</b1>(<b2>this object</b2> <b1>obj</b1>, <b2>Object</b2> <b1>context</b1>)</li>
-                        <li><b2>void</b2> <b1>Print</b1>(<b2>this object</b2> <b1>obj</b1>, <b2>Color</b2> <b1>color</b1>)</li>
-                        <li><b2>void</b2> <b1>Print</b1>(<b2>this object</b2> <b1>obj</b1>, <b2>Color</b2> <b1>color</b1>, <b2>Object</b2> <b1>context</b1>)</li>
-                        <li><b2>void</b2> <b1>Print</b1>(<b2>this object</b2> <b1>obj</b1>, <b2>string</b2> <b1>colorHex</b1>)</li>
-                        <li><b2>void</b2> <b1>Print</b1>(<b2>this object</b2> <b1>obj</b1>, <b2>string</b2> <b1>colorHex</b1>, <b2>Object</b2> <b1>context</b1>)</li>
-                        <li><b2>void</b2> <b1>Print</b1>(<b2>this object</b2> <b1>obj</b1>, <b2>MESSAGE_TYPE</b2> <b1>messageType</b1>)</li>
-                        <li><b2>void</b2> <b1>Print</b1>(<b2>this object</b2> <b1>obj</b1>, <b2>MESSAGE_TYPE</b2> <b1>messageType</b1>, <b2>Object</b2> <b1>context</b1>)</li>
+                        <li><b2>static void</b2> <b1>Print</b1>(<b2>this object</b2> <b1>obj</b1>)</li>
+                        <li><b2>static void</b2> <b1>Print</b1>(<b2>this object</b2> <b1>obj</b1>, <b2>Object</b2> <b1>context</b1>)</li>
+                        <li><b2>static void</b2> <b1>Print</b1>(<b2>this object</b2> <b1>obj</b1>, <b2>Color</b2> <b1>color</b1>)</li>
+                        <li><b2>static void</b2> <b1>Print</b1>(<b2>this object</b2> <b1>obj</b1>, <b2>Color</b2> <b1>color</b1>, <b2>Object</b2> <b1>context</b1>)</li>
+                        <li><b2>static void</b2> <b1>Print</b1>(<b2>this object</b2> <b1>obj</b1>, <b2>string</b2> <b1>colorHex</b1>)</li>
+                        <li><b2>static void</b2> <b1>Print</b1>(<b2>this object</b2> <b1>obj</b1>, <b2>string</b2> <b1>colorHex</b1>, <b2>Object</b2> <b1>context</b1>)</li>
+                        <li><b2>static void</b2> <b1>Print</b1>(<b2>this object</b2> <b1>obj</b1>, <b2>MESSAGE_TYPE</b2> <b1>messageType</b1>)</li>
+                        <li><b2>static void</b2> <b1>Print</b1>(<b2>this object</b2> <b1>obj</b1>, <b2>MESSAGE_TYPE</b2> <b1>messageType</b1>, <b2>Object</b2> <b1>context</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>Object</b2> <b1>context</b1>: The context to associate with the printed message</li>                    
                         <li><b2>Color</b2> <b1>color</b1>: Options for styling the message</li>                    

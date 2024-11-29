@@ -1,40 +1,60 @@
 import React from "react";
+import Group from "Components/Group";
 
 export default function Function() {
 
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Button Attribute</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                The Button attribute class is a custom attribute used in Unity to define button-related properties that can be used in the Unity Inspector.
-                This attribute allows you to specify methods that can be invoked via buttons, along with optional labels, widths, and heights for these buttons.
+            <h1 className="text-center pad-top-4">Button Attribute</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Attribute that defines Buttons for the Unity Inspector
             </h6>
+
+            <h3 className="p-2">Overview</h3>
+            <p className="pad-left-2 pad-bottom-2">
+                The <b2>[Button]</b2> attribute is a powerful tool to enhance the Unity Editor, making it posible to create custom buttons in the Inspector that trigger various methods. 
+                This can significantly speed up your workflow by allowing you to test functionality directly from the Inspector.
+            </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Tools/ButtonAttribute/Button Attribute - 07.jpg" alt=""/>            
+            </div>
+
+
+            <h3 className="p-2">Introduction</h3>
+            <p className="pad-left-2 pad-bottom-2">
+                This attribute allows you to specify methods that can be invoked via buttons, along with optional labels, widths and heights for these buttons.
+            </p>
 
             <h3 className="p-2">How it Works</h3>
 
-            <div className="p-3">
-                <h4 className="c-light-1 pad-left-2">Button Attribute</h4>
-                <h5 className="c-light-1 pad-left-3">Constructors</h5>
-                <ul className="property-list">
-                    <li><b1>ButtonAttribute</b1>(<b2>params string[]</b2> <b1>methods</b1>): Creates a button that triggers the specified methods.</li>
-                    <li><b1>ButtonAttribute</b1>(<b2>float</b2> <b1>width</b1>, <b2>params string[]</b2> <b1>methods</b1>): Creates a button with a specified width that triggers the specified methods.</li>
-                    <li><b1>ButtonAttribute</b1>(<b2>float</b2> <b1>width</b1>, <b2>float</b2> <b1>height</b1>, <b2>params string[]</b2> <b1>methods</b1>): Creates a button with a specified width and height that triggers the specified methods.</li>
-                </ul>
-                <h5 className="c-light-1 pad-left-3">Parameters</h5>
-                <ul className="property-list">
-                    <li><b2>string[]</b2> <b1>methods</b1>: An array of method names that will be invoked when the button is clicked. Each string references the name of a method in the script. If the first string contains the text “label:” then what follows will display as the label of the field. If the method name is followed by a slash (/) then what follows will display as the button title instead of the method name.</li>
-                    <li><b2>float</b2> <b1>width</b1>: A float value to set the width of the button as a proportion of the default width (1.0 being 100%).</li>
-                    <li><b2>float</b2> <b1>height</b1>: A float value to set the height of the button.</li>
-                </ul>
-            </div>
+            <Group title="Button Attribute" content={(
+                <div>
+                    <p>
+                        Creates a button with a specified width and height that triggers the specified methods
+                    </p>
+                    <h5 className="c-light-1">Constructors</h5>
+                    <ul className="property-list">
+                        <li><b1>Button</b1>(<b2>params string[]</b2> <b1>methods</b1>)</li>
+                        <li><b1>Button</b1>(<b2>float</b2> <b1>width</b1>, <b2>params string[]</b2> <b1>methods</b1>)</li>
+                        <li><b1>Button</b1>(<b2>float</b2> <b1>width</b1>, <b2>float</b2> <b1>height</b1>, <b2>params string[]</b2> <b1>methods</b1>)</li>
+                    </ul>
+                    <h5 className="c-light-1">Parameters</h5>
+                    <ul className="property-list">
+                        <li><b2>string[]</b2> <b1>methods</b1>: An array of method names that will be invoked when the button is clicked. Each string references the name of a method in the script. If the first string contains the text “label:” then what follows will display as the label of the field. If the method name is followed by a slash (/) then what follows will display as the button title instead of the method name.</li>
+                        <li><b2>float</b2> <b1>width</b1>: A float value to set the width of the button as a proportion of the default width (1.0 being 100%).</li>
+                        <li><b2>float</b2> <b1>height</b1>: A float value to set the height of the button.</li>
+                    </ul>
+                </div>
+            )}/>
+
 
             <h3 className="p-2">How to Use</h3>
             
             <h4 className="c-light-1 p-3">Example 01: Simple Button to Invoke a Method</h4>
-            <ul className="property-list pad-left-4">
+            <ul className="pad-left-4">
                 <li>Create a new MonoBehaviour script named SimpleButtonExampleScript.cs</li>
-                <li>Apply the Button attribute to a public field in your script</li>
+                <li>Apply the <b2>[Button]</b2> attribute to a public field in your script</li>
                 <li>Define the method that the button will invoke</li>
             </ul>
             <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ButtonAttribute/Button Attribute - 01.jpg" alt=""/>            
@@ -76,13 +96,6 @@ export default function Function() {
                 <li>If you specify a title, it will be displayed instead of the method name.</li>
                 <li>You can control the size of the buttons using the width and height parameters, making the buttons more visually distinct in the Inspector.</li>
             </ul>
-
-            <h3 className="p-2">Conclusion</h3>
-            <p className="pad-left-2">
-                The Button attribute class is a powerful tool to enhance the Unity Editor, making it easier to create custom buttons in the 
-                Inspector that trigger various methods. This can significantly speed up your workflow by allowing you to test functionality 
-                directly from the Inspector.
-            </p>
        </div>
     );
 }

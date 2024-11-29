@@ -26,7 +26,7 @@ export default function Function() {
                 <br/>
                 Some use cases are:
             </p>
-            <ul className="property-list">
+            <ul>
                 <li>Managing player states such as idle, running, jumping and attacking.</li>
                 <li>Managing different views and states of a UI component.</li>                
                 <li>Managing various stages in a business process or workflow.</li>
@@ -35,8 +35,8 @@ export default function Function() {
             <h3 className="p-2">How it Works</h3>
 
             <Group title="StateMachine<T>" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Constructors</h5>
+                <div>
+                    <h5 className="c-light-1">Constructors</h5>
                     <ul className="property-list">
                         <li><b2>StateMachine{"<T>"}</b2> <b1>StateMachine</b1>(<b2>params State{"<T>"}[]</b2> <b1>states</b1>): Initializes the state machine with an array of states.</li>
                         <li><b2>StateMachine{"<T>"}</b2> <b1>StateMachine</b1>(<b2>float</b2> <b1>updateRate</b1>, <b2>params State{"<T>"}[]</b2> <b1>states</b1>): Initializes the state machine with an update rate and an array of states.</li>
@@ -44,7 +44,7 @@ export default function Function() {
                         <li><b2>StateMachine{"<T>"}</b2> <b1>StateMachine</b1>(<b2>float</b2> <b1>updateRate</b1>, <b2>ITimeScale</b2> <b1>timeScale</b1>, <b2>params State{"<T>"}[]</b2> <b1>states</b1>): Initializes the state machine with an update rate, a time scale and an array of states.</li>
                     </ul>
 
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>Play</b1>(): Starts the state machine.</li>
                         <li><b2>void</b2> <b1>Pause</b1>(): Pauses the state machine.</li>
@@ -57,7 +57,7 @@ export default function Function() {
                         <li><b2>bool</b2> <b1>IsCurrentState</b1>(<b2>T</b2> <b1>stateName</b1>): Checks if the given state name is the current state.</li>
                     </ul>
 
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>T</b2> <b1>stateName</b1>: The name of the state.</li>
                         <li><b2>Action</b2> <b1>stateAction</b1>: The action to be executed during the state.</li>

@@ -25,7 +25,7 @@ export default function Function() {
                 <br/>
                 Some of the use cases are:
             </p>
-            <ul className="property-list">
+            <ul>
                 <li>Trigger animations at specified intervals.</li>
                 <li>Execute periodic checks or updates within the game.</li>
                 <li>Manage timed events such as power-ups, buffs or debuffs.</li>
@@ -42,8 +42,8 @@ export default function Function() {
             </p>
 
             <Group title="ICycle" content={(                
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                <div>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>ICycle</b2> <b1>Play</b1>(): Starts the cycle.</li>
                         <li><b2>ICycle</b2> <b1>Pause</b1>(): Pauses the cycle.</li>
@@ -73,11 +73,11 @@ export default function Function() {
             )}/>
 
             <Group title="Periodic Cycle" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Use the Periodic method to perform an action at regular intervals.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>ICycle</b2> <b1>Periodic</b1>(<b2>Action</b2> <b1>cycleAction</b1>): Creates a simple periodic cycle.</li>
                         <li><b2>ICycle</b2> <b1>Periodic</b1>(<b2>Action{"<int>"}</b2> <b1>cycleAction</b1>): Creates a periodic cycle with a cycle count.</li>
@@ -88,7 +88,7 @@ export default function Function() {
                         <li><b2>ICycle</b2> <b1>PeriodicFrame</b1>(<b2>Func{"<bool>"}</b2> <b1>cycleAction</b1>): Creates a periodic cycle that runs on frames and plays until cycleAction returns true.</li>
                         <li><b2>ICycle</b2> <b1>PeriodicFrame</b1>(<b2>Func{"<int, bool>"}</b2> <b1>cycleAction</b1>): Creates a periodic cycle that runs on frames and plays until cycleAction returns true with a cycle count.</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>Action</b2> <b1>cycleAction</b1>: The action to be performed periodically.</li>
                         <li><b2>Action{"<int>"}</b2> <b1>cycleAction</b1>: The action to be performed periodically with a cycle count.</li>
@@ -103,11 +103,11 @@ export default function Function() {
             )}/>
 
             <Group title="Burst Cycle" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Use the Burst method to perform an action multiple times in quick succession with intervals between bursts.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>ICycle</b2> <b1>Burst</b1>(<b2>Action</b2> <b1>cycleAction</b1>): Creates a simple burst cycle.</li>
                         <li><b2>ICycle</b2> <b1>Burst</b1>(<b2>Action{"<float>"}</b2> <b1>cycleAction</b1>): Creates a burst cycle with the progress value.</li>
@@ -118,7 +118,7 @@ export default function Function() {
                         <li><b2>ICycle</b2> <b1>BurstFrame</b1>(<b2>Func{"<bool>"}</b2> <b1>cycleAction</b1>): Creates a burst cycle that runs on frames that plays until it returns true.</li>
                         <li><b2>ICycle</b2> <b1>BurstFrame</b1>(<b2>Func{"<float, bool>"}</b2> <b1>cycleAction</b1>): Creates a burst cycle that runs on frames that plays until it returns true with a progress value.</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>Action</b2> <b1>cycleAction</b1>: The action to be performed in a burst.</li> 
                         <li><b2>Action{"<int>"}</b2> <b1>cycleAction</b1>: The action to be performed in a burst with a cycle count.</li>
@@ -133,11 +133,11 @@ export default function Function() {
             )}/>
 
             <Group title="Delay Cycle" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Use the Delay method to perform an action after a specified delay.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>ICycle</b2> <b1>Delay</b1>(<b2>Action</b2> <b1>cycleAction</b1>): Creates a simple delay cycle.</li>
                         <li><b2>ICycle</b2> <b1>Delay</b1>(<b2>Action{"<int>"}</b2> <b1>cycleAction</b1>): Creates a delay cycle with a cycle count.</li>
@@ -148,7 +148,7 @@ export default function Function() {
                         <li><b2>ICycle</b2> <b1>DelayFrame</b1>(<b2>Func{"<bool>"}</b2> <b1>cycleAction</b1>): Creates a delay cycle that runs on frames and plays until cycleAction returns true.</li>
                         <li><b2>ICycle</b2> <b1>DelayFrame</b1>(<b2>Func{"<int, bool>"}</b2> <b1>cycleAction</b1>): Creates a delay cycle that runs on frames and plays until cycleAction returns true with a cycle count.</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>Action</b2> <b1>cycleAction</b1>: The action to be performed after a delay.</li> 
                         <li><b2>Action{"<int>"}</b2> <b1>cycleAction</b1>: The action to be performed after a delay with a cycle count.</li> 
@@ -163,16 +163,16 @@ export default function Function() {
             )}/>
 
             <Group title="Curve Cycle" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Use the Curve method to perform an action that follows an animation curve over a specified duration.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>ICycle</b2> <b1>Curve</b1>(<b2>Action{"<float>"}</b2> <b1>cycleAction</b1>, <b2>AnimationCurve</b2> <b1>curve</b1>): Creates a simple curve cycle.</li>
                         <li><b2>ICycle</b2> <b1>Cycle</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<float>"}</b2> <b1>cycleAction</b1>): Extension method for AnimationCurve objects that creates a curve cycle.</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>Action{"<float>"}</b2> <b1>cycleAction</b1>: The action to be performed, taking a float parameter that represents the curve progress value.</li> 
                         <li><b2>AnimationCurve</b2> <b1>curve</b1>: The animation curve to follow.</li>

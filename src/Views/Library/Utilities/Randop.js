@@ -27,15 +27,15 @@ export default function Function() {
             <h3 className="p-2">How it Works</h3>
  
             <Group title="Bool" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Return random true/false values.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static bool</b2> <b1>Bool</b1>(<b2>float</b2> <b1>trueChance = 0.5f</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>float</b2> <b1>trueChance</b1>: The chances (from 0f to 1f) of getting a true value</li>                    
                     </ul>
@@ -43,11 +43,11 @@ export default function Function() {
             )}/>
 
             <Group title="Value" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Generates a random values between the specified min and max range. 
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static int</b2> <b1>Int</b1>(<b2>int</b2> <b1>min = int.MinValue</b1>, <b2>int</b2> <b1>max = int.MaxValue – 1</b1>)</li>
                         <li><b2>static float</b2> <b1>Float</b1>(<b2>float</b2> <b1>min = float.MinValue</b1>, <b2>float</b2> <b1>max = float.MaxValue</b1>)</li>
@@ -80,7 +80,7 @@ export default function Function() {
                         <li><b2>static Color</b2> <b1>Color</b1>(<b2>Color</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <li><b2>static Color</b2> <b1>Color</b1>(<b2>Color</b2> <b1>min</b1>, <b2>Color</b2> <b1>max</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>int</b2> <b1>min</b1>: The minimum value of the range</li>                    
                         <li><b2>float</b2> <b1>min</b1>: The minimum value of the range</li>                    
@@ -101,11 +101,11 @@ export default function Function() {
             )}/>
 
             <Group title="Range" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Generates a random value within a specified range, centered around the center value.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static int</b2> <b1>Int_Range</b1>(<b2>int</b2> <b1>range</b1>, <b2>int</b2> <b1>center = 0</b1>)</li>
                         <li><b2>static float</b2> <b1>Float_Range</b1>(<b2>float</b2> <b1>range</b1>, <b2>float</b2> <b1>center = 0f</b1>)</li>
@@ -138,7 +138,7 @@ export default function Function() {
                         <li><b2>static Color</b2> <b1>Color_Range</b1>(<b2>float</b2> <b1>range</b1>, <b2>Color</b2> <b1>center</b1>)</li>
                         <li><b2>static Color</b2> <b1>Color_Range</b1>(<b2>Color</b2> <b1>range</b1>, <b2>Color</b2> <b1>center</b1>)</li>                       
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>int</b2> <b1>range</b1>: Defines the range for generating random values</li>                    
                         <li><b2>float</b2> <b1>range</b1>: Defines the range for generating random values</li>                                            
@@ -159,11 +159,11 @@ export default function Function() {
             )}/>
 
             <Group title="Abs" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Generates a random positive value between 0 and the specified max value.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static int</b2> <b1>Int_Abs</b1>(<b2>int</b2> <b1>max = int.MaxValue – 1</b1>)</li>
                         <li><b2>static float</b2> <b1>Float_Abs</b1>(<b2>float</b2> <b1>max = float.MaxValue</b1>)</li>
@@ -176,7 +176,7 @@ export default function Function() {
                         <li><b2>static Vector3Int</b2> <b1>Vector3Int_Abs</b1>(<b2>int</b2> <b1>max = int.MaxValue – 1</b1>)</li>
                         <li><b2>static Vector3Int</b2> <b1>Vector3Int_Abs</b1>(<b2>Vector3Int</b2> <b1>max</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>int</b2> <b1>max</b1>: The maximum value of the range</li>                    
                         <li><b2>float</b2> <b1>max</b1>: The maximum value of the range</li>                    
@@ -189,11 +189,11 @@ export default function Function() {
             )}/>
 
             <Group title="Even" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Retrieves a random even value within the specified range.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static int</b2> <b1>Int_Even</b1>(<b2>int</b2> <b1>max = (int.MaxValue - 1) / 2</b1>)</li>
                         <li><b2>static float</b2> <b1>Float_Even</b1>(<b2>float</b2> <b1>max = (float.MaxValue - 1) / 2</b1>)</li>
@@ -206,7 +206,7 @@ export default function Function() {
                         <li><b2>static Vector3Int</b2> <b1>Vector3Int_Even</b1>(<b2>int</b2> <b1>max = (int.MaxValue - 1) / 2</b1>)</li>
                         <li><b2>static Vector3Int</b2> <b1>Vector3Int_Even</b1>(<b2>Vector3Int</b2> <b1>max</b1>)</li>                        
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                     <li><b2>int</b2> <b1>max</b1>: The maximum value of the range</li>                    
                         <li><b2>float</b2> <b1>max</b1>: The maximum value of the range</li>                    
@@ -219,11 +219,11 @@ export default function Function() {
             )}/>
 
             <Group title="Odd" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Retrieves a random odd value within the specified range.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static int</b2> <b1>Int_Odd</b1>(<b2>int</b2> <b1>max = (int.MaxValue - 1) / 2</b1>)</li>
                         <li><b2>static float</b2> <b1>Float_Odd</b1>(<b2>float</b2> <b1>max = (float.MaxValue - 1) / 2</b1>)</li>
@@ -236,7 +236,7 @@ export default function Function() {
                         <li><b2>static Vector3Int</b2> <b1>Vector3Int_Odd</b1>(<b2>int</b2> <b1>max = (int.MaxValue - 1) / 2</b1>)</li>
                         <li><b2>static Vector3Int</b2> <b1>Vector3Int_Odd</b1>(<b2>Vector3Int</b2> <b1>max</b1>)</li>                        
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>int</b2> <b1>max</b1>: The maximum value of the range</li>                    
                         <li><b2>float</b2> <b1>max</b1>: The maximum value of the range</li>                    
@@ -249,11 +249,11 @@ export default function Function() {
             )}/>
 
             <Group title="Bin" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Generates a random value that is either 0 or 1, based on the specified probability of getting a 1.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static int</b2> <b1>Int_Bin</b1>(<b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>
                         <li><b2>static float</b2> <b1>Float_Bin</b1>(<b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>
@@ -268,7 +268,7 @@ export default function Function() {
                         <li><b2>static Color</b2> <b1>Color_Bin</b1>(<b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>
                         <li><b2>static Color</b2> <b1>Color_Bin</b1>(<b2>Color</b2> <b1>chanceOfOne</b1>)</li>                        
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>float</b2> <b1>chanceOfOne</b1>: The probability (between 0f and 1f) of generating a value of 1</li>                    
                         <li><b2>Vector2</b2> <b1>chanceOfOne</b1>: The probability (between 0f and 1f) of generating a value of 1 for each axis</li>                    
@@ -279,10 +279,10 @@ export default function Function() {
             )}/>
 
             <Group title="Sign" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static int</b2> <b1>Int_Sign</b1>(<b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>
                         <li><b2>static float</b2> <b1>Float_Sign</b1>(<b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>
@@ -295,7 +295,7 @@ export default function Function() {
                         <li><b2>static Vector3Int</b2> <b1>Vector3Int_Sign</b1>(<b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>
                         <li><b2>static Vector3Int</b2> <b1>Vector3Int_Sign</b1>(<b2>Vector3</b2> <b1>chanceOfOne</b1>)</li>                        
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>float</b2> <b1>chanceOfPositive</b1>: The probability (between 0f and 1f) of generating a positive value (either 1 or -1)</li>                    
                         <li><b2>Vector2</b2> <b1>chanceOfPositive</b1>: The probability (between 0f and 1f) of generating a positive value (either 1 or -1) for each axis</li>                    
@@ -305,11 +305,11 @@ export default function Function() {
             )}/>
 
             <Group title="Angle" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Generates a random angle value between 0 and the specified maximum angle, rounded to the nearest multiple of the steps value if it was specified.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static int</b2> <b1>Int_Angle</b1>(<b2>int</b2> <b1>maxAngle = 360</b1>)</li>
                         <li><b2>static int</b2> <b1>Int_Angle</b1>(<b2>int</b2> <b1>steps</b1>, <b2>int</b2> <b1>maxAngle = 360</b1>)</li>
@@ -334,7 +334,7 @@ export default function Function() {
                         <li><b2>static Vector3Int</b2> <b1>Vector3Int_Angle</b1>(<b2>int</b2> <b1>steps</b1>, <b2>int</b2> <b1>maxAngle = 360</b1>)</li>
                         <li><b2>static Vector3Int</b2> <b1>Vector3Int_Angle</b1>(<b2>Vector3Int</b2> <b1>maxAngle</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>int</b2> <b1>maxAngle</b1>: The maximum angle in degrees</li>                    
                         <li><b2>float</b2> <b1>maxAngle</b1>: The maximum angle in degrees</li>                    
@@ -353,37 +353,37 @@ export default function Function() {
             )}/>
 
             <Group title="Screen" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                <div>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>Vector2</b2> <b1>ScreenPoint</b1>(): Returns a random point on the screen</li>
-                        <li><b2>Vector3</b2> <b1>WorldPoint</b1>(): Returns a random point within the game world</li>
+                        <li><b2>static Vector2</b2> <b1>ScreenPoint</b1>(): Returns a random point on the screen</li>
+                        <li><b2>static Vector3</b2> <b1>WorldPoint</b1>(): Returns a random point within the game world</li>
                     </ul>
                 </div>
             )}/>
 
             <Group title="Lists and Arrays" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Retrieves a random index, item, list of indexes or list of items from an array or list. If specified, the list can contain unique indexes or items (without duplicates). 
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>int</b2> <b1>RandomIndex{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>params int[]</b2> <b1>indexesToIgnore</b1>)</li>
-                        <li><b2>int</b2> <b1>RandomIndex{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>array</b1>, <b2>params int[]</b2> <b1>indexesToIgnore</b1>)</li>
-                        <li><b2>List{"<int>"}</b2> <b1>RandomIndexList{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>amountOfItems</b1>, <b2>params int[]</b2> <b1>indexesToIgnore</b1>)</li>
-                        <li><b2>List{"<int>"}</b2> <b1>RandomIndexList{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>array</b1>, <b2>int</b2> <b1>amountOfItems</b1>, <b2>params int[]</b2> <b1>indexesToIgnore</b1>)</li>
-                        <li><b2>List{"<int>"}</b2> <b1>RandomIndexListUnique{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>amountOfItems</b1>, <b2>params int[]</b2> <b1>indexesToIgnore</b1>)</li>
-                        <li><b2>List{"<int>"}</b2> <b1>RandomIndexListUnique{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>array</b1>, <b2>int</b2> <b1>amountOfItems</b1>, <b2>params int[]</b2> <b1>indexesToIgnore</b1>)</li>
+                        <li><b2>static int</b2> <b1>RandomIndex{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>params int[]</b2> <b1>indexesToIgnore</b1>)</li>
+                        <li><b2>static int</b2> <b1>RandomIndex{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>array</b1>, <b2>params int[]</b2> <b1>indexesToIgnore</b1>)</li>
+                        <li><b2>static List{"<int>"}</b2> <b1>RandomIndexList{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>amountOfItems</b1>, <b2>params int[]</b2> <b1>indexesToIgnore</b1>)</li>
+                        <li><b2>static List{"<int>"}</b2> <b1>RandomIndexList{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>array</b1>, <b2>int</b2> <b1>amountOfItems</b1>, <b2>params int[]</b2> <b1>indexesToIgnore</b1>)</li>
+                        <li><b2>static List{"<int>"}</b2> <b1>RandomIndexListUnique{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>amountOfItems</b1>, <b2>params int[]</b2> <b1>indexesToIgnore</b1>)</li>
+                        <li><b2>static List{"<int>"}</b2> <b1>RandomIndexListUnique{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>array</b1>, <b2>int</b2> <b1>amountOfItems</b1>, <b2>params int[]</b2> <b1>indexesToIgnore</b1>)</li>
                         <br/>
-                        <li><b2>T</b2> <b1>RandomItem{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>params int[]</b2> <b1>indexesToIgnore</b1>)</li>
-                        <li><b2>T</b2> <b1>RandomItem{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>array</b1>, <b2>params int[]</b2> <b1>indexesToIgnore</b1>)</li>
-                        <li><b2>List{"<int>"}</b2> <b1>RandomItemList{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>amountOfItems</b1>, <b2>params int[]</b2> <b1>indexesToIgnore</b1>)</li>
-                        <li><b2>List{"<int>"}</b2> <b1>RandomItemList{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>array</b1>, <b2>int</b2> <b1>amountOfItems</b1>, <b2>params int[]</b2> <b1>indexesToIgnore</b1>)</li>
-                        <li><b2>List{"<int>"}</b2> <b1>RandomItemListUnique{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>amountOfItems</b1>, <b2>params int[]</b2> <b1>indexesToIgnore</b1>)</li>
-                        <li><b2>List{"<int>"}</b2> <b1>RandomItemListUnique{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>array</b1>, <b2>int</b2> <b1>amountOfItems</b1>, <b2>params int[]</b2> <b1>indexesToIgnore</b1>)</li>
+                        <li><b2>static T</b2> <b1>RandomItem{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>params int[]</b2> <b1>indexesToIgnore</b1>)</li>
+                        <li><b2>static T</b2> <b1>RandomItem{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>array</b1>, <b2>params int[]</b2> <b1>indexesToIgnore</b1>)</li>
+                        <li><b2>static List{"<int>"}</b2> <b1>RandomItemList{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>amountOfItems</b1>, <b2>params int[]</b2> <b1>indexesToIgnore</b1>)</li>
+                        <li><b2>static List{"<int>"}</b2> <b1>RandomItemList{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>array</b1>, <b2>int</b2> <b1>amountOfItems</b1>, <b2>params int[]</b2> <b1>indexesToIgnore</b1>)</li>
+                        <li><b2>static List{"<int>"}</b2> <b1>RandomItemListUnique{"<T>"}</b1>(<b2>this T[]</b2> <b1>array</b1>, <b2>int</b2> <b1>amountOfItems</b1>, <b2>params int[]</b2> <b1>indexesToIgnore</b1>)</li>
+                        <li><b2>static List{"<int>"}</b2> <b1>RandomItemListUnique{"<T>"}</b1>(<b2>this List{"<T>"}</b2> <b1>array</b1>, <b2>int</b2> <b1>amountOfItems</b1>, <b2>params int[]</b2> <b1>indexesToIgnore</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>T[]</b2> <b1>array</b1>: Array to search</li>                    
                         <li><b2>List{"<T>"}</b2> <b1>list</b1>: List to search</li>                    

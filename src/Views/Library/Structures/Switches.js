@@ -19,10 +19,7 @@ export default function Function() {
                 By enabling seamless selection and manipulation of values through the Inspector, Switch structures streamline script management, reduce complexity and significantly enhance the efficiency of script editing and maintenance, making them invaluable for developing versatile applications.
             </p>
             <div className="p-2">
-                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 05.jpg" alt=""/>            
-                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 06.jpg" alt=""/>            
-                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 07.jpg" alt=""/>            
-                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 08.jpg" alt=""/>            
+                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 12.jpg" alt=""/>            
             </div>
 
             <h3 className="p-2">Introduction</h3>
@@ -35,14 +32,14 @@ export default function Function() {
             <h3 className="p-2">How it Works</h3>
 
             <Group title="Switch<A, B>" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>State</b1>: Represents the current state of the switch, either true or false</li>                    
                         <li><b2>A</b2> <b1>ValueA</b1>: Stores the value of type A associated with the switch</li>                    
                         <li><b2>B</b2> <b1>ValueB</b1>: Stores the value of type B associated with the switch</li>                    
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>void</b2> <b1>Set</b1>(<b2>Switch{"<A, B>"}</b2> <b1>newValue</b1>): Updates the current switch by assigning it the values from another switch of the same type</li>
                     </ul>
@@ -50,8 +47,8 @@ export default function Function() {
             )}/>
 
             <Group title="Switch<A, B, C> to Switch<A, B, C, D, E, F, G, H, I, J>" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>int</b2> <b1>State</b1>: Represents the current state of the switch, from 0 to n</li>                    
                         <li><b2>A</b2> <b1>ValueA</b1>: Stores the value of type A associated with the switch</li>                    
@@ -65,7 +62,7 @@ export default function Function() {
                         <li><b2>I</b2> <b1>ValueI</b1>: Stores the value of type I associated with the switch</li>                    
                         <li><b2>J</b2> <b1>ValueJ</b1>: Stores the value of type J associated with the switch</li>                    
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>void</b2> <b1>Set</b1>(<b2>Switch{"<A, B, C, D, E, F, G, H, I, J>"}</b2> <b1>newValue</b1>): Updates the current switch by assigning it the values from another switch of the same type</li>
                     </ul>
@@ -73,8 +70,8 @@ export default function Function() {
             )}/>
 
             <Group title="BoolSwitch" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>State</b1>: Reflects the current state of the switch, indicating whether it is using the bool value (false) or the asset value (true)</li>
                         <li><b2>bool</b2> <b1>Value</b1>: Retrieves the active value of the switch, which corresponds to its current state</li>
@@ -85,8 +82,8 @@ export default function Function() {
             )}/>
 
             <Group title="IntSwitch" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>State</b1>: Reflects the current state of the switch, indicating whether it is using the int value (false) or the asset value (true)</li>
                         <li><b2>int</b2> <b1>Value</b1>: Retrieves the active value of the switch, which corresponds to its current state</li>
@@ -97,8 +94,8 @@ export default function Function() {
             )}/>
 
             <Group title="FloatSwitch" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>State</b1>: Reflects the current state of the switch, indicating whether it is using the float value (false) or the asset value (true)</li>
                         <li><b2>float</b2> <b1>Value</b1>: Retrieves the active value of the switch, which corresponds to its current state</li>
@@ -109,8 +106,8 @@ export default function Function() {
             )}/>
 
             <Group title="StringSwitch" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>State</b1>: Reflects the current state of the switch, indicating whether it is using the string value (false) or the asset value (true)</li>
                         <li><b2>string</b2> <b1>Value</b1>: Retrieves the active value of the switch, which corresponds to its current state</li>
@@ -121,8 +118,8 @@ export default function Function() {
             )}/>
 
             <Group title="TextSwitch" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>State</b1>: Reflects the current state of the switch, indicating whether it is using the Text value (false) or the Text_TMP value (true)</li>
                         <li><b2>string</b2> <b1>Text</b1>: Retrieves the active string value of the switch, which corresponds to its current state</li>
@@ -130,7 +127,7 @@ export default function Function() {
                         <li><b2>Text</b2> <b1>TextValue</b1>: Stores the value of the associated Text</li>
                         <li><b2>Text_TMP</b2> <b1>TMP_TextValue</b1>: Stores the value of the associated Text_TMP</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>void</b2> <b1>TryGetComponents</b1>(<b2>GameObject</b2> <b1>gameObject</b1>): Tries to get the current active component in the GameObject provided</li>
                     </ul>
@@ -138,8 +135,8 @@ export default function Function() {
             )}/>
 
             <Group title="Vector2Switch" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>State</b1>: Reflects the current state of the switch, indicating whether it is using the Vector2 value (false) or the asset value (true)</li>
                         <li><b2>Vector2</b2> <b1>Value</b1>: Retrieves the active value of the switch, which corresponds to its current state</li>
@@ -150,8 +147,8 @@ export default function Function() {
             )}/>
 
             <Group title="Vector3Switch" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>State</b1>: Reflects the current state of the switch, indicating whether it is using the Vector3 value (false) or the asset value (true)</li>
                         <li><b2>Vector3</b2> <b1>Value</b1>: Retrieves the active value of the switch, which corresponds to its current state</li>
@@ -162,8 +159,8 @@ export default function Function() {
             )}/>
 
             <Group title="TransformSwitch" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>State</b1>: Reflects the current state of the switch, indicating whether it is using the Transform value (false) or the Vector3Asset value (true)</li>
                         <li><b2>bool</b2> <b1>IsNull</b1>: Evaluates if the current active state value is null</li>
@@ -181,8 +178,8 @@ export default function Function() {
             )}/>
 
             <Group title="RectTransformSwitch" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>State</b1>: Reflects the current state of the switch, indicating whether it is using the RectTransform value (false) or the Vector2Asset value (true)</li>
                         <li><b2>bool</b2> <b1>IsNull</b1>: Evaluates if the current active state value is null</li>
@@ -191,7 +188,7 @@ export default function Function() {
                         <li><b2>RectTransform</b2> <b1>RectTransformValue</b1>: Stores the value of the associated RectTransform</li>
                         <li><b2>Vector2Asset</b2> <b1>AssetValue</b1>: Stores the value of the associated Vector2Asset</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>void</b2> <b1>TryGetComponents</b1>(<b2>GameObject</b2> <b1>gameObject</b1>): Tries to get the current active component in the GameObject provided</li>
                     </ul>
@@ -199,8 +196,8 @@ export default function Function() {
             )}/>
 
             <Group title="ColorSwitch" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>int</b2> <b1>State</b1>: Reflects the current state of the switch, indicating whether it is using the SpriteRenderer value (0), the Image value (1), the Text value (2) or the Text_TMP value (3)</li>
                         <li><b2>Color</b2> <b1>Color</b1>: Retrieves the active color value of the switch, which corresponds to its current state</li>
@@ -209,7 +206,7 @@ export default function Function() {
                         <li><b2>Text</b2> <b1>TextValue</b1>: Stores the value of the associated Text</li>
                         <li><b2>Text_TMP</b2> <b1>TMP_TextValue</b1>: Stores the value of the associated Text_TMP</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>void</b2> <b1>TryGetComponents</b1>(<b2>GameObject</b2> <b1>gameObject</b1>): Tries to get the current active component in the GameObject provided</li>
                     </ul>
@@ -217,8 +214,8 @@ export default function Function() {
             )}/>
 
             <Group title="SpriteSwitch" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>State</b1>: Reflects the current state of the switch, indicating whether it is using the SpriteRenderer value (false) or the Image value (true)</li>
                         <li><b2>Color</b2> <b1>Color</b1>: Retrieves the active color value of the switch, which corresponds to its current state</li>
@@ -226,7 +223,7 @@ export default function Function() {
                         <li><b2>SpriteRenderer</b2> <b1>SpriteValue</b1>: Stores the value of the associated SpriteRenderer</li>
                         <li><b2>Image</b2> <b1>ImageValue</b1>: Stores the value of the associated Image</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>void</b2> <b1>TryGetComponents</b1>(<b2>GameObject</b2> <b1>gameObject</b1>): Tries to get the current active component in the GameObject provided</li>
                     </ul>
@@ -234,8 +231,8 @@ export default function Function() {
             )}/>
 
             <Group title="TimeScaleSwitch" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>State</b1>: Reflects the current state of the switch, indicating whether it is using the TimeScale value (false) or the TimeScaleAsset value (true)</li>
                         <li><b2>float</b2> <b1>Delta</b1>: Retrieves the active delta time value of the switch, which corresponds to its current state</li>

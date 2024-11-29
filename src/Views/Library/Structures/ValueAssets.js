@@ -36,14 +36,14 @@ export default function Function() {
             <h3 className="p-2">How it Works</h3>
 
             <Group title="ValueAsset<T>" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>T</b2> <b1>Value</b1>: Returns the current value of the asset</li>                    
                         <li><b2>bool</b2> <b1>HasFilter</b1>: Returns if the event has a filter setted</li>                    
                         <li><b2>int</b2> <b1>SubscribersCount</b1>: Returns the amount of subscribers to this event</li>                    
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>void</b2> <b1>SetFilter</b1>(<b2>Func{"<T, T>"}</b2> <b1>filter</b1>): Sets the filter to the asset</li>
                         <li><b2>void</b2> <b1>RemoveFilter</b1>(): Removes the filter from the asset</li>
@@ -60,8 +60,8 @@ export default function Function() {
             )}/>
 
             <Group title="BoolAsset : ValueAsset<bool>" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                <div>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>int</b2> <b1>CompareTo</b1>(<b2>BoolAsset</b2> <b1>value</b1>): Compares the two assets</li>
                         <li><b2>int</b2> <b1>CompareTo</b1>(<b2>bool</b2> <b1>value</b1>): Compares the two values</li>
@@ -75,8 +75,8 @@ export default function Function() {
             )}/>
 
             <Group title="IntAsset : ValueAsset<int>" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                <div>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>int</b2> <b1>CompareTo</b1>(<b2>IntAsset</b2> <b1>value</b1>): Compares the two assets</li>
                         <li><b2>int</b2> <b1>CompareTo</b1>(<b2>int</b2> <b1>value</b1>): Compares the two values</li>
@@ -90,8 +90,8 @@ export default function Function() {
             )}/>
 
             <Group title="FloatAsset : ValueAsset<float>" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                <div>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>int</b2> <b1>CompareTo</b1>(<b2>FloatAsset</b2> <b1>value</b1>): Compares the two assets</li>
                         <li><b2>int</b2> <b1>CompareTo</b1>(<b2>float</b2> <b1>value</b1>): Compares the two values</li>
@@ -105,16 +105,16 @@ export default function Function() {
             )}/>
 
             <Group title="StringAsset : ValueAsset<string>" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>int</b2> <b1>Length</b1>: Returns the length of the string</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Indexers</h5>
+                    <h5 className="c-light-1">Indexers</h5>
                     <ul className="property-list">
                         <li><b2>char this[int index]</b2>: Returns the character at the given index</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>Equals</b1>(<b2>StringAsset</b2> <b1>value</b1>): Checks if the two assets have equal values</li>
                         <li><b2>bool</b2> <b1>Equals</b1>(<b2>string</b2> <b1>value</b1>): Checks if the two values are equal</li>
@@ -125,17 +125,17 @@ export default function Function() {
             )}/>
 
             <Group title="Vector2Asset : ValueAsset<Vector2>" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>float</b2> <b1>x</b1>: Returns the value of the x axis</li>
                         <li><b2>float</b2> <b1>y</b1>: Returns the value of the y axis</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Indexers</h5>
+                    <h5 className="c-light-1">Indexers</h5>
                     <ul className="property-list">
                         <li><b2>float this[int index]</b2>: Returns the value at the given index</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>Equals</b1>(<b2>Vector2Asset</b2> <b1>value</b1>): Checks if the two assets have equal values</li>
                         <li><b2>bool</b2> <b1>Equals</b1>(<b2>Vector2</b2> <b1>value</b1>): Checks if the two values are equal</li>
@@ -146,18 +146,18 @@ export default function Function() {
             )}/>
 
             <Group title="Vector3Asset : ValueAsset<Vector3>" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>float</b2> <b1>x</b1>: Returns the value of the x axis</li>
                         <li><b2>float</b2> <b1>y</b1>: Returns the value of the y axis</li>
                         <li><b2>float</b2> <b1>z</b1>: Returns the value of the z axis</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Indexers</h5>
+                    <h5 className="c-light-1">Indexers</h5>
                     <ul className="property-list">
                         <li><b2>float this[int index]</b2>: Returns the value at the given index</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>Equals</b1>(<b2>Vector3Asset</b2> <b1>value</b1>): Checks if the two assets have equal values</li>
                         <li><b2>bool</b2> <b1>Equals</b1>(<b2>Vector3</b2> <b1>value</b1>): Checks if the two values are equal</li>

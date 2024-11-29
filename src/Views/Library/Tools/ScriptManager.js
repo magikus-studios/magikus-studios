@@ -4,86 +4,80 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Script Manager</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                The Reference Console is a custom Unity Editor Window designed to help developers manage and track 
-                references within their Unity projects. It identifies references between objects in the currently 
-                open scene, all scenes in the project and assets. Additionally, it allows for quick identification 
-                of missing references, making it easier to fix issues related to lost or broken links between objects and assets.
+            <h1 className="text-center pad-top-4">Script Manager</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Unity Editor designed to enhance Script Management within Unity Projects 
             </h6>
 
+            <h3 className="p-2">Overview</h3>
+            <p className="pad-left-2 pad-bottom-2">
+                The Script Manager is a versatile and efficient tool for Unity developers, providing essential insights into script data while offering customization options for script organization.                 
+                Whether you are managing a small or large project, this tool simplifies script handling and reduces manual. 
+            </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Tools/ScriptManager/Script Manager - 01.jpg" alt=""/>            
+            </div>
+
+
+            <h3 className="p-2">Introduction</h3>
+            <p className="pad-left-2 pad-bottom-2">
+                This utility provides developers with the ability to analyze scripts in their project, calculate the total number of scripts and determine the total line count of selected scripts or the entire project. 
+                Additionally, it allows users to set icons for multiple scripts at once, enhancing project organization and visibility.
+            </p>
+
             <h3 className="p-2">How to Use</h3>
-
-            <h4 className="c-light-1 p-3">Accessing the Reference Console</h4>
             <p className="pad-left-3">
-                In Unity, navigate to Magikus {">"} Reference Console from the top menu. This will open the Reference Console window, which you can dock anywhere within the Unity Editor interface.
+                The Script Manager can be accessed from the Unity Editor menu and provides an intuitive interface for managing scripts.
             </p>
 
-            <h4 className="c-light-1 p-3">Using the Reference Console</h4>
-
-            <h5 className="c-light-0 pad-left-3">Interface</h5>
+            <h5 className="c-light-0 p-3">Access the Script Manager</h5>
             <p className="pad-left-3">
-                The window provides several buttons and options to help manage references:
+                Go to <b1>Magikus {">"} Script Manager</b1> in the Unity menu bar to open the tool.
             </p>
-            <ul className="property-list">
-                <li><b1>Expand</b1>: Expands all reference entries to show detailed information.</li>
-                <li><b1>Collapse</b1>: Collapses all reference entries to show only summary information.</li>
-                <li><b1>Refresh</b1>: Manually refreshes the list of references based on the current selection and mode.</li>
-                <li><b1>Auto</b1>: Toggles automatic refreshing of references when the selection changes.</li>
-                <li><b1>Mode Selection</b1>: Allows you to select the scope of the reference search, including options for the open scene, all scenes, assets, or a combination of these.</li>
-            </ul>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceConsole/Reference Console - 01.jpg" alt=""/>
-            
-            <h5 className="c-light-0 pad-left-3">Display Modes</h5>
-            <p className="pad-left-3">
-                You can choose which references to display by selecting one or more of the following modes:
-            </p>
-            <ul className="property-list">
-                <li><b1>Open Scene</b1>: Displays references within the currently open scene.</li>
-                <li><b1>Assets</b1>: Displays references within all assets in the project.</li>
-                <li><b1>All Scenes</b1>: Displays references across all scenes in the project.</li>
-                <li><b1>All</b1>: Displays references across all scenes and assets.</li>
-            </ul>
-            
-            <h5 className="c-light-0 pad-left-3">Viewing and Managing References</h5>
-            <ul className="property-list">
-                <li><b>Missing References</b>: If any missing references are found, they will be listed at the top. Each entry shows the missing object's name, type, and asset name.
-                    <ul className="property-list">
-                        <li>Clicking the “+” button next to a missing reference will ping the location of the reference in the project.</li>
-                        <li>Clicking the object's name or type will select and ping the object in the Inspector.</li>
-                    </ul>
-                </li>
-                <li><b>Reference Holders</b>: Lists objects that have references to other objects. Each entry shows the object name, type, and the count of references.
-                    <ul className="property-list">
-                        <li>Clicking the “–“ button removes the object from the selection.</li>
-                        <li>Clicking the count or name expands/collapses the list of references.</li>
-                        <li>Each reference entry provides detailed information about the target object and allows for selecting and pinging the reference in the Inspector.</li>
-                    </ul>
-                </li>
-            </ul>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceConsole/Reference Console - 02.jpg" alt=""/>
 
-            <h5 className="c-light-0 pad-left-3">Handling References</h5>
-            <ul className="property-list">
-                <li><b1>Add to Selection</b1>: To add an object to the selection, click the “+“ button next to a reference.</li>
-                <li><b1>Remove from Selection</b1>: To remove an object from the selection, click the “-“ button next to the reference holder.</li>
+            <ul>
+                <li><b1>Analyze Project Scripts</b1>: The Script Manager will automatically display the total number of scripts and lines in your project.</li>
+                <li><b1>Select Scripts</b1>: Select one or multiple scripts in the Unity Project window to see their individual line counts and details.</li>
+                <li><b1>Assign a custom icon to the selected scripts</b1>: Drag and drop an icon texture into the Script Manager's icon field. Click Set Icon to Selected Scripts to apply the icon.</li>
+                <li><b1>Refresh Data</b1>: Use the Refresh button to manually refresh the script data if needed.</li>
+                <li><b1>Toggle Auto-Refresh</b1>: Use the Auto Refresh button to enable or disable automatic project refreshes.</li>
             </ul>
+
+            <h3 className="p-2">Examples</h3>
+
+            <h4 className="c-light-1 p-3">Example 01: Viewing Script Details</h4>
+            <ol className="oList pad-left-5">
+                <li>Select multiple scripts in the Project window.</li>
+                <img className="block-center mar-vertical-3 img-border w-50" src="images/Library/Tools/ScriptManager/Script Manager - 02.jpg" alt=""/>            
+                <li>The Script Manager displays their names and line counts in a scrollable list.</li>
+                <img className="block-center mar-vertical-3 img-border w-50" src="images/Library/Tools/ScriptManager/Script Manager - 03.jpg" alt=""/>            
+            </ol>
+
+            <h4 className="c-light-1 p-3">Example 02: Setting an Icon</h4>
+            <ol className="oList pad-left-5">
+                <li>Import a .png or .jpg texture into Unity.</li>
+                <li>Drag the texture into the Icon Field in the Script Manager.</li>
+                <img className="block-center mar-vertical-3 img-border w-50" src="images/Library/Tools/ScriptManager/Script Manager - 04.jpg" alt=""/>            
+                <li>Select the scripts to which the icon should be applied.</li>
+                <img className="block-center mar-vertical-3 img-border w-50" src="images/Library/Tools/ScriptManager/Script Manager - 05.jpg" alt=""/>            
+                <li>Click Set Icon to Selected Scripts.</li>
+            </ol>
+
+            <h4 className="c-light-1 p-3">Example 03: Analyzing Total Scripts and Lines</h4>
+            <ol className="oList pad-left-5">
+                <li>Open the Script Manager.</li>
+                <img className="block-center mar-vertical-3 img-border w-50" src="images/Library/Tools/ScriptManager/Script Manager - 06.jpg" alt=""/>            
+                <li>View the bottom panel to see the total number of scripts and lines in your project.</li>
+            </ol>
+
 
             <h3 className="p-2">Notes</h3>
             <ul>
-                <li>If the automatic refresh option is enabled, the reference list will update whenever the selection changes in the Unity Editor. This can be useful for dynamically tracking references but may impact performance in large projects.</li>
-                <li>If a reference is missing, it could be due to an object being deleted or moved. The console helps identify these issues so they can be resolved quickly.</li>
-                <li>Scanning all scenes and assets can be time-consuming, especially in large projects. Use the specific modes (Open Scene, Assets) to limit the scope of the search and improve performance.</li>
+                <li>Ensure that the icon texture is a valid .png or .jpg file imported into Unity.</li>
+                <li>Only .cs scripts are included in the analysis. Other file types (e.g., .js, .shader) are ignored.</li>
+                <li>Auto-refresh settings may impact Unity Editor performance in large projects.</li>
+                <li>Assigning icons requires Unity's internal methods and might not work for every Unity version due to internal API changes.</li>
             </ul>
-
-            <h3 className="p-2">Conclusion</h3>
-            <p className="pad-left-2">
-                The Reference Console is a powerful tool for managing object references within Unity projects. 
-                By providing a detailed view of references and quick access to missing or broken links, it aids 
-                developers in maintaining the integrity of their projects. Whether you are working on a small 
-                scene or a large-scale project, this tool helps ensure that all references are correctly maintained, 
-                contributing to a more stable and efficient development workflow.
-            </p>
        </div>
     );
 }

@@ -33,24 +33,24 @@ export default function Function() {
             <h3 className="p-2">How it Works</h3>
 
             <Group title="Matrix2D<T>" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Constructors</h5>
+                <div>
+                    <h5 className="c-light-1">Constructors</h5>
                     <ul className="property-list">
                         <li><b1>Matrix2D</b1>(<b2>int</b2> <b1>columns</b1>, <b2>int</b2> <b1>rows</b1>, <b2>Func{"<int, int, Matrix2D<T>, T>"}</b2> <b1>instanciator</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>int</b2> <b1>Columns</b1>: Amount of columns of the matrix</li>
                         <li><b2>int</b2> <b1>Rows</b1>: Amount of rows of the matrix</li>
                         <li><b2>int</b2> <b1>Count</b1>: Amount of cells in the matrix</li>
                         <li><b2>List{"<T>"}</b2> <b1>Cells</b1>: List if all the cells of the matrix</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Indexers</h5>
+                    <h5 className="c-light-1">Indexers</h5>
                     <ul className="property-list">
                         <li><b2>T</b2> <b1>this[int x, int y]</b1>: Returns the value of a given matrix position</li>                    
                         <li><b2>T</b2> <b1>this[Vector2Int position]</b1>: Returns the value of a given matrix position</li>                    
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                    <h5 className="c-light-1">Methods</h5>
                     <Method 
                     name="Create" 
                     description="Creates a new Matrix2D with the parameters provided"
@@ -401,15 +401,15 @@ export default function Function() {
             )}/>
 
             <Group title="Grid2D<T> : Matrix2D<T>" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Inherits all properties and methods from Matrix2D.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Constructors</h5>
+                    <h5 className="c-light-1">Constructors</h5>
                     <ul className="property-list">
                         <li><b1>Grid2D</b1>(<b2>int</b2> <b1>columns</b1>, <b2>int</b2> <b1>rows</b1>, <b2>Vector2</b2> <b1>cellSize</b1>, <b2>Vector3</b2> <b1>position</b1>, <b2>PLANE</b2> <b1>plane</b1>, <b2>Vector2</b2> <b1>spacing</b1>, <b2>float</b2> <b1>oddShift</b1>, <b2>Func{"<int, int, Matrix2D<T>, T>"}</b2> <b1>instanciator</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>Vector3</b2> <b1>Position</b1>: The world position of the grid</li>                    
                         <li><b2>Vector3</b2> <b1>Center</b1>: The world position of the center of the grid</li>                    
@@ -421,12 +421,12 @@ export default function Function() {
                         <li><b2>Vector2</b2> <b1>Spacing</b1>: The spacing between cells</li>                    
                         <li><b2>float</b2> <b1>OddShift</b1>: The position shift of the odd rows</li>                    
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Indexers</h5>
+                    <h5 className="c-light-1">Indexers</h5>
                     <ul className="property-list">
                         <li><b2>T</b2> <b1>this[Vector3 position]</b1>: Returns the value of a given matrix position</li>                    
                     </ul>
 
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                    <h5 className="c-light-1">Methods</h5>
                     <Method 
                     name="Create" 
                     description="Creates a new Grid2D with the parameters provided"
@@ -798,14 +798,14 @@ export default function Function() {
             )}/>
  
             <Group title="Pathfinder2D" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Constructors</h5>
+                <div>
+                    <h5 className="c-light-1">Constructors</h5>
                     <ul className="property-list">
                         <li><b1>Pathfinder2D</b1>(<b2>Grid2D{"<PathNode>"}</b2> <b1>matrix</b1>)</li>
                         <li><b1>Pathfinder2D</b1>(<b2>Matrix2D{"<PathNode>"}</b2> <b1>matrix</b1>)</li>
                         <li><b1>Pathfinder2D</b1>(<b2>int</b2> <b1>width</b1>, <b2>int</b2> <b1>height</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>int</b2> <b1>MOVE_STRAIGHT_COST</b1>: The cost straight movements</li>                    
                         <li><b2>int</b2> <b1>MOVE_DIAGONAL_COST</b1>: The cost diagonal movements</li>                    
@@ -813,12 +813,12 @@ export default function Function() {
                         <li><b2>bool</b2> <b1>DisableStraightMove</b1>: Disable straight movement in the path</li>                    
                         <li><b2>Matrix2D{"<PathNode>"}</b2> <b1>Matrix</b1>: Matrix the pathfinder is based on</li>                    
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Indexers</h5>
+                    <h5 className="c-light-1">Indexers</h5>
                     <ul className="property-list">
                         <li><b2>PathNode</b2> <b1>this[int col, int row]</b1>: Returns the PathNode of a given matrix position</li>                    
                         <li><b2>PathNode</b2> <b1>this[Vector2Int position]</b1>: Returns the PathNode of a given matrix position</li>                    
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                    <h5 className="c-light-1">Methods</h5>
 
                     <Method 
                     name="Find Path" 
@@ -836,12 +836,12 @@ export default function Function() {
             )}/>
 
             <Group title="PathNode" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Constructors</h5>
+                <div>
+                    <h5 className="c-light-1">Constructors</h5>
                     <ul className="property-list">
                         <li><b1>PathNode</b1>(<b2>int</b2> <b1>col</b1>, <b2>int</b2> <b1>row</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>PathNode</b2> <b1>CameFromNode</b1>: The previous node in the path</li>                    
                         <li><b2>bool</b2> <b1>IsWalkable</b1>: If false, this node will not be taken into account when calculating the path</li>                    
@@ -853,7 +853,7 @@ export default function Function() {
                         <li><b2>int</b2> <b1>Row</b1>: The row of the node within the matrix</li>
                         <li><b2>Vector2Int</b2> <b1>Position</b1>: The position of the node within the matrix</li>                    
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                    <h5 className="c-light-1">Methods</h5>
                     <Method 
                     name="Reset" 
                     description="Resets the PathNode to its default values"

@@ -32,8 +32,8 @@ export default function Function() {
             <h3 className="p-2">How it Works</h3>
 
             <Group title="ITimeScale" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>float</b2> <b1>Delta</b1>: Returns the scaled Time.DeltaTime or Time.UnscaledDeltaTime</li>
                         <li><b2>float</b2> <b1>FixedDelta</b1>: Returns the scaled Time.FixedDeltaTime or Time.FixedUnscaledDeltaTime</li>
@@ -45,12 +45,12 @@ export default function Function() {
                 </div>
             )}/>
             <Group title="TimeScale Asset : ITimeScale" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>int</b2> <b1>SubscribersCount</b1>: Returns the amount of subscribers to this asset</li>                    
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>void</b2> <b1>SkipNextChange</b1>(): Skips the next scale change</li>
                         <li><b2>void</b2> <b1>Subscribe</b1>(<b2>Action{"<TimeScale>"}</b2> <b1>action</b1>): Subscribes the action to the onChange event</li>

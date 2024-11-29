@@ -18,9 +18,9 @@
             { "label": "Looping", "link": "/#/library/utilities/looping" },
             { "label": "Datafile", "link": "/#/library/utilities/datafile" },
             { "label": "Randop", "link": "/#/library/utilities/randop" },
-            { "label": "Mathop", "link": "/#/library/utilities/math" },
-            { "label": "Textop", "link": "/#/library/utilities/text" },
-            { "label": "Listop", "link": "/#/library/utilities/list" }
+            { "label": "Mathop", "link": "/#/library/utilities/mathop" },
+            { "label": "Textop", "link": "/#/library/utilities/textop" },
+            { "label": "Listop", "link": "/#/library/utilities/listop" }
         ]
     },
     {
@@ -64,12 +64,12 @@
         "label": "Decorators",
         "items": [
             { "label": "[Decorators]", "link": "/#/library/decorators" },
-            { "label": "If * ", "link": "/#/library/decorators/line" },
+            { "label": "Conditional", "link": "/#/library/decorators/conditional" },
             { "label": "Line", "link": "/#/library/decorators/line" },
             { "label": "Title", "link": "/#/library/decorators/title" },
-            { "label": "Message *", "link": "/#/library/decorators/message" },
-            { "label": "Hide *", "link": "/#/library/decorators/show" },
-            { "label": "Block *", "link": "/#/library/decorators/block" },
+            { "label": "Message", "link": "/#/library/decorators/message" },
+            { "label": "Show & Hide", "link": "/#/library/decorators/showHide" },
+            { "label": "Block", "link": "/#/library/decorators/block" },
             { "label": "Toggle", "link": "/#/library/decorators/toggle" },
             { "label": "Collapse", "link": "/#/library/decorators/collapse" },
             { "label": "Progress Bar", "link": "/#/library/decorators/progressBar" }
@@ -86,7 +86,7 @@
             { "label": "Hierarchy Editor", "link": "/#/library/tools/hierarchyEditor", "pro": true },
             { "label": "Curve Editor", "link": "/#/library/tools/curveEditor", "pro": true},
             { "label": "Reference Console", "link": "/#/library/tools/referenceConsole", "pro": true },
-            { "label": "Script Manager *", "link": "/#/library/tools/scriptManager", "pro": true }
+            { "label": "Script Manager", "link": "/#/library/tools/scriptManager", "pro": true }
         ]
     }
 ]

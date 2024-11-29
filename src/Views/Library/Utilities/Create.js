@@ -27,17 +27,17 @@ export default function Function() {
             <h3 className="p-2">How it Works</h3>
  
             <Group title="Vector2" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Creates a Vector2 instance with both components set to the same value, by copying the values from another Vector2 or with specified x and y components.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static Vector2</b2> <b1>Vector2</b1>(<b2>float</b2> <b1>value</b1>)</li>
                         <li><b2>static Vector2</b2> <b1>Vector2</b1>(<b2>Vector2</b2> <b1>vector</b1>)</li>
                         <li><b2>static Vector2</b2> <b1>Vector2</b1>(<b2>float</b2> <b1>x</b1>, <b2>float</b2> <b1>y</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>float</b2> <b1>value</b1>: The value to set for both the x and y components</li>                    
                         <li><b2>Vector2</b2> <b1>vector</b1>: The source Vector2 from which to copy values</li>                    
@@ -47,18 +47,18 @@ export default function Function() {
                 </div>
             )}/>
             <Group title="Vector3" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Creates a Vector3 instance with all components set to the same value, by copying the values from another Vector3, with the x and y components set to the same value and a specified z component or with specified x, y, and z components.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static Vector3</b2> <b1>Vector3</b1>(<b2>float</b2> <b1>value</b1>)</li>
                         <li><b2>static Vector3</b2> <b1>Vector3</b1>(<b2>Vector3</b2> <b1>vector</b1>)</li>
                         <li><b2>static Vector3</b2> <b1>Vector3</b1>(<b2>float</b2> <b1>xy</b1>, <b2>float</b2> <b1>z</b1>)</li>
                         <li><b2>static Vector3</b2> <b1>Vector3</b1>(<b2>float</b2> <b1>x</b1>, <b2>float</b2> <b1>y</b1>, <b2>float</b2> <b1>z</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>float</b2> <b1>value</b1>: The value to set for the x, y, and z components</li>                    
                         <li><b2>Vector3</b2> <b1>vector</b1>: The source Vector3 from which to copy values</li>                    
@@ -70,17 +70,17 @@ export default function Function() {
                 </div>
             )}/>
             <Group title="Vector2Int" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Creates a Vector2Int instance with both components set to the same value, by copying the values from another Vector2Int or with specified x and y components.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static Vector2Int</b2> <b1>Vector2Int</b1>(<b2>int</b2> <b1>value</b1>)</li>
                         <li><b2>static Vector2Int</b2> <b1>Vector2Int</b1>(<b2>Vector2Int</b2> <b1>vector</b1>)</li>
                         <li><b2>static Vector2Int</b2> <b1>Vector2Int</b1>(<b2>int</b2> <b1>x</b1>, <b2>int</b2> <b1>y</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>int</b2> <b1>value</b1>: The value to set for both the x and y components</li>                    
                         <li><b2>Vector2Int</b2> <b1>vector</b1>: The source Vector2Int from which to copy values</li>                    
@@ -90,18 +90,18 @@ export default function Function() {
                 </div>
             )}/>
             <Group title="Vector3Int" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Creates a Vector3Int instance with all components set to the same value, by copying the values from another Vector3Int, with the x and y components set to the same value and a specified z component or with specified x, y, and z components.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static Vector3Int</b2> <b1>Vector3Int</b1>(<b2>int</b2> <b1>value</b1>)</li>
                         <li><b2>static Vector3Int</b2> <b1>Vector3Int</b1>(<b2>Vector3Int</b2> <b1>vector</b1>)</li>
                         <li><b2>static Vector3Int</b2> <b1>Vector3Int</b1>(<b2>int</b2> <b1>xy</b1>, <b2>int</b2> <b1>z</b1>)</li>
                         <li><b2>static Vector3Int</b2> <b1>Vector3Int</b1>(<b2>int</b2> <b1>x</b1>, <b2>int</b2> <b1>y</b1>, <b2>int</b2> <b1>z</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>int</b2> <b1>value</b1>: The value to set for the x, y, and z components</li>                    
                         <li><b2>Vector3Int</b2> <b1>vector</b1>: The source Vector3Int from which to copy values</li>                    
@@ -113,11 +113,11 @@ export default function Function() {
                 </div>
             )}/>
             <Group title="Color" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Creates a Color instance from a hex string, with all components set to a normalized value from an integer, with the RGB components set to a normalized value from an integer and a specified alpha component, with all components set to the same float value, by copying the values from another Color, with the RGB components set to the same value and a specified alpha component or with specified red, green, blue, and alpha components.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static Color</b2> <b1>Color</b1>(<b2>string</b2> <b1>hex</b1>)</li>
                         <li><b2>static Color</b2> <b1>Color</b1>(<b2>int</b2> <b1>rgb</b1>, <b2>int</b2> <b1>a = 255</b1>)</li>
@@ -126,7 +126,7 @@ export default function Function() {
                         <li><b2>static Color</b2> <b1>Color</b1>(<b2>float</b2> <b1>r</b1>, <b2>float</b2> <b1>g</b1>, <b2>float</b2> <b1>b</b1>, <b2>float</b2> <b1>a</b1>)</li>
                         <li><b2>static Color</b2> <b1>Color</b1>(<b2>Color</b2> <b1>vector</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>string</b2> <b1>hex</b1>: The hex string representing the color</li>                    
                         <li><b2>int</b2> <b1>rgb</b1>: The integer value to normalize and use for the RGB components</li>                    
@@ -144,11 +144,11 @@ export default function Function() {
                 </div>
             )}/>
             <Group title="Rect" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Creates a Rect instance with all dimensions set to the same value, by copying the values from another Rect, with specified position and size, with a specified position and dimensions, with specified x and y positions and a size or with specified x and y positions and dimensions.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static Rect</b2> <b1>Rect</b1>(<b2>float</b2> <b1>value</b1>)</li>
                         <li><b2>static Rect</b2> <b1>Rect</b1>(<b2>Rect</b2> <b1>vector</b1>)</li>
@@ -157,7 +157,7 @@ export default function Function() {
                         <li><b2>static Rect</b2> <b1>Rect</b1>(<b2>float</b2> <b1>x</b1>, <b2>float</b2> <b1>y</b1>, <b2>Vector2</b2> <b1>size</b1>)</li>
                         <li><b2>static Rect</b2> <b1>Rect</b1>(<b2>float</b2> <b1>x</b1>, <b2>float</b2> <b1>y</b1>, <b2>float</b2> <b1>w</b1>, <b2>float</b2> <b1>h</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>float</b2> <b1>value</b1>: The value to set for the x, y, width, and height components</li>                    
                         <li><b2>Rect</b2> <b1>rect</b1>: The source Rect from which to copy values</li>                    

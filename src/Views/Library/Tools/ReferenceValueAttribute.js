@@ -1,48 +1,68 @@
 import React from "react";
+import Group from "Components/Group";
 
 export default function Function() {
     
     
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Reference Value Attribute</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
-                The ReferenceValue attribute is a custom attribute that provides a convenient interface for handling ObjectReference fields in Unity's Inspector. 
-                It allows you to create or remove object references directly from the Inspector using customizable buttons. 
-                This is particularly useful for managing references to assets like prefabs, materials, or other scriptable objects, providing a seamless way to assign and manage them in the editor.
+            <h1 className="text-center pad-top-4">Reference Value Attribute</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Attribute that provides an interface for handling ObjectReference fields in Unity's Inspector 
             </h6>
+
+            <h3 className="p-2">Overview</h3>
+            <p className="pad-left-2 pad-bottom-2">
+                The <b2>[ReferenceValue]</b2> attribute provides a streamlined way to manage object references in Unity's Inspector. 
+                This attribute is especially useful in scenarios where references need to be created or removed frequently, making it a valuable tool for improving productivity in Unity development.              
+            </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 10.jpg" alt=""/>                     
+            </div>
+
+
+            <h3 className="p-2">Introduction</h3>
+            <p className="pad-left-2 pad-bottom-2">              
+                The <b2>[ReferenceValue]</b2> attribute allows you to create or remove object references directly from the Inspector using customizable buttons. 
+                This is particularly useful for managing references to assets like prefabs, materials or other scriptable objects, providing a seamless way to assign and manage them in the editor.
+                By offering customizable labels and field width ratios, it enhances the workflow for assigning and managing references. 
+            </p>
 
             <h3 className="p-2">How it Works</h3>
 
-            <div className="p-3">
-                <h4 className="c-light-1 pad-left-2">ReferenceValue Attribute</h4>
-                <h5 className="c-light-1 pad-left-3">Constructors</h5>
-                <ul className="property-list">
-                    <li><b1>ReferenceValueAttribute</b1>(<b2>string</b2> <b1>menuPath</b1>): Initializes the ReferenceValue attribute with a specified menu path for creating new assets.</li>
-                    <li><b1>ReferenceValueAttribute</b1>(<b2>string</b2> <b1>menuPath</b1>, <b2>float</b2> <b1>ratio</b1>): Initializes the ReferenceValueAttribute with a specified menu path and a custom ratio for the reference field width.</li>
-                    <li><b1>ReferenceValueAttribute</b1>(<b2>string</b2> <b1>menuPath</b1>, <b2>string</b2> <b1>createLabel</b1>, <b2>string</b2> <b1>removeLabel</b1>): Initializes the ReferenceValue attribute with a specified menu path and custom labels for the “create” and “remove” buttons.</li>
-                    <li><b1>ReferenceValueAttribute</b1>(<b2>string</b2> <b1>menuPath</b1>, <b2>string</b2> <b1>createLabel</b1>, <b2>string</b2> <b1>removeLabel</b1>, <b2>float</b2> <b1>ratio</b1>): Initializes the ReferenceValue attribute with a specified menu path, custom labels, and a custom ratio for the reference field width.</li>
-                </ul>
-                <h5 className="c-light-1 pad-left-3">Parameters</h5>
-                <ul className="property-list">
-                    <li><b2>string</b2> <b1>menuPath</b1>: The path in Unity's Assets menu to trigger for creating a new object.</li>
-                    <li><b2>string</b2> <b1>createLabel</b1> (optional): The label for the button used to create a new reference. Default is "Create".</li>
-                    <li><b2>string</b2> <b1>removeLabel</b1> (optional): The label for the button used to remove an existing reference. Default is "Remove".</li>                    
-                    <li><b2>float</b2> <b1>ratio</b1> (optional): The ratio of the width of the reference field to the total width of the inspector field. Default is 0.6f.</li>
-                </ul>
-            </div>
+            <Group title="ReferenceValue Attribute" content={(
+                <div>
+                    <p>
+                        Initializes the <b2>[ReferenceValue]</b2> attribute with a specified menu path for creating new assets, a custom ratio for the reference field width and custom labels for the “create” and “remove” buttons.
+                    </p>
+                    <h5 className="c-light-1">Constructors</h5>
+                    <ul className="property-list">
+                        <li><b1>ReferenceValue</b1>(<b2>string</b2> <b1>menuPath</b1>)</li>
+                        <li><b1>ReferenceValue</b1>(<b2>string</b2> <b1>menuPath</b1>, <b2>float</b2> <b1>ratio</b1>)</li>
+                        <li><b1>ReferenceValue</b1>(<b2>string</b2> <b1>menuPath</b1>, <b2>string</b2> <b1>createLabel</b1>, <b2>string</b2> <b1>removeLabel</b1>)</li>
+                        <li><b1>ReferenceValue</b1>(<b2>string</b2> <b1>menuPath</b1>, <b2>string</b2> <b1>createLabel</b1>, <b2>string</b2> <b1>removeLabel</b1>, <b2>float</b2> <b1>ratio</b1>)</li>
+                    </ul>
+                    <h5 className="c-light-1">Parameters</h5>
+                    <ul className="property-list">
+                        <li><b2>string</b2> <b1>menuPath</b1>: The path in Unity's Assets menu to trigger for creating a new object.</li>
+                        <li><b2>string</b2> <b1>createLabel</b1>: The label for the button used to create a new reference. Default is "Create".</li>
+                        <li><b2>string</b2> <b1>removeLabel</b1>: The label for the button used to remove an existing reference. Default is "Remove".</li>                    
+                        <li><b2>float</b2> <b1>ratio</b1>: The ratio of the width of the reference field to the total width of the inspector field. Default is 0.6f.</li>
+                    </ul>
+                </div>
+            )}/>
             
 
             <h3 className="p-2">How to Use</h3>
             <p className="pad-left-2">
-                To use the ReferenceValue attribute, apply it to an ObjectReference field in your script. 
+                To use the <b2>[ReferenceValue]</b2> attribute, apply it to an ObjectReference field in your script. 
                 Below are examples demonstrating various ways to use this attribute:
             </p>
 
             <h4 className="c-light-1 p-3">Example 01: Simple Object Reference with Default Buttons</h4>
             <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 01.jpg" alt=""/>            
             <p className="pad-left-3">
-                This example shows how to apply the ReferenceValue attribute to a GameObject field. 
+                This example shows how to apply the <b2>[ReferenceValue]</b2> attribute to a GameObject field. 
                 The menu path "GameObject/Create Empty" is triggered when the create button is clicked.
             </p>
             <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 02.jpg" alt=""/>            
@@ -69,17 +89,10 @@ export default function Function() {
             
             <h3 className="p-2">Notes</h3>
             <ul>
-                <li>The ReferenceValue attribute is intended for fields of type ObjectReference. It will not work with other field types.</li>
+                <li>The <b2>[ReferenceValue]</b2> attribute is intended for fields of type ObjectReference. It will not work with other field types.</li>
                 <li>Ensure that the specified menu path corresponds to an existing menu item in Unity's Assets menu. Otherwise, the create button will not function as expected.</li>
                 <li>The Ratio parameter defines the proportion of the total field width allocated to the reference field. The remainder is used for the buttons. Adjust this value to fit your layout requirements.</li>
             </ul>
-
-            <h3 className="p-2">Conclusion</h3>
-            <p className="pad-left-2">
-                The ReferenceValue attribute provides a streamlined way to manage object references in Unity's Inspector. 
-                By offering customizable labels and field width ratios, it enhances the workflow for assigning and managing references. 
-                This attribute is especially useful in scenarios where references need to be created or removed frequently, making it a valuable tool for improving productivity in Unity development.
-            </p>
        </div>
     );
 }

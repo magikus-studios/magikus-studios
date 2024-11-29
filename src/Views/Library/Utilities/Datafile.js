@@ -27,8 +27,8 @@ export default function Function() {
             <h3 className="p-2">How it Works</h3>
  
             <Group title="DataPath" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>static string</b2> <b1>DataPath</b1>: Retrieves the appropriate file path for storing data based on the environment (Unity Editor or Runtime).</li>                    
                     </ul>
@@ -36,15 +36,15 @@ export default function Function() {
             )}/>
 
             <Group title="CreatePath" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Ensures that the directory structure for the specified file path exists, creating any necessary directories.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static void</b2> <b1>CreatePath</b1>(<b2>string</b2> <b1>filePath</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>string</b2> <b1>filePath</b1>: The file path for which the directory structure needs to be created</li>                    
                     </ul>
@@ -52,15 +52,15 @@ export default function Function() {
             )}/>
 
             <Group title="GetUniqueName" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Generates a unique file name by appending a number if the file already exists.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static string</b2> <b1>GetUniqueName</b1>(<b2>string</b2> <b1>filePath</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>string</b2> <b1>filePath</b1>: The original file path for which a unique name is required</li>                    
                     </ul>
@@ -68,15 +68,15 @@ export default function Function() {
             )}/>
 
             <Group title="IsSaved" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Checks if a file already exists at the specified path.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static bool</b2> <b1>IsSaved</b1>(<b2>string</b2> <b1>filePath</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>string</b2> <b1>filePath</b1>: The file path to check</li>                    
                     </ul>
@@ -84,11 +84,11 @@ export default function Function() {
             )}/>
 
             <Group title="IsSerializable<T>" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Validates whether the provided generic type T is serializable.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static bool</b2> <b1>IsSerializable{"<T>"}</b1>()</li>
                     </ul>
@@ -96,15 +96,15 @@ export default function Function() {
             )}/>
 
             <Group title="Encrypt" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Returns an encrypted string of the data using AES encryption.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static string</b2> <b1>Encrypt</b1>(<b2>string</b2> <b1>data</b1>, <b2>string</b2> <b1>password</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>string</b2> <b1>data</b1>: The string data to encrypt</li>                    
                         <li><b2>string</b2> <b1>password</b1>: The string to use as a key to encrypt</li>                    
@@ -113,15 +113,15 @@ export default function Function() {
             )}/>
 
             <Group title="Dencrypt" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Returns a dencrypted string of the data using AES encryption.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static string</b2> <b1>Dencrypt</b1>(<b2>string</b2> <b1>data</b1>, <b2>string</b2> <b1>password</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>string</b2> <b1>data</b1>: The string data to dencrypt</li>                    
                         <li><b2>string</b2> <b1>password</b1>: The string to use as a key to dencrypt</li>                    
@@ -130,17 +130,17 @@ export default function Function() {
             )}/>
 
             <Group title="Txt" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Saving and loading a text file.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static void</b2> <b1>Txt.Save</b1>(<b2>string</b2> <b1>data</b1>, <b2>string</b2> <b1>filePath</b1>, <b2>string</b2> <b1>password = null</b1>)</li>
                         <li><b2>static void</b2> <b1>Txt.Save</b1>(<b2>string</b2> <b1>data</b1>, <b2>string</b2> <b1>filePath</b1>, <b2>bool</b2> <b1>overwrite = false</b1>, <b2>string</b2> <b1>password = null</b1>)</li>
                         <li><b2>static string</b2> <b1>Txt.Load</b1>(<b2>string</b2> <b1>filePath</b1>, <b2>string</b2> <b1>password = null</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>string</b2> <b1>data</b1>: The string data to save</li>                    
                         <li><b2>string</b2> <b1>filePath</b1>: The file path to use for saving or loading</li>                    
@@ -151,16 +151,16 @@ export default function Function() {
             )}/>
 
             <Group title="Json" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Serializes an object of type T into JSON format and saves it or Loads a JSON file and deserializes it into an object of type T.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static void</b2> <b1>Json.Save{"<T>"}</b1>(<b2>T</b2> <b1>data</b1>, <b2>string</b2> <b1>filePath</b1>, <b2>bool</b2> <b1>overwrite = false</b1>)</li>
                         <li><b2>static T</b2> <b1>Json.Load{"<T>"}</b1>(<b2>string</b2> <b1>filePath</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>T</b2> <b1>data</b1>: The serialized object data to save</li>                    
                         <li><b2>string</b2> <b1>filePath</b1>: The file path to use for saving or loading</li>                    
@@ -170,17 +170,17 @@ export default function Function() {
             )}/>
 
             <Group title="Bin" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Serializes an object of type T into JSON, converts it to binary, and saves it or Loads a binary file, converts it back to JSON, and deserializes it into an object of type T.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static void</b2> <b1>Bin.Save{"<T>"}</b1>(<b2>T</b2> <b1>data</b1>, <b2>string</b2> <b1>filePath</b1>, <b2>string</b2> <b1>password = null</b1>)</li>
                         <li><b2>static void</b2> <b1>Bin.Save{"<T>"}</b1>(<b2>T</b2> <b1>data</b1>, <b2>string</b2> <b1>filePath</b1>, <b2>bool</b2> <b1>overwrite = false</b1>, <b2>string</b2> <b1>password = null</b1>)</li>
                         <li><b2>static T</b2> <b1>Bin.Load{"<T>"}</b1>(<b2>string</b2> <b1>filePath</b1>, <b2>string</b2> <b1>password = null</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>T</b2> <b1>data</b1>: The serialized object data to save</li>                    
                         <li><b2>string</b2> <b1>filePath</b1>: The file path to use for saving or loading</li>                    
@@ -191,16 +191,16 @@ export default function Function() {
             )}/>
 
             <Group title="Xml" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Serializes an object of type T into XML format and saves it or Loads an XML file and deserializes it into an object of type T.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static void</b2> <b1>Xml.Save{"<T>"}</b1>(<b2>T</b2> <b1>data</b1>, <b2>string</b2> <b1>filePath</b1>, <b2>bool</b2> <b1>overwrite = false</b1>)</li>
                         <li><b2>static T</b2> <b1>Xml.Load{"<T>"}</b1>(<b2>string</b2> <b1>filePath</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>T</b2> <b1>data</b1>: The serialized object data to save</li>                    
                         <li><b2>string</b2> <b1>filePath</b1>: The file path to use for saving or loading</li>                    
@@ -210,13 +210,13 @@ export default function Function() {
             )}/>
 
             <Group title="Csv" content={(
-                <div className="p-3">
-                    <p className="pad-left-3">
+                <div>
+                    <p>
                         Methods for converting a DataTable or a 2D string array to CSV format and saving it or loading a CSV file and converting it to a 2D string array or DataTable.
                         Also, converts a DataTable or a 2D string array into a CSV string or a CSV string into a 2D string array or DataTable.
                         The PrintTable method logs the contents of a 2D string array or DataTable in a readable format.
                     </p>
-                    <h5 className="c-light-1 pad-left-3">Signature</h5>
+                    <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static void</b2> <b1>Csv.Save</b1>(<b2>string[][]</b2> <b1>data</b1>, <b2>string</b2> <b1>filePath</b1>, <b2>bool</b2> <b1>overwrite = false</b1>, <b2>char</b2> <b1>columnSeparator = ','</b1>, <b2>char</b2> <b1>rowSeparator = '\n'</b1>)</li>
                         <li><b2>static void</b2> <b1>Csv.Save</b1>(<b2>DataTable</b2> <b1>data</b1>, <b2>string</b2> <b1>filePath</b1>, <b2>bool</b2> <b1>overwrite = false</b1>, <b2>char</b2> <b1>columnSeparator = ','</b1>, <b2>char</b2> <b1>rowSeparator = '\n'</b1>)</li>
@@ -229,7 +229,7 @@ export default function Function() {
                         <li><b2>static void</b2> <b1>Csv.PrintTable</b1>(<b2>string[][]</b2> <b1>table</b1>)</li>
                         <li><b2>static void</b2> <b1>Csv.PrintTable</b1>(<b2>DataTable</b2> <b1>table</b1>)</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>DataTable</b2> <b1>data</b1>: The data to save to a CSV file</li>                    
                         <li><b2>string[][]</b2> <b1>data</b1>: The data to save to a CSV file</li>                    

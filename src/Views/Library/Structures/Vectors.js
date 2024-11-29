@@ -34,20 +34,20 @@ export default function Function() {
             <div className="p-3">
                 <h4 className="c-light-1 pad-left-2">Vector2</h4>
                 <h5 className="c-light-1 pad-left-3">Properties</h5>
-                <ul className="property-list">
+                <ul>
                     <li><b2>T</b2> <b1>x</b1>: X value of the vector</li>
                     <li><b2>T</b2> <b1>y</b1>: Y value of the vector</li>
                 </ul>
                 <h4 className="c-light-1 pad-left-2">Vector3</h4>
                 <h5 className="c-light-1 pad-left-3">Properties</h5>
-                <ul className="property-list">
+                <ul>
                     <li><b2>T</b2> <b1>x</b1>: X value of the vector</li>
                     <li><b2>T</b2> <b1>y</b1>: Y value of the vector</li>
                     <li><b2>T</b2> <b1>z</b1>: Z value of the vector</li>
                 </ul>
                 <h4 className="c-light-1 pad-left-2">Color</h4>
                 <h5 className="c-light-1 pad-left-3">Properties</h5>
-                <ul className="property-list">
+                <ul>
                     <li><b2>T</b2> <b1>r</b1>: Red value of the color</li>
                     <li><b2>T</b2> <b1>g</b1>: Green value of the color</li>
                     <li><b2>T</b2> <b1>b</b1>: Blue value of the color</li>

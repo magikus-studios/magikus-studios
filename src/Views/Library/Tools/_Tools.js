@@ -21,59 +21,42 @@ export default function Function() {
             
             <a href="/#/library/tools/baseComponent" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Base Component</h4></a>
             <p className="pad-left-3">
-                The Base component simplifies debugging by enabling or disabling functionality within MonoBehaviour or 
-                ScriptableObject scripts in Unity. It includes properties for toggling debugging messages and disabling script 
-                features during runtime. This tool enhances the flexibility and efficiency of the development and testing process 
-                by allowing developers to control script behavior without modifying the underlying code.
+                A foundational script for MonoBehaviours and ScriptableObjects, the Base component simplifies debugging, enables runtime toggling of features and streamlines development and testing for cleaner, more efficient workflows.
             </p>
 
             <a href="/#/library/tools/buttonAttribute" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Button Attribute</h4></a>
             <p className="pad-left-3">
-                The Button attribute allows developers to create button elements within the Unity Inspector.
-                These buttons can be linked to methods, with options to customize labels, widths and heights. This
-                feature simplifies invoking methods directly from the Inspector, making it more efficient to trigger
-                actions during development. 
+                An attribute that adds customizable buttons to the Unity Inspector, enabling developers to trigger methods directly within the editor.
             </p>
 
             <a href="/#/library/tools/referenceValueAttribute" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Reference Value Attribute</h4></a>
             <p className="pad-left-3">
-                The ReferenceValue attribute provides a convenient interface for managing ObjectReference fields
-                in the Unity Inspector. It allows for the creation or removal of object references directly from the
-                Inspector using customizable buttons, streamlining the management of references to assets like
-                prefabs, materials or scriptable objects.
+                An attribute that simplifies the management of referenced objects in Unity's Inspector, enhancing productivity in scenarios requiring frequent creation or removal of referenced value objects such as GameObjecs or ScriptableObjects.
             </p>
 
             <a href="/#/library/tools/keyBindingDrawer" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Key Binding Drawer</h4></a>
             <p className="pad-left-3">
-                The KeyBinding tool is a custom property drawer that enhances the editing experience of
-                KeyCode fields in inspector windows. This tool simplifies the process of setting KeyCode values,
-                making it easier and more intuitive.
+                A Property Drawer that enhances editing KeyCode fields in Unity, offering intuitive key binding and reset functionality to enhance workflow and productivity.
             </p>
 
             <a href="/#/library/tools/hierarchyEditor" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Hierarchy Editor</h4></a>
             <p className="pad-left-3">
-                The Hierarchy editor is designed to enhance workflow within the Unity Editor by providing additional 
-                functionalities for managing and organizing the hierarchy of game objects in a scene. This tool 
-                helps maintain a well-organized scene hierarchy, improving overall project management.
+                An enhanced Unity Editor tool for efficiently managing and organizing the hierarchy of GameObjects in a scene.
             </p>
 
             <a href="/#/library/tools/curveEditor" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Curve Editor</h4></a>
             <p className="pad-left-3">
-                The Curve Editor is a powerful utility designed for the creation and manipulation of animationCurves 
-                within the Unity Editor. It provides an intuitive interface for generating, editing and applying 
-                various types of animation curves. This tool is invaluable for developers working with animations, 
-                offering a flexible and non-destructive workflow.
+                The Curve Editor is a powerful Unity Editor that simplifies the creation and editing of animation curves, enabling developers to achieve precise and dynamic animations with an intuitive interface.
             </p>
 
             <a href="/#/library/tools/referenceConsole" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Reference Console</h4></a>
             <p className="pad-left-3">
-                The Reference Console is a custom Unity Editor Window that helps manage and track references within 
-                Unity projects. This tool makes it easier to fix issues related to lost or broken links between 
-                objects and assets, ensuring project integrity.
+                A powerful Editor Window for managing and tracking object references, ensuring integrity and efficiency in Unity projects.
             </p>
 
             <a href="/#/library/tools/scriptManager" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Script Manager</h4></a>
             <p className="pad-left-3">
+                The Script Manager is a powerful Unity Editor that streamlines script organization and management, providing essential insights and customization options for projects.
             </p>
         </div>
     );

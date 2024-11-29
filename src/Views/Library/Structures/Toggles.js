@@ -45,23 +45,23 @@ export default function Function() {
                     Here are the constructors available:
                 </p>
                 <h5 className="c-light-1 pad-left-3">Properties</h5>
-                <ul className="property-list">
+                <ul>
                     <li><b2>bool</b2> <b1>State</b1>: State of the structure</li>
                     <li><b2>T</b2> <b1>Value</b1>: Value of the structure</li>
                 </ul>
                 <h5 className="c-light-1 pad-left-3">Set</h5>
-                <ul className="property-list">
+                <ul>
                     <li><b2>void</b2> <b1>Set</b1>(<b2>Toggle{"<T>"}</b2> <b1>newValue</b1>): Sets the state of the Toggle based on another Toggle</li>
                 </ul>
                 <h5 className="c-light-1 pad-left-3">If On</h5>
-                <ul className="property-list">
+                <ul>
                     <li><b2>void</b2> <b1>IfOn</b1>(<b2>string</b2> <b1>message</b1>): Prints a message to the console if the state is true</li>
                     <li><b2>void</b2> <b1>IfOn</b1>(<b2>object</b2> <b1>message</b1>): Prints the object to the console if the state is true</li>
                     <li><b2>void</b2> <b1>IfOn</b1>(<b2>Action</b2> <b1>action</b1>): Invokes an action if the state is true</li>
                     <li><b2>void</b2> <b1>IfOn</b1>(<b2>Action{"<T>"}</b2> <b1>action</b1>): Invokes an action that takes the value as a parameter if the state is true</li>
                 </ul>
                 <h5 className="c-light-1 pad-left-3">If Off</h5>
-                <ul className="property-list">
+                <ul>
                     <li><b2>void</b2> <b1>IfOff</b1>(<b2>string</b2> <b1>message</b1>): Prints a message to the console if the state is false</li>
                     <li><b2>void</b2> <b1>IfOff</b1>(<b2>object</b2> <b1>message</b1>): Prints the object to the console if the state is false</li>
                     <li><b2>void</b2> <b1>IfOff</b1>(<b2>Action</b2> <b1>action</b1>): Invokes an action if the state is false</li>

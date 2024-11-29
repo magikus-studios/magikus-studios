@@ -36,12 +36,12 @@ export default function Function() {
             <div className="p-3">
                 <h4 className="c-light-1 pad-left-2">Range</h4>
                 <h5 className="c-light-1 pad-left-3">Properties</h5>
-                <ul className="property-list">
+                <ul>
                     <li><b2>T</b2> <b1>Min</b1>: Min value of the range</li>
                     <li><b2>T</b2> <b1>Max</b1>: Max value of the range</li>
                 </ul>
                 <h5 className="c-light-1 pad-left-3">Methods</h5>
-                <ul className="property-list">
+                <ul>
                     <li><b2>bool</b2> <b1>IsRange</b1>(<b2>T</b2> <b1>value</b1>): Returns true if the value is in range (including the min and max values).</li>
                     <li><b2>bool</b2> <b1>IsInside</b1>(<b2>T</b2> <b1>value</b1>): Returns true if the value is inside the range.</li>
                     <li><b2>bool</b2> <b1>IsOutside</b1>(<b2>T</b2> <b1>value</b1>): Returns true if the value is outside range.</li>
@@ -52,7 +52,7 @@ export default function Function() {
                     <li><b2>bool</b2> <b1>IsHigher</b1>(<b2>T</b2> <b1>value</b1>): Returns true if the value is higher than the min value of the range.</li>
                 </ul>
                 <h5 className="c-light-1 pad-left-3">Virtual</h5>
-                <ul className="property-list">
+                <ul>
                     <li><b2>virtual int</b2> <b1>CompareTo</b1>(<b2>T</b2> <b1>value</b1>, <b2>T</b2> <b1>other</b1>): Compares the two values.</li>
                     <li><b2>virtual bool</b2> <b1>Equals</b1>(<b2>T</b2> <b1>value</b1>, <b2>T</b2> <b1>other</b1>): Returns true if the two values are equal.</li>
                 </ul>

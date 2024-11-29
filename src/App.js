@@ -21,9 +21,9 @@ import LibraryUtilitiesEasing from "Views/Library/Utilities/Easing.js";
 import LibraryUtilitiesLooping from "Views/Library/Utilities/Looping.js";
 import LibraryUtilitiesDatafile from "Views/Library/Utilities/Datafile.js";
 import LibraryUtilitiesRandop from "Views/Library/Utilities/Randop.js";
-import LibraryUtilitiesMath from "Views/Library/Utilities/Math.js";
-import LibraryUtilitiesText from "Views/Library/Utilities/Text.js";
-import LibraryUtilitiesList from "Views/Library/Utilities/List.js";
+import LibraryUtilitiesMathop from "Views/Library/Utilities/Mathop.js";
+import LibraryUtilitiesTextop from "Views/Library/Utilities/Textop.js";
+import LibraryUtilitiesListop from "Views/Library/Utilities/Listop.js";
 
 import LibraryStructures from "Views/Library/Structures/_Structures.js";
 import LibraryStructuresGrids from "Views/Library/Structures/Grids.js";
@@ -51,10 +51,11 @@ import LibrarySystemsAudioSystem from "Views/Library/Systems/AudioSystem.js";
 import LibrarySystemsDialogSystem from "Views/Library/Systems/DialogSystem.js";
 
 import LibraryDecorators from "Views/Library/Decorators/_Decorators.js";
+import LibraryDecoratorsConditional from "Views/Library/Decorators/Conditional.js";
 import LibraryDecoratorsLine from "Views/Library/Decorators/Line.js";
 import LibraryDecoratorsTitle from "Views/Library/Decorators/Title.js";
 import LibraryDecoratorsMessage from "Views/Library/Decorators/Message.js";
-import LibraryDecoratorsHide from "Views/Library/Decorators/Hide.js";
+import LibraryDecoratorsShowHide from "Views/Library/Decorators/ShowHide.js";
 import LibraryDecoratorsBlock from "Views/Library/Decorators/Block.js";
 import LibraryDecoratorsToggle from "Views/Library/Decorators/Toggle.js";
 import LibraryDecoratorsCollapse from "Views/Library/Decorators/Collapse.js";
@@ -101,9 +102,9 @@ export default function App() {
           <Route exact path="/library/utilities/looping" element={<Library content={<LibraryUtilitiesLooping />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/utilities/datafile" element={<Library content={<LibraryUtilitiesDatafile />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/utilities/randop" element={<Library content={<LibraryUtilitiesRandop />} menu={LibraryMenu} />}></Route>
-          <Route exact path="/library/utilities/math" element={<Library content={<LibraryUtilitiesMath />} menu={LibraryMenu} />}></Route>
-          <Route exact path="/library/utilities/text" element={<Library content={<LibraryUtilitiesText />} menu={LibraryMenu} />}></Route>
-          <Route exact path="/library/utilities/list" element={<Library content={<LibraryUtilitiesList />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/utilities/mathop" element={<Library content={<LibraryUtilitiesMathop />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/utilities/textop" element={<Library content={<LibraryUtilitiesTextop />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/utilities/listop" element={<Library content={<LibraryUtilitiesListop />} menu={LibraryMenu} />}></Route>
 
           <Route exact path="/library/structures" element={<Library content={<LibraryStructures />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/structures/grids" element={<Library content={<LibraryStructuresGrids />} menu={LibraryMenu} />}></Route>
@@ -131,10 +132,11 @@ export default function App() {
           <Route exact path="/library/systems/dialogSystem" element={<Library content={<LibrarySystemsDialogSystem />} menu={LibraryMenu} />}></Route>
 
           <Route exact path="/library/decorators" element={<Library content={<LibraryDecorators />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/decorators/conditional" element={<Library content={<LibraryDecoratorsConditional />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/decorators/line" element={<Library content={<LibraryDecoratorsLine />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/decorators/message" element={<Library content={<LibraryDecoratorsMessage />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/decorators/title" element={<Library content={<LibraryDecoratorsTitle />} menu={LibraryMenu} />}></Route>
-          <Route exact path="/library/decorators/show" element={<Library content={<LibraryDecoratorsHide />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/decorators/showHide" element={<Library content={<LibraryDecoratorsShowHide />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/decorators/block" element={<Library content={<LibraryDecoratorsBlock />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/decorators/toggle" element={<Library content={<LibraryDecoratorsToggle />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/decorators/collapse" element={<Library content={<LibraryDecoratorsCollapse />} menu={LibraryMenu} />}></Route>

@@ -29,13 +29,14 @@ export default function Function() {
 
 
             <h3 className="p-2">How it Works</h3>
+            
             <Group title="Label Asset Structure" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>List{"<LabelAssetStructure>"}</b2> <b1>Labels</b1>: List of label assets containing only this label asset</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>Equals</b1>(<b2>Label</b2> <b1>labels</b1>): Evaluates if the list of label assets of this label are equal to the list of label assets of the specified label</li>
                         <li><b2>bool</b2> <b1>Contains</b1>(<b2>Label</b2> <b1>labels</b1>): Evaluates if the list of label assets of this label contains the list of label assets of the specified label</li>
@@ -44,12 +45,12 @@ export default function Function() {
                 </div>
             )}/>
             <Group title="Label Group Asset Structure" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>List{"<LabelAssetStructure>"}</b2> <b1>Labels</b1>: List of label assets</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>Equals</b1>(<b2>Label</b2> <b1>labels</b1>): Evaluates if the list of label assets of this label are equal to the list of label assets of the specified label</li>
                         <li><b2>bool</b2> <b1>Contains</b1>(<b2>Label</b2> <b1>labels</b1>): Evaluates if the list of label assets of this label contains the list of label assets of the specified label</li>
@@ -58,12 +59,12 @@ export default function Function() {
                 </div>
             )}/>
             <Group title="Label Controller" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>Label</b2> <b1>_label</b1>: Label asset</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>_Equals</b1>(<b2>Label</b2> <b1>labels</b1>): Evaluates if the list of label assets of this label are equal to the list of label assets of the specified label</li>
                         <li><b2>bool</b2> <b1>_Contains</b1>(<b2>Label</b2> <b1>labels</b1>): Evaluates if the list of label assets of this label contains the list of label assets of the specified label</li>

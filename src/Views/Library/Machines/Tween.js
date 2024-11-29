@@ -26,7 +26,7 @@ export default function Function() {
                 <br/>
                 Some use cases are:
             </p>
-            <ul className="property-list">
+            <ul>
                 <li>Moving an object from one position to another smoothly.</li>
                 <li>Rotating an object continuously or to a specific angle.</li>
                 <li>Scaling an object up or down.</li>
@@ -37,8 +37,8 @@ export default function Function() {
             <h3 className="p-2">How it Works</h3>
 
             <Group title="Move" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                <div>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>ICycle</b2> <b1>Move</b1>(<b2>this Transform</b2> <b1>transform</b1>): Translate an object by a specified offset over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>Move</b1>(<b2>this GameObject</b2> <b1>gameObject</b1>): Translate an object by a specified offset over time.</li>                                                
@@ -46,7 +46,7 @@ export default function Function() {
                         <li><b2>ICycle</b2> <b1>MoveTo</b1>(<b2>this GameObject</b2> <b1>gameObject</b1>): Translate an object to a specific position over time.</li>                        
                     </ul>
 
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>Transform</b2> <b1>transform</b1>: The targeted Transform for the tween.</li>                        
                         <li><b2>GameObject</b2> <b1>gameObject</b1>: The targeted GameObject for the tween.</li>
@@ -60,8 +60,8 @@ export default function Function() {
             )}/>
 
             <Group title="Spin" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                <div>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>ICycle</b2> <b1>Spin</b1>(<b2>this Transform</b2> <b1>transform</b1>): Rotates an object continuously around its axes.</li>                                                
                         <li><b2>ICycle</b2> <b1>Spin</b1>(<b2>this GameObject</b2> <b1>gameObject</b1>): Rotates an object continuously around its axes.</li>                                                
@@ -69,7 +69,7 @@ export default function Function() {
                         <li><b2>ICycle</b2> <b1>SpinTo</b1>(<b2>this GameObject</b2> <b1>gameObject</b1>): Rotates an object to a specific angle over time.</li>                        
                     </ul>
 
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>Transform</b2> <b1>transform</b1>: The targeted Transform for the tween.</li>                        
                         <li><b2>GameObject</b2> <b1>gameObject</b1>: The targeted GameObject for the tween.</li>
@@ -83,8 +83,8 @@ export default function Function() {
             )}/>
 
             <Group title="Grow" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                <div>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>ICycle</b2> <b1>Grow</b1>(<b2>this Transform</b2> <b1>transform</b1>): Scales an object by a specified factor over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>Grow</b1>(<b2>this GameObject</b2> <b1>gameObject</b1>): Scales an object by a specified factor over time.</li>                                                
@@ -92,7 +92,7 @@ export default function Function() {
                         <li><b2>ICycle</b2> <b1>GrowTo</b1>(<b2>this GameObject</b2> <b1>gameObject</b1>): Scales an object to a specific size over time.</li>                        
                     </ul>
 
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>Transform</b2> <b1>transform</b1>: The targeted Transform for the tween.</li>                        
                         <li><b2>GameObject</b2> <b1>gameObject</b1>: The targeted GameObject for the tween.</li>
@@ -106,8 +106,8 @@ export default function Function() {
             )}/>
 
             <Group title="Fade" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                <div>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>ICycle</b2> <b1>Fade</b1>(<b2>this SpriteRenderer</b2> <b1>image</b1>): Changes the transparency of an object by a specified amount over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>Fade</b1>(<b2>this Image</b2> <b1>image</b1>): Changes the transparency of an object by a specified amount over time.</li>                                                
@@ -121,7 +121,7 @@ export default function Function() {
                         <li><b2>ICycle</b2> <b1>FadeTo</b1>(<b2>this ColorSwitch</b2> <b1>image</b1>): Changes the transparency of an object to a specific value over time.</li>                                                
                     </ul>
 
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>SpriteRenderer</b2> <b1>image</b1>: The targeted SpriteRenderer for the tween.</li>                        
                         <li><b2>Image</b2> <b1>image</b1>: The targeted Image for the tween.</li>                        
@@ -138,8 +138,8 @@ export default function Function() {
             )}/>
 
             <Group title="Tint" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                <div>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>ICycle</b2> <b1>Tint</b1>(<b2>this SpriteRenderer</b2> <b1>image</b1>): Changes the color of an object by a specified amount over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>Tint</b1>(<b2>this Image</b2> <b1>image</b1>): Changes the color of an object by a specified amount over time.</li>                                                
@@ -153,7 +153,7 @@ export default function Function() {
                         <li><b2>ICycle</b2> <b1>TintTo</b1>(<b2>this ColorSwitch</b2> <b1>image</b1>): Changes the color of an object to a specific value over time.</li>                                                
                     </ul>
 
-                    <h5 className="c-light-1 pad-left-3">Parameters</h5>
+                    <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>SpriteRenderer</b2> <b1>image</b1>: The targeted SpriteRenderer for the tween.</li>                        
                         <li><b2>Image</b2> <b1>image</b1>: The targeted Image for the tween.</li>                        

@@ -34,24 +34,24 @@ export default function Function() {
             <div className="p-3">
                 <h4 className="c-light-1 pad-left-2">Couple{"<A, B>"}</h4>
                 <h5 className="c-light-1 pad-left-3">Properties</h5>
-                <ul className="property-list">
+                <ul>
                     <li><b2>A</b2> <b1>ValueA</b1>: First value of the couple</li>
                     <li><b2>B</b2> <b1>ValueB</b1>: Second value of the couple</li>
                 </ul>
                 <h5 className="c-light-1 pad-left-3">Methods</h5>
-                <ul className="property-list">
+                <ul>
                     <li><b2>void</b2> <b1>Set</b1>(<b2>Couple{"<A, B>"}</b2> <b1>newValue</b1>): Set the couple with another couple</li>
                 </ul>
 
                 <h4 className="c-light-1 pad-left-2">Couple{"<A, B, C>"}</h4>
                 <h5 className="c-light-1 pad-left-3">Properties</h5>
-                <ul className="property-list">
+                <ul>
                     <li><b2>A</b2> <b1>ValueA</b1>: First value of the couple</li>
                     <li><b2>B</b2> <b1>ValueB</b1>: Second value of the couple</li>
                     <li><b2>C</b2> <b1>ValueC</b1>: Third value of the couple</li>
                 </ul>
                 <h5 className="c-light-1 pad-left-3">Methods</h5>
-                <ul className="property-list">
+                <ul>
                     <li><b2>void</b2> <b1>Set</b1>(<b2>Couple{"<A, B>"}</b2> <b1>newValue</b1>): Set the couple with another couple.</li>
                     <li><b2>void</b2> <b1>Set</b1>(<b2>Couple{"<A, B, C>"}</b2> <b1>newValue</b1>): Set the couple with another couple.</li>
                 </ul>

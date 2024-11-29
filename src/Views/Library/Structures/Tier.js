@@ -37,8 +37,8 @@ export default function Function() {
             <h3 className="p-2">How it Works</h3>
 
             <Group title="IntTier" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>Component</b2> <b1>Sender</b1>: Gameobject that owns this tier. The sender component is used for the Event structure</li>
                         <li><b2>Range{"<int>"}</b2> <b1>Range</b1>: The range of the tier</li>
@@ -58,12 +58,12 @@ export default function Function() {
                         </ul>
                         <li><b2>bool</b2> <b1>IsInside</b1>: Checks if the last value evaluated was inside the range or not</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>void</b2> <b1>Evaluate</b1>(<b2>int</b2> <b1>value</b1>): Evaluates the provided value's position within the defined range and triggers any relevant events based on the value's placement within that range</li>
                         <li><b2>void</b2> <b1>Evaluate</b1>(<b2>float</b2> <b1>value</b1>): Evaluates the provided value's position within the defined range and triggers any relevant events based on the value's placement within that range</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Static</h5>
+                    <h5 className="c-light-1">Static</h5>
                     <ul className="property-list">
                         <li><b2>void</b2> <b1>SubscribeTiersToOnChange</b1>(<b2>IList{"<IntTier>"}</b2> <b1>tiers</b1>, <b2>Event{"<int>"}</b2> <b1>onChangeEvent</b1>, <b2>Component</b2> <b1>sender</b1>): Subscribes the Evaluate method of a list of Tiers to the onChangeEvent</li>
                         <li><b2>void</b2> <b1>UnsubscribeTiersToOnChange</b1>(<b2>IList{"<IntTier>"}</b2> <b1>tiers</b1>, <b2>Event{"<int>"}</b2> <b1>onChangeEvent</b1>): Unsubscribes the Evaluate method of a list of Tiers from the onChangeEvent</li>
@@ -71,8 +71,8 @@ export default function Function() {
                 </div>
             )}/>
             <Group title="FloatTier" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>Component</b2> <b1>Sender</b1>: Gameobject that owns this tier. The sender component is used for the Event structure</li>
                         <li><b2>Range{"<float>"}</b2> <b1>Range</b1>: The range of the tier</li>
@@ -92,12 +92,12 @@ export default function Function() {
                         </ul>
                         <li><b2>bool</b2> <b1>IsInside</b1>: Checks if the last value evaluated was inside the range or not</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>void</b2> <b1>Evaluate</b1>(<b2>int</b2> <b1>value</b1>): Evaluates the provided value's position within the defined range and triggers any relevant events based on the value's placement within that range</li>
                         <li><b2>void</b2> <b1>Evaluate</b1>(<b2>float</b2> <b1>value</b1>): Evaluates the provided value's position within the defined range and triggers any relevant events based on the value's placement within that range</li>
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Static</h5>
+                    <h5 className="c-light-1">Static</h5>
                     <ul className="property-list">
                         <li><b2>void</b2> <b1>SubscribeTiersToOnChange</b1>(<b2>IList{"<FloatTier>"}</b2> <b1>tiers</b1>, <b2>Event{"<float>"}</b2> <b1>onChangeEvent</b1>, <b2>Component</b2> <b1>sender</b1>): Subscribes the Evaluate method of a list of Tiers to the onChangeEvent</li>
                         <li><b2>void</b2> <b1>UnsubscribeTiersToOnChange</b1>(<b2>IList{"<FloatTier>"}</b2> <b1>tiers</b1>, <b2>Event{"<float>"}</b2> <b1>onChangeEvent</b1>): Unsubscribes the Evaluate method of a list of Tiers from the onChangeEvent</li>

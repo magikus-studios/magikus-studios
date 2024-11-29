@@ -42,14 +42,14 @@ export default function Function() {
             <h3 className="p-2">How it Works</h3>
 
             <Group title="EventVoid" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>IsLinkedToAsset</b1>: Returns true if event is linked to an event asset</li>                    
                         <li><b2>int</b2> <b1>SubscribersCount</b1>: Returns the amount of subscribers to this event</li>                    
                         <li><b2>bool</b2> <b1>IsEmpty</b1>: Returns if the amount of subscribers is 0</li>                    
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>EventVoid</b2> <b1>Try</b1>(<b2>Component</b2> <b1>sender</b1> = <b2>null</b2>): Invokes the event if it is not null or empty</li>
                         <li><b2>EventVoid</b2> <b1>Subscribe</b1>(<b2>UnityEvent</b2> <b1>action</b1>): Subscribes the action to the event</li>
@@ -62,14 +62,14 @@ export default function Function() {
             )}/>
 
             <Group title="Event<T>" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>IsLinkedToAsset</b1>: Returns true if event is linked to an event asset</li>                    
                         <li><b2>int</b2> <b1>SubscribersCount</b1>: Returns the amount of subscribers to this event</li>                    
                         <li><b2>bool</b2> <b1>IsEmpty</b1>: Returns if the amount of subscribers is 0</li>                    
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>Event{"<T>"}</b2> <b1>Try</b1>(<b2>Component</b2> <b1>sender</b1> = <b2>null</b2>): Invokes the event if it is not null or empty</li>
                         <li><b2>Event{"<T>"}</b2> <b1>Subscribe</b1>(<b2>UnityEvent{"<T>"}</b2> <b1>action</b1>): Subscribes the action to the event</li>
@@ -82,13 +82,13 @@ export default function Function() {
             )}/>
                     
             <Group title="EventAsset" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>int</b2> <b1>SubscribersCount</b1>: Returns the amount of subscribers to this event asset</li>                    
                         <li><b2>bool</b2> <b1>IsEmpty</b1>: Returns if the amount of subscribers is 0</li>                    
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
+                    <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>void</b2> <b1>Try</b1>(<b2>object</b2> <b1>obj</b1>, <b2>Component</b2> <b1>sender</b1> = <b2>null</b2>): Invokes the event if it is not null or empty</li>
                         <li><b2>void</b2> <b1>Subscribe</b1>(<b2>UnityEvent{"<object, Component>"}</b2> <b1>action</b1>): Subscribes the action to the event</li>
@@ -100,12 +100,12 @@ export default function Function() {
             )}/>
 
             <Group title="EventMode Attribute" content={(
-                <div className="p-3">
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
                         <li><b2>EVENT_MODE</b2> <b1>Mode</b1>: Enum to that determines the mode of the Event in relation to Event Assets (Sender, Listener or Both)</li>                    
                     </ul>
-                    <h5 className="c-light-1 pad-left-3">Constructors</h5>
+                    <h5 className="c-light-1">Constructors</h5>
                     <ul className="property-list">
                         <li><b1>EventModeAttribute</b1>(<b2>EVENT_MODE</b2> <b1>mode</b1>): Determines the default mode of the event in the inspector</li>
                     </ul>

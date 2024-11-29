@@ -18,36 +18,39 @@ export default function Function() {
                 By utilizing these decorators, developers can customize the Inspector to better suit their workflow and present data more effectively. 
             </p>
 
+            <a href="/#/library/decorators/conditional" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Conditional</h4></a>
+            <p className="pad-left-3">
+                A set of attributes that dynamically control field appearance in the Unity Inspector, enhancing data visualization and streamlining workflow.
+            </p>
+
             <a href="/#/library/decorators/line" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Line</h4></a>
             <p className="pad-left-3">
-                The Line attribute enhances Unity Inspector layout by creating customizable dividers between fields, improving organization, readability and workflow flexibility.
+                The <b2>[Line]</b2> attribute enhances Unity Inspector layout by creating customizable dividers between fields, improving organization, readability and workflow flexibility.
             </p>
 
             <a href="/#/library/decorators/title" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Title</h4></a>
             <p className="pad-left-3">
-                The Title attribute enhances the Unity Inspector by adding customizable, visually appealing headers above fields, improving readability, organization and user experience.
+                The <b2>[Title]</b2> attribute enhances the Unity Inspector by adding customizable, visually appealing headers above fields, improving readability, organization and user experience.
             </p>
 
             <a href="/#/library/decorators/message" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Message</h4></a>
             <p className="pad-left-3">
-                The Message attribute enhances the Unity Inspector by allowing developers to add informative messages (Info, Warning, Error or None) directly within the interface, improving readability, context and user guidance.
+                The <b2>[Message]</b2> attribute enhances the Unity Inspector by allowing developers to add informative messages directly within the interface, improving readability, context and user guidance.
             </p>
 
-            <a href="/#/library/decorators/hide" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Hide</h4></a>
+            <a href="/#/library/decorators/showHide" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Show & Hide</h4></a>
             <p className="pad-left-3">
-                The ShowIf attribute provides conditional visibility for fields in the Unity Inspector. It allows fields
-                to be displayed based on the value of another property, which helps in decluttering the Inspector
-                and making it more intuitive by showing only relevant fields under specific conditions.
+                Attributes that enable conditional visibility of fields in the Unity Inspector, helping developers create a cleaner, more intuitive interface by displaying only relevant fields based on specific conditions.
             </p>
 
             <a href="/#/library/decorators/block" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Block</h4></a>
             <p className="pad-left-3">
-                The Block attribute is a Unity Inspector tool that keeps fields read-only, ensuring data integrity by preventing unintended modifications.
+                The <b2>[Block]</b2> attribute is a Unity Inspector tool that keeps fields read-only, ensuring data integrity by preventing unintended modifications.
             </p>
 
             <a href="/#/library/decorators/toggle" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Toggle</h4></a>
             <p className="pad-left-3">
-                The Toggle attribute transforms boolean fields into customizable toggle buttons in the Unity Inspector, enhancing usability and clarity with options for custom labels, colors and label visibility.
+                The <b2>[Toggle]</b2> attribute transforms boolean fields into customizable toggle buttons in the Unity Inspector, enhancing usability and clarity.
             </p>
 
             <a href="/#/library/decorators/collapse" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Collapse</h4></a>
@@ -57,7 +60,7 @@ export default function Function() {
 
             <a href="/#/library/decorators/progressBar" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Progress Bar</h4></a>
             <p className="pad-left-3">
-                The ProgressBar attribute allows for intuitive visualization of float values as progress bars in Unity's Inspector, ideal for displaying metrics like health or experience, with options for custom labels for added clarity.
+                The <b2>[ProgressBar]</b2> attribute allows for intuitive visualization of float values as progress bars in Unity's Inspector, ideal for displaying metrics like health or experience.
             </p>
        </div>
     );
