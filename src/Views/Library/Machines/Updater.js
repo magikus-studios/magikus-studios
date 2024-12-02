@@ -18,11 +18,7 @@ export default function Function() {
                 Its structured system for subscribing and unsubscribing actions ensures that periodic tasks are managed with clarity and efficiency. 
                 Supporting regular, fixed, late and asynchronous updates, the Updater machine adapts seamlessly to a wide range of game development needs.
             </p>
-{/*
-            <div className="p-2">
-                <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Title/Title - 06.jpg" alt=""/>            
-            </div>
-*/}
+
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">
@@ -36,9 +32,6 @@ export default function Function() {
                 <li>Manage complex update requirements without affecting the main update loop.</li>
                 <li>Ensure certain actions are executed in a controlled and non-destructive manner.</li>
             </ul>
-
-
-            <h3 className="p-2">How it Works</h3>
 
             <Group title="IUpdater Interface" content={(
                 <div>
@@ -65,17 +58,21 @@ export default function Function() {
                 </div>               
             )}/>
 
-            <div className="pad-bottom-3"></div>
+            <h3 className="p-2">Examples</h3>
+            <Group title="Example 01: Basic Usage of the Updater Machine" content={(
+                <div>
+                    <p>
+                        This example shows the basic usage of the Updater Machine: 
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Updater/Updater - 01.jpg" alt=""/>
+                    <ul>
+                        <li><b>Retrieve an Updater Instance</b>: Use the Updater.Get method to obtain an instance of the desired updater type.</li>
+                        <li><b>Subscribe Actions</b>: Attach actions to the updater using the Subscribe method.</li>
+                        <li><b>Unsubscribe Actions</b>: Remove actions from the updater using the Unsubscribe method when they are no longer needed.</li>
+                    </ul>
+                </div>               
+            )}/>
 
-            <h3 className="p-2">How to Use</h3>
-            <ul>
-                <li><b>Retrieve an Updater Instance</b>: Use the Updater.Get method to obtain an instance of the desired updater type.</li>
-                <li><b>Subscribe Actions</b>: Attach actions to the updater using the Subscribe method.</li>
-                <li><b>Unsubscribe Actions</b>: Remove actions from the updater using the Unsubscribe method when they are no longer needed.</li>
-            </ul>
-
-            <h4 className="c-light-1 p-3">Example</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Updater/Updater - 01.jpg" alt=""/>
 
             <h3 className="p-2">Notes</h3>
             <ul>

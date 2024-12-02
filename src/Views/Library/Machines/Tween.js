@@ -33,9 +33,6 @@ export default function Function() {
                 <li>Changing the transparency of an object.</li>
                 <li>Changing the color of an object.</li>
             </ul>
-
-            <h3 className="p-2">How it Works</h3>
-
             <Group title="Move" content={(
                 <div>
                     <h5 className="c-light-1">Methods</h5>
@@ -58,7 +55,6 @@ export default function Function() {
                     </ul>                                        
                 </div>
             )}/>
-
             <Group title="Spin" content={(
                 <div>
                     <h5 className="c-light-1">Methods</h5>
@@ -81,7 +77,6 @@ export default function Function() {
                     </ul>                                        
                 </div>
             )}/>
-
             <Group title="Grow" content={(
                 <div>
                     <h5 className="c-light-1">Methods</h5>
@@ -104,7 +99,6 @@ export default function Function() {
                     </ul>                                        
                 </div>
             )}/>
-
             <Group title="Fade" content={(
                 <div>
                     <h5 className="c-light-1">Methods</h5>
@@ -136,7 +130,6 @@ export default function Function() {
                     </ul>                                        
                 </div>
             )}/>
-
             <Group title="Tint" content={(
                 <div>
                     <h5 className="c-light-1">Methods</h5>
@@ -169,24 +162,38 @@ export default function Function() {
                 </div>
             )}/>
 
-            <div className="pad-bottom-3"></div>
 
-
-            <h3 className="p-2">How to Use</h3>
+            <h3 className="p-2">Examples</h3>
             <p className="pad-left-2">
                 To use Tween Machines, instantiate the desired tween class and configure its parameters as needed. 
                 Then, call the Play method to start the animation.
             </p>
-            <h4 className="c-light-1 p-3">Example 01: Move a GameObject to a New Position</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Tween/Tween - 01.jpg" alt=""/>
-            <h4 className="c-light-1 p-3">Example 02: Rotate a GameObject</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Tween/Tween - 02.jpg" alt=""/>
-            <h4 className="c-light-1 p-3">Example 03: Scale a GameObject Up</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Tween/Tween - 03.jpg" alt=""/>
-            <h4 className="c-light-1 p-3">Example 04: Fade Out a SpriteRenderer</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Tween/Tween - 04.jpg" alt=""/>
-            <h4 className="c-light-1 p-3">Example 05: Change the Tint of a SpriteRenderer</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Tween/Tween - 05.jpg" alt=""/>
+            <Group title="Example 01: Move a GameObject to a New Position" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Tween/Tween - 01.jpg" alt=""/>
+                </div>
+            )}/>
+            <Group title="Example 02: Rotate a GameObject" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Tween/Tween - 02.jpg" alt=""/>
+                </div>
+            )}/>
+            <Group title="Example 03: Scale a GameObject Up" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Tween/Tween - 03.jpg" alt=""/>
+                </div>
+            )}/>
+            <Group title="Example 04: Fade Out a SpriteRenderer" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Tween/Tween - 04.jpg" alt=""/>
+                </div>
+            )}/>
+            <Group title="Example 05: Change the Tint of a SpriteRenderer" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Tween/Tween - 05.jpg" alt=""/>
+                </div>
+            )}/>
+
 
             <h3 className="p-2">Notes</h3>
             <ul>

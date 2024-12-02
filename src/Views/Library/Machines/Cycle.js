@@ -18,6 +18,7 @@ export default function Function() {
                 With its flexible configuration options and robust control features, the Cycle machine simplifies the implementation of looping behaviors, making game development more efficient and enhancing the gameplay experience.                
             </p>
 
+
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">
                 The primary purpose of the Cycle Machine is to provide a flexible and robust mechanism for executing repeated actions in a game. 
@@ -31,8 +32,6 @@ export default function Function() {
                 <li>Manage timed events such as power-ups, buffs or debuffs.</li>
                 <li>Control the timing of AI actions and reactions.</li>
             </ul>
-
-            <h3 className="p-2">How it Works</h3>
             <p className="pad-left-2">
                 The Cycles class provides a set of static methods that facilitate the creation and management of various 
                 looping mechanisms in the Magikus framework. These methods allow users to create periodic, burst, 
@@ -40,7 +39,6 @@ export default function Function() {
                 with specific timing constraints and patterns, making them highly useful in game development, simulations 
                 and other applications requiring timed or repeated actions.
             </p>
-
             <Group title="ICycle" content={(                
                 <div>
                     <h5 className="c-light-1">Methods</h5>
@@ -71,7 +69,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Periodic Cycle" content={(
                 <div>
                     <p>
@@ -101,7 +98,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Burst Cycle" content={(
                 <div>
                     <p>
@@ -131,7 +127,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Delay Cycle" content={(
                 <div>
                     <p>
@@ -161,7 +156,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Curve Cycle" content={(
                 <div>
                     <p>
@@ -183,40 +177,44 @@ export default function Function() {
                 </div>
             )}/>
 
-            <div className="pad-bottom-3"></div>
-
-
-            <h3 className="p-2">How to Use</h3>
-            <ul className="property-list">
-                <li><b>Create a Cycle Instance</b>: Instantiate a new cycle with the desired parameters.</li>
-                <li><b>Configure the Cycle</b>: Set the period, cycle amount and other properties.</li>
-                <li><b>Attach Event Handlers</b>: Define actions to be executed at various stages of the cycle.</li>
-                <li><b>Start the Cycle</b>: Call the Play() method to start the cycle.</li>
-                <li><b>Control the Cycle</b>: Use methods like Pause(), Unpause(), Finish(), etc., to control the cycle's execution.</li>
-            </ul>
-
-            <h4 className="c-light-1 p-3">Example 01: Simple Cycle Creation</h4>
-            <p className="pad-left-3">
-                This is a Unity script that demonstrates the use of a cycle machine. It is intended to be attached to a GameObject in a Unity scene.
-                In the Start method, the script initializes a cycle with a duration of 2 seconds per cycle. 
-                This cycle is set to repeat continuously. 
-                The script configures the cycle to log messages at different stages: when a cycle starts, during the cycle and when the cycle ends. 
-                Once configured, the cycle is started with the Play method.
-                The Update method allows for real-time control of the cycle. 
-                It listens for specific key inputs: pressing the "P" key pauses the cycle, the "U" key resumes it if paused and the "F" key ends the cycle.
-            </p>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Cycle/Cycle - 01.jpg" alt=""/>
-            <p className="pad-left-3">
-                This setup demonstrates how to use the Magikus Library to create and manage a cycle, with built-in logging for different 
-                cycle events and keyboard controls for dynamic interaction during runtime.
-            </p>
-
-
-            <h4 className="c-light-1 p-3">Example 02: Creating Cycles with Cycles Class</h4>
-            <p className="pad-left-3">
-                This example demonstrates the use of the Cycles class creating a periodic cycle, a burst cycle, a delay cycle and a curve cycle.
-            </p>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Cycle/Cycle - 02.jpg" alt=""/>
+            <h3 className="p-2">Examples</h3>
+            <Group title="Example 01: Basic Usage" content={(
+                <div>
+                    <ul>
+                        <li><b>Create a Cycle Instance</b>: Instantiate a new cycle with the desired parameters.</li>
+                        <li><b>Configure the Cycle</b>: Set the period, cycle amount and other properties.</li>
+                        <li><b>Attach Event Handlers</b>: Define actions to be executed at various stages of the cycle.</li>
+                        <li><b>Start the Cycle</b>: Call the Play() method to start the cycle.</li>
+                        <li><b>Control the Cycle</b>: Use methods like Pause(), Unpause(), Finish(), etc., to control the cycle's execution.</li>
+                    </ul>
+                </div>
+            )}/>
+            <Group title="Example 02: Simple Cycle Creation" content={(
+                <div>
+                    <p>
+                        This is a Unity script that demonstrates the use of a cycle machine. It is intended to be attached to a GameObject in a Unity scene.
+                        In the Start method, the script initializes a cycle with a duration of 2 seconds per cycle. 
+                        This cycle is set to repeat continuously. 
+                        The script configures the cycle to log messages at different stages: when a cycle starts, during the cycle and when the cycle ends. 
+                        Once configured, the cycle is started with the Play method.
+                        The Update method allows for real-time control of the cycle. 
+                        It listens for specific key inputs: pressing the "P" key pauses the cycle, the "U" key resumes it if paused and the "F" key ends the cycle.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Cycle/Cycle - 01.jpg" alt=""/>
+                    <p>
+                        This setup demonstrates how to use the Magikus Library to create and manage a cycle, with built-in logging for different 
+                        cycle events and keyboard controls for dynamic interaction during runtime.
+                    </p>
+                </div>
+            )}/>
+            <Group title="Example 03: Creating Cycles with Cycles Class" content={(
+                <div>
+                    <p>
+                        This example demonstrates the use of the Cycles class creating a periodic cycle, a burst cycle, a delay cycle and a curve cycle.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Cycle/Cycle - 02.jpg" alt=""/>
+                </div>
+            )}/>
 
 
             <h3 className="p-2">Notes</h3>

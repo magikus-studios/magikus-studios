@@ -1,4 +1,5 @@
 import React from "react";
+import Group from "Components/Group";
 
 export default function Function() {
 
@@ -23,18 +24,9 @@ export default function Function() {
             <p className="pad-left-2 pad-bottom-2">
                 This utility provides developers with the ability to analyze scripts in their project, calculate the total number of scripts and determine the total line count of selected scripts or the entire project. 
                 Additionally, it allows users to set icons for multiple scripts at once, enhancing project organization and visibility.
-            </p>
-
-            <h3 className="p-2">How to Use</h3>
-            <p className="pad-left-3">
+                <br/>
                 The Script Manager can be accessed from the Unity Editor menu and provides an intuitive interface for managing scripts.
             </p>
-
-            <h5 className="c-light-0 p-3">Access the Script Manager</h5>
-            <p className="pad-left-3">
-                Go to <b1>Magikus {">"} Script Manager</b1> in the Unity menu bar to open the tool.
-            </p>
-
             <ul>
                 <li><b1>Analyze Project Scripts</b1>: The Script Manager will automatically display the total number of scripts and lines in your project.</li>
                 <li><b1>Select Scripts</b1>: Select one or multiple scripts in the Unity Project window to see their individual line counts and details.</li>
@@ -42,33 +34,48 @@ export default function Function() {
                 <li><b1>Refresh Data</b1>: Use the Refresh button to manually refresh the script data if needed.</li>
                 <li><b1>Toggle Auto-Refresh</b1>: Use the Auto Refresh button to enable or disable automatic project refreshes.</li>
             </ul>
+            <Group title="Access the Script Manager" content={(
+                <div>
+                    <p>
+                        Go to <b1>Magikus {">"} Script Manager</b1> in the Unity menu bar to open the tool.
+                    </p>
+                    <img className="block-center mar-vertical-3 img-border w-50" src="images/Library/Tools/ScriptManager/Script Manager - 07.jpg" alt=""/>            
+                </div>
+            )}/>
+
 
             <h3 className="p-2">Examples</h3>
-
-            <h4 className="c-light-1 p-3">Example 01: Viewing Script Details</h4>
-            <ol className="oList pad-left-5">
-                <li>Select multiple scripts in the Project window.</li>
-                <img className="block-center mar-vertical-3 img-border w-50" src="images/Library/Tools/ScriptManager/Script Manager - 02.jpg" alt=""/>            
-                <li>The Script Manager displays their names and line counts in a scrollable list.</li>
-                <img className="block-center mar-vertical-3 img-border w-50" src="images/Library/Tools/ScriptManager/Script Manager - 03.jpg" alt=""/>            
-            </ol>
-
-            <h4 className="c-light-1 p-3">Example 02: Setting an Icon</h4>
-            <ol className="oList pad-left-5">
-                <li>Import a .png or .jpg texture into Unity.</li>
-                <li>Drag the texture into the Icon Field in the Script Manager.</li>
-                <img className="block-center mar-vertical-3 img-border w-50" src="images/Library/Tools/ScriptManager/Script Manager - 04.jpg" alt=""/>            
-                <li>Select the scripts to which the icon should be applied.</li>
-                <img className="block-center mar-vertical-3 img-border w-50" src="images/Library/Tools/ScriptManager/Script Manager - 05.jpg" alt=""/>            
-                <li>Click Set Icon to Selected Scripts.</li>
-            </ol>
-
-            <h4 className="c-light-1 p-3">Example 03: Analyzing Total Scripts and Lines</h4>
-            <ol className="oList pad-left-5">
-                <li>Open the Script Manager.</li>
-                <img className="block-center mar-vertical-3 img-border w-50" src="images/Library/Tools/ScriptManager/Script Manager - 06.jpg" alt=""/>            
-                <li>View the bottom panel to see the total number of scripts and lines in your project.</li>
-            </ol>
+            <Group title="Example 01: Viewing Script Details" content={(
+                <div>
+                    <ol className="oList">
+                        <li>Select multiple scripts in the Project window.</li>
+                        <img className="block-center mar-vertical-3 img-border w-50" src="images/Library/Tools/ScriptManager/Script Manager - 02.jpg" alt=""/>            
+                        <li>The Script Manager displays their names and line counts in a scrollable list.</li>
+                        <img className="block-center mar-vertical-3 img-border w-50" src="images/Library/Tools/ScriptManager/Script Manager - 03.jpg" alt=""/>            
+                    </ol>
+                </div>
+            )}/>
+            <Group title="Example 02: Setting an Icon" content={(
+                <div>
+                    <ol className="oList">
+                        <li>Import a .png or .jpg texture into Unity.</li>
+                        <li>Drag the texture into the Icon Field in the Script Manager.</li>
+                        <img className="block-center mar-vertical-3 img-border w-50" src="images/Library/Tools/ScriptManager/Script Manager - 04.jpg" alt=""/>            
+                        <li>Select the scripts to which the icon should be applied.</li>
+                        <img className="block-center mar-vertical-3 img-border w-50" src="images/Library/Tools/ScriptManager/Script Manager - 05.jpg" alt=""/>            
+                        <li>Click Set Icon to Selected Scripts.</li>
+                    </ol>
+                </div>
+            )}/>
+            <Group title="Example 03: Analyzing Total Scripts and Lines" content={(
+                <div>
+                    <ol className="oList">
+                        <li>Open the Script Manager.</li>
+                        <img className="block-center mar-vertical-3 img-border w-50" src="images/Library/Tools/ScriptManager/Script Manager - 06.jpg" alt=""/>            
+                        <li>View the bottom panel to see the total number of scripts and lines in your project.</li>
+                    </ol>
+                </div>
+            )}/>
 
 
             <h3 className="p-2">Notes</h3>

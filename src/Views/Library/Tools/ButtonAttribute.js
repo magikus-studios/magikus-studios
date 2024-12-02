@@ -25,9 +25,6 @@ export default function Function() {
             <p className="pad-left-2 pad-bottom-2">
                 This attribute allows you to specify methods that can be invoked via buttons, along with optional labels, widths and heights for these buttons.
             </p>
-
-            <h3 className="p-2">How it Works</h3>
-
             <Group title="Button Attribute" content={(
                 <div>
                     <p>
@@ -49,45 +46,52 @@ export default function Function() {
             )}/>
 
 
-            <h3 className="p-2">How to Use</h3>
-            
-            <h4 className="c-light-1 p-3">Example 01: Simple Button to Invoke a Method</h4>
-            <ul className="pad-left-4">
-                <li>Create a new MonoBehaviour script named SimpleButtonExampleScript.cs</li>
-                <li>Apply the <b2>[Button]</b2> attribute to a public field in your script</li>
-                <li>Define the method that the button will invoke</li>
-            </ul>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ButtonAttribute/Button Attribute - 01.jpg" alt=""/>            
-            <p className="pad-left-3">
-                In this example, a button labeled SayHello will appear in the Unity Inspector. 
-                Clicking this button will invoke the SayHello method, which logs a message to the console.
-            </p>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ButtonAttribute/Button Attribute - 02.jpg" alt=""/>            
-
-            <h4 className="c-light-1 p-3">Example 02: Button with Custom Label and Multiple Methods</h4>
-            <p className="pad-left-3">
-                You can also specify multiple methods and a custom label for your button by setting the first parameter to “label:” followed by the label. 
-                After that, you can add as many method names as you need. They will show next to each other.
-            </p>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ButtonAttribute/Button Attribute - 03.jpg" alt=""/>            
-            <p className="pad-left-3">
-                In this case, two buttons next to each other labeled Actions will be displayed. 
-                Notice that Method Two is referenced with nameof() method. 
-                This allows to avoid using string as references and prevents from possible errors.
-            </p>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ButtonAttribute/Button Attribute - 04.jpg" alt=""/>            
+            <h3 className="p-2">Examples</h3>
+            <Group title="Example 01: Simple Button to Invoke a Method" content={(
+                <div>
+                    <ul>
+                        <li>Create a new MonoBehaviour script named SimpleButtonExampleScript.cs</li>
+                        <li>Apply the <b2>[Button]</b2> attribute to a public field in your script</li>
+                        <li>Define the method that the button will invoke</li>
+                    </ul>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ButtonAttribute/Button Attribute - 01.jpg" alt=""/>            
+                    <p>
+                        In this example, a button labeled SayHello will appear in the Unity Inspector. 
+                        Clicking this button will invoke the SayHello method, which logs a message to the console.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ButtonAttribute/Button Attribute - 02.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 02: Button with Custom Label and Multiple Methods" content={(
+                <div>
+                    <p>
+                    You can also specify multiple methods and a custom label for your button by setting the first parameter to “label:” followed by the label. 
+                        After that, you can add as many method names as you need. They will show next to each other.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ButtonAttribute/Button Attribute - 03.jpg" alt=""/>            
+                    <p>
+                        In this case, two buttons next to each other labeled Actions will be displayed. 
+                        Notice that Method Two is referenced with nameof() method. 
+                        This allows to avoid using string as references and prevents from possible errors.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ButtonAttribute/Button Attribute - 04.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 03: Button with Custom Size" content={(
+                <div>
+                    <p>
+                        You can also adjust the width, height and title of the button by setting the first and second parameters of the 
+                        attribute to a width and height float value respectively and adding the title to the method name separated by a dash.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ButtonAttribute/Button Attribute - 05.jpg" alt=""/>            
+                    <p>
+                        Here, the button will be 0.5 times the default width and 2 times the default height. 
+                        It will also display the Click Me title in the button instead of the method name.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ButtonAttribute/Button Attribute - 06.jpg" alt=""/>            
+                </div>
+            )}/>
                                
-            <h4 className="c-light-1 p-3">Example 03: Button with Custom Size</h4>
-            <p className="pad-left-3">
-                You can also adjust the width, height and title of the button by setting the first and second parameters of the 
-                attribute to a width and height float value respectively and adding the title to the method name separated by a dash.
-            </p>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ButtonAttribute/Button Attribute - 05.jpg" alt=""/>            
-            <p className="pad-left-3">
-                Here, the button will be 0.5 times the default width and 2 times the default height. 
-                It will also display the Click Me title in the button instead of the method name.
-            </p>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ButtonAttribute/Button Attribute - 06.jpg" alt=""/>            
             
             <h3 className="p-2">Notes</h3>
             <ul>

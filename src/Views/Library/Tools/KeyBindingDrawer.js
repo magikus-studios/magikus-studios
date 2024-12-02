@@ -1,4 +1,5 @@
 import React from "react";
+import Group from "Components/Group";
 
 export default function Function() {
 
@@ -25,40 +26,49 @@ export default function Function() {
                 This tool allows developers to bind keyboard keys directly by pressing them, making it easier to set KeyCode values. 
                 Additionally, it provides a reset button to quickly revert to the default key binding.
             </p>
-            
-            <h3 className="p-2">How to Use</h3>
+            <Group title="Implementation" content={(
+                <div>
+                    <p>
+                        To use the KeyBinding drawer, ensure your script includes the KeyCode property you want to modify. 
+                        The custom property drawer will automatically apply to all KeyCode fields in your scripts.
+                    </p>
+                    <img className="block-center mar-vertical-3 img-border w-50" src="images/Library/Tools/KeyBindingDrawer/Key Binding Drawer - 04.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Interface" content={(
+                <div>
+                    <p>
+                        The KeyBinding tool provides an enhanced UI for KeyCode fields, including:
+                    </p>
+                    <img className="block-center mar-vertical-3 img-border" src="images/Library/Tools/KeyBindingDrawer/Key Binding Drawer - 05.jpg" alt=""/>            
+                    <ul>
+                        <li><b1>KeyCode Field</b1>: Displays the currently bound key code.</li>
+                        <li><b1>Bind Button</b1>: When clicked, the tool enters listening mode, allowing the next key press to be bound to the property.</li>
+                        <li><b1>Listening Mode</b1>: Indicates the tool is ready to bind a key from the keyboard.</li>
+                        <li><b1>Reset Button</b1>: Resets the key code to its default value (None).</li>
+                    </ul>
+                </div>
+            )}/>
 
-            <h4 className="c-light-1 p-3">Implementation</h4>
-            <p className="pad-left-3">
-                To use the KeyBinding drawer, ensure your script includes the KeyCode property you want to modify. 
-                The custom property drawer will automatically apply to all KeyCode fields in your scripts.
-            </p>
 
-            <h4 className="c-light-1 p-3">Interface</h4>
-            <p className="pad-left-3">
-                The KeyBinding tool provides an enhanced UI for KeyCode fields, including:
-            </p>
-            <ul>
-                <li><b1>KeyCode Field</b1>: Displays the currently bound key code.</li>
-                <li><b1>Bind Button</b1>: When clicked, the tool enters listening mode, allowing the next key press to be bound to the property.</li>
-                <li><b1>Listening Mode</b1>: Indicates the tool is ready to bind a key from the keyboard.</li>
-                <li><b1>Reset Button</b1>: Resets the key code to its default value (None).</li>
-            </ul>
-
-            <h4 className="c-light-1 p-3">Example</h4>
-            <p className="pad-left-3">
-                Add a KeyCode property to your script 
-            </p>
-            <ol className="oList pad-left-5">
-                <li>Attach the next script to a GameObject in your scene.</li>
-                <img className="block-center mar-vertical-3 img-border" src="images/Library/Tools/KeyBindingDrawer/Key Binding Drawer - 01.jpg" alt=""/>            
-                <li>Select the GameObject and view the KeyCode property in the Inspector.</li>
-                <li>Locate the KeyCode property in the Inspector. You will see the enhanced UI with the Key Code Field, Bind Button, and Reset Button.</li>
-                <img className="block-center mar-vertical-3 img-border" src="images/Library/Tools/KeyBindingDrawer/Key Binding Drawer - 02.jpg" alt=""/>            
-                <li>Click the Bind Button to enter listening mode. The button will change to Listening. Press the desired key on your keyboard. The key code will update to the pressed key.</li>
-                <li>If you click the Listening Button again or press a mouse button, listening mode will cancel without binding a key.</li>
-                <li>Click the Reset Button to revert the key code to its default value (None).</li>
-            </ol>
+            <h3 className="p-2">Examples</h3>
+            <Group title="Example 01: Trying the KeyCode Drawer" content={(
+                <div>
+                    <p>
+                        Add a KeyCode property to your script 
+                    </p>
+                    <ol className="oList">
+                        <li>Attach the next script to a GameObject in your scene.</li>
+                        <img className="block-center mar-vertical-3 img-border" src="images/Library/Tools/KeyBindingDrawer/Key Binding Drawer - 01.jpg" alt=""/>            
+                        <li>Select the GameObject and view the KeyCode property in the Inspector.</li>
+                        <li>Locate the KeyCode property in the Inspector. You will see the enhanced UI with the Key Code Field, Bind Button, and Reset Button.</li>
+                        <img className="block-center mar-vertical-3 img-border" src="images/Library/Tools/KeyBindingDrawer/Key Binding Drawer - 02.jpg" alt=""/>            
+                        <li>Click the Bind Button to enter listening mode. The button will change to Listening. Press the desired key on your keyboard. The key code will update to the pressed key.</li>
+                        <li>If you click the Listening Button again or press a mouse button, listening mode will cancel without binding a key.</li>
+                        <li>Click the Reset Button to revert the key code to its default value (None).</li>
+                    </ol>
+                </div>
+            )}/>
              
             <h3 className="p-2">Notes</h3>
             <ul>

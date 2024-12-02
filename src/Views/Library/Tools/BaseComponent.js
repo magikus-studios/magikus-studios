@@ -29,8 +29,6 @@ export default function Function() {
                 The DebugState structure is a utility class with two properties: Debug, a boolean that determines whether debugging messages should be displayed, and Disable, a boolean that can deactivate certain script functionalities.
                 Together, these elements allow developers to conditionally enable or disable script functionalities and output debug information, making it easier to adjust script behavior directly within the Unity Editor or during runtime without needing to modify the code.            
             </p>
-
-            <h3 className="p-2">How it Works</h3>
             
             <Group title="MonoBaseMK and AssetBaseMK" content={(
                 <div>
@@ -95,7 +93,7 @@ export default function Function() {
             )}/>
             
 
-            <h3 className="p-2">How to Use</h3>
+            <h3 className="p-2">Examples</h3>
             <p className="pad-left-2">
                 To use DebugState, you can either declare a DebugState property within your MonoBehaviour or ScriptableObject, or you can inherit from the MonoBaseMk or AssetBaseMk classes. 
                 These classes provide additional helper methods for handling debug output. 
@@ -103,29 +101,36 @@ export default function Function() {
                 The Inspector will display two buttons, Debug and Disable, to control the state of the DebugState instance.
             </p>
 
-            <h4 className="c-light-1 p-3">Example 01: Using the Print Method</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/BaseComponent/Base Component - 01.jpg" alt=""/>            
-            <p className="pad-left-3"> 
-                The Print method outputs a message to the console. It can be used with or without color and context.
-            </p>
-            <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Tools/BaseComponent/Base Component - 02.jpg" alt=""/>            
-            <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Tools/BaseComponent/Base Component - 03.jpg" alt=""/>            
-
-            <h4 className="c-light-1 p-3">Example 02: Using the IfDebug Method</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/BaseComponent/Base Component - 04.jpg" alt=""/>            
-            <p className="pad-left-3"> 
-                The IfDebug method checks the debug state before printing a message.
-            </p>
-            <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Tools/BaseComponent/Base Component - 05.jpg" alt=""/>            
-            <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Tools/BaseComponent/Base Component - 06.jpg" alt=""/>            
-
-            <h4 className="c-light-1 p-3">Example 03: Disabling Functionality</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/BaseComponent/Base Component - 07.jpg" alt=""/>            
-            <p className="pad-left-3"> 
-                The Disable state can be used to conditionally execute code.
-            </p>
-            <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Tools/BaseComponent/Base Component - 08.jpg" alt=""/>            
-            <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Tools/BaseComponent/Base Component - 09.jpg" alt=""/>            
+            <Group title="Example 01: Using the Print Method" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/BaseComponent/Base Component - 01.jpg" alt=""/>            
+                    <p> 
+                        The Print method outputs a message to the console. It can be used with or without color and context.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Tools/BaseComponent/Base Component - 02.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Tools/BaseComponent/Base Component - 03.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 02: Using the IfDebug Method" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/BaseComponent/Base Component - 04.jpg" alt=""/>            
+                    <p> 
+                        The IfDebug method checks the debug state before printing a message.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Tools/BaseComponent/Base Component - 05.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Tools/BaseComponent/Base Component - 06.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 03: Disabling Functionality" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/BaseComponent/Base Component - 07.jpg" alt=""/>            
+                    <p> 
+                        The Disable state can be used to conditionally execute code.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Tools/BaseComponent/Base Component - 08.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Tools/BaseComponent/Base Component - 09.jpg" alt=""/>            
+                </div>
+            )}/>
 
 
             <h3 className="p-2">Notes</h3>

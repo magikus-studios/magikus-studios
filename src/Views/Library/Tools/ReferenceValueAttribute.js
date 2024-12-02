@@ -28,8 +28,6 @@ export default function Function() {
                 By offering customizable labels and field width ratios, it enhances the workflow for assigning and managing references. 
             </p>
 
-            <h3 className="p-2">How it Works</h3>
-
             <Group title="ReferenceValue Attribute" content={(
                 <div>
                     <p>
@@ -53,38 +51,44 @@ export default function Function() {
             )}/>
             
 
-            <h3 className="p-2">How to Use</h3>
+            <h3 className="p-2">Examples</h3>
             <p className="pad-left-2">
                 To use the <b2>[ReferenceValue]</b2> attribute, apply it to an ObjectReference field in your script. 
                 Below are examples demonstrating various ways to use this attribute:
             </p>
-
-            <h4 className="c-light-1 p-3">Example 01: Simple Object Reference with Default Buttons</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 01.jpg" alt=""/>            
-            <p className="pad-left-3">
-                This example shows how to apply the <b2>[ReferenceValue]</b2> attribute to a GameObject field. 
-                The menu path "GameObject/Create Empty" is triggered when the create button is clicked.
-            </p>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 02.jpg" alt=""/>            
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 03.jpg" alt=""/>                     
-
-            <h4 className="c-light-1 p-3">Example 02: Custom Ratio for Reference Field Width</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 04.jpg" alt=""/>            
-            <p className="pad-left-3">
-                Here, the reference field width for myMaterial is set to 70% of the total field width. 
-                The menu path "Assets/Create/Material" is used for creating a new reference. 
-            </p>
-            <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 05.jpg" alt=""/>            
-            <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 06.jpg" alt=""/>            
-
-            <h4 className="c-light-1 p-3">Example 03: Custom Button Labels</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 07.jpg" alt=""/>            
-            <p className="pad-left-3">
-                This example sets custom labels for the “create” and “remove” buttons. 
-                Clicking "Add Prefab" will create a new Prefab asset using the menu path "Assets/Create/Prefab", while clicking "Remove Prefab" will clear the reference.
-            </p>
-            <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 08.jpg" alt=""/>            
-            <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 09.jpg" alt=""/>            
+            <Group title="Example 01: Simple Object Reference with Default Buttons" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 01.jpg" alt=""/>            
+                    <p>
+                        This example shows how to apply the <b2>[ReferenceValue]</b2> attribute to a GameObject field. 
+                        The menu path "GameObject/Create Empty" is triggered when the create button is clicked.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 02.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 03.jpg" alt=""/>                     
+                </div>
+            )}/>
+            <Group title="Example 02: Custom Ratio for Reference Field Width" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 04.jpg" alt=""/>            
+                    <p>
+                        Here, the reference field width for myMaterial is set to 70% of the total field width. 
+                        The menu path "Assets/Create/Material" is used for creating a new reference. 
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 05.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 06.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 03: Custom Button Labels" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 07.jpg" alt=""/>            
+                    <p>
+                        This example sets custom labels for the “create” and “remove” buttons. 
+                        Clicking "Add Prefab" will create a new Prefab asset using the menu path "Assets/Create/Prefab", while clicking "Remove Prefab" will clear the reference.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 08.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 09.jpg" alt=""/>            
+                </div>
+            )}/>
 
             
             <h3 className="p-2">Notes</h3>
