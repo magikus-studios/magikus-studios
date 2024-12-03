@@ -22,10 +22,7 @@ export default function Function() {
             <p className="pad-left-2">
                 These methods allow looping to occur either from the start to the end or in reverse (backward), offering significant flexibility when iterating over items. 
                 The utilities can be used with both simple data types like integers and floats, as well as more complex structures like vectors, colors, AnimationCurves, Texture2Ds, Sprites and character arrays (strings).            
-            </p>
-
-            <h3 className="p-2">How it Works</h3>
- 
+            </p> 
             <Group title="Numbers" content={(
                 <div>
                     <p>
@@ -79,7 +76,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Vectors" content={(
                 <div>
                     <p>
@@ -118,7 +114,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Color" content={(
                 <div>
                     <p>
@@ -143,7 +138,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Color Array" content={(
                 <div>
                     <p>
@@ -212,7 +206,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Lists and Arrays" content={(
                 <div>
                     <p>
@@ -288,7 +281,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Dictonary" content={(
                 <div>
                     <p>
@@ -349,7 +341,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="AnimationCurve" content={(
                 <div>
                     <p>
@@ -411,7 +402,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Text" content={(
                 <div>
                     <p>
@@ -438,7 +428,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="String" content={(
                 <div>
                     <p>
@@ -528,20 +517,31 @@ export default function Function() {
                 </div>
             )}/>
 
-
-            <h3 className="p-2">How to Use</h3>
+            <h3 className="p-2">Examples</h3>
             <p className="pad-left-3">
                 The Looping Utilities simplify looping by abstracting the mathematical complexity behind iterating through collections. 
                 Below are three practical examples showing how each of the main looping methods can be applied.
             </p>
-            <h4 className="c-light-1 p-3">Example 01: Looping Forward</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Looping/Looping - 01.jpg" alt=""/>            
-            <h4 className="c-light-1 p-3">Example 02: Looping Backward</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Looping/Looping - 02.jpg" alt=""/>            
-            <h4 className="c-light-1 p-3">Example 03: Looping Through AnimationCurves</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Looping/Looping - 03.jpg" alt=""/>            
-            <h4 className="c-light-1 p-3">Example 04: Looping Through Texture2D Colors</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Looping/Looping - 04.jpg" alt=""/>            
+            <Group title="Example 01: Looping Forward" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Looping/Looping - 01.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 02: Looping Backward" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Looping/Looping - 02.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 03: Looping Through AnimationCurves" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Looping/Looping - 03.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 04: Looping Through Texture2D Colors" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Looping/Looping - 04.jpg" alt=""/>            
+                </div>
+            )}/>
 
             <h3 className="p-2">Notes</h3>
             <ul>

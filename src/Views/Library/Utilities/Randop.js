@@ -22,10 +22,7 @@ export default function Function() {
             <p className="pad-left-2">
                 These utilities are tailored for game development to add unpredictability and variation in values such as booleans, numbers, vectors, colors and even randomly selected elements from lists or arrays.
                 They are especially beneficial in enhancing the realism of interactions and randomization in games.            
-            </p>
-
-            <h3 className="p-2">How it Works</h3>
- 
+            </p> 
             <Group title="Bool" content={(
                 <div>
                     <p>
@@ -41,7 +38,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Value" content={(
                 <div>
                     <p>
@@ -99,7 +95,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Range" content={(
                 <div>
                     <p>
@@ -157,7 +152,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Abs" content={(
                 <div>
                     <p>
@@ -187,7 +181,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Even" content={(
                 <div>
                     <p>
@@ -217,7 +210,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Odd" content={(
                 <div>
                     <p>
@@ -247,7 +239,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Bin" content={(
                 <div>
                     <p>
@@ -277,7 +268,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Sign" content={(
                 <div>
                     <p>
@@ -303,7 +293,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Angle" content={(
                 <div>
                     <p>
@@ -351,7 +340,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Screen" content={(
                 <div>
                     <h5 className="c-light-1">Signature</h5>
@@ -361,7 +349,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Lists and Arrays" content={(
                 <div>
                     <p>
@@ -393,17 +380,20 @@ export default function Function() {
                 </div>
             )}/>
 
-            <h3 className="p-2">How to Use</h3>
+            <h3 className="p-2">Examples</h3>
             <p className="pad-left-3">
                 Let’s go through a few examples to demonstrate how these methods work in practice.
             </p>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Randop/Randop - 01.jpg" alt=""/>            
-            <p className="pad-left-3">
-                This script showcases the use of the Randop utility in Unity to generate random values of various types, including bool, int, floats, 2D and 3D vectors, colors and points in both screen and world space. 
-                It starts by generating and logging random values for each type, such as a random boolean, an integer between 0 and 100, a float between 1.0 and 10.0 and vectors with specified ranges. 
-                Additionally, it generates a random color and retrieves random points on the screen and in the world space, making it particularly useful for adding randomness to game mechanics.
-            </p>
-
+            <Group title="Example 01: Basic Usage of Randop Utilities" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Randop/Randop - 01.jpg" alt=""/>            
+                    <p>
+                        This script showcases the use of the Randop utility in Unity to generate random values of various types, including bool, int, floats, 2D and 3D vectors, colors and points in both screen and world space. 
+                        It starts by generating and logging random values for each type, such as a random boolean, an integer between 0 and 100, a float between 1.0 and 10.0 and vectors with specified ranges. 
+                        Additionally, it generates a random color and retrieves random points on the screen and in the world space, making it particularly useful for adding randomness to game mechanics.
+                    </p>
+                </div>
+            )}/>
 
             <h3 className="p-2">Notes</h3>
             <ul>

@@ -23,9 +23,6 @@ export default function Function() {
                 These utilities simplify tasks such as capturing directional input from arrow keys, retrieving the direction to the mouse or touch, getting the current mouse position and extending the debug functionality by printing messages to the console in various styles. 
                 The utility methods help developers streamline the handling of input and output, making code more readable and efficient, while also facilitating the debugging process.
             </p>
-
-            <h3 className="p-2">How it Works</h3>
- 
             <Group title="Axis" content={(
                 <div>
                     <p>
@@ -41,7 +38,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Arrows" content={(
                 <div>
                     <p>
@@ -57,7 +53,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="ArrowsDown" content={(
                 <div>
                     <p>
@@ -73,7 +68,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="ArrowsUp" content={(
                 <div>
                     <p>
@@ -89,7 +83,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="DirToMouse" content={(
                 <div>
                     <p>
@@ -107,7 +100,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="DirToTouch" content={(
                 <div>
                     <p>
@@ -126,7 +118,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="MouseScreenPosition" content={(
                 <div>
                     <p>
@@ -142,7 +133,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="MouseWorldPosition" content={(
                 <div>
                     <p>
@@ -158,7 +148,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="MouseRectPosition" content={(
                 <div>
                     <p>
@@ -175,7 +164,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="ScreenPosition" content={(
                 <div>
                     <p>
@@ -193,7 +181,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="ScreenWorldPosition" content={(
                 <div>
                     <p>
@@ -211,7 +198,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Screen" content={(
                 <div>
                     <p>
@@ -223,7 +209,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="ScreenFlat" content={(
                 <div>
                     <p>
@@ -239,7 +224,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="WorldScreen" content={(
                 <div>
                     <p>
@@ -251,7 +235,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="WorldScreenFlat" content={(
                 <div>
                     <p>
@@ -267,7 +250,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Print" content={(
                 <div>
                     <p>
@@ -294,29 +276,39 @@ export default function Function() {
                 </div>
             )}/>
 
-
-            <h3 className="p-2">How to Use</h3>
-            <h4 className="c-light-1 p-3">Example 01: Using Directional Input</h4>
-            <p className="pad-left-3">
-                This script demonstrates how to use directional input utilities from the Magikus Library within a Unity project.
-            </p>
-            <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Controls/Controls - 01.jpg" alt=""/>            
-            <h4 className="c-light-1 p-3">Example 02: Getting Mouse and Touch Positions</h4>
-            <p className="pad-left-3">
-                This script shows how to retrieve the mouse position and calculate the direction towards the touch position from a GameObject.
-            </p>
-            <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Controls/Controls - 02.jpg" alt=""/>            
-            <h4 className="c-light-1 p-3">Example 03: Screen and World Positioning</h4>
-            <p className="pad-left-3">
-                This script showcases how to calculate positions on the screen and in the world using the Magikus Library.
-            </p>
-            <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Controls/Controls - 03.jpg" alt=""/>            
-            <h4 className="c-light-1 p-3">Example 04: Enhanced Console Output</h4>
-            <p className="pad-left-3">
-                This script illustrates how to enhance console output with different styles and colors using the Magikus Library.
-            </p>
-            <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Controls/Controls - 04.jpg" alt=""/>            
-
+            <h3 className="p-2">Examples</h3>
+            <Group title="Example 01: Using Directional Input" content={(
+                <div>
+                    <p>
+                        This script demonstrates how to use directional input utilities from the Magikus Library within a Unity project.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Controls/Controls - 01.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 02: Getting Mouse and Touch Positions" content={(
+                <div>
+                    <p>
+                        This script shows how to retrieve the mouse position and calculate the direction towards the touch position from a GameObject.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Controls/Controls - 02.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 03: Screen and World Positioning" content={(
+                <div>
+                    <p>
+                        This script showcases how to calculate positions on the screen and in the world using the Magikus Library.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Controls/Controls - 03.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 04: Enhanced Console Output" content={(
+                <div>
+                    <p>
+                        This script illustrates how to enhance console output with different styles and colors using the Magikus Library.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Controls/Controls - 04.jpg" alt=""/>            
+                </div>
+            )}/>
 
             <h3 className="p-2">Notes</h3>
             <ul>

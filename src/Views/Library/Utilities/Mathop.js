@@ -23,10 +23,7 @@ export default function Function() {
                 The methods are designed to simplify complex mathematical operations while offering flexibility across multiple data types. 
                 These methods are applicable to types like int, float, Vector2, Vector3, Vector2Int, Vector3Int, Color and Rect. 
                 They include operations such as Add, Multiply, Complement, Modulo, Power, Root, Inverse, Abs, Sign, Min, Max, Clamp, ClampRange, Wrap and WrapRange.
-            </p>
-
-            <h3 className="p-2">How it Works</h3>
- 
+            </p> 
             <Group title="Set" content={(
                 <div>
                     <p>
@@ -192,7 +189,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Add" content={(
                 <div>
                     <p>
@@ -303,7 +299,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Multiply" content={(
                 <div>
                     <p>
@@ -414,7 +409,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Comp" content={(
                 <div>
                     <p>
@@ -440,7 +434,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Mod" content={(
                 <div>
                     <p>
@@ -460,7 +453,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Power" content={(
                 <div>
                     <p>
@@ -480,7 +472,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Root" content={(
                 <div>
                     <p>
@@ -500,7 +491,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Inverse" content={(
                 <div>
                     <p>
@@ -518,7 +508,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Abs" content={(
                 <div>
                     <p>
@@ -556,7 +545,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Sign" content={(
                 <div>
                     <p>
@@ -594,7 +582,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Round" content={(
                 <div>
                     <p>
@@ -610,7 +597,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Floor" content={(
                 <div>
                     <p>
@@ -626,7 +612,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Ceil" content={(
                 <div>
                     <p>
@@ -642,7 +627,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Min" content={(
                 <div>
                     <p>
@@ -662,7 +646,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Max" content={(
                 <div>
                     <p>
@@ -682,7 +665,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Bottom" content={(
                 <div>
                     <p>
@@ -772,7 +754,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Top" content={(
                 <div>
                     <p>
@@ -862,7 +843,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Clamp" content={(
                 <div>
                     <p>
@@ -939,7 +919,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="ClampRange" content={(
                 <div>
                     <p>
@@ -1024,7 +1003,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Wrap" content={(
                 <div>
                     <p>
@@ -1101,7 +1079,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="WrapRange" content={(
                 <div>
                     <p>
@@ -1186,7 +1163,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Swap" content={(
                 <div>
                     <p>
@@ -1216,7 +1192,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Shift" content={(
                 <div>
                     <p>
@@ -1239,7 +1214,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Offset" content={(
                 <div>
                     <p>
@@ -1262,14 +1236,22 @@ export default function Function() {
                 </div>
             )}/>
 
-
-            <h3 className="p-2">How to Use</h3>
-            <h4 className="c-light-1 p-3">Example 01: Basic Mathematical Operations on Integers</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Mathop/Mathop - 01.jpg" alt=""/>            
-            <h4 className="c-light-1 p-3">Example 02: Using Mathop on Float Values</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Mathop/Mathop - 02.jpg" alt=""/>            
-            <h4 className="c-light-1 p-3">Example 03: Vector2 Manipulations</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Mathop/Mathop - 03.jpg" alt=""/>            
+            <h3 className="p-2">Examples</h3>
+            <Group title="Example 01: Basic Mathematical Operations on Integers" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Mathop/Mathop - 01.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 02: Using Mathop on Float Values" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Mathop/Mathop - 02.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 03: Vector2 Manipulations" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Mathop/Mathop - 03.jpg" alt=""/>            
+                </div>
+            )}/>
 
             <h3 className="p-2">Notes</h3>
             <ul>

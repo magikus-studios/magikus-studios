@@ -10,7 +10,7 @@ export default function Function() {
             <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
                 Methods for various Data Type Conversions and Formatting 
             </h6>
-                        
+
             <h3 className="p-2">Overview</h3>
             <p className="pad-left-2 pad-bottom-2">
                 The Adapt utilities class provides a comprehensive suite of methods to transform various types, especially useful in game development using Unity. 
@@ -21,10 +21,7 @@ export default function Function() {
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">
                 These methods facilitate transforming bool, int, floats, vectors, arrays, lists, colors and actions values into different representations, making data manipulation in Unity projects easier and more efficient.
-            </p>
-
-            <h3 className="p-2">How it Works</h3>
- 
+            </p> 
             <Group title="ToBin" content={(
                 <div>
                     <p>
@@ -40,7 +37,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="ToSign" content={(
                 <div>
                     <p>
@@ -56,7 +52,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="ToLabel" content={(
                 <div>
                     <p>
@@ -73,7 +68,6 @@ export default function Function() {
                     </ul>   
                 </div>
             )}/>
-
             <Group title="ToVector2" content={(
                 <div>
                     <p>
@@ -109,7 +103,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="ToVector3" content={(
                 <div>
                     <p>
@@ -144,8 +137,7 @@ export default function Function() {
                         <li><b2>int</b2> <b1>indexOffset</b1>: The index offset for array and list conversions</li>                    
                     </ul>
                 </div>
-            )}/>
-         
+            )}/>         
             <Group title="ToVector2Int" content={(
                 <div>
                     <p>
@@ -181,7 +173,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="ToVector3Int" content={(
                 <div>
                     <p>
@@ -217,7 +208,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="ToArray" content={(
                 <div>
                     <p>
@@ -239,7 +229,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="ToList" content={(
                 <div>
                     <p>
@@ -261,7 +250,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="ToHex" content={(
                 <div>
                     <p>
@@ -296,7 +284,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="ToColor" content={(
                 <div>
                     <p>
@@ -320,7 +307,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="ToColorValue" content={(
                 <div>
                     <p>
@@ -341,7 +327,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="ToAction" content={(
                 <div>
                     <p>
@@ -376,13 +361,16 @@ export default function Function() {
                 </div>
             )}/>
 
-
-            <h3 className="p-2">How to Use</h3>
-            <p className="pad-left-3">
-                Below are examples demonstrating the usage of the Adapt utilities methods across various scenarios.
-            </p>
-            <img className="block-center mar-bottom-3 img-border w-100" src="images/Library/Utilities/Adapt/Adapt - 01.jpg" alt=""/>            
-            <img className="block-center mar-bottom-3 img-border w-100" src="images/Library/Utilities/Adapt/Adapt - 02.jpg" alt=""/>            
+            <h3 className="p-2">Examples</h3>
+            <Group title="Example 01: Basic Usage of Adapt Utilities" content={(
+                <div>
+                    <p>
+                        Below are examples demonstrating the usage of the Adapt utilities methods across various scenarios.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-100" src="images/Library/Utilities/Adapt/Adapt - 01.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-100" src="images/Library/Utilities/Adapt/Adapt - 02.jpg" alt=""/>            
+                </div>
+            )}/>
 
             <h3 className="p-2">Notes</h3>
             <ul>

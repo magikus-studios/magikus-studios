@@ -31,10 +31,6 @@ export default function Function() {
                 For example, a health value asset can notify both the player health UI and a score tracker whenever the player's health changes. 
                 Value Assets can act as a centralized repository for critical game data, such as player stats, game settings or environmental parameters, enabling a more organized and manageable approach to data handling.
             </p>
-
-
-            <h3 className="p-2">How it Works</h3>
-
             <Group title="ValueAsset<T>" content={(
                 <div>
                     <h5 className="c-light-1">Properties</h5>
@@ -58,7 +54,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="BoolAsset : ValueAsset<bool>" content={(
                 <div>
                     <h5 className="c-light-1">Methods</h5>
@@ -73,7 +68,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="IntAsset : ValueAsset<int>" content={(
                 <div>
                     <h5 className="c-light-1">Methods</h5>
@@ -88,7 +82,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="FloatAsset : ValueAsset<float>" content={(
                 <div>
                     <h5 className="c-light-1">Methods</h5>
@@ -103,7 +96,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="StringAsset : ValueAsset<string>" content={(
                 <div>
                     <h5 className="c-light-1">Properties</h5>
@@ -123,7 +115,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Vector2Asset : ValueAsset<Vector2>" content={(
                 <div>
                     <h5 className="c-light-1">Properties</h5>
@@ -144,7 +135,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Vector3Asset : ValueAsset<Vector3>" content={(
                 <div>
                     <h5 className="c-light-1">Properties</h5>
@@ -167,32 +157,36 @@ export default function Function() {
                 </div>
             )}/>
 
-
-            <h3 className="p-2">How to Use</h3>
+            <h3 className="p-2">Examples</h3>
             <p className="pad-left-2">
-                You can create a Value Asset by going to the Unity menu, Assets {">"} Create {">"} Magikus {">"} Structures {">"} Value Assets Structure {">"} [Type] Asset, (replacing [type] with the specific Value Asset type required). 
+                You can create a Value Asset by going to the Unity menu, <b1>Assets {">"} Create {">"} Magikus {">"} Structures {">"} Value Assets Structure {">"} [Type] Asset</b1>, (replacing [type] with the specific Value Asset type required). 
+                <br/>
                 To implement them, add the Value Asset field in your scripts and drag and drop the asset onto the desired component's field in the Inspector or assign it through code. 
+                <br/>
                 Use the asset value in your code as needed and use the onValueChange action to listen for and respond to changes in the asset's value.
             </p>
-
-            <h4 className="c-light-1 p-3">Example 01: Creating and Using a FloatAsset</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/ValueAssets/Value Assets - 01.jpg" alt=""/>            
-            <p className="pad-left-3"> 
-                In this example, a FloatAsset Scriptable Object is created and linked to a script. 
-                The onValueChange action is subscribed to a method (OnHealthChanged) that logs the new health value. 
-                The TakeDamage method modifies the FloatAsset value, triggering the onValueChange event.
-            </p>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/ValueAssets/Value Assets - 02.jpg" alt=""/>            
-
-            <h4 className="c-light-1 p-3">Example 02: Using an IntAsset for Score Tracking</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/ValueAssets/Value Assets - 03.jpg" alt=""/>            
-            <p className="pad-left-3"> 
-                In this example, an IntAsset Scriptable Object is created for score tracking. 
-                The onValueChange action updates the score display or triggers other score-related effects. 
-                The AddScore method adjusts the IntAsset value and triggers the event.
-            </p>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/ValueAssets/Value Assets - 04.jpg" alt=""/>            
-
+            <Group title="Example 01: Creating and Using a FloatAsset" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/ValueAssets/Value Assets - 01.jpg" alt=""/>            
+                    <p> 
+                        In this example, a FloatAsset Scriptable Object is created and linked to a script. 
+                        The onValueChange action is subscribed to a method (OnHealthChanged) that logs the new health value. 
+                        The TakeDamage method modifies the FloatAsset value, triggering the onValueChange event.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/ValueAssets/Value Assets - 02.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 02: Using an IntAsset for Score Tracking" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/ValueAssets/Value Assets - 03.jpg" alt=""/>            
+                    <p> 
+                        In this example, an IntAsset Scriptable Object is created for score tracking. 
+                        The onValueChange action updates the score display or triggers other score-related effects. 
+                        The AddScore method adjusts the IntAsset value and triggers the event.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/ValueAssets/Value Assets - 04.jpg" alt=""/>            
+                </div>
+            )}/>
 
             <h3 className="p-2">Notes</h3>
             <ul>

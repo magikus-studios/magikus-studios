@@ -28,10 +28,6 @@ export default function Function() {
                 <li>Implementing pathfinding for AI in games</li>
                 <li>Spatial data analysis and manipulation</li>
             </ul>
-
-
-            <h3 className="p-2">How it Works</h3>
-
             <Group title="Matrix2D<T>" content={(
                 <div>
                     <h5 className="c-light-1">Constructors</h5>
@@ -399,7 +395,6 @@ export default function Function() {
                     />
                 </div>
             )}/>
-
             <Group title="Grid2D<T> : Matrix2D<T>" content={(
                 <div>
                     <p>
@@ -796,7 +791,6 @@ export default function Function() {
                     />
                 </div>
             )}/>
- 
             <Group title="Pathfinder2D" content={(
                 <div>
                     <h5 className="c-light-1">Constructors</h5>
@@ -834,7 +828,6 @@ export default function Function() {
                     />
                 </div>
             )}/>
-
             <Group title="PathNode" content={(
                 <div>
                     <h5 className="c-light-1">Constructors</h5>
@@ -866,16 +859,22 @@ export default function Function() {
                 </div>
             )}/>
 
-
-            <h3 className="p-2">How to Use</h3>
-
-            <h4 className="c-light-1 p-3">Example 01: Creating and Using a Matrix2D</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Grids/Grids - 01.jpg" alt=""/>            
-            <h4 className="c-light-1 p-3">Example 02: Using Grid2D for Game Objects</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Grids/Grids - 02.jpg" alt=""/>            
-            <h4 className="c-light-1 p-3">Example 03: Finding a Path with Pathfinder2D</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Grids/Grids - 03.jpg" alt=""/>            
-
+            <h3 className="p-2">Examples</h3>
+            <Group title="Example 01: Creating and Using a Matrix2D" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Grids/Grids - 01.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 02: Using Grid2D for Game Objects" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Grids/Grids - 02.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 03: Finding a Path with Pathfinder2D" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Grids/Grids - 03.jpg" alt=""/>            
+                </div>
+            )}/>
 
             <h3 className="p-2">Notes</h3>
             <ul>

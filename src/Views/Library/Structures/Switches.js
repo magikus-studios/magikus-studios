@@ -27,10 +27,6 @@ export default function Function() {
                 The primary purpose of Switch structures is to compress similar types into a single parameter with single value setters and getters, thereby streamlining script manipulation and enabling developers to change the type used without altering the underlying scripts. 
                 Examples of composed structures using Switch include IntSwitch, ColorSwitch, TextSwitch and more, each encapsulating specific types such as integers, colors and text.
             </p>
-
-
-            <h3 className="p-2">How it Works</h3>
-
             <Group title="Switch<A, B>" content={(
                 <div>
                     <h5 className="c-light-1">Properties</h5>
@@ -45,7 +41,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Switch<A, B, C> to Switch<A, B, C, D, E, F, G, H, I, J>" content={(
                 <div>
                     <h5 className="c-light-1">Properties</h5>
@@ -68,7 +63,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="BoolSwitch" content={(
                 <div>
                     <h5 className="c-light-1">Properties</h5>
@@ -80,7 +74,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="IntSwitch" content={(
                 <div>
                     <h5 className="c-light-1">Properties</h5>
@@ -92,7 +85,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="FloatSwitch" content={(
                 <div>
                     <h5 className="c-light-1">Properties</h5>
@@ -104,7 +96,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="StringSwitch" content={(
                 <div>
                     <h5 className="c-light-1">Properties</h5>
@@ -116,7 +107,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="TextSwitch" content={(
                 <div>
                     <h5 className="c-light-1">Properties</h5>
@@ -133,7 +123,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Vector2Switch" content={(
                 <div>
                     <h5 className="c-light-1">Properties</h5>
@@ -145,7 +134,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Vector3Switch" content={(
                 <div>
                     <h5 className="c-light-1">Properties</h5>
@@ -157,7 +145,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="TransformSwitch" content={(
                 <div>
                     <h5 className="c-light-1">Properties</h5>
@@ -176,7 +163,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="RectTransformSwitch" content={(
                 <div>
                     <h5 className="c-light-1">Properties</h5>
@@ -194,7 +180,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="ColorSwitch" content={(
                 <div>
                     <h5 className="c-light-1">Properties</h5>
@@ -212,7 +197,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="SpriteSwitch" content={(
                 <div>
                     <h5 className="c-light-1">Properties</h5>
@@ -229,7 +213,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="TimeScaleSwitch" content={(
                 <div>
                     <h5 className="c-light-1">Properties</h5>
@@ -247,38 +230,42 @@ export default function Function() {
                 </div>
             )}/>
 
-
-            <h3 className="p-2">How to Use</h3>
-
-            <h4 className="c-light-1 p-3">Example 01: Using IntSwitch</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Switches/Switches - 01.jpg" alt=""/>            
-            <p className="pad-left-3"> 
-                This example explains how to use an IntSwitch. 
-                An IntSwitch is defined in the script. 
-                The Value property is used to set the int value and the current value is accessed and logged to the console.
-            </p>
-            <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 02.jpg" alt=""/>            
-            <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 03.jpg" alt=""/>            
-
-            <h4 className="c-light-1 p-3">Example 02: Using ColorSwitch</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Switches/Switches - 04.jpg" alt=""/>            
-            <p className="pad-left-3"> 
-                In this example, a ColorSwitch is defined in the script and the Color property is used to set the color. 
-                Then the color is printed to the console.
-            </p>
-            <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 05.jpg" alt=""/>            
-            <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 06.jpg" alt=""/>            
-            <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 07.jpg" alt=""/>            
-            <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 08.jpg" alt=""/>            
-
-            <h4 className="c-light-1 p-3">Example 03: Using TextSwitch</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Switches/Switches - 09.jpg" alt=""/>            
-            <p className="pad-left-3">
-                Finally, in this example a TextSwitch is defined, the Text property is used to set the text of the field and then is printed to the console.
-            </p>
-            <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 10.jpg" alt=""/>            
-            <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 11.jpg" alt=""/>            
-
+            <h3 className="p-2">Examples</h3>
+            <Group title="Example 01: Using IntSwitch" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Switches/Switches - 01.jpg" alt=""/>            
+                    <p> 
+                        This example explains how to use an IntSwitch. 
+                        An IntSwitch is defined in the script. 
+                        The Value property is used to set the int value and the current value is accessed and logged to the console.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 02.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 03.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 02: Using ColorSwitch" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Switches/Switches - 04.jpg" alt=""/>            
+                    <p> 
+                        In this example, a ColorSwitch is defined in the script and the Color property is used to set the color. 
+                        Then the color is printed to the console.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 05.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 06.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 07.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 08.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 03: Using TextSwitch" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Switches/Switches - 09.jpg" alt=""/>            
+                    <p>
+                        Finally, in this example a TextSwitch is defined, the Text property is used to set the text of the field and then is printed to the console.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 10.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 11.jpg" alt=""/>            
+                </div>
+            )}/>
 
             <h3 className="p-2">Notes</h3>
             <ul>

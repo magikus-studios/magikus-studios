@@ -23,9 +23,6 @@ export default function Function() {
                 These methods allow developers to easily save and load data in various formats, including Text, Json, Binary, XML and CSV. 
                 The utilities are particularly useful for handling serialized objects or basic text values.
             </p>
-
-            <h3 className="p-2">How it Works</h3>
- 
             <Group title="DataPath" content={(
                 <div>
                     <h5 className="c-light-1">Properties</h5>
@@ -34,7 +31,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="CreatePath" content={(
                 <div>
                     <p>
@@ -50,7 +46,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="GetUniqueName" content={(
                 <div>
                     <p>
@@ -66,7 +61,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="IsSaved" content={(
                 <div>
                     <p>
@@ -82,7 +76,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="IsSerializable<T>" content={(
                 <div>
                     <p>
@@ -94,7 +87,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Encrypt" content={(
                 <div>
                     <p>
@@ -111,7 +103,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Dencrypt" content={(
                 <div>
                     <p>
@@ -128,7 +119,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Txt" content={(
                 <div>
                     <p>
@@ -149,7 +139,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Json" content={(
                 <div>
                     <p>
@@ -168,7 +157,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Bin" content={(
                 <div>
                     <p>
@@ -189,7 +177,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Xml" content={(
                 <div>
                     <p>
@@ -208,7 +195,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Csv" content={(
                 <div>
                     <p>
@@ -243,23 +229,34 @@ export default function Function() {
                 </div>
             )}/>
 
-
-            <h3 className="p-2">How to Use</h3>
+            <h3 className="p-2">Examples</h3>
             <p className="pad-left-3">
                 The following examples demonstrate how to use the Datafile Utilities to save and load files in different formats.
             </p>
-            <h4 className="c-light-1 p-3">Example 01: Saving and Loading a Text File</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Datafile/Datafile - 01.jpg" alt=""/>            
-            <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Datafile/Datafile - 02.jpg" alt=""/>            
-            <h4 className="c-light-1 p-3">Example 02: Saving and Loading a JSON File</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Datafile/Datafile - 03.jpg" alt=""/>            
-            <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Datafile/Datafile - 04.jpg" alt=""/>            
-            <h4 className="c-light-1 p-3">Example 03: Saving and Loading a Encrypted Bin File</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Datafile/Datafile - 05.jpg" alt=""/>            
-            <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Datafile/Datafile - 06.jpg" alt=""/>            
-            <h4 className="c-light-1 p-3">Example 04: Saving and Loading a CSV File</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Datafile/Datafile - 07.jpg" alt=""/>            
-            <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Datafile/Datafile - 08.jpg" alt=""/>            
+            <Group title="Example 01: Saving and Loading a Text File" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Datafile/Datafile - 01.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Datafile/Datafile - 02.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 02: Saving and Loading a JSON File" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Datafile/Datafile - 03.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Datafile/Datafile - 04.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 03: Saving and Loading a Encrypted Bin File" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Datafile/Datafile - 05.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Datafile/Datafile - 06.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 04: Saving and Loading a CSV File" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Datafile/Datafile - 07.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Datafile/Datafile - 08.jpg" alt=""/>            
+                </div>
+            )}/>
 
             <h3 className="p-2">Notes</h3>
             <ul>

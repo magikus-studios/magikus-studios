@@ -37,10 +37,6 @@ export default function Function() {
                 <li><b>Scriptable Object Framework</b>: Event assets provide a framework for implementing the Observer pattern, enabling communication across different scenes without tight coupling</li>
                 <li><b>Sender/Listener Modes</b>: Events can be configured as senders, listeners or both, to manage how they interact with event assets</li>
             </ul>
-
-
-            <h3 className="p-2">How it Works</h3>
-
             <Group title="EventVoid" content={(
                 <div>
                     <h5 className="c-light-1">Properties</h5>
@@ -60,7 +56,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Event<T>" content={(
                 <div>
                     <h5 className="c-light-1">Properties</h5>
@@ -79,8 +74,7 @@ export default function Function() {
                         <li><b2>void</b2> <b1>LinkToAsset</b1>(): Links the event to the event asset if it is not null</li>
                     </ul>
                 </div>
-            )}/>
-                    
+            )}/>                    
             <Group title="EventAsset" content={(
                 <div>
                     <h5 className="c-light-1">Properties</h5>
@@ -98,7 +92,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="EventMode Attribute" content={(
                 <div>
                     <h5 className="c-light-1">Properties</h5>
@@ -112,67 +105,78 @@ export default function Function() {
                 </div>
             )}/>
 
-            <h3 className="p-2">How to Use</h3>
+            <h3 className="p-2">Examples</h3>
             <p className="pad-left-2">
                 To use the Event structure, you must first define the event in your script using the EventVoid or Event{"<T>"} structure depending on whether you need to pass parameters (make sure that the Event is publicly available to visualize it in the inspector).
+                <br/>
                 After that, use the Try method to invoke the event. 
                 This method checks for null references and calls the actions safely. 
+                <br/>
                 You can assign an EventAsset in the Unity Inspector and set the event to be a sender, listener or both. 
                 This can be done via the inspector or using the EventMode attribute. 
+                <br/>
                 Remember that if the Event is going to be listening to an Event asset, you need to make sure it is linked to it by calling the LinkToAsset method first (This is usually done on awake). 
-                The Try method allows to pass a Component as a parameter. This is used to give a certain context to an Event asset invocation.
-                You can create an Event asset by going to the Unity menu, Assets {">"} Create {">"} Magikus {">"} Structures {">"} Event Structure {">"} Event Asset.
+                <br/>
+                The Try method allows to pass a Component as a parameter. 
+                This is used to give a certain context to an Event asset invocation.
+                <br/>
+                You can create an Event asset by going to the Unity menu, <b1>Assets {">"} Create {">"} Magikus {">"} Structures {">"} Event Structure {">"} Event Asset</b1>.
             </p>
-
-            <h4 className="c-light-1 p-3">Example 01: Basic Event Setup</h4>
-            <p className="pad-left-3"> 
-                This example demonstrates how to use a basic EventVoid.
-            </p>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Events/Events - 01.jpg" alt=""/>            
-            <p className="pad-left-3"> 
-                The DefeatEnemy method is subscribed to the event through the Inspector. 
-                When the script starts, it will call the event invoking all the methods subscribed to it.
-            </p>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Events/Events - 02.jpg" alt=""/>            
-
-            <h4 className="c-light-1 p-3">Example 02: Event with Parameters</h4>
-            <p className="pad-left-3"> 
-                In this example, an Event with a parameter is used instead. 
-                There is a score int and an UpdateScore method that takes an int and logs a message with it. 
-                When the script starts the Event is called sending the score value as a parameter.
-            </p>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Events/Events - 03.jpg" alt=""/>            
-            <p className="pad-left-3"> 
-                In the Inspector, the UpdateScore is subscribed dynamically to the event. 
-                This will use the value sent through the event call to the method invoked when the Event is called.
-            </p>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Events/Events - 04.jpg" alt=""/>            
-
-            <h4 className="c-light-1 p-3">Example 03: Setting Event Mode</h4>
-            <p className="pad-left-3"> 
-                Finally, this example shows how to use an Event asset and the EventMode attribute. 
-                For this example, two scripts are created. 
-                The first one is the sender script and will contain a void Event that will get called on start. 
-                It also has a PauseGame method that logs a message. 
-                In this case, the void Event will be set as EVENT_MODE.Sender (using the EventMode attribute) because it will only be sending calls.
-            </p>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Events/Events - 05.jpg" alt=""/>            
-            <p className="pad-left-3"> 
-                The second script will be the listener script. 
-                This script will contain another void Event but this time it will be set to EVENT_MODE.Listener because we only want this event to be listening to an Event asset. 
-                To do this, we have to make sure that the Event is linked to the asset. 
-                This is done in the awake function. It also contains a function that prints another message.
-            </p>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Events/Events - 06.jpg" alt=""/>            
-            <p className="pad-left-3"> 
-                Back in the Editor, there is an Event asset created called Event Asset Example. 
-            </p>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Events/Events - 07.jpg" alt=""/>            
-            <p className="pad-left-3"> 
-                In the inspector, the PauseGame method is subscribed to the onGamePaused Event, the PrintMessageWithAsset is subscribed to the onAssetCall Event and the Event asset is set to both Events.
-            </p>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Events/Events - 08.jpg" alt=""/>            
-
+            <Group title="Example 01: Basic Event Setup" content={(
+                <div>
+                    <p> 
+                        This example demonstrates how to use a basic EventVoid.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Events/Events - 01.jpg" alt=""/>            
+                    <p> 
+                        The DefeatEnemy method is subscribed to the event through the Inspector. 
+                        When the script starts, it will call the event invoking all the methods subscribed to it.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Events/Events - 02.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 02: Event with Parameters" content={(
+                <div>
+                    <p> 
+                        In this example, an Event with a parameter is used instead. 
+                        There is a score int and an UpdateScore method that takes an int and logs a message with it. 
+                        When the script starts the Event is called sending the score value as a parameter.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Events/Events - 03.jpg" alt=""/>            
+                    <p> 
+                        In the Inspector, the UpdateScore is subscribed dynamically to the event. 
+                        This will use the value sent through the event call to the method invoked when the Event is called.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Events/Events - 04.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 03: Setting Event Mode" content={(
+                <div>
+                    <p> 
+                        Finally, this example shows how to use an Event asset and the EventMode attribute. 
+                        For this example, two scripts are created. 
+                        The first one is the sender script and will contain a void Event that will get called on start. 
+                        It also has a PauseGame method that logs a message. 
+                        In this case, the void Event will be set as EVENT_MODE.Sender (using the EventMode attribute) because it will only be sending calls.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Events/Events - 05.jpg" alt=""/>            
+                    <p> 
+                        The second script will be the listener script. 
+                        This script will contain another void Event but this time it will be set to EVENT_MODE.Listener because we only want this event to be listening to an Event asset. 
+                        To do this, we have to make sure that the Event is linked to the asset. 
+                        This is done in the awake function. It also contains a function that prints another message.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Events/Events - 06.jpg" alt=""/>            
+                    <p> 
+                        Back in the Editor, there is an Event asset created called Event Asset Example. 
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Events/Events - 07.jpg" alt=""/>            
+                    <p> 
+                        In the inspector, the PauseGame method is subscribed to the onGamePaused Event, the PrintMessageWithAsset is subscribed to the onAssetCall Event and the Event asset is set to both Events.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Events/Events - 08.jpg" alt=""/>            
+                </div>
+            )}/>
 
             <h3 className="p-2">Notes</h3>
             <ul>

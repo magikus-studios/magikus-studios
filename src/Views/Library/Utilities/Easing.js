@@ -23,10 +23,7 @@ export default function Function() {
                 The Easing utilities are housed within the Easing static class and provide developers with a wide array of easing functions. 
                 These utilities include 13 different easing types, each with three variations: In, Out and Both.
                 These variations describe how the easing function will be applied over time, whether at the beginning (In), the end (Out) or both (Both).
-            </p>
-
-            <h3 className="p-2">How it Works</h3>
- 
+            </p> 
             <Group title="GetEasingFunc" content={(
                 <div>
                     <p>
@@ -42,7 +39,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Linear" content={(
                 <div>
                     <p>
@@ -60,7 +56,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Sin" content={(
                 <div>
                     <p>
@@ -78,7 +73,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Cos" content={(
                 <div>
                     <p>
@@ -96,7 +90,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Trig" content={(
                 <div>
                     <p>
@@ -114,7 +107,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Quad" content={(
                 <div>
                     <p>
@@ -132,7 +124,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Cubic" content={(
                 <div>
                     <p>
@@ -150,7 +141,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Quart" content={(
                 <div>
                     <p>
@@ -168,7 +158,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Quint" content={(
                 <div>
                     <p>
@@ -186,7 +175,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Exp" content={(
                 <div>
                     <p>
@@ -204,7 +192,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Circular" content={(
                 <div>
                     <p>
@@ -222,7 +209,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Back" content={(
                 <div>
                     <p>
@@ -240,7 +226,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Elastic" content={(
                 <div>
                     <p>
@@ -258,7 +243,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Bounce" content={(
                 <div>
                     <p>
@@ -277,28 +261,39 @@ export default function Function() {
                 </div>
             )}/>
 
-
-            <h3 className="p-2">How to Use</h3>
-            <h4 className="c-light-1 p-3">Example 01: Use of Circular Easing Functions</h4>
-            <p className="pad-left-3">
-                To create transitions that start and end at the same position you can use one of these circular easing:
-            </p>
-            <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Easing/Easing - 01.jpg" alt=""/>            
-            <h4 className="c-light-1 p-3">Example 02: Smooth Transition with Easing</h4>
-            <p className="pad-left-3">
-                Suppose you want to create an animation that starts slowly, accelerates and then slows down again at the end, you can use some of the smooth transition easing function:            
-            </p>
-            <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Easing/Easing - 02.jpg" alt=""/>            
-            <h4 className="c-light-1 p-3">Example 03: Applying a Bouncy Effect</h4>
-            <p className="pad-left-3">
-                To simulate a bouncy effect, such as an object dropping to the ground and bouncing, you can use the bounce easing functions:
-            </p>
-            <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Easing/Easing - 03.jpg" alt=""/>            
-            <h4 className="c-light-1 p-3">Example 04: Dynamic Easing Selection with GetEasingFunc</h4>
-            <p className="pad-left-3">
-                In cases where you want to dynamically choose the easing function, perhaps based on user input, you can use GetEasingFunc:
-            </p>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Easing/Easing - 04.jpg" alt=""/>            
+            <h3 className="p-2">Examples</h3>
+            <Group title="Example 01: Use of Circular Easing Functions" content={(
+                <div>
+                    <p>
+                        To create transitions that start and end at the same position you can use one of these circular easing:
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Easing/Easing - 01.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 02: Smooth Transition with Easing" content={(
+                <div>
+                    <p>
+                        Suppose you want to create an animation that starts slowly, accelerates and then slows down again at the end, you can use some of the smooth transition easing function:            
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Easing/Easing - 02.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 03: Applying a Bouncy Effect" content={(
+                <div>
+                    <p>
+                        To simulate a bouncy effect, such as an object dropping to the ground and bouncing, you can use the bounce easing functions:
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Easing/Easing - 03.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 04: Dynamic Easing Selection with GetEasingFunc" content={(
+                <div>
+                    <p>
+                        In cases where you want to dynamically choose the easing function, perhaps based on user input, you can use GetEasingFunc:
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Easing/Easing - 04.jpg" alt=""/>            
+                </div>
+            )}/>
 
             <h3 className="p-2">Notes</h3>
             <ul>

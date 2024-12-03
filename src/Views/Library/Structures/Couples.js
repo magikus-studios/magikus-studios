@@ -1,4 +1,5 @@
 import React from "react";
+import Group from "Components/Group";
 
 export default function Function() {
 
@@ -27,38 +28,36 @@ export default function Function() {
                 One of the primary benefits of using these structures is their seamless integration with Unity's Inspector, providing a clear and compact way to visualize and manipulate these coupled values. 
                 By using custom attributes, developers can also control the relative sizes of the fields in the Inspector, optimizing their layout for specific use cases.
             </p>
+            <Group title="Couple<A, B>" content={(
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
+                    <ul>
+                        <li><b2>A</b2> <b1>ValueA</b1>: First value of the couple</li>
+                        <li><b2>B</b2> <b1>ValueB</b1>: Second value of the couple</li>
+                    </ul>
+                    <h5 className="c-light-1">Methods</h5>
+                    <ul>
+                        <li><b2>void</b2> <b1>Set</b1>(<b2>Couple{"<A, B>"}</b2> <b1>newValue</b1>): Set the couple with another couple</li>
+                    </ul>
+                </div>
+            )}/>
+            <Group title="Couple<A, B, C>" content={(
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
+                    <ul>
+                        <li><b2>A</b2> <b1>ValueA</b1>: First value of the couple</li>
+                        <li><b2>B</b2> <b1>ValueB</b1>: Second value of the couple</li>
+                        <li><b2>C</b2> <b1>ValueC</b1>: Third value of the couple</li>
+                    </ul>
+                    <h5 className="c-light-1">Methods</h5>
+                    <ul>
+                        <li><b2>void</b2> <b1>Set</b1>(<b2>Couple{"<A, B>"}</b2> <b1>newValue</b1>): Set the couple with another couple.</li>
+                        <li><b2>void</b2> <b1>Set</b1>(<b2>Couple{"<A, B, C>"}</b2> <b1>newValue</b1>): Set the couple with another couple.</li>
+                    </ul>
+                </div>
+            )}/>
 
-
-            <h3 className="p-2">How it Works</h3>
-
-            <div className="p-3">
-                <h4 className="c-light-1 pad-left-2">Couple{"<A, B>"}</h4>
-                <h5 className="c-light-1 pad-left-3">Properties</h5>
-                <ul>
-                    <li><b2>A</b2> <b1>ValueA</b1>: First value of the couple</li>
-                    <li><b2>B</b2> <b1>ValueB</b1>: Second value of the couple</li>
-                </ul>
-                <h5 className="c-light-1 pad-left-3">Methods</h5>
-                <ul>
-                    <li><b2>void</b2> <b1>Set</b1>(<b2>Couple{"<A, B>"}</b2> <b1>newValue</b1>): Set the couple with another couple</li>
-                </ul>
-
-                <h4 className="c-light-1 pad-left-2">Couple{"<A, B, C>"}</h4>
-                <h5 className="c-light-1 pad-left-3">Properties</h5>
-                <ul>
-                    <li><b2>A</b2> <b1>ValueA</b1>: First value of the couple</li>
-                    <li><b2>B</b2> <b1>ValueB</b1>: Second value of the couple</li>
-                    <li><b2>C</b2> <b1>ValueC</b1>: Third value of the couple</li>
-                </ul>
-                <h5 className="c-light-1 pad-left-3">Methods</h5>
-                <ul>
-                    <li><b2>void</b2> <b1>Set</b1>(<b2>Couple{"<A, B>"}</b2> <b1>newValue</b1>): Set the couple with another couple.</li>
-                    <li><b2>void</b2> <b1>Set</b1>(<b2>Couple{"<A, B, C>"}</b2> <b1>newValue</b1>): Set the couple with another couple.</li>
-                </ul>
-            </div>
-
-
-            <h3 className="p-2">How to Use</h3>
+            <h3 className="p-2">Examples</h3>
             <p className="pad-left-2">
                 To use the Couple{"<A, B>"} or Couple{"<A, B, C>"} structure, follow these steps:
             </p>
@@ -69,33 +68,38 @@ export default function Function() {
                 <li>Use the Set method to update the values with another Couple instance.</li>
                 <li>Apply the CoupleAttribute (Optional) to control the display ratios of the fields in the Inspector.</li>
             </ul>
-
-            <h4 className="c-light-1 p-3">Example 01: Working with a Pair of Values</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Couples/Couples - 01.jpg" alt=""/>            
-            <p className="pad-left-3"> 
-                A Couple{"<int, float>"} is created to hold an int (ValueA) and a float (ValueB). 
-                The Set method is used to update the values with those from another Couple{"<int, float>"}. 
-                This example demonstrates the basic use of the Couple{"<A, B>"} structure for pairing values of different types.
-            </p>
-            <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Couples/Couples - 02.jpg" alt=""/>            
-
-            <h4 className="c-light-1 p-3">Example 02: Working with a Trio of Values</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Couples/Couples - 03.jpg" alt=""/>            
-            <p className="pad-left-3"> 
-                A Couple{"<string, int, bool>"} is used to couple a string (ValueA), an int (ValueB) and a bool (ValueC). 
-                The Set method is used to update ValueA and ValueB using another Couple{"<string, int>"}. 
-                This example illustrates the usage of Couple{"<A, B, C>"} for a more complex combination of types.
-            </p>
-            <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Couples/Couples - 04.jpg" alt=""/>            
-
-            <h4 className="c-light-1 p-3">Example 03: Customizing Inspector Layout with CoupleAttribute</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Couples/Couples - 05.jpg" alt=""/>            
-            <p className="pad-left-3"> 
-                Here, the Couple attribute is applied to customize the display ratio in the Inspector, setting ValueA to occupy 70% of the space and ValueB 30%. 
-                The example shows how to use the attribute to control the visual layout in the Inspector, making it more intuitive and tailored to the specific use case.
-            </p>
-            <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Couples/Couples - 06.jpg" alt=""/>            
-
+            <Group title="Example 01: Working with a Pair of Values" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Couples/Couples - 01.jpg" alt=""/>            
+                    <p> 
+                        A Couple{"<int, float>"} is created to hold an int (ValueA) and a float (ValueB). 
+                        The Set method is used to update the values with those from another Couple{"<int, float>"}. 
+                        This example demonstrates the basic use of the Couple{"<A, B>"} structure for pairing values of different types.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Couples/Couples - 02.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 02: Working with a Trio of Values" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Couples/Couples - 03.jpg" alt=""/>            
+                    <p> 
+                        A Couple{"<string, int, bool>"} is used to couple a string (ValueA), an int (ValueB) and a bool (ValueC). 
+                        The Set method is used to update ValueA and ValueB using another Couple{"<string, int>"}. 
+                        This example illustrates the usage of Couple{"<A, B, C>"} for a more complex combination of types.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Couples/Couples - 04.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 03: Customizing Inspector Layout with CoupleAttribute" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Couples/Couples - 05.jpg" alt=""/>            
+                    <p> 
+                        Here, the Couple attribute is applied to customize the display ratio in the Inspector, setting ValueA to occupy 70% of the space and ValueB 30%. 
+                        The example shows how to use the attribute to control the visual layout in the Inspector, making it more intuitive and tailored to the specific use case.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Couples/Couples - 06.jpg" alt=""/>            
+                </div>
+            )}/>
 
             <h3 className="p-2">Notes</h3>
             <ul>

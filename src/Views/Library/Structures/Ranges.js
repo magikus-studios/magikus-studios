@@ -1,4 +1,5 @@
 import React from "react";
+import Group from "Components/Group";
 
 export default function Function() {
 
@@ -21,7 +22,6 @@ export default function Function() {
                 <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Ranges/Ranges - 05.jpg" alt=""/>            
             </div>
 
-
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">
                 This structure is particularly useful in scenarios where you need to validate, compare or operate on values that fall within a specific range. 
@@ -29,37 +29,33 @@ export default function Function() {
                 For instance, it can be used to check if a value lies within the defined range (InRange), if it is exactly at one of the limits (InLimit) or if it falls outside the range (IsOutside). 
                 The generic nature of Range{"<T>"} allows it to be adapted to various types and contexts, making it a powerful tool for handling ranges in a type-safe and consistent manner.
             </p>
+            <Group title="Range" content={(
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
+                    <ul>
+                        <li><b2>T</b2> <b1>Min</b1>: Min value of the range</li>
+                        <li><b2>T</b2> <b1>Max</b1>: Max value of the range</li>
+                    </ul>
+                    <h5 className="c-light-1">Methods</h5>
+                    <ul>
+                        <li><b2>bool</b2> <b1>IsRange</b1>(<b2>T</b2> <b1>value</b1>): Returns true if the value is in range (including the min and max values).</li>
+                        <li><b2>bool</b2> <b1>IsInside</b1>(<b2>T</b2> <b1>value</b1>): Returns true if the value is inside the range.</li>
+                        <li><b2>bool</b2> <b1>IsOutside</b1>(<b2>T</b2> <b1>value</b1>): Returns true if the value is outside range.</li>
+                        <li><b2>bool</b2> <b1>InLimit</b1>(<b2>T</b2> <b1>value</b1>): Returns true if the value is equal to the min or max values of the range.</li>
+                        <li><b2>bool</b2> <b1>IsMin</b1>(<b2>T</b2> <b1>value</b1>): Returns true if the value is equal to the min value of the range.</li>
+                        <li><b2>bool</b2> <b1>IsMax</b1>(<b2>T</b2> <b1>value</b1>): Returns true if the value is equal to the max value of the range.</li>
+                        <li><b2>bool</b2> <b1>IsLower</b1>(<b2>T</b2> <b1>value</b1>): Returns true if the value is lower than the min value of the range.</li>
+                        <li><b2>bool</b2> <b1>IsHigher</b1>(<b2>T</b2> <b1>value</b1>): Returns true if the value is higher than the min value of the range.</li>
+                    </ul>
+                    <h5 className="c-light-1">Virtual</h5>
+                    <ul>
+                        <li><b2>virtual int</b2> <b1>CompareTo</b1>(<b2>T</b2> <b1>value</b1>, <b2>T</b2> <b1>other</b1>): Compares the two values.</li>
+                        <li><b2>virtual bool</b2> <b1>Equals</b1>(<b2>T</b2> <b1>value</b1>, <b2>T</b2> <b1>other</b1>): Returns true if the two values are equal.</li>
+                    </ul>
+                </div>
+            )}/>
 
-
-            <h3 className="p-2">How it Works</h3>
-
-            <div className="p-3">
-                <h4 className="c-light-1 pad-left-2">Range</h4>
-                <h5 className="c-light-1 pad-left-3">Properties</h5>
-                <ul>
-                    <li><b2>T</b2> <b1>Min</b1>: Min value of the range</li>
-                    <li><b2>T</b2> <b1>Max</b1>: Max value of the range</li>
-                </ul>
-                <h5 className="c-light-1 pad-left-3">Methods</h5>
-                <ul>
-                    <li><b2>bool</b2> <b1>IsRange</b1>(<b2>T</b2> <b1>value</b1>): Returns true if the value is in range (including the min and max values).</li>
-                    <li><b2>bool</b2> <b1>IsInside</b1>(<b2>T</b2> <b1>value</b1>): Returns true if the value is inside the range.</li>
-                    <li><b2>bool</b2> <b1>IsOutside</b1>(<b2>T</b2> <b1>value</b1>): Returns true if the value is outside range.</li>
-                    <li><b2>bool</b2> <b1>InLimit</b1>(<b2>T</b2> <b1>value</b1>): Returns true if the value is equal to the min or max values of the range.</li>
-                    <li><b2>bool</b2> <b1>IsMin</b1>(<b2>T</b2> <b1>value</b1>): Returns true if the value is equal to the min value of the range.</li>
-                    <li><b2>bool</b2> <b1>IsMax</b1>(<b2>T</b2> <b1>value</b1>): Returns true if the value is equal to the max value of the range.</li>
-                    <li><b2>bool</b2> <b1>IsLower</b1>(<b2>T</b2> <b1>value</b1>): Returns true if the value is lower than the min value of the range.</li>
-                    <li><b2>bool</b2> <b1>IsHigher</b1>(<b2>T</b2> <b1>value</b1>): Returns true if the value is higher than the min value of the range.</li>
-                </ul>
-                <h5 className="c-light-1 pad-left-3">Virtual</h5>
-                <ul>
-                    <li><b2>virtual int</b2> <b1>CompareTo</b1>(<b2>T</b2> <b1>value</b1>, <b2>T</b2> <b1>other</b1>): Compares the two values.</li>
-                    <li><b2>virtual bool</b2> <b1>Equals</b1>(<b2>T</b2> <b1>value</b1>, <b2>T</b2> <b1>other</b1>): Returns true if the two values are equal.</li>
-                </ul>
-            </div>
-
-
-            <h3 className="p-2">How to Use</h3>
+            <h3 className="p-2">Examples</h3>
             <p className="pad-left-2">
                 To use the Range{"<T>"} structure, you can create an instance by specifying the type for which you want to define a range (e.g., int, float, DateTime, etc.).
                 The structure provides various methods to operate on and validate the values against the defined range. 
@@ -78,43 +74,48 @@ export default function Function() {
             <p className="pad-left-2">
                 Here are three examples demonstrating how to use the Range{"<T>"} structure with different types, using the methods provided by the structure.
             </p>
-
-            <h4 className="c-light-1 p-3">Example 01: Working with Integers</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Ranges/Ranges - 01.jpg" alt=""/>            
-            <p className="pad-left-3"> 
-                In this example, an integer range is created with a minimum value of 5 and a maximum value of 15. 
-                The InRange method is used to check if the value 10 is within the range. 
-                The IsInside method checks if 5 is strictly within the range (it’s not, because 5 is the minimum). 
-                The IsOutside method checks if 20 is outside the defined range. 
-                The InLimit method confirms if 15 is one of the limits. 
-                The IsMin method checks if 5 is the minimum value. 
-                The IsLower method verifies if 2 is lower than the minimum value.
-            </p>
-            <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Ranges/Ranges - 02.jpg" alt=""/>            
-            <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Ranges/Ranges - 03.jpg" alt=""/>            
-
-            <h4 className="c-light-1 p-3">Example 02: Working with Floats</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Ranges/Ranges - 04.jpg" alt=""/>            
-            <p className="pad-left-3"> 
-                Here, a float range is created with a minimum of 0.5f and a maximum of 5.5f. 
-                The InRange method checks if 3.3f lies within the range. 
-                The IsInside method checks if 0.5f is strictly within the range. 
-                The IsHigher method determines if 6.0f is higher than the maximum value. 
-                The IsMax method checks if 5.5f is the maximum value.
-            </p>
-            <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Ranges/Ranges - 05.jpg" alt=""/>            
-            <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Ranges/Ranges - 06.jpg" alt=""/>            
-
-            <h4 className="c-light-1 p-3">Example 03: Working with Dates</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Ranges/Ranges - 07.jpg" alt=""/>            
-            <p className="pad-left-3">
-                A Range{"<DateTime>"} is created to represent the year 2023. 
-                The InRange method is used to check if a specific date in June 2023 falls within the range. 
-                The IsInside method checks if a date outside the range (end of 2022) is within the range. 
-                The IsOutside method confirms that a date in 2024 is outside the range.
-            </p>
-            <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Ranges/Ranges - 08.jpg" alt=""/>            
-
+            <Group title="Example 01: Working with Integers" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Ranges/Ranges - 01.jpg" alt=""/>            
+                    <p> 
+                        In this example, an integer range is created with a minimum value of 5 and a maximum value of 15. 
+                        The InRange method is used to check if the value 10 is within the range. 
+                        The IsInside method checks if 5 is strictly within the range (it’s not, because 5 is the minimum). 
+                        The IsOutside method checks if 20 is outside the defined range. 
+                        The InLimit method confirms if 15 is one of the limits. 
+                        The IsMin method checks if 5 is the minimum value. 
+                        The IsLower method verifies if 2 is lower than the minimum value.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Ranges/Ranges - 02.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Ranges/Ranges - 03.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 02: Working with Floats" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Ranges/Ranges - 04.jpg" alt=""/>            
+                    <p> 
+                        Here, a float range is created with a minimum of 0.5f and a maximum of 5.5f. 
+                        The InRange method checks if 3.3f lies within the range. 
+                        The IsInside method checks if 0.5f is strictly within the range. 
+                        The IsHigher method determines if 6.0f is higher than the maximum value. 
+                        The IsMax method checks if 5.5f is the maximum value.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Ranges/Ranges - 05.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Ranges/Ranges - 06.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 03: Working with Dates" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Ranges/Ranges - 07.jpg" alt=""/>            
+                    <p>
+                        A Range{"<DateTime>"} is created to represent the year 2023. 
+                        The InRange method is used to check if a specific date in June 2023 falls within the range. 
+                        The IsInside method checks if a date outside the range (end of 2022) is within the range. 
+                        The IsOutside method confirms that a date in 2024 is outside the range.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Ranges/Ranges - 08.jpg" alt=""/>            
+                </div>
+            )}/>
 
             <h3 className="p-2">Notes</h3>
             <ul>

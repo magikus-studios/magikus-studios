@@ -22,10 +22,7 @@ export default function Function() {
             <p className="pad-left-2">
                 The Create class provides a versatile and straightforward way to create common Unity types such as Vector2, Vector2Int, Vector3, Vector3Int, Color and Rect. 
                 This class simplifies the process of creating instances of these types with various initialization options, making it easier to handle common values in Unity projects.
-            </p>
-
-            <h3 className="p-2">How it Works</h3>
- 
+            </p> 
             <Group title="Vector2" content={(
                 <div>
                     <p>
@@ -171,13 +168,16 @@ export default function Function() {
                 </div>
             )}/>
 
-
-            <h3 className="p-2">How to Use</h3>
-            <p className="pad-left-3">
-                Here is an example of how to use all the methods provided by the Create class:
-            </p>
-            <img className="block-center mar-bottom-3 img-border w-100" src="images/Library/Utilities/Create/Create - 01.jpg" alt=""/>            
-            <img className="block-center mar-bottom-3 img-border w-100" src="images/Library/Utilities/Create/Create - 02.jpg" alt=""/>            
+            <h3 className="p-2">Examples</h3>
+            <Group title="Example 01: Basic Usage of Create Utilities" content={(
+                <div>
+                    <p>
+                        Here is an example of how to use all the methods provided by the Create class:
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-100" src="images/Library/Utilities/Create/Create - 01.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-100" src="images/Library/Utilities/Create/Create - 02.jpg" alt=""/>            
+                </div>
+            )}/>
 
             <h3 className="p-2">Notes</h3>
             <ul>

@@ -22,10 +22,7 @@ export default function Function() {
             <p className="pad-left-2">
                 These methods allow users to perform various operations on strings and characters, such as checking for conditions, counting occurrences or modifying content. 
                 The utilities are flexible, offering several ways to manipulate string data based on an index, character types or even enum-based conditions.
-            </p>
-
-            <h3 className="p-2">How it Works</h3>
- 
+            </p> 
             <Group title="Get" content={(
                 <div>
                     <p>
@@ -51,7 +48,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Is" content={(
                 <div>
                     <p>
@@ -76,7 +72,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="IsSpecial" content={(
                 <div>
                     <p>
@@ -96,7 +91,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="IsLength" content={(
                 <div>
                     <p>
@@ -116,7 +110,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Contains" content={(
                 <div>
                     <p>
@@ -140,7 +133,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Count" content={(
                 <div>
                     <p>
@@ -163,7 +155,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Check" content={(
                 <div>
                     <p>
@@ -183,7 +174,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Repeat" content={(
                 <div>
                     <p>
@@ -202,7 +192,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Reverse" content={(
                 <div>
                     <p>
@@ -220,7 +209,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Replace" content={(
                 <div>
                     <p>
@@ -258,7 +246,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Remove" content={(
                 <div>
                     <p>
@@ -286,7 +273,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Encase" content={(
                 <div>
                     <p>
@@ -325,7 +311,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Fill" content={(
                 <div>
                     <p>
@@ -353,7 +338,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Insert" content={(
                 <div>
                     <p>
@@ -379,7 +363,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>	
-
             <Group title="Swap" content={(
                 <div>
                     <p>
@@ -397,7 +380,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Shift" content={(
                 <div>
                     <p>
@@ -416,7 +398,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Shuffle" content={(
                 <div>
                     <p>
@@ -434,7 +415,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Move" content={(
                 <div>
                     <p>
@@ -453,7 +433,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Concat" content={(
                 <div>
                     <p>
@@ -486,7 +465,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Split" content={(
                 <div>
                     <p>
@@ -516,17 +494,25 @@ export default function Function() {
                 </div>
             )}/>
 
-
-            <h3 className="p-2">How to Use</h3>
+            <h3 className="p-2">Examples</h3>
             <p className="pad-left-3">
                 This section provides detailed examples on how to use the Textop utilities methods effectively.
             </p>
-            <h4 className="c-light-1 p-3">Example 01: String Inspection</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Textop/Textop - 01.jpg" alt=""/>            
-            <h4 className="c-light-1 p-3">Example 02: String Modification</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Textop/Textop - 02.jpg" alt=""/>            
-            <h4 className="c-light-1 p-3">Example 03: Complex String Manipulation</h4>
-            <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Textop/Textop - 03.jpg" alt=""/>            
+            <Group title="Example 01: String Inspection" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Textop/Textop - 01.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 02: String Modification" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Textop/Textop - 02.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 03: Complex String Manipulation" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Textop/Textop - 03.jpg" alt=""/>            
+                </div>
+            )}/>
 
             <h3 className="p-2">Notes</h3>
             <ul>

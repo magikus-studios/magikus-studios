@@ -21,10 +21,7 @@ export default function Function() {
             <p className="pad-left-2">
                 These utilities make it easier to manipulate, access and modify elements within arrays and lists through a variety of convenient operations. 
                 The supported methods include accessing elements from the last position, concatenating multiple lists, splitting, creating subsets, reversing order, swapping elements, shifting, shuffling and moving elements between positions.
-            </p>
-
-            <h3 className="p-2">How it Works</h3>
- 
+            </p> 
             <Group title="Get" content={(
                 <div>
                     <p>
@@ -47,7 +44,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Concat" content={(
                 <div>
                     <p>
@@ -69,7 +65,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Split" content={(
                 <div>
                     <p>
@@ -97,7 +92,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Subset" content={(
                 <div>
                     <p>
@@ -126,7 +120,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Reverse" content={(
                 <div>
                     <p>
@@ -146,7 +139,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Remove" content={(
                 <div>
                     <p>
@@ -164,7 +156,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Insert" content={(
                 <div>
                     <p>
@@ -182,7 +173,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Swap" content={(
                 <div>
                     <p>
@@ -202,7 +192,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Shift" content={(
                 <div>
                     <p>
@@ -224,7 +213,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Shuffle" content={(
                 <div>
                     <p>
@@ -244,7 +232,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-
             <Group title="Move" content={(
                 <div>
                     <p>
@@ -266,14 +253,15 @@ export default function Function() {
                 </div>
             )}/>
 
-
-            <h3 className="p-2">How to Use</h3>
-            
-            <h4 className="c-light-1 p-3">Example</h4>
-            <p className="pad-left-3">
-                Here’s an example of how to use each method:
-            </p>
-            <img className="block-center mar-bottom-3 img-border w-100" src="images/Library/Utilities/Listop/Listop - 01.jpg" alt=""/>            
+            <h3 className="p-2">Examples</h3>            
+            <Group title="Example 01: Basic Usage of Listop Utilities" content={(
+                <div>
+                    <p>
+                        Here’s an example of how to use each method:
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-100" src="images/Library/Utilities/Listop/Listop - 01.jpg" alt=""/>            
+                </div>
+            )}/>
 
             <h3 className="p-2">Notes</h3>
             <ul>
