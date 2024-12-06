@@ -3,6 +3,7 @@
         "label": "Library",
         "items": [
             { "label": "Introduction" , "link": "/#/library" },
+            { "label": "Installation" , "link": "/#/library/installation" },
             { "label": "Changelog", "link": "/#/library/changelog" },
             { "label": "License", "link": "/#/library/license" }
         ]
@@ -54,10 +55,12 @@
         "label": "Systems",
         "items": [
             { "label": "[Systems]", "link": "/#/library/systems" },
-            { "label": "Animation System *", "link": "/#/library/systems/animationSystem", "pro": true },
-            { "label": "Tweak System *", "link": "/#/library/systems/tweakSystem", "pro": true },
-            { "label": "Audio System *", "link": "/#/library/systems/audioSystem", "pro": true },
-            { "label": "Dialog System *", "link": "/#/library/systems/dialogSystem", "pro": true }
+            { "label": "Pool System *", "link": "/#/library/systems/pool" },
+            { "label": "Animation System *", "link": "/#/library/systems/animation", "pro": true },
+            { "label": "Tweak System *", "link": "/#/library/systems/tweak", "pro": true },
+            { "label": "Audio System *", "link": "/#/library/systems/audio", "pro": true },
+            { "label": "Dialog System *", "link": "/#/library/systems/dialog", "pro": true },
+            { "label": "Navigation System *", "link": "/#/library/systems/navigation", "pro": true }
         ]
     },
     {

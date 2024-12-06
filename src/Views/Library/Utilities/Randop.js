@@ -31,39 +31,48 @@ export default function Function() {
                     <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static bool</b2> <b1>Bool</b1>(<b2>float</b2> <b1>trueChance = 0.5f</b1>)</li>
+                        <li><b2>static bool[]</b2> <b1>BoolArray</b1>(<b2>int</b2> <b1>amount</b1>, <b2>float</b2> <b1>trueChance = 0.5f</b1>)</li>
+                        <li><b2>static List{"<"}bool{">"}</b2> <b1>BoolList</b1>(<b2>int</b2> <b1>amount</b1>, <b2>float</b2> <b1>trueChance = 0.5f</b1>)</li>
                     </ul>
                     <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>float</b2> <b1>trueChance</b1>: The chances (from 0f to 1f) of getting a true value</li>                    
+                        <li><b2>int</b2> <b1>amount</b1>: The amount of random values generated for the array or list</li>                    
                     </ul>
                 </div>
             )}/>
             <Group title="Value" content={(
                 <div>
                     <p>
-                        Generates a random values between the specified min and max range. 
+                        Generates a random values between the specified min and max range. If no min or max values are specified, defaults are minValue and maxValue.
                     </p>
                     <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>static int</b2> <b1>Int</b1>(<b2>int</b2> <b1>min = int.MinValue</b1>, <b2>int</b2> <b1>max = int.MaxValue – 1</b1>)</li>
-                        <li><b2>static float</b2> <b1>Float</b1>(<b2>float</b2> <b1>min = float.MinValue</b1>, <b2>float</b2> <b1>max = float.MaxValue</b1>)</li>
+                        <li><b2>static int</b2> <b1>Int</b1>()</li>
+                        <li><b2>static int</b2> <b1>Int</b1>(<b2>int</b2> <b1>min</b1>, <b2>int</b2> <b1>max</b1>)</li>
+                        <li><b2>static float</b2> <b1>Float</b1>()</li>
+                        <li><b2>static float</b2> <b1>Float</b1>(<b2>float</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <br/>
-                        <li><b2>static Vector2</b2> <b1>Vector2</b1>(<b2>float</b2> <b1>min = float.MinValue</b1>, <b2>float</b2> <b1>max = float.MaxValue</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>Vector2</b1>()</li>
+                        <li><b2>static Vector2</b2> <b1>Vector2</b1>(<b2>float</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector2</b2> <b1>Vector2</b1>(<b2>float</b2> <b1>min</b1>, <b2>Vector2</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector2</b2> <b1>Vector2</b1>(<b2>Vector2</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector2</b2> <b1>Vector2</b1>(<b2>Vector2</b2> <b1>min</b1>, <b2>Vector2</b2> <b1>max</b1>)</li>
                         <br/>
-                        <li><b2>static Vector2Int</b2> <b1>Vector2Int</b1>(<b2>int</b2> <b1>min = int.MinValue</b1>, <b2>int</b2> <b1>max = int.MaxValue – 1</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>Vector2Int</b1>()</li>
+                        <li><b2>static Vector2Int</b2> <b1>Vector2Int</b1>(<b2>int</b2> <b1>min</b1>, <b2>int</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector2Int</b2> <b1>Vector2Int</b1>(<b2>int</b2> <b1>min</b1>, <b2>Vector2Int</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector2Int</b2> <b1>Vector2Int</b1>(<b2>Vector2Int</b2> <b1>min</b1>, <b2>int</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector2Int</b2> <b1>Vector2Int</b1>(<b2>Vector2Int</b2> <b1>min</b1>, <b2>Vector2Int</b2> <b1>max</b1>)</li>
                         <br/>
-                        <li><b2>static Vector3</b2> <b1>Vector3</b1>(<b2>float</b2> <b1>min = float.MinValue</b1>, <b2>float</b2> <b1>max = float.MaxValue</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>Vector3</b1>()</li>
+                        <li><b2>static Vector3</b2> <b1>Vector3</b1>(<b2>float</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector3</b2> <b1>Vector3</b1>(<b2>float</b2> <b1>min</b1>, <b2>Vector3</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector3</b2> <b1>Vector3</b1>(<b2>Vector3</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector3</b2> <b1>Vector3</b1>(<b2>Vector3</b2> <b1>min</b1>, <b2>Vector3</b2> <b1>max</b1>)</li>
                         <br/>
-                        <li><b2>static Vector3Int</b2> <b1>Vector3Int</b1>(<b2>int</b2> <b1>min = int.MinValue</b1>, <b2>int</b2> <b1>max = int.MaxValue – 1</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>Vector3Int</b1>()</li>
+                        <li><b2>static Vector3Int</b2> <b1>Vector3Int</b1>(<b2>int</b2> <b1>min</b1>, <b2>int</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector3Int</b2> <b1>Vector3Int</b1>(<b2>int</b2> <b1>min</b1>, <b2>Vector3Int</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector3Int</b2> <b1>Vector3Int</b1>(<b2>Vector3Int</b2> <b1>min</b1>, <b2>int</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector3Int</b2> <b1>Vector3Int</b1>(<b2>Vector3Int</b2> <b1>min</b1>, <b2>Vector3Int</b2> <b1>max</b1>)</li>
@@ -75,6 +84,15 @@ export default function Function() {
                         <li><b2>static Color</b2> <b1>Color</b1>(<b2>float</b2> <b1>min</b1>, <b2>Color</b2> <b1>max</b1>)</li>
                         <li><b2>static Color</b2> <b1>Color</b1>(<b2>Color</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <li><b2>static Color</b2> <b1>Color</b1>(<b2>Color</b2> <b1>min</b1>, <b2>Color</b2> <b1>max</b1>)</li>
+                        <br/>
+                        <li><b2>static int[]</b2> <b1>IntArray</b1>(<b2>int</b2> <b1>amount</b1>)</li>
+                        <li><b2>static int[]</b2> <b1>IntArray</b1>(<b2>int</b2> <b1>amount</b1>, <b2>int</b2> <b1>min</b1>, <b2>int</b2> <b1>max</b1>)</li>
+                        <li><b2>static List{"<"}int{">"}</b2> <b1>IntList</b1>(<b2>int</b2> <b1>amount</b1>)</li>
+                        <li><b2>static List{"<"}int{">"}</b2> <b1>IntList</b1>(<b2>int</b2> <b1>amount</b1>, <b2>int</b2> <b1>min</b1>, <b2>int</b2> <b1>max</b1>)</li>
+                        <li><b2>static float[]</b2> <b1>FloatArray</b1>(<b2>int</b2> <b1>amount</b1>)</li>
+                        <li><b2>static float[]</b2> <b1>FloatArray</b1>(<b2>int</b2> <b1>amount</b1>, <b2>float</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
+                        <li><b2>static List{"<"}float{">"}</b2> <b1>FloatList</b1>(<b2>int</b2> <b1>amount</b1>)</li>
+                        <li><b2>static List{"<"}float{">"}</b2> <b1>FloatList</b1>(<b2>int</b2> <b1>amount</b1>, <b2>float</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
                     </ul>
                     <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
@@ -92,6 +110,41 @@ export default function Function() {
                         <li><b2>Vector2Int</b2> <b1>max</b1>: Maximum range value for each axis</li>                    
                         <li><b2>Vector3Int</b2> <b1>max</b1>: Maximum range value for each axis</li>                    
                         <li><b2>Color</b2> <b1>max</b1>: Maximum range value for each axis</li>                    
+                        <li><b2>int</b2> <b1>amount</b1>: The amount of random values generated for the array or list</li>                    
+                    </ul>
+                </div>
+            )}/>
+            <Group title="Abs" content={(
+                <div>
+                    <p>
+                        Generates a random positive value between 0 and the specified max value.
+                    </p>
+                    <h5 className="c-light-1">Signature</h5>
+                    <ul className="property-list">
+                        <li><b2>static int</b2> <b1>Int</b1>(<b2>int</b2> <b1>max</b1>)</li>
+                        <li><b2>static float</b2> <b1>Float</b1>(<b2>float</b2> <b1>max</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>Vector2</b1>(<b2>float</b2> <b1>max</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>Vector2</b1>(<b2>Vector2</b2> <b1>max</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>Vector2Int</b1>(<b2>int</b2> <b1>max</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>Vector2Int</b1>(<b2>Vector2Int</b2> <b1>max</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>Vector3</b1>(<b2>float</b2> <b1>max</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>Vector3</b1>(<b2>Vector3</b2> <b1>max</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>Vector3Int</b1>(<b2>int</b2> <b1>max</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>Vector3Int</b1>(<b2>Vector3Int</b2> <b1>max</b1>)</li>
+                        <li><b2>static int[]</b2> <b1>IntArray</b1>(<b2>int</b2> <b1>amount</b1>, <b2>int</b2> <b1>max</b1>)</li>
+                        <li><b2>static List{"<"}int{">"}</b2> <b1>IntList</b1>(<b2>int</b2> <b1>amount</b1>, <b2>int</b2> <b1>max</b1>)</li>
+                        <li><b2>static float[]</b2> <b1>FloatArray</b1>(<b2>int</b2> <b1>amount</b1>, <b2>float</b2> <b1>max</b1>)</li>
+                        <li><b2>static List{"<"}float{">"}</b2> <b1>FloatList</b1>(<b2>int</b2> <b1>amount</b1>, <b2>float</b2> <b1>max</b1>)</li>
+                    </ul>
+                    <h5 className="c-light-1">Parameters</h5>
+                    <ul className="property-list">
+                        <li><b2>int</b2> <b1>max</b1>: The maximum value of the range</li>                    
+                        <li><b2>float</b2> <b1>max</b1>: The maximum value of the range</li>                    
+                        <li><b2>Vector2</b2> <b1>max</b1>: The maximum range value for each axis</li>                    
+                        <li><b2>Vector3</b2> <b1>max</b1>: The maximum range value for each axis</li>                    
+                        <li><b2>Vector2Int</b2> <b1>max</b1>: The maximum range value for each axis</li>                    
+                        <li><b2>Vector3Int</b2> <b1>max</b1>: The maximum range value for each axis</li>                    
+                        <li><b2>int</b2> <b1>amount</b1>: The amount of random values generated for the array or list</li>                    
                     </ul>
                 </div>
             )}/>
@@ -102,36 +155,41 @@ export default function Function() {
                     </p>
                     <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>static int</b2> <b1>Int_Range</b1>(<b2>int</b2> <b1>range</b1>, <b2>int</b2> <b1>center = 0</b1>)</li>
-                        <li><b2>static float</b2> <b1>Float_Range</b1>(<b2>float</b2> <b1>range</b1>, <b2>float</b2> <b1>center = 0f</b1>)</li>
+                        <li><b2>static int</b2> <b1>RangeInt</b1>(<b2>int</b2> <b1>range</b1>, <b2>int</b2> <b1>center = 0</b1>)</li>
+                        <li><b2>static float</b2> <b1>RangeFloat</b1>(<b2>float</b2> <b1>range</b1>, <b2>float</b2> <b1>center = 0f</b1>)</li>
                         <br/>
-                        <li><b2>static Vector2</b2> <b1>Vector2_Range</b1>(<b2>float</b2> <b1>range</b1>, <b2>float</b2> <b1>center = 0f</b1>)</li>
-                        <li><b2>static Vector2</b2> <b1>Vector2_Range</b1>(<b2>float</b2> <b1>range</b1>, <b2>Vector2</b2> <b1>center</b1>)</li>
-                        <li><b2>static Vector2</b2> <b1>Vector2_Range</b1>(<b2>Vector2</b2> <b1>range</b1>, <b2>float</b2> <b1>center = 0f</b1>)</li>
-                        <li><b2>static Vector2</b2> <b1>Vector2_Range</b1>(<b2>Vector2</b2> <b1>range</b1>, <b2>Vector2</b2> <b1>center</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>RangeVector2</b1>(<b2>float</b2> <b1>range</b1>, <b2>float</b2> <b1>center = 0f</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>RangeVector2</b1>(<b2>float</b2> <b1>range</b1>, <b2>Vector2</b2> <b1>center</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>RangeVector2</b1>(<b2>Vector2</b2> <b1>range</b1>, <b2>float</b2> <b1>center = 0f</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>RangeVector2</b1>(<b2>Vector2</b2> <b1>range</b1>, <b2>Vector2</b2> <b1>center</b1>)</li>
                         <br/>
-                        <li><b2>static Vector2Int</b2> <b1>Vector2Int_Range</b1>(<b2>int</b2> <b1>range</b1>, <b2>int</b2> <b1>center = 0</b1>)</li>
-                        <li><b2>static Vector2Int</b2> <b1>Vector2Int_Range</b1>(<b2>int</b2> <b1>range</b1>, <b2>Vector2Int</b2> <b1>center</b1>)</li>
-                        <li><b2>static Vector2Int</b2> <b1>Vector2Int_Range</b1>(<b2>Vector2Int</b2> <b1>range</b1>, <b2>int</b2> <b1>center = 0</b1>)</li>
-                        <li><b2>static Vector2Int</b2> <b1>Vector2Int_Range</b1>(<b2>Vector2Int</b2> <b1>range</b1>, <b2>Vector2Int</b2> <b1>center</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>RangeVector2Int</b1>(<b2>int</b2> <b1>range</b1>, <b2>int</b2> <b1>center = 0</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>RangeVector2Int</b1>(<b2>int</b2> <b1>range</b1>, <b2>Vector2Int</b2> <b1>center</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>RangeVector2Int</b1>(<b2>Vector2Int</b2> <b1>range</b1>, <b2>int</b2> <b1>center = 0</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>RangeVector2Int</b1>(<b2>Vector2Int</b2> <b1>range</b1>, <b2>Vector2Int</b2> <b1>center</b1>)</li>
                         <br/>
-                        <li><b2>static Vector3</b2> <b1>Vector3_Range</b1>(<b2>float</b2> <b1>range</b1>, <b2>float</b2> <b1>center = 0f</b1>)</li>
-                        <li><b2>static Vector3</b2> <b1>Vector3_Range</b1>(<b2>float</b2> <b1>range</b1>, <b2>Vector3</b2> <b1>center</b1>)</li>
-                        <li><b2>static Vector3</b2> <b1>Vector3_Range</b1>(<b2>Vector3</b2> <b1>range</b1>, <b2>float</b2> <b1>center = 0f</b1>)</li>
-                        <li><b2>static Vector3</b2> <b1>Vector3_Range</b1>(<b2>Vector3</b2> <b1>range</b1>, <b2>Vector3</b2> <b1>center</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>RangeVector3</b1>(<b2>float</b2> <b1>range</b1>, <b2>float</b2> <b1>center = 0f</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>RangeVector3</b1>(<b2>float</b2> <b1>range</b1>, <b2>Vector3</b2> <b1>center</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>RangeVector3</b1>(<b2>Vector3</b2> <b1>range</b1>, <b2>float</b2> <b1>center = 0f</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>RangeVector3</b1>(<b2>Vector3</b2> <b1>range</b1>, <b2>Vector3</b2> <b1>center</b1>)</li>
                         <br/>
-                        <li><b2>static Vector3Int</b2> <b1>Vector3Int_Range</b1>(<b2>int</b2> <b1>range</b1>, <b2>int</b2> <b1>center = 0</b1>)</li>
-                        <li><b2>static Vector3Int</b2> <b1>Vector3Int_Range</b1>(<b2>int</b2> <b1>range</b1>, <b2>Vector3Int</b2> <b1>center</b1>)</li>
-                        <li><b2>static Vector3Int</b2> <b1>Vector3Int_Range</b1>(<b2>Vector3Int</b2> <b1>range</b1>, <b2>int</b2> <b1>center = 0</b1>)</li>
-                        <li><b2>static Vector3Int</b2> <b1>Vector3Int_Range</b1>(<b2>Vector3Int</b2> <b1>range</b1>, <b2>Vector3Int</b2> <b1>center</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>RangeVector3Int</b1>(<b2>int</b2> <b1>range</b1>, <b2>int</b2> <b1>center = 0</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>RangeVector3Int</b1>(<b2>int</b2> <b1>range</b1>, <b2>Vector3Int</b2> <b1>center</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>RangeVector3Int</b1>(<b2>Vector3Int</b2> <b1>range</b1>, <b2>int</b2> <b1>center = 0</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>RangeVector3Int</b1>(<b2>Vector3Int</b2> <b1>range</b1>, <b2>Vector3Int</b2> <b1>center</b1>)</li>
                         <br/>
-                        <li><b2>static Color</b2> <b1>Color_Range</b1>(<b2>int</b2> <b1>range</b1>, <b2>int</b2> <b1>center = 127</b1>)</li>
-                        <li><b2>static Color</b2> <b1>Color_Range</b1>(<b2>Color</b2> <b1>range</b1>, <b2>int</b2> <b1>center = 127</b1>)</li>
-                        <li><b2>static Color</b2> <b1>Color_Range</b1>(<b2>int</b2> <b1>range</b1>, <b2>Color</b2> <b1>center</b1>)</li>
-                        <li><b2>static Color</b2> <b1>Color_Range</b1>(<b2>float</b2> <b1>range</b1>, <b2>float</b2> <b1>center = 0.5f</b1>)</li>
-                        <li><b2>static Color</b2> <b1>Color_Range</b1>(<b2>Color</b2> <b1>range</b1>, <b2>float</b2> <b1>center = 0.5f</b1>)</li>
-                        <li><b2>static Color</b2> <b1>Color_Range</b1>(<b2>float</b2> <b1>range</b1>, <b2>Color</b2> <b1>center</b1>)</li>
-                        <li><b2>static Color</b2> <b1>Color_Range</b1>(<b2>Color</b2> <b1>range</b1>, <b2>Color</b2> <b1>center</b1>)</li>                       
+                        <li><b2>static Color</b2> <b1>RangeColor</b1>(<b2>int</b2> <b1>range</b1>, <b2>int</b2> <b1>center = 127</b1>)</li>
+                        <li><b2>static Color</b2> <b1>RangeColor</b1>(<b2>Color</b2> <b1>range</b1>, <b2>int</b2> <b1>center = 127</b1>)</li>
+                        <li><b2>static Color</b2> <b1>RangeColor</b1>(<b2>int</b2> <b1>range</b1>, <b2>Color</b2> <b1>center</b1>)</li>
+                        <li><b2>static Color</b2> <b1>RangeColor</b1>(<b2>float</b2> <b1>range</b1>, <b2>float</b2> <b1>center = 0.5f</b1>)</li>
+                        <li><b2>static Color</b2> <b1>RangeColor</b1>(<b2>Color</b2> <b1>range</b1>, <b2>float</b2> <b1>center = 0.5f</b1>)</li>
+                        <li><b2>static Color</b2> <b1>RangeColor</b1>(<b2>float</b2> <b1>range</b1>, <b2>Color</b2> <b1>center</b1>)</li>
+                        <li><b2>static Color</b2> <b1>RangeColor</b1>(<b2>Color</b2> <b1>range</b1>, <b2>Color</b2> <b1>center</b1>)</li>   
+                        <br/>
+                        <li><b2>static int[]</b2> <b1>RangeIntArray</b1>(<b2>int</b2> <b1>amount</b1>, <b2>int</b2> <b1>range</b1>, <b2>int</b2> <b1>center = 0</b1>)</li>
+                        <li><b2>static List{"<"}int{">"}</b2> <b1>RangeIntList</b1>(<b2>int</b2> <b1>amount</b1>, <b2>int</b2> <b1>range</b1>, <b2>int</b2> <b1>center = 0f</b1>)</li>
+                        <li><b2>static float[]</b2> <b1>RangeFloatArray</b1>(<b2>int</b2> <b1>amount</b1>, <b2>float</b2> <b1>range</b1>, <b2>float</b2> <b1>center = 0</b1>)</li>
+                        <li><b2>static List{"<"}float{">"}</b2> <b1>RangeFloatList</b1>(<b2>int</b2> <b1>amount</b1>, <b2>float</b2> <b1>range</b1>, <b2>float</b2> <b1>center = 0f</b1>)</li>
                     </ul>
                     <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
@@ -149,93 +207,7 @@ export default function Function() {
                         <li><b2>Vector2Int</b2> <b1>center</b1>: The center value of the range for each axis</li>                    
                         <li><b2>Vector3Int</b2> <b1>center</b1>: The center value of the range for each axis</li>                    
                         <li><b2>Color</b2> <b1>center</b1>: The center value of the range for each axis</li>                    
-                    </ul>
-                </div>
-            )}/>
-            <Group title="Abs" content={(
-                <div>
-                    <p>
-                        Generates a random positive value between 0 and the specified max value.
-                    </p>
-                    <h5 className="c-light-1">Signature</h5>
-                    <ul className="property-list">
-                        <li><b2>static int</b2> <b1>Int_Abs</b1>(<b2>int</b2> <b1>max = int.MaxValue – 1</b1>)</li>
-                        <li><b2>static float</b2> <b1>Float_Abs</b1>(<b2>float</b2> <b1>max = float.MaxValue</b1>)</li>
-                        <li><b2>static Vector2</b2> <b1>Vector2_Abs</b1>(<b2>float</b2> <b1>max = float.MaxValue</b1>)</li>
-                        <li><b2>static Vector2</b2> <b1>Vector2_Abs</b1>(<b2>Vector2</b2> <b1>max</b1>)</li>
-                        <li><b2>static Vector2Int</b2> <b1>Vector2Int_Abs</b1>(<b2>int</b2> <b1>max = int.MaxValue – 1</b1>)</li>
-                        <li><b2>static Vector2Int</b2> <b1>Vector2Int_Abs</b1>(<b2>Vector2Int</b2> <b1>max</b1>)</li>
-                        <li><b2>static Vector3</b2> <b1>Vector3_Abs</b1>(<b2>float</b2> <b1>max = float.MaxValue</b1>)</li>
-                        <li><b2>static Vector3</b2> <b1>Vector3_Abs</b1>(<b2>Vector3</b2> <b1>max</b1>)</li>
-                        <li><b2>static Vector3Int</b2> <b1>Vector3Int_Abs</b1>(<b2>int</b2> <b1>max = int.MaxValue – 1</b1>)</li>
-                        <li><b2>static Vector3Int</b2> <b1>Vector3Int_Abs</b1>(<b2>Vector3Int</b2> <b1>max</b1>)</li>
-                    </ul>
-                    <h5 className="c-light-1">Parameters</h5>
-                    <ul className="property-list">
-                        <li><b2>int</b2> <b1>max</b1>: The maximum value of the range</li>                    
-                        <li><b2>float</b2> <b1>max</b1>: The maximum value of the range</li>                    
-                        <li><b2>Vector2</b2> <b1>max</b1>: The maximum range value for each axis</li>                    
-                        <li><b2>Vector3</b2> <b1>max</b1>: The maximum range value for each axis</li>                    
-                        <li><b2>Vector2Int</b2> <b1>max</b1>: The maximum range value for each axis</li>                    
-                        <li><b2>Vector3Int</b2> <b1>max</b1>: The maximum range value for each axis</li>                    
-                    </ul>
-                </div>
-            )}/>
-            <Group title="Even" content={(
-                <div>
-                    <p>
-                        Retrieves a random even value within the specified range.
-                    </p>
-                    <h5 className="c-light-1">Signature</h5>
-                    <ul className="property-list">
-                        <li><b2>static int</b2> <b1>Int_Even</b1>(<b2>int</b2> <b1>max = (int.MaxValue - 1) / 2</b1>)</li>
-                        <li><b2>static float</b2> <b1>Float_Even</b1>(<b2>float</b2> <b1>max = (float.MaxValue - 1) / 2</b1>)</li>
-                        <li><b2>static Vector2</b2> <b1>Vector2_Even</b1>(<b2>float</b2> <b1>max = (float.MaxValue - 1) / 2</b1>)</li>
-                        <li><b2>static Vector2</b2> <b1>Vector2_Even</b1>(<b2>Vector2</b2> <b1>max</b1>)</li>
-                        <li><b2>static Vector2Int</b2> <b1>Vector2Int_Even</b1>(<b2>int</b2> <b1>max = (int.MaxValue - 1) / 2</b1>)</li>
-                        <li><b2>static Vector2Int</b2> <b1>Vector2Int_Even</b1>(<b2>Vector2Int</b2> <b1>max</b1>)</li>
-                        <li><b2>static Vector3</b2> <b1>Vector3_Even</b1>(<b2>float</b2> <b1>max = (float.MaxValue - 1) / 2</b1>)</li>
-                        <li><b2>static Vector3</b2> <b1>Vector3_Even</b1>(<b2>Vector3</b2> <b1>max</b1>)</li>
-                        <li><b2>static Vector3Int</b2> <b1>Vector3Int_Even</b1>(<b2>int</b2> <b1>max = (int.MaxValue - 1) / 2</b1>)</li>
-                        <li><b2>static Vector3Int</b2> <b1>Vector3Int_Even</b1>(<b2>Vector3Int</b2> <b1>max</b1>)</li>                        
-                    </ul>
-                    <h5 className="c-light-1">Parameters</h5>
-                    <ul className="property-list">
-                    <li><b2>int</b2> <b1>max</b1>: The maximum value of the range</li>                    
-                        <li><b2>float</b2> <b1>max</b1>: The maximum value of the range</li>                    
-                        <li><b2>Vector2</b2> <b1>max</b1>: The maximum range value for each axis</li>                    
-                        <li><b2>Vector3</b2> <b1>max</b1>: The maximum range value for each axis</li>                    
-                        <li><b2>Vector2Int</b2> <b1>max</b1>: The maximum range value for each axis</li>                    
-                        <li><b2>Vector3Int</b2> <b1>max</b1>: The maximum range value for each axis</li>                    
-                    </ul>
-                </div>
-            )}/>
-            <Group title="Odd" content={(
-                <div>
-                    <p>
-                        Retrieves a random odd value within the specified range.
-                    </p>
-                    <h5 className="c-light-1">Signature</h5>
-                    <ul className="property-list">
-                        <li><b2>static int</b2> <b1>Int_Odd</b1>(<b2>int</b2> <b1>max = (int.MaxValue - 1) / 2</b1>)</li>
-                        <li><b2>static float</b2> <b1>Float_Odd</b1>(<b2>float</b2> <b1>max = (float.MaxValue - 1) / 2</b1>)</li>
-                        <li><b2>static Vector2</b2> <b1>Vector2_Odd</b1>(<b2>float</b2> <b1>max = (float.MaxValue - 1) / 2</b1>)</li>
-                        <li><b2>static Vector2</b2> <b1>Vector2_Odd</b1>(<b2>Vector2</b2> <b1>max</b1>)</li>
-                        <li><b2>static Vector2Int</b2> <b1>Vector2Int_Odd</b1>(<b2>int</b2> <b1>max = (int.MaxValue - 1) / 2</b1>)</li>
-                        <li><b2>static Vector2Int</b2> <b1>Vector2Int_Odd</b1>(<b2>Vector2Int</b2> <b1>max</b1>)</li>
-                        <li><b2>static Vector3</b2> <b1>Vector3_Odd</b1>(<b2>float</b2> <b1>max = (float.MaxValue - 1) / 2</b1>)</li>
-                        <li><b2>static Vector3</b2> <b1>Vector3_Odd</b1>(<b2>Vector3</b2> <b1>max</b1>)</li>
-                        <li><b2>static Vector3Int</b2> <b1>Vector3Int_Odd</b1>(<b2>int</b2> <b1>max = (int.MaxValue - 1) / 2</b1>)</li>
-                        <li><b2>static Vector3Int</b2> <b1>Vector3Int_Odd</b1>(<b2>Vector3Int</b2> <b1>max</b1>)</li>                        
-                    </ul>
-                    <h5 className="c-light-1">Parameters</h5>
-                    <ul className="property-list">
-                        <li><b2>int</b2> <b1>max</b1>: The maximum value of the range</li>                    
-                        <li><b2>float</b2> <b1>max</b1>: The maximum value of the range</li>                    
-                        <li><b2>Vector2</b2> <b1>max</b1>: The maximum range value for each axis</li>                    
-                        <li><b2>Vector3</b2> <b1>max</b1>: The maximum range value for each axis</li>                    
-                        <li><b2>Vector2Int</b2> <b1>max</b1>: The maximum range value for each axis</li>                    
-                        <li><b2>Vector3Int</b2> <b1>max</b1>: The maximum range value for each axis</li>                    
+                        <li><b2>int</b2> <b1>amount</b1>: The amount of random values generated for the array or list</li>                    
                     </ul>
                 </div>
             )}/>
@@ -246,18 +218,22 @@ export default function Function() {
                     </p>
                     <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>static int</b2> <b1>Int_Bin</b1>(<b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>
-                        <li><b2>static float</b2> <b1>Float_Bin</b1>(<b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>
-                        <li><b2>static Vector2</b2> <b1>Vector2_Bin</b1>(<b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>
-                        <li><b2>static Vector2</b2> <b1>Vector2_Bin</b1>(<b2>Vector2</b2> <b1>chanceOfOne</b1>)</li>
-                        <li><b2>static Vector2Int</b2> <b1>Vector2Int_Bin</b1>(<b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>
-                        <li><b2>static Vector2Int</b2> <b1>Vector2Int_Bin</b1>(<b2>Vector2</b2> <b1>chanceOfOne</b1>)</li>
-                        <li><b2>static Vector3</b2> <b1>Vector3_Bin</b1>(<b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>
-                        <li><b2>static Vector3</b2> <b1>Vector3_Bin</b1>(<b2>Vector3</b2> <b1>chanceOfOne</b1>)</li>
-                        <li><b2>static Vector3Int</b2> <b1>Vector3Int_Bin</b1>(<b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>
-                        <li><b2>static Vector3Int</b2> <b1>Vector3Int_Bin</b1>(<b2>Vector3</b2> <b1>chanceOfOne</b1>)</li>                        
-                        <li><b2>static Color</b2> <b1>Color_Bin</b1>(<b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>
-                        <li><b2>static Color</b2> <b1>Color_Bin</b1>(<b2>Color</b2> <b1>chanceOfOne</b1>)</li>                        
+                        <li><b2>static int</b2> <b1>BinInt</b1>(<b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>
+                        <li><b2>static float</b2> <b1>BinFloat</b1>(<b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>BinVector2</b1>(<b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>BinVector2</b1>(<b2>Vector2</b2> <b1>chanceOfOne</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>BinVector2Int</b1>(<b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>BinVector2Int</b1>(<b2>Vector2</b2> <b1>chanceOfOne</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>BinVector3</b1>(<b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>BinVector3</b1>(<b2>Vector3</b2> <b1>chanceOfOne</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>BinVector3Int</b1>(<b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>BinVector3Int</b1>(<b2>Vector3</b2> <b1>chanceOfOne</b1>)</li>                        
+                        <li><b2>static Color</b2> <b1>BinColor</b1>(<b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>
+                        <li><b2>static Color</b2> <b1>BinColor</b1>(<b2>Color</b2> <b1>chanceOfOne</b1>)</li>                              
+                        <li><b2>static int[]</b2> <b1>BinIntArray</b1>(<b2>int</b2> <b1>amount</b1>, <b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>
+                        <li><b2>static List{"<"}int{">"}</b2> <b1>BinIntList</b1>(<b2>int</b2> <b1>amount</b1>, <b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>                  
+                        <li><b2>static float[]</b2> <b1>BinFloatArray</b1>(<b2>int</b2> <b1>amount</b1>, <b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>
+                        <li><b2>static List{"<"}float{">"}</b2> <b1>BinFloatList</b1>(<b2>int</b2> <b1>amount</b1>, <b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>                  
                     </ul>
                     <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
@@ -265,6 +241,7 @@ export default function Function() {
                         <li><b2>Vector2</b2> <b1>chanceOfOne</b1>: The probability (between 0f and 1f) of generating a value of 1 for each axis</li>                    
                         <li><b2>Vector3</b2> <b1>chanceOfOne</b1>: The probability (between 0f and 1f) of generating a value of 1 for each axis</li>                    
                         <li><b2>Color</b2> <b1>chanceOfOne</b1>: The probability (between 0f and 1f) of generating a value of 1 for each axis</li>                    
+                        <li><b2>int</b2> <b1>amount</b1>: The amount of random values generated for the array or list</li>                    
                     </ul>
                 </div>
             )}/>
@@ -274,22 +251,27 @@ export default function Function() {
                     </p>
                     <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>static int</b2> <b1>Int_Sign</b1>(<b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>
-                        <li><b2>static float</b2> <b1>Float_Sign</b1>(<b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>
-                        <li><b2>static Vector2</b2> <b1>Vector2_Sign</b1>(<b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>
-                        <li><b2>static Vector2</b2> <b1>Vector2_Sign</b1>(<b2>Vector2</b2> <b1>chanceOfOne</b1>)</li>
-                        <li><b2>static Vector2Int</b2> <b1>Vector2Int_Sign</b1>(<b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>
-                        <li><b2>static Vector2Int</b2> <b1>Vector2Int_Sign</b1>(<b2>Vector2</b2> <b1>chanceOfOne</b1>)</li>
-                        <li><b2>static Vector3</b2> <b1>Vector3_Sign</b1>(<b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>
-                        <li><b2>static Vector3</b2> <b1>Vector3_Sign</b1>(<b2>Vector3</b2> <b1>chanceOfOne</b1>)</li>
-                        <li><b2>static Vector3Int</b2> <b1>Vector3Int_Sign</b1>(<b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>
-                        <li><b2>static Vector3Int</b2> <b1>Vector3Int_Sign</b1>(<b2>Vector3</b2> <b1>chanceOfOne</b1>)</li>                        
+                        <li><b2>static int</b2> <b1>SignInt</b1>(<b2>float</b2> <b1>chanceOfPositive = 0.5f</b1>)</li>
+                        <li><b2>static float</b2> <b1>SignFloat</b1>(<b2>float</b2> <b1>chanceOfPositive = 0.5f</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>SignVector2</b1>(<b2>float</b2> <b1>chanceOfPositive = 0.5f</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>SignVector2</b1>(<b2>Vector2</b2> <b1>chanceOfPositive</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>SignVector2Int</b1>(<b2>float</b2> <b1>chanceOfPositive = 0.5f</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>SignVector2Int</b1>(<b2>Vector2</b2> <b1>chanceOfPositive</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>SignVector3</b1>(<b2>float</b2> <b1>chanceOfPositive = 0.5f</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>SignVector3</b1>(<b2>Vector3</b2> <b1>chanceOfPositive</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>SignVector3Int</b1>(<b2>float</b2> <b1>chanceOfPositive = 0.5f</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>SignVector3Int</b1>(<b2>Vector3</b2> <b1>chanceOfPositive</b1>)</li>     
+                        <li><b2>static int[]</b2> <b1>SignIntArray</b1>(<b2>int</b2> <b1>amount</b1>, <b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>
+                        <li><b2>static List{"<"}int{">"}</b2> <b1>SignIntList</b1>(<b2>int</b2> <b1>amount</b1>, <b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>                  
+                        <li><b2>static float[]</b2> <b1>SignFloatArray</b1>(<b2>int</b2> <b1>amount</b1>, <b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>
+                        <li><b2>static List{"<"}float{">"}</b2> <b1>SignFloatList</b1>(<b2>int</b2> <b1>amount</b1>, <b2>float</b2> <b1>chanceOfOne = 0.5f</b1>)</li>                  
                     </ul>
                     <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>float</b2> <b1>chanceOfPositive</b1>: The probability (between 0f and 1f) of generating a positive value (either 1 or -1)</li>                    
                         <li><b2>Vector2</b2> <b1>chanceOfPositive</b1>: The probability (between 0f and 1f) of generating a positive value (either 1 or -1) for each axis</li>                    
                         <li><b2>Vector3</b2> <b1>chanceOfPositive</b1>: The probability (between 0f and 1f) of generating a positive value (either 1 or -1) for each axis</li>                    
+                        <li><b2>int</b2> <b1>amount</b1>: The amount of random values generated for the array or list</li>                    
                     </ul>
                 </div>
             )}/>
@@ -300,28 +282,37 @@ export default function Function() {
                     </p>
                     <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>static int</b2> <b1>Int_Angle</b1>(<b2>int</b2> <b1>maxAngle = 360</b1>)</li>
-                        <li><b2>static int</b2> <b1>Int_Angle</b1>(<b2>int</b2> <b1>steps</b1>, <b2>int</b2> <b1>maxAngle = 360</b1>)</li>
-                        <li><b2>static float</b2> <b1>Float_Angle</b1>(<b2>float</b2> <b1>maxAngle = 360f</b1>)</li>
-                        <li><b2>static float</b2> <b1>Float_Angle</b1>(<b2>float</b2> <b1>steps</b1>, <b2>float</b2> <b1>maxAngle = 360f</b1>)</li>
+                        <li><b2>static int</b2> <b1>AngleInt</b1>(<b2>int</b2> <b1>maxAngle = 360</b1>)</li>
+                        <li><b2>static int</b2> <b1>AngleInt</b1>(<b2>int</b2> <b1>steps</b1>, <b2>int</b2> <b1>maxAngle = 360</b1>)</li>
+                        <li><b2>static float</b2> <b1>AngleFloat</b1>(<b2>float</b2> <b1>maxAngle = 360f</b1>)</li>
+                        <li><b2>static float</b2> <b1>AngleFloat</b1>(<b2>float</b2> <b1>steps</b1>, <b2>float</b2> <b1>maxAngle = 360f</b1>)</li>
                         <br/>
-                        <li><b2>static Vector2</b2> <b1>Vector2_Angle</b1>(<b2>float</b2> <b1>maxAngle = 360f</b1>)</li>
-                        <li><b2>static Vector2</b2> <b1>Vector2_Angle</b1>(<b2>int</b2> <b1>steps</b1>, <b2>int</b2> <b1>maxAngle = 360</b1>)</li>
-                        <li><b2>static Vector2</b2> <b1>Vector2_Angle</b1>(<b2>float</b2> <b1>steps</b1>, <b2>float</b2> <b1>maxAngle = 360f</b1>)</li>
-                        <li><b2>static Vector2</b2> <b1>Vector2_Angle</b1>(<b2>Vector2</b2> <b1>maxAngle</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>AngleVector2</b1>(<b2>float</b2> <b1>maxAngle = 360f</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>AngleVector2</b1>(<b2>int</b2> <b1>steps</b1>, <b2>int</b2> <b1>maxAngle = 360</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>AngleVector2</b1>(<b2>float</b2> <b1>steps</b1>, <b2>float</b2> <b1>maxAngle = 360f</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>AngleVector2</b1>(<b2>Vector2</b2> <b1>maxAngle</b1>)</li>
                         <br/>
-                        <li><b2>static Vector2Int</b2> <b1>Vector2Int_Angle</b1>(<b2>int</b2> <b1>maxAngle = 360</b1>)</li>
-                        <li><b2>static Vector2Int</b2> <b1>Vector2Int_Angle</b1>(<b2>int</b2> <b1>steps</b1>, <b2>int</b2> <b1>maxAngle = 360</b1>)</li>
-                        <li><b2>static Vector2Int</b2> <b1>Vector2Int_Angle</b1>(<b2>Vector2Int</b2> <b1>maxAngle</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>AngleVector2Int</b1>(<b2>int</b2> <b1>maxAngle = 360</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>AngleVector2Int</b1>(<b2>int</b2> <b1>steps</b1>, <b2>int</b2> <b1>maxAngle = 360</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>AngleVector2Int</b1>(<b2>Vector2Int</b2> <b1>maxAngle</b1>)</li>
                         <br/>
-                        <li><b2>static Vector3</b2> <b1>Vector3_Angle</b1>(<b2>float</b2> <b1>maxAngle = 360f</b1>)</li>
-                        <li><b2>static Vector3</b2> <b1>Vector3_Angle</b1>(<b2>int</b2> <b1>steps</b1>, <b2>int</b2> <b1>maxAngle = 360</b1>)</li>
-                        <li><b2>static Vector3</b2> <b1>Vector3_Angle</b1>(<b2>float</b2> <b1>steps</b1>, <b2>float</b2> <b1>maxAngle = 360f</b1>)</li>
-                        <li><b2>static Vector3</b2> <b1>Vector3_Angle</b1>(<b2>Vector3</b2> <b1>maxAngle</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>AngleVector3</b1>(<b2>float</b2> <b1>maxAngle = 360f</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>AngleVector3</b1>(<b2>int</b2> <b1>steps</b1>, <b2>int</b2> <b1>maxAngle = 360</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>AngleVector3</b1>(<b2>float</b2> <b1>steps</b1>, <b2>float</b2> <b1>maxAngle = 360f</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>AngleVector3</b1>(<b2>Vector3</b2> <b1>maxAngle</b1>)</li>
                         <br/>
-                        <li><b2>static Vector3Int</b2> <b1>Vector3Int_Angle</b1>(<b2>int</b2> <b1>maxAngle = 360</b1>)</li>
-                        <li><b2>static Vector3Int</b2> <b1>Vector3Int_Angle</b1>(<b2>int</b2> <b1>steps</b1>, <b2>int</b2> <b1>maxAngle = 360</b1>)</li>
-                        <li><b2>static Vector3Int</b2> <b1>Vector3Int_Angle</b1>(<b2>Vector3Int</b2> <b1>maxAngle</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>AngleVector3Int</b1>(<b2>int</b2> <b1>maxAngle = 360</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>AngleVector3Int</b1>(<b2>int</b2> <b1>steps</b1>, <b2>int</b2> <b1>maxAngle = 360</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>AngleVector3Int</b1>(<b2>Vector3Int</b2> <b1>maxAngle</b1>)</li>
+                        <br/>
+                        <li><b2>static int[]</b2> <b1>AngleIntArray</b1>(<b2>int</b2> <b1>amount</b1>, <b2>int</b2> <b1>maxAngle = 360</b1>)</li>
+                        <li><b2>static int[]</b2> <b1>AngleIntArray</b1>(<b2>int</b2> <b1>amount</b1>, <b2>int</b2> <b1>steps</b1>, <b2>int</b2> <b1>maxAngle = 360</b1>)</li>
+                        <li><b2>static List{"<"}int{">"}</b2> <b1>AngleIntList</b1>(<b2>int</b2> <b1>amount</b1>, <b2>int</b2> <b1>maxAngle = 360</b1>)</li>
+                        <li><b2>static List{"<"}int{">"}</b2> <b1>AngleIntList</b1>(<b2>int</b2> <b1>amount</b1>, <b2>int</b2> <b1>steps</b1>, <b2>int</b2> <b1>maxAngle = 360</b1>)</li>
+                        <li><b2>static float[]</b2> <b1>AngleFloatArray</b1>(<b2>int</b2> <b1>amount</b1>, <b2>float</b2> <b1>maxAngle = 360f</b1>)</li>
+                        <li><b2>static float[]</b2> <b1>AngleFloatArray</b1>(<b2>int</b2> <b1>amount</b1>, <b2>float</b2> <b1>steps</b1>, <b2>float</b2> <b1>maxAngle = 360f</b1>)</li>
+                        <li><b2>static List{"<"}float{">"}</b2> <b1>AngleFloatList</b1>(<b2>int</b2> <b1>amount</b1>, <b2>float</b2> <b1>maxAngle = 360f</b1>)</li>
+                        <li><b2>static List{"<"}float{">"}</b2> <b1>AngleFloatList</b1>(<b2>int</b2> <b1>amount</b1>, <b2>float</b2> <b1>steps</b1>, <b2>float</b2> <b1>maxAngle = 360f</b1>)</li>
                     </ul>
                     <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
@@ -337,6 +328,7 @@ export default function Function() {
                         <li><b2>Vector3</b2> <b1>steps</b1>: The multiple value by which the angle is rounded for each axis</li>                    
                         <li><b2>Vector2Int</b2> <b1>steps</b1>: The multiple value by which the angle is rounded for each axis</li>                    
                         <li><b2>Vector3Int</b2> <b1>steps</b1>: The multiple value by which the angle is rounded for each axis</li>                    
+                        <li><b2>int</b2> <b1>amount</b1>: The amount of random values generated for the array or list</li>                    
                     </ul>
                 </div>
             )}/>

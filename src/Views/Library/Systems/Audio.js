@@ -14,25 +14,6 @@ export default function Function() {
                 coding, while still offering high levels of customization through scripts.
             </p>
 
-            <h2>Installation</h2>
-            <p>
-                To use Magikus Audio System in your Unity project, follow these steps:
-            </p>
-            <ol>
-                <li>
-                    Download the Magikus Audio System package from the official website or the
-                    Unity Asset Store.
-                </li>
-                <li>
-                    Import the package into your Unity project by going to <b>Assets {'->'} Import Package {'->'}
-                        Custom Package</b> and selecting the downloaded package file.
-                </li>
-                <li>
-                    Make sure the Magikus Audio System package is successfully imported and visible
-                    in your project's assets.
-                </li>
-            </ol>
-
             <h2>How it Works</h2>
             <p>
                 The Magikus Audio System consists of two primary components: the Sound

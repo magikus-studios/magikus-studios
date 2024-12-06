@@ -5,7 +5,7 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Tweak System</h1>
+            <h1 className="text-center">Navigation System</h1>
             <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
                 The Tweak system introduces a dynamic and efficient approach to
                 seamlessly integrate tweaks into your GameObjects. This powerful tool empowers
@@ -40,25 +40,6 @@ export default function Function() {
                 can effortlessly breathe life into your GameObjects with captivating and engaging dynamic
                 behavior.
             </p>
-
-            <h2>Installation</h2>
-            <p>
-                To use the Tweak system in your Unity project, follow these steps:
-            </p>
-            <ol>
-                <li>
-                    Download the Magikus Tweak System package from the official website or the
-                    Unity Asset Store.
-                </li>
-                <li>
-                    Import the package into your Unity project by going to <b>Assets {'->'} Import Package {'->'}
-                        Custom Package</b> and selecting the downloaded package file.
-                </li>
-                <li>
-                    Make sure the Magikus Tweak System package is successfully imported and visible
-                    in your project's assets.
-                </li>
-            </ol>
 
             <h2>How it Works</h2>
             <p>

@@ -846,42 +846,67 @@ export default function Function() {
             <Group title="Clamp" content={(
                 <div>
                     <p>
-                        Restricts the base value between two limits.
+                        Restricts the base value between two limits. If min value is not specified, by default is 0.
                     </p>
                     <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
+                        <li><b2>static int</b2> <b1>Clamp</b1>(<b2>this int</b2> <b1>number</b1>, <b2>int</b2> <b1>max</b1>)</li>
                         <li><b2>static int</b2> <b1>Clamp</b1>(<b2>this int</b2> <b1>number</b1>, <b2>int</b2> <b1>min</b1>, <b2>int</b2> <b1>max</b1>)</li>
+                        <li><b2>static float</b2> <b1>Clamp</b1>(<b2>this float</b2> <b1>number</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <li><b2>static float</b2> <b1>Clamp</b1>(<b2>this float</b2> <b1>number</b1>, <b2>float</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <br/>
+                        <li><b2>static Vector2</b2> <b1>Clamp</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector2</b2> <b1>Clamp</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>float</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>Clamp</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector2</b2> <b1>Clamp</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>, <b2>float</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>Clamp</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>Vector2</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector2</b2> <b1>Clamp</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>Vector2</b2> <b1>min</b1>, <b2>Vector2</b2> <b1>max</b1>)</li>
                         <br/>
+                        <li><b2>static Vector3</b2> <b1>Clamp</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector3</b2> <b1>Clamp</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>float</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector3</b2> <b1>Clamp</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>, <b2>float</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>Clamp</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>, <b2>float</b2> <b1>max</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>Clamp</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>Vector3</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector3</b2> <b1>Clamp</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>Vector3</b2> <b1>min</b1>, <b2>Vector3</b2> <b1>max</b1>)</li>
                         <br/>
+                        <li><b2>static Vector2Int</b2> <b1>Clamp</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>, <b2>int</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector2Int</b2> <b1>Clamp</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>, <b2>int</b2> <b1>min</b1>, <b2>int</b2> <b1>max</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>Clamp</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>, <b2>int</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector2Int</b2> <b1>Clamp</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>, <b2>int</b2> <b1>min</b1>, <b2>int</b2> <b1>max</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>Clamp</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>, <b2>Vector2Int</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector2Int</b2> <b1>Clamp</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>, <b2>Vector2Int</b2> <b1>min</b1>, <b2>Vector2Int</b2> <b1>max</b1>)</li>
                         <br/>
+                        <li><b2>static Vector3Int</b2> <b1>Clamp</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>int</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector3Int</b2> <b1>Clamp</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>int</b2> <b1>min</b1>, <b2>int</b2> <b1>max</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>Clamp</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>, <b2>int</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector3Int</b2> <b1>Clamp</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>, <b2>int</b2> <b1>min</b1>, <b2>int</b2> <b1>max</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>Clamp</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>Vector3Int</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector3Int</b2> <b1>Clamp</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>Vector3Int</b2> <b1>min</b1>, <b2>Vector3Int</b2> <b1>max</b1>)</li>
                         <br/>
+                        <li><b2>static Color</b2> <b1>Clamp</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <li><b2>static Color</b2> <b1>Clamp</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>float</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
+                        <li><b2>static Color</b2> <b1>Clamp</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>COLOR</b2> <b1>mode</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <li><b2>static Color</b2> <b1>Clamp</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>COLOR</b2> <b1>mode</b1>, <b2>float</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
+                        <li><b2>static Color</b2> <b1>Clamp</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>Color</b2> <b1>max</b1>)</li>
                         <li><b2>static Color</b2> <b1>Clamp</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>Color</b2> <b1>min</b1>, <b2>Color</b2> <b1>max</b1>)</li>
+                        <li><b2>static Color</b2> <b1>ClampA</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <li><b2>static Color</b2> <b1>ClampA</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>float</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <br/>
+                        <li><b2>static Rect</b2> <b1>Clamp</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <li><b2>static Rect</b2> <b1>Clamp</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>float</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
+                        <li><b2>static Rect</b2> <b1>Clamp</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>RECT</b2> <b1>mode</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <li><b2>static Rect</b2> <b1>Clamp</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>RECT</b2> <b1>mode</b1>, <b2>float</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
+                        <li><b2>static Rect</b2> <b1>Clamp</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>Rect</b2> <b1>max</b1>)</li>
                         <li><b2>static Rect</b2> <b1>Clamp</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>Rect</b2> <b1>min</b1>, <b2>Rect</b2> <b1>max</b1>)</li>
                         <br/>
+                        <li><b2>static Rect</b2> <b1>ClampXY</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <li><b2>static Rect</b2> <b1>ClampXY</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>float</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
+                        <li><b2>static Rect</b2> <b1>ClampXY</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>Vector2</b2> <b1>max</b1>)</li>
                         <li><b2>static Rect</b2> <b1>ClampXY</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>Vector2</b2> <b1>min</b1>, <b2>Vector2</b2> <b1>max</b1>)</li>
                         <br/>
+                        <li><b2>static Rect</b2> <b1>ClampWH</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <li><b2>static Rect</b2> <b1>ClampWH</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>float</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
+                        <li><b2>static Rect</b2> <b1>ClampWH</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>Vector2</b2> <b1>max</b1>)</li>
                         <li><b2>static Rect</b2> <b1>ClampWH</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>Vector2</b2> <b1>min</b1>, <b2>Vector2</b2> <b1>max</b1>)</li>
                     </ul>
                     <h5 className="c-light-1">Parameters</h5>
@@ -895,14 +920,14 @@ export default function Function() {
                         <li><b2>Color</b2> <b1>color</b1>: Original color to modify</li>                    
                         <li><b2>Rect</b2> <b1>rect</b1>: Original rect to modify</li>                    
                         <br/>
-                        <li><b2>int</b2> <b1>min</b1>: Int min value to clamp</li>                    
-                        <li><b2>float</b2> <b1>min</b1>: Float min value to clamp</li>                    
-                        <li><b2>Vector2</b2> <b1>min</b1>: Vector min value to clamp</li>                    
-                        <li><b2>Vector3</b2> <b1>min</b1>: Vector min value to clamp</li>                    
-                        <li><b2>Vector2Int</b2> <b1>min</b1>: Vector min value to clamp</li>                    
-                        <li><b2>Vector3Int</b2> <b1>min</b1>: Vector min value to clamp</li>                    
-                        <li><b2>Color</b2> <b1>min</b1>: Color min value to clamp</li>                    
-                        <li><b2>Rect</b2> <b1>min</b1>: Rect min value to clamp</li>                    
+                        <li><b2>int</b2> <b1>min</b1>: Int min value to clamp. Default is 0</li>                    
+                        <li><b2>float</b2> <b1>min</b1>: Float min value to clamp. Default is 0f</li>                    
+                        <li><b2>Vector2</b2> <b1>min</b1>: Vector min value to clamp. Default is 0f</li>                    
+                        <li><b2>Vector3</b2> <b1>min</b1>: Vector min value to clamp. Default is 0f</li>                    
+                        <li><b2>Vector2Int</b2> <b1>min</b1>: Vector min value to clamp. Default is 0</li>                    
+                        <li><b2>Vector3Int</b2> <b1>min</b1>: Vector min value to clamp. Default is 0</li>                    
+                        <li><b2>Color</b2> <b1>min</b1>: Color min value to clamp. Default is 0f</li>                    
+                        <li><b2>Rect</b2> <b1>min</b1>: Rect min value to clamp. Default is 0f</li>                    
                         <br/>
                         <li><b2>int</b2> <b1>max</b1>: Int max value to clamp</li>                    
                         <li><b2>float</b2> <b1>max</b1>: Float max value to clamp</li>                    
@@ -1006,42 +1031,67 @@ export default function Function() {
             <Group title="Wrap" content={(
                 <div>
                     <p>
-                        Wraps the base value around two limits.
+                        Wraps the base value around two limits. If min value is not specified, by default is 0.
                     </p>
                     <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
+                        <li><b2>static int</b2> <b1>Wrap</b1>(<b2>this int</b2> <b1>number</b1>, <b2>int</b2> <b1>max</b1>)</li>
                         <li><b2>static int</b2> <b1>Wrap</b1>(<b2>this int</b2> <b1>number</b1>, <b2>int</b2> <b1>min</b1>, <b2>int</b2> <b1>max</b1>)</li>
+                        <li><b2>static float</b2> <b1>Wrap</b1>(<b2>this float</b2> <b1>number</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <li><b2>static float</b2> <b1>Wrap</b1>(<b2>this float</b2> <b1>number</b1>, <b2>float</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <br/>
+                        <li><b2>static Vector2</b2> <b1>Wrap</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector2</b2> <b1>Wrap</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>float</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>Wrap</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector2</b2> <b1>Wrap</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>, <b2>float</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>Wrap</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>Vector2</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector2</b2> <b1>Wrap</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>Vector2</b2> <b1>min</b1>, <b2>Vector2</b2> <b1>max</b1>)</li>
                         <br/>
+                        <li><b2>static Vector3</b2> <b1>Wrap</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector3</b2> <b1>Wrap</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>float</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector3</b2> <b1>Wrap</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>, <b2>float</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>Wrap</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>, <b2>float</b2> <b1>max</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>Wrap</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>Vector3</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector3</b2> <b1>Wrap</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>Vector3</b2> <b1>min</b1>, <b2>Vector3</b2> <b1>max</b1>)</li>
                         <br/>
+                        <li><b2>static Vector2Int</b2> <b1>Wrap</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>, <b2>int</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector2Int</b2> <b1>Wrap</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>, <b2>int</b2> <b1>min</b1>, <b2>int</b2> <b1>max</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>Wrap</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>, <b2>int</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector2Int</b2> <b1>Wrap</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>, <b2>int</b2> <b1>min</b1>, <b2>int</b2> <b1>max</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>Wrap</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>, <b2>Vector2Int</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector2Int</b2> <b1>Wrap</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>, <b2>Vector2Int</b2> <b1>min</b1>, <b2>Vector2Int</b2> <b1>max</b1>)</li>
                         <br/>
+                        <li><b2>static Vector3Int</b2> <b1>Wrap</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>int</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector3Int</b2> <b1>Wrap</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>int</b2> <b1>min</b1>, <b2>int</b2> <b1>max</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>Wrap</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>, <b2>int</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector3Int</b2> <b1>Wrap</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>, <b2>int</b2> <b1>min</b1>, <b2>int</b2> <b1>max</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>Wrap</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>Vector3Int</b2> <b1>max</b1>)</li>
                         <li><b2>static Vector3Int</b2> <b1>Wrap</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>Vector3Int</b2> <b1>min</b1>, <b2>Vector3Int</b2> <b1>max</b1>)</li>
                         <br/>
+                        <li><b2>static Color</b2> <b1>Wrap</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <li><b2>static Color</b2> <b1>Wrap</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>float</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
+                        <li><b2>static Color</b2> <b1>Wrap</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>COLOR</b2> <b1>mode</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <li><b2>static Color</b2> <b1>Wrap</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>COLOR</b2> <b1>mode</b1>, <b2>float</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
+                        <li><b2>static Color</b2> <b1>Wrap</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>Color</b2> <b1>max</b1>)</li>
                         <li><b2>static Color</b2> <b1>Wrap</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>Color</b2> <b1>min</b1>, <b2>Color</b2> <b1>max</b1>)</li>
+                        <li><b2>static Color</b2> <b1>WrapA</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <li><b2>static Color</b2> <b1>WrapA</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>float</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <br/>
+                        <li><b2>static Rect</b2> <b1>Wrap</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <li><b2>static Rect</b2> <b1>Wrap</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>float</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
+                        <li><b2>static Rect</b2> <b1>Wrap</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>RECT</b2> <b1>mode</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <li><b2>static Rect</b2> <b1>Wrap</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>RECT</b2> <b1>mode</b1>, <b2>float</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
+                        <li><b2>static Rect</b2> <b1>Wrap</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>Rect</b2> <b1>max</b1>)</li>
                         <li><b2>static Rect</b2> <b1>Wrap</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>Rect</b2> <b1>min</b1>, <b2>Rect</b2> <b1>max</b1>)</li>
                         <br/>
+                        <li><b2>static Rect</b2> <b1>WrapXY</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <li><b2>static Rect</b2> <b1>WrapXY</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>float</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
+                        <li><b2>static Rect</b2> <b1>WrapXY</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>Vector2</b2> <b1>max</b1>)</li>
                         <li><b2>static Rect</b2> <b1>WrapXY</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>Vector2</b2> <b1>min</b1>, <b2>Vector2</b2> <b1>max</b1>)</li>
                         <br/>
+                        <li><b2>static Rect</b2> <b1>WrapWH</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>float</b2> <b1>max</b1>)</li>
                         <li><b2>static Rect</b2> <b1>WrapWH</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>float</b2> <b1>min</b1>, <b2>float</b2> <b1>max</b1>)</li>
+                        <li><b2>static Rect</b2> <b1>WrapWH</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>Vector2</b2> <b1>max</b1>)</li>
                         <li><b2>static Rect</b2> <b1>WrapWH</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>Vector2</b2> <b1>min</b1>, <b2>Vector2</b2> <b1>max</b1>)</li>
                     </ul>
                     <h5 className="c-light-1">Parameters</h5>
@@ -1055,14 +1105,14 @@ export default function Function() {
                         <li><b2>Color</b2> <b1>color</b1>: Original color to modify</li>                    
                         <li><b2>Rect</b2> <b1>rect</b1>: Original rect to modify</li>                    
                         <br/>
-                        <li><b2>int</b2> <b1>min</b1>: Int min value to wrap</li>                    
-                        <li><b2>float</b2> <b1>min</b1>: Float min value to wrap</li>                    
-                        <li><b2>Vector2</b2> <b1>min</b1>: Vector min value to wrap</li>                    
-                        <li><b2>Vector3</b2> <b1>min</b1>: Vector min value to wrap</li>                    
-                        <li><b2>Vector2Int</b2> <b1>min</b1>: Vector min value to wrap</li>                    
-                        <li><b2>Vector3Int</b2> <b1>min</b1>: Vector min value to wrap</li>                    
-                        <li><b2>Color</b2> <b1>min</b1>: Color min value to wrap</li>                    
-                        <li><b2>Rect</b2> <b1>min</b1>: Rect min value to wrap</li>                    
+                        <li><b2>int</b2> <b1>min</b1>: Int min value to wrap. Default is 0</li>                    
+                        <li><b2>float</b2> <b1>min</b1>: Float min value to wrap. Default is 0f</li>                    
+                        <li><b2>Vector2</b2> <b1>min</b1>: Vector min value to wrap. Default is 0f</li>                    
+                        <li><b2>Vector3</b2> <b1>min</b1>: Vector min value to wrap. Default is 0f</li>                    
+                        <li><b2>Vector2Int</b2> <b1>min</b1>: Vector min value to wrap. Default is 0</li>                    
+                        <li><b2>Vector3Int</b2> <b1>min</b1>: Vector min value to wrap. Default is 0</li>                    
+                        <li><b2>Color</b2> <b1>min</b1>: Color min value to wrap. Default is 0f</li>                    
+                        <li><b2>Rect</b2> <b1>min</b1>: Rect min value to wrap. Default is 0f</li>                    
                         <br/>
                         <li><b2>int</b2> <b1>max</b1>: Int max value to wrap</li>                    
                         <li><b2>float</b2> <b1>max</b1>: Float max value to wrap</li>                    

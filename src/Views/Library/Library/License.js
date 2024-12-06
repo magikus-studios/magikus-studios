@@ -4,7 +4,10 @@ export default function Function() {
 
     return (
         <div className="c-light-2">
-            <h1>License</h1>
+            <h1 className="text-center pad-top-4">Magikus Library</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                License
+            </h6>
             <p>
                 Copyright (c) 2022 Magikus Studios. All Rights Reserved.
             </p>

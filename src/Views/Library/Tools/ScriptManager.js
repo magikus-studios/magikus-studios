@@ -9,7 +9,8 @@ export default function Function() {
             <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
                 Unity Editor designed to enhance Script Management within Unity Projects 
             </h6>
-
+            <div className="text-center pad-bottom-2"><prolabel>Only in Pro version</prolabel></div>
+            
             <h3 className="p-2">Overview</h3>
             <p className="pad-left-2 pad-bottom-2">
                 The Script Manager is a versatile and efficient tool for Unity developers, providing essential insights into script data while offering customization options for script organization.                 
@@ -21,13 +22,13 @@ export default function Function() {
 
 
             <h3 className="p-2">Introduction</h3>
-            <p className="pad-left-2 pad-bottom-2">
+            <p className="pad-left-2">
                 This utility provides developers with the ability to analyze scripts in their project, calculate the total number of scripts and determine the total line count of selected scripts or the entire project. 
                 Additionally, it allows users to set icons for multiple scripts at once, enhancing project organization and visibility.
                 <br/>
                 The Script Manager can be accessed from the Unity Editor menu and provides an intuitive interface for managing scripts.
             </p>
-            <ul>
+            <ul className="pad-bottom-2">
                 <li><b1>Analyze Project Scripts</b1>: The Script Manager will automatically display the total number of scripts and lines in your project.</li>
                 <li><b1>Select Scripts</b1>: Select one or multiple scripts in the Unity Project window to see their individual line counts and details.</li>
                 <li><b1>Assign a custom icon to the selected scripts</b1>: Drag and drop an icon texture into the Script Manager's icon field. Click Set Icon to Selected Scripts to apply the icon.</li>

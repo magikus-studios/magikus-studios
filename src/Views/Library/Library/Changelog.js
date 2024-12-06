@@ -29,18 +29,24 @@ export default function Function() {
 
     return (
         <div className="c-light-2">
-            <h1 className="text-center">Magikus Library</h1>
-            <h2 className="text-center">Changelog</h2>
-            <p>All notable changes to this project will be documented in this file.</p>
+            <h1 className="text-center pad-top-4">Magikus Library</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                ChangeLog
+            </h6>
             <p>
+                All notable changes to this project will be documented in this file.
+                <br/>
                 The format is based on
                 <a className="t-dec-none c-light-0 c-light-4-h" href="https://keepachangelog.com/en/1.0.0/" target="_blank" rel="noopener noreferrer"> Keep a Changelog </a>
                 and and this project adheres to
                 <a className="t-dec-none c-light-0 c-light-4-h" href="https://semver.org/spec/v2.0.0.html" target="_blank" rel="noopener noreferrer"> Semantic Versioning</a>
                 .
+                <br/>
+                Here is the full log of each of the versions ordered from most recent to older version.
             </p>
-            <p>Here is the full log of each of the versions ordered from most recent to older version.</p>
             { versions }
+
+            <div className="mar-bottom-1"></div>
         </div>
     );
 }

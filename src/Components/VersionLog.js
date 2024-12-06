@@ -1,30 +1,70 @@
 import React from "react";
+import Group from "Components/Group";
+import Method from "Components/Method";
 
 export default function Function(props) {
-    let addedFeatures;
-    let changedFeatures;
-    let depricatedFeatures;
-    let removedFeatures;
-    let fixedFeatures;
-    let securityFeatures;
-    
-    if (props.added != null) { addedFeatures = <div> <h5 className="c-light-1">Added</h5> <ul> {props.added.map((item, index) => { return <li key={index}>{item.feature}</li> })} </ul> </div> }
-    if (props.changed != null) { changedFeatures = <div> <h5 className="c-light-1">Changed</h5> <ul> {props.changed.map((item, index) => { return <li key={index}>{item.feature}</li> })} </ul> </div> }
-    if (props.depricated != null) { depricatedFeatures = <div> <h5 className="c-light-1">Depricated</h5> <ul> {props.depricated.map((item, index) => { return <li key={index}>{item.feature}</li> })} </ul> </div> }
-    if (props.removed != null) { removedFeatures = <div> <h5 className="c-light-1">Removed</h5> <ul> {props.removed.map((item, index) => { return <li key={index}>{item.feature}</li> })} </ul> </div> }
-    if (props.fixed != null) { fixedFeatures = <div> <h5 className="c-light-1">Fixed</h5> <ul> {props.fixed.map((item, index) => { return <li key={index}>{item.feature}</li> })} </ul> </div> }
-    if (props.security != null) { securityFeatures = <div> <h5 className="c-light-1">Security</h5> <ul> {props.security.map((item, index) => { return <li key={index}>{item.feature}</li> })} </ul> </div> }
+    let featuresAmount = 0; 
 
+    let addedFeatures;
+    if (props.added != null) 
+    { 
+        addedFeatures = <Method name={props.added.length + " | " + "Added"} signatures={(<div><ul className="property-list">{props.added.map((item, index) => { return <li key={index}>{item.feature}</li> })}</ul></div>)}/> 
+        featuresAmount += props.added.length;
+    }
+    else {addedFeatures = <h6 className="c-light-2 c-light-3-h pad-left-3 pad-top-1">0 | Added</h6> }    
+    
+    let changedFeatures;
+    if (props.changed != null) 
+    { 
+        changedFeatures = <Method name={props.changed.length + " | " + "Changed"} signatures={(<div><ul className="property-list">{props.changed.map((item, index) => { return <li key={index}>{item.feature}</li> })}</ul></div>)}/> 
+        featuresAmount += props.changed.length;
+    }
+    else {changedFeatures = <h6 className="c-light-2 c-light-3-h pad-left-3 pad-top-1">0 | Changed</h6> }    
+    
+    let depricatedFeatures;
+    if (props.depricated != null) 
+    {
+        depricatedFeatures = <Method name={props.depricated.length + " | " + "Depricated"} signatures={(<div><ul className="property-list">{props.depricated.map((item, index) => { return <li key={index}>{item.feature}</li> })}</ul></div>)}/> 
+        featuresAmount += props.depricated.length;
+    }
+    else {depricatedFeatures = <h6 className="c-light-2 c-light-3-h pad-left-3 pad-top-1">0 | Depricated</h6> }    
+    
+    let removedFeatures;
+    if (props.removed != null) 
+    {
+        removedFeatures = <Method name={props.removed.length + " | " + "Removed"} signatures={(<div><ul className="property-list">{props.removed.map((item, index) => { return <li key={index}>{item.feature}</li> })}</ul></div>)}/> 
+        featuresAmount += props.removed.length;
+    }
+    else {removedFeatures = <h6 className="c-light-2 c-light-3-h pad-left-3 pad-top-1">0 | Removed</h6> }    
+    
+    let fixedFeatures;
+    if (props.fixed != null) 
+    {
+        fixedFeatures = <Method name={props.fixed.length + " | " + "Fixed"} signatures={(<div><ul className="property-list">{props.fixed.map((item, index) => { return <li key={index}>{item.feature}</li> })}</ul></div>)}/> 
+        featuresAmount += props.fixed.length;
+    }
+    else {fixedFeatures = <h6 className="c-light-2 c-light-3-h pad-left-3 pad-top-1">0 | Fixed</h6> }    
+    
+    let securityFeatures;
+    if (props.security != null) 
+    {
+        securityFeatures = <Method name={props.security.length + " | " + "Security"} signatures={(<div><ul className="property-list">{props.security.map((item, index) => { return <li key={index}>{item.feature}</li> })}</ul></div>)}/> 
+        featuresAmount += props.security.length;
+    }   
+    else {securityFeatures = <h6 className="c-light-2 c-light-3-h pad-left-3 pad-top-1">0 | Security</h6> }    
+    
     return (
-        <div className="pt-4">
-            <h3 className="text-center c-light-2">--- Version {props.version} ---</h3>
-            <h5 className="text-center c-light-2">[{props.date}]</h5>
-            {addedFeatures}
-            {changedFeatures}
-            {depricatedFeatures}
-            {removedFeatures}
-            {fixedFeatures}
-            {securityFeatures}
+        <div>
+            <Group title={"Version " + props.version + " | " + featuresAmount} subtitle={"[" + props.date + "]"} content={(
+                <div>
+                    {addedFeatures}
+                    {changedFeatures}
+                    {depricatedFeatures}
+                    {removedFeatures}
+                    {fixedFeatures}
+                    {securityFeatures}
+                </div>
+            )}/>
         </div>
     );
 }

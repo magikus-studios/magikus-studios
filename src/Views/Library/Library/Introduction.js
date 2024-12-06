@@ -48,33 +48,6 @@ export default function Function() {
             <p className="pad-left-3">
                 The Tools module provides attributes, property drawers and editors that enhance Unity Editor workflows, increasing productivity and simplifying game design and project management tasks.
             </p>
-            
-            <h2 className="p-2">Installation</h2>
-            <p className="pad-left-2">
-                Getting started with the Magikus Library is straightforward and quick. Follow the steps below to
-                integrate it into your Unity project:
-                <ul>
-                    <li>
-                        Download the Magikus Library package from either the official website or the Unity Asset
-                        Store.
-                    </li>
-                    <li>
-                        Import the package into your Unity project: In the Unity Editor, navigate to Assets -{">"}
-                        Import Package -{">"} Custom Package and select the Magikus Library package file you
-                        downloaded.
-                    </li>
-                    <li>
-                        After successful import, you should see the Magikus Library components available in your
-                        project's assets.
-                    </li>
-                    <li>
-                        To begin using the library in your scripts, make sure to include the "using Magikus"
-                        statement at the top of each script. This will allow you to access all the features and tools
-                        provided by the Magikus Library. Keep in mind that all the classes, methods and utilities of
-                        the library are organized within the Magikus namespace. 
-                    </li>
-                </ul>
-            </p>
         </div>
     );
 }

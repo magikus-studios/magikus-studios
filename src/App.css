@@ -167,7 +167,7 @@ h1, h2, h3, h4, h5, h6
     align-items: center;
     height: 100%;
 }
-pro {
+protoken {
     position: absolute;
     right: 5px;
     top: 2.5px;
@@ -179,6 +179,22 @@ pro {
     
     border: solid;
     border-width: 1px;
+    border-radius: 5px;
+
+    color: var(--light-2);
+    text-shadow: var(--dark-4) 1px 1px 0px;
+    background-color: var(--dark-3);
+    box-shadow: var(--dark-4) 2px 2px 0px;
+}
+prolabel {
+    padding: 0px 4px;
+
+    font-size: large;
+    font-family: var(--font-0);
+    font-weight: 900;
+    
+    border: solid;
+    border-width: 1.5px;
     border-radius: 5px;
 
     color: var(--light-2);
@@ -198,29 +214,25 @@ b2 { color: var(--light-1); font-weight: bold; font-style: italic; }
 .property-list b1 { color: var(--light-3); font-weight: bold; font-size: small; }
 .property-list b2 { color: var(--light-1); font-weight: bold; font-style: italic; font-size: small;}
 .property-list { list-style-type: "═  "; margin-left: -1rem; font-size: smaller; }
-.block-center 
-{
+.block-center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 75%;
 }
 .hide { display: none; }
-.open-group
-{
+.open-group {
     max-height: 1000em;
     overflow: auto;
     overflow-y: hidden;
     transition: all 0.3s ease-in-out;
 }
-.close-group
-{
+.close-group {
     max-height: 0;
     overflow: hidden;
     transition: all 0.1s ease-in-out;
 }
-.img-border
-{
+.img-border {
     border: solid;
     border-width: 3px;
     border-radius: 5px;
@@ -618,6 +630,15 @@ b2 { color: var(--light-1); font-weight: bold; font-style: italic; }
 
 .ar-100 { padding-top: 3%; padding-bottom: 0%; }
 .pos-abs { position: absolute; }
+
+.o-auto { overflow: auto; }
+.d-inline-block { display: inline-block;}
+.d-inline-flex { display: inline-flex;}
+.d-block { display: block;}
+.d-flex { display: flex;}
+
+.f-right { float: right; }
+.f-left { float: left; }
 
 .pos-top-0 { top: 0%; }
 .pos-top-5 { top: 5%; }

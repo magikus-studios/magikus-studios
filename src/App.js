@@ -10,6 +10,7 @@ import LibraryInConstruction from "Views/Library/InConstruction";
 
 import LibraryMenu from "Views/Library/Library/Menu.json";
 import LibraryLibrary from "Views/Library/Library/Introduction.js";
+import LibraryInstallation from "Views/Library/Library/Installation.js";
 import LibraryChangelog from "Views/Library/Library/Changelog.js";
 import LibraryLicense from "Views/Library/Library/License.js";
 
@@ -45,10 +46,12 @@ import LibraryMachinesState from "Views/Library/Machines/State.js";
 import LibraryMachinesTween from "Views/Library/Machines/Tween.js";
 
 import LibrarySystems from "Views/Library/Systems/_Systems.js";
-import LibrarySystemsAnimationSystem from "Views/Library/Systems/AnimationSystem.js";
-import LibrarySystemsTweakSystem from "Views/Library/Systems/TweakSystem.js";
-import LibrarySystemsAudioSystem from "Views/Library/Systems/AudioSystem.js";
-import LibrarySystemsDialogSystem from "Views/Library/Systems/DialogSystem.js";
+import LibrarySystemsPool from "Views/Library/Systems/Pool.js";
+import LibrarySystemsAnimation from "Views/Library/Systems/Animation.js";
+import LibrarySystemsTweak from "Views/Library/Systems/Tweak.js";
+import LibrarySystemsAudio from "Views/Library/Systems/Audio.js";
+import LibrarySystemsDialog from "Views/Library/Systems/Dialog.js";
+import LibrarySystemsNavigation from "Views/Library/Systems/Navigation.js";
 
 import LibraryDecorators from "Views/Library/Decorators/_Decorators.js";
 import LibraryDecoratorsConditional from "Views/Library/Decorators/Conditional.js";
@@ -90,6 +93,7 @@ export default function App() {
           <Route exact path="/aboutUs" element={<AboutUs/>}></Route>
           
           <Route exact path="/library" element={<Library content={<LibraryLibrary />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/installation" element={<Library content={<LibraryInstallation />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/changelog" element={<Library content={<LibraryChangelog />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/License" element={<Library content={<LibraryLicense />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/inConstruction" element={<Library content={<LibraryInConstruction />} menu={LibraryMenu} />}></Route>
@@ -126,10 +130,12 @@ export default function App() {
           <Route exact path="/library/machines/tween" element={<Library content={<LibraryMachinesTween />} menu={LibraryMenu} />}></Route>
 
           <Route exact path="/library/systems" element={<Library content={<LibrarySystems />} menu={LibraryMenu} />}></Route>
-          <Route exact path="/library/systems/animationSystem" element={<Library content={<LibrarySystemsAnimationSystem />} menu={LibraryMenu} />}></Route>
-          <Route exact path="/library/systems/tweakSystem" element={<Library content={<LibrarySystemsTweakSystem />} menu={LibraryMenu} />}></Route>          
-          <Route exact path="/library/systems/audioSystem" element={<Library content={<LibrarySystemsAudioSystem />} menu={LibraryMenu} />}></Route>
-          <Route exact path="/library/systems/dialogSystem" element={<Library content={<LibrarySystemsDialogSystem />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/systems/pool" element={<Library content={<LibrarySystemsPool />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/systems/animation" element={<Library content={<LibrarySystemsAnimation />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/systems/tweak" element={<Library content={<LibrarySystemsTweak />} menu={LibraryMenu} />}></Route>          
+          <Route exact path="/library/systems/audio" element={<Library content={<LibrarySystemsAudio />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/systems/dialog" element={<Library content={<LibrarySystemsDialog />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/systems/navigation" element={<Library content={<LibrarySystemsNavigation />} menu={LibraryMenu} />}></Route>
 
           <Route exact path="/library/decorators" element={<Library content={<LibraryDecorators />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/decorators/conditional" element={<Library content={<LibraryDecoratorsConditional />} menu={LibraryMenu} />}></Route>

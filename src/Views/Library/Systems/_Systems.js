@@ -20,21 +20,26 @@ export default function Function() {
                 Each system is crafted with modularity and extensibility, ensuring easy adaptation and customization for any game project.
             </p>
 
-            <a href="/#/library/systems/animationSystem" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Animation System</h4></a>
+            <a href="/#/library/systems/pool" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Pool System</h4></a>
+            <p className="pad-left-3">
+                This is the Pool System
+            </p>
+
+            <a href="/#/library/systems/animation" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Animation System</h4></a>
             <p className="pad-left-3">
                 The Animation system is designed to simplify the creation and management of sprite-based animations in Unity. 
                 It consists of two core components: the Sprite Animator and the Sprite Animation Asset. Together, these tools 
                 make it easy to create, edit and control animations for SpriteRenderer and UI Image components.
             </p>
 
-            <a href="/#/library/systems/tweakSystem" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Tweak System</h4></a>
+            <a href="/#/library/systems/tweak" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Tweak System</h4></a>
             <p className="pad-left-3">
                 The Tweak system provides a dynamic solution for adjusting the position, rotation, scale and color of GameObjects 
                 with ease. It enables developers to create intricate, animated changes to objects without having to write 
                 custom scripts. The Tweak system supports complex tweaks, including sequences and randomized effects, for both 2D and 3D objects.
             </p>
 
-            <a href="/#/library/systems/audioSystem" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Audio System</h4></a>
+            <a href="/#/library/systems/audio" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Audio System</h4></a>
             <p className="pad-left-3">
                 The Audio system simplifies the process of managing background music, sound effects and audio events in your game. 
                 Designed for ease of use, this system enables you to control audio playback without needing to write complex audio 
@@ -42,7 +47,7 @@ export default function Function() {
                 extensive scripting knowledge, making it ideal for both designers and programmers.
             </p>
 
-            <a href="/#/library/systems/dialogSystem" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Dialog System</h4></a>
+            <a href="/#/library/systems/dialog" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Dialog System</h4></a>
             <p className="pad-left-3">
                 The Dialog system provides an easy-to-use tool for creating and managing in-game dialogues. It allows developers to 
                 write lines of dialogue, customize character settings (such as text color, font and speed) and integrate dynamic 
@@ -50,6 +55,11 @@ export default function Function() {
                 eliminating the need for custom dialog scripting. This system is perfect for creating dynamic conversations or 
                 tutorials in games, and it provides enough customization options to cater to various dialogue needs without the 
                 need for custom implementations.
+            </p>
+
+            <a href="/#/library/systems/navigation" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Navigation System</h4></a>
+            <p className="pad-left-3">
+                This is the Navigation System
             </p>
         </div>
     );

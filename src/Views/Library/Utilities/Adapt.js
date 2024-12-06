@@ -360,6 +360,36 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
+            <Group title="ToEven" content={(
+                <div>
+                    <p>
+                        Converts an int index value to its even integer representation [i x 2].
+                    </p>
+                    <h5 className="c-light-1">Signature</h5>
+                    <ul className="property-list">
+                        <li><b2>static int</b2> <b1>ToEven</b1>(<b2>this int</b2> <b1>value</b1>)</li>
+                    </ul>
+                    <h5 className="c-light-1">Parameters</h5>
+                    <ul className="property-list">
+                        <li><b2>int</b2> <b1>value</b1>: The integer value to convert</li>                    
+                    </ul>
+                </div>
+            )}/>
+            <Group title="ToOdd" content={(
+                <div>
+                    <p>
+                        Converts an int index value to its odd integer representation [(i x 2) + 1].
+                    </p>
+                    <h5 className="c-light-1">Signature</h5>
+                    <ul className="property-list">
+                        <li><b2>static int</b2> <b1>ToOdd</b1>(<b2>this int</b2> <b1>value</b1>)</li>
+                    </ul>
+                    <h5 className="c-light-1">Parameters</h5>
+                    <ul className="property-list">
+                        <li><b2>int</b2> <b1>value</b1>: The integer value to convert</li>                    
+                    </ul>
+                </div>
+            )}/>
 
             <h3 className="p-2">Examples</h3>
             <Group title="Example 01: Basic Usage of Adapt Utilities" content={(
