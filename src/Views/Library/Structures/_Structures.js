@@ -28,9 +28,9 @@ export default function Function() {
                 The Toggle structure provides a flexible way to manage binary on/off states with associated values, enabling controlled functionality changes and streamlined code in scenarios like enabling/disabling features, controlling UI elements or managing player abilities.
             </p>
 
-            <a href="/#/library/structures/vectors" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Vectors</h4></a>
+            <a href="/#/library/structures/sets" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Sets</h4></a>
             <p className="pad-left-3">
-                The Vector structures offer a flexible framework for managing multi-axis data in Unity, supporting various data types and seamlessly integrating with the Unity Editor to enhance functionality and streamline development workflows.
+                The Set structures offer a flexible framework for managing multi-axis data in Unity, supporting various data types and seamlessly integrating with the Unity Editor to enhance functionality and streamline development workflows.
             </p>
 
             <a href="/#/library/structures/couples" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Couples</h4></a>
@@ -46,26 +46,6 @@ export default function Function() {
             <a href="/#/library/structures/tier" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Tier</h4></a>
             <p className="pad-left-3">
                 The Tier structure adds event-driven logic to the Range structure, automatically triggering actions when a value is evaluated against a range.
-            </p>
-
-            <a href="/#/library/structures/label" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Labels</h4></a>
-            <p className="pad-left-3">
-                The Label structure is a scriptable object in Unity that provides an alternative to string identifiers, allowing developers to tag and categorize gameObjects and assets for improved management in complex projects.
-            </p>
-
-            <a href="/#/library/structures/timeScale" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Time Scale</h4></a>
-            <p className="pad-left-3">
-                The TimeScale structure provides a solution for managing and synchronizing time across Unity objects, allowing consistent timing, independent pausing and time effects like slow motion or fast-forwarding, enhancing cohesive gameplay experiences.
-            </p>
-
-            <a href="/#/library/structures/events" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Events</h4></a>
-            <p className="pad-left-3">
-                The Event structure reimagines UnityEvent drawers and integrates them with a scriptable object framework to enable decoupled communication between components, making it ideal for modular, maintainable and scalable systems.
-            </p>
-
-            <a href="/#/library/structures/valueAssets" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Value Assets</h4></a>
-            <p className="pad-left-3">
-                The Value Asset structure in Unity enables modular and decoupled code by using scriptable objects to efficiently share and manage data across components and scenes, enhancing project maintainability.
             </p>
 
             <a href="/#/library/structures/switches" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Switches</h4></a>

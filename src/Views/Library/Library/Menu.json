@@ -9,6 +9,21 @@
         ]
     },
     {
+        "label": "Decorators",
+        "items": [
+            { "label": "[Decorators]", "link": "/#/library/decorators" },
+            { "label": "Conditional", "link": "/#/library/decorators/conditional" },
+            { "label": "Line", "link": "/#/library/decorators/line" },
+            { "label": "Title", "link": "/#/library/decorators/title" },
+            { "label": "Message", "link": "/#/library/decorators/message" },
+            { "label": "Show & Hide", "link": "/#/library/decorators/showHide" },
+            { "label": "Block", "link": "/#/library/decorators/block" },
+            { "label": "Toggle", "link": "/#/library/decorators/toggle" },
+            { "label": "Collapse", "link": "/#/library/decorators/collapse" },
+            { "label": "Progress Bar", "link": "/#/library/decorators/progressBar" }
+        ]
+    },
+    {
         "label": "Utilities",
         "items": [
             { "label": "[Utilities]", "link": "/#/library/utilities" },
@@ -30,14 +45,10 @@
             { "label": "[Structures]", "link": "/#/library/structures" },
             { "label": "Grids", "link": "/#/library/structures/grids" },
             { "label": "Toggles", "link": "/#/library/structures/toggles" },
-            { "label": "Vectors", "link": "/#/library/structures/vectors" },
+            { "label": "Sets", "link": "/#/library/structures/sets" },
             { "label": "Couples", "link": "/#/library/structures/couples" },
             { "label": "Ranges", "link": "/#/library/structures/ranges" },
             { "label": "Tier", "link": "/#/library/structures/tier" },
-            { "label": "Labels", "link": "/#/library/structures/label" },
-            { "label": "Time Scale", "link": "/#/library/structures/timeScale" },
-            { "label": "Events", "link": "/#/library/structures/events" },
-            { "label": "Value Assets", "link": "/#/library/structures/valueAssets" },
             { "label": "Switches", "link": "/#/library/structures/switches" }
         ]
     },
@@ -56,26 +67,14 @@
         "items": [
             { "label": "[Systems]", "link": "/#/library/systems" },
             { "label": "Pool System *", "link": "/#/library/systems/pool" },
+            { "label": "Label System", "link": "/#/library/systems/label" },
+            { "label": "TimeScale System", "link": "/#/library/systems/timeScale" },
+            { "label": "SOAP System", "link": "/#/library/systems/SOAP" },
             { "label": "Animation System *", "link": "/#/library/systems/animation", "pro": true },
             { "label": "Tweak System *", "link": "/#/library/systems/tweak", "pro": true },
             { "label": "Audio System *", "link": "/#/library/systems/audio", "pro": true },
             { "label": "Dialog System *", "link": "/#/library/systems/dialog", "pro": true },
             { "label": "Navigation System *", "link": "/#/library/systems/navigation", "pro": true }
-        ]
-    },
-    {
-        "label": "Decorators",
-        "items": [
-            { "label": "[Decorators]", "link": "/#/library/decorators" },
-            { "label": "Conditional", "link": "/#/library/decorators/conditional" },
-            { "label": "Line", "link": "/#/library/decorators/line" },
-            { "label": "Title", "link": "/#/library/decorators/title" },
-            { "label": "Message", "link": "/#/library/decorators/message" },
-            { "label": "Show & Hide", "link": "/#/library/decorators/showHide" },
-            { "label": "Block", "link": "/#/library/decorators/block" },
-            { "label": "Toggle", "link": "/#/library/decorators/toggle" },
-            { "label": "Collapse", "link": "/#/library/decorators/collapse" },
-            { "label": "Progress Bar", "link": "/#/library/decorators/progressBar" }
         ]
     },
     {

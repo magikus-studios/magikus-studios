@@ -275,6 +275,23 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
+            <Group title="AddColorTag" content={(
+                <div>
+                    <p>
+                        Wraps the provided text in a {'<'}Color{'>'} tag with the specified color, allowing you to create logs with multiple color styles for enhanced readability.
+                    </p>
+                    <h5 className="c-light-1">Signature</h5>
+                    <ul className="property-list">
+                        <li><b2>static string</b2> <b1>AddColorTag</b1>(<b2>this string</b2> <b1>text</b1>, <b2>string</b2> <b1>colorHex</b1>)</li>
+                        <li><b2>static string</b2> <b1>AddColorTag</b1>(<b2>this string</b2> <b1>text</b1>, <b2>Color</b2> <b1>color</b1>)</li>
+                    </ul>
+                    <h5 className="c-light-1">Parameters</h5>
+                    <ul className="property-list">
+                        <li><b2>Color</b2> <b1>color</b1>: Options for styling the message</li>                    
+                        <li><b2>string</b2> <b1>colorHex</b1>: Options for styling the message</li>                    
+                    </ul>
+                </div>
+            )}/>
 
             <h3 className="p-2">Examples</h3>
             <Group title="Example 01: Using Directional Input" content={(
@@ -306,7 +323,8 @@ export default function Function() {
                     <p>
                         This script illustrates how to enhance console output with different styles and colors using the Magikus Library.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Controls/Controls - 04.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Utilities/Controls/Controls - 04.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Utilities/Controls/Controls - 05.jpg" alt=""/>            
                 </div>
             )}/>
 

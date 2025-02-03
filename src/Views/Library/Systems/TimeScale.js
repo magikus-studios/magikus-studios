@@ -6,25 +6,25 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center pad-top-4">Time Scale Structure</h1>
+            <h1 className="text-center pad-top-4">TimeScale System</h1>
             <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
-                Structure designed to Facilitate the Synchronization of Time and Time Scale between different Objects
+                System designed to Facilitate the Synchronization of Time and Time Scale between different Objects
             </h6>
             
             <h3 className="p-2">Overview</h3>
             <p className="pad-left-2 pad-bottom-2">
-                The TimeScale structure offers a robust and adaptable solution for managing and synchronizing time across multiple objects within a Unity project. 
+                The TimeScale system offers a robust and adaptable solution for managing and synchronizing time across multiple objects within a Unity project. 
                 By utilizing a shared TimeScale, objects can maintain consistent time values, ensuring cohesive behavior throughout the application. 
                 This feature is especially beneficial for independently pausing game time while UI animations continue, applying time effects like slow motion or fast-forwarding across different entities or synchronizing objects to operate in a unified timeframe, such as aligning animation frames or physics calculations. 
                 Leveraging the TimeScale structure's properties and methods enables developers to create immersive and responsive gameplay experiences.
             </p>
             <div className="p-2">
-                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/TimeScale/Time Scale - 02.jpg" alt=""/>            
+                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/TimeScale/Time Scale - 02.jpg" alt=""/>            
             </div>
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">
-                The TimeScale structure can be used by both the TimeScale class and the TimeScale asset, which implements the ITimeScale interface. 
+                The TimeScale system can be used by both the TimeScale structure and the TimeScale asset, which implements the ITimeScale interface. 
                 The TimeScale asset provides a convenient ScriptableObject for easily integrating TimeScale functionality into scripts, with custom drawers enabling special serialization.
             </p>
             <Group title="ITimeScale" content={(
@@ -62,7 +62,7 @@ export default function Function() {
 
             <h3 className="p-2">Examples</h3>
             <p className="pad-left-2">
-                The TimeScale structure offers several properties and methods to manage and retrieve time-related values. 
+                The TimeScale system offers several properties and methods to manage and retrieve time-related values. 
                 Here’s a breakdown of how to use the TimeScale structure in your Unity project.
             </p>
             <ul>
@@ -74,19 +74,19 @@ export default function Function() {
                 <li><b>UseFixedTime</b>: A bool indicating whether to use the fixed delta time</li>
             </ul>
             <p className="pad-left-2">
-                You can create a TimeScale asset by going to the Unity menu, <b1>Assets {">"} Create {">"} Magikus {">"} Structures {">"} TimeScale Structure {">"} Time Scale Asset</b1>.
+                You can create a TimeScale asset by going to the Unity menu, <b1>Assets {">"} Create {">"} Magikus {">"} TimeScale System {">"} Time Scale Asset</b1>.
             </p>
             <Group title="Example 01: Basic TimeScale Usage" content={(
                 <div>
                     <p> 
                         This example demonstrates how to create and use a TimeScale object in a script to control the speed of a moving object.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/TimeScale/Time Scale - 01.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/TimeScale/Time Scale - 01.jpg" alt=""/>            
                     <p> 
                         A TimeScale object is used to control the delta time applied to the object's movement speed. 
                         Adjusting the Scale property of the TimeScale object will dynamically affect the movement speed of the object in the game.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/TimeScale/Time Scale - 02.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/TimeScale/Time Scale - 02.jpg" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 02: Pausing Game Time" content={(
@@ -94,13 +94,13 @@ export default function Function() {
                     <p> 
                         In this example, a TimeScaleAsset is used to pause game time while keeping UI animations running.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/TimeScale/Time Scale - 03.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/TimeScale/Time Scale - 03.jpg" alt=""/>            
                     <p> 
                         This script demonstrates how to pause and resume the game using TimeScaleAsset. 
                         The game is paused by setting the Scale of gameTimeScale to 0f, while the UI continues to run by maintaining its scale at 1f.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/TimeScale/Time Scale - 04.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/TimeScale/Time Scale - 05.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/TimeScale/Time Scale - 04.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/TimeScale/Time Scale - 05.jpg" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 03: Implementing Slow Motion Effect" content={(
@@ -108,12 +108,12 @@ export default function Function() {
                     <p> 
                         This example showcases how to apply a slow motion effect to certain objects using a TimeScale structure.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/TimeScale/Time Scale - 06.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/TimeScale/Time Scale - 06.jpg" alt=""/>            
                     <p> 
                         The TimeScale structure is used to create a slow motion effect by halving the time scale. 
                         Objects using this TimeScale will operate at half the normal speed until the scale is reset to 1f.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/TimeScale/Time Scale - 07.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/TimeScale/Time Scale - 07.jpg" alt=""/>            
                 </div>
             )}/>
 

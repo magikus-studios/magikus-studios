@@ -25,6 +25,21 @@ export default function Function() {
                 This is the Pool System
             </p>
 
+            <a href="/#/library/systems/label" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Labels</h4></a>
+            <p className="pad-left-3">
+                The Label structure is a scriptable object in Unity that provides an alternative to string identifiers, allowing developers to tag and categorize gameObjects and assets for improved management in complex projects.
+            </p>
+
+            <a href="/#/library/systems/timeScale" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">TimeScale System</h4></a>
+            <p className="pad-left-3">
+                The TimeScale system provides a solution for managing and synchronizing time across Unity objects, allowing consistent timing, independent pausing and time effects like slow motion or fast-forwarding, enhancing cohesive gameplay experiences.
+            </p>
+
+            <a href="/#/library/systems/SOAP" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">SOAP System</h4></a>
+            <p className="pad-left-3">
+                The SOAP system in Unity enhances modularity and efficiency by using scriptable objects to centralize event handling and data sharing, enabling decoupled communication, streamlined scene management and maintainable project architecture.
+            </p>
+
             <a href="/#/library/systems/animation" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Animation System</h4></a>
             <p className="pad-left-3">
                 The Animation system is designed to simplify the creation and management of sprite-based animations in Unity. 

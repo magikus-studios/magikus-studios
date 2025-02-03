@@ -17,6 +17,9 @@ export default function Function() {
                 The Grid structures module offers classes for creating and manipulating grids, making it ideal for tasks such as pathfinding and spatial data representation in game development. 
                 Utilizing these Grid structures allows developers to efficiently manage grid-based data, implement sophisticated spatial logic and simplify pathfinding operations.
             </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Grids/Grids - 06.jpg" alt=""/>            
+            </div>
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">
@@ -875,12 +878,48 @@ export default function Function() {
                     <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Grids/Grids - 03.jpg" alt=""/>            
                 </div>
             )}/>
+            <Group title="Example 04: Using the Matrix Editor" content={(
+                <div>
+                    <p>
+                        In this example, we'll take a look at the Matrix Editor. 
+                        The Matrix Editor allows us to visualize the contents of a <b1>Matrix2D</b1> (or <b1>Grid2D</b1>) in real time.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Grids/Grids - 04.jpg" alt=""/>            
+                    <p>
+                        Make sure that the Matrix2D is set as a public field so that the inspector can serialize it. 
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Grids/Grids - 05.jpg" alt=""/>            
+                    <p>
+                        When the visualize button is pressed, a Matrix 2D Editor window will open displaying the matrix data. 
+                        Notice that if the matrix is empty or not initialized the editor will not display anything.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Grids/Grids - 06.jpg" alt=""/>            
+                    <p>
+                        The Flip button rotates the matrix flipping the rows with the columns.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Grids/Grids - 07.jpg" alt=""/>            
+                    <p>
+                        The Positions button makes the indices display the actual position of the item in the matrix.
+                        This feature can help to understand better the grid.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Grids/Grids - 08.jpg" alt=""/>            
+                    <p>
+                        The Mirror H button allows to flip the matrix horizontaly.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Grids/Grids - 09.jpg" alt=""/>            
+                    <p>
+                        The Mirror V button allows to flip the matrix vertically.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Grids/Grids - 10.jpg" alt=""/>            
+                </div>
+            )}/>
 
             <h3 className="p-2">Notes</h3>
             <ul>
-                <li>Ensure that the types used in Matrix2D{"<T>"} are compatible with the operations you intend to perform.</li>
+                <li>Ensure that the types used in <b1>Matrix2D{"<T>"}</b1> are compatible with the operations you intend to perform.</li>
                 <li>When using Pathfinder2D, make sure the start and end positions are within the bounds of the matrix.</li>
                 <li>The Map methods are powerful for applying actions to multiple cells but should be used with care to avoid performance issues on large grids.</li>
+                <li>The Matrix 2D Editor window and it's features does not modify the values of the matrix displayed. Its only purpose is to help visualize the grid.</li>
             </ul>
       </div>
     );

@@ -6,19 +6,19 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center pad-top-4">Label Structure</h1>
+            <h1 className="text-center pad-top-4">Label System</h1>
             <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
                 Scriptable object designed to Function as Tags
             </h6>
             
             <h3 className="p-2">Overview</h3>
             <p className="pad-left-2 pad-bottom-2">
-                The Label structure provides an efficient alternative to traditional string identifiers in Unity by offering a more organized approach for tagging gameObjects and other assets.
+                The Label system provides an efficient alternative to traditional string identifiers in Unity by offering a more organized approach for tagging gameObjects and other assets.
                 As a scriptable object, it enables developers to tag and categorize gameObjects and other resources through labels and label groups, significantly reducing the risk of errors associated with using string identifiers. 
                 Ideal for managing sound, collision detection and object identification, the Label structure enhances flexibility, reliability and organization within complex Unity projects.
             </p>
             <div className="p-2">
-                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Labels/Labels - 02.jpg" alt=""/>            
+                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Labels/Labels - 02.jpg" alt=""/>            
             </div>
 
            <h3 className="p-2">Introduction</h3>
@@ -72,22 +72,22 @@ export default function Function() {
             <h3 className="p-2">Examples</h3>
             <Group title="Step 1: Creating Label Assets" content={(
                 <div>
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Labels/Labels - 01.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Labels/Labels - 01.jpg" alt=""/>            
                     <p> 
-                        <b1>Creating a Label</b1>: Go to the Unity menu, <b1>Assets {">"} Create {">"} Magikus {">"} Structures {">"} Label Structure {">"} Label Asset</b1>. 
+                        <b1>Creating a Label</b1>: Go to the Unity menu, <b1>Assets {">"} Create {">"} Magikus {">"} Label System {">"} Label Asset</b1>. 
                         This creates a LabelAssetStructure instance that you can name and assign in the Inspector.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Labels/Labels - 02.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Labels/Labels - 02.jpg" alt=""/>            
                     <p> 
-                        <b1>Creating a Label Group</b1>: Go to the Unity menu, <b1>Assets {">"} Create {">"} Magikus {">"} Structures {">"} Label Structure {">"} Label Group Asset</b1>. 
+                        <b1>Creating a Label Group</b1>: Go to the Unity menu, <b1>Assets {">"} Create {">"} Magikus {">"} Label System {">"} Label Group Asset</b1>. 
                         This creates a LabelGroupAssetStructure instance, allowing you to include multiple LabelAssetStructure instances as a group.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Labels/Labels - 03.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Labels/Labels - 03.jpg" alt=""/>            
                 </div>
             )}/>
             <Group title="Step 2: Using Label Controller" content={(
                 <div>
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Labels/Labels - 04.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Labels/Labels - 04.jpg" alt=""/>            
                     <p> 
                         Attach the LabelController component to a game object in the scene. Assign a Label or Label Group to the _label field in the Inspector.
                     </p>
@@ -95,11 +95,11 @@ export default function Function() {
             )}/>
             <Group title="Step 3: Checking Labels in Code" content={(
                 <div>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Labels/Labels - 05.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/Labels/Labels - 05.jpg" alt=""/>            
                     <p> 
                         Use the provided methods in the LabelController or in the Label structures to check if a game object has a specific label or label group.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Labels/Labels - 06.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Labels/Labels - 06.jpg" alt=""/>            
                 </div>
             )}/>
 
