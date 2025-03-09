@@ -37,8 +37,8 @@ export default function Function() {
                     <ul className="property-list">
                         <li><b2>StateMachine{"<T>"}</b2> <b1>StateMachine</b1>(<b2>params State{"<T>"}[]</b2> <b1>states</b1>): Initializes the state machine with an array of states.</li>
                         <li><b2>StateMachine{"<T>"}</b2> <b1>StateMachine</b1>(<b2>float</b2> <b1>updateRate</b1>, <b2>params State{"<T>"}[]</b2> <b1>states</b1>): Initializes the state machine with an update rate and an array of states.</li>
-                        <li><b2>StateMachine{"<T>"}</b2> <b1>StateMachine</b1>(<b2>ITimeScale</b2> <b1>timeScale</b1>, <b2>params State{"<T>"}[]</b2> <b1>states</b1>): Initializes the state machine with a time scale and an array of states.</li>
-                        <li><b2>StateMachine{"<T>"}</b2> <b1>StateMachine</b1>(<b2>float</b2> <b1>updateRate</b1>, <b2>ITimeScale</b2> <b1>timeScale</b1>, <b2>params State{"<T>"}[]</b2> <b1>states</b1>): Initializes the state machine with an update rate, a time scale and an array of states.</li>
+                        <li><b2>StateMachine{"<T>"}</b2> <b1>StateMachine</b1>(<b2>ITimescale</b2> <b1>timescale</b1>, <b2>params State{"<T>"}[]</b2> <b1>states</b1>): Initializes the state machine with a timescale and an array of states.</li>
+                        <li><b2>StateMachine{"<T>"}</b2> <b1>StateMachine</b1>(<b2>float</b2> <b1>updateRate</b1>, <b2>ITimescale</b2> <b1>timescale</b1>, <b2>params State{"<T>"}[]</b2> <b1>states</b1>): Initializes the state machine with an update rate, a timescale and an array of states.</li>
                     </ul>
                     <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
@@ -59,7 +59,7 @@ export default function Function() {
                         <li><b2>Action</b2> <b1>beforeStateAction</b1>: The action to be executed before the state.</li>
                         <li><b2>Action</b2> <b1>afterStateAction</b1>: The action to be executed after the state.</li>
                         <li><b2>float</b2> <b1>updateRate</b1>: The rate at which the state machine updates.</li>
-                        <li><b2>ITimeScale</b2> <b1>timeScale</b1>: The time scale used for updating the state machine.</li>
+                        <li><b2>ITimescale</b2> <b1>timescale</b1>: The timescale used for updating the state machine.</li>
                     </ul>     
                 </div>
             )}/>

@@ -66,15 +66,15 @@
         "label": "Systems",
         "items": [
             { "label": "[Systems]", "link": "/#/library/systems" },
-            { "label": "Pool System *", "link": "/#/library/systems/pool" },
+            { "label": "Pool System", "link": "/#/library/systems/pool" },
             { "label": "Label System", "link": "/#/library/systems/label" },
-            { "label": "TimeScale System", "link": "/#/library/systems/timeScale" },
+            { "label": "Timescale System", "link": "/#/library/systems/timescale" },
             { "label": "SOAP System", "link": "/#/library/systems/SOAP" },
-            { "label": "Animation System *", "link": "/#/library/systems/animation", "pro": true },
-            { "label": "Tweak System *", "link": "/#/library/systems/tweak", "pro": true },
-            { "label": "Audio System *", "link": "/#/library/systems/audio", "pro": true },
-            { "label": "Dialog System *", "link": "/#/library/systems/dialog", "pro": true },
-            { "label": "Navigation System *", "link": "/#/library/systems/navigation", "pro": true }
+            { "label": "Animation System", "link": "/#/library/systems/animation", "hide": true },
+            { "label": "Tweak System *", "link": "/#/library/systems/tweak", "hide": true },
+            { "label": "Audio System *", "link": "/#/library/systems/audio", "hide": true },
+            { "label": "Dialog System *", "link": "/#/library/systems/dialog", "hide": true },
+            { "label": "Navigation System *", "link": "/#/library/systems/navigation", "hide": true }
         ]
     },
     {
@@ -85,10 +85,10 @@
             { "label": "Button Attribute", "link": "/#/library/tools/buttonAttribute" },
             { "label": "Reference Value Attribute", "link": "/#/library/tools/referenceValueAttribute" },
             { "label": "Key Binding Drawer", "link": "/#/library/tools/keyBindingDrawer" },
-            { "label": "Hierarchy Editor", "link": "/#/library/tools/hierarchyEditor", "pro": true },
-            { "label": "Curve Editor", "link": "/#/library/tools/curveEditor", "pro": true},
-            { "label": "Reference Console", "link": "/#/library/tools/referenceConsole", "pro": true },
-            { "label": "Script Manager", "link": "/#/library/tools/scriptManager", "pro": true }
+            { "label": "Hierarchy Editor", "link": "/#/library/tools/hierarchyEditor" },
+            { "label": "Curve Editor", "link": "/#/library/tools/curveEditor"},
+            { "label": "Reference Console", "link": "/#/library/tools/referenceConsole" },
+            { "label": "Script Manager", "link": "/#/library/tools/scriptManager" }
         ]
     }
 ]

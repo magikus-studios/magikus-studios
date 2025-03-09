@@ -9,7 +9,9 @@ export default function Function() {
             <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
                 Unity Editor for Managing and Organizing the Hierarchy of GameObjects in a Scene 
             </h6>
+            {/*
             <div className="text-center pad-bottom-2"><prolabel>Only in Pro version</prolabel></div>
+            */}
 
             <h3 className="p-2">Overview</h3>
             <p className="pad-left-2 pad-bottom-2">

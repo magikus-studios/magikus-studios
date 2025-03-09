@@ -41,6 +41,10 @@ export default function Function() {
                         The Toggle attribute class provides several constructors to allow for flexible customization of the toggle button. 
                         Here are the constructors available:
                     </p>
+                    <h5 className="c-light-1">Operators</h5>
+                    <ul>
+                        <li><b2>static implicit operator T</b2> (<b2>Toggle{"<T>"}</b2> <b1>value</b1>) {"=>"} <b1>value</b1>.Value</li>
+                    </ul>
                     <h5 className="c-light-1">Properties</h5>
                     <ul>
                         <li><b2>bool</b2> <b1>State</b1>: State of the structure</li>
@@ -105,6 +109,7 @@ export default function Function() {
             <ul>
                 <li>The IfOn and IfOff methods provide flexibility by allowing you to pass in a delegate or lambda expression that gets executed based on the toggle's state.</li>
                 <li>The Toggle structures are integrated with Unity’s Editor through custom property drawers, making them easy to manipulate within the Inspector.</li>
+                <li> The Toggle structure enables an implicit conversion from Toggle{"<T>"} to its underlying type T. This allows the Toggle{"<T>"} instance to be used directly as T without requiring an explicit cast.</li>
             </ul>
        </div>
     );

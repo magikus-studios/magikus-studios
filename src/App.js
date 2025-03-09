@@ -55,8 +55,9 @@ import LibraryMachinesTween from "Views/Library/Machines/Tween.js";
 import LibrarySystems from "Views/Library/Systems/_Systems.js";
 import LibrarySystemsPool from "Views/Library/Systems/Pool.js";
 import LibrarySystemsLabel from "Views/Library/Systems/Label.js";
-import LibrarySystemsTimeScale from "Views/Library/Systems/TimeScale.js";
+import LibrarySystemsTimescale from "Views/Library/Systems/Timescale.js";
 import LibrarySystemsSOAP from "Views/Library/Systems/SOAP.js";
+
 import LibrarySystemsAnimation from "Views/Library/Systems/Animation.js";
 import LibrarySystemsTweak from "Views/Library/Systems/Tweak.js";
 import LibrarySystemsAudio from "Views/Library/Systems/Audio.js";
@@ -138,13 +139,15 @@ export default function App() {
           <Route exact path="/library/systems" element={<Library content={<LibrarySystems />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/systems/pool" element={<Library content={<LibrarySystemsPool />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/systems/label" element={<Library content={<LibrarySystemsLabel />} menu={LibraryMenu} />}></Route>
-          <Route exact path="/library/systems/timeScale" element={<Library content={<LibrarySystemsTimeScale />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/systems/timescale" element={<Library content={<LibrarySystemsTimescale />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/systems/SOAP" element={<Library content={<LibrarySystemsSOAP />} menu={LibraryMenu} />}></Route>
+          {/*
           <Route exact path="/library/systems/animation" element={<Library content={<LibrarySystemsAnimation />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/systems/tweak" element={<Library content={<LibrarySystemsTweak />} menu={LibraryMenu} />}></Route>          
           <Route exact path="/library/systems/audio" element={<Library content={<LibrarySystemsAudio />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/systems/dialog" element={<Library content={<LibrarySystemsDialog />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/systems/navigation" element={<Library content={<LibrarySystemsNavigation />} menu={LibraryMenu} />}></Route>
+          */}
 
           <Route exact path="/library/tools" element={<Library content={<LibraryTools />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/tools/baseComponent" element={<Library content={<LibraryToolsBaseComponent />} menu={LibraryMenu} />}></Route>

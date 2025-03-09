@@ -39,19 +39,27 @@ export default function Function() {
                     <ul className="property-list">
                         <li><b2>ICycle</b2> <b1>Move</b1>(<b2>this Transform</b2> <b1>transform</b1>): Translate an object by a specified offset over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>Move</b1>(<b2>this GameObject</b2> <b1>gameObject</b1>): Translate an object by a specified offset over time.</li>                                                
+                        <li><b2>ICycle</b2> <b1>Move</b1>(<b2>this RectTransform</b2> <b1>transform</b1>): Translate an object by a specified offset over time using the anchored position.</li>                                                
                         <li><b2>ICycle</b2> <b1>MoveTo</b1>(<b2>this Transform</b2> <b1>transform</b1>): Translate an object to a specific position over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>MoveTo</b1>(<b2>this GameObject</b2> <b1>gameObject</b1>): Translate an object to a specific position over time.</li>                        
+                        <li><b2>ICycle</b2> <b1>MoveTo</b1>(<b2>this RectTransform</b2> <b1>transform</b1>): Translate an object to a specific position over time using the anchored position.</li>                                                
+                        <li><b2>ICycle</b2> <b1>MoveBounce</b1>(<b2>this Transform</b2> <b1>transform</b1>): Translate an object to a specified position and then return it to its original position over time.</li>                                                
+                        <li><b2>ICycle</b2> <b1>MoveBounce</b1>(<b2>this GameObject</b2> <b1>gameObject</b1>): Translate an object to a specified position and then return it to its original position over time.</li>                        
+                        <li><b2>ICycle</b2> <b1>MoveBounce</b1>(<b2>this RectTransform</b2> <b1>transform</b1>): Translate an object to a specified position and then return it to its original position over time using the anchored position.</li>                                                
                     </ul>
 
                     <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>Transform</b2> <b1>transform</b1>: The targeted Transform for the tween.</li>                        
                         <li><b2>GameObject</b2> <b1>gameObject</b1>: The targeted GameObject for the tween.</li>
+                        <li><b2>RectTransform</b2> <b1>transform</b1>: The targeted RectTransform for the tween.</li>                        
                         <li><b2>float</b2> <b1>duration</b1> (optional): Time in seconds for the operation. Defaults to 1f.</li>                        
                         <li><b2>EASING_TYPE</b2> <b1>easingType</b1> (optional): Easing function to use for the tween. Defaults to EASING_TYPE.LinearIn.</li>
-                        <li><b2>ITimeScale</b2> <b1>timeScale</b1> (optional): Custom TimeScale for the tween.</li>
+                        <li><b2>ITimescale</b2> <b1>timescale</b1> (optional): Custom Timescale for the tween.</li>
                         <li><b2>Vector3</b2> <b1>direction</b1>: The direction to move the object.</li>                        
                         <li><b2>Vector3</b2> <b1>position</b1>: The position to move the object to.</li>
+                        <li><b2>Vector2</b2> <b1>direction</b1>: The direction to move the UI object.</li>                        
+                        <li><b2>Vector2</b2> <b1>position</b1>: The position to move the UI object to.</li>
                     </ul>                                        
                 </div>
             )}/>
@@ -63,6 +71,8 @@ export default function Function() {
                         <li><b2>ICycle</b2> <b1>Spin</b1>(<b2>this GameObject</b2> <b1>gameObject</b1>): Rotates an object continuously around its axes.</li>                                                
                         <li><b2>ICycle</b2> <b1>SpinTo</b1>(<b2>this Transform</b2> <b1>transform</b1>): Rotates an object to a specific angle over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>SpinTo</b1>(<b2>this GameObject</b2> <b1>gameObject</b1>): Rotates an object to a specific angle over time.</li>                        
+                        <li><b2>ICycle</b2> <b1>SpinBounce</b1>(<b2>this Transform</b2> <b1>transform</b1>): Rotates an object to a specific angle and then return it to its original angle over time.</li>                                                
+                        <li><b2>ICycle</b2> <b1>SpinBounce</b1>(<b2>this GameObject</b2> <b1>gameObject</b1>): Rotates an object to a specific angle and then return it to its original angle over time.</li>                        
                     </ul>
 
                     <h5 className="c-light-1">Parameters</h5>
@@ -71,7 +81,7 @@ export default function Function() {
                         <li><b2>GameObject</b2> <b1>gameObject</b1>: The targeted GameObject for the tween.</li>
                         <li><b2>float</b2> <b1>duration</b1> (optional): Time in seconds for the operation. Defaults to 1f.</li>                        
                         <li><b2>EASING_TYPE</b2> <b1>easingType</b1> (optional): Easing function to use for the tween. Defaults to EASING_TYPE.LinearIn.</li>
-                        <li><b2>ITimeScale</b2> <b1>timeScale</b1> (optional): Custom TimeScale for the tween.</li>
+                        <li><b2>ITimescale</b2> <b1>timescale</b1> (optional): Custom Timescale for the tween.</li>
                         <li><b2>Vector3</b2> <b1>localEulers</b1>: The angle by which to rotate the object over time.</li>                        
                         <li><b2>Vector3</b2> <b1>eulerAngle</b1>: The target angle for the object.</li>
                     </ul>                                        
@@ -85,6 +95,8 @@ export default function Function() {
                         <li><b2>ICycle</b2> <b1>Grow</b1>(<b2>this GameObject</b2> <b1>gameObject</b1>): Scales an object by a specified factor over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>GrowTo</b1>(<b2>this Transform</b2> <b1>transform</b1>): Scales an object to a specific size over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>GrowTo</b1>(<b2>this GameObject</b2> <b1>gameObject</b1>): Scales an object to a specific size over time.</li>                        
+                        <li><b2>ICycle</b2> <b1>GrowBounce</b1>(<b2>this Transform</b2> <b1>transform</b1>): Scales an object to a specific size and then return it to its original size over time.</li>                                                
+                        <li><b2>ICycle</b2> <b1>GrowBounce</b1>(<b2>this GameObject</b2> <b1>gameObject</b1>): Scales an object to a specific size and then return it to its original size over time.</li>                        
                     </ul>
 
                     <h5 className="c-light-1">Parameters</h5>
@@ -93,7 +105,7 @@ export default function Function() {
                         <li><b2>GameObject</b2> <b1>gameObject</b1>: The targeted GameObject for the tween.</li>
                         <li><b2>float</b2> <b1>duration</b1> (optional): Time in seconds for the operation. Defaults to 1f.</li>                        
                         <li><b2>EASING_TYPE</b2> <b1>easingType</b1> (optional): Easing function to use for the tween. Defaults to EASING_TYPE.LinearIn.</li>
-                        <li><b2>ITimeScale</b2> <b1>timeScale</b1> (optional): Custom TimeScale for the tween.</li>
+                        <li><b2>ITimescale</b2> <b1>timescale</b1> (optional): Custom Timescale for the tween.</li>
                         <li><b2>Vector3</b2> <b1>scale</b1>: The factor by which to scale the object over time.</li>                        
                         <li><b2>Vector3</b2> <b1>size</b1>: The target scale for the object.</li>
                     </ul>                                        
@@ -113,8 +125,13 @@ export default function Function() {
                         <li><b2>ICycle</b2> <b1>FadeTo</b1>(<b2>this Text</b2> <b1>image</b1>): Changes the transparency of an object to a specific value over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>FadeTo</b1>(<b2>this TMP_Text</b2> <b1>image</b1>): Changes the transparency of an object to a specific value over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>FadeTo</b1>(<b2>this ColorSwitch</b2> <b1>image</b1>): Changes the transparency of an object to a specific value over time.</li>                                                
-                    </ul>
 
+                        <li><b2>ICycle</b2> <b1>FadeBounce</b1>(<b2>this SpriteRenderer</b2> <b1>image</b1>): Changes the transparency of an object to a specific value and then return it to its original value over time.</li>                                                
+                        <li><b2>ICycle</b2> <b1>FadeBounce</b1>(<b2>this Image</b2> <b1>image</b1>): Changes the transparency of an object to a specific value and then return it to its original value over time.</li>                                                
+                        <li><b2>ICycle</b2> <b1>FadeBounce</b1>(<b2>this Text</b2> <b1>image</b1>): Changes the transparency of an object to a specific value and then return it to its original value over time.</li>                                                
+                        <li><b2>ICycle</b2> <b1>FadeBounce</b1>(<b2>this TMP_Text</b2> <b1>image</b1>): Changes the transparency of an object to a specific value and then return it to its original value over time.</li>                                                
+                        <li><b2>ICycle</b2> <b1>FadeBounce</b1>(<b2>this ColorSwitch</b2> <b1>image</b1>): Changes the transparency of an object to a specific value and then return it to its original value over time.</li>                                                
+                    </ul>
                     <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>SpriteRenderer</b2> <b1>image</b1>: The targeted SpriteRenderer for the tween.</li>                        
@@ -124,7 +141,7 @@ export default function Function() {
                         <li><b2>ColorSwitch</b2> <b1>image</b1>: The targeted ColorSwitch for the tween.</li>                        
                         <li><b2>float</b2> <b1>duration</b1> (optional): Time in seconds for the operation. Defaults to 1f.</li>                        
                         <li><b2>EASING_TYPE</b2> <b1>easingType</b1> (optional): Easing function to use for the tween. Defaults to EASING_TYPE.LinearIn.</li>
-                        <li><b2>ITimeScale</b2> <b1>timeScale</b1> (optional): Custom TimeScale for the tween.</li>
+                        <li><b2>ITimescale</b2> <b1>timescale</b1> (optional): Custom Timescale for the tween.</li>
                         <li><b2>float</b2> <b1>value</b1>: The amount to change the transparency over time.</li>                        
                         <li><b2>float</b2> <b1>alpha</b1>: The target transparency for the object.</li>                        
                     </ul>                                        
@@ -144,8 +161,12 @@ export default function Function() {
                         <li><b2>ICycle</b2> <b1>TintTo</b1>(<b2>this Text</b2> <b1>image</b1>): Changes the color of an object to a specific value over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>TintTo</b1>(<b2>this TMP_Text</b2> <b1>image</b1>): Changes the color of an object to a specific value over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>TintTo</b1>(<b2>this ColorSwitch</b2> <b1>image</b1>): Changes the color of an object to a specific value over time.</li>                                                
-                    </ul>
-
+                        <li><b2>ICycle</b2> <b1>TintBounce</b1>(<b2>this SpriteRenderer</b2> <b1>image</b1>): Changes the color of an object to a specific value and then return it to its original value over time.</li>                                                
+                        <li><b2>ICycle</b2> <b1>TintBounce</b1>(<b2>this Image</b2> <b1>image</b1>): Changes the color of an object to a specific value and then return it to its original value over time.</li>                                                
+                        <li><b2>ICycle</b2> <b1>TintBounce</b1>(<b2>this Text</b2> <b1>image</b1>): Changes the color of an object to a specific value and then return it to its original value over time.</li>                                                
+                        <li><b2>ICycle</b2> <b1>TintBounce</b1>(<b2>this TMP_Text</b2> <b1>image</b1>): Changes the color of an object to a specific value and then return it to its original value over time.</li>                                                
+                        <li><b2>ICycle</b2> <b1>TintBounce</b1>(<b2>this ColorSwitch</b2> <b1>image</b1>): Changes the color of an object to a specific value and then return it to its original value over time.</li>                                                
+                    </ul> 
                     <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>SpriteRenderer</b2> <b1>image</b1>: The targeted SpriteRenderer for the tween.</li>                        
@@ -155,7 +176,7 @@ export default function Function() {
                         <li><b2>ColorSwitch</b2> <b1>image</b1>: The targeted ColorSwitch for the tween.</li>                        
                         <li><b2>float</b2> <b1>duration</b1> (optional): Time in seconds for the operation. Defaults to 1f.</li>                        
                         <li><b2>EASING_TYPE</b2> <b1>easingType</b1> (optional): Easing function to use for the tween. Defaults to EASING_TYPE.LinearIn.</li>
-                        <li><b2>ITimeScale</b2> <b1>timeScale</b1> (optional): Custom TimeScale for the tween.</li>
+                        <li><b2>ITimescale</b2> <b1>timescale</b1> (optional): Custom Timescale for the tween.</li>
                         <li><b2>Color</b2> <b1>value</b1>: The amount to change the color over time.</li>                        
                         <li><b2>Color</b2> <b1>tint</b1>: The target color for the object.</li>                                                
                     </ul>                                        

@@ -22,23 +22,25 @@ export default function Function() {
 
             <a href="/#/library/systems/pool" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Pool System</h4></a>
             <p className="pad-left-3">
-                This is the Pool System
+                The Pool system provides an optimized way to manage GameObjects in Unity by reusing inactive objects instead of destroying and recreating them reducing performance overhead related to memory allocation and garbage collection.
             </p>
 
-            <a href="/#/library/systems/label" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Labels</h4></a>
+            <a href="/#/library/systems/label" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Label System</h4></a>
             <p className="pad-left-3">
                 The Label structure is a scriptable object in Unity that provides an alternative to string identifiers, allowing developers to tag and categorize gameObjects and assets for improved management in complex projects.
             </p>
 
-            <a href="/#/library/systems/timeScale" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">TimeScale System</h4></a>
+            <a href="/#/library/systems/timescale" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Timescale System</h4></a>
             <p className="pad-left-3">
-                The TimeScale system provides a solution for managing and synchronizing time across Unity objects, allowing consistent timing, independent pausing and time effects like slow motion or fast-forwarding, enhancing cohesive gameplay experiences.
+                The Timescale system provides a solution for managing and synchronizing time across Unity objects, allowing consistent timing, independent pausing and time effects like slow motion or fast-forwarding, enhancing cohesive gameplay experiences.
             </p>
 
             <a href="/#/library/systems/SOAP" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">SOAP System</h4></a>
             <p className="pad-left-3">
                 The SOAP system in Unity enhances modularity and efficiency by using scriptable objects to centralize event handling and data sharing, enabling decoupled communication, streamlined scene management and maintainable project architecture.
             </p>
+
+            {/*
 
             <a href="/#/library/systems/animation" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Animation System</h4></a>
             <p className="pad-left-3">
@@ -76,6 +78,9 @@ export default function Function() {
             <p className="pad-left-3">
                 This is the Navigation System
             </p>
+            
+            */}
+
         </div>
     );
 }
