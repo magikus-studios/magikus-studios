@@ -80,7 +80,7 @@ export default function Function() {
                 <div>
                     <img className="block-center mar-bottom-3 img-border" src="images/Library/Decorators/Line/Line - 03.jpg" alt=""/>            
                     <p>
-                        In this example, the <b2>[Line]</b2> attribute is configured to have a width of 50% of the available space in the Unity Inspector and a height of 5 units. 
+                        In this example, the <b2>[Line]</b2> attribute is configured to have a width of 75% of the available space in the Unity Inspector and a height of 5 units. 
                         This means the line will be thick, centered and take up only half the width of the Inspector window, providing a subtle visual break between field1 and field2. 
                         It also shows how to customize the color of the line by specifying the color with "F96E42", which is a hexadecimal color code for red.
                     </p>
