@@ -501,16 +501,34 @@ export default function Function() {
             <Group title="Example 01: String Inspection" content={(
                 <div>
                     <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Textop/Textop - 01.jpg" alt=""/>            
+                    <p>
+                        This script demonstrates various string inspection operations. 
+                        It retrieves a special character based on an enum, checks if a string contains a specific character, counts occurrences of a letter and verifies whether a string starts or ends with specific words.
+                        The example uses built-in methods like Textop.GetSpecial(), Contains(), Count() and Check() to perform these checks, logging the results to the console.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Textop/Textop - 02.jpg" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 02: String Modification" content={(
                 <div>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Textop/Textop - 02.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Textop/Textop - 03.jpg" alt=""/>            
+                    <p>
+                        This example demonstrates string manipulation in Unity using the Magikus library. 
+                        It includes three operations: reversing a string, shifting characters one position to the right and inserting a substring at a specific position. 
+                        The Run() method logs the results of each operation, showcasing how the original string is modified in different ways.                        
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Textop/Textop - 04.jpg" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 03: Complex String Manipulation" content={(
                 <div>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Textop/Textop - 03.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Textop/Textop - 05.jpg" alt=""/>            
+                    <p>
+                        This script demonstrates several string manipulation techniques in Unity using the Magikus library.
+                        It replaces the first occurrence of "abc" with "XYZ", moves the character '1' to the end of the string and shuffles the characters in the string "abc123abc" randomly.
+                        Each operation is logged to the console for visualization.                        
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Textop/Textop - 06.jpg" alt=""/>            
                 </div>
             )}/>
 

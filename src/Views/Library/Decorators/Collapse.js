@@ -82,8 +82,7 @@ export default function Function() {
                         In this example, the PlayerSettings struct is made collapsible in the Inspector. 
                         When the component is selected, the PlayerSettings field can be expanded or collapsed.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Collapse/Collapse - 02.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Collapse/Collapse - 03.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Collapse/Collapse - 01.gif" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 02: Making a Class Collapsible with a Custom Label" content={(
@@ -92,8 +91,7 @@ export default function Function() {
                     <p>
                         Here, the AdvancedSettings class is collapsible and uses a custom label "Advanced" for the collapsible section in the Inspector.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Collapse/Collapse - 05.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Collapse/Collapse - 06.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Collapse/Collapse - 02.gif" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 03: Nested Collapsible Classes" content={(
@@ -103,9 +101,7 @@ export default function Function() {
                         In this example, GraphicsSettings is a class nested inside GeneralSettings and are both made collapsible with custom labels. 
                         Each section can be expanded or collapsed independently in the Inspector.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Collapse/Collapse - 08.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Collapse/Collapse - 09.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Collapse/Collapse - 10.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Collapse/Collapse - 03.gif" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 04: Simple List of Integers" content={(
@@ -115,7 +111,7 @@ export default function Function() {
                         This example demonstrates how to create and use a ListC{"<int>"} to store integers. 
                         The list is populated with three integers, and the first element is printed to the console.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Collapse/Collapse - 12.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Collapse/Collapse - 04.gif" alt=""/>            
                     <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Collapse/Collapse - 13.jpg" alt=""/>                     
                 </div>
             )}/>
@@ -126,7 +122,7 @@ export default function Function() {
                         This example demonstrates how to use ListC to manage a list of custom objects, such as Item. 
                         The list is used to store Item objects, and the name of the second item is printed to the console.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Collapse/Collapse - 15.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Collapse/Collapse - 05.gif" alt=""/>            
                     <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Collapse/Collapse - 16.jpg" alt=""/>                     
                 </div>
             )}/>
@@ -137,7 +133,7 @@ export default function Function() {
                         This example shows how to initialize a ListC{"<string>"} with a custom capacity. 
                         The list is created with a capacity of 5, and two strings are added to it.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Collapse/Collapse - 18.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Collapse/Collapse - 06.gif" alt=""/>            
                     <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Collapse/Collapse - 19.jpg" alt=""/>                     
                 </div>
             )}/>

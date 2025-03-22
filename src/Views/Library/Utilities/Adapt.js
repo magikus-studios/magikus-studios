@@ -392,13 +392,47 @@ export default function Function() {
             )}/>
 
             <h3 className="p-2">Examples</h3>
-            <Group title="Example 01: Basic Usage of Adapt Utilities" content={(
+            <Group title="Example 01: Boolean Adaptation" content={(
                 <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Adapt/Adapt - 01.jpg" alt=""/>            
                     <p>
-                        Below are examples demonstrating the usage of the Adapt utilities methods across various scenarios.
+                        This example demonstrates how to convert a boolean value into different representations using the Adapt utility. 
+                        It converts a boolean (true or false) into a binary value (1 or 0), a signed integer (1 or -1) and a labeled string ("Yes" or "No") based on a specified label mode. 
+                        The results are then logged to the console.                        
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-100" src="images/Library/Utilities/Adapt/Adapt - 01.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-100" src="images/Library/Utilities/Adapt/Adapt - 02.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Adapt/Adapt - 02.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 02: Converting Numbers to Vectors" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Adapt/Adapt - 03.jpg" alt=""/>            
+                    <p>
+                        This example demonstrates how to use the Adapt utilities to convert integer and float values into Vector2, Vector3, Vector2Int and Vector3Int. 
+                        It shows how a single number can be transformed into a vector where all components share the same value, making it easier to work with numerical data in a vectorized format within Unity.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Adapt/Adapt - 04.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 03: Converting Colors to Hex and Back" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Adapt/Adapt - 05.jpg" alt=""/>            
+                    <p>
+                        This example demonstrates how to convert a Color to a hexadecimal string using the ToHex() method and then back to a Color using Adapt.ToColor().
+                        The script logs both conversions, showing how colors can be stored and retrieved in hex format for flexible color management in Unity.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Adapt/Adapt - 06.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 04: Converting System.Action to UnityAction" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Adapt/Adapt - 07.jpg" alt=""/>            
+                    <p>
+                        This example demonstrates how to convert a System.Action delegate to a UnityAction in Unity. 
+                        An Action is created that logs a message to the console, and then it's converted into a UnityAction using the ToAction() method. 
+                        A UnityEvent is instantiated, and the UnityAction is added as a listener. 
+                        Finally, the UnityEvent.Invoke() method is called to trigger the action and output the message.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Adapt/Adapt - 08.jpg" alt=""/>            
                 </div>
             )}/>
 

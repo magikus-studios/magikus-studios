@@ -235,25 +235,46 @@ export default function Function() {
             </p>
             <Group title="Example 01: Saving and Loading a Text File" content={(
                 <div>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Datafile/Datafile - 01.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Utilities/Datafile/Datafile - 01.jpg" alt=""/>            
+                    <p>
+                        This script demonstrates how to save and load a text file using the Magikus library in Unity. 
+                        It sets a file path, saves the string "Hello, World!" to a text file and then loads and prints the content of that file using the Datafile.Txt.Save and Datafile.Txt.Load methods.
+                    </p>
                     <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Datafile/Datafile - 02.jpg" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 02: Saving and Loading a JSON File" content={(
                 <div>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Datafile/Datafile - 03.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Utilities/Datafile/Datafile - 03.jpg" alt=""/>            
+                    <p>
+                        This example demonstrates how to save and load player data using JSON format in Unity.
+                        The script creates a PlayerData object with a player's name and score, saves it as a JSON file at a specified data path and then loads the data back into a new PlayerData object.
+                        The loaded data is displayed in the Unity console using Debug.Log.
+                        The class PlayerData is marked as [System.Serializable] to ensure it can be serialized into JSON format.
+                    </p>
                     <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Datafile/Datafile - 04.jpg" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 03: Saving and Loading a Encrypted Bin File" content={(
                 <div>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Datafile/Datafile - 05.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Utilities/Datafile/Datafile - 05.jpg" alt=""/>            
+                    <p>
+                        This example demonstrates how to save and load game state data using encryption. 
+                        A GameState class, which holds information like player position, score and difficulty, is created. 
+                        The Save method encrypts and stores the data in a specified binary file using a password. 
+                        The Load method decrypts and retrieves the data, allowing the game to resume with the saved state.
+                    </p>
                     <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Datafile/Datafile - 06.jpg" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 04: Saving and Loading a CSV File" content={(
                 <div>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Datafile/Datafile - 07.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Utilities/Datafile/Datafile - 07.jpg" alt=""/>            
+                    <p>
+                        This example demonstrates how to save and load CSV data using the Magikus library. 
+                        A 2D string array is created to represent a table of names and scores, which is then saved as a CSV file. 
+                        The CSV file is loaded back into both a 2D string array and a DataTable, and the data is printed to the console in both formats.
+                    </p>
                     <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Datafile/Datafile - 08.jpg" alt=""/>            
                 </div>
             )}/>

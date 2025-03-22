@@ -104,7 +104,7 @@ export default function Function() {
                         In this example, the text box is styled as a warning. 
                         The message "This is a warning message." will appear under exampleField with a warning icon, signaling a warning to the user, whenever the value is equal to 0.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Message/Message - 06.jpg" alt=""/>              
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Message/Message - 01.gif" alt=""/>              
                 </div>
             )}/>
             <Group title="Example 04: Message with Error Type" content={(

@@ -376,14 +376,47 @@ export default function Function() {
             <p className="pad-left-3">
                 Let’s go through a few examples to demonstrate how these methods work in practice.
             </p>
-            <Group title="Example 01: Basic Usage of Randop Utilities" content={(
+            <Group title="Example 01: Generating Random Values with Randop" content={(
                 <div>
                     <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Randop/Randop - 01.jpg" alt=""/>            
                     <p>
-                        This script showcases the use of the Randop utility in Unity to generate random values of various types, including bool, int, floats, 2D and 3D vectors, colors and points in both screen and world space. 
-                        It starts by generating and logging random values for each type, such as a random boolean, an integer between 0 and 100, a float between 1.0 and 10.0 and vectors with specified ranges. 
-                        Additionally, it generates a random color and retrieves random points on the screen and in the world space, making it particularly useful for adding randomness to game mechanics.
+                        This example demonstrates how to use the Randop class to generate random values in Unity. 
+                        The Run() method generates a random boolean, integer (between 0 and 100) and float (between 1.0 and 10.0), then logs them to the Unity console. 
+                        This showcases how Randop.Bool(), Randop.Int(min, max), and Randop.Float(min, max) can be used for randomness in game development.  
                     </p>
+                    <img className="block-center mar-bottom-3 img-border w-45" src="images/Library/Utilities/Randop/Randop - 02.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 02: Generating Random Vectors and Colors with Randop" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Randop/Randop - 03.jpg" alt=""/>            
+                    <p>
+                        This script demonstrates how to generate random values using the Randop class. 
+                        It creates a random Vector2 within a range of (0,5) to 10, a Vector3 between 0 and (5,10,15) and a random Color with values between 0 and 1. 
+                        Each generated value is then logged to the console.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Utilities/Randop/Randop - 04.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 03: Random Selection from an Array Using Randop Utilities" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Randop/Randop - 05.jpg" alt=""/>            
+                    <p>
+                        This script demonstrates how to randomly select an index and an item from a character array using the Randop utilities. 
+                        The RandomIndex() method retrieves a random index from the array, while RandomItem() fetches a random character. 
+                        The results are then logged to the Unity console using Debug.Log().
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-45" src="images/Library/Utilities/Randop/Randop - 06.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 04: Generating Random Screen and World Points" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Randop/Randop - 07.jpg" alt=""/>            
+                    <p>                    
+                        This script demonstrates the use of the Randop class to generate random points in both screen and world space in a Unity project.
+                        The Run method calls Randop.ScreenPoint() to obtain a random position within the screen space and Randop.WorldPoint() for a random point in world space, logging both values to the console.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Utilities/Randop/Randop - 08.jpg" alt=""/>            
                 </div>
             )}/>
 

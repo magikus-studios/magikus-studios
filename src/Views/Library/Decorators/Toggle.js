@@ -63,8 +63,7 @@ export default function Function() {
                     <p> 
                         This example adds a basic toggle button for the isEnabled boolean property. The default labels ("On" and "Off") and colors are used.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Toggle/Toggle - 02.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Toggle/Toggle - 03.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Toggle/Toggle - 01.gif" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 02: Toggle with Custom Labels" content={(
@@ -73,8 +72,7 @@ export default function Function() {
                     <p>
                         This example creates a toggle button for the isActivated property with custom labels "Activate" for true and "Deactivate" for false.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Toggle/Toggle - 05.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Toggle/Toggle - 06.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Toggle/Toggle - 02.gif" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 03: Toggle with Custom Colors and Label Visibility" content={(
@@ -83,8 +81,7 @@ export default function Function() {
                     <p>
                         This example sets up a toggle button for the isRunning property with no label, using custom labels "Start" and "Stop," and custom colors yellow for true and red for false.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Toggle/Toggle - 08.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Toggle/Toggle - 09.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Toggle/Toggle - 03.gif" alt=""/>            
                 </div>
             )}/>
 

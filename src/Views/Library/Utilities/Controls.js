@@ -296,34 +296,37 @@ export default function Function() {
             <h3 className="p-2">Examples</h3>
             <Group title="Example 01: Using Directional Input" content={(
                 <div>
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Controls/Controls - 01.jpg" alt=""/>            
                     <p>
                         This script demonstrates how to use directional input utilities from the Magikus Library within a Unity project.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Controls/Controls - 01.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Controls/Controls - 06.gif" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 02: Getting Mouse and Touch Positions" content={(
                 <div>
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Controls/Controls - 02.jpg" alt=""/>            
                     <p>
                         This script shows how to retrieve the mouse position and calculate the direction towards the touch position from a GameObject.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Controls/Controls - 02.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Controls/Controls - 08.gif" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 03: Screen and World Positioning" content={(
                 <div>
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Controls/Controls - 03.jpg" alt=""/>            
                     <p>
                         This script showcases how to calculate positions on the screen and in the world using the Magikus Library.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Controls/Controls - 03.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Utilities/Controls/Controls - 07.jpg" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 04: Enhanced Console Output" content={(
                 <div>
+                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Utilities/Controls/Controls - 04.jpg" alt=""/>            
                     <p>
                         This script illustrates how to enhance console output with different styles and colors using the Magikus Library.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Utilities/Controls/Controls - 04.jpg" alt=""/>            
                     <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Utilities/Controls/Controls - 05.jpg" alt=""/>            
                 </div>
             )}/>

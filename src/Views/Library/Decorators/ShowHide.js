@@ -71,8 +71,7 @@ export default function Function() {
                     <p>
                         In this example, the details field will only be visible in the Inspector if the showDetails boolean property is set to true.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/ShowHide/ShowHide - 02.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/ShowHide/ShowHide - 03.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/ShowHide/ShowHide - 01.gif" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 02: Hide Field Based on an Enum Property" content={(
@@ -81,8 +80,7 @@ export default function Function() {
                     <p>
                         Here, the advancedSetting field is only shown if currentMode is set to Mode.Advanced.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Decorators/ShowHide/ShowHide - 05.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Decorators/ShowHide/ShowHide - 06.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/ShowHide/ShowHide - 02.gif" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 03: Show Field Based on Multiple Values" content={(
@@ -91,11 +89,7 @@ export default function Function() {
                     <p>
                         In this example, the multipleOptionDetails field is displayed if displayOption is either 1, 2, or 3.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/ShowHide/ShowHide - 08.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/ShowHide/ShowHide - 09.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/ShowHide/ShowHide - 10.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/ShowHide/ShowHide - 11.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/ShowHide/ShowHide - 12.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/ShowHide/ShowHide - 03.gif" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 04: Show Field Based on a Reference Value" content={(
@@ -105,8 +99,7 @@ export default function Function() {
                         In this example, the referenceDetails field is displayed if referenceValue has a GameObject selected as a reference. 
                         If the value is none, then the field will be hidden.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/ShowHide/ShowHide - 14.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/ShowHide/ShowHide - 15.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/ShowHide/ShowHide - 04.gif" alt=""/>            
                 </div>
             )}/>
 

@@ -1290,16 +1290,36 @@ export default function Function() {
             <Group title="Example 01: Basic Mathematical Operations on Integers" content={(
                 <div>
                     <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Mathop/Mathop - 01.jpg" alt=""/>            
+                    <p>
+                        This script demonstrates basic mathematical operations on integers using the Magikus library in Unity.
+                        It covers addition, multiplication, complement, modulo, absolute value, sign determination, clamping and wrapping, showing how to manipulate integer values in various ways and logging the results to the console.
+                        The operations include adding 10 to a value, multiplying by 2, finding the complement with 6, computing the modulo with 5, taking the absolute value, determining the sign, clamping between a range and wrapping a value around a specified range.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Utilities/Mathop/Mathop - 02.jpg" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 02: Using Mathop on Float Values" content={(
                 <div>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Mathop/Mathop - 02.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Mathop/Mathop - 03.jpg" alt=""/>            
+                    <p>
+                        In this example, a script demonstrates various mathematical operations on float values in Unity using the Magikus library. 
+                        The script calculates and logs the power, root, inverse, rounded, floor and ceiling values of a float variable. 
+                        It also compares the value with a set of parameters to find the minimum and maximum values. 
+                        Additionally, the Bottom operation sets a lower limit to the value, while the Top operation sets an upper limit to it. 
+                        Each operation’s result is printed to the console for visualization.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Utilities/Mathop/Mathop - 04.jpg" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 03: Vector2 Manipulations" content={(
                 <div>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Mathop/Mathop - 03.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Mathop/Mathop - 05.jpg" alt=""/>            
+                    <p>
+                        This script demonstrates various manipulations of a Vector3 object in Unity using the Magikus library. 
+                        It first creates a vector (1, 2, 3) and then performs a series of operations: setting the X value to 5, adding 5 to both the X and Y values, swapping the X and Y components and shifting all values to the right. 
+                        Each operation is followed by a Debug.Log statement to output the result of the manipulation.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Mathop/Mathop - 06.jpg" alt=""/>            
                 </div>
             )}/>
 

@@ -76,8 +76,7 @@ export default function Function() {
                         In this example, editableField is editable in the Inspector, while readOnlyField is read-only, showing how you can mix editable and non-editable fields in the same class.
                         By combining the <b2>[Block]</b2> attribute with the <b2>[IfSmaller]</b2> attribute, the readOnlyField will only stay read-only as long as the editableField value is smaller than 10.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Decorators/Block/Block - 06.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Decorators/Block/Block - 07.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Decorators/Block/Block - 01.gif" alt=""/>            
                 </div>
             )}/>
 

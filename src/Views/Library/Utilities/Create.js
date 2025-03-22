@@ -148,11 +148,14 @@ export default function Function() {
                     <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static Rect</b2> <b1>Rect</b1>(<b2>float</b2> <b1>value</b1>)</li>
-                        <li><b2>static Rect</b2> <b1>Rect</b1>(<b2>Rect</b2> <b1>vector</b1>)</li>
+                        <li><b2>static Rect</b2> <b1>Rect</b1>(<b2>float</b2> <b1>position</b1>, <b2>float</b2> <b1>size</b1>)</li>
+                        <li><b2>static Rect</b2> <b1>Rect</b1>(<b2>float</b2> <b1>position</b1>, <b2>Vector2</b2> <b1>size</b1>)</li>
                         <li><b2>static Rect</b2> <b1>Rect</b1>(<b2>Vector2</b2> <b1>position</b1>, <b2>Vector2</b2> <b1>size</b1>)</li>
                         <li><b2>static Rect</b2> <b1>Rect</b1>(<b2>Vector2</b2> <b1>position</b1>, <b2>float</b2> <b1>w</b1>, <b2>float</b2> <b1>h</b1>)</li>
+                        <li><b2>static Rect</b2> <b1>Rect</b1>(<b2>Vector2</b2> <b1>position</b1>, <b2>float</b2> <b1>size</b1>)</li>
                         <li><b2>static Rect</b2> <b1>Rect</b1>(<b2>float</b2> <b1>x</b1>, <b2>float</b2> <b1>y</b1>, <b2>Vector2</b2> <b1>size</b1>)</li>
                         <li><b2>static Rect</b2> <b1>Rect</b1>(<b2>float</b2> <b1>x</b1>, <b2>float</b2> <b1>y</b1>, <b2>float</b2> <b1>w</b1>, <b2>float</b2> <b1>h</b1>)</li>
+                        <li><b2>static Rect</b2> <b1>Rect</b1>(<b2>Rect</b2> <b1>vector</b1>)</li>
                     </ul>
                     <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
@@ -160,6 +163,8 @@ export default function Function() {
                         <li><b2>Rect</b2> <b1>rect</b1>: The source Rect from which to copy values</li>                    
                         <li><b2>Vector2</b2> <b1>position</b1>: The position of the Rect</li>                    
                         <li><b2>Vector2</b2> <b1>size</b1>: The size of the Rect</li>                    
+                        <li><b2>float</b2> <b1>position</b1>: The x and y position of the Rect</li>                    
+                        <li><b2>float</b2> <b1>size</b1>: Thew and h size of the Rect</li>                    
                         <li><b2>float</b2> <b1>x</b1>: The x position of the Rect</li>                    
                         <li><b2>float</b2> <b1>y</b1>: The y position of the Rect</li>                    
                         <li><b2>float</b2> <b1>w</b1>: The w position of the Rect</li>                    
@@ -169,13 +174,48 @@ export default function Function() {
             )}/>
 
             <h3 className="p-2">Examples</h3>
-            <Group title="Example 01: Basic Usage of Create Utilities" content={(
+            <Group title="Example 01: Creating Vector2 and Vector2Int Instances" content={(
                 <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Create/Create - 01.jpg" alt=""/>            
                     <p>
-                        Here is an example of how to use all the methods provided by the Create class:
+                        This example demonstrates the use of the Create utility to generate Vector2 and Vector2Int instances. 
+                        It showcases different ways to create these vectors, including using a single value for both axes, copying an existing vector and defining explicit x and y values. 
+                        The results are logged to the Console for verification.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-100" src="images/Library/Utilities/Create/Create - 01.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-100" src="images/Library/Utilities/Create/Create - 02.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Utilities/Create/Create - 02.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 02: Creating Vector3 and Vector3Int Instances" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Create/Create - 03.jpg" alt=""/>            
+                    <p>
+                        This example demonstrates the creation of Vector3 and Vector3Int instances using the Create utility. 
+                        It showcases different ways to initialize these vectors, including single-value assignments (where all components are set to the same value), copying from an existing vector, two-value assignments (defining x and y while z is explicitly set) and full three-component initialization. 
+                        The script logs each created vector to the Console, providing a clear understanding of how the Create utility simplifies vector instantiation in Unity.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Utilities/Create/Create - 04.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 03: Creating Colors with Magikus" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Create/Create - 05.jpg" alt=""/>            
+                    <p>
+                        This example demonstrates various ways to create Color instances using the Create.Color method. 
+                        It showcases different input formats, including hexadecimal values, single RGB or RGBA values, normalized color values and existing Color instances. 
+                        Each method is logged in the Console to illustrate the resulting color representation.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Utilities/Create/Create - 06.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 04: Creating Rect Instances with Different Parameters" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Create/Create - 07.jpg" alt=""/>            
+                    <p>
+                        This example demonstrates various ways to create Rect instances using the Create.Rect method. 
+                        It showcases different parameter combinations, including single values, multiple values, Vector2 and existing Rect instances, providing flexibility in defining rectangle dimensions and positions.
+                        Each created Rect is logged to the console, illustrating how different inputs generate specific rectangle configurations.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Utilities/Create/Create - 08.jpg" alt=""/>            
                 </div>
             )}/>
 

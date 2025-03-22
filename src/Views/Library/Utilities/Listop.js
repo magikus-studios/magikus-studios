@@ -254,12 +254,49 @@ export default function Function() {
             )}/>
 
             <h3 className="p-2">Examples</h3>            
-            <Group title="Example 01: Basic Usage of Listop Utilities" content={(
+            <Group title="Example 01: Retrieving the Last Element from a List" content={(
                 <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Listop/Listop - 01.jpg" alt=""/>            
                     <p>
-                        Here’s an example of how to use each method:
+                        This script demonstrates how to use the GetItem method to retrieve the last element of a list. 
+                        By passing -1 as the index, the method accesses the last item in myList, which contains {"(1, 2, 3, 4)"}. 
+                        The retrieved value (4) is then logged to the console.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-100" src="images/Library/Utilities/Listop/Listop - 01.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-45" src="images/Library/Utilities/Listop/Listop - 05.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 02: Reversing, Removing and Inserting Elements in Lists and Arrays" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border w-85" src="images/Library/Utilities/Listop/Listop - 02.jpg" alt=""/>            
+                    <p>
+                        This script demonstrates three common list and array operations using the Textop utilities. 
+                        It first reverses a {"List<int>"}, changing the order of elements. 
+                        Then, it removes specified elements from an int[] array using the Remove method. 
+                        Finally, it inserts new elements into an array at a specified index using the Insert method.
+                        Each operation's result is logged to the console to showcase how the list and array manipulations work.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-45" src="images/Library/Utilities/Listop/Listop - 06.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 03: List Manipulation with Swap, Shift, Shuffle and Move" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border w-85" src="images/Library/Utilities/Listop/Listop - 03.jpg" alt=""/>            
+                    <p>
+                        This script showcases how to swap two elements, shift elements left or right, shuffle the list randomly and move elements to different positions within the list.
+                        Each operation is applied to a list of integers, with results logged to the console to illustrate the changes.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-45" src="images/Library/Utilities/Listop/Listop - 07.jpg" alt=""/>            
+                </div>
+            )}/>
+            <Group title="Example 04: Combining, Splitting and Extracting Subsets" content={(
+                <div>
+                    <img className="block-center mar-bottom-3 img-border w-100" src="images/Library/Utilities/Listop/Listop - 04.jpg" alt=""/>            
+                    <p>
+                        This script first combines two lists into one using Concat, then splits a list into two parts at a specified index using Split. 
+                        Additionally, it extracts a subset of elements from a list using Subset, both from a given index with a specified length and from the end of the list with a negative index. 
+                        Each operation's result is logged to the console for verification.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-45" src="images/Library/Utilities/Listop/Listop - 08.jpg" alt=""/>            
                 </div>
             )}/>
 

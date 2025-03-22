@@ -525,21 +525,42 @@ export default function Function() {
             <Group title="Example 01: Looping Forward" content={(
                 <div>
                     <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Looping/Looping - 01.jpg" alt=""/>            
+                    <p>
+                        This example demonstrates the use of the Magikus library to loop through a simple integer and an array in Unity. 
+                        The Loop() method is called on both an integer and an integer array, and for each iteration, a Debug.Log statement prints the current value of the number in the loop to the Unity console.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Utilities/Looping/Looping - 02.jpg" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 02: Looping Backward" content={(
                 <div>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Looping/Looping - 02.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Looping/Looping - 03.jpg" alt=""/>            
+                    <p>
+                        This example demonstrates how to loop through a string in reverse order using the Magikus library in Unity. 
+                        It defines a Run() method that takes a string, "Hello," and uses the LoopBack method to iterate through each character backward, logging each character to the console with a prefix "Char:".
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Utilities/Looping/Looping - 04.jpg" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 03: Looping Through AnimationCurves" content={(
                 <div>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Looping/Looping - 03.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Looping/Looping - 05.jpg" alt=""/>            
+                    <p>
+                        This example demonstrates how to loop through an AnimationCurve in Unity using the Loop() method. 
+                        The Run() method iterates over each keyframe of the curve, logging the keyframe's time and value to the console.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Utilities/Looping/Looping - 06.jpg" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 04: Looping Through Texture2D Colors" content={(
                 <div>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Looping/Looping - 04.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Looping/Looping - 07.jpg" alt=""/>            
+                    <p>
+                        This script loops through all the colors of a Texture2D in Unity, using the Loop method. 
+                        It iterates over each color of the texture, logging each color to the console. 
+                        The script requires the texture to have its Read/Write setting enabled to allow access to its pixel data.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Utilities/Looping/Looping - 08.jpg" alt=""/>            
                 </div>
             )}/>
 

@@ -137,8 +137,7 @@ export default function Function() {
                     <p>
                         In this example, the Label will only be editable when the EditLabel field is enabled.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Conditional/Conditional - 02.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Conditional/Conditional - 03.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Conditional/Conditional - 01.gif" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 02: Using the Conditional attribute with Referenced Values" content={(
@@ -147,8 +146,7 @@ export default function Function() {
                     <p>
                         Here, the Target Position field is only editable if the Audio Target field contains a reference.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Conditional/Conditional - 05.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Conditional/Conditional - 06.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Conditional/Conditional - 02.gif" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 03: Using the Conditional attribute with Enums" content={(
@@ -160,9 +158,7 @@ export default function Function() {
                         If the Simple settings is not selected, the Advance Settings field will be displayed.
                         And if the Extra settings is selected, the Extra Settings field will be displayed too, as well as the Advance Settings field.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Conditional/Conditional - 08.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Conditional/Conditional - 09.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Conditional/Conditional - 10.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Conditional/Conditional - 03.gif" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 04: Using the If Range attribute to show a Setting" content={(
@@ -171,8 +167,7 @@ export default function Function() {
                     <p>
                         In this case, the Minimize Samples field will only be displayed when the amountOfSamples value is between 3 and 5.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Conditional/Conditional - 12.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Conditional/Conditional - 13.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Conditional/Conditional - 04.gif" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 05: Using the If Greater attribute to display a Message" content={(
@@ -181,8 +176,7 @@ export default function Function() {
                     <p>
                         In this example, a message of warning will be displayed whenever the Volume field value is greater than 3.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Conditional/Conditional - 15.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Conditional/Conditional - 16.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Conditional/Conditional - 05.gif" alt=""/>            
                 </div>
             )}/>
 

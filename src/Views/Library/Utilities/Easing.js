@@ -264,34 +264,38 @@ export default function Function() {
             <h3 className="p-2">Examples</h3>
             <Group title="Example 01: Use of Circular Easing Functions" content={(
                 <div>
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Easing/Easing - 01.jpg" alt=""/>            
                     <p>
                         To create transitions that start and end at the same position you can use one of these circular easing:
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Easing/Easing - 01.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Easing/Easing - 05.gif" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 02: Smooth Transition with Easing" content={(
                 <div>
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Easing/Easing - 02.jpg" alt=""/>            
                     <p>
                         Suppose you want to create an animation that starts slowly, accelerates and then slows down again at the end, you can use some of the smooth transition easing function:            
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Easing/Easing - 02.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Easing/Easing - 06.gif" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 03: Applying a Bouncy Effect" content={(
                 <div>
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Easing/Easing - 03.jpg" alt=""/>            
                     <p>
                         To simulate a bouncy effect, such as an object dropping to the ground and bouncing, you can use the bounce easing functions:
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Easing/Easing - 03.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Utilities/Easing/Easing - 07.gif" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 04: Dynamic Easing Selection with GetEasingFunc" content={(
                 <div>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Easing/Easing - 04.jpg" alt=""/>            
                     <p>
                         In cases where you want to dynamically choose the easing function, perhaps based on user input, you can use GetEasingFunc:
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Easing/Easing - 04.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Utilities/Easing/Easing - 08.jpg" alt=""/>            
                 </div>
             )}/>
 
