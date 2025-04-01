@@ -36,7 +36,7 @@ export default function Function(props) {
                         <div className="pb-4"></div>
                         { submenu }
                     </div>
-                    <div className="col-lg-9 col-md-8 col-sm-12 bg-dark-4 star-border">
+                    <div className="col-lg-9 col-md-8 col-sm-12 bg-dark-4 star-border bg-pattern-1">
                         <div className="row">
                             <div className="ta-left col-6">{path}</div>
                             <div className="ta-right col-6">

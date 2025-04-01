@@ -3,7 +3,7 @@ import 'CSS/CardBlock.css';
 
 export default function Function(props) { 
     return (
-        <div className="cardBlock h-100 container d-flex bg-dark-4 row">
+        <div className="cardBlock h-100 container d-flex bg-dark-4 row bg-pattern-1">
             <a href={props.link} className="o-hiden col-12 col-md-4 col-lg-3" target={(props.newTab)?"_blank":"_self"}>
                 <div className="h-100 jumbotron d-flex align-items-center">
                     <img className="cardBlock-img img-fluid p-3" src={props.image} alt="" />

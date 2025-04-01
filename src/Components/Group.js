@@ -27,7 +27,7 @@ export default function Function(props) {
                 <h5 className="f-left mar-bottom-0">{props.title}</h5>
                 {props.subtitle?<h5 className="f-right mar-bottom-0">{props.subtitle}</h5>:""}
             </div>
-            <div className={`${isOpen ? "open-group bg-dark-5 mar-horizontal-1 mar-bottom-2 img-border pad-horizontal-3 pad-top-3" : "close-group"}`}>
+            <div className={`${isOpen ? "open-group bg-dark-5 mar-horizontal-1 mar-bottom-2 img-border pad-horizontal-3 pad-top-3 bg-pattern-2" : "close-group"}`}>
                 {props.content}
                 <h5 id={`${props.title}#END`} className={`c-light-1 c-light-0-h text-center`} onClick={close}>{"···"}</h5>
             </div>

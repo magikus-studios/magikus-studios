@@ -25,21 +25,31 @@
     background-size: 200px;
     animation: slide-star 100s linear infinite;
 }
-.star-container{
+.star-container {
     overflow: hidden;
     position: fixed;
     z-index: -2;
 }
-@keyframes slide-star{ 
+@keyframes slide-star { 
     0% { transform: translate3d(-200px, 0, 0); }
     100% { transform: translate3d(0, 0, 0); }
 }
-.star-border
-{
+.star-border {
     border: solid;
     border-width: 3px;
     border-radius: 5px;
     border-color: var(--dark-2);
+}
+
+.bg-pattern-1 {
+    background-image: url("../public/images/Assets/Seamless Pattern - Background - 08.png");
+    background-repeat: repeat;
+    background-size: 96px;
+}
+.bg-pattern-2 {
+    background-image: url("../public/images/Assets/Seamless Pattern - Background - 04.png");
+    background-repeat: repeat;
+    background-size: 90px;
 }
 
 .clouds1 {
@@ -78,12 +88,12 @@
     background-size: 100px;
     animation: slide-clouds 62s linear infinite;
 }
-.clouds-container{
+.clouds-container {
     overflow: hidden;
     position: fixed;
     z-index: -1;
 }
-@keyframes slide-clouds{ 
+@keyframes slide-clouds { 
     0% { transform: translate3d(0, 0, 0); }
     100% { transform: translate3d(-100px, 0, 0); }
 }
@@ -95,12 +105,12 @@
     background-size: 300px;
     animation: slide-ground 38s linear infinite;
 }
-.ground-container{
+.ground-container {
     overflow: hidden;
     position: fixed;
     z-index: -1;
 }
-@keyframes slide-ground{ 
+@keyframes slide-ground { 
     0% { transform: translate3d(-300px, 0, 0); }
     100% { transform: translate3d(0, 0, 0); }
 }

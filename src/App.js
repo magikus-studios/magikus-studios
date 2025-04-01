@@ -9,7 +9,7 @@ import Library from 'Views/Library/Library';
 import LibraryInConstruction from "Views/Library/InConstruction";
 
 import LibraryMenu from "Views/Library/Library/Menu.json";
-import LibraryLibrary from "Views/Library/Library/Introduction.js";
+import LibraryIntroduction from "Views/Library/Library/Introduction.js";
 import LibraryInstallation from "Views/Library/Library/Installation.js";
 import LibraryChangelog from "Views/Library/Library/Changelog.js";
 import LibraryLicense from "Views/Library/Library/License.js";
@@ -92,7 +92,7 @@ export default function App() {
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/aboutUs" element={<AboutUs/>}></Route>
           
-          <Route exact path="/library" element={<Library content={<LibraryLibrary />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library" element={<Library content={<LibraryIntroduction />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/installation" element={<Library content={<LibraryInstallation />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/changelog" element={<Library content={<LibraryChangelog />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/License" element={<Library content={<LibraryLicense />} menu={LibraryMenu} />}></Route>
