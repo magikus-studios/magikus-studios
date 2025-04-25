@@ -44,12 +44,14 @@ export default function Function() {
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>Play</b1>(): Starts the state machine.</li>
                         <li><b2>void</b2> <b1>Pause</b1>(): Pauses the state machine.</li>
+                        <li><b2>void</b2> <b1>Finish</b1>(): Stops the state machine cycle.</li>
                         <li><b2>StateMachine{"<T>"}</b2> <b1>AddState</b1>(<b2>T</b2> <b1>stateName</b1>): Adds a state to the state machine.</li>                        
                         <li><b2>StateMachine{"<T>"}</b2> <b1>AddState</b1>(<b2>T</b2> <b1>stateName</b1>, <b2>Action</b2> <b1>stateAction</b1>): Adds a state with an action to the state machine.</li>
                         <li><b2>StateMachine{"<T>"}</b2> <b1>AddState</b1>(<b2>T</b2> <b1>stateName</b1>, <b2>Action</b2> <b1>stateAction</b1>, <b2>Action</b2> <b1>beforeStateAction</b1>): Adds a state with actions to execute before and during the state.</li>
                         <li><b2>StateMachine{"<T>"}</b2> <b1>AddState</b1>(<b2>T</b2> <b1>stateName</b1>, <b2>Action</b2> <b1>stateAction</b1>, <b2>Action</b2> <b1>beforeStateAction</b1>, <b2>Action</b2> <b1>afterStateAction</b1>): Adds a state with actions to execute before, during, and after the state.</li>
                         <li><b2>StateMachine{"<T>"}</b2> <b1>AddState</b1>(<b2>State{"<T>"}</b2> <b1>state</b1>): Adds a State object to the state machine.</li>
                         <li><b2>bool</b2> <b1>SetState</b1>(<b2>T</b2> <b1>stateName</b1>): Sets the current state of the state machine.</li>
+                        <li><b2>bool</b2> <b1>SetStateIfDifferent</b1>(<b2>T</b2> <b1>stateName</b1>): Sets the state only if it's not already the current state.</li>
                         <li><b2>bool</b2> <b1>IsCurrentState</b1>(<b2>T</b2> <b1>stateName</b1>): Checks if the given state name is the current state.</li>
                     </ul>
                     <h5 className="c-light-1">Parameters</h5>
@@ -78,6 +80,7 @@ export default function Function() {
                         <li><b>Setting the Initial State</b>: Set the initial state to "Idle" using the SetState method.</li>                
                         <li><b>Starting the State Machine</b>: Finally, call the Play method to start the state machine, allowing it to begin executing the actions associated with the current state.</li>
                     </ul>
+                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Machines/State/State - 01.gif" alt=""/>
                 </div>
             )}/>
             <Group title="Example 02: Using Before and After State Actions" content={(
@@ -87,6 +90,11 @@ export default function Function() {
                         during state transitions, such as logging or setting up/cleaning up resources.
                     </p>
                     <img className="block-center mar-bottom-3 img-border w-95" src="images/Library/Machines/State/State - 02.jpg" alt=""/>
+                    <p>
+                        It defines two states, "Idle" and "Running", each with corresponding debug logs for when the state is entered, updated or exited. 
+                        The machine switches between these states based on user input (WASD keys) and showcases how to use the SetStateIfDifferent, Play and Pause methods to control state transitions during gameplay.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Machines/State/State - 02.gif" alt=""/>
                 </div>
             )}/>
             <Group title="Example 03: Using Enums" content={(
@@ -96,6 +104,13 @@ export default function Function() {
                         Using enums as state names makes code a lot more reliable and maintainable. 
                     </p>
                     <img className="block-center mar-bottom-3 img-border w-95" src="images/Library/Machines/State/State - 03.jpg" alt=""/>
+                    <p>
+                        It defines three states (Idle, Running, Jumping) and assigns actions to each. 
+                        When the Play() method is called, the state machine starts in the Idle state and updates every UpdateRate seconds. 
+                        Based on player input, the state transitions between Running, Jumping and back to Idle, with each state logging a message to the console. 
+                        The Stop() method pauses the state machine.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Machines/State/State - 03.gif" alt=""/>
                 </div>
             )}/>
 

@@ -43,6 +43,12 @@ export default function Function() {
                         <li><b2>ICycle</b2> <b1>MoveTo</b1>(<b2>this Transform</b2> <b1>transform</b1>): Translate an object to a specific position over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>MoveTo</b1>(<b2>this GameObject</b2> <b1>gameObject</b1>): Translate an object to a specific position over time.</li>                        
                         <li><b2>ICycle</b2> <b1>MoveTo</b1>(<b2>this RectTransform</b2> <b1>transform</b1>): Translate an object to a specific position over time using the anchored position.</li>                                                
+                        <li><b2>ICycle</b2> <b1>MoveBy</b1>(<b2>this Transform</b2> <b1>transform</b1>): Translate an object by a specified multiple over time.</li>                                                
+                        <li><b2>ICycle</b2> <b1>MoveBy</b1>(<b2>this GameObject</b2> <b1>gameObject</b1>): Translate an object by a specified multiple over time.</li>                                                
+                        <li><b2>ICycle</b2> <b1>MoveBy</b1>(<b2>this RectTransform</b2> <b1>transform</b1>): Translate an object by a specified multiple over time using the anchored position.</li>                                                
+                        <li><b2>ICycle</b2> <b1>MoveFor</b1>(<b2>this Transform</b2> <b1>transform</b1>): Translate an object in a specified direction over time.</li>                                                
+                        <li><b2>ICycle</b2> <b1>MoveFor</b1>(<b2>this GameObject</b2> <b1>gameObject</b1>): Translate an object in a specified direction over time.</li>                                                
+                        <li><b2>ICycle</b2> <b1>MoveFor</b1>(<b2>this RectTransform</b2> <b1>transform</b1>): Translate an object in a specified direction over time using the anchored position.</li>                                                
                         <li><b2>ICycle</b2> <b1>MoveBounce</b1>(<b2>this Transform</b2> <b1>transform</b1>): Translate an object to a specified position and then return it to its original position over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>MoveBounce</b1>(<b2>this GameObject</b2> <b1>gameObject</b1>): Translate an object to a specified position and then return it to its original position over time.</li>                        
                         <li><b2>ICycle</b2> <b1>MoveBounce</b1>(<b2>this RectTransform</b2> <b1>transform</b1>): Translate an object to a specified position and then return it to its original position over time using the anchored position.</li>                                                
@@ -67,10 +73,14 @@ export default function Function() {
                 <div>
                     <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
-                        <li><b2>ICycle</b2> <b1>Spin</b1>(<b2>this Transform</b2> <b1>transform</b1>): Rotates an object continuously around its axes.</li>                                                
-                        <li><b2>ICycle</b2> <b1>Spin</b1>(<b2>this GameObject</b2> <b1>gameObject</b1>): Rotates an object continuously around its axes.</li>                                                
+                        <li><b2>ICycle</b2> <b1>Spin</b1>(<b2>this Transform</b2> <b1>transform</b1>): Rotates an object to a specific offset over time.</li>                                                
+                        <li><b2>ICycle</b2> <b1>Spin</b1>(<b2>this GameObject</b2> <b1>gameObject</b1>): Rotates an object to a specific offset over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>SpinTo</b1>(<b2>this Transform</b2> <b1>transform</b1>): Rotates an object to a specific angle over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>SpinTo</b1>(<b2>this GameObject</b2> <b1>gameObject</b1>): Rotates an object to a specific angle over time.</li>                        
+                        <li><b2>ICycle</b2> <b1>SpinBy</b1>(<b2>this Transform</b2> <b1>transform</b1>): Rotates an object to a specific multiple over time.</li>                                                
+                        <li><b2>ICycle</b2> <b1>SpinBy</b1>(<b2>this GameObject</b2> <b1>gameObject</b1>): Rotates an object to a specific multiple over time.</li>                                                
+                        <li><b2>ICycle</b2> <b1>SpinFor</b1>(<b2>this Transform</b2> <b1>transform</b1>): Rotates an object continuously around its axes.</li>                                                
+                        <li><b2>ICycle</b2> <b1>SpinFor</b1>(<b2>this GameObject</b2> <b1>gameObject</b1>): Rotates an object continuously around its axes.</li>                                                
                         <li><b2>ICycle</b2> <b1>SpinBounce</b1>(<b2>this Transform</b2> <b1>transform</b1>): Rotates an object to a specific angle and then return it to its original angle over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>SpinBounce</b1>(<b2>this GameObject</b2> <b1>gameObject</b1>): Rotates an object to a specific angle and then return it to its original angle over time.</li>                        
                     </ul>
@@ -95,6 +105,10 @@ export default function Function() {
                         <li><b2>ICycle</b2> <b1>Grow</b1>(<b2>this GameObject</b2> <b1>gameObject</b1>): Scales an object by a specified factor over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>GrowTo</b1>(<b2>this Transform</b2> <b1>transform</b1>): Scales an object to a specific size over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>GrowTo</b1>(<b2>this GameObject</b2> <b1>gameObject</b1>): Scales an object to a specific size over time.</li>                        
+                        <li><b2>ICycle</b2> <b1>GrowBy</b1>(<b2>this Transform</b2> <b1>transform</b1>): Scales an object by a specified multiple over time.</li>                                                
+                        <li><b2>ICycle</b2> <b1>GrowBy</b1>(<b2>this GameObject</b2> <b1>gameObject</b1>): Scales an object by a specified multiple over time.</li>                                                
+                        <li><b2>ICycle</b2> <b1>GrowFor</b1>(<b2>this Transform</b2> <b1>transform</b1>): Scales an object in a specified factor during a period of time.</li>                                                
+                        <li><b2>ICycle</b2> <b1>GrowFor</b1>(<b2>this GameObject</b2> <b1>gameObject</b1>): Scales an object in a specified factor during a period of time.</li>                                                
                         <li><b2>ICycle</b2> <b1>GrowBounce</b1>(<b2>this Transform</b2> <b1>transform</b1>): Scales an object to a specific size and then return it to its original size over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>GrowBounce</b1>(<b2>this GameObject</b2> <b1>gameObject</b1>): Scales an object to a specific size and then return it to its original size over time.</li>                        
                     </ul>
@@ -120,6 +134,7 @@ export default function Function() {
                         <li><b2>ICycle</b2> <b1>Fade</b1>(<b2>this Text</b2> <b1>image</b1>): Changes the transparency of an object by a specified amount over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>Fade</b1>(<b2>this TMP_Text</b2> <b1>image</b1>): Changes the transparency of an object by a specified amount over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>Fade</b1>(<b2>this ColorSwitch</b2> <b1>image</b1>): Changes the transparency of an object by a specified amount over time.</li>                                                
+
                         <li><b2>ICycle</b2> <b1>FadeTo</b1>(<b2>this SpriteRenderer</b2> <b1>image</b1>): Changes the transparency of an object to a specific value over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>FadeTo</b1>(<b2>this Image</b2> <b1>image</b1>): Changes the transparency of an object to a specific value over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>FadeTo</b1>(<b2>this Text</b2> <b1>image</b1>): Changes the transparency of an object to a specific value over time.</li>                                                
@@ -156,11 +171,13 @@ export default function Function() {
                         <li><b2>ICycle</b2> <b1>Tint</b1>(<b2>this Text</b2> <b1>image</b1>): Changes the color of an object by a specified amount over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>Tint</b1>(<b2>this TMP_Text</b2> <b1>image</b1>): Changes the color of an object by a specified amount over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>Tint</b1>(<b2>this ColorSwitch</b2> <b1>image</b1>): Changes the color of an object by a specified amount over time.</li>                                                
+                        
                         <li><b2>ICycle</b2> <b1>TintTo</b1>(<b2>this SpriteRenderer</b2> <b1>image</b1>): Changes the color of an object to a specific value over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>TintTo</b1>(<b2>this Image</b2> <b1>image</b1>): Changes the color of an object to a specific value over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>TintTo</b1>(<b2>this Text</b2> <b1>image</b1>): Changes the color of an object to a specific value over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>TintTo</b1>(<b2>this TMP_Text</b2> <b1>image</b1>): Changes the color of an object to a specific value over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>TintTo</b1>(<b2>this ColorSwitch</b2> <b1>image</b1>): Changes the color of an object to a specific value over time.</li>                                                
+                        
                         <li><b2>ICycle</b2> <b1>TintBounce</b1>(<b2>this SpriteRenderer</b2> <b1>image</b1>): Changes the color of an object to a specific value and then return it to its original value over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>TintBounce</b1>(<b2>this Image</b2> <b1>image</b1>): Changes the color of an object to a specific value and then return it to its original value over time.</li>                                                
                         <li><b2>ICycle</b2> <b1>TintBounce</b1>(<b2>this Text</b2> <b1>image</b1>): Changes the color of an object to a specific value and then return it to its original value over time.</li>                                                
@@ -191,27 +208,67 @@ export default function Function() {
             </p>
             <Group title="Example 01: Move a GameObject to a New Position" content={(
                 <div>
+                    <p>
+                        This example demonstrates how to smoothly move a GameObject between two positions.
+                    </p>
                     <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Tween/Tween - 01.jpg" alt=""/>
+                    <p>
+                        By pressing the M key, the object transitions between its original position and a target position using a specified easing type and duration. 
+                        The script uses the MoveTo method along with an easing function and an OnFinish callback to handle movement and animation state toggling.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Tween/Tween - 01.gif" alt=""/>
                 </div>
             )}/>
             <Group title="Example 02: Rotate a GameObject" content={(
                 <div>
+                    <p>
+                        This example demonstrates how to smoothly rotate a GameObject.
+                    </p>
                     <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Tween/Tween - 02.jpg" alt=""/>
+                    <p>
+                        When the S key is pressed, the Spin() method triggers a tween animation that rotates the object by a specified value over a given duration using the selected easing type. 
+                        A flag prevents multiple tweens from playing simultaneously and the animation resets the flag once completed.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-20" src="images/Library/Machines/Tween/Tween - 02.gif" alt=""/>
                 </div>
             )}/>
             <Group title="Example 03: Scale a GameObject Up" content={(
                 <div>
+                    <p>
+                        This example demonstrates how to smoothly scale a GameObject up or down with easing.
+                    </p>
                     <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Tween/Tween - 03.jpg" alt=""/>
+                    <p>
+                        When the G key is pressed, the object scales by a specified amount over a set duration, using the selected easing type.
+                        It toggles between scaling up and scaling back down and ensures only one animation plays at a time using state flags.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-20" src="images/Library/Machines/Tween/Tween - 03.gif" alt=""/>
                 </div>
             )}/>
             <Group title="Example 04: Fade Out a SpriteRenderer" content={(
                 <div>
+                    <p>
+                        This example demonstrates how to fade in a SpriteRenderer using a tween animation. 
+                    </p>
                     <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Tween/Tween - 04.jpg" alt=""/>
+                    <p>
+                        When the user presses the F key, the script triggers a fade-in effect that smoothly transitions the sprite’s opacity to fully visible (alpha = 1) over a specified duration using a chosen easing function. 
+                        The tween plays only once at a time and resets its state after completion, ensuring clean and controlled visual transitions.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-20" src="images/Library/Machines/Tween/Tween - 04.gif" alt=""/>
                 </div>
             )}/>
             <Group title="Example 05: Change the Tint of a SpriteRenderer" content={(
                 <div>
+                    <p>
+                        This example demonstrates how to smoothly tint a SpriteRenderer. 
+                    </p>
                     <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Tween/Tween - 05.jpg" alt=""/>
+                    <p>
+                        When the T key is pressed, the script animates the color transition of the target sprite between its original color and a specified tint using a defined easing function and duration.
+                        The animation plays only when not already in progress and automatically resets once complete, enabling toggling between tinted and original colors.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-20" src="images/Library/Machines/Tween/Tween - 05.gif" alt=""/>
                 </div>
             )}/>
 

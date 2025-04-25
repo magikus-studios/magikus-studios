@@ -460,8 +460,18 @@ export default function Function() {
                     </p>
                     <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>static int</b2> <b1>Power</b1>(<b2>this int</b2> <b1>number</b1>, <b2>int</b2> <b1>power</b1>)</li>
-                        <li><b2>static float</b2> <b1>Power</b1>(<b2>this float</b2> <b1>number</b1>, <b2>float</b2> <b1>power</b1>)</li>    
+                        <li><b2>static int</b2> <b1>Power</b1>(<b2>this int</b2> <b1>number</b1>, <b2>int</b2> <b1>power = 2</b1>)</li>
+                        <li><b2>static float</b2> <b1>Power</b1>(<b2>this float</b2> <b1>number</b1>, <b2>float</b2> <b1>power = 2f</b1>)</li>    
+                        <li><b2>static Vector2</b2> <b1>Power</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>float</b2> <b1>power = 2f</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>Power</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>, <b2>float</b2> <b1>power = 2f</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>Power</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>float</b2> <b1>power = 2f</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>Power</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>, <b2>float</b2> <b1>power = 2f</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>Power</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>, <b2>int</b2> <b1>power = 2</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>Power</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>, <b2>int</b2> <b1>power = 2</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>Power</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>int</b2> <b1>power = 2</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>Power</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>, <b2>int</b2> <b1>power = 2</b1>)</li>
+                        <li><b2>static Rect</b2> <b1>Power</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>float</b2> <b1>power = 2f</b1>)</li>
+                        <li><b2>static Rect</b2> <b1>Power</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>RECT</b2> <b1>mode</b1>, <b2>float</b2> <b1>power = 2f</b1>)</li>
                     </ul>
                     <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
@@ -469,6 +479,15 @@ export default function Function() {
                         <li><b2>float</b2> <b1>number</b1>: Original number to modify</li>                    
                         <li><b2>int</b2> <b1>power</b1>: Int value to calculate the power</li>                    
                         <li><b2>float</b2> <b1>power</b1>: Float value to calculate the power</li>                    
+                        <li><b2>Vector2</b2> <b1>vector</b1>: Original vector to modify</li>                    
+                        <li><b2>Vector3</b2> <b1>vector</b1>: Original vector to modify</li>                    
+                        <li><b2>Vector2Int</b2> <b1>vector</b1>: Original vector to modify</li>                    
+                        <li><b2>Vector3Int</b2> <b1>vector</b1>: Original vector to modify</li>                    
+                        <li><b2>Color</b2> <b1>color</b1>: Original color to modify</li>                    
+                        <li><b2>Rect</b2> <b1>rect</b1>: Original rect to modify</li>                    
+                        <li><b2>VECTOR</b2> <b1>axis</b1>: Enum with the axis combination to modify a vector</li>                    
+                        <li><b2>COLOR</b2> <b1>mode</b1>: Enum with the axis combination to modify a color</li>                    
+                        <li><b2>RECT</b2> <b1>mode</b1>: Enum with the axis combination to modify a rect</li>                    
                     </ul>
                 </div>
             )}/>
@@ -479,8 +498,18 @@ export default function Function() {
                     </p>
                     <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
-                        <li><b2>static int</b2> <b1>Root</b1>(<b2>this int</b2> <b1>number</b1>, <b2>int</b2> <b1>root</b1>)</li>
-                        <li><b2>static float</b2> <b1>Root</b1>(<b2>this float</b2> <b1>number</b1>, <b2>float</b2> <b1>root</b1>)</li>    
+                        <li><b2>static int</b2> <b1>Root</b1>(<b2>this int</b2> <b1>number</b1>, <b2>int</b2> <b1>root = 2</b1>)</li>
+                        <li><b2>static float</b2> <b1>Root</b1>(<b2>this float</b2> <b1>number</b1>, <b2>float</b2> <b1>root = 2f</b1>)</li>    
+                        <li><b2>static Vector2</b2> <b1>Root</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>float</b2> <b1>root = 2f</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>Root</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>, <b2>float</b2> <b1>root = 2f</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>Root</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>float</b2> <b1>root = 2f</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>Root</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>, <b2>float</b2> <b1>root = 2f</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>Root</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>, <b2>int</b2> <b1>root = 2</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>Root</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>, <b2>int</b2> <b1>root = 2</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>Root</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>int</b2> <b1>root = 2</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>Root</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>, <b2>int</b2> <b1>root = 2</b1>)</li>
+                        <li><b2>static Rect</b2> <b1>Root</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>float</b2> <b1>root = 2f</b1>)</li>
+                        <li><b2>static Rect</b2> <b1>Root</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>RECT</b2> <b1>mode</b1>, <b2>float</b2> <b1>root = 2f</b1>)</li>
                     </ul>
                     <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
@@ -488,6 +517,15 @@ export default function Function() {
                         <li><b2>float</b2> <b1>number</b1>: Original number to modify</li>                    
                         <li><b2>int</b2> <b1>root</b1>: Int value to calculate the root</li>                    
                         <li><b2>float</b2> <b1>root</b1>: Float value to calculate the root</li>                    
+                        <li><b2>Vector2</b2> <b1>vector</b1>: Original vector to modify</li>                    
+                        <li><b2>Vector3</b2> <b1>vector</b1>: Original vector to modify</li>                    
+                        <li><b2>Vector2Int</b2> <b1>vector</b1>: Original vector to modify</li>                    
+                        <li><b2>Vector3Int</b2> <b1>vector</b1>: Original vector to modify</li>                    
+                        <li><b2>Color</b2> <b1>color</b1>: Original color to modify</li>                    
+                        <li><b2>Rect</b2> <b1>rect</b1>: Original rect to modify</li>                    
+                        <li><b2>VECTOR</b2> <b1>axis</b1>: Enum with the axis combination to modify a vector</li>                    
+                        <li><b2>COLOR</b2> <b1>mode</b1>: Enum with the axis combination to modify a color</li>                    
+                        <li><b2>RECT</b2> <b1>mode</b1>: Enum with the axis combination to modify a rect</li>                    
                     </ul>
                 </div>
             )}/>
@@ -500,11 +538,30 @@ export default function Function() {
                     <ul className="property-list">
                         <li><b2>static int</b2> <b1>Inverse</b1>(<b2>this int</b2> <b1>number</b1>)</li>
                         <li><b2>static float</b2> <b1>Inverse</b1>(<b2>this float</b2> <b1>number</b1>)</li>    
+                        <li><b2>static Vector2</b2> <b1>Inverse</b1>(<b2>this Vector2</b2> <b1>vector</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>Inverse</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>Inverse</b1>(<b2>this Vector3</b2> <b1>vector</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>Inverse</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>Inverse</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>)</li>
+                        <li><b2>static Vector2Int</b2> <b1>Inverse</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>Inverse</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>)</li>
+                        <li><b2>static Vector3Int</b2> <b1>Inverse</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>)</li>
+                        <li><b2>static Rect</b2> <b1>Inverse</b1>(<b2>this Rect</b2> <b1>rect</b1>)</li>
+                        <li><b2>static Rect</b2> <b1>Inverse</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>RECT</b2> <b1>mode</b1>)</li>
                     </ul>
                     <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>int</b2> <b1>number</b1>: Original number to modify</li>                    
                         <li><b2>float</b2> <b1>number</b1>: Original number to modify</li>                    
+                        <li><b2>Vector2</b2> <b1>vector</b1>: Original vector to modify</li>                    
+                        <li><b2>Vector3</b2> <b1>vector</b1>: Original vector to modify</li>                    
+                        <li><b2>Vector2Int</b2> <b1>vector</b1>: Original vector to modify</li>                    
+                        <li><b2>Vector3Int</b2> <b1>vector</b1>: Original vector to modify</li>                    
+                        <li><b2>Color</b2> <b1>color</b1>: Original color to modify</li>                    
+                        <li><b2>Rect</b2> <b1>rect</b1>: Original rect to modify</li>                    
+                        <li><b2>VECTOR</b2> <b1>axis</b1>: Enum with the axis combination to modify a vector</li>                    
+                        <li><b2>COLOR</b2> <b1>mode</b1>: Enum with the axis combination to modify a color</li>                    
+                        <li><b2>RECT</b2> <b1>mode</b1>: Enum with the axis combination to modify a rect</li>                    
                     </ul>
                 </div>
             )}/>
@@ -525,7 +582,6 @@ export default function Function() {
                         <li><b2>static Vector2Int</b2> <b1>Abs</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>)</li>
                         <li><b2>static Vector3Int</b2> <b1>Abs</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>)</li>
                         <li><b2>static Vector3Int</b2> <b1>Abs</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>)</li>
-                        <li><b2>static Color</b2> <b1>Abs</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>COLOR</b2> <b1>mode</b1>)</li>
                         <li><b2>static Rect</b2> <b1>Abs</b1>(<b2>this Rect</b2> <b1>rect</b1>)</li>
                         <li><b2>static Rect</b2> <b1>Abs</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>RECT</b2> <b1>mode</b1>)</li>
                     </ul>
@@ -537,10 +593,8 @@ export default function Function() {
                         <li><b2>Vector3</b2> <b1>vector</b1>: Original vector to modify</li>                    
                         <li><b2>Vector2Int</b2> <b1>vector</b1>: Original vector to modify</li>                    
                         <li><b2>Vector3Int</b2> <b1>vector</b1>: Original vector to modify</li>                    
-                        <li><b2>Color</b2> <b1>color</b1>: Original color to modify</li>                    
                         <li><b2>Rect</b2> <b1>rect</b1>: Original rect to modify</li>                    
                         <li><b2>VECTOR</b2> <b1>axis</b1>: Enum with the axis combination to modify a vector</li>                    
-                        <li><b2>COLOR</b2> <b1>mode</b1>: Enum with the axis combination to modify a color</li>                    
                         <li><b2>RECT</b2> <b1>mode</b1>: Enum with the axis combination to modify a rect</li>                    
                     </ul>
                 </div>
@@ -562,7 +616,6 @@ export default function Function() {
                         <li><b2>static Vector2Int</b2> <b1>Sign</b1>(<b2>this Vector2Int</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>)</li>
                         <li><b2>static Vector3Int</b2> <b1>Sign</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>)</li>
                         <li><b2>static Vector3Int</b2> <b1>Sign</b1>(<b2>this Vector3Int</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>)</li>
-                        <li><b2>static Color</b2> <b1>Sign</b1>(<b2>this Color</b2> <b1>color</b1>, <b2>COLOR</b2> <b1>mode</b1>)</li>
                         <li><b2>static Rect</b2> <b1>Sign</b1>(<b2>this Rect</b2> <b1>rect</b1>)</li>
                         <li><b2>static Rect</b2> <b1>Sign</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>RECT</b2> <b1>mode</b1>)</li>
                     </ul>
@@ -574,10 +627,8 @@ export default function Function() {
                         <li><b2>Vector3</b2> <b1>vector</b1>: Original vector to modify</li>                    
                         <li><b2>Vector2Int</b2> <b1>vector</b1>: Original vector to modify</li>                    
                         <li><b2>Vector3Int</b2> <b1>vector</b1>: Original vector to modify</li>                    
-                        <li><b2>Color</b2> <b1>color</b1>: Original color to modify</li>                    
                         <li><b2>Rect</b2> <b1>rect</b1>: Original rect to modify</li>                    
                         <li><b2>VECTOR</b2> <b1>axis</b1>: Enum with the axis combination to modify a vector</li>                    
-                        <li><b2>COLOR</b2> <b1>mode</b1>: Enum with the axis combination to modify a color</li>                    
                         <li><b2>RECT</b2> <b1>mode</b1>: Enum with the axis combination to modify a rect</li>
                     </ul>
                 </div>
@@ -590,10 +641,21 @@ export default function Function() {
                     <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static float</b2> <b1>Round</b1>(<b2>this float</b2> <b1>number</b1>)</li>    
+                        <li><b2>static Vector2</b2> <b1>Round</b1>(<b2>this Vector2</b2> <b1>vector</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>Round</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>Round</b1>(<b2>this Vector3</b2> <b1>vector</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>Round</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>)</li>
+                        <li><b2>static Rect</b2> <b1>Round</b1>(<b2>this Rect</b2> <b1>rect</b1>)</li>
+                        <li><b2>static Rect</b2> <b1>Round</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>RECT</b2> <b1>mode</b1>)</li>
                     </ul>
                     <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>float</b2> <b1>number</b1>: Original number to modify</li>                    
+                        <li><b2>Vector2</b2> <b1>vector</b1>: Original vector to modify</li>                    
+                        <li><b2>Vector3</b2> <b1>vector</b1>: Original vector to modify</li>                    
+                        <li><b2>Rect</b2> <b1>rect</b1>: Original rect to modify</li>                    
+                        <li><b2>VECTOR</b2> <b1>axis</b1>: Enum with the axis combination to modify a vector</li>                    
+                        <li><b2>RECT</b2> <b1>mode</b1>: Enum with the axis combination to modify a rect</li>
                     </ul>
                 </div>
             )}/>
@@ -605,10 +667,21 @@ export default function Function() {
                     <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static float</b2> <b1>Floor</b1>(<b2>this float</b2> <b1>number</b1>)</li>    
+                        <li><b2>static Vector2</b2> <b1>Floor</b1>(<b2>this Vector2</b2> <b1>vector</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>Floor</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>Floor</b1>(<b2>this Vector3</b2> <b1>vector</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>Floor</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>)</li>
+                        <li><b2>static Rect</b2> <b1>Floor</b1>(<b2>this Rect</b2> <b1>rect</b1>)</li>
+                        <li><b2>static Rect</b2> <b1>Floor</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>RECT</b2> <b1>mode</b1>)</li>
                     </ul>
                     <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>float</b2> <b1>number</b1>: Original number to modify</li>                    
+                        <li><b2>Vector2</b2> <b1>vector</b1>: Original vector to modify</li>                    
+                        <li><b2>Vector3</b2> <b1>vector</b1>: Original vector to modify</li>                    
+                        <li><b2>Rect</b2> <b1>rect</b1>: Original rect to modify</li>                    
+                        <li><b2>VECTOR</b2> <b1>axis</b1>: Enum with the axis combination to modify a vector</li>                    
+                        <li><b2>RECT</b2> <b1>mode</b1>: Enum with the axis combination to modify a rect</li>
                     </ul>
                 </div>
             )}/>
@@ -620,10 +693,21 @@ export default function Function() {
                     <h5 className="c-light-1">Signature</h5>
                     <ul className="property-list">
                         <li><b2>static float</b2> <b1>Ceil</b1>(<b2>this float</b2> <b1>number</b1>)</li>    
+                        <li><b2>static Vector2</b2> <b1>Ceil</b1>(<b2>this Vector2</b2> <b1>vector</b1>)</li>
+                        <li><b2>static Vector2</b2> <b1>Ceil</b1>(<b2>this Vector2</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>Ceil</b1>(<b2>this Vector3</b2> <b1>vector</b1>)</li>
+                        <li><b2>static Vector3</b2> <b1>Ceil</b1>(<b2>this Vector3</b2> <b1>vector</b1>, <b2>VECTOR</b2> <b1>axis</b1>)</li>
+                        <li><b2>static Rect</b2> <b1>Ceil</b1>(<b2>this Rect</b2> <b1>rect</b1>)</li>
+                        <li><b2>static Rect</b2> <b1>Ceil</b1>(<b2>this Rect</b2> <b1>rect</b1>, <b2>RECT</b2> <b1>mode</b1>)</li>
                     </ul>
                     <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>float</b2> <b1>number</b1>: Original number to modify</li>                    
+                        <li><b2>Vector2</b2> <b1>vector</b1>: Original vector to modify</li>                    
+                        <li><b2>Vector3</b2> <b1>vector</b1>: Original vector to modify</li>                    
+                        <li><b2>Rect</b2> <b1>rect</b1>: Original rect to modify</li>                    
+                        <li><b2>VECTOR</b2> <b1>axis</b1>: Enum with the axis combination to modify a vector</li>                    
+                        <li><b2>RECT</b2> <b1>mode</b1>: Enum with the axis combination to modify a rect</li>
                     </ul>
                 </div>
             )}/>

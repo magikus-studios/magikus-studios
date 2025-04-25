@@ -859,23 +859,57 @@ export default function Function() {
                         </ul>
                     )}
                     />
+                    <Method 
+                    name="ToString" 
+                    signatures={(
+                        <ul className="property-list">
+                            <li><b2>string override</b2> <b1>ToString</b1>(): Returns the string value of the node. ie: [col,row]</li>
+                            <li><b2>static string</b2> <b1>ToString</b1>(<b2>{"List<PathNode>"}</b2> <b1>path</b1>): Returns a string with all the nodes in the path. ie: {"(Path (length): [col1,row1] -> ... -> [colN,rowN])"}</li>
+                        </ul>
+                    )}
+                    />
                 </div>
             )}/>
 
             <h3 className="p-2">Examples</h3>
             <Group title="Example 01: Creating and Using a Matrix2D" content={(
                 <div>
+                    <p>
+                        This Unity C# script demonstrates how to create and interact with a Matrix2D{"<int>"} using the Magikus library. 
+                        It first initializes a 5×5 matrix filled with zeros, then updates a specific cell at (2,2) with the value 42. 
+                    </p>
                     <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Grids/Grids - 01.jpg" alt=""/>            
+                    <p>
+                        The script retrieves and logs this value before applying a loop function to iterate over all matrix cells, printing their coordinates and values to the console.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-45" src="images/Library/Structures/Grids/Grids - 11.jpg" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 02: Using Grid2D for Game Objects" content={(
                 <div>
+                    <p>
+                        This script first creates a 5x5 grid of GameObject references, initializes a new game object and places it at position (1,1).
+                        Then, it retrieves and logs the object from that position.
+                    </p>
                     <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Grids/Grids - 02.jpg" alt=""/>            
+                    <p>
+                        Finally, it iterates over all grid cells, logging the names of any non-null objects, showcasing how to store and manipulate game objects within a structured grid.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-45" src="images/Library/Structures/Grids/Grids - 12.jpg" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 03: Finding a Path with Pathfinder2D" content={(
                 <div>
+                    <p>
+                        This script demonstrates how to find a path in a 2D grid. 
+                        First, a Matrix2D{"<int>"} grid of size 10x10 is created and initialized with zeros. 
+                        Then, a Pathfinder2D instance is generated for pathfinding. 
+                    </p>
                     <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Grids/Grids - 03.jpg" alt=""/>            
+                    <p>
+                        The script defines a start position (0,0) and a goal position (9,9), then finds and logs the path using the FindPath method.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Grids/Grids - 13.jpg" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 04: Using the Matrix Editor" content={(
@@ -883,6 +917,12 @@ export default function Function() {
                     <p>
                         In this example, we'll take a look at the Matrix Editor. 
                         The Matrix Editor allows us to visualize the contents of a <b1>Matrix2D</b1> (or <b1>Grid2D</b1>) in real time.
+                    </p>
+                    <p>
+                        The script first initializes a 5x15 matrix filled with zeros, then uses InvokeRepeating to update the matrix at a rate of four times per second. 
+                        The UpdateMatrix method modifies matrix values sequentially, increasing a _value counter and updating positions in a row-wise manner. 
+                        Once the end of a row is reached, it moves to the next row, looping back to the top when all rows are processed. 
+                        The process can be stopped using the Stop() method, which cancels the invocation.
                     </p>
                     <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Grids/Grids - 04.jpg" alt=""/>            
                     <p>
@@ -893,7 +933,7 @@ export default function Function() {
                         When the visualize button is pressed, a Matrix 2D Editor window will open displaying the matrix data. 
                         Notice that if the matrix is empty or not initialized the editor will not display anything.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Grids/Grids - 06.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Grids/Grids - 01.gif" alt=""/>            
                     <p>
                         The Flip button rotates the matrix flipping the rows with the columns.
                     </p>

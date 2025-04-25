@@ -68,6 +68,20 @@ export default function Function() {
                         <li><b2>void</b2> <b1>IfOff</b1>(<b2>Action</b2> <b1>action</b1>): Invokes an action if the state is false</li>
                         <li><b2>void</b2> <b1>IfOff</b1>(<b2>Action{"<T>"}</b2> <b1>action</b1>): Invokes an action that takes the value as a parameter if the state is false</li>
                     </ul>
+                    <h5 className="c-light-1">On On</h5>
+                    <ul>
+                        <li><b2>void</b2> <b1>OnOn</b1>(<b2>string</b2> <b1>message</b1>): Prints a message to the console when the state turns true</li>
+                        <li><b2>void</b2> <b1>OnOn</b1>(<b2>object</b2> <b1>message</b1>): Prints the object to the console when the state turns true</li>
+                        <li><b2>void</b2> <b1>OnOn</b1>(<b2>Action</b2> <b1>action</b1>): Invokes an action when the state turns true</li>
+                        <li><b2>void</b2> <b1>OnOn</b1>(<b2>Action{"<T>"}</b2> <b1>action</b1>): Invokes an action that takes the value as a parameter when the state turns true</li>
+                    </ul>
+                    <h5 className="c-light-1">On Off</h5>
+                    <ul>
+                        <li><b2>void</b2> <b1>OnOff</b1>(<b2>string</b2> <b1>message</b1>): Prints a message to the console when the state turns false</li>
+                        <li><b2>void</b2> <b1>OnOff</b1>(<b2>object</b2> <b1>message</b1>): Prints the object to the console when the state turns false</li>
+                        <li><b2>void</b2> <b1>OnOff</b1>(<b2>Action</b2> <b1>action</b1>): Invokes an action when the state turns false</li>
+                        <li><b2>void</b2> <b1>OnOff</b1>(<b2>Action{"<T>"}</b2> <b1>action</b1>): Invokes an action that takes the value as a parameter when the state turns false</li>
+                    </ul>
                 </div>
             )}/>
 
@@ -84,10 +98,13 @@ export default function Function() {
             </ul>
             <Group title="Example 01: Toggle a Debug Mode" content={(
                 <div>
+                    <p> 
+                        This script demonstrates how to use a {"Toggle<int>"} to manage a debug mode state. 
+                        The debugToggle object triggers specific actions when toggled on or off, printing messages to the console that indicate the current state of the debug mode along with its associated integer value. 
+                    </p>
                     <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Toggles/Toggles - 01.jpg" alt=""/>            
                     <p> 
-                        In this example, a Toggle{"<string>"} is used to manage a debug mode. The state is set to true, and the value is "Debug Mode Active". 
-                        The IfOn method is used to log a message if the debug mode is on.
+                        This setup allows for easy tracking of debugging states within the game.
                     </p>
                     <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Structures/Toggles/Toggles - 02.jpg" alt=""/>            
                     <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Structures/Toggles/Toggles - 03.jpg" alt=""/>            
@@ -95,13 +112,16 @@ export default function Function() {
             )}/>
             <Group title="Example 02: Toggle UI Visibility" content={(
                 <div>
-                     <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Structures/Toggles/Toggles - 04.jpg" alt=""/>            
-                     <p> 
-                         This example demonstrates toggling the visibility of a UI panel. 
-                         The Toggle{"<GameObject>"} is used to manage the state of the UI panel. When the state changes, the IfOn method activates the panel and IfOff hides it.
-                     </p>
-                     <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Structures/Toggles/Toggles - 05.jpg" alt=""/>            
-                     <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Structures/Toggles/Toggles - 06.jpg" alt=""/>            
+                    <p> 
+                        This example demonstrates toggling the visibility of a UI panel. 
+                        The Toggle{"<GameObject>"} is used to manage the state of the UI panel. 
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Structures/Toggles/Toggles - 04.jpg" alt=""/>            
+                    <p> 
+                        When the state changes, the IfOn method activates the panel and IfOff hides it.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Structures/Toggles/Toggles - 05.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Structures/Toggles/Toggles - 06.jpg" alt=""/>            
                 </div>
             )}/>
 

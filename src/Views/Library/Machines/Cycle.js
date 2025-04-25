@@ -249,14 +249,38 @@ export default function Function() {
                         This setup demonstrates how to use the Magikus Library to create and manage a cycle, with built-in logging for different 
                         cycle events and keyboard controls for dynamic interaction during runtime.
                     </p>
+                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Machines/Cycle/Cycle - 01.gif" alt=""/>
                 </div>
             )}/>
             <Group title="Example 03: Creating Cycles with Cycles Class" content={(
                 <div>
                     <p>
-                        This example demonstrates the use of the Cycles class creating a periodic cycle, a burst cycle, a delay cycle and a curve cycle.
+                        This example demonstrates how to create and control different types of timed cycles using the Cycles class. 
                     </p>
                     <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Cycle/Cycle - 02.jpg" alt=""/>
+                    <p>
+                        The script initializes four types of cycles (Pulse, Burst, Delay and Curve) and allows the user to start or stop them using keyboard input (P, B, D, C keys respectively). 
+                        Each cycle triggers specific actions with defined timing behavior: 
+                    </p>
+                    <p>
+                        Pulse repeats an action. 
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Machines/Cycle/Cycle - 02.gif" alt=""/>
+                    <p>
+                        Burst performs rapid repetitions. 
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Machines/Cycle/Cycle - 03.gif" alt=""/>
+                    <p>
+                        Delay schedules an action after a wait. 
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Machines/Cycle/Cycle - 04.gif" alt=""/>
+                    <p>
+                        Curve smoothly interpolates values over time. 
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Machines/Cycle/Cycle - 05.gif" alt=""/>
+                    <p>
+                        The system ensures cycles can be started, stopped and cleaned up efficiently.
+                    </p>
                 </div>
             )}/>
 

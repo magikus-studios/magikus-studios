@@ -47,45 +47,45 @@
     background-size: 96px;
 }
 .bg-pattern-2 {
-    background-image: url("../public/images/Assets/Seamless Pattern - Background - 04.png");
+    background-image: url("../public/images/Assets/Seamless Pattern - Background - 08.png");
     background-repeat: repeat;
-    background-size: 90px;
+    background-size: 128px;
 }
 
 .clouds1 {
     position: fixed;
-    height: 100px;
+    height: 165px;
     width: 5120px;
     background-image: url("../public/images/Assets/Seamless Pattern - Clouds - 1 - V6.png");
     background-repeat: repeat;
-    background-size: 100px;
+    background-size: 165px;
     animation: slide-clouds 262s linear infinite;
 }
 .clouds2 {
     position: fixed;
-    height: 100px;
+    height: 165px;
     width: 5120px;
     background-image: url("../public/images/Assets/Seamless Pattern - Clouds - 2 - V6.png");
     background-repeat: repeat;
-    background-size: 100px;
+    background-size: 165px;
     animation: slide-clouds 162s linear infinite;
 }
 .clouds3 {
     position: fixed;
-    height: 100px;
+    height: 165px;
     width: 5120px;
     background-image: url("../public/images/Assets/Seamless Pattern - Clouds - 3 - V6.png");
     background-repeat: repeat;
-    background-size: 100px;
+    background-size: 165px;
     animation: slide-clouds 38s linear infinite;
 }
 .clouds4 {
     position: fixed;
-    height: 100px;
+    height: 165px;
     width: 5120px;
     background-image: url("../public/images/Assets/Seamless Pattern - Clouds - 4 - V6.png");
     background-repeat: repeat;
-    background-size: 100px;
+    background-size: 165px;
     animation: slide-clouds 62s linear infinite;
 }
 .clouds-container {
@@ -95,8 +95,9 @@
 }
 @keyframes slide-clouds { 
     0% { transform: translate3d(0, 0, 0); }
-    100% { transform: translate3d(-100px, 0, 0); }
+    100% { transform: translate3d(-165px, 0, 0); }
 }
+
 .ground {
     height: 100px;
     width: 200vw;
