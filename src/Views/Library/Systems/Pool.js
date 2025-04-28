@@ -18,7 +18,7 @@ export default function Function() {
                 By leveraging this system, developers can ensure smoother gameplay experiences with reduced performance overhead.
             </p>
             <div className="p-2">
-                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Pool/Pool - 07.jpg" alt=""/>            
+                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Pool/Pool - 02.gif" alt=""/>            
             </div>
 
            <h3 className="p-2">Introduction</h3>
@@ -95,6 +95,7 @@ export default function Function() {
                         <li><b2>int</b2> <b1>BatchSize</b1>: Number of objects instantiated when more are needed</li>
                         <li><b2>int</b2> <b1>MinPoolSize</b1>: Minimum number of objects in the pool</li>
                         <li><b2>Toggle{"<"}int{">"}</b2> <b1>MaxPoolSize</b1>: Maximum number of objects allowed in the pool</li>
+                        <li><b2>{"Couple<Toggle<int>,SIZE_MODE>"}</b2> <b1>MaxSize</b1>: Maximum number of objects allowed either spawned or in total based on the size mode selected</li>
                         <li><b2>Toggle{"<"}float{">"}</b2> <b1>PoolCleanupRate</b1>: Rate at which excess objects are removed</li>
                         <li><b2>Toggle{"<"}float{">"}</b2> <b1>PoolAutofillRate</b1>: Rate at which missing objects are replenished</li>
                     </ul>
@@ -108,21 +109,23 @@ export default function Function() {
             </p>
             <Group title="Step 01: Add the PoolManager Component" content={(
                 <div>
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Pool/Pool - 01.jpg" alt=""/>            
                     <p> 
                         In Unity, create an empty GameObject.
                         Attach the PoolManager script to the GameObject.
                         You can find the PoolManager script in the Components menu, <b1>Magikus {">"} Pool System {">"} Pool Manager</b1>. 
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Pool/Pool - 01.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Systems/Pool/Pool - 03.gif" alt=""/>            
                     <p> 
                         Assign a PoolSettingsAsset to configure the pooling parameters.
                         To create a new PoolSettingsAsset go to the Unity menu, <b1>Assets {">"} Create {">"} Magikus {">"} Pool System {">"} Pool Settings Asset</b1>. 
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Pool/Pool - 02.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Systems/Pool/Pool - 05.gif" alt=""/>            
                     <p> 
                         Set DeactivateObjectsInPool to true if objects should be deactivated when pooled.
                         Subscribe to OnObjectSpawned, OnObjectPooled, and OnObjectCreated events in the Unity Inspector if needed.
                     </p>
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Pool/Pool - 02.jpg" alt=""/>            
                 </div>
             )}/>
             <Group title="Step 02: Configure the PoolObjectController" content={(
@@ -131,11 +134,12 @@ export default function Function() {
                         Attach the PoolObjectController script to the objects that need pooling.
                         You can find the PoolObjectController script in the Components menu, <b1>Magikus {">"} Pool System {">"} Pool Object Controller</b1>. 
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Pool/Pool - 03.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Systems/Pool/Pool - 04.gif" alt=""/>            
                     <p> 
                         Assign a this object to the Pool Object reference of the Pool Manager in the Inspector.
                         Subscribe to OnSpawn, OnKill, and OnCreate events in the Unity Inspector if needed.
                     </p>
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Pool/Pool - 03.jpg" alt=""/>            
                 </div>
             )}/>
             <Group title="Step 03: Spawning Objects from the Inspector" content={(
@@ -161,11 +165,12 @@ export default function Function() {
             )}/>
             <Group title="Step 05: Automatic Pool Management" content={(
                 <div>
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Pool/Pool - 06.jpg" alt=""/>            
                     <p> 
                         Adjust the PoolSettingsAsset to control automatic cleanup and auto-fill behaviors to maintain optimal performance.
                         The OnObjectCreated event will trigger when new objects are instantiated.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Pool/Pool - 06.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Systems/Pool/Pool - 01.gif" alt=""/>            
                 </div>
             )}/>
 
