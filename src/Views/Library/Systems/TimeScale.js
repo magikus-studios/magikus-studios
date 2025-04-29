@@ -109,42 +109,45 @@ export default function Function() {
             </p>
             <Group title="Example 01: Basic Timescale Usage" content={(
                 <div>
-                    <p> 
-                        This example demonstrates how to create and use a Timescale object in a script to control the speed of a moving object.
-                    </p>
                     <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Timescale/Timescale - 01.jpg" alt=""/>            
                     <p> 
-                        A Timescale object is used to control the delta time applied to the object's movement speed. 
-                        Adjusting the Scale property of the Timescale object will dynamically affect the movement speed of the object in the game.
+                        This example demonstrates how to create and use a Timescale object in a script to control the speed of a rotating object.
                     </p>
                     <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Timescale/Timescale - 02.jpg" alt=""/>            
+                    <p> 
+                        A Timescale object is used to control the delta time applied to the object's spinning speed. 
+                        Adjusting the Scale property of the Timescale object will dynamically affect the spin speed of the object in the game.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-15" src="images/Library/Systems/Timescale/Timescale - 01.gif" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 02: Pausing Game Time" content={(
                 <div>
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Timescale/Timescale - 03.jpg" alt=""/>            
                     <p> 
                         In this example, a TimescaleAsset is used to pause game time while keeping UI animations running.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Timescale/Timescale - 03.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Timescale/Timescale - 04.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Timescale/Timescale - 05.jpg" alt=""/>            
                     <p> 
                         This script demonstrates how to pause and resume the game using TimescaleAsset. 
                         The game is paused by setting the Scale of gameTimescale to 0f, while the UI continues to run by maintaining its scale at 1f.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Timescale/Timescale - 04.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Timescale/Timescale - 05.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-15" src="images/Library/Systems/Timescale/Timescale - 02.gif" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 03: Implementing Slow Motion Effect" content={(
                 <div>
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Timescale/Timescale - 06.jpg" alt=""/>            
                     <p> 
                         This example showcases how to apply a slow motion effect to certain objects using a Timescale structure.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Timescale/Timescale - 06.jpg" alt=""/>            
-                    <p> 
-                        The Timescale structure is used to create a slow motion effect by halving the time scale. 
-                        Objects using this Timescale will operate at half the normal speed until the scale is reset to 1f.
-                    </p>
                     <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Timescale/Timescale - 07.jpg" alt=""/>            
+                    <p> 
+                        The Timescale structure is used to create a slow motion effect by setting the time scale to a quarter of its value. 
+                        Objects using this Timescale will operate at quarter the normal speed until the scale is reset to 1f.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-15" src="images/Library/Systems/Timescale/Timescale - 03.gif" alt=""/>            
                 </div>
             )}/>
 
