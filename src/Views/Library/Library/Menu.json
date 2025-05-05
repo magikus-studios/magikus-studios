@@ -81,7 +81,7 @@
         "label": "Tools",
         "items": [
             { "label": "[Tools]", "link": "/#/library/tools" },
-            { "label": "Base Component", "link": "/#/library/tools/baseComponent" },
+            { "label": "Debase Component", "link": "/#/library/tools/debaseComponent" },
             { "label": "Button Attribute", "link": "/#/library/tools/buttonAttribute" },
             { "label": "Reference Value Attribute", "link": "/#/library/tools/referenceValueAttribute" },
             { "label": "Key Binding Drawer", "link": "/#/library/tools/keyBindingDrawer" },

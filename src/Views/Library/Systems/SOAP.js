@@ -267,27 +267,33 @@ export default function Function() {
                     <p> 
                         This example demonstrates how to use a basic EventVoid.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Events - 01.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Systems/SOAP/SOAP - Events - 01.jpg" alt=""/>            
                     <p> 
                         The DefeatEnemy method is subscribed to the event through the Inspector. 
-                        When the script starts, it will call the event invoking all the methods subscribed to it.
                     </p>
                     <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Events - 02.jpg" alt=""/>            
+                    <p> 
+                        When the script runs, it will call the event invoking all the methods subscribed to it.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Systems/SOAP/SOAP - Events - 09.jpg" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 02: Event with Parameters" content={(
                 <div>
                     <p> 
                         In this example, an Event with a parameter is used instead. 
-                        There is a score int and an UpdateScore method that takes an int and logs a message with it. 
-                        When the script starts the Event is called sending the score value as a parameter.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Events - 03.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Systems/SOAP/SOAP - Events - 03.jpg" alt=""/>            
+                    <p> 
+                        There is a score int and an UpdateScore method that takes an int and logs a message with it. 
+                        When the script runs the Event is called sending the score value as a parameter.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Events - 04.jpg" alt=""/>            
                     <p> 
                         In the Inspector, the UpdateScore is subscribed dynamically to the event. 
                         This will use the value sent through the event call to the method invoked when the Event is called.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Events - 04.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/SOAP/SOAP - Events - 10.jpg" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 03: Setting Event Mode" content={(
@@ -295,11 +301,11 @@ export default function Function() {
                     <p> 
                         Finally, this example shows how to use an Event asset and the EventMode attribute. 
                         For this example, two scripts are created. 
-                        The first one is the sender script and will contain a void Event that will get called on start. 
+                        The first one is the sender script and will contain a void Event that will get called on the Run method. 
                         It also has a PauseGame method that logs a message. 
                         In this case, the void Event will be set as EVENT_MODE.Sender (using the EventMode attribute) because it will only be sending calls.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Events - 05.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Systems/SOAP/SOAP - Events - 05.jpg" alt=""/>            
                     <p> 
                         The second script will be the listener script. 
                         This script will contain another void Event but this time it will be set to EVENT_MODE.Listener because we only want this event to be listening to an Event asset. 
@@ -315,6 +321,10 @@ export default function Function() {
                         In the inspector, the PauseGame method is subscribed to the onGamePaused Event, the PrintMessageWithAsset is subscribed to the onAssetCall Event and the Event asset is set to both Events.
                     </p>
                     <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Events - 08.jpg" alt=""/>            
+                    <p> 
+                        When the Run() method is called, both events will trigger.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Events - 11.jpg" alt=""/>            
                 </div>
             )}/>
 
@@ -327,26 +337,36 @@ export default function Function() {
             </p>
             <Group title="Example 04: Creating and Using a FloatAsset" content={(
                 <div>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Value Assets - 01.jpg" alt=""/>            
                     <p> 
                         In this example, a FloatAsset Scriptable Object is created and linked to a script. 
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Value Assets - 01.jpg" alt=""/>            
+                    <p> 
                         The onValueChange action is subscribed to a method (OnHealthChanged) that logs the new health value. 
-                        The TakeDamage method modifies the FloatAsset value, triggering the onValueChange event.
                     </p>
                     <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Value Assets - 02.jpg" alt=""/>            
                     <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Value Assets - 03.jpg" alt=""/>            
+                    <p> 
+                        The TakeDamage method modifies the FloatAsset value, triggering the onValueChange event.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Value Assets - 01.gif" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 05: Using an IntAsset for Score Tracking" content={(
                 <div>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Value Assets - 04.jpg" alt=""/>            
                     <p> 
                         In this example, an IntAsset Scriptable Object is created for score tracking. 
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Value Assets - 04.jpg" alt=""/>            
+                    <p> 
                         The onValueChange action updates the score display or triggers other score-related effects. 
-                        The AddScore method adjusts the IntAsset value and triggers the event.
                     </p>
                     <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Value Assets - 05.jpg" alt=""/>            
                     <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Value Assets - 06.jpg" alt=""/>            
+                    <p> 
+                        The AddScore method adjusts the IntAsset value and triggers the event.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Value Assets - 02.gif" alt=""/>            
                 </div>
             )}/>
 

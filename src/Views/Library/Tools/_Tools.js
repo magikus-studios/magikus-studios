@@ -19,9 +19,9 @@ export default function Function() {
                 By utilizing these tools, developers can boost productivity and maintain a well-organized project structure.
             </p>
             
-            <a href="/#/library/tools/baseComponent" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Base Component</h4></a>
+            <a href="/#/library/tools/debaseComponent" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Debase Component</h4></a>
             <p className="pad-left-3">
-                A foundational script for MonoBehaviours and ScriptableObjects, the Base component simplifies debugging, enables runtime toggling of features and streamlines development and testing for cleaner, more efficient workflows.
+                A foundational script for MonoBehaviours and ScriptableObjects, the Debase component simplifies debugging, enables runtime toggling of features and streamlines development and testing for cleaner, more efficient workflows.
             </p>
 
             <a href="/#/library/tools/buttonAttribute" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Button Attribute</h4></a>

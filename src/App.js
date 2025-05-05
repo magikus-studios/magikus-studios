@@ -65,7 +65,7 @@ import LibrarySystemsDialog from "Views/Library/Systems/Dialog.js";
 import LibrarySystemsNavigation from "Views/Library/Systems/Navigation.js";
 
 import LibraryTools from "Views/Library/Tools/_Tools.js";
-import LibraryToolsBaseComponent from "Views/Library/Tools/BaseComponent.js";
+import LibraryToolsDebaseComponent from "Views/Library/Tools/DebaseComponent.js";
 import LibraryToolsButtonAttribute from "Views/Library/Tools/ButtonAttribute.js";
 import LibraryToolsReferenceValueAttribute from "Views/Library/Tools/ReferenceValueAttribute.js";
 import LibraryToolsKeyBindingDrawer from "Views/Library/Tools/KeyBindingDrawer.js";
@@ -150,7 +150,7 @@ export default function App() {
           */}
 
           <Route exact path="/library/tools" element={<Library content={<LibraryTools />} menu={LibraryMenu} />}></Route>
-          <Route exact path="/library/tools/baseComponent" element={<Library content={<LibraryToolsBaseComponent />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/library/tools/debaseComponent" element={<Library content={<LibraryToolsDebaseComponent />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/tools/buttonAttribute" element={<Library content={<LibraryToolsButtonAttribute />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/tools/referenceValueAttribute" element={<Library content={<LibraryToolsReferenceValueAttribute />} menu={LibraryMenu} />}></Route>
           <Route exact path="/library/tools/keyBindingDrawer" element={<Library content={<LibraryToolsKeyBindingDrawer />} menu={LibraryMenu} />}></Route>
