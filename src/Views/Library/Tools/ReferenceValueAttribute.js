@@ -31,21 +31,21 @@ export default function Function() {
             <Group title="ReferenceValue Attribute" content={(
                 <div>
                     <p>
-                        Initializes the <b2>[ReferenceValue]</b2> attribute with a specified menu path for creating new assets, a custom ratio for the reference field width and custom labels for the “create” and “remove” buttons.
+                        Initializes the <b2>[ReferenceValue]</b2> attribute with a specified menu path for creating new assets and custom labels and width for the “create” and “remove” buttons.
                     </p>
                     <h5 className="c-light-1">Constructors</h5>
                     <ul className="property-list">
                         <li><b1>ReferenceValue</b1>(<b2>string</b2> <b1>menuPath</b1>)</li>
-                        <li><b1>ReferenceValue</b1>(<b2>string</b2> <b1>menuPath</b1>, <b2>float</b2> <b1>ratio</b1>)</li>
+                        <li><b1>ReferenceValue</b1>(<b2>string</b2> <b1>menuPath</b1>, <b2>float</b2> <b1>buttonWidth</b1>)</li>
                         <li><b1>ReferenceValue</b1>(<b2>string</b2> <b1>menuPath</b1>, <b2>string</b2> <b1>createLabel</b1>, <b2>string</b2> <b1>removeLabel</b1>)</li>
-                        <li><b1>ReferenceValue</b1>(<b2>string</b2> <b1>menuPath</b1>, <b2>string</b2> <b1>createLabel</b1>, <b2>string</b2> <b1>removeLabel</b1>, <b2>float</b2> <b1>ratio</b1>)</li>
+                        <li><b1>ReferenceValue</b1>(<b2>string</b2> <b1>menuPath</b1>, <b2>string</b2> <b1>createLabel</b1>, <b2>string</b2> <b1>removeLabel</b1>, <b2>float</b2> <b1>buttonWidth</b1>)</li>
                     </ul>
                     <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>string</b2> <b1>menuPath</b1>: The path in Unity's Assets menu to trigger for creating a new object.</li>
-                        <li><b2>string</b2> <b1>createLabel</b1>: The label for the button used to create a new reference. Default is "Create".</li>
-                        <li><b2>string</b2> <b1>removeLabel</b1>: The label for the button used to remove an existing reference. Default is "Remove".</li>                    
-                        <li><b2>float</b2> <b1>ratio</b1>: The ratio of the width of the reference field to the total width of the inspector field. Default is 0.6f.</li>
+                        <li><b2>string</b2> <b1>createLabel</b1>: The label for the button used to create a new reference. Default is "+".</li>
+                        <li><b2>string</b2> <b1>removeLabel</b1>: The label for the button used to remove an existing reference. Default is "-".</li>                    
+                        <li><b2>float</b2> <b1>buttonWidth</b1>: The width of the "create" and "remove" buttons. Default is 20f.</li>
                     </ul>
                 </div>
             )}/>
@@ -63,19 +63,17 @@ export default function Function() {
                         This example shows how to apply the <b2>[ReferenceValue]</b2> attribute to a GameObject field. 
                         The menu path "GameObject/Create Empty" is triggered when the create button is clicked.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 02.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 03.jpg" alt=""/>                     
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 01.gif" alt=""/>            
                 </div>
             )}/>
-            <Group title="Example 02: Custom Ratio for Reference Field Width" content={(
+            <Group title="Example 02: Custom Width for Buttons" content={(
                 <div>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 04.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 04.jpg" alt=""/>            
                     <p>
-                        Here, the reference field width for myMaterial is set to 70% of the total field width. 
+                        Here, the buttons width is set to 40f. 
                         The menu path "Assets/Create/Material" is used for creating a new reference. 
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 05.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 06.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 02.gif" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 03: Custom Button Labels" content={(
@@ -85,8 +83,7 @@ export default function Function() {
                         This example sets custom labels for the “create” and “remove” buttons. 
                         Clicking "Add Prefab" will create a new Prefab asset using the menu path "Assets/Create/Prefab", while clicking "Remove Prefab" will clear the reference.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 08.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 09.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Tools/ReferenceValueAttribute/Reference Value Attribute - 03.gif" alt=""/>            
                 </div>
             )}/>
 

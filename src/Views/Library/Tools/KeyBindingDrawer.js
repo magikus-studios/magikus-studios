@@ -61,8 +61,8 @@ export default function Function() {
                         <li>Attach the next script to a GameObject in your scene.</li>
                         <img className="block-center mar-vertical-3 img-border" src="images/Library/Tools/KeyBindingDrawer/Key Binding Drawer - 01.jpg" alt=""/>            
                         <li>Select the GameObject and view the KeyCode property in the Inspector.</li>
-                        <li>Locate the KeyCode property in the Inspector. You will see the enhanced UI with the Key Code Field, Bind Button, and Reset Button.</li>
-                        <img className="block-center mar-vertical-3 img-border" src="images/Library/Tools/KeyBindingDrawer/Key Binding Drawer - 02.jpg" alt=""/>            
+                        <li>Locate the KeyCode property in the Inspector. You will see the enhanced UI with the Key Code Field, Bind Button and Reset Button.</li>
+                        <img className="block-center mar-vertical-3 img-border" src="images/Library/Tools/KeyBindingDrawer/Key Binding Drawer - 01.gif" alt=""/>            
                         <li>Click the Bind Button to enter listening mode. The button will change to Listening. Press the desired key on your keyboard. The key code will update to the pressed key.</li>
                         <li>If you click the Listening Button again or press a mouse button, listening mode will cancel without binding a key.</li>
                         <li>Click the Reset Button to revert the key code to its default value (None).</li>
