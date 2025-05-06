@@ -38,7 +38,14 @@ export default function Function() {
                     </ul>
                     <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
-                        <li><b2>string[]</b2> <b1>methods</b1>: An array of method names that will be invoked when the button is clicked. Each string references the name of a method in the script. If the first string contains the text “label:” then what follows will display as the label of the field. If the method name is followed by a slash (/) then what follows will display as the button title instead of the method name.</li>
+                        <li>
+                            <b2>string[]</b2> <b1>methods</b1>: An array of method names that will be invoked when the button is clicked. 
+                            Each string references the name of a method in the script. 
+                            If the first string contains the text “label:” then what follows will display as the label of the field. 
+                            If the method name is followed by a slash (/) then what follows will display as the button title instead of the method name.
+                            If the string contains "(play)" either on the method name or on the title then that button will be enabled only in play mode.
+                            If the string contains "(editor)" either on the method name or on the title then that button will be enabled only in editor mode.
+                        </li>
                         <li><b2>float</b2> <b1>width</b1>: A float value to set the width of the button as a proportion of the default width (1.0 being 100%).</li>
                         <li><b2>float</b2> <b1>height</b1>: A float value to set the height of the button.</li>
                     </ul>
@@ -59,7 +66,7 @@ export default function Function() {
                         In this example, a button labeled SayHello will appear in the Unity Inspector. 
                         Clicking this button will invoke the SayHello method, which logs a message to the console.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ButtonAttribute/Button Attribute - 02.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Tools/ButtonAttribute/Button Attribute - 01.gif" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 02: Button with Custom Label and Multiple Methods" content={(
@@ -74,7 +81,7 @@ export default function Function() {
                         Notice that Method Two is referenced with nameof() method. 
                         This allows to avoid using string as references and prevents from possible errors.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ButtonAttribute/Button Attribute - 04.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Tools/ButtonAttribute/Button Attribute - 02.gif" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 03: Button with Custom Size" content={(
@@ -88,14 +95,25 @@ export default function Function() {
                         Here, the button will be 0.5 times the default width and 2 times the default height. 
                         It will also display the Click Me title in the button instead of the method name.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ButtonAttribute/Button Attribute - 06.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Tools/ButtonAttribute/Button Attribute - 03.gif" alt=""/>            
                 </div>
             )}/>
-                               
+            <Group title="Example 04: Enabling and Disabling Buttons in Play Mode" content={(
+                <div>
+                    <p>
+                        This example demonstrates how to configure a single Inspector button to trigger different methods based on Unity's current mode. 
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ButtonAttribute/Button Attribute - 08.jpg" alt=""/>            
+                    <p>
+                        It defines actions for both Play Mode and Editor Mode, allowing SimpleButton, PlayModeAction or EditorModeAction to be called depending on the context.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Tools/ButtonAttribute/Button Attribute - 04.gif" alt=""/>            
+                </div>
+            )}/>           
             
             <h3 className="p-2">Notes</h3>
             <ul>
-                <li>Methods can be public, private, or protected, as long as they are accessible within the context where the button is placed.</li>
+                <li>Methods can be public, private or protected, as long as they are accessible within the context where the button is placed.</li>
                 <li>If you specify a label, it will be displayed to the left of the button.</li>                
                 <li>If you specify a title, it will be displayed instead of the method name.</li>
                 <li>You can control the size of the buttons using the width and height parameters, making the buttons more visually distinct in the Inspector.</li>
