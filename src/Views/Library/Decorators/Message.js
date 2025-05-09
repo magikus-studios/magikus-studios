@@ -7,7 +7,7 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center pad-top-4">Message Decorator</h1>
+            <h1 className="text-center pad-top-4">Message Attribute</h1>
             <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
                 Attribute used to Display Informative Text Boxes in the Unity Inspector
             </h6>

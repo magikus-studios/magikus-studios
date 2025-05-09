@@ -20,7 +20,10 @@
             { "label": "Block", "link": "/#/library/decorators/block" },
             { "label": "Toggle", "link": "/#/library/decorators/toggle" },
             { "label": "Collapse", "link": "/#/library/decorators/collapse" },
-            { "label": "Progress Bar", "link": "/#/library/decorators/progressBar" }
+            { "label": "Progress Bar", "link": "/#/library/decorators/progressBar" },
+            { "label": "Button", "link": "/#/library/decorators/button" },
+            { "label": "Create", "link": "/#/library/decorators/create" },
+            { "label": "Key Binding", "link": "/#/library/decorators/keyBinding" }
         ]
     },
     {
@@ -49,7 +52,8 @@
             { "label": "Couples", "link": "/#/library/structures/couples" },
             { "label": "Ranges", "link": "/#/library/structures/ranges" },
             { "label": "Tier", "link": "/#/library/structures/tier" },
-            { "label": "Switches", "link": "/#/library/structures/switches" }
+            { "label": "Switches", "link": "/#/library/structures/switches" },
+            { "label": "Debase", "link": "/#/library/structures/debase" }
         ]
     },
     {
@@ -81,10 +85,6 @@
         "label": "Tools",
         "items": [
             { "label": "[Tools]", "link": "/#/library/tools" },
-            { "label": "Debase Component", "link": "/#/library/tools/debaseComponent" },
-            { "label": "Button Attribute", "link": "/#/library/tools/buttonAttribute" },
-            { "label": "Reference Value Attribute", "link": "/#/library/tools/referenceValueAttribute" },
-            { "label": "Key Binding Drawer", "link": "/#/library/tools/keyBindingDrawer" },
             { "label": "Hierarchy Editor", "link": "/#/library/tools/hierarchyEditor" },
             { "label": "Curve Editor", "link": "/#/library/tools/curveEditor"},
             { "label": "Reference Console", "link": "/#/library/tools/referenceConsole" },

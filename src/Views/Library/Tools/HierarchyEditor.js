@@ -19,7 +19,7 @@ export default function Function() {
                 By using this tool, developers can save time and maintain a well-organized project structure, leading to a more efficient and streamlined workflow.
             </p>
             <div className="p-2">
-                <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Tools/HierarchyEditor/Hierarchy Editor - 01.jpg" alt=""/>
+                <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Tools/HierarchyEditor/Hierarchy Editor - 01.gif" alt=""/>
             </div>
 
 
@@ -32,7 +32,7 @@ export default function Function() {
                     <p>
                         In Unity, navigate to <b1>Magikus {">"} Hierarchy Editor</b1> from the top menu to open the Hierarchy editor window.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Tools/HierarchyEditor/Hierarchy Editor - 05.jpg" alt=""/>
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Tools/HierarchyEditor/Hierarchy Editor - 07.gif" alt=""/>
                 </div>
             )}/>
             <Group title="Interface" content={(
@@ -42,33 +42,74 @@ export default function Function() {
                         It dynamically updates the selection and enables/disables buttons based on the current selection context.
                         The Hierarchy editor window consists of several buttons:
                     </p>
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Tools/HierarchyEditor/Hierarchy Editor - 02.jpg" alt=""/>
                     <ul>
-                        <li><b1>|--</b1>: Move the selected objects to the top of their sibling list.</li>
-                        <li><b1>{"<"}--</b1>: Move the selected objects up by one position in their sibling list.</li>
-                        <li><b1>--{">"}</b1>: Move the selected objects down by one position in their sibling list.</li>
-                        <li><b1>--|</b1>: Move the selected objects to the bottom of their sibling list.</li>
-                        <li><b1>{"<"}</b1>: Move the selected objects out of their current parent, making them siblings of their parent.</li>
-                        <li><b1>{">"}</b1>: Nest the selected object inside the next sibling object in the hierarchy.</li>
-                        <li><b1>[-]</b1>: Group the selected objects under a new empty parent object named "Group".</li>
+                        <li><b1>{"▲"}</b1>  : Move the selected objects to the top of their sibling list.</li>
+                        <li><b1>{"↑"}</b1>  : Move the selected objects up by one position in their sibling list.</li>
+                        <li><b1>{"↓"}</b1>  : Move the selected objects down by one position in their sibling list.</li>
+                        <li><b1>{"▼"}</b1>  : Move the selected objects to the bottom of their sibling list.</li>
+                        <li><b1>{"◄"}</b1>  : Move the selected objects out of their current parent, making them siblings of their parent.</li>
+                        <li><b1>{"►"}</b1>  : Nest the selected object inside the next sibling object in the hierarchy.</li>
+                        <li><b1>{"☉"}</b1> : Group the selected objects under a new empty parent object named "Group".</li>
+                        <li><b1>{"●"}</b1>  : Activate all the selected GameObjects in the scene.</li>
+                        <li><b1>{"○"}</b1>  : Deactivate all the selected GameObjects in the scene.</li>
+                        <li><b1>{"❍"}</b1> : Toggle the state of the selected GameObjects (activating or deactivating them based on their current state).</li>
+                        <li><b1>{"☀"}</b1> : Enable auto toggling. With this enabled, if you make any changes to the selection, the active state of the selected GameObjects will automatically toggle (on/off) based on their current state.</li>
                     </ul>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/HierarchyEditor/Hierarchy Editor - 02.jpg" alt=""/>
                 </div>
             )}/>
 
                         
             <h3 className="p-2">Examples</h3>
-            <Group title="Example 01: Grouping GameObjects" content={(
+            <Group title="Example 01: Reordering GameObjects in the Hierarchy" content={(
                 <div>
-                    <p>
-                        To group several selected objects under a new parent object:
-                    </p>
                     <ol className="oList">
-                        <li>Open the Hierarchy Editor window.</li>
-                        <li>Select the objects you want to group in the Unity hierarchy.</li>
-                        <img className="block-center mar-vertical-3 img-border w-50" src="images/Library/Tools/HierarchyEditor/Hierarchy Editor - 03.jpg" alt=""/>
-                        <li>Click the <b1>[-]</b1> button to group the selected objects under a new parent named "Group".</li>
-                        <img className="block-center mar-vertical-3 img-border w-50" src="images/Library/Tools/HierarchyEditor/Hierarchy Editor - 04.jpg" alt=""/>
+                        <li>Select multiple GameObjects in the scene hierarchy.</li>
+                        <li>To move them up, click the <b1>"↑"</b1> button.</li>
+                        <li>To move them down, click the <b1>"↓"</b1> button.</li>
+                        <li>To move them to the top of their parent, click the <b1>"▲"</b1> button.</li>
+                        <li>To move them to the bottom  of their parent, click the <b1>"▼"</b1> button.</li>
                     </ol>
+                    <img className="block-center mar-vertical-3 img-border w-40" src="images/Library/Tools/HierarchyEditor/Hierarchy Editor - 02.gif" alt=""/>
+                </div>
+            )}/>
+            <Group title="Example 02: Parenting GameObjects" content={(
+                <div>
+                    <ol className="oList">
+                        <li>Select a GameObject in the hierarchy.</li>
+                        <li>To move it inside the next sibling (as a parent), click the <b1>"►"</b1> button.</li>
+                        <li>To move it outside of the parent (i.e., back to the root), click the <b1>"◄"</b1> button.</li>
+                    </ol>
+                    <img className="block-center mar-vertical-3 img-border w-40" src="images/Library/Tools/HierarchyEditor/Hierarchy Editor - 03.gif" alt=""/>
+                </div>
+            )}/>
+            <Group title="Example 03: Grouping GameObjects" content={(
+                <div>
+                    <ol className="oList">
+                        <li>Select the objects you want to group in the Unity hierarchy.</li>
+                        <li>Click the <b1>"☉"</b1> button to group the selected objects under a new parent named "Group".</li>
+                    </ol>
+                    <img className="block-center mar-vertical-3 img-border w-40" src="images/Library/Tools/HierarchyEditor/Hierarchy Editor - 04.gif" alt=""/>
+                </div>
+            )}/>
+            <Group title="Example 04: Activating and Deactivating GameObjects" content={(
+                <div>
+                    <ol className="oList">
+                        <li>Select multiple GameObjects in the hierarchy.</li>
+                        <li>To activate them, click the <b1>"●"</b1> button.</li>
+                        <li>To deactivate them, click the <b1>"○"</b1> button.</li>
+                        <li>To toggle their current active state, click the <b1>"❍"</b1> button.</li>
+                    </ol>
+                    <img className="block-center mar-vertical-3 img-border w-40" src="images/Library/Tools/HierarchyEditor/Hierarchy Editor - 05.gif" alt=""/>
+                </div>
+            )}/>
+            <Group title="Example 05: Auto Toggle State on Selection Change" content={(
+                <div>
+                    <ol className="oList">
+                        <li>Enable the AutoStateToggle by clicking the <b1>"☀"</b1> checkbox.</li>
+                        <li>Whenever you change the selection, the active state of the selected GameObjects will automatically toggle based on their current state (i.e., active GameObjects will become inactive, and vice versa).</li>
+                    </ol>
+                    <img className="block-center mar-vertical-3 img-border w-40" src="images/Library/Tools/HierarchyEditor/Hierarchy Editor - 06.gif" alt=""/>
                 </div>
             )}/>
 

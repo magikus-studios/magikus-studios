@@ -19,26 +19,6 @@ export default function Function() {
                 By utilizing these tools, developers can boost productivity and maintain a well-organized project structure.
             </p>
             
-            <a href="/#/library/tools/debaseComponent" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Debase Component</h4></a>
-            <p className="pad-left-3">
-                A foundational script for MonoBehaviours and ScriptableObjects, the Debase component simplifies debugging, enables runtime toggling of features and streamlines development and testing for cleaner, more efficient workflows.
-            </p>
-
-            <a href="/#/library/tools/buttonAttribute" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Button Attribute</h4></a>
-            <p className="pad-left-3">
-                An attribute that adds customizable buttons to the Unity Inspector, enabling developers to trigger methods directly within the editor.
-            </p>
-
-            <a href="/#/library/tools/referenceValueAttribute" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Reference Value Attribute</h4></a>
-            <p className="pad-left-3">
-                An attribute that simplifies the management of referenced objects in Unity's Inspector, enhancing productivity in scenarios requiring frequent creation or removal of referenced value objects such as GameObjecs or ScriptableObjects.
-            </p>
-
-            <a href="/#/library/tools/keyBindingDrawer" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Key Binding Drawer</h4></a>
-            <p className="pad-left-3">
-                A Property Drawer that enhances editing KeyCode fields in Unity, offering intuitive key binding and reset functionality to enhance workflow and productivity.
-            </p>
-
             <a href="/#/library/tools/hierarchyEditor" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Hierarchy Editor</h4></a>
             <p className="pad-left-3">
                 An enhanced Unity Editor tool for efficiently managing and organizing the hierarchy of GameObjects in a scene.

@@ -6,25 +6,25 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center pad-top-4">Debase Component</h1>
+            <h1 className="text-center pad-top-4">Debase Structure</h1>
             <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
                 Base script for MonoBehaviours and ScriptableObjects
             </h6>
 
             <h3 className="p-2">Overview</h3>
             <p className="pad-left-2 pad-bottom-2">
-                The Debase component is designed to simplify debugging and enable or disable functionality within MonoBehaviour or ScriptableObject scripts in Unity. 
+                The Debase structure is designed to simplify debugging and enable or disable functionality within MonoBehaviour or ScriptableObject scripts in Unity. 
                 It is an effective tool for developers who need to toggle debugging and disabling features during runtime, making the development and testing processes more flexible and efficient. 
                 By incorporating this tool, developers can streamline their workflow, enhance their testing capabilities and maintain cleaner codebases. 
             </p>
             <div className="p-2">
-                <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Tools/DebaseComponent/Debase Component - 03.gif" alt=""/>            
+                <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Structures/Debase/Debase - 03.gif" alt=""/>            
             </div>
 
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">
-                The Debase component includes two foundational classes, MonoDebase (a MonoBehaviour) and AssetDebase (a ScriptableObject), which serve as base classes for inheritance. 
+                The Debase structure includes two foundational classes, MonoDebase (a MonoBehaviour) and AssetDebase (a ScriptableObject), which serve as base classes for inheritance. 
                 These classes are designed to provide essential debugging functionalities.
                 The DebugState structure is a utility class with two properties: Debug, a boolean that determines whether debugging messages should be displayed, and Disable, a boolean that can deactivate certain script functionalities.
                 Together, these elements allow developers to conditionally enable or disable script functionalities and output debug information, making it easier to adjust script behavior directly within the Unity Editor or during runtime without needing to modify the code.            
@@ -135,15 +135,15 @@ export default function Function() {
                     <p> 
                         This example demonstrates how to use the Print method to log messages in various styles.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Tools/DebaseComponent/Debase Component - 01.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Debase/Debase - 01.jpg" alt=""/>            
                     <p> 
                         It shows how to print plain messages, apply custom colors using Color or hex codes, display messages by type (e.g., warning) and include context for better debugging clarity in Unity’s Console.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Tools/DebaseComponent/Debase Component - 02.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Debase/Debase - 02.jpg" alt=""/>            
                     <p> 
                         The Print method outputs a message to the console. It can be used with or without color and context.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/DebaseComponent/Debase Component - 03.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Debase/Debase - 03.jpg" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 02: Using the IfDebug Method" content={(
@@ -152,12 +152,12 @@ export default function Function() {
                         This example demonstrates how to use the IfDebug method to conditionally print messages based on the debug state.
                         The IfDebug method checks the debug state before printing a message.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Tools/DebaseComponent/Debase Component - 04.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Debase/Debase - 04.jpg" alt=""/>            
                     <p> 
                         The first message is displayed only if debugging is enabled and appears in yellow.
                         The second message is printed only if debugging is disabled, showcasing how to manage debug output dynamically.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Tools/DebaseComponent/Debase Component - 01.gif" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Structures/Debase/Debase - 01.gif" alt=""/>            
                     <p> 
                         To enhance performance in the final build, the code is wrapped within <b1>#if UNITY_EDITOR</b1> and <b1>#endif</b1> preprocessor directives.
                         This ensures that the debugging functionality is excluded from the final build, as it is only relevant during development and not required in the production version.
@@ -169,11 +169,11 @@ export default function Function() {
                     <p> 
                         This example demonstrates how to use the IsDisable method to conditionally stop execution if the component is disabled.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/DebaseComponent/Debase Component - 07.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Debase/Debase - 07.jpg" alt=""/>            
                     <p> 
                         The Disable state can be used to conditionally execute code.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Tools/DebaseComponent/Debase Component - 02.gif" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Structures/Debase/Debase - 02.gif" alt=""/>            
                 </div>
             )}/>
 

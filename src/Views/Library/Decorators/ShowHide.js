@@ -7,13 +7,13 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Show & Hide Decorators</h1>
-            <h6 className="ts-i text-center p-4 c-light-4 ft-secondary">
+            <h1 className="text-center pad-top-4">Show & Hide Attributes</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
                 Attributes that provides conditional visibility for fields in the Unity Inspector 
             </h6>
 
             <h3 className="p-2">Overview</h3>
-            <p className="pad-left-2">
+            <p className="pad-left-2 pad-bottom-2">
                 The <b2>[Show]</b2> and <b2>[Hide]</b2> attributes are a versatile and powerful tool for controlling the visibility of fields in the Unity Inspector based on the value of another property. 
                 It allows developers to control when specific fields should be displayed. 
                 This can help to declutter the Inspector and make it more intuitive by showing only relevant fields under certain conditions.
@@ -22,7 +22,7 @@ export default function Function() {
 
 
             <h3 className="p-2">Introduction</h3>
-            <p className="pad-left-2">
+            <p className="pad-left-2 pad-bottom-2">
                 The <b2>[Show]</b2> and <b2>[Hide]</b2> attributes are designed to be combined with conditional attributes.
                 Simply by adding the <b2>[Show]</b2> or <b2>[Hide]</b2> attribute to the property, the field will be shown or hidden.
                 By adding a conditional attribute to the property (<a href="/#/library/decorators/conditional" className="t-dec-none c-light-0 c-light-4-h" onClick={scrollUp}>See Conditional Decorator</a>), this tool becames super useful.

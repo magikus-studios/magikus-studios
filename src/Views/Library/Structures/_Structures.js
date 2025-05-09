@@ -52,6 +52,11 @@ export default function Function() {
             <p className="pad-left-3">
                 The Switch structure and its variations provide a way to manage and select different value types within a single object, enhancing script maintainability and scalability by allowing state-dependent value selection directly in Unity's Inspector.
             </p>
+
+            <a href="/#/library/structures/debase" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Debase</h4></a>
+            <p className="pad-left-3">
+                A foundational script for MonoBehaviours and ScriptableObjects, the Debase structure simplifies debugging, enables runtime toggling of features and streamlines development and testing for cleaner, more efficient workflows.
+            </p>
        </div>
     );
 }

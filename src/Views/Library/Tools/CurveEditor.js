@@ -9,9 +9,6 @@ export default function Function() {
             <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
                 Tool for Editing Animation Curves within the Unity Editor 
             </h6>
-            {/*
-            <div className="text-center pad-bottom-2"><prolabel>Only in Pro version</prolabel></div>
-            */}
 
             <h3 className="p-2">Overview</h3>
             <p className="pad-left-2 pad-bottom-2">
@@ -40,47 +37,75 @@ export default function Function() {
             )}/>
             <Group title="Basic Operations" content={(
                 <div>
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Tools/CurveEditor/Curve Editor - 03.jpg" alt=""/>
                     <ul>
-                        <li><b1>Undo and Redo</b1>: Use the "Undo" and "Redo" buttons to revert or reapply changes to the curve.</li>
+                        <li><b1>Undo</b1>: Use the "Undo" button to revert changes to the curve.</li>
+                        <li><b1>Redo</b1>: Use the "Redo" button to reapply changes to the curve.</li>
                         <li><b1>Print Curve to Code</b1>: Outputs the curve as C# code in the console.</li>
                         <li><b1>Copy Code to Buffer</b1>: Copies the curve code to the clipboard for easy pasting.</li>
                     </ul>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/CurveEditor/Curve Editor - 03.jpg" alt=""/>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Tools/CurveEditor/Curve Editor - 03.gif" alt=""/>
+                </div>
+            )}/>
+            <Group title="Setting Tagents" content={(
+                <div>
+                    <ul>
+                        <li><b1>Setting Tangents</b1>: Select the desired tangent mode from the "Tangent Mode" dropdown. Click "Set Tangents" to apply the selected tangent mode to all keyframes.</li>
+                        <b1 className="pad-left-3 fs-sm">[Free | Auto | Linear | Constant | Clamped Auto]</b1>
+                    </ul>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Tools/CurveEditor/Curve Editor - 02.gif" alt=""/>
                 </div>
             )}/>
             <Group title="Curve Operations" content={(
                 <div>
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Tools/CurveEditor/Curve Editor - 04.jpg" alt=""/>
                     <ul>
-                        <li><b1>Setting Tangents</b1>: Select the desired tangent mode from the "Tangent Mode" dropdown. Click "Set Tangents" to apply the selected tangent mode to all keyframes.</li>
                         <li><b1>Flip Horizontal</b1>: Flips the curve horizontally.</li>
                         <li><b1>Inverse</b1>: Inverts the curve values.</li>
                         <li><b1>Flip Vertical</b1>: Flips the curve vertically.</li>
                         <li><b1>Duplicate</b1>: Duplicates the curve.</li>
                         <li><b1>Mirror</b1>: Mirrors the curve by adding its horizontal flip to itself.</li>
-                        <li><b1>Shift Left and Shift Right</b1>: Shifts the curve keys left or right.</li>
-                        <li><b1>Adjusting Period and Amplitude</b1>: Set the desired period and amplitude values. Click “Adjust Period" or "Adjust Amplitude" to apply the changes.</li>
+                        <li><b1>Shift Left</b1>: Shifts the curve keys left.</li>
+                        <li><b1>Shift Right</b1>: Shifts the curve keys right.</li>
+                        <li><b1>Adjusting Period</b1>: Set the desired period value. Click “Adjust Period" to apply the changes.</li>
+                        <li><b1>Adjusting Amplitude</b1>: Set the desired amplitude value. Click "Adjust Amplitude" to apply the changes.</li>
                         <li><b1>Vertical Offset</b1>: Enter the offset amount. Click "Up" or "Down" to adjust the curve's vertical position.</li>
                     </ul>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/CurveEditor/Curve Editor - 04.jpg" alt=""/>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Tools/CurveEditor/Curve Editor - 01.gif" alt=""/>
                 </div>
             )}/>
             <Group title="Curve Generation" content={(
                 <div>
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Tools/CurveEditor/Curve Editor - 05.jpg" alt=""/>
                     <ul>
-                        <li><b1>Curve Generator</b1>: Set parameters for period, amplitude, and vertical offset. Choose the curve type and edges type from the dropdown menus. Click "Set Curve" to generate a new curve. Use "Add at Start" or "Add at End" to prepend or append the generated curve to the current one.</li>
-                        <li><b1>SetCurve</b1>: Applies a new curve and stores the previous one for undo operations.</li>
-                        <li><b1>Undo and Redo</b1>: Manage the history of curve changes.</li>
-                        <li><b1>CreateCurve</b1>: Generates a new curve based on the specified parameters.</li>
-                        <li><b1>AddCurveAtTheBegining and AddCurveAtTheEnd</b1>: Add new curves at the start or end of the current curve.</li>
-                        <li><b1>SetPeriod and SetAmplitude</b1>: Adjust the period and amplitude of the curve.</li>
-                        <li><b1>Offset</b1>: Applies a vertical offset to the curve.</li>
-                        <li><b1>HorizontalFlip, VerticalFlip, Inverse, Mirror and Duplicate</b1>: Perform various transformations on the curve.</li>
-                        <li><b1>ShiftRight and ShiftLeft</b1>: Shift the curve keys.</li>
-                        <li><b1>SetTangents</b1>: Set the tangents of the curve keys.</li>
-                        <li><b1>PrintCurve, PrintPreview, CopyCurveToBuffer, and CopyPreviewToBuffer</b1>: Print and copy curve code.</li>
-                        <li><b1>Preview Mode</b1>: Toggle "Preview" to view a preview of the generated curve. Use "Print Preview" and "Copy Code" to output or copy the preview curve code.</li>
+                        <li><b1>Curve Type</b1>: Select the type of easing curve to generate.</li>
+                        <b1 className="pad-left-3 fs-sm">[Linear | Sin | Cos | Trig | Quad | Cubic | Quart | Quint | Exponetial | Circular | Back | Elastic | Bounce ]</b1>
+                        <li><b1>Edges Type</b1>: Select the type of eadges for the curve to generate.</li>
+                        <b1 className="pad-left-3 fs-sm">[In | Out | Both]</b1>
+                        <li><b1>Period</b1>: Adjust the period of the curve.</li>
+                        <li><b1>Amplitude</b1>: Adjust amplitude of the curve.</li>
+                        <li><b1>V Offset</b1>: Applies a vertical offset to the curve.</li>
+                        <li><b1>Flip V</b1>: Flips the preview curve vertically.</li>
+                        <li><b1>Flip H</b1>: Flips the preview curve horizontally.</li>
+                        <li><b1>Inverse</b1>: Inverts the preview curve values.</li>
+                        <li><b1>Mirror</b1>: Mirrors the preview curve by adding its horizontal flip to itself.</li>
+                        <li><b1>Key Amount</b1>: Sets the amount of keays of the generated curve.</li>
+                        <li><b1>Key Shift</b1>: Shift the curve keys to the left or right.</li>
+                        <li><b1>Preview Mode</b1>: Toggle "Preview" to view a preview of the generated curve.</li>
+                        <li><b1>Print Preview</b1>: Print the preview curve code to the console.</li>
+                        <li><b1>Copy Code</b1>: Copy the preview curve code to the clipboard for easy pasting.</li>
                     </ul>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/CurveEditor/Curve Editor - 05.jpg" alt=""/>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Tools/CurveEditor/Curve Editor - 04.gif" alt=""/>
+                </div>
+            )}/>
+            <Group title="Setting Generated Curves" content={(
+                <div>
+                    <ul>
+                        <li><b1>Set Curve</b1>: Sets the preview curve as the current curve.</li>
+                        <li><b1>Add at Start</b1>: Add the preview curve at the start of the current curve.</li>
+                        <li><b1>Add at End</b1>: Add the preview curve at the end of the current curve.</li>
+                    </ul>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Tools/CurveEditor/Curve Editor - 05.gif" alt=""/>
                 </div>
             )}/>
 

@@ -6,7 +6,7 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center pad-top-4">Progress Bar Decorator</h1>
+            <h1 className="text-center pad-top-4">Progress Bar Attribute</h1>
             <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
                 Attribute designed to Display a Float Field as a Progress Bar in Unity's Inspector 
             </h6>
