@@ -18,6 +18,9 @@ export default function Function() {
                 This enhances data visualization and improves workflow by decluttering the Inspector while maintaining control over field visibility.                
             </p>
 
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Decorators/Conditional/Conditional - 17.jpg" alt=""/>            
+            </div>
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-3">

@@ -9,9 +9,6 @@ export default function Function() {
             <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
                 Unity Editor designed to enhance Script Management within Unity Projects 
             </h6>
-            {/*
-            <div className="text-center pad-bottom-2"><prolabel>Only in Pro version</prolabel></div>
-            */}
             
             <h3 className="p-2">Overview</h3>
             <p className="pad-left-2 pad-bottom-2">
@@ -19,7 +16,7 @@ export default function Function() {
                 Whether you are managing a small or large project, this tool simplifies script handling and reduces manual. 
             </p>
             <div className="p-2">
-                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Tools/ScriptManager/Script Manager - 01.jpg" alt=""/>            
+                <img className="block-center mar-bottom-3 img-border w-45" src="images/Library/Tools/ScriptManager/Script Manager - 01.jpg" alt=""/>            
             </div>
 
 
@@ -34,6 +31,8 @@ export default function Function() {
                 <li><b1>Analyze Project Scripts</b1>: The Script Manager will automatically display the total number of scripts and lines in your project.</li>
                 <li><b1>Select Scripts</b1>: Select one or multiple scripts in the Unity Project window to see their individual line counts and details.</li>
                 <li><b1>Assign a custom icon to the selected scripts</b1>: Drag and drop an icon texture into the Script Manager's icon field. Click Set Icon to Selected Scripts to apply the icon.</li>
+                <li><b1>Create Scripts and Folders</b1>: Click the 'Create Script' button to create a new C# script and the 'Create Folder' button to create a new folder.</li>
+                <li><b1>Copy Scripts</b1>: Click the 'Copy Scripts' button to copy all the selected scripts to the clipboard for easy pasting.</li>
                 <li><b1>Refresh Data</b1>: Use the Refresh button to manually refresh the script data if needed.</li>
                 <li><b1>Toggle Auto-Refresh</b1>: Use the Auto Refresh button to enable or disable automatic project refreshes.</li>
             </ul>
@@ -52,10 +51,9 @@ export default function Function() {
                 <div>
                     <ol className="oList">
                         <li>Select multiple scripts in the Project window.</li>
-                        <img className="block-center mar-vertical-3 img-border w-50" src="images/Library/Tools/ScriptManager/Script Manager - 02.jpg" alt=""/>            
                         <li>The Script Manager displays their names and line counts in a scrollable list.</li>
-                        <img className="block-center mar-vertical-3 img-border w-50" src="images/Library/Tools/ScriptManager/Script Manager - 03.jpg" alt=""/>            
                     </ol>
+                    <img className="block-center mar-vertical-3 img-border" src="images/Library/Tools/ScriptManager/Script Manager - 01.gif" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 02: Setting an Icon" content={(
@@ -63,10 +61,9 @@ export default function Function() {
                     <ol className="oList">
                         <li>Import a .png or .jpg texture into Unity.</li>
                         <li>Drag the texture into the Icon Field in the Script Manager.</li>
-                        <img className="block-center mar-vertical-3 img-border w-50" src="images/Library/Tools/ScriptManager/Script Manager - 04.jpg" alt=""/>            
                         <li>Select the scripts to which the icon should be applied.</li>
-                        <img className="block-center mar-vertical-3 img-border w-50" src="images/Library/Tools/ScriptManager/Script Manager - 05.jpg" alt=""/>            
-                        <li>Click Set Icon to Selected Scripts.</li>
+                        <li>Click Set Icon.</li>
+                        <img className="block-center mar-vertical-3 img-border" src="images/Library/Tools/ScriptManager/Script Manager - 02.gif" alt=""/>            
                     </ol>
                 </div>
             )}/>
@@ -74,8 +71,28 @@ export default function Function() {
                 <div>
                     <ol className="oList">
                         <li>Open the Script Manager.</li>
-                        <img className="block-center mar-vertical-3 img-border w-50" src="images/Library/Tools/ScriptManager/Script Manager - 06.jpg" alt=""/>            
                         <li>View the bottom panel to see the total number of scripts and lines in your project.</li>
+                        <img className="block-center mar-vertical-3 img-border w-50" src="images/Library/Tools/ScriptManager/Script Manager - 06.jpg" alt=""/>            
+                    </ol>
+                </div>
+            )}/>
+            <Group title="Example 04: Control Project Compilation" content={(
+                <div>
+                    <ol className="oList">
+                        <li>Click the 'Auto Refresh' Button and make sure it is set to 'OFF'</li>
+                        <li>This will turn off auto refresh and will let you change the project scripts without any compilations in between.</li>
+                        <li>You can manually refresh the project with the 'Refresh' button.</li>
+                        <img className="block-center mar-vertical-3 img-border w-50" src="images/Library/Tools/ScriptManager/Script Manager - 03.gif" alt=""/>            
+                    </ol>
+                </div>
+            )}/>
+            <Group title="Example 05: Create Scripts and Folders" content={(
+                <div>
+                    <ol className="oList">
+                        <li>Click the 'Create Script' Button to create a new C# script.</li>
+                        <li>Click the 'Create Folder' Button to create a new Folder.</li>
+                        <li>Click the 'Copy Scripts' Button to copy all the selected scripts to the clipboard for easy pasting.</li>
+                        <img className="block-center mar-vertical-3 img-border" src="images/Library/Tools/ScriptManager/Script Manager - 04.gif" alt=""/>            
                     </ol>
                 </div>
             )}/>

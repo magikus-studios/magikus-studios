@@ -25,7 +25,7 @@ export default function Function() {
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">
                 The primary purpose of Switch structures is to compress similar types into a single parameter with single value setters and getters, thereby streamlining script manipulation and enabling developers to change the type used without altering the underlying scripts. 
-                Examples of composed structures using Switch include IntSwitch, ColorSwitch, TextSwitch and more, each encapsulating specific types such as integers, colors and text.
+                Examples of composed structures using Switch include ColorSwitch, TextSwitch and more, each encapsulating specific types such as integers, colors and text.
             </p>
             <Group title="Switch<A, B>" content={(
                 <div>
@@ -63,6 +63,56 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
+            <Group title="TextSwitch" content={(
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
+                    <ul className="property-list">
+                        <li><b2>bool</b2> <b1>State</b1>: Reflects the current state of the switch, indicating whether it is using the Text value (false) or the Text_TMP value (true)</li>
+                        <li><b2>string</b2> <b1>Text</b1>: Retrieves the active string value of the switch, which corresponds to its current state</li>
+                        <li><b2>Color</b2> <b1>Color</b1>: Retrieves the active color value of the switch, which corresponds to its current state</li>
+                        <li><b2>Text</b2> <b1>TextValue</b1>: Stores the value of the associated Text</li>
+                        <li><b2>Text_TMP</b2> <b1>TMP_TextValue</b1>: Stores the value of the associated Text_TMP</li>
+                    </ul>
+                    <h5 className="c-light-1">Methods</h5>
+                    <ul className="property-list">
+                        <li><b2>void</b2> <b1>TryGetComponents</b1>(<b2>GameObject</b2> <b1>gameObject</b1>): Tries to get the current active component in the GameObject provided</li>
+                    </ul>
+                </div>
+            )}/>
+            <Group title="ColorSwitch" content={(
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
+                    <ul className="property-list">
+                        <li><b2>int</b2> <b1>State</b1>: Reflects the current state of the switch, indicating whether it is using the SpriteRenderer value (0), the Image value (1), the Text value (2) or the Text_TMP value (3)</li>
+                        <li><b2>Color</b2> <b1>Color</b1>: Retrieves the active color value of the switch, which corresponds to its current state</li>
+                        <li><b2>SpriteRenderer</b2> <b1>SpriteValue</b1>: Stores the value of the associated SpriteRenderer</li>
+                        <li><b2>Image</b2> <b1>ImageValue</b1>: Stores the value of the associated Image</li>
+                        <li><b2>Text</b2> <b1>TextValue</b1>: Stores the value of the associated Text</li>
+                        <li><b2>Text_TMP</b2> <b1>TMP_TextValue</b1>: Stores the value of the associated Text_TMP</li>
+                    </ul>
+                    <h5 className="c-light-1">Methods</h5>
+                    <ul className="property-list">
+                        <li><b2>void</b2> <b1>TryGetComponents</b1>(<b2>GameObject</b2> <b1>gameObject</b1>): Tries to get the current active component in the GameObject provided</li>
+                    </ul>
+                </div>
+            )}/>
+            <Group title="SpriteSwitch" content={(
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
+                    <ul className="property-list">
+                        <li><b2>bool</b2> <b1>State</b1>: Reflects the current state of the switch, indicating whether it is using the SpriteRenderer value (false) or the Image value (true)</li>
+                        <li><b2>Color</b2> <b1>Color</b1>: Retrieves the active color value of the switch, which corresponds to its current state</li>
+                        <li><b2>Sprite</b2> <b1>Sprite</b1>: Retrieves the active sprite value of the switch, which corresponds to its current state</li>
+                        <li><b2>SpriteRenderer</b2> <b1>SpriteValue</b1>: Stores the value of the associated SpriteRenderer</li>
+                        <li><b2>Image</b2> <b1>ImageValue</b1>: Stores the value of the associated Image</li>
+                    </ul>
+                    <h5 className="c-light-1">Methods</h5>
+                    <ul className="property-list">
+                        <li><b2>void</b2> <b1>TryGetComponents</b1>(<b2>GameObject</b2> <b1>gameObject</b1>): Tries to get the current active component in the GameObject provided</li>
+                    </ul>
+                </div>
+            )}/>
+{/*
             <Group title="BoolSwitch" content={(
                 <div>
                     <h5 className="c-light-1">Properties</h5>
@@ -104,22 +154,6 @@ export default function Function() {
                         <li><b2>string</b2> <b1>Value</b1>: Retrieves the active value of the switch, which corresponds to its current state</li>
                         <li><b2>string</b2> <b1>StringValue</b1>: Holds the string value that the switch is currently using</li>
                         <li><b2>StringAsset</b2> <b1>AssetValue</b1>: Stores the value of the associated StringAsset</li>
-                    </ul>
-                </div>
-            )}/>
-            <Group title="TextSwitch" content={(
-                <div>
-                    <h5 className="c-light-1">Properties</h5>
-                    <ul className="property-list">
-                        <li><b2>bool</b2> <b1>State</b1>: Reflects the current state of the switch, indicating whether it is using the Text value (false) or the Text_TMP value (true)</li>
-                        <li><b2>string</b2> <b1>Text</b1>: Retrieves the active string value of the switch, which corresponds to its current state</li>
-                        <li><b2>Color</b2> <b1>Color</b1>: Retrieves the active color value of the switch, which corresponds to its current state</li>
-                        <li><b2>Text</b2> <b1>TextValue</b1>: Stores the value of the associated Text</li>
-                        <li><b2>Text_TMP</b2> <b1>TMP_TextValue</b1>: Stores the value of the associated Text_TMP</li>
-                    </ul>
-                    <h5 className="c-light-1">Methods</h5>
-                    <ul className="property-list">
-                        <li><b2>void</b2> <b1>TryGetComponents</b1>(<b2>GameObject</b2> <b1>gameObject</b1>): Tries to get the current active component in the GameObject provided</li>
                     </ul>
                 </div>
             )}/>
@@ -180,39 +214,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-            <Group title="ColorSwitch" content={(
-                <div>
-                    <h5 className="c-light-1">Properties</h5>
-                    <ul className="property-list">
-                        <li><b2>int</b2> <b1>State</b1>: Reflects the current state of the switch, indicating whether it is using the SpriteRenderer value (0), the Image value (1), the Text value (2) or the Text_TMP value (3)</li>
-                        <li><b2>Color</b2> <b1>Color</b1>: Retrieves the active color value of the switch, which corresponds to its current state</li>
-                        <li><b2>SpriteRenderer</b2> <b1>SpriteValue</b1>: Stores the value of the associated SpriteRenderer</li>
-                        <li><b2>Image</b2> <b1>ImageValue</b1>: Stores the value of the associated Image</li>
-                        <li><b2>Text</b2> <b1>TextValue</b1>: Stores the value of the associated Text</li>
-                        <li><b2>Text_TMP</b2> <b1>TMP_TextValue</b1>: Stores the value of the associated Text_TMP</li>
-                    </ul>
-                    <h5 className="c-light-1">Methods</h5>
-                    <ul className="property-list">
-                        <li><b2>void</b2> <b1>TryGetComponents</b1>(<b2>GameObject</b2> <b1>gameObject</b1>): Tries to get the current active component in the GameObject provided</li>
-                    </ul>
-                </div>
-            )}/>
-            <Group title="SpriteSwitch" content={(
-                <div>
-                    <h5 className="c-light-1">Properties</h5>
-                    <ul className="property-list">
-                        <li><b2>bool</b2> <b1>State</b1>: Reflects the current state of the switch, indicating whether it is using the SpriteRenderer value (false) or the Image value (true)</li>
-                        <li><b2>Color</b2> <b1>Color</b1>: Retrieves the active color value of the switch, which corresponds to its current state</li>
-                        <li><b2>Sprite</b2> <b1>Sprite</b1>: Retrieves the active sprite value of the switch, which corresponds to its current state</li>
-                        <li><b2>SpriteRenderer</b2> <b1>SpriteValue</b1>: Stores the value of the associated SpriteRenderer</li>
-                        <li><b2>Image</b2> <b1>ImageValue</b1>: Stores the value of the associated Image</li>
-                    </ul>
-                    <h5 className="c-light-1">Methods</h5>
-                    <ul className="property-list">
-                        <li><b2>void</b2> <b1>TryGetComponents</b1>(<b2>GameObject</b2> <b1>gameObject</b1>): Tries to get the current active component in the GameObject provided</li>
-                    </ul>
-                </div>
-            )}/>
             <Group title="TimeScaleSwitch" content={(
                 <div>
                     <h5 className="c-light-1">Properties</h5>
@@ -229,41 +230,56 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
+*/}
 
             <h3 className="p-2">Examples</h3>
-            <Group title="Example 01: Using IntSwitch" content={(
+            <Group title="Example 01: Using a Custom Switch" content={(
                 <div>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Switches/Switches - 01.jpg" alt=""/>            
                     <p> 
-                        This example explains how to use an IntSwitch. 
-                        An IntSwitch is defined in the script. 
-                        The Value property is used to set the int value and the current value is accessed and logged to the console.
+                        This example demonstrates how to use a {"Switch<T0, T1>"} structure to toggle between and manipulate two different value types, in this case, an int and a Vector2.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 02.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 03.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Structures/Switches/Switches - 01.jpg" alt=""/>            
+                    <p> 
+                        Depending on the state of the switch, the script either increments the integer value or adjusts the vector value. 
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Structures/Switches/Switches - 01.gif" alt=""/>            
+                    <p> 
+                        This allows you to cleanly manage multiple value types within a single, toggleable structure.
+                    </p>
                 </div>
             )}/>
             <Group title="Example 02: Using ColorSwitch" content={(
                 <div>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Switches/Switches - 04.jpg" alt=""/>            
-                    <p> 
-                        In this example, a ColorSwitch is defined in the script and the Color property is used to set the color. 
-                        Then the color is printed to the console.
+                    <p>
+                        This example demonstrates how to use the ColorSwitch structure to dynamically alternate between two colors in Unity.
+                        The ColorSwitch class allows you to switch and apply a color value to one of several supported component types (SpriteRenderer, Image, Text, or TMP_Text) based on a selected state.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 05.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 06.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 07.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 08.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Structures/Switches/Switches - 04.jpg" alt=""/>            
+                    <p> 
+                        Two Color values (ColorOne and ColorTwo) are defined and a ColorSwitch reference (myColorSwitch) is used to apply the color to a specific UI or rendering component, depending on its current State.
+                        Inside Update(), every 0.5 seconds, the current color of the selected component is checked and toggled between ColorOne and ColorTwo.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 02.gif" alt=""/>            
+                    <p>
+                        This example highlights how ColorSwitch can simplify handling of shared color logic across different component types in a unified and inspector-friendly way.
+                    </p>
                 </div>
             )}/>
             <Group title="Example 03: Using TextSwitch" content={(
                 <div>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Switches/Switches - 09.jpg" alt=""/>            
                     <p>
-                        Finally, in this example a TextSwitch is defined, the Text property is used to set the text of the field and then is printed to the console.
+                        This example demonstrates how to use the TextSwitch structure to update the content of either a Text or TMP_Text component at runtime based on the selected state.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 10.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 11.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Structures/Switches/Switches - 09.jpg" alt=""/>            
+                    <p>
+                        A TextSwitch field is defined in the inspector, allowing the developer to assign either a Unity Text or TextMeshPro TMP_Text component.
+                        The Update() method increments a counter every 0.5 seconds and updates the active text component with the current count.
+                        The TextSwitch.Text property automatically handles writing to the correct text component depending on the active State.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/Switches/Switches - 03.gif" alt=""/>            
+                    <p>
+                        This setup is ideal for cases where you want to abstract away the difference between UI text types (e.g., switching between Text and TMP_Text) while maintaining a clean and unified API for updating content.
+                    </p>
                 </div>
             )}/>
 

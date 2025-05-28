@@ -24,52 +24,13 @@ export default function Function() {
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">
-                The Debase structure includes two foundational classes, MonoDebase (a MonoBehaviour) and AssetDebase (a ScriptableObject), which serve as base classes for inheritance. 
-                These classes are designed to provide essential debugging functionalities.
-                The DebugState structure is a utility class with two properties: Debug, a boolean that determines whether debugging messages should be displayed, and Disable, a boolean that can deactivate certain script functionalities.
+                The Debase structure is a utility class with two properties: Debug, a boolean that determines whether debugging messages should be displayed, and Disable, a boolean that can deactivate certain script functionalities.
                 Together, these elements allow developers to conditionally enable or disable script functionalities and output debug information, making it easier to adjust script behavior directly within the Unity Editor or during runtime without needing to modify the code.            
+                The feature includes two foundational classes, MonoDebase (a MonoBehaviour) and AssetDebase (a ScriptableObject), which serve as base classes for inheritance. 
+                These classes are designed to provide essential debugging functionalities.
             </p>
             
-            <Group title="MonoDebase and AssetDebase" content={(
-                <div>
-                    <h5 className="c-light-1">Properties</h5>
-                    <ul className="property-list">
-                        <li><b2>DebugState</b2> <b1>State</b1>: DebugState value</li>
-                        <li><b2>bool</b2> <b1>Disable</b1>: Disable state value</li>
-                    </ul>
-                    <h5 className="c-light-1">Print</h5>
-                    <p>
-                        Prints a message to the console
-                    </p>
-                    <ul className="property-list">                        
-                        <li><b2>void</b2> <b1>Print</b1>(<b2>string</b2> <b1>message</b1>, <b2>UnityEngine.Object</b2> <b1>context = null</b1>)</li>
-                        <li><b2>void</b2> <b1>Print</b1>(<b2>Color</b2> <b1>color</b1>, <b2>string</b2> <b1>message</b1>, <b2>UnityEngine.Object</b2> <b1>context = null</b1>)</li>
-                        <li><b2>void</b2> <b1>Print</b1>(<b2>string</b2> <b1>colorHex</b1>, <b2>string</b2> <b1>message</b1>, <b2>UnityEngine.Object</b2> <b1>context = null</b1>)</li>
-                        <li><b2>void</b2> <b1>Print</b1>(<b2>MESSAGE_TYPE</b2> <b1>type</b1>, <b2>string</b2> <b1>message</b1>, <b2>UnityEngine.Object</b2> <b1>context = null</b1>)</li>
-                    </ul>
-                    <h5 className="c-light-1">IfDebug</h5>
-                    <p>
-                        Prints a message to the console if debug value is on
-                    </p>
-                    <ul className="property-list">                        
-                        <li><b2>void</b2> <b1>IfDebug</b1>(<b2>string</b2> <b1>message</b1>, <b2>UnityEngine.Object</b2> <b1>context = null</b1>)</li>
-                        <li><b2>void</b2> <b1>IfDebug</b1>(<b2>Color</b2> <b1>color</b1>, <b2>string</b2> <b1>message</b1>, <b2>UnityEngine.Object</b2> <b1>context = null</b1>)</li>
-                        <li><b2>void</b2> <b1>IfDebug</b1>(<b2>string</b2> <b1>colorHex</b1>, <b2>string</b2> <b1>message</b1>, <b2>UnityEngine.Object</b2> <b1>context = null</b1>)</li>
-                        <li><b2>void</b2> <b1>IfDebug</b1>(<b2>MESSAGE_TYPE</b2> <b1>type</b1>, <b2>string</b2> <b1>message</b1>, <b2>UnityEngine.Object</b2> <b1>context = null</b1>)</li>
-                    </ul>
-                    <h5 className="c-light-1">IsDisable</h5>
-                    <p>
-                        Returns the disable state of the component. If disable value is on, prints a message to the console
-                    </p>
-                    <ul className="property-list">                        
-                        <li><b2>bool</b2> <b1>IsDisable</b1>(<b2>string</b2> <b1>message</b1>, <b2>UnityEngine.Object</b2> <b1>context = null</b1>)</li>
-                        <li><b2>bool</b2> <b1>IsDisable</b1>(<b2>Color</b2> <b1>color</b1>, <b2>string</b2> <b1>message</b1>, <b2>UnityEngine.Object</b2> <b1>context = null</b1>)</li>
-                        <li><b2>bool</b2> <b1>IsDisable</b1>(<b2>string</b2> <b1>colorHex</b1>, <b2>string</b2> <b1>message</b1>, <b2>UnityEngine.Object</b2> <b1>context = null</b1>)</li>
-                        <li><b2>bool</b2> <b1>IsDisable</b1>(<b2>MESSAGE_TYPE</b2> <b1>type</b1>, <b2>string</b2> <b1>message</b1>, <b2>UnityEngine.Object</b2> <b1>context = null</b1>)</li>
-                    </ul>
-                </div>
-            )}/>
-            <Group title="DebugState Class" content={(
+            <Group title="Debase Class" content={(
                 <div>
                     <h5 className="c-light-1">Properties</h5>
                     <ul className="property-list">
@@ -120,14 +81,53 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
+            <Group title="MonoDebase and AssetDebase" content={(
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
+                    <ul className="property-list">
+                        <li><b2>DebugState</b2> <b1>State</b1>: DebugState value</li>
+                        <li><b2>bool</b2> <b1>Disable</b1>: Disable state value</li>
+                    </ul>
+                    <h5 className="c-light-1">Print</h5>
+                    <p>
+                        Prints a message to the console
+                    </p>
+                    <ul className="property-list">                        
+                        <li><b2>void</b2> <b1>Print</b1>(<b2>string</b2> <b1>message</b1>, <b2>UnityEngine.Object</b2> <b1>context = null</b1>)</li>
+                        <li><b2>void</b2> <b1>Print</b1>(<b2>Color</b2> <b1>color</b1>, <b2>string</b2> <b1>message</b1>, <b2>UnityEngine.Object</b2> <b1>context = null</b1>)</li>
+                        <li><b2>void</b2> <b1>Print</b1>(<b2>string</b2> <b1>colorHex</b1>, <b2>string</b2> <b1>message</b1>, <b2>UnityEngine.Object</b2> <b1>context = null</b1>)</li>
+                        <li><b2>void</b2> <b1>Print</b1>(<b2>MESSAGE_TYPE</b2> <b1>type</b1>, <b2>string</b2> <b1>message</b1>, <b2>UnityEngine.Object</b2> <b1>context = null</b1>)</li>
+                    </ul>
+                    <h5 className="c-light-1">IfDebug</h5>
+                    <p>
+                        Prints a message to the console if debug value is on
+                    </p>
+                    <ul className="property-list">                        
+                        <li><b2>void</b2> <b1>IfDebug</b1>(<b2>string</b2> <b1>message</b1>, <b2>UnityEngine.Object</b2> <b1>context = null</b1>)</li>
+                        <li><b2>void</b2> <b1>IfDebug</b1>(<b2>Color</b2> <b1>color</b1>, <b2>string</b2> <b1>message</b1>, <b2>UnityEngine.Object</b2> <b1>context = null</b1>)</li>
+                        <li><b2>void</b2> <b1>IfDebug</b1>(<b2>string</b2> <b1>colorHex</b1>, <b2>string</b2> <b1>message</b1>, <b2>UnityEngine.Object</b2> <b1>context = null</b1>)</li>
+                        <li><b2>void</b2> <b1>IfDebug</b1>(<b2>MESSAGE_TYPE</b2> <b1>type</b1>, <b2>string</b2> <b1>message</b1>, <b2>UnityEngine.Object</b2> <b1>context = null</b1>)</li>
+                    </ul>
+                    <h5 className="c-light-1">IsDisable</h5>
+                    <p>
+                        Returns the disable state of the component. If disable value is on, prints a message to the console
+                    </p>
+                    <ul className="property-list">                        
+                        <li><b2>bool</b2> <b1>IsDisable</b1>(<b2>string</b2> <b1>message</b1>, <b2>UnityEngine.Object</b2> <b1>context = null</b1>)</li>
+                        <li><b2>bool</b2> <b1>IsDisable</b1>(<b2>Color</b2> <b1>color</b1>, <b2>string</b2> <b1>message</b1>, <b2>UnityEngine.Object</b2> <b1>context = null</b1>)</li>
+                        <li><b2>bool</b2> <b1>IsDisable</b1>(<b2>string</b2> <b1>colorHex</b1>, <b2>string</b2> <b1>message</b1>, <b2>UnityEngine.Object</b2> <b1>context = null</b1>)</li>
+                        <li><b2>bool</b2> <b1>IsDisable</b1>(<b2>MESSAGE_TYPE</b2> <b1>type</b1>, <b2>string</b2> <b1>message</b1>, <b2>UnityEngine.Object</b2> <b1>context = null</b1>)</li>
+                    </ul>
+                </div>
+            )}/>
             
 
             <h3 className="p-2">Examples</h3>
             <p className="pad-left-2">
-                To use DebugState, you can either declare a DebugState property within your MonoBehaviour or ScriptableObject, or you can inherit from the MonoDebase or AssetDebase classes. 
+                To use Debase, you can either declare a Debase property within your MonoBehaviour or ScriptableObject, or you can inherit from the MonoDebase or AssetDebase classes. 
                 These classes provide additional helper methods for handling debug output. 
-                The DebugStateDrawer class provides a custom property drawer, allowing developers to toggle the debug and disable properties through buttons in the Unity Inspector. 
-                The Inspector will display two buttons, Debug and Disable, to control the state of the DebugState instance.
+                The DebaseDrawer class provides a custom property drawer, allowing developers to toggle the debug and disable properties through buttons in the Unity Inspector. 
+                The Inspector will display two buttons, Debug and Disable, to control the state of the Debase instance.
             </p>
 
             <Group title="Example 01: Using the Print Method" content={(
@@ -181,8 +181,8 @@ export default function Function() {
             <h3 className="p-2">Notes</h3>
             <ul>
                 <li>Frequent calls to debug methods can affect performance if not used carefully. Ensure that the debug state is checked only when necessary.</li> 
-                <li>To ensure that performance is not affected during build time, all DebugState functionality is enclosed in <b1>#if UNITY_EDITOR</b1> and <b1>#endif</b1> preprocessor instructions. This ensures that the debug code is not compiled into the final build, thus avoiding any runtime overhead.</li>
-                <li>The DebugState structure is intended for use within the Unity Editor and may not be suitable for builds where performance is critical.</li>
+                <li>To ensure that performance is not affected during build time, all Debase functionality is enclosed in <b1>#if UNITY_EDITOR</b1> and <b1>#endif</b1> preprocessor instructions. This ensures that the debug code is not compiled into the final build, thus avoiding any runtime overhead.</li>
+                <li>The Debase structure is intended for use within the Unity Editor and may not be suitable for builds where performance is critical.</li>
             </ul>
        </div>
     );

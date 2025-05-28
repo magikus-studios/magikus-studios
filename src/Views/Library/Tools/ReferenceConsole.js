@@ -20,7 +20,7 @@ export default function Function() {
                 Whether you are working on a small scene or a large-scale project, this tool helps ensure that all references are correctly maintained, contributing to a more stable and efficient development workflow.
             </p>
             <div className="p-2">
-                <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceConsole/Reference Console - 01.jpg" alt=""/>
+                <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceConsole/Reference Console - 03.jpg" alt=""/>
             </div>
 
 
@@ -42,14 +42,16 @@ export default function Function() {
                     <p>
                         The window provides several buttons and options to help manage references:
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceConsole/Reference Console - 02.jpg" alt=""/>
-                    <ul>
-                        <li><b1>Expand</b1>: Expands all reference entries to show detailed information.</li>
-                        <li><b1>Collapse</b1>: Collapses all reference entries to show only summary information.</li>
-                        <li><b1>Refresh</b1>: Manually refreshes the list of references based on the current selection and mode.</li>
-                        <li><b1>Auto</b1>: Toggles automatic refreshing of references when the selection changes.</li>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceConsole/Reference Console - 021.jpg" alt=""/>
+                    <ul className="property-list">
+                        <li><b1>▼</b1>: Expands all reference entries to show detailed information.</li>
+                        <li><b1>►</b1>: Collapses all reference entries to show only summary information.</li>
+                        <li><b1>☆/★</b1>: Shows/Hides all found references.</li>
+                        <li><b1 className="c-yellow">☆/★</b1>: Shows/Hides all found missing references.</li>
+                        <li><b1>↺</b1>: Manually refreshes the list of references based on the current selection and mode.</li>
                         <li><b1>Mode Selection</b1>: Allows you to select the scope of the reference search, including options for the open scene, all scenes, assets, or a combination of these.</li>
                     </ul>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceConsole/Reference Console - 01.gif" alt=""/>
                 </div>
             )}/>
             <Group title="Display Modes" content={(
@@ -58,7 +60,7 @@ export default function Function() {
                         You can choose which references to display by selecting one or more of the following modes:
                     </p>
                     <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceConsole/Reference Console - 04.jpg" alt=""/>
-                    <ul>
+                    <ul className="property-list">
                         <li><b1>Open Scene</b1>: Displays references within the currently open scene.</li>
                         <li><b1>Assets</b1>: Displays references within all assets in the project.</li>
                         <li><b1>All Scenes</b1>: Displays references across all scenes in the project.</li>
@@ -68,30 +70,40 @@ export default function Function() {
             )}/>
             <Group title="Viewing and Managing References" content={(
                 <div>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceConsole/Reference Console - 03.jpg" alt=""/>
-                    <ul>
-                        <li><b1>Missing References</b1>: If any missing references are found, they will be listed at the top. Each entry shows the missing object's name, type, and asset name.
-                            <ul>
-                                <li><b2>Clicking the “+” button next to a missing reference will ping the location of the reference in the project.</b2></li>
-                                <li><b2>Clicking the object's name or type will select and ping the object in the Inspector.</b2></li>
-                            </ul>
-                        </li>
-                        <li><b1>Reference Holders</b1>: Lists objects that have references to other objects. Each entry shows the object name, type, and the count of references.
-                            <ul>
-                                <li><b2>Clicking the “–“ button removes the object from the selection.</b2></li>
-                                <li><b2>Clicking the count or name expands/collapses the list of references.</b2></li>
-                                <li><b2>Each reference entry provides detailed information about the target object and allows for selecting and pinging the reference in the Inspector.</b2></li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <h5 className="c-light-1">Finding References</h5>
+                    <p>
+                        To find all references first select the target objects and then click on the ↺ button.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceConsole/Reference Console - 02.gif" alt=""/>
+                    <h5 className="c-light-1">Missing References</h5>
+                    <p>
+                        If any missing references are found, they will be listed at the top. Each entry shows the missing object's name, type and asset name and type.
+                    </p>
+                    <ul className="property-list">
+                        <li>Clicking the object's name or type will select and ping the object in the Inspector.</li>
+                        <li>Clicking the asset's name or type of the missing reference will ping the location of the reference in the project.</li>
+                    </ul>                
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceConsole/Reference Console - 05.gif" alt=""/>
+                    <h5 className="c-light-1">Reference Holders</h5>
+                    <p>
+                        List of objects that have references to other objects or components. Each entry shows the object name, type and the amount of references.
+                        If you open the tab, a list of references to that object will appear displaying the name and type of the reference, the type of asset and the component that is targeting.
+                    </p>
+                    <ul className="property-list">
+                        <li>Each reference entry provides detailed information about the target object and allows for selecting and pinging the reference in the Inspector.</li>
+                        <li>Clicking the asset's type of the missing reference will ping the location of the reference in the project.</li>
+                        <li>Clicking the object's name will select and ping the object in the Inspector.</li>
+                        <li>Clicking the target's name will select and ping the targeted object in the Inspector.</li>
+                    </ul>                
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceConsole/Reference Console - 03.gif" alt=""/>
                 </div>
             )}/>
             <Group title="Handling References" content={(
                 <div>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceConsole/Reference Console - 05.jpg" alt=""/>
-                    <ul>
-                        <li><b1>Add to Selection</b1>: To add an object to the selection, click the “+“ button next to a reference.</li>
-                        <li><b1>Remove from Selection</b1>: To remove an object from the selection, click the “-“ button next to the reference holder.</li>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Tools/ReferenceConsole/Reference Console - 04.gif" alt=""/>
+                    <ul className="property-list">
+                        <li>Clicking the “✖“ button removes the object from the selection.</li>
+                        <li>Clicking the “✚“ button adds the object to the selection.</li>
                     </ul>
                 </div>
             )}/>
@@ -99,7 +111,6 @@ export default function Function() {
 
             <h3 className="p-2">Notes</h3>
             <ul>
-                <li>If the automatic refresh option is enabled, the reference list will update whenever the selection changes in the Unity Editor. This can be useful for dynamically tracking references but may impact performance in large projects.</li>
                 <li>If a reference is missing, it could be due to an object being deleted or moved. The console helps identify these issues so they can be resolved quickly.</li>
                 <li>Scanning all scenes and assets can be time-consuming, especially in large projects. Use the specific modes (Open Scene, Assets) to limit the scope of the search and improve performance.</li>
             </ul>

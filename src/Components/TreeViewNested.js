@@ -18,7 +18,7 @@ export default function Function(props) {
             </ul>
     }
     
-    return (
+    return props.menu.hide?(<div></div>):(
         <div className={`${open ? "tree-nested-open" : "tree-nested-close"}` } >
             <li className={`${open ? "tree-nested-label-open" : "tree-nested-label-close"}`} onClick={() => { setOpen(!open) }}>
                 <div className="tree-item">{props.menu.label}</div>

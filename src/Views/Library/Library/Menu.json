@@ -9,71 +9,72 @@
         ]
     },
     {
-        "label": "Decorators",
-        "items": [
-            { "label": "[Decorators]", "link": "/#/library/decorators" },
-            { "label": "Conditional", "link": "/#/library/decorators/conditional" },
-            { "label": "Line", "link": "/#/library/decorators/line" },
-            { "label": "Title", "link": "/#/library/decorators/title" },
-            { "label": "Message", "link": "/#/library/decorators/message" },
-            { "label": "Show & Hide", "link": "/#/library/decorators/showHide" },
-            { "label": "Block", "link": "/#/library/decorators/block" },
-            { "label": "Toggle", "link": "/#/library/decorators/toggle" },
-            { "label": "Collapse", "link": "/#/library/decorators/collapse" },
-            { "label": "Progress Bar", "link": "/#/library/decorators/progressBar" },
-            { "label": "Button", "link": "/#/library/decorators/button" },
-            { "label": "Create", "link": "/#/library/decorators/create" },
-            { "label": "Key Binding", "link": "/#/library/decorators/keyBinding" }
-        ]
-    },
-    {
         "label": "Utilities",
         "items": [
             { "label": "[Utilities]", "link": "/#/library/utilities" },
             { "label": "Create", "link": "/#/library/utilities/create" },
             { "label": "Adapt", "link": "/#/library/utilities/adapt" },
-            { "label": "Controls", "link": "/#/library/utilities/controls" },
-            { "label": "Easing", "link": "/#/library/utilities/easing" },
-            { "label": "Looping", "link": "/#/library/utilities/looping" },
-            { "label": "Datafile", "link": "/#/library/utilities/datafile" },
-            { "label": "Randop", "link": "/#/library/utilities/randop" },
             { "label": "Mathop", "link": "/#/library/utilities/mathop" },
             { "label": "Textop", "link": "/#/library/utilities/textop" },
-            { "label": "Listop", "link": "/#/library/utilities/listop" }
+            { "label": "Randop", "link": "/#/library/utilities/randop", "hide": true },
+            { "label": "Listop", "link": "/#/library/utilities/listop", "hide": true  },
+            { "label": "Looping", "link": "/#/library/utilities/looping", "hide": true },
+            { "label": "Easing", "link": "/#/library/utilities/easing", "hide": true },
+            { "label": "Controls", "link": "/#/library/utilities/controls", "hide": true },
+            { "label": "Datafile", "link": "/#/library/utilities/datafile", "hide": true }
+        ]
+    },
+    {
+        "label": "Decorators",
+        "items": [
+            { "label": "[Decorators]", "link": "/#/library/decorators" },
+            { "label": "Button", "link": "/#/library/decorators/button" },
+            { "label": "Toggle", "link": "/#/library/decorators/toggle" },
+            { "label": "Conditional", "link": "/#/library/decorators/conditional" },
+            { "label": "Show & Hide", "link": "/#/library/decorators/showHide" },
+            { "label": "Block", "link": "/#/library/decorators/block", "hide": true },
+            { "label": "Create", "link": "/#/library/decorators/create", "hide": true },
+            { "label": "Key Binding", "link": "/#/library/decorators/keyBinding", "hide": true },
+            { "label": "Collapse", "link": "/#/library/decorators/collapse", "hide": true },
+            { "label": "Line", "link": "/#/library/decorators/line", "hide": true },
+            { "label": "Title", "link": "/#/library/decorators/title", "hide": true },
+            { "label": "Message", "link": "/#/library/decorators/message", "hide": true },
+            { "label": "Progress Bar", "link": "/#/library/decorators/progressBar", "hide": true }
         ]
     },
     {
         "label": "Structures",
         "items": [
             { "label": "[Structures]", "link": "/#/library/structures" },
-            { "label": "Grids", "link": "/#/library/structures/grids" },
+            { "label": "Debase", "link": "/#/library/structures/debase" },
             { "label": "Toggles", "link": "/#/library/structures/toggles" },
-            { "label": "Sets", "link": "/#/library/structures/sets" },
-            { "label": "Couples", "link": "/#/library/structures/couples" },
-            { "label": "Ranges", "link": "/#/library/structures/ranges" },
-            { "label": "Tier", "link": "/#/library/structures/tier" },
+            { "label": "Flexors", "link": "/#/library/structures/flexors" },
             { "label": "Switches", "link": "/#/library/structures/switches" },
-            { "label": "Debase", "link": "/#/library/structures/debase" }
+            { "label": "Ranges", "link": "/#/library/structures/ranges", "hide": true  },
+            { "label": "Tier", "link": "/#/library/structures/tier", "hide": true  },
+            { "label": "Grids", "link": "/#/library/structures/grids", "hide": true  }
         ]
     },
     {
         "label": "Machines",
+        "hide": true,
         "items": [
-            { "label": "[Machines]", "link": "/#/library/machines" },
-            { "label": "Updater Machine", "link": "/#/library/machines/updater" },
-            { "label": "Cycle Machine", "link": "/#/library/machines/cycle" },
-            { "label": "State Machine", "link": "/#/library/machines/state" },
-            { "label": "Tween Machine", "link": "/#/library/machines/tween" }
+            { "label": "[Machines]", "link": "/#/library/machines", "hide": true  },
+            { "label": "Updater Machine", "link": "/#/library/machines/updater", "hide": true  },
+            { "label": "Cycle Machine", "link": "/#/library/machines/cycle", "hide": true  },
+            { "label": "State Machine", "link": "/#/library/machines/state", "hide": true  },
+            { "label": "Tween Machine", "link": "/#/library/machines/tween", "hide": true  }
         ]
     },
     {
         "label": "Systems",
+        "hide": true,
         "items": [
-            { "label": "[Systems]", "link": "/#/library/systems" },
-            { "label": "Pool System", "link": "/#/library/systems/pool" },
-            { "label": "Label System", "link": "/#/library/systems/label" },
-            { "label": "Timescale System", "link": "/#/library/systems/timescale" },
-            { "label": "SOAP System", "link": "/#/library/systems/SOAP" },
+            { "label": "[Systems]", "link": "/#/library/systems", "hide": true  },
+            { "label": "Pool System", "link": "/#/library/systems/pool", "hide": true  },
+            { "label": "Label System", "link": "/#/library/systems/label", "hide": true  },
+            { "label": "Timescale System", "link": "/#/library/systems/timescale", "hide": true  },
+            { "label": "SOAP System", "link": "/#/library/systems/SOAP", "hide": true  },
             { "label": "Animation System", "link": "/#/library/systems/animation", "hide": true },
             { "label": "Tweak System *", "link": "/#/library/systems/tweak", "hide": true },
             { "label": "Audio System *", "link": "/#/library/systems/audio", "hide": true },
@@ -83,12 +84,13 @@
     },
     {
         "label": "Tools",
+        "hide": true,
         "items": [
-            { "label": "[Tools]", "link": "/#/library/tools" },
-            { "label": "Hierarchy Editor", "link": "/#/library/tools/hierarchyEditor" },
-            { "label": "Curve Editor", "link": "/#/library/tools/curveEditor"},
-            { "label": "Reference Console", "link": "/#/library/tools/referenceConsole" },
-            { "label": "Script Manager", "link": "/#/library/tools/scriptManager" }
+            { "label": "[Tools]", "link": "/#/library/tools", "hide": true  },
+            { "label": "Hierarchy Editor", "link": "/#/library/tools/hierarchyEditor", "hide": true  },
+            { "label": "Curve Editor", "link": "/#/library/tools/curveEditor", "hide": true },
+            { "label": "Reference Console", "link": "/#/library/tools/referenceConsole", "hide": true  },
+            { "label": "Script Manager", "link": "/#/library/tools/scriptManager", "hide": true  }
         ]
     }
 ]

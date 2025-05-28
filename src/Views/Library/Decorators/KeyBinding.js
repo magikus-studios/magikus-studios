@@ -17,7 +17,7 @@ export default function Function() {
                 By providing direct key binding and reset functionality, this tool enhances productivity and improves the workflow for developers working with key bindings in Unity.
             </p>
             <div className="p-2">
-                <img className="block-center mar-bottom-3 img-border" src="images/Library/Decorators/KeyBinding/Key Binding - 03.jpg" alt=""/>            
+                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Decorators/KeyBinding/Key Binding - 03.jpg" alt=""/>            
             </div>
         
 
@@ -40,7 +40,7 @@ export default function Function() {
                     <p>
                         The KeyBinding drawer provides an enhanced UI for KeyCode fields, including:
                     </p>
-                    <img className="block-center mar-vertical-3 img-border" src="images/Library/Decorators/KeyBinding/Key Binding - 05.jpg" alt=""/>            
+                    <img className="block-center mar-vertical-3 img-border w-60" src="images/Library/Decorators/KeyBinding/Key Binding - 05.jpg" alt=""/>            
                     <ul>
                         <li><b1>KeyCode Field</b1>: Displays the currently bound key code.</li>
                         <li><b1>Bind Button</b1>: When clicked, the tool enters listening mode, allowing the next key press to be bound to the property.</li>
@@ -62,7 +62,7 @@ export default function Function() {
                         <img className="block-center mar-vertical-3 img-border" src="images/Library/Decorators/KeyBinding/Key Binding - 01.jpg" alt=""/>            
                         <li>Select the GameObject and view the KeyCode property in the Inspector.</li>
                         <li>Locate the KeyCode property in the Inspector. You will see the enhanced UI with the Key Code Field, Bind Button and Reset Button.</li>
-                        <img className="block-center mar-vertical-3 img-border" src="images/Library/Decorators/KeyBinding/Key Binding - 01.gif" alt=""/>            
+                        <img className="block-center mar-vertical-3 img-border w-60" src="images/Library/Decorators/KeyBinding/Key Binding - 01.gif" alt=""/>            
                         <li>Click the Bind Button to enter listening mode. The button will change to Listening. Press the desired key on your keyboard. The key code will update to the pressed key.</li>
                         <li>If you click the Listening Button again or press a mouse button, listening mode will cancel without binding a key.</li>
                         <li>Click the Reset Button to revert the key code to its default value (None).</li>

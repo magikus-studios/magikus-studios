@@ -59,28 +59,28 @@ export default function Function() {
                         <li><b2>void</b2> <b1>IfOn</b1>(<b2>string</b2> <b1>message</b1>): Prints a message to the console if the state is true</li>
                         <li><b2>void</b2> <b1>IfOn</b1>(<b2>object</b2> <b1>message</b1>): Prints the object to the console if the state is true</li>
                         <li><b2>void</b2> <b1>IfOn</b1>(<b2>Action</b2> <b1>action</b1>): Invokes an action if the state is true</li>
-                        <li><b2>void</b2> <b1>IfOn</b1>(<b2>Action{"<T>"}</b2> <b1>action</b1>): Invokes an action that takes the value as a parameter if the state is true</li>
+                        <li><b2>void</b2> <b1>IfOn</b1>(<b2>Action{"<Toggle<T>>"}</b2> <b1>action</b1>): Invokes an action that takes the toggle as a parameter if the state is true</li>
                     </ul>
                     <h5 className="c-light-1">If Off</h5>
                     <ul>
                         <li><b2>void</b2> <b1>IfOff</b1>(<b2>string</b2> <b1>message</b1>): Prints a message to the console if the state is false</li>
                         <li><b2>void</b2> <b1>IfOff</b1>(<b2>object</b2> <b1>message</b1>): Prints the object to the console if the state is false</li>
                         <li><b2>void</b2> <b1>IfOff</b1>(<b2>Action</b2> <b1>action</b1>): Invokes an action if the state is false</li>
-                        <li><b2>void</b2> <b1>IfOff</b1>(<b2>Action{"<T>"}</b2> <b1>action</b1>): Invokes an action that takes the value as a parameter if the state is false</li>
+                        <li><b2>void</b2> <b1>IfOff</b1>(<b2>Action{"<Toggle<T>>"}</b2> <b1>action</b1>): Invokes an action that takes the toggle as a parameter if the state is false</li>
                     </ul>
                     <h5 className="c-light-1">On On</h5>
                     <ul>
                         <li><b2>void</b2> <b1>OnOn</b1>(<b2>string</b2> <b1>message</b1>): Prints a message to the console when the state turns true</li>
                         <li><b2>void</b2> <b1>OnOn</b1>(<b2>object</b2> <b1>message</b1>): Prints the object to the console when the state turns true</li>
                         <li><b2>void</b2> <b1>OnOn</b1>(<b2>Action</b2> <b1>action</b1>): Invokes an action when the state turns true</li>
-                        <li><b2>void</b2> <b1>OnOn</b1>(<b2>Action{"<T>"}</b2> <b1>action</b1>): Invokes an action that takes the value as a parameter when the state turns true</li>
+                        <li><b2>void</b2> <b1>OnOn</b1>(<b2>Action{"<Toggle<T>>"}</b2> <b1>action</b1>): Invokes an action that takes the toggle as a parameter when the state turns true</li>
                     </ul>
                     <h5 className="c-light-1">On Off</h5>
                     <ul>
                         <li><b2>void</b2> <b1>OnOff</b1>(<b2>string</b2> <b1>message</b1>): Prints a message to the console when the state turns false</li>
                         <li><b2>void</b2> <b1>OnOff</b1>(<b2>object</b2> <b1>message</b1>): Prints the object to the console when the state turns false</li>
                         <li><b2>void</b2> <b1>OnOff</b1>(<b2>Action</b2> <b1>action</b1>): Invokes an action when the state turns false</li>
-                        <li><b2>void</b2> <b1>OnOff</b1>(<b2>Action{"<T>"}</b2> <b1>action</b1>): Invokes an action that takes the value as a parameter when the state turns false</li>
+                        <li><b2>void</b2> <b1>OnOff</b1>(<b2>Action{"<Toggle<T>>"}</b2> <b1>action</b1>): Invokes an action that takes the toggle as a parameter when the state turns false</li>
                     </ul>
                 </div>
             )}/>
@@ -89,7 +89,6 @@ export default function Function() {
             <p className="pad-left-2">
                 The Toggle attribute can be applied to boolean fields within a MonoBehaviour or ScriptableObject class to visualize them as toggle buttons. 
                 Here are some examples demonstrating its usage:
-
             </p>
             <ul>
                 <li><b>Creating a Toggle Structure</b>: You can create a Toggle{"<T>"} structure with a specified type T. The type T represents the value you want to associate with the toggle state.</li>
@@ -106,8 +105,7 @@ export default function Function() {
                     <p> 
                         This setup allows for easy tracking of debugging states within the game.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Structures/Toggles/Toggles - 02.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Structures/Toggles/Toggles - 03.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Structures/Toggles/Toggles - 01.gif" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 02: Toggle UI Visibility" content={(
@@ -120,8 +118,7 @@ export default function Function() {
                     <p> 
                         When the state changes, the IfOn method activates the panel and IfOff hides it.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Structures/Toggles/Toggles - 05.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Structures/Toggles/Toggles - 06.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Structures/Toggles/Toggles - 02.gif" alt=""/>            
                 </div>
             )}/>
 
@@ -129,7 +126,8 @@ export default function Function() {
             <ul>
                 <li>The IfOn and IfOff methods provide flexibility by allowing you to pass in a delegate or lambda expression that gets executed based on the toggle's state.</li>
                 <li>The Toggle structures are integrated with Unity’s Editor through custom property drawers, making them easy to manipulate within the Inspector.</li>
-                <li> The Toggle structure enables an implicit conversion from Toggle{"<T>"} to its underlying type T. This allows the Toggle{"<T>"} instance to be used directly as T without requiring an explicit cast.</li>
+                <li>The Toggle structure enables an implicit conversion from Toggle{"<T>"} to its underlying type T. This allows the Toggle{"<T>"} instance to be used directly as T without requiring an explicit cast.</li>
+                <li>Toggling the On/Off button in the Inspector will not invoke the OnOn or OnOff actions. These callbacks are only triggered when the State value is changed programmatically.</li>                    
             </ul>
        </div>
     );

@@ -117,12 +117,18 @@ export default function Function() {
                     <p> 
                         The 2 Label assets will be called Label A and Label B.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/Labels/Labels - 08.jpg" alt=""/>            
+                    <div className="center-content">
+                        <img className="block-center mar-bottom-3 img-border w-45" src="images/Library/Systems/Labels/Labels - 081.jpg" alt=""/>            
+                        <img className="block-center mar-bottom-3 img-border w-45" src="images/Library/Systems/Labels/Labels - 082.jpg" alt=""/>            
+                    </div>
                     <p> 
                         The group assets will be called Label A Group and Label AB Group. 
                         The first will only contain the Label A, and the second one will contain the Label A and the Label B.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Systems/Labels/Labels - 09.jpg" alt=""/>                                
+                    <div className="center-content">                        
+                        <img className="block-center mar-bottom-3 img-border w-45" src="images/Library/Systems/Labels/Labels - 091.jpg" alt=""/>                                
+                        <img className="block-center mar-bottom-3 img-border w-45" src="images/Library/Systems/Labels/Labels - 092.jpg" alt=""/>                                
+                    </div>
                 </div>
             )}/>
             <Group title="Example 01: Comparing Label A with Label A" content={(

@@ -28,31 +28,6 @@ export default function Function() {
                 The Adapt utilities class offers a versatile set of type transformation methods, streamlining common conversions in Unity game development to improve code readability and reduce boilerplate.
             </p>
 
-            <a href="/#/library/utilities/controls" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Controls</h4></a>
-            <p className="pad-left-3">
-                The Controls utilities streamline input handling and debugging in Unity, allowing developers to focus on core game logic by simplifying common input operations and enhancing console output.
-            </p>
-
-            <a href="/#/library/utilities/easing" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Easing</h4></a>
-            <p className="pad-left-3">
-                The Easing utilities offer versatile methods for crafting smooth, customizable transitions, perfect for enhancing animations, UI elements and game effects.
-            </p>
-
-            <a href="/#/library/utilities/looping" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Looping</h4></a>
-            <p className="pad-left-3">
-                The Looping utilities simplify collection iteration in Unity, enabling forward and backward looping with improved code readability and maintainability.
-            </p>
-
-            <a href="/#/library/utilities/datafile" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Datafile</h4></a>
-            <p className="pad-left-3">
-                The Datafile utilities offer flexible methods for managing save files in Unity, making it easy to handle persistent data across multiple formats in game development.
-            </p>
-
-            <a href="/#/library/utilities/randop" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Randop</h4></a>
-            <p className="pad-left-3">
-                The Randop utilities offer developers a powerful toolkit for adding randomness to game interactions, enhancing realism and accelerating development with efficient, easy-to-implement methods for generating random points, selecting items and applying colors.
-            </p>
-
             <a href="/#/library/utilities/mathop" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Mathop</h4></a>
             <p className="pad-left-3">
                 The Mathop utilities offer a versatile set of methods for simplifying mathematical operations across various data types, making complex calculations effortless and ideal for game development.
@@ -63,10 +38,37 @@ export default function Function() {
                 The Textop utilities offer powerful methods for efficient and flexible string manipulation, simplifying tasks like counting, modifying and pattern-checking.
             </p>
 
+{/*
+            <a href="/#/library/utilities/randop" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Randop</h4></a>
+            <p className="pad-left-3">
+                The Randop utilities offer developers a powerful toolkit for adding randomness to game interactions, enhancing realism and accelerating development with efficient, easy-to-implement methods for generating random points, selecting items and applying colors.
+            </p>
+
             <a href="/#/library/utilities/listop" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Listop</h4></a>
             <p className="pad-left-3">
                 The Listop utilities offer powerful and flexible methods for manipulating arrays and lists, simplifying complex operations and streamlining workflows in game development.
             </p>
+
+            <a href="/#/library/utilities/looping" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Looping</h4></a>
+            <p className="pad-left-3">
+                The Looping utilities simplify collection iteration in Unity, enabling forward and backward looping with improved code readability and maintainability.
+            </p>
+
+            <a href="/#/library/utilities/easing" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Easing</h4></a>
+            <p className="pad-left-3">
+                The Easing utilities offer versatile methods for crafting smooth, customizable transitions, perfect for enhancing animations, UI elements and game effects.
+            </p>
+
+            <a href="/#/library/utilities/controls" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Controls</h4></a>
+            <p className="pad-left-3">
+                The Controls utilities streamline input handling and debugging in Unity, allowing developers to focus on core game logic by simplifying common input operations and enhancing console output.
+            </p>
+
+            <a href="/#/library/utilities/datafile" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Datafile</h4></a>
+            <p className="pad-left-3">
+                The Datafile utilities offer flexible methods for managing save files in Unity, making it easy to handle persistent data across multiple formats in game development.
+            </p>
+*/}
        </div>
     );
 }

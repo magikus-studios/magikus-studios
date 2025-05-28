@@ -18,10 +18,48 @@ export default function Function() {
                 By utilizing these decorators, developers can customize the Inspector to better suit their workflow and present data more effectively. 
             </p>
 
+            <a href="/#/library/decorators/button" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Button</h4></a>
+            <p className="pad-left-3">
+                An attribute that adds customizable buttons to the Unity Inspector, enabling developers to trigger methods directly within the editor.
+            </p>
+
+            <a href="/#/library/decorators/toggle" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Toggle</h4></a>
+            <p className="pad-left-3">
+                The <b2>[Toggle]</b2> attribute transforms boolean fields into customizable toggle buttons in the Unity Inspector, enhancing usability and clarity.
+            </p>
+
             <a href="/#/library/decorators/conditional" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Conditional</h4></a>
             <p className="pad-left-3">
                 A set of attributes that dynamically control field appearance in the Unity Inspector, enhancing data visualization and streamlining workflow.
             </p>
+
+            <a href="/#/library/decorators/showHide" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Show & Hide</h4></a>
+            <p className="pad-left-3">
+                Attributes that enable conditional visibility of fields in the Unity Inspector, helping developers create a cleaner, more intuitive interface by displaying only relevant fields based on specific conditions.
+            </p>
+
+{/* 
+            <a href="/#/library/decorators/block" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Block</h4></a>
+            <p className="pad-left-3">
+                The <b2>[Block]</b2> attribute is a Unity Inspector tool that keeps fields read-only, ensuring data integrity by preventing unintended modifications.
+            </p>
+
+            <a href="/#/library/decorators/create" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Create</h4></a>
+            <p className="pad-left-3">
+                An attribute that simplifies the management of referenced objects in Unity's Inspector, enhancing productivity in scenarios requiring frequent creation or removal of referenced value objects such as GameObjecs or ScriptableObjects.
+            </p>
+
+            <a href="/#/library/decorators/keyBinding" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Key Binding</h4></a>
+            <p className="pad-left-3">
+                A property drawer that enhances editing KeyCode fields in Unity, offering intuitive key binding and reset functionality to enhance workflow and productivity.
+            </p>
+
+            <a href="/#/library/decorators/collapse" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Collapse</h4></a>
+            <p className="pad-left-3">
+                The Collapse decorator enhances Unity's Inspector by making complex data structures collapsible, improving usability, organization and overall data visualization.
+            </p>
+
+
 
             <a href="/#/library/decorators/line" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Line</h4></a>
             <p className="pad-left-3">
@@ -38,45 +76,11 @@ export default function Function() {
                 The <b2>[Message]</b2> attribute enhances the Unity Inspector by allowing developers to add informative messages directly within the interface, improving readability, context and user guidance.
             </p>
 
-            <a href="/#/library/decorators/showHide" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Show & Hide</h4></a>
-            <p className="pad-left-3">
-                Attributes that enable conditional visibility of fields in the Unity Inspector, helping developers create a cleaner, more intuitive interface by displaying only relevant fields based on specific conditions.
-            </p>
-
-            <a href="/#/library/decorators/block" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Block</h4></a>
-            <p className="pad-left-3">
-                The <b2>[Block]</b2> attribute is a Unity Inspector tool that keeps fields read-only, ensuring data integrity by preventing unintended modifications.
-            </p>
-
-            <a href="/#/library/decorators/toggle" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Toggle</h4></a>
-            <p className="pad-left-3">
-                The <b2>[Toggle]</b2> attribute transforms boolean fields into customizable toggle buttons in the Unity Inspector, enhancing usability and clarity.
-            </p>
-
-            <a href="/#/library/decorators/collapse" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Collapse</h4></a>
-            <p className="pad-left-3">
-                The Collapse decorator enhances Unity's Inspector by making complex data structures collapsible, improving usability, organization and overall data visualization.
-            </p>
-
             <a href="/#/library/decorators/progressBar" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Progress Bar</h4></a>
             <p className="pad-left-3">
                 The <b2>[ProgressBar]</b2> attribute allows for intuitive visualization of float values as progress bars in Unity's Inspector, ideal for displaying metrics like health or experience.
             </p>
-
-            <a href="/#/library/decorators/button" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Button</h4></a>
-            <p className="pad-left-3">
-                An attribute that adds customizable buttons to the Unity Inspector, enabling developers to trigger methods directly within the editor.
-            </p>
-
-            <a href="/#/library/decorators/create" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Create</h4></a>
-            <p className="pad-left-3">
-                An attribute that simplifies the management of referenced objects in Unity's Inspector, enhancing productivity in scenarios requiring frequent creation or removal of referenced value objects such as GameObjecs or ScriptableObjects.
-            </p>
-
-            <a href="/#/library/decorators/keyBinding" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Key Binding</h4></a>
-            <p className="pad-left-3">
-                A property drawer that enhances editing KeyCode fields in Unity, offering intuitive key binding and reset functionality to enhance workflow and productivity.
-            </p>
+*/}
        </div>
     );
 }

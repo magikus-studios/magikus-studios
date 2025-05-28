@@ -273,6 +273,33 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
+            <Group title="Extract" content={(
+                <div>
+                    <p>
+                        Extracts substrings enclosed between custom delimiters (start and end "keys") from a given string. 
+                    </p>
+                    <h5 className="c-light-1">Signature</h5>
+                    <ul className="property-list">
+                        <li><b2>static string</b2> <b1>Extract</b1>(<b2>this string</b2> <b1>source</b1>, <b2>char</b2> <b1>key</b1>, <b2>bool</b2> <b1>returnFullTag = false</b1>)</li>
+                        <li><b2>static string</b2> <b1>Extract</b1>(<b2>this string</b2> <b1>source</b1>, <b2>string</b2> <b1>key</b1>, <b2>bool</b2> <b1>returnFullTag = false</b1>)</li>
+                        <li><b2>static string</b2> <b1>Extract</b1>(<b2>this string</b2> <b1>source</b1>, <b2>char</b2> <b1>startKey</b1>, <b2>char</b2> <b1>endKey</b1>, <b2>bool</b2> <b1>returnFullTag = false</b1>)</li>
+                        <li><b2>static string</b2> <b1>Extract</b1>(<b2>this string</b2> <b1>source</b1>, <b2>string</b2> <b1>startKey</b1>, <b2>char</b2> <b1>endKey</b1>, <b2>bool</b2> <b1>returnFullTag = false</b1>)</li>
+                        <li><b2>static string</b2> <b1>Extract</b1>(<b2>this string</b2> <b1>source</b1>, <b2>char</b2> <b1>startKey</b1>, <b2>string</b2> <b1>endKey</b1>, <b2>bool</b2> <b1>returnFullTag = false</b1>)</li>
+                        <li><b2>static string</b2> <b1>Extract</b1>(<b2>this string</b2> <b1>source</b1>, <b2>string</b2> <b1>startKey</b1>, <b2>string</b2> <b1>endKey</b1>, <b2>bool</b2> <b1>returnFullTag = false</b1>)</li>
+                    </ul>
+                    <h5 className="c-light-1">Parameters</h5>
+                    <ul className="property-list">
+                        <li><b2>string</b2> <b1>text</b1>: String to manipulate</li>                    
+                        <li><b2>char</b2> <b1>key</b1>: The char used as both start and end delimiter.</li>                    
+                        <li><b2>string</b2> <b1>key</b1>: The string used as both start and end delimiter.</li>                    
+                        <li><b2>char</b2> <b1>startKey</b1>: The starting char delimiter</li>                    
+                        <li><b2>string</b2> <b1>startKey</b1>: The starting string delimiter</li>                    
+                        <li><b2>char</b2> <b1>endKey</b1>: The ending char delimiter</li>                    
+                        <li><b2>string</b2> <b1>endKey</b1>: The ending string delimiter</li>                    
+                        <li><b2>bool</b2> <b1>returnFullTag</b1>: If the returnFullTag flag is set to true, the returned string will include the delimiters themselves</li>                    
+                    </ul>
+                </div>
+            )}/>
             <Group title="Encase" content={(
                 <div>
                     <p>

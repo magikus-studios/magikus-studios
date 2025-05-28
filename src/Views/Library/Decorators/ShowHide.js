@@ -19,6 +19,9 @@ export default function Function() {
                 This can help to declutter the Inspector and make it more intuitive by showing only relevant fields under certain conditions.
                 By providing conditional visibility, it helps to create a more organized and intuitive interface, making it easier for developers to manage and configure game components. 
             </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/ShowHide/ShowHide - 01.gif" alt=""/>            
+            </div>
 
 
             <h3 className="p-2">Introduction</h3>

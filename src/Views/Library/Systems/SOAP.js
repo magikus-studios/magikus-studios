@@ -21,9 +21,8 @@ export default function Function() {
                 Together, these structures promote a highly maintainable, extendable and modular Unity project architecture.
             </p>
             <div className="p-2">
-                <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Events - 02.jpg" alt=""/>            
-
-                <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Value Assets - 03.jpg" alt=""/>            
+                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/SOAP/SOAP - Events - 02.jpg" alt=""/>            
+                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/SOAP/SOAP - Value Assets - 03.jpg" alt=""/>            
             </div>
 
             <h3 className="p-2">Introduction</h3>
@@ -245,6 +244,8 @@ export default function Function() {
                 </div>
             )}/>
 
+
+
             <h3 className="p-2">Examples</h3>
             <p className="pad-left-2">
                 To use the Event structure, you must first define the event in your script using the EventVoid or Event{"<T>"} structure depending on whether you need to pass parameters (make sure that the Event is publicly available to visualize it in the inspector).
@@ -271,7 +272,7 @@ export default function Function() {
                     <p> 
                         The DefeatEnemy method is subscribed to the event through the Inspector. 
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Events - 02.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/SOAP/SOAP - Events - 02.jpg" alt=""/>            
                     <p> 
                         When the script runs, it will call the event invoking all the methods subscribed to it.
                     </p>
@@ -288,7 +289,7 @@ export default function Function() {
                         There is a score int and an UpdateScore method that takes an int and logs a message with it. 
                         When the script runs the Event is called sending the score value as a parameter.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Events - 04.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/SOAP/SOAP - Events - 04.jpg" alt=""/>            
                     <p> 
                         In the Inspector, the UpdateScore is subscribed dynamically to the event. 
                         This will use the value sent through the event call to the method invoked when the Event is called.
@@ -324,7 +325,7 @@ export default function Function() {
                     <p> 
                         When the Run() method is called, both events will trigger.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Events - 11.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/SOAP/SOAP - Events - 11.jpg" alt=""/>            
                 </div>
             )}/>
 
@@ -345,7 +346,7 @@ export default function Function() {
                         The onValueChange action is subscribed to a method (OnHealthChanged) that logs the new health value. 
                     </p>
                     <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Value Assets - 02.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Value Assets - 03.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/SOAP/SOAP - Value Assets - 03.jpg" alt=""/>            
                     <p> 
                         The TakeDamage method modifies the FloatAsset value, triggering the onValueChange event.
                     </p>
@@ -362,7 +363,7 @@ export default function Function() {
                         The onValueChange action updates the score display or triggers other score-related effects. 
                     </p>
                     <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Value Assets - 05.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Value Assets - 06.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/SOAP/SOAP - Value Assets - 06.jpg" alt=""/>            
                     <p> 
                         The AddScore method adjusts the IntAsset value and triggers the event.
                     </p>

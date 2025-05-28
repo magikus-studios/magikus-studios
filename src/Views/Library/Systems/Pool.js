@@ -95,7 +95,7 @@ export default function Function() {
                         <li><b2>int</b2> <b1>BatchSize</b1>: Number of objects instantiated when more are needed</li>
                         <li><b2>int</b2> <b1>MinPoolSize</b1>: Minimum number of objects in the pool</li>
                         <li><b2>Toggle{"<"}int{">"}</b2> <b1>MaxPoolSize</b1>: Maximum number of objects allowed in the pool</li>
-                        <li><b2>{"Couple<Toggle<int>,SIZE_MODE>"}</b2> <b1>MaxSize</b1>: Maximum number of objects allowed either spawned or in total based on the size mode selected</li>
+                        <li><b2>{"Toggle<Flexor<int,SIZE_MODE>>"}</b2> <b1>MaxSize</b1>: Maximum number of objects allowed either spawned or in total based on the size mode selected</li>
                         <li><b2>Toggle{"<"}float{">"}</b2> <b1>PoolCleanupRate</b1>: Rate at which excess objects are removed</li>
                         <li><b2>Toggle{"<"}float{">"}</b2> <b1>PoolAutofillRate</b1>: Rate at which missing objects are replenished</li>
                     </ul>
@@ -125,7 +125,7 @@ export default function Function() {
                         Set DeactivateObjectsInPool to true if objects should be deactivated when pooled.
                         Subscribe to OnObjectSpawned, OnObjectPooled, and OnObjectCreated events in the Unity Inspector if needed.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Pool/Pool - 02.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Pool/Pool - 02.jpg" alt=""/>            
                 </div>
             )}/>
             <Group title="Step 02: Configure the PoolObjectController" content={(
@@ -165,7 +165,7 @@ export default function Function() {
             )}/>
             <Group title="Step 05: Automatic Pool Management" content={(
                 <div>
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Pool/Pool - 06.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Pool/Pool - 06.jpg" alt=""/>            
                     <p> 
                         Adjust the PoolSettingsAsset to control automatic cleanup and auto-fill behaviors to maintain optimal performance.
                         The OnObjectCreated event will trigger when new objects are instantiated.

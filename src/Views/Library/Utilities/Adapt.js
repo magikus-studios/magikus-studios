@@ -284,6 +284,24 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
+            <Group title="ToColorTag" content={(
+                <div>
+                    <p>
+                        Converts a named color string (e.g., "red", "blue") into a corresponding Color value. 
+                        Supports a predefined set of friendly color names. 
+                        If the string doesn't match a known name, it falls back to parsing the string as a hexadecimal color using ToColor().
+                    </p>
+                    <h5 className="c-light-1">Signature</h5>
+                    <ul className="property-list">
+                        <li><b2>static Color</b2> <b1>ToColorTag</b1>(<b2>this string</b2> <b1>colorTag</b1>)</li>
+                    </ul>
+                    <h5 className="c-light-1">Parameters</h5>
+                    <ul className="property-list">
+                        <li><b2>string</b2> <b1>colorTag</b1>: The name of the color or a hexadecimal color string</li>                    
+                        <em>Options:</em> <b1>red</b1> | <b1>blue</b1> | <b1>yellow</b1> | <b1>green</b1> | <b1>white</b1> | <b1>grey</b1> | <b1>black</b1> | <b1>hex</b1>
+                    </ul>
+                </div>
+            )}/>
             <Group title="ToColor" content={(
                 <div>
                     <p>

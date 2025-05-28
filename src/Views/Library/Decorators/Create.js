@@ -43,8 +43,8 @@ export default function Function() {
                     <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>string</b2> <b1>menuPath</b1>: The path in Unity's Assets menu to trigger for creating a new object.</li>
-                        <li><b2>string</b2> <b1>createLabel</b1>: The label for the button used to create a new reference. Default is "+".</li>
-                        <li><b2>string</b2> <b1>removeLabel</b1>: The label for the button used to remove an existing reference. Default is "-".</li>                    
+                        <li><b2>string</b2> <b1>createLabel</b1>: The label for the button used to create a new reference. Default is "✚".</li>
+                        <li><b2>string</b2> <b1>removeLabel</b1>: The label for the button used to remove an existing reference. Default is "✖".</li>                    
                         <li><b2>float</b2> <b1>buttonWidth</b1>: The width of the "create" and "remove" buttons. Default is 20f.</li>
                     </ul>
                 </div>
