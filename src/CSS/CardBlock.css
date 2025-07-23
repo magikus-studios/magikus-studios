@@ -5,23 +5,34 @@
     border-color: rgba(22, 45, 80, 100);
 }
 
-.cardBlock:hover {
+.cardBlock-:hover {
     box-shadow: 0px 0px 5px 5px rgba(22, 45, 80, 100) !important;
     transition: all 0.1s linear;
 }
 
+.productBorder {
+    background-color: rgba(22, 45, 80, 0);
+}
+
+.productBorder:hover {
+    background-color: rgba(22, 45, 80, 0.25);
+    transition: all 0.1s linear;
+}
+
+
 .cardBlock-img { transition: all 0.2s ease-in-out; }
 .cardBlock-img:hover { transform: scale(.9); }
 
+
 .cardBlock-btn {
     text-decoration: none;
-
+    
     color: rgba(175, 198, 233, 100);
     background-color: rgba(11, 23, 40, 100);
     border-color: rgba(175, 198, 233, 100);
-
+    
     padding: 5px;
-
+    
     border: solid;
     border-radius: 5px;
     border-width: 1px;
@@ -32,3 +43,32 @@
     background-color: rgba(33, 68, 120, 100);
     border-color: rgba(22, 45, 80, 100);
 }
+
+.ex-newsCardBlock {
+    border: solid;
+    border-radius: 5px;
+    border-width: 3px;
+    border-color: rgba(22, 45, 80, 100);
+}
+.ex-newsCardBlock:hover {
+    box-shadow: 0px 0px 5px 5px rgba(22, 45, 80, 100) !important;
+    transition: all 0.1s linear;
+}
+
+.bg-pattern-newCard {
+    background-image: url("../../public/images/Assets/Seamless Pattern - Background - 11.png");
+    background-repeat: repeat;
+    background-size: 96px;
+}
+.newsCardBlock {
+    border: solid;
+    border-radius: 5px;
+    border-width: 3px;
+    border-color: rgb(36, 28, 28);
+}
+.newsCardBlock:hover {
+    box-shadow: 0px 0px 5px 5px rgb(36, 28, 28) !important;
+    transition: all 0.1s linear;
+}
+.bg-red { background-color: rgb(72, 55, 55); transition: all 0.3s ease-in-out; }
+.c-red { color: rgb(200, 183, 183); transition: all 0.3s ease-in-out; }

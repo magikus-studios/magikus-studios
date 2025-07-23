@@ -1,14 +1,59 @@
 [
     {
         "version": "3.0.0",
-        "date": "2024-09-23",
+        "date": "2025-08-19",
         "added": [
-            { "feature": "Decorators" },
-            { "feature": "Structures" },
-            { "feature": "Machines" }
+             { "feature": "Utilities: Create" }
+            ,{ "feature": "Utilities: Adapt" }
+            ,{ "feature": "Utilities: Mathop" }
+            ,{ "feature": "Utilities: Textop" }
+            ,{ "feature": "Utilities: Randop" }
+            ,{ "feature": "Utilities: Listop" }
+            ,{ "feature": "Utilities: Looping" }
+            ,{ "feature": "Utilities: Easing" }
+            ,{ "feature": "Utilities: Controls" }
+            ,{ "feature": "Utilities: Datafile" }
+
+            ,{ "feature": "Decorator: Button" }
+            ,{ "feature": "Decorator: Toggle" }
+            ,{ "feature": "Decorator: Conditional" }
+            ,{ "feature": "Decorator: Show & Hide" }
+            ,{ "feature": "Decorator: Block" }
+            ,{ "feature": "Decorator: Create" }
+            ,{ "feature": "Decorator: Keycode" }
+            ,{ "feature": "Decorator: Collapse" }
+            ,{ "feature": "Decorator: Line" }
+            ,{ "feature": "Decorator: Title" }
+            ,{ "feature": "Decorator: Message" }
+            ,{ "feature": "Decorator: Bar" }
+
+            ,{ "feature": "Structure: Debase" }
+            ,{ "feature": "Structure: Toggle" }
+            ,{ "feature": "Structure: Flexor" }
+            ,{ "feature": "Structure: Switch" }
+
+            ,{ "feature": "Machine: Updater" }
+            ,{ "feature": "Machine: Cycle" }
+            ,{ "feature": "Machine: State" }
+            ,{ "feature": "Machine: Tween" }
+
+            ,{ "feature": "System: Label" }
+            ,{ "feature": "System: Timescale" }
+            ,{ "feature": "System: SOAP" }
+            ,{ "feature": "System: Pool" }
+
+            ,{ "feature": "Tools: Hierarchy Editor" }
+            ,{ "feature": "Tools: Curve Editor" }
+            ,{ "feature": "Tools: Reference Console" }
+            ,{ "feature": "Tools: Script Manager" }
         ],
-        "changed": [
-            { "feature": "Utilities" }
+        "removed": [
+            { "feature": "Button Tool" },
+            { "feature": "Animation System" },
+            { "feature": "Audio System" },
+            { "feature": "Dialog System" },
+            { "feature": "Tweak System" },
+            { "feature": "Magikus Operation Utilities Library" }
         ]
     },
     {

@@ -1,96 +1,96 @@
 [
     {
-        "label": "Library",
+        "label": "Magikus",
         "items": [
-            { "label": "Introduction" , "link": "/#/library" },
-            { "label": "Installation" , "link": "/#/library/installation" },
-            { "label": "Changelog", "link": "/#/library/changelog" },
-            { "label": "License", "link": "/#/library/license" }
+            { "label": "[Magikus]" , "link": "/#/magikus" },
+            { "label": "Installation" , "link": "/#/magikus/installation" },
+            { "label": "Changelog", "link": "/#/magikus/changelog" },
+            { "label": "License", "link": "/#/magikus/license" }
         ]
     },
     {
         "label": "Utilities",
         "items": [
-            { "label": "[Utilities]", "link": "/#/library/utilities" },
-            { "label": "Create", "link": "/#/library/utilities/create" },
-            { "label": "Adapt", "link": "/#/library/utilities/adapt" },
-            { "label": "Mathop", "link": "/#/library/utilities/mathop" },
-            { "label": "Textop", "link": "/#/library/utilities/textop" },
-            { "label": "Randop", "link": "/#/library/utilities/randop", "hide": true },
-            { "label": "Listop", "link": "/#/library/utilities/listop", "hide": true  },
-            { "label": "Looping", "link": "/#/library/utilities/looping", "hide": true },
-            { "label": "Easing", "link": "/#/library/utilities/easing", "hide": true },
-            { "label": "Controls", "link": "/#/library/utilities/controls", "hide": true },
-            { "label": "Datafile", "link": "/#/library/utilities/datafile", "hide": true }
+            { "label": "[Utilities]", "link": "/#/magikus/utilities" },
+            { "label": "Create", "link": "/#/magikus/utilities/create" },
+            { "label": "Adapt", "link": "/#/magikus/utilities/adapt" },
+            { "label": "Mathop", "link": "/#/magikus/utilities/mathop" },
+            { "label": "Textop", "link": "/#/magikus/utilities/textop", "new": false },
+            { "label": "Randop", "link": "/#/magikus/utilities/randop", "hide": false },
+            { "label": "Listop", "link": "/#/magikus/utilities/listop", "hide": false  },
+            { "label": "Looping", "link": "/#/magikus/utilities/looping", "hide": false },
+            { "label": "Easing", "link": "/#/magikus/utilities/easing", "hide": false },
+            { "label": "Controls", "link": "/#/magikus/utilities/controls", "hide": false },
+            { "label": "Datafile", "link": "/#/magikus/utilities/datafile", "hide": false }
         ]
     },
     {
         "label": "Decorators",
         "items": [
-            { "label": "[Decorators]", "link": "/#/library/decorators" },
-            { "label": "Button", "link": "/#/library/decorators/button" },
-            { "label": "Toggle", "link": "/#/library/decorators/toggle" },
-            { "label": "Conditional", "link": "/#/library/decorators/conditional" },
-            { "label": "Show & Hide", "link": "/#/library/decorators/showHide" },
-            { "label": "Block", "link": "/#/library/decorators/block", "hide": true },
-            { "label": "Create", "link": "/#/library/decorators/create", "hide": true },
-            { "label": "Key Binding", "link": "/#/library/decorators/keyBinding", "hide": true },
-            { "label": "Collapse", "link": "/#/library/decorators/collapse", "hide": true },
-            { "label": "Line", "link": "/#/library/decorators/line", "hide": true },
-            { "label": "Title", "link": "/#/library/decorators/title", "hide": true },
-            { "label": "Message", "link": "/#/library/decorators/message", "hide": true },
-            { "label": "Progress Bar", "link": "/#/library/decorators/progressBar", "hide": true }
+            { "label": "[Decorators]", "link": "/#/magikus/decorators" },
+            { "label": "Debutton", "link": "/#/magikus/decorators/debutton" },
+            { "label": "Toggle", "link": "/#/magikus/decorators/toggle" },
+            { "label": "Conditional", "link": "/#/magikus/decorators/conditional" },
+            { "label": "Show & Hide", "link": "/#/magikus/decorators/showHide" },
+            { "label": "Block", "link": "/#/magikus/decorators/block", "hide": false },
+            { "label": "Create", "link": "/#/magikus/decorators/create", "hide": false },
+            { "label": "Keycode", "link": "/#/magikus/decorators/keycode", "hide": false },
+            { "label": "Collapse", "link": "/#/magikus/decorators/collapse", "hide": false },
+            { "label": "Line", "link": "/#/magikus/decorators/line", "hide": false },
+            { "label": "Title", "link": "/#/magikus/decorators/title", "hide": false },
+            { "label": "Message", "link": "/#/magikus/decorators/message", "hide": false },
+            { "label": "Bar", "link": "/#/magikus/decorators/bar", "hide": false }
         ]
     },
     {
         "label": "Structures",
         "items": [
-            { "label": "[Structures]", "link": "/#/library/structures" },
-            { "label": "Debase", "link": "/#/library/structures/debase" },
-            { "label": "Toggles", "link": "/#/library/structures/toggles" },
-            { "label": "Flexors", "link": "/#/library/structures/flexors" },
-            { "label": "Switches", "link": "/#/library/structures/switches" },
-            { "label": "Ranges", "link": "/#/library/structures/ranges", "hide": true  },
-            { "label": "Tier", "link": "/#/library/structures/tier", "hide": true  },
-            { "label": "Grids", "link": "/#/library/structures/grids", "hide": true  }
+            { "label": "[Structures]", "link": "/#/magikus/structures" },
+            { "label": "Debase", "link": "/#/magikus/structures/debase" },
+            { "label": "Toggles", "link": "/#/magikus/structures/toggles" },
+            { "label": "Flexors", "link": "/#/magikus/structures/flexors" },
+            { "label": "Switches", "link": "/#/magikus/structures/switches" },
+            { "label": "Ranges", "link": "/#/magikus/structures/ranges", "hide": true  },
+            { "label": "Tier", "link": "/#/magikus/structures/tier", "hide": true  },
+            { "label": "Grids", "link": "/#/magikus/structures/grids", "hide": true  }
         ]
     },
     {
         "label": "Machines",
-        "hide": true,
+        "hide": false,
         "items": [
-            { "label": "[Machines]", "link": "/#/library/machines", "hide": true  },
-            { "label": "Updater Machine", "link": "/#/library/machines/updater", "hide": true  },
-            { "label": "Cycle Machine", "link": "/#/library/machines/cycle", "hide": true  },
-            { "label": "State Machine", "link": "/#/library/machines/state", "hide": true  },
-            { "label": "Tween Machine", "link": "/#/library/machines/tween", "hide": true  }
+            { "label": "[Machines]", "link": "/#/magikus/machines", "hide": false  },
+            { "label": "Updater Machine", "link": "/#/magikus/machines/updater", "hide": false  },
+            { "label": "Cycle Machine", "link": "/#/magikus/machines/cycle", "hide": false  },
+            { "label": "State Machine", "link": "/#/magikus/machines/state", "hide": false  },
+            { "label": "Tween Machine", "link": "/#/magikus/machines/tween", "hide": false  }
         ]
     },
     {
         "label": "Systems",
-        "hide": true,
+        "hide": false,
         "items": [
-            { "label": "[Systems]", "link": "/#/library/systems", "hide": true  },
-            { "label": "Pool System", "link": "/#/library/systems/pool", "hide": true  },
-            { "label": "Label System", "link": "/#/library/systems/label", "hide": true  },
-            { "label": "Timescale System", "link": "/#/library/systems/timescale", "hide": true  },
-            { "label": "SOAP System", "link": "/#/library/systems/SOAP", "hide": true  },
-            { "label": "Animation System", "link": "/#/library/systems/animation", "hide": true },
-            { "label": "Tweak System *", "link": "/#/library/systems/tweak", "hide": true },
-            { "label": "Audio System *", "link": "/#/library/systems/audio", "hide": true },
-            { "label": "Dialog System *", "link": "/#/library/systems/dialog", "hide": true },
-            { "label": "Navigation System *", "link": "/#/library/systems/navigation", "hide": true }
+            { "label": "[Systems]", "link": "/#/magikus/systems", "hide": false  },
+            { "label": "Label System", "link": "/#/magikus/systems/label", "hide": false  },
+            { "label": "Timescale System", "link": "/#/magikus/systems/timescale", "hide": false  },
+            { "label": "SOAP System", "link": "/#/magikus/systems/SOAP", "hide": false  },
+            { "label": "Pool System", "link": "/#/magikus/systems/pool", "hide": false  },
+            { "label": "Animation System *", "link": "/#/magikus/systems/animation", "hide": true },
+            { "label": "Tweak System *", "link": "/#/magikus/systems/tweak", "hide": true },
+            { "label": "Audio System *", "link": "/#/magikus/systems/audio", "hide": true },
+            { "label": "Dialog System *", "link": "/#/magikus/systems/dialog", "hide": true },
+            { "label": "Navigation System *", "link": "/#/magikus/systems/navigation", "hide": true }
         ]
     },
     {
         "label": "Tools",
-        "hide": true,
+        "hide": false,
         "items": [
-            { "label": "[Tools]", "link": "/#/library/tools", "hide": true  },
-            { "label": "Hierarchy Editor", "link": "/#/library/tools/hierarchyEditor", "hide": true  },
-            { "label": "Curve Editor", "link": "/#/library/tools/curveEditor", "hide": true },
-            { "label": "Reference Console", "link": "/#/library/tools/referenceConsole", "hide": true  },
-            { "label": "Script Manager", "link": "/#/library/tools/scriptManager", "hide": true  }
+            { "label": "[Tools]", "link": "/#/magikus/tools", "hide": false  },
+            { "label": "Hierarchy Editor", "link": "/#/magikus/tools/hierarchyEditor", "hide": false  },
+            { "label": "Curve Editor", "link": "/#/magikus/tools/curveEditor", "hide": false },
+            { "label": "Reference Console", "link": "/#/magikus/tools/referenceConsole", "hide": false  },
+            { "label": "Script Manager", "link": "/#/magikus/tools/scriptManager", "hide": false  }
         ]
     }
 ]

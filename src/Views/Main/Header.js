@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Function() {
     return (
-        <header className="hg-100">
+        <header className="hg-150">
             <div className="clouds-container">
                 <div className="clouds1"></div>
                 <div className="clouds2"></div>

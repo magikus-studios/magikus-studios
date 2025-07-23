@@ -5,7 +5,7 @@ export default function Function() {
     return (
         <div className="p-2 c-light-2">
             <div className="p-2 w-75 m-auto bg-dark-4 star-border bg-pattern-1">
-                <h1 className="p-2 text-center">About the Studio</h1>
+                <h1 className="p-2 text-center mar-top-4">About the Studio</h1>
                 
                 <h6 className="ts-i text-center pad-top-4 c-light-4 ft-secondary">
                     A passionate game designer exploring new ideas and approaches to game development

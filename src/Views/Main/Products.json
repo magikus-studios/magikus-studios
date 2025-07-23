@@ -1,16 +1,69 @@
 [
     {
-        "image": "images/Products/Library - Icon Color (512).png",
-        "title": "Magikus Library",
-        "description": "The Magikus Library is a versatile toolkit for Unity that streamlines development, improves code quality and enhances productivity by simplifying common challenges and complex tasks.",
-        "link": "/#/library",
+        "title": "Magikus",
+        "description": "Magikus is a Unity development toolkit that streamlines development with utilities, tools and solutions boosting productivity, reducing repetitive tasks and helping developers focus on creative game logic.",
+        "description2": "It is designed to reduce boilerplate and improve code maintainability and its extensible architecture promotes decoupled design, making it ideal for scalable and efficient game development.",
+        "description3": "It is an ideal companion for game developers. Check it out!",
+        "image": "images/Products/[420x280] Magikus.png",
+        "link": "/#/magikus",
         "newTab": false
-    },
-    {
-        "image": "images/Products/IAM - Thumbnail [512].png",
+    }
+    ,{
+        "title": "Spacesky",
+        "description": "Magikus is a Unity development toolkit that streamlines development with utilities, tools and solutions boosting productivity, reducing repetitive tasks and helping developers focus on creative game logic.",
+        "description2": "It is designed to reduce boilerplate and improve code maintainability and its extensible architecture promotes decoupled design, making it ideal for scalable and efficient game development.",
+        "description3": "It is an ideal companion for game developers. Check it out!",
+        "image": "images/Products/[420x280] Magikus.png",
+        "link": "/#/magikus",
+        "hide": true,
+        "newTab": false
+    }
+    ,{
+        "title": "Family Business",
+        "description": "Magikus is a Unity development toolkit that streamlines development with utilities, tools and solutions boosting productivity, reducing repetitive tasks and helping developers focus on creative game logic.",
+        "description2": "It is designed to reduce boilerplate and improve code maintainability and its extensible architecture promotes decoupled design, making it ideal for scalable and efficient game development.",
+        "description3": "It is an ideal companion for game developers. Check it out!",
+        "image": "images/Products/[420x280] Magikus.png",
+        "link": "/#/magikus",
+        "hide": true,
+        "newTab": false
+    }
+    ,{
+        "title": "Lotus Ring",
+        "description": "Magikus is a Unity development toolkit that streamlines development with utilities, tools and solutions boosting productivity, reducing repetitive tasks and helping developers focus on creative game logic.",
+        "description2": "It is designed to reduce boilerplate and improve code maintainability and its extensible architecture promotes decoupled design, making it ideal for scalable and efficient game development.",
+        "description3": "It is an ideal companion for game developers. Check it out!",
+        "image": "images/Products/[420x280] Magikus.png",
+        "link": "/#/magikus",
+        "hide": true,
+        "newTab": false
+    }
+    ,{
+        "title": "Deliver Us From Evil",
+        "description": "Magikus is a Unity development toolkit that streamlines development with utilities, tools and solutions boosting productivity, reducing repetitive tasks and helping developers focus on creative game logic.",
+        "description2": "It is designed to reduce boilerplate and improve code maintainability and its extensible architecture promotes decoupled design, making it ideal for scalable and efficient game development.",
+        "description3": "It is an ideal companion for game developers. Check it out!",
+        "image": "images/Products/[420x280] Magikus.png",
+        "link": "/#/magikus",
+        "hide": true,
+        "newTab": false
+    }
+    ,{
+        "title": "Bad Politics",
+        "description": "Magikus is a Unity development toolkit that streamlines development with utilities, tools and solutions boosting productivity, reducing repetitive tasks and helping developers focus on creative game logic.",
+        "description2": "It is designed to reduce boilerplate and improve code maintainability and its extensible architecture promotes decoupled design, making it ideal for scalable and efficient game development.",
+        "description3": "It is an ideal companion for game developers. Check it out!",
+        "image": "images/Products/[420x280] Magikus.png",
+        "link": "/#/magikus",
+        "hide": true,
+        "newTab": false
+    }
+    ,{
         "title": "Incredible Arcade Machine",
         "description": "Get ready to experience the nostalgia of classic arcade games with Incredible Arcade Machine! This collection of retro-inspired games includes clones of Snake, Tetris, Pong, Asteroids, and Breakout, offering hours of addictive and challenging gameplay. Whether you're a fan of vintage gaming or simply looking for a fun and engaging introduction to game development, Incredible Arcade Machine is the perfect choice.",
+        "image": "images/Products/IAM - Thumbnail [512].png",
         "link": "https://magikus-studios.itch.io/incredible-arcade-machine",
+        "hide": true,
         "newTab": true
     }
 ]

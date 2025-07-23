@@ -8,7 +8,7 @@ export default function Function(props) {
         (
         <a href={props.item.link} onClick={scrollUp}>
             <li>
-                <div className="tree-item">{props.item.label} {props.item.pro?<protoken>Pro</protoken>: ""}</div>
+                <div className="tree-item">{props.item.label} {props.item.new?<protoken>New</protoken>: ""}</div>
             </li>
         </a> 
     );

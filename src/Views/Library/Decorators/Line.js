@@ -37,6 +37,7 @@ export default function Function() {
                     <ul className="property-list">
                         <li><b1>Line</b1>()</li>
                         <li><b1>Line</b1>(<b2>float</b2> <b1>width</b1>)</li>
+                        <li><b1>Line</b1>(<b2>string</b2> <b1>colorHex</b1>)</li>
                         <li><b1>Line</b1>(<b2>float</b2> <b1>width</b1>, <b2>string</b2> <b1>colorHex</b1>)</li>
                         <li><b1>Line</b1>(<b2>float</b2> <b1>width</b1>, <b2>float</b2> <b1>height</b1>)</li>
                         <li><b1>Line</b1>(<b2>float</b2> <b1>width</b1>, <b2>float</b2> <b1>height</b1>, <b2>string</b2> <b1>colorHex</b1>)</li>

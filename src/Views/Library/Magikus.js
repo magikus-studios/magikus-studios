@@ -29,7 +29,7 @@ export default function Function(props) {
 
     return (
         <div className="min-vh-100 pb-1">
-            <div className="container pt-3 pb-5 mb-5">
+            <div className="container pb-5 mb-5">
                 <div className="row">
                     <div className="col-lg-3 col-md-4 col-sm-12 pb-4">
                         <TreeView menu={props.menu} />

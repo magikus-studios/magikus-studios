@@ -19,22 +19,22 @@ export default function Function() {
                 By utilizing these tools, developers can boost productivity and maintain a well-organized project structure.
             </p>
             
-            <a href="/#/library/tools/hierarchyEditor" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Hierarchy Editor</h4></a>
+            <a href="/#/magikus/tools/hierarchyEditor" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Hierarchy Editor</h4></a>
             <p className="pad-left-3">
                 An enhanced Unity Editor tool for efficiently managing and organizing the hierarchy of GameObjects in a scene.
             </p>
 
-            <a href="/#/library/tools/curveEditor" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Curve Editor</h4></a>
+            <a href="/#/magikus/tools/curveEditor" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Curve Editor</h4></a>
             <p className="pad-left-3">
                 The Curve Editor is a powerful Unity Editor that simplifies the creation and editing of animation curves, enabling developers to achieve precise and dynamic animations with an intuitive interface.
             </p>
 
-            <a href="/#/library/tools/referenceConsole" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Reference Console</h4></a>
+            <a href="/#/magikus/tools/referenceConsole" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Reference Console</h4></a>
             <p className="pad-left-3">
                 A powerful Editor Window for managing and tracking object references, ensuring integrity and efficiency in Unity projects.
             </p>
 
-            <a href="/#/library/tools/scriptManager" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Script Manager</h4></a>
+            <a href="/#/magikus/tools/scriptManager" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Script Manager</h4></a>
             <p className="pad-left-3">
                 The Script Manager is a powerful Unity Editor that streamlines script organization and management, providing essential insights and customization options for projects.
             </p>

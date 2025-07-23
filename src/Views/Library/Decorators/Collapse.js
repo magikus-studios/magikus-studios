@@ -23,8 +23,8 @@ export default function Function() {
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2 pad-bottom-2">
-                The Collapse decorator includes two core tools: the <b2>[Collapse]</b2> attribute and the ListC{"<T>"} class. 
-                The <b2>[Collapse]</b2> attribute allows classes and structs to be collapsible while the ListC{"<T>"} class, on the other hand, extends Unity's built-in List{"<T>"} by providing a serialized, editable list interface in the Inspector. 
+                The Collapse decorator includes two core tools: the <b2>[Collapse]</b2> attribute and the Clist{"<T>"} class. 
+                The <b2>[Collapse]</b2> attribute allows classes and structs to be collapsible while the Clist{"<T>"} class, on the other hand, extends Unity's built-in List{"<T>"} by providing a serialized, editable list interface in the Inspector. 
                 This interface includes the ability to expand and collapse lists, making it easier to navigate and manage extensive data collections within Unity. 
                 Together, these tools streamline development by keeping the Inspector organized and efficient.
             </p>
@@ -46,19 +46,19 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-            <Group title="ListC Class" content={(
+            <Group title="Clist Class" content={(
                 <div>
                     <p>
-                        The ListC{"<T>"} class is a custom collection, designed to offer a serialized, editable list of items in Unity's Inspector. 
+                        The Clist{"<T>"} class is a custom collection, designed to offer a serialized, editable list of items in Unity's Inspector. 
                         It extends the functionality of Unity's built-in List{"<T>"} by providing a flexible and user-friendly interface for managing lists directly within the Unity editor. 
-                        The ListC structure enhances the inspector experience, allowing users to expand and collapse the list, making it easier to navigate and manage large collections of data.
+                        The Clist structure enhances the inspector experience, allowing users to expand and collapse the list, making it easier to navigate and manage large collections of data.
                     </p>
                     <h5 className="c-light-1">Constructors</h5>
                     <ul className="property-list">
-                        <li><b1>ListC</b1>()</li>
-                        <li><b1>ListC</b1>(<b2>IEnumerable{"<T>"}</b2> <b1>collection</b1>)</li>
-                        <li><b1>ListC</b1>(<b2>int</b2> <b1>capacity</b1>)</li>
-                        <li><b1>ListC</b1>(<b2>List{"<T>"}</b2> <b1>list</b1>)</li>
+                        <li><b1>Clist</b1>()</li>
+                        <li><b1>Clist</b1>(<b2>IEnumerable{"<T>"}</b2> <b1>collection</b1>)</li>
+                        <li><b1>Clist</b1>(<b2>int</b2> <b1>capacity</b1>)</li>
+                        <li><b1>Clist</b1>(<b2>List{"<T>"}</b2> <b1>list</b1>)</li>
                     </ul>
                     <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
@@ -108,7 +108,7 @@ export default function Function() {
                 <div>
                     <img className="block-center mar-bottom-3 img-border" src="images/Library/Decorators/Collapse/Collapse - 11.jpg" alt=""/>            
                     <p>
-                        This example demonstrates how to create and use a ListC{"<int>"} to store integers. 
+                        This example demonstrates how to create and use a Clist{"<int>"} to store integers. 
                         The list is populated with three integers, and the first element is printed to the console.
                     </p>
                     <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Collapse/Collapse - 04.gif" alt=""/>            
@@ -119,7 +119,7 @@ export default function Function() {
                 <div>
                     <img className="block-center mar-bottom-3 img-border" src="images/Library/Decorators/Collapse/Collapse - 14.jpg" alt=""/>            
                     <p>
-                        This example demonstrates how to use ListC to manage a list of custom objects, such as Item. 
+                        This example demonstrates how to use Clist to manage a list of custom objects, such as Item. 
                         The list is used to store Item objects, and the name of the second item is printed to the console.
                     </p>
                     <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Collapse/Collapse - 05.gif" alt=""/>            
@@ -130,7 +130,7 @@ export default function Function() {
                 <div>
                     <img className="block-center mar-bottom-3 img-border" src="images/Library/Decorators/Collapse/Collapse - 17.jpg" alt=""/>            
                     <p>
-                        This example shows how to initialize a ListC{"<string>"} with a custom capacity. 
+                        This example shows how to initialize a Clist{"<string>"} with a custom capacity. 
                         The list is created with a capacity of 5, and two strings are added to it.
                     </p>
                     <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Collapse/Collapse - 06.gif" alt=""/>            
