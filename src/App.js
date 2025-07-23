@@ -9,12 +9,12 @@ import Magikus from 'Views/Library/Magikus';
 import LibraryInConstruction from "Views/Library/InConstruction";
 
 import LibraryMenu from "Views/Library/Library/Menu.json";
-import LibraryMain from "Views/Library/Library/_Magikus.js";
+import LibraryMain from "Views/Library/Library/MainMagikus.js";
 import LibraryInstallation from "Views/Library/Library/Installation.js";
 import LibraryChangelog from "Views/Library/Library/Changelog.js";
 import LibraryLicense from "Views/Library/Library/License.js";
 
-import LibraryDecorators from "Views/Library/Decorators/_Decorators.js";
+import LibraryDecorators from "Views/Library/Decorators.js";
 import LibraryDecoratorsConditional from "Views/Library/Decorators/Conditional.js";
 import LibraryDecoratorsLine from "Views/Library/Decorators/Line.js";
 import LibraryDecoratorsTitle from "Views/Library/Decorators/Title.js";
@@ -28,7 +28,7 @@ import LibraryDecoratorsDebutton from "Views/Library/Decorators/Debutton.js";
 import LibraryDecoratorsCreate from "Views/Library/Decorators/Create.js";
 import LibraryDecoratorsKeycode from "Views/Library/Decorators/Keycode.js";
 
-import LibraryUtilities from "Views/Library/Utilities/_Utilities.js";
+import LibraryUtilities from "Views/Library/Utilities.js";
 import LibraryUtilitiesCreate from "Views/Library/Utilities/Create.js";
 import LibraryUtilitiesAdapt from "Views/Library/Utilities/Adapt.js";
 import LibraryUtilitiesControls from "Views/Library/Utilities/Controls.js";
@@ -40,7 +40,7 @@ import LibraryUtilitiesMathop from "Views/Library/Utilities/Mathop.js";
 import LibraryUtilitiesTextop from "Views/Library/Utilities/Textop.js";
 import LibraryUtilitiesListop from "Views/Library/Utilities/Listop.js";
 
-import LibraryStructures from "Views/Library/Structures/_Structures.js";
+import LibraryStructures from "Views/Library/Structures.js";
 import LibraryStructuresGrids from "Views/Library/Structures/Grids.js";
 import LibraryStructuresToggles from "Views/Library/Structures/Toggles.js";
 import LibraryStructuresFlexors from "Views/Library/Structures/Flexors.js";
@@ -49,13 +49,13 @@ import LibraryStructuresTier from "Views/Library/Structures/Tier.js";
 import LibraryStructuresSwitches from "Views/Library/Structures/Switches.js";
 import LibraryStructuresDebase from "Views/Library/Structures/Debase.js";
 
-import LibraryMachines from "Views/Library/Machines/_Machines.js";
+import LibraryMachines from "Views/Library/Machines.js";
 import LibraryMachinesUpdater from "Views/Library/Machines/Updater.js";
 import LibraryMachinesCycle from "Views/Library/Machines/Cycle.js";
 import LibraryMachinesState from "Views/Library/Machines/State.js";
 import LibraryMachinesTween from "Views/Library/Machines/Tween.js";
 
-import LibrarySystems from "Views/Library/Systems/_Systems.js";
+import LibrarySystems from "Views/Library/Systems.js";
 import LibrarySystemsPool from "Views/Library/Systems/Pool.js";
 import LibrarySystemsLabel from "Views/Library/Systems/Label.js";
 import LibrarySystemsTimescale from "Views/Library/Systems/Timescale.js";
@@ -66,7 +66,7 @@ import LibrarySystemsAudio from "Views/Library/Systems/Audio.js";
 import LibrarySystemsDialog from "Views/Library/Systems/Dialog.js";
 import LibrarySystemsNavigation from "Views/Library/Systems/Navigation.js";
 
-import LibraryTools from "Views/Library/Tools/_Tools.js";
+import LibraryTools from "Views/Library/Tools.js";
 import LibraryToolsHierarchyEditor from "Views/Library/Tools/HierarchyEditor.js";
 import LibraryToolsCurveEditor from "Views/Library/Tools/CurveEditor.js";
 import LibraryToolsReferenceConsole from "Views/Library/Tools/ReferenceConsole.js";
