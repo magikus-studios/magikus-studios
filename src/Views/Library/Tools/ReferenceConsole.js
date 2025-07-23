@@ -32,7 +32,7 @@ export default function Function() {
             <Group title="Access" content={(
                 <div>
                     <p>
-                        In Unity, navigate to <b1>Magikus {">"} Reference Console</b1> from the top menu. This will open the Reference Console window, which you can dock anywhere within the Unity Editor interface.
+                        In Unity, navigate to <b1>Window {">"} Magikus {">"} Reference Console</b1> from the top menu. This will open the Reference Console window, which you can dock anywhere within the Unity Editor interface.
                     </p>
                     <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Tools/ReferenceConsole/Reference Console - 06.jpg" alt=""/>
                 </div>

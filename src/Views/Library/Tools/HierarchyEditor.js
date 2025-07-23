@@ -30,9 +30,9 @@ export default function Function() {
             <Group title="Access" content={(
                 <div>
                     <p>
-                        In Unity, navigate to <b1>Magikus {">"} Hierarchy Editor</b1> from the top menu to open the Hierarchy editor window.
+                        In Unity, navigate to <b1>Window {">"} Magikus {">"} Hierarchy Editor</b1> from the top menu to open the Hierarchy editor window.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Tools/HierarchyEditor/Hierarchy Editor - 07.gif" alt=""/>
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Tools/HierarchyEditor/Hierarchy Editor - 05.jpg" alt=""/>
                 </div>
             )}/>
             <Group title="Interface" content={(

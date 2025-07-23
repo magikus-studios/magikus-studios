@@ -36,10 +36,10 @@ export default function Function() {
                 <li><b1>Refresh Data</b1>: Use the Refresh button to manually refresh the script data if needed.</li>
                 <li><b1>Toggle Auto-Refresh</b1>: Use the Auto Refresh button to enable or disable automatic project refreshes.</li>
             </ul>
-            <Group title="Access the Script Manager" content={(
+            <Group title="Access" content={(
                 <div>
                     <p>
-                        Go to <b1>Magikus {">"} Script Manager</b1> in the Unity menu bar to open the tool.
+                        Go to <b1>Window {">"} Magikus {">"} Script Manager</b1> in the Unity menu bar to open the tool.
                     </p>
                     <img className="block-center mar-vertical-3 img-border w-50" src="images/Library/Tools/ScriptManager/Script Manager - 07.jpg" alt=""/>            
                 </div>
