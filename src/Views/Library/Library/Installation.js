@@ -20,7 +20,7 @@ export default function Function() {
             <p className="pad-left-2">
                 Download the <b1>Magikus</b1> package from the Unity Asset Store and start using the powerful tools it offers.
                 <br/>
-                You can get the package at this <a className="t-dec-none c-light-0 c-light-4-h" href="https://assetstore.unity.com/publishers/72471" target="_blank"> link </a>.
+                You can get the package at this <a className="t-dec-none c-light-0 c-light-4-h" href="https://assetstore.unity.com/publishers/72471" target="_blank" rel="noopener noreferrer"> link </a>.
             </p>
             <h4 className="c-light-1 pad-left-2">Import the Package into your Unity Project</h4>
             <p className="pad-left-2">

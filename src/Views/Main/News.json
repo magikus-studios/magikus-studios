@@ -1,8 +1,16 @@
 [
     {
+        "title": "Whats Next?",
+        "description": "Magikus V3.0 Package is coming soon!",
+        "link": "/#/magikus",
+        "hide": false,
+        "news": true
+    }
+    ,{
         "title": "20/08/25: New Realease!",
         "description": "Magikus V3.0 Package released! Check out its new features!",
         "link": "/#/magikus",
+        "hide": true,
         "news": true
     }
 ]

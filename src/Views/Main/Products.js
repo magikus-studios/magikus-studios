@@ -15,7 +15,7 @@ export default function Function() {
                             else {
                                 return (
                                     <div className="container d-flex row">           
-                                        <a href={card.link} className="t-dec-none col-12" target={(card.newTab)?"_blank":"_self"}>
+                                        <a href={card.link} className="t-dec-none col-12" target={(card.newTab)?"_blank":"_self"}  rel="noopener noreferrer">
                                             <div className="p-1">
                                                 <h4 className="c-red text-left mar-bottom-0">{ card.title }</h4>
                                                 <p className="c-red text-justify mar-bottom-0">{ card.description }</p>
@@ -39,12 +39,12 @@ export default function Function() {
                                     <div className="container d-flex h-100 productBorder">
                                         <div className="row">
 
-                                        <a href={card.link} className="o-hiden col-sm-12 col-md-5 col-lg-4 col-xl-3" target={(card.newTab)?"_blank":"_self"}>
+                                        <a href={card.link} className="o-hiden col-sm-12 col-md-5 col-lg-4 col-xl-3" target={(card.newTab)?"_blank":"_self"} rel="noopener noreferrer">
                                             <div className="h-100 jumbotron d-flex align-items-center p-2">
                                                 <img className="cardBlock-img img-fluid img-border" src={card.image} alt="" />
                                             </div>
                                         </a>
-                                        <a href={card.link} className="t-dec-none col-sm-12 col-md-7 col-lg-8 col-xl-9" target={(card.newTab)?"_blank":"_self"}>
+                                        <a href={card.link} className="t-dec-none col-sm-12 col-md-7 col-lg-8 col-xl-9" target={(card.newTab)?"_blank":"_self"} rel="noopener noreferrer">
                                             <div className="p-3">
                                                 <h2 className="c-light-2 text-left">{ card.title }</h2>
                                                 <p className="c-light-2 text-justify">{ card.description }</p>
