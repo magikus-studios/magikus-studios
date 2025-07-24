@@ -4,7 +4,7 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from 'Views/Main/Header';
 import Footer from 'Views/Main/Footer';
 import Home from 'Views/Main/Home';
-import AboutUs from 'Views/Main/AboutUs';
+import About from 'Views/Main/About';
 import Magikus from 'Views/Library/Magikus';
 import LibraryInConstruction from "Views/Library/InConstruction";
 
@@ -88,7 +88,7 @@ export default function App() {
         <Header/>
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
-          <Route exact path="/aboutUs" element={<AboutUs/>}></Route>
+          <Route exact path="/about" element={<About/>}></Route>
           
           <Route exact path="/magikus" element={<Magikus content={<LibraryMain />} menu={LibraryMenu} />}></Route>
           <Route exact path="/magikus/installation" element={<Magikus content={<LibraryInstallation />} menu={LibraryMenu} />}></Route>

@@ -13,7 +13,7 @@ export default function Function()
                 </div>
                 <div className="col-8 align-self-center"></div>
                 <div className="col-2 align-self-center">
-                    <a href="/#/aboutUs" className="c-light-2 t-dec-none c-light-3-h">
+                    <a href="/#/about" className="c-light-2 t-dec-none c-light-3-h">
                         <h5 className="m-auto">About</h5>
                     </a>
                 </div>
