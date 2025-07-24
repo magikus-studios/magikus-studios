@@ -1,17 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.da056a31.css",
-    "main.js": "/static/js/main.af49e13f.js",
+    "main.css": "/static/css/main.87570bf2.css",
+    "main.js": "/static/js/main.9f5b6c33.js",
     "static/js/787.005324cb.chunk.js": "/static/js/787.005324cb.chunk.js",
-    "static/media/Magikus - Label with Logo (512).png": "/static/media/Magikus - Label with Logo (512).0c3e39908e571813b85b.png",
-    "static/media/Star Seamless Pattern - Blur 1.png": "/static/media/Star Seamless Pattern - Blur 1.1e14ac740cfa9a19d2c3.png",
+    "static/media/Seamless Pattern - Mountain - V8.png": "/static/media/Seamless Pattern - Mountain - V8.80f2ec45a3c3f7155fb0.png",
+    "static/media/Seamless Pattern - Mountain - V9.png": "/static/media/Seamless Pattern - Mountain - V9.81c0233fb6e0d98b74f1.png",
+    "static/media/Seamless Pattern - Ground - Blur 0 - V2.png": "/static/media/Seamless Pattern - Ground - Blur 0 - V2.455d54b3d2945cac6ab6.png",
+    "static/media/Seamless Pattern - Star - Blur 0 - V2.png": "/static/media/Seamless Pattern - Star - Blur 0 - V2.2156774bc351527601a6.png",
+    "static/media/Seamless Pattern - Background - 08.png": "/static/media/Seamless Pattern - Background - 08.2ffcf2b00e9d2a7e3814.png",
+    "static/media/Seamless Pattern - Background - 11.png": "/static/media/Seamless Pattern - Background - 11.115660cb2d0f160fb883.png",
+    "static/media/Seamless Pattern - Clouds - 2 - V6.png": "/static/media/Seamless Pattern - Clouds - 2 - V6.1e1aaaa8a841486f2102.png",
+    "static/media/Seamless Pattern - Clouds - 3 - V6.png": "/static/media/Seamless Pattern - Clouds - 3 - V6.daf148d5a819a2730288.png",
     "index.html": "/index.html",
-    "main.da056a31.css.map": "/static/css/main.da056a31.css.map",
-    "main.af49e13f.js.map": "/static/js/main.af49e13f.js.map",
+    "main.87570bf2.css.map": "/static/css/main.87570bf2.css.map",
+    "main.9f5b6c33.js.map": "/static/js/main.9f5b6c33.js.map",
     "787.005324cb.chunk.js.map": "/static/js/787.005324cb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.da056a31.css",
-    "static/js/main.af49e13f.js"
+    "static/css/main.87570bf2.css",
+    "static/js/main.9f5b6c33.js"
   ]
 }
