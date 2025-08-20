@@ -1,16 +1,23 @@
 [
     {
         "title": "Whats Next?",
-        "description": "Magikus V3.0 Package is coming soon!",
+        "description": "Magikus V3.0 package is coming soon!",
         "link": "/#/magikus",
-        "hide": false,
+        "hide": true,
         "news": true
     }
     ,{
-        "title": "20/08/25: New Realease!",
-        "description": "Magikus V3.0 Package released! Check out its new features!",
+        "title": "Coming Soon!",
+        "description": "Magikus V3.0 package launches Aug 19, save the date!",
         "link": "/#/magikus",
         "hide": true,
+        "news": true
+    }
+    ,{
+        "title": "Magikus is Live!",
+        "description": "Magikus V3.0 package is out now. Check it out!",
+        "link": "/#/magikus",
+        "hide": false,
         "news": true
     }
 ]

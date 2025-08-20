@@ -35,18 +35,23 @@ export default function Function() {
                     <ul className="property-list">
                         <li><b1>Toggle</b1>()</li>
                         <li><b1>Toggle</b1>(<b2>bool</b2> <b1>displayLabel</b1>)</li>
+                        <li><b1>Toggle</b1>(<b2>string</b2> <b1>color</b1>)</li>
+                        <li><b1>Toggle</b1>(<b2>bool</b2> <b1>displayLabel</b1>, <b2>string</b2> <b1>color</b1>)</li>
                         <li><b1>Toggle</b1>(<b2>string</b2> <b1>onLabel</b1>, <b2>string</b2> <b1>offLabel</b1>)</li>
-                        <li><b1>Toggle</b1>(<b2>bool</b2> <b1>displayLabel</b1>, <b2>string</b2> <b1>onLabel</b1>, <b2>string</b2> <b1>offLabel</b1>, <b2>string</b2> <b1>onColor</b1>, <b2>string</b2> <b1>offColor</b1>)</li>
+                        <li><b1>Toggle</b1>(<b2>string</b2> <b1>onLabel</b1>, <b2>string</b2> <b1>offLabel</b1>, <b2>string</b2> <b1>color</b1>)</li>
+                        <li><b1>Toggle</b1>(<b2>string</b2> <b1>onLabel</b1>, <b2>string</b2> <b1>offLabel</b1>, <b2>string</b2> <b1>onColor</b1>, <b2>string</b2> <b1>offColor</b1>)</li>
                         <li><b1>Toggle</b1>(<b2>bool</b2> <b1>displayLabel</b1>, <b2>string</b2> <b1>onLabel</b1>, <b2>string</b2> <b1>offLabel</b1>)</li>
+                        <li><b1>Toggle</b1>(<b2>bool</b2> <b1>displayLabel</b1>, <b2>string</b2> <b1>onLabel</b1>, <b2>string</b2> <b1>offLabel</b1>, <b2>string</b2> <b1>color</b1>)</li>
                         <li><b1>Toggle</b1>(<b2>bool</b2> <b1>displayLabel</b1>, <b2>string</b2> <b1>onLabel</b1>, <b2>string</b2> <b1>offLabel</b1>, <b2>string</b2> <b1>onColor</b1>, <b2>string</b2> <b1>offColor</b1>)</li>
                     </ul>
                     <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>bool</b2> <b1>displayLabel</b1>: A boolean that determines whether the label for the toggle should be displayed. Default is true.</li>
-                        <li><b2>string</b2> <b1>onLabel</b1>: A string representing the label for the "On" state. Default is "On".</li>                        
-                        <li><b2>string</b2> <b1>offLabel</b1>: A string representing the label for the "Off" state. Default is "Off".</li>                        
-                        <li><b2>string</b2> <b1>onColor</b1>: A Color representing the color for the "On" state. Default is a red color (#FF6E40).</li>                        
-                        <li><b2>string</b2> <b1>offColor</b1>: A Color representing the color for the "Off" state. Default is a blue color (#81B4FF).</li>                        
+                        <li><b2>string</b2> <b1>onLabel</b1>: A string representing the label for the "ON" state. Default is "ON".</li>                        
+                        <li><b2>string</b2> <b1>offLabel</b1>: A string representing the label for the "OFF" state. Default is "OFF".</li>                        
+                        <li><b2>string</b2> <b1>color</b1>: A Color representing the color for the "ON" and "OFF" state.</li>                        
+                        <li><b2>string</b2> <b1>onColor</b1>: A Color representing the color for the "ON" state. Default is a red color (#FF6E40).</li>                        
+                        <li><b2>string</b2> <b1>offColor</b1>: A Color representing the color for the "OFF" state. Default is a blue color (#81B4FF).</li>                        
                     </ul>
                 </div>
             )}/>

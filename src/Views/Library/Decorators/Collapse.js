@@ -37,12 +37,21 @@ export default function Function() {
                     </p>
                     <h5 className="c-light-1">Constructors</h5>
                     <ul className="property-list">
-                        <li><b1>Collapse</b1>()</li>
-                        <li><b1>Collapse</b1>(<b2>string</b2> <b1>label</b1>)</li>                    
+                        <li><b1>Collapse</b1>(<b2>string</b2> <b1>label = ""</b1>, <b2>FontStyle</b2> <b1>fontstyle = FontStyle.Normal</b1>)</li>                    
+                        <li><b1>Collapse</b1>(<b2>string</b2> <b1>label</b1>, <b2>string</b2> <b1>color</b1>)</li>                    
+                        <li><b1>Collapse</b1>(<b2>string</b2> <b1>label</b1>, <b2>string</b2> <b1>closeColor</b1>, <b2>string</b2> <b1>closeColor</b1>)</li>                    
+                        <li><b1>Collapse</b1>(<b2>FontStyle</b2> <b1>fontstyle</b1>, <b2>string</b2> <b1>color</b1>)</li>                    
+                        <li><b1>Collapse</b1>(<b2>FontStyle</b2> <b1>fontstyle</b1>, <b2>string</b2> <b1>closeColor</b1>, <b2>string</b2> <b1>closeColor</b1>)</li>                    
+                        <li><b1>Collapse</b1>(<b2>string</b2> <b1>label</b1>, <b2>FontStyle</b2> <b1>fontstyle</b1>, <b2>string</b2> <b1>color</b1>)</li>                    
+                        <li><b1>Collapse</b1>(<b2>string</b2> <b1>label</b1>, <b2>FontStyle</b2> <b1>fontstyle</b1>, <b2>string</b2> <b1>closeColor</b1>, <b2>string</b2> <b1>closeColor</b1>)</li>                    
                     </ul>
                     <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>string</b2> <b1>label</b1>: A custom label for the collapsible section. If no label is provided, the default field name will be used as the label. Default is “”.</li>                    
+                        <li><b2>string</b2> <b1>fontstyle</b1>: The font style for the collapsible section label. Default is <b1>FontStyle.Normal</b1>.</li>                    
+                        <li><b2>string</b2> <b1>color</b1>: The text color for the collapsible section label.</li>                    
+                        <li><b2>string</b2> <b1>closeColor</b1>: The text color for the collapsible section label when it's collapsed.</li>                    
+                        <li><b2>string</b2> <b1>openColor</b1>: The text color for the collapsible section label when it's expanded.</li>                    
                     </ul>
                 </div>
             )}/>

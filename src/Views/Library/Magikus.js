@@ -41,7 +41,7 @@ export default function Function(props) {
                             <div className="ta-left col-6">{path}</div>
                             <div className="ta-right col-6">
                                 <h6 className="c-light-0 pt-2 pb-2">
-                                    <a className="t-dec-none c-light-0 c-light-4-h" href="https://assetstore.unity.com/publishers/72471" target="_blank" rel="noopener noreferrer">
+                                    <a className="t-dec-none c-light-0 c-light-4-h" href="https://assetstore.unity.com/packages/slug/327267" target="_blank" rel="noopener noreferrer">
                                             Download
                                     </a>
                                 </h6>

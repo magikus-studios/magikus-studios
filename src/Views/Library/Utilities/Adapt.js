@@ -298,7 +298,7 @@ export default function Function() {
                     <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
                         <li><b2>string</b2> <b1>colorTag</b1>: The name of the color or a hexadecimal color string</li>                    
-                        <em>Options:</em> <b1>red</b1> | <b1>blue</b1> | <b1>yellow</b1> | <b1>green</b1> | <b1>white</b1> | <b1>grey</b1> | <b1>black</b1> | <b1>hex</b1>
+                        <em>Options:</em> <b1>red</b1> | <b1>blue</b1> | <b1>yellow</b1> | <b1>green</b1> | <b1>white</b1> | <b1>grey</b1> | <b1>darkgrey</b1> | <b1>black</b1> | <b1>hex</b1>
                     </ul>
                 </div>
             )}/>
