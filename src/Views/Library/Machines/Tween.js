@@ -200,7 +200,6 @@ export default function Function() {
                 </div>
             )}/>
 
-
             <h3 className="p-2">Examples</h3>
             <p className="pad-left-2">
                 To use Tween Machines, instantiate the desired tween class and configure its parameters as needed. 

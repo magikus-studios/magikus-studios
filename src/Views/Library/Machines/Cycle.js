@@ -204,10 +204,12 @@ export default function Function() {
                     </p>
                     <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
-                        <li><b2>ICycle</b2> <b1>Curve</b1>(<b2>Action{"<float>"}</b2> <b1>cycleAction</b1>, <b2>AnimationCurve</b2> <b1>curve</b1>): Creates a simple curve cycle.</li>
-                        <li><b2>ICycle</b2> <b1>Curve</b1>(<b2>Action{"<ICycle, float>"}</b2> <b1>cycleAction</b1>, <b2>AnimationCurve</b2> <b1>curve</b1>): Creates a simple curve cycle.</li>
-                        <li><b2>ICycle</b2> <b1>Cycle</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<float>"}</b2> <b1>cycleAction</b1>): Extension method for AnimationCurve objects that creates a curve cycle.</li>
-                        <li><b2>ICycle</b2> <b1>Cycle</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<ICycle, float>"}</b2> <b1>cycleAction</b1>): Extension method for AnimationCurve objects that creates a curve cycle.</li>
+                        <li><b2>ICycle</b2> <b1>CurveCycle</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<float>"}</b2> <b1>cycleAction</b1>): Extension method for AnimationCurve objects that creates a curve cycle.</li>
+                        <li><b2>ICycle</b2> <b1>CurveCycle</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<ICycle, float>"}</b2> <b1>cycleAction</b1>): Extension method for AnimationCurve objects that creates a curve cycle.</li>
+                        <li><b2>ICycle</b2> <b1>LerpCurveCycle</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<float>"}</b2> <b1>cycleAction</b1>, <b2>float</b2> <b1>origin</b1>, <b2>float</b2> <b1>target</b1>): Extension method for AnimationCurve objects that creates a lerp curve cycle.</li>
+                        <li><b2>ICycle</b2> <b1>LerpCurveCycle</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<ICycle, float>"}</b2> <b1>cycleAction</b1>, <b2>float</b2> <b1>origin</b1>, <b2>float</b2> <b1>target</b1>): Extension method for AnimationCurve objects that creates a lerp curve cycle.</li>
+                        <li><b2>ICycle</b2> <b1>LerpAngleCurveCycle</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<float>"}</b2> <b1>cycleAction</b1>, <b2>float</b2> <b1>origin</b1>, <b2>float</b2> <b1>target</b1>): Extension method for AnimationCurve objects that creates a lerp curve cycle for angles.</li>
+                        <li><b2>ICycle</b2> <b1>LerpAngleCurveCycle</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<ICycle, float>"}</b2> <b1>cycleAction</b1>, <b2>float</b2> <b1>origin</b1>, <b2>float</b2> <b1>target</b1>): Extension method for AnimationCurve objects that creates a lerp curve cycle for angles.</li>
                     </ul>
                     <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
@@ -217,6 +219,8 @@ export default function Function() {
                         <li><b2>float</b2> <b1>secondsToTravel</b1>: The duration of the curve in seconds.</li>                      
                         <li><b2>UPDATER_TYPE</b2> <b1>type</b1> (optional): The type of updater to use.</li>
                         <li><b2>ITimescale</b2> <b1>timescale</b1> (optional): The timescale to apply to the cycle.</li>
+                        <li><b2>float</b2> <b1>origin</b1>: The starting value of the lerp operation.</li>                        
+                        <li><b2>float</b2> <b1>target</b1>: The end value of the lerp operation.</li>                        
                     </ul>
                 </div>
             )}/>
