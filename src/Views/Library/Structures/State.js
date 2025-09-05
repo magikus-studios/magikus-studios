@@ -73,14 +73,14 @@ export default function Function() {
                     <p>
                         This example demonstrates the basic setup of a state machine with three simple states, each executing a console log action when active.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-95" src="images/Library/Machines/State/State - 01.jpg" alt=""/>
+                    <img className="block-center mar-bottom-3 img-border w-95" src="images/Library/Structures/State/State - 01.jpg" alt=""/>
                     <ul>
                         <li><b>Creating the State Machine</b>: First create an instance of the StateMachine class, specifying the state type as string.</li>
                         <li><b>Adding States</b>: Use the AddState method to add three states: "Idle", "Running" and "Jumping". Each state has an associated action that prints a message to the console. This action will be executed whenever the state is active.</li>
                         <li><b>Setting the Initial State</b>: Set the initial state to "Idle" using the SetState method.</li>                
                         <li><b>Starting the State Machine</b>: Finally, call the Play method to start the state machine, allowing it to begin executing the actions associated with the current state.</li>
                     </ul>
-                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Machines/State/State - 01.gif" alt=""/>
+                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Structures/State/State - 01.gif" alt=""/>
                 </div>
             )}/>
             <Group title="Example 02: Using Before and After State Actions" content={(
@@ -89,12 +89,12 @@ export default function Function() {
                         In this example, the additional beforeStateAction and afterStateAction provide hooks for performing operations 
                         during state transitions, such as logging or setting up/cleaning up resources.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-95" src="images/Library/Machines/State/State - 02.jpg" alt=""/>
+                    <img className="block-center mar-bottom-3 img-border w-95" src="images/Library/Structures/State/State - 02.jpg" alt=""/>
                     <p>
                         It defines two states, "Idle" and "Running", each with corresponding debug logs for when the state is entered, updated or exited. 
                         The machine switches between these states based on user input (WASD keys) and showcases how to use the SetStateIfDifferent, Play and Pause methods to control state transitions during gameplay.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Machines/State/State - 02.gif" alt=""/>
+                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Structures/State/State - 02.gif" alt=""/>
                 </div>
             )}/>
             <Group title="Example 03: Using Enums" content={(
@@ -103,14 +103,14 @@ export default function Function() {
                         This example showcases how to manage and transition between multiple states dynamically using enums instead of strings. 
                         Using enums as state names makes code a lot more reliable and maintainable. 
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-95" src="images/Library/Machines/State/State - 03.jpg" alt=""/>
+                    <img className="block-center mar-bottom-3 img-border w-95" src="images/Library/Structures/State/State - 03.jpg" alt=""/>
                     <p>
                         It defines three states (Idle, Running, Jumping) and assigns actions to each. 
                         When the Play() method is called, the state machine starts in the Idle state and updates every UpdateRate seconds. 
                         Based on player input, the state transitions between Running, Jumping and back to Idle, with each state logging a message to the console. 
                         The Stop() method pauses the state machine.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Machines/State/State - 03.gif" alt=""/>
+                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Structures/State/State - 03.gif" alt=""/>
                 </div>
             )}/>
 

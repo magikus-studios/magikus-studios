@@ -6,7 +6,7 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center pad-top-4">Cycle Machine</h1>
+            <h1 className="text-center pad-top-4">Cycles</h1>
             <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
                 Structure for Managing Repetitive Actions in Unity 
             </h6>
@@ -21,7 +21,7 @@ export default function Function() {
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">
-                The primary purpose of the Cycle Machine is to provide a flexible and robust mechanism for executing repeated actions in a game. 
+                The primary purpose of Cycles is to provide a flexible and robust mechanism for executing repeated actions in a game. 
                 It can be used to manage animations, periodic updates or any repetitive tasks that need to be executed at regular intervals.
                 <br/>
                 Some of the use cases are:
@@ -39,6 +39,34 @@ export default function Function() {
                 with specific timing constraints and patterns, making them highly useful in game development, simulations 
                 and other applications requiring timed or repeated actions.
             </p>
+
+            <Group title="IUpdater Interface" content={(
+                <div>
+                    <h5 className="c-light-0">Properties</h5>
+                    <ul className="property-list">
+                        <li><b2>UPDATER_TYPE</b2> <b1>Type</b1>: Property representing the type of updater (Regular, Fixed, Late, Async).</li>
+                        <li><b2>float</b2> <b1>UnscaledDeltaTime</b1>: Property representing the unscaled delta time for the update.</li>
+                        <li><b2>float</b2> <b1>DeltaTime</b1>: Property representing the delta time for the update.</li>
+                    </ul>
+                    <h5 className="c-light-0">Methods</h5>
+                    <ul className="property-list">
+                        <li><b2>void</b2> <b1>Subscribe</b1>(<b2>Action</b2> <b1>action</b1>): Method to subscribe an action to the updater.</li>
+                        <li><b2>void</b2> <b1>Unsubscribe</b1>(<b2>Action</b2> <b1>action</b1>): Method to unsubscribe an action from the updater.</li>               
+                    </ul>
+                </div>
+            )}/>
+            <Group title="Updater Class" content={(
+                <div>
+                    <p>
+                        The primary purpose of Updaters is to allow developers to subscribe and unsubscribe actions to specific update cycles, enabling controlled and organized execution of periodic tasks. 
+                        This tool ensures that developers can manage updates efficiently without the need of a monobehaviour update method, leading to better performance and cleaner code.
+                    </p>
+                    <h5 className="c-light-0">Methods</h5>
+                    <ul className="property-list">
+                        <li><b2>static IUpdater</b2> <b1>Get</b1>(<b2>UPDATER_TYPE</b2> <b1>type</b1> = <b2>UPDATER_TYPE.Regular</b2>): Static method to retrieve an updater of the specified type.</li>
+                    </ul>
+                </div>               
+            )}/>
             <Group title="ICycle" content={(                
                 <div>
                     <h5 className="c-light-1">Properties</h5>
@@ -204,12 +232,12 @@ export default function Function() {
                     </p>
                     <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
-                        <li><b2>ICycle</b2> <b1>CurveCycle</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<float>"}</b2> <b1>cycleAction</b1>): Extension method for AnimationCurve objects that creates a curve cycle.</li>
-                        <li><b2>ICycle</b2> <b1>CurveCycle</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<ICycle, float>"}</b2> <b1>cycleAction</b1>): Extension method for AnimationCurve objects that creates a curve cycle.</li>
-                        <li><b2>ICycle</b2> <b1>LerpCurveCycle</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<float>"}</b2> <b1>cycleAction</b1>, <b2>float</b2> <b1>origin</b1>, <b2>float</b2> <b1>target</b1>): Extension method for AnimationCurve objects that creates a lerp curve cycle.</li>
-                        <li><b2>ICycle</b2> <b1>LerpCurveCycle</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<ICycle, float>"}</b2> <b1>cycleAction</b1>, <b2>float</b2> <b1>origin</b1>, <b2>float</b2> <b1>target</b1>): Extension method for AnimationCurve objects that creates a lerp curve cycle.</li>
-                        <li><b2>ICycle</b2> <b1>LerpAngleCurveCycle</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<float>"}</b2> <b1>cycleAction</b1>, <b2>float</b2> <b1>origin</b1>, <b2>float</b2> <b1>target</b1>): Extension method for AnimationCurve objects that creates a lerp curve cycle for angles.</li>
-                        <li><b2>ICycle</b2> <b1>LerpAngleCurveCycle</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<ICycle, float>"}</b2> <b1>cycleAction</b1>, <b2>float</b2> <b1>origin</b1>, <b2>float</b2> <b1>target</b1>): Extension method for AnimationCurve objects that creates a lerp curve cycle for angles.</li>
+                        <li><b2>ICycle</b2> <b1>Cycle</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<float>"}</b2> <b1>cycleAction</b1>): Extension method for AnimationCurve objects that creates a curve cycle.</li>
+                        <li><b2>ICycle</b2> <b1>Cycle</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<ICycle, float>"}</b2> <b1>cycleAction</b1>): Extension method for AnimationCurve objects that creates a curve cycle.</li>
+                        <li><b2>ICycle</b2> <b1>LerpCycle</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<float>"}</b2> <b1>cycleAction</b1>, <b2>float</b2> <b1>origin</b1>, <b2>float</b2> <b1>target</b1>): Extension method for AnimationCurve objects that creates a lerp curve cycle.</li>
+                        <li><b2>ICycle</b2> <b1>LerpCycle</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<ICycle, float>"}</b2> <b1>cycleAction</b1>, <b2>float</b2> <b1>origin</b1>, <b2>float</b2> <b1>target</b1>): Extension method for AnimationCurve objects that creates a lerp curve cycle.</li>
+                        <li><b2>ICycle</b2> <b1>LerpAngleCycle</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<float>"}</b2> <b1>cycleAction</b1>, <b2>float</b2> <b1>origin</b1>, <b2>float</b2> <b1>target</b1>): Extension method for AnimationCurve objects that creates a lerp curve cycle for angles.</li>
+                        <li><b2>ICycle</b2> <b1>LerpAngleCycle</b1>(<b2>this AnimationCurve</b2> <b1>curve</b1>, <b2>Action{"<ICycle, float>"}</b2> <b1>cycleAction</b1>, <b2>float</b2> <b1>origin</b1>, <b2>float</b2> <b1>target</b1>): Extension method for AnimationCurve objects that creates a lerp curve cycle for angles.</li>
                     </ul>
                     <h5 className="c-light-1">Parameters</h5>
                     <ul className="property-list">
@@ -237,7 +265,20 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-            <Group title="Example 02: Simple Cycle Creation" content={(
+            <Group title="Example 02: Basic Usage of the Updater Machine" content={(
+                <div>
+                    <p>
+                        This example shows the basic usage of the Updater Machine: 
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Cycle/Cycle - 03.jpg" alt=""/>
+                    <ul>
+                        <li><b>Retrieve an Updater Instance</b>: Use the Updater.Get method to obtain an instance of the desired updater type.</li>
+                        <li><b>Subscribe Actions</b>: Attach actions to the updater using the Subscribe method.</li>
+                        <li><b>Unsubscribe Actions</b>: Remove actions from the updater using the Unsubscribe method when they are no longer needed.</li>
+                    </ul>
+                </div>               
+            )}/>
+            <Group title="Example 03: Simple Cycle Creation" content={(
                 <div>
                     <p>
                         This is a Unity script that demonstrates the use of a cycle machine. It is intended to be attached to a GameObject in a Unity scene.
@@ -248,20 +289,20 @@ export default function Function() {
                         The Update method allows for real-time control of the cycle. 
                         It listens for specific key inputs: pressing the "P" key pauses the cycle, the "U" key resumes it if paused and the "F" key ends the cycle.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Cycle/Cycle - 01.jpg" alt=""/>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Cycle/Cycle - 01.jpg" alt=""/>
                     <p>
                         This setup demonstrates how to use the Magikus Library to create and manage a cycle, with built-in logging for different 
                         cycle events and keyboard controls for dynamic interaction during runtime.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Machines/Cycle/Cycle - 01.gif" alt=""/>
+                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Structures/Cycle/Cycle - 01.gif" alt=""/>
                 </div>
             )}/>
-            <Group title="Example 03: Creating Cycles with Cycles Class" content={(
+            <Group title="Example 04: Creating Cycles with Cycles Class" content={(
                 <div>
                     <p>
                         This example demonstrates how to create and control different types of timed cycles using the Cycles class. 
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Cycle/Cycle - 02.jpg" alt=""/>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Cycle/Cycle - 02.jpg" alt=""/>
                     <p>
                         The script initializes four types of cycles (Pulse, Burst, Delay and Curve) and allows the user to start or stop them using keyboard input (P, B, D, C keys respectively). 
                         Each cycle triggers specific actions with defined timing behavior: 
@@ -269,19 +310,19 @@ export default function Function() {
                     <p>
                         Pulse repeats an action. 
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Machines/Cycle/Cycle - 02.gif" alt=""/>
+                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Structures/Cycle/Cycle - 02.gif" alt=""/>
                     <p>
                         Burst performs rapid repetitions. 
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Machines/Cycle/Cycle - 03.gif" alt=""/>
+                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Structures/Cycle/Cycle - 03.gif" alt=""/>
                     <p>
                         Delay schedules an action after a wait. 
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Machines/Cycle/Cycle - 04.gif" alt=""/>
+                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Structures/Cycle/Cycle - 04.gif" alt=""/>
                     <p>
                         Curve smoothly interpolates values over time. 
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Machines/Cycle/Cycle - 05.gif" alt=""/>
+                    <img className="block-center mar-bottom-3 img-border w-55" src="images/Library/Structures/Cycle/Cycle - 05.gif" alt=""/>
                     <p>
                         The system ensures cycles can be started, stopped and cleaned up efficiently.
                     </p>
@@ -291,6 +332,8 @@ export default function Function() {
 
             <h3 className="p-2">Notes</h3>
             <ul>
+                <li>Updater instances have a lifespan mechanism that destroys them if no actions are subscribed for a certain period (5 seconds by default).</li>
+                <li>Updaters support multiple update types, allowing developers to choose the most appropriate for their needs.</li>
                 <li>The cycle can be set to operate in two modes: Time-based and Frame-based. Choose the mode based on your specific needs.</li>
                 <li>Ensure that any actions attached to the cycle do not cause significant delays to avoid impacting the cycle's timing accuracy.</li>
                 <li>Use WaitFor to synchronize multiple cycles and ensure they start in the correct order.</li>

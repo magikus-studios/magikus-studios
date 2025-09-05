@@ -7,8 +7,8 @@
             { "label": "Changelog", "link": "/#/magikus/changelog" },
             { "label": "License", "link": "/#/magikus/license" }
         ]
-    },
-    {
+    }
+    ,{
         "label": "Utilities",
         "items": [
             { "label": "[Utilities]", "link": "/#/magikus/utilities" },
@@ -23,8 +23,8 @@
             { "label": "Controls", "link": "/#/magikus/utilities/controls", "hide": false },
             { "label": "Datafile", "link": "/#/magikus/utilities/datafile", "hide": false }
         ]
-    },
-    {
+    }
+    ,{
         "label": "Decorators",
         "items": [
             { "label": "[Decorators]", "link": "/#/magikus/decorators" },
@@ -41,8 +41,8 @@
             { "label": "Message", "link": "/#/magikus/decorators/message", "hide": false },
             { "label": "Bar", "link": "/#/magikus/decorators/bar", "hide": false }
         ]
-    },
-    {
+    }
+    ,{
         "label": "Structures",
         "items": [
             { "label": "[Structures]", "link": "/#/magikus/structures" },
@@ -50,39 +50,30 @@
             { "label": "Toggles", "link": "/#/magikus/structures/toggles" },
             { "label": "Flexors", "link": "/#/magikus/structures/flexors" },
             { "label": "Switches", "link": "/#/magikus/structures/switches" },
-            { "label": "Ranges", "link": "/#/magikus/structures/ranges", "hide": true  },
-            { "label": "Tier", "link": "/#/magikus/structures/tier", "hide": true  },
+            { "label": "Tiers", "link": "/#/magikus/structures/tier"  },
+            { "label": "Cycles", "link": "/#/magikus/structures/cycle"},
+            { "label": "State Machines", "link": "/#/magikus/structures/state"},
+            { "label": "Tweens", "link": "/#/magikus/structures/tween"},
             { "label": "Grids", "link": "/#/magikus/structures/grids", "hide": true  }
         ]
-    },
-    {
-        "label": "Machines",
-        "hide": false,
-        "items": [
-            { "label": "[Machines]", "link": "/#/magikus/machines", "hide": false  },
-            { "label": "Updater Machine", "link": "/#/magikus/machines/updater", "hide": false  },
-            { "label": "Cycle Machine", "link": "/#/magikus/machines/cycle", "hide": false  },
-            { "label": "State Machine", "link": "/#/magikus/machines/state", "hide": false  },
-            { "label": "Tween Machine", "link": "/#/magikus/machines/tween", "hide": false  }
-        ]
-    },
-    {
+    }
+    ,{
         "label": "Systems",
         "hide": false,
         "items": [
             { "label": "[Systems]", "link": "/#/magikus/systems", "hide": false  },
-            { "label": "Label System", "link": "/#/magikus/systems/label", "hide": false  },
-            { "label": "Timescale System", "link": "/#/magikus/systems/timescale", "hide": false  },
-            { "label": "SOAP System", "link": "/#/magikus/systems/SOAP", "hide": false  },
-            { "label": "Pool System", "link": "/#/magikus/systems/pool", "hide": false  },
-            { "label": "Animation System *", "link": "/#/magikus/systems/animation", "hide": true },
-            { "label": "Tweak System *", "link": "/#/magikus/systems/tweak", "hide": true },
-            { "label": "Audio System *", "link": "/#/magikus/systems/audio", "hide": true },
+            { "label": "Labels", "link": "/#/magikus/systems/label", "hide": false  },
+            { "label": "Timescale", "link": "/#/magikus/systems/timescale", "hide": false  },
+            { "label": "SOAP", "link": "/#/magikus/systems/SOAP", "hide": false  },
+            { "label": "Pool", "link": "/#/magikus/systems/pool", "hide": false  },
+            { "label": "Animation", "link": "/#/magikus/systems/animation", "hide": true },
+            { "label": "Tweak", "link": "/#/magikus/systems/tweak", "hide": true },
+            { "label": "Audio", "link": "/#/magikus/systems/audio", "hide": true },
             { "label": "Dialog System *", "link": "/#/magikus/systems/dialog", "hide": true },
             { "label": "Navigation System *", "link": "/#/magikus/systems/navigation", "hide": true }
         ]
-    },
-    {
+    }
+    ,{
         "label": "Tools",
         "hide": false,
         "items": [

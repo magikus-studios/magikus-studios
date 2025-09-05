@@ -1,5 +1,22 @@
 [
-    {
+        {
+            "version": "3.1.0",
+            "date": "2025-10-19",
+            "added": [
+                { "feature": "Structure: Tier" }
+
+                ,{ "feature": "System: Audio" }
+                ,{ "feature": "System: Animation" }
+                ,{ "feature": "System: Tweak" }
+            ],
+            "changed": [
+                { "feature": "Utilities: Controls - Added Features" }
+                ,{ "feature": "Utilities: Audio" }
+                ,{ "feature": "Utilities: Animation" }
+                ,{ "feature": "Utilities: Tweak" }
+            ]
+        },
+       {
         "version": "3.0.0",
         "date": "2025-08-19",
         "added": [

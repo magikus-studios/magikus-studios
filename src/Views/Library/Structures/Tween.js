@@ -6,7 +6,7 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center pad-top-4">Tween Machine</h1>
+            <h1 className="text-center pad-top-4">Tweens</h1>
             <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
                 Smooth Animations and Transitions for GameObjects in Unity
             </h6>
@@ -210,12 +210,12 @@ export default function Function() {
                     <p>
                         This example demonstrates how to smoothly move a GameObject between two positions.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Tween/Tween - 01.jpg" alt=""/>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Tween/Tween - 01.jpg" alt=""/>
                     <p>
                         By pressing the M key, the object transitions between its original position and a target position using a specified easing type and duration. 
                         The script uses the MoveTo method along with an easing function and an OnFinish callback to handle movement and animation state toggling.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Tween/Tween - 01.gif" alt=""/>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Tween/Tween - 01.gif" alt=""/>
                 </div>
             )}/>
             <Group title="Example 02: Rotate a GameObject" content={(
@@ -223,12 +223,12 @@ export default function Function() {
                     <p>
                         This example demonstrates how to smoothly rotate a GameObject.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Tween/Tween - 02.jpg" alt=""/>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Tween/Tween - 02.jpg" alt=""/>
                     <p>
                         When the S key is pressed, the Spin() method triggers a tween animation that rotates the object by a specified value over a given duration using the selected easing type. 
                         A flag prevents multiple tweens from playing simultaneously and the animation resets the flag once completed.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-20" src="images/Library/Machines/Tween/Tween - 02.gif" alt=""/>
+                    <img className="block-center mar-bottom-3 img-border w-20" src="images/Library/Structures/Tween/Tween - 02.gif" alt=""/>
                 </div>
             )}/>
             <Group title="Example 03: Scale a GameObject Up" content={(
@@ -236,12 +236,12 @@ export default function Function() {
                     <p>
                         This example demonstrates how to smoothly scale a GameObject up or down with easing.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Tween/Tween - 03.jpg" alt=""/>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Tween/Tween - 03.jpg" alt=""/>
                     <p>
                         When the G key is pressed, the object scales by a specified amount over a set duration, using the selected easing type.
                         It toggles between scaling up and scaling back down and ensures only one animation plays at a time using state flags.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-20" src="images/Library/Machines/Tween/Tween - 03.gif" alt=""/>
+                    <img className="block-center mar-bottom-3 img-border w-20" src="images/Library/Structures/Tween/Tween - 03.gif" alt=""/>
                 </div>
             )}/>
             <Group title="Example 04: Fade Out a SpriteRenderer" content={(
@@ -249,12 +249,12 @@ export default function Function() {
                     <p>
                         This example demonstrates how to fade in a SpriteRenderer using a tween animation. 
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Tween/Tween - 04.jpg" alt=""/>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Tween/Tween - 04.jpg" alt=""/>
                     <p>
                         When the user presses the F key, the script triggers a fade-in effect that smoothly transitions the sprite’s opacity to fully visible (alpha = 1) over a specified duration using a chosen easing function. 
                         The tween plays only once at a time and resets its state after completion, ensuring clean and controlled visual transitions.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-20" src="images/Library/Machines/Tween/Tween - 04.gif" alt=""/>
+                    <img className="block-center mar-bottom-3 img-border w-20" src="images/Library/Structures/Tween/Tween - 04.gif" alt=""/>
                 </div>
             )}/>
             <Group title="Example 05: Change the Tint of a SpriteRenderer" content={(
@@ -262,12 +262,12 @@ export default function Function() {
                     <p>
                         This example demonstrates how to smoothly tint a SpriteRenderer. 
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Machines/Tween/Tween - 05.jpg" alt=""/>
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Tween/Tween - 05.jpg" alt=""/>
                     <p>
                         When the T key is pressed, the script animates the color transition of the target sprite between its original color and a specified tint using a defined easing function and duration.
                         The animation plays only when not already in progress and automatically resets once complete, enabling toggling between tinted and original colors.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-20" src="images/Library/Machines/Tween/Tween - 05.gif" alt=""/>
+                    <img className="block-center mar-bottom-3 img-border w-20" src="images/Library/Structures/Tween/Tween - 05.gif" alt=""/>
                 </div>
             )}/>
 

@@ -275,6 +275,23 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
+            <Group title="PrintAll" content={(
+                <div>
+                    <p>
+                        Prints an etire List or Array of strings into one string separated by new lines to the console.
+                    </p>
+                    <h5 className="c-light-1">Signature</h5>
+                    <ul className="property-list">
+                        <li><b2>static void</b2> <b1>Print</b1>(<b2>this List{"<string>"}</b2> <b1>list</b1>)</li>
+                        <li><b2>static void</b2> <b1>Print</b1>(<b2>this string[]</b2> <b1>array</b1>)</li>
+                    </ul>
+                    <h5 className="c-light-1">Parameters</h5>
+                    <ul className="property-list">
+                        <li><b2>List{"<string>"}</b2> <b1>list</b1>: The list of string to print to the console</li>                    
+                        <li><b2>string[]</b2> <b1>array</b1>: The array of string to print to the console</li>                    
+                    </ul>
+                </div>
+            )}/>
             <Group title="AddColorTag" content={(
                 <div>
                     <p>

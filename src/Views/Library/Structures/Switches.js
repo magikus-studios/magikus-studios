@@ -76,6 +76,10 @@ export default function Function() {
                     <h5 className="c-light-1">Methods</h5>
                     <ul className="property-list">
                         <li><b2>void</b2> <b1>TryGetComponents</b1>(<b2>GameObject</b2> <b1>gameObject</b1>): Tries to get the current active component in the GameObject provided</li>
+                        <li><b2>void</b2> <b1>TrySetFont</b1>(<b2>Font</b2> <b1>font</b1>): Tries to set the font to the Text value if it is not null.</li>
+                        <li><b2>void</b2> <b1>TrySetFont</b1>(<b2>TMP_FontAsset</b2> <b1>font</b1>): Tries to set the font to the Text_TMP value if it is not null.</li>
+                        <li><b2>void</b2> <b1>TrySetFont</b1>(<b2>TextSwitch</b2> <b1>text</b1>): Tries to set the font to the Text value or the Text_TPM value if any of them are not null.</li>
+                        <li><b2>void</b2> <b1>TrySetFont</b1>(<b2>Font</b2> <b1>font</b1>, <b2>TMP_FontAsset</b2> <b1>font</b1>): Tries to set the font to the Text value or the Text_TPM value if any of them are not null.</li>
                     </ul>
                 </div>
             )}/>
@@ -112,7 +116,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-{/*
             <Group title="BoolSwitch" content={(
                 <div>
                     <h5 className="c-light-1">Properties</h5>
@@ -230,7 +233,7 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-*/}
+
 
             <h3 className="p-2">Examples</h3>
             <Group title="Example 01: Using a Custom Switch" content={(

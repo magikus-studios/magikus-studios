@@ -8,7 +8,7 @@ export default function Function() {
         <div className="c-light-2">
             <h1 className="text-center pad-top-4">Structures</h1>
             <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
-                Data Structures that provide Essential Building Blocks for Game Development
+                Data and Dynamic Structures that provide Essential Building Blocks for Game Development
             </h6>
 
             <h3 className="p-2">Overview</h3>
@@ -38,17 +38,28 @@ export default function Function() {
                 The Switch structure and its variations provide a way to manage and select different value types within a single object, enhancing script maintainability and scalability by allowing state-dependent value selection directly in Unity's Inspector.
             </p>
 
-{/* 
-            <a href="/#/magikus/structures/ranges" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Ranges</h4></a>
-            <p className="pad-left-3">
-                The Range structure is a versatile tool for defining and manipulating value ranges, supporting any type that implements the IComparable interface and offering flexibility for diverse range-based logic in projects.
-            </p>
-
             <a href="/#/magikus/structures/tier" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Tier</h4></a>
             <p className="pad-left-3">
-                The Tier structure adds event-driven logic to the Range structure, automatically triggering actions when a value is evaluated against a range.
+                The Tier Structure defines numeric ranges and automates state transitions, eliminating repetitive conditional checks.
             </p>
 
+            <a href="/#/magikus/structures/cycle" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Cycles</h4></a>
+            <p className="pad-left-3">
+                The Cycle machine is a flexible tool for creating and managing time- or frame-based looping behaviors in Unity, with event handling and control features that enhance game development efficiency and gameplay.
+            </p>
+
+            <a href="/#/magikus/structures/state" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">State Machine</h4></a>
+            <p className="pad-left-3">
+                The State machine is a versatile framework for managing complex state transitions in Unity, enhancing code organization, maintainability and efficiency across applications like game mechanics, UI and gameflow control.
+            </p>
+
+            <a href="/#/magikus/structures/tween" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Tweens</h4></a>
+            <p className="pad-left-3">
+                Tween machines provide a powerful and flexible way to animate GameObject properties (like position, rotation, scale and color) over time in Unity, enabling developers to create smooth, professional-grade animations through scripting with minimal effort.
+            </p>
+
+
+{/* 
             <a href="/#/magikus/structures/grids" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Grids</h4></a>
             <p className="pad-left-3">
                 The Grid structures module provides classes for creating and managing grids, streamlining tasks like pathfinding and spatial data handling in game development.
