@@ -57,12 +57,12 @@ export default function Function(props) {
         <div>
             <Group title={"Version " + props.version + " | " + featuresAmount} subtitle={"[" + props.date + "]"} content={(
                 <div>
-                    {addedFeatures}
-                    {changedFeatures}
-                    {depricatedFeatures}
-                    {removedFeatures}
-                    {fixedFeatures}
-                    {securityFeatures}
+                    {props.added == null? null : addedFeatures}
+                    {props.changed == null? null : changedFeatures}
+                    {props.depricated == null? null : depricatedFeatures}
+                    {props.removed == null? null : removedFeatures}
+                    {props.fixed == null? null : fixedFeatures}
+                    {props.security == null? null : securityFeatures}
                 </div>
             )}/>
         </div>

@@ -1,19 +1,22 @@
 [
         {
             "version": "3.1.0",
-            "date": "2025-10-19",
-            "added": [
+            "date": "Soon"
+            ,"added": [
                 { "feature": "Structure: Tier" }
-
-                ,{ "feature": "System: Audio" }
-                ,{ "feature": "System: Animation" }
-                ,{ "feature": "System: Tweak" }
-            ],
-            "changed": [
+            ]
+            ,"changed": [
                 { "feature": "Utilities: Controls - Added Features" }
-                ,{ "feature": "Utilities: Audio" }
-                ,{ "feature": "Utilities: Animation" }
-                ,{ "feature": "Utilities: Tweak" }
+                ,{ "feature": "Decorators: Collapse - Added Features" }
+                ,{ "feature": "Decorators: Toggle - Added Features" }
+                ,{ "feature": "Decorators: Title - Added Features" }
+                ,{ "feature": "Structure: Toggle - Added Features" }
+                ,{ "feature": "Structure: Tweens - Added Features" }
+                ,{ "feature": "Machines: All machines where added as Structures to the structure module and the machines module was removed" }
+                ,{ "feature": "Machines: Updaters where placed inside Cycles" }
+            ]
+            ,"fixed": [
+                { "feature": "Script Manager: Fixed bug that caused icons not to be setted in newer Unity versions." }
             ]
         },
        {
