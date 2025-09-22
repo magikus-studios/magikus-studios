@@ -17,6 +17,9 @@ export default function Function() {
                 They are particularly valuable for developers who need to adapt types frequently in their applications, providing a flexible and efficient solution to common programming tasks.
                 By offering a range of conversions, from booleans to vectors, colors and actions, these utilities enhance code readability, reduce boilerplate and improve the overall developer experience. 
             </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Utilities/Adapt/Adapt - 09.jpg" alt=""/>            
+            </div>
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">

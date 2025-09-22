@@ -17,6 +17,9 @@ export default function Function() {
                 These utilities not only speed up development but also enhance the natural feel of in-game dynamics, making them invaluable for any game development project requiring randomness.
                 Whether you’re generating random points in a 3D space, selecting random items from an array or applying random colors to visual elements, the Randop methods are efficient and easy to implement. 
             </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border w-35" src="images/Library/Utilities/Randop/Randop - 09.jpg" alt=""/>            
+            </div>
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">

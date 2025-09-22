@@ -24,7 +24,15 @@
         "title": "New Update Soon!",
         "description": "Magikus V3.1 package is out soon. Tier Structure added! Check the changelog for more info.",
         "link": "/#/magikus",
+        "hide": true,
+        "news": true
+    }
+    ,{
+        "title": "New Update!",
+        "description": "Magikus V3.1 package is live. Tier Structure added! Check the changelog for more info.",
+        "link": "/#/magikus",
         "hide": false,
         "news": true
     }
+
 ]

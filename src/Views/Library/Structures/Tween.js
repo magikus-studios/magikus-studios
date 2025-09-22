@@ -18,6 +18,9 @@ export default function Function() {
                 By leveraging these tools via code, developers can create smooth, polished animations with minimal effort. 
                 Whether you need to move, rotate, scale, fade or tint an object, Tween machines provide the scripting functionality necessary to achieve professional-grade animations.
             </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border w-35" src="images/Library/Structures/Tween/Tween - 06.jpg" alt=""/>            
+            </div>
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">

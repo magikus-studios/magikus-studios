@@ -20,7 +20,7 @@ export default function Function() {
                 By using this attribute, developers can create a more user-friendly and informative Inspector, leading to improved workflows and a better understanding of the underlying code and data.
             </p>
             <div className="p-2">
-                <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Decorators/Message/Message - 04.jpg" alt=""/>              
+                <img className="block-center mar-bottom-3 img-border w-75" src="images/Library/Decorators/Message/Message - 04.jpg" alt=""/>              
             </div>
 
             <h3 className="p-2">Introduction</h3>

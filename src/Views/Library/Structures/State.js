@@ -17,6 +17,9 @@ export default function Function() {
                 It provides a well-organized framework for handling complex state transitions, improving code organization and enhancing maintainability. 
                 With its structured approach, the State machine is an essential solution for efficiently managing dynamic states and interactions in Unity projects.
             </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Structures/State/State - 04.jpg" alt=""/>            
+            </div>
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">

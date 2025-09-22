@@ -17,6 +17,9 @@ export default function Function() {
                 By supporting multiple formats and ensuring that the data is saved and loaded correctly, these utilities simplify the process of handling persistent data in Unity. 
                 Whether you're saving high scores, player progress or any other type of data, these methods will help you manage it efficiently.
             </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Utilities/Datafile/Datafile - 09.jpg" alt=""/>            
+            </div>
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">

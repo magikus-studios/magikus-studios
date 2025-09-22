@@ -17,6 +17,9 @@ export default function Function() {
                 It enables developers to define and control various types of cycles, whether based on time intervals or frames, and offers event handling for start, finish and cycle events. 
                 With its flexible configuration options and robust control features, the Cycle machine simplifies the implementation of looping behaviors, making game development more efficient and enhancing the gameplay experience.                
             </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Structures/Cycle/Cycle - 04.jpg" alt=""/>            
+            </div>
 
 
             <h3 className="p-2">Introduction</h3>

@@ -17,6 +17,9 @@ export default function Function() {
                 These methods simplify common tasks like clamping, wrapping or applying arithmetic transformations, making them invaluable for game development and UI manipulation. 
                 By offering consistent method signatures across different types, they ensure that developers can handle complex mathematical computations with minimal effort.
             </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border w-30" src="images/Library/Utilities/Mathop/Mathop - 07.jpg" alt=""/>            
+            </div>
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">

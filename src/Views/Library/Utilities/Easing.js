@@ -17,6 +17,9 @@ export default function Function() {
                 With different easing types and multiple variations, you can fine-tune the motion effects to fit your specific needs. 
                 Whether you're animating UI elements, creating game effects or just adding a touch of polish to your project, these utilities offer a wide range of possibilities for enhancing the user experience.
             </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Utilities/Easing/Easing - 09.jpg" alt=""/>            
+            </div>
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">

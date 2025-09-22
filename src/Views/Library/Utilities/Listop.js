@@ -16,6 +16,9 @@ export default function Function() {
                 The Listop utilities provide a powerful and flexible set of static and extension methods for manipulating arrays and lists, making them especially useful in game development where such manipulations are common. 
                 These utilities allow developers to streamline their workflows by offering intuitive, easy-to-use functions for handling complex list and array operations.
             </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Utilities/Listop/Listop - 09.jpg" alt=""/>            
+            </div>
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">

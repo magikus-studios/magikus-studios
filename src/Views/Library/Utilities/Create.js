@@ -17,6 +17,9 @@ export default function Function() {
                 Its methods support various ways of initializing these types, making it easier to handle different scenarios in Unity development. 
                 By using the Create class, you can write more concise and readable code, enhancing your workflow in Unity projects.
             </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Utilities/Create/Create - 09.jpg" alt=""/>            
+            </div>
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">

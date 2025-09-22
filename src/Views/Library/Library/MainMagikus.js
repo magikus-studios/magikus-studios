@@ -34,11 +34,6 @@ export default function Function() {
                 The Structures module offers essential building blocks that streamline game development by simplifying code, enhancing flexibility and promoting a modular, decoupled architecture for easier maintenance and adaptation in Unity.
             </p>
 
-            <a href="/#/magikus/machines" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Machines</h4></a>
-            <p className="pad-left-3">
-                The Machines module provides dynamic data structures that simplify time-based, state-driven and animated tasks, enabling developers to focus on creativity over complex implementation.    
-            </p>
-
             <a href="/#/magikus/systems" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Systems</h4></a>
             <p className="pad-left-3">
                 The Systems module offers pre-built, easily integrable solutions that simplify essential game development tasks, allowing developers to focus on gameplay with minimal coding, while providing flexibility and customization directly through Unity’s editor.                

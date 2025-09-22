@@ -17,6 +17,9 @@ export default function Function() {
                 Whether you're counting occurrences, modifying content or checking for specific patterns, these utilities are designed to make string manipulation easy and intuitive. 
                 By using the powerful methods available, developers can streamline complex string-related tasks and ensure that their applications handle text data effectively.
             </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Utilities/Textop/Textop - 07.jpg" alt=""/>            
+            </div>
 
             <h3 className="p-2">Introduction</h3>
             <p className="pad-left-2">
