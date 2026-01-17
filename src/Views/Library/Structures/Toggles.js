@@ -19,7 +19,7 @@ export default function Function() {
                 The utility methods ensure that actions are executed only when relevant, resulting in cleaner and more efficient code.
             </p>
             <div className="p-2">
-                <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Toggles/Toggles - 03.jpg" alt=""/>            
+                <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/Toggles/Toggles - 03.gif" alt=""/>            
             </div>
 
             <h3 className="p-2">Introduction</h3>

@@ -6,14 +6,14 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center pad-top-4">SOAP System</h1>
+            <h1 className="text-center pad-top-4">SOAP Assets</h1>
             <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
                 Centralized Event Handling and Data Sharing with Scriptable Objects
             </h6>
 
             <h3 className="p-2">Overview</h3>
             <p className="pad-left-2 pad-bottom-2">
-                The SOAP (Scriptable Object Architecture Pattern) system in Unity enhances project modularity and efficiency by utilizing scriptable objects to facilitate communication and data management.
+                The SOAP (Scriptable Object Architecture Pattern) assets in Unity enhances project modularity and efficiency by utilizing scriptable objects to facilitate communication and data management.
                 The Event structure improves project architecture by reimagining the UnityEvent drawer, allowing events to be neatly collapsed in the Inspector with an item count display.
                 It centralizes event handling through Event assets, enabling seamless, decoupled communication between components.
                 This makes it particularly effective for managing both simple event triggers and complex asynchronous scene transitions.
@@ -21,8 +21,8 @@ export default function Function() {
                 Together, these structures promote a highly maintainable, extendable and modular Unity project architecture.
             </p>
             <div className="p-2">
-                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/SOAP/SOAP - Events - 02.jpg" alt=""/>            
-                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/SOAP/SOAP - Value Assets - 03.jpg" alt=""/>            
+                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/SOAP/SOAP - Events - 02.jpg" alt=""/>            
+                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/SOAP/SOAP - Value Assets - 03.jpg" alt=""/>            
             </div>
 
             <h3 className="p-2">Introduction</h3>
@@ -130,7 +130,7 @@ export default function Function() {
                     <ul className="property-list">
                         <li><b2>void</b2> <b1>SetFilter</b1>(<b2>Func{"<T, T>"}</b2> <b1>filter</b1>): Sets the filter to the asset</li>
                         <li><b2>void</b2> <b1>RemoveFilter</b1>(): Removes the filter from the asset</li>
-                        <li><b2>void</b2> <b1>SkipNextChange</b1>(): Skips the next value change</li>
+                        <li><b2>void</b2> <b1>SetValueWithoutNotify</b1>(<b2>{"<T>"}</b2> <b1>value</b1>): Sets the new value without triggering the onChange event</li>
                         <li><b2>void</b2> <b1>Subscribe</b1>(<b2>Action{"<T>"}</b2> <b1>action</b1>): Subscribes the action to the onChange event</li>
                         <li><b2>void</b2> <b1>Subscribe</b1>(<b2>UnityEvent{"<T>"}</b2> <b1>action</b1>): Subscribes the action to the onChange event</li>
                         <li><b2>void</b2> <b1>Unsubscribe</b1>(<b2>Action{"<T>"}</b2> <b1>action</b1>): Unsubscribes the action from the onChange event</li>
@@ -261,22 +261,22 @@ export default function Function() {
                 The Try method allows to pass a Component as a parameter. 
                 This is used to give a certain context to an Event asset invocation.
                 <br/>
-                You can create an Event asset by going to the Unity menu, <b1>Assets {">"} Create {">"} Magikus {">"} SOAP System {">"} Event Asset</b1>.
+                You can create an Event asset by going to the Unity menu, <b1>Assets {">"} Create {">"} Magikus {">"} SOAP Assets {">"} Event Asset</b1>.
             </p>
             <Group title="Example 01: Basic Event Setup" content={(
                 <div>
                     <p> 
                         This example demonstrates how to use a basic EventVoid.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Systems/SOAP/SOAP - Events - 01.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Structures/SOAP/SOAP - Events - 01.jpg" alt=""/>            
                     <p> 
                         The DefeatEnemy method is subscribed to the event through the Inspector. 
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/SOAP/SOAP - Events - 02.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/SOAP/SOAP - Events - 02.jpg" alt=""/>            
                     <p> 
                         When the script runs, it will call the event invoking all the methods subscribed to it.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Systems/SOAP/SOAP - Events - 09.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Structures/SOAP/SOAP - Events - 09.jpg" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 02: Event with Parameters" content={(
@@ -284,17 +284,17 @@ export default function Function() {
                     <p> 
                         In this example, an Event with a parameter is used instead. 
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Systems/SOAP/SOAP - Events - 03.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Structures/SOAP/SOAP - Events - 03.jpg" alt=""/>            
                     <p> 
                         There is a score int and an UpdateScore method that takes an int and logs a message with it. 
                         When the script runs the Event is called sending the score value as a parameter.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/SOAP/SOAP - Events - 04.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/SOAP/SOAP - Events - 04.jpg" alt=""/>            
                     <p> 
                         In the Inspector, the UpdateScore is subscribed dynamically to the event. 
                         This will use the value sent through the event call to the method invoked when the Event is called.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/SOAP/SOAP - Events - 10.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Structures/SOAP/SOAP - Events - 10.jpg" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 03: Setting Event Mode" content={(
@@ -306,31 +306,31 @@ export default function Function() {
                         It also has a PauseGame method that logs a message. 
                         In this case, the void Event will be set as EVENT_MODE.Sender (using the EventMode attribute) because it will only be sending calls.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Systems/SOAP/SOAP - Events - 05.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-65" src="images/Library/Structures/SOAP/SOAP - Events - 05.jpg" alt=""/>            
                     <p> 
                         The second script will be the listener script. 
                         This script will contain another void Event but this time it will be set to EVENT_MODE.Listener because we only want this event to be listening to an Event asset. 
                         To do this, we have to make sure that the Event is linked to the asset. 
                         This is done in the awake function. It also contains a function that prints another message.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Events - 06.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/SOAP/SOAP - Events - 06.jpg" alt=""/>            
                     <p> 
                         Back in the Editor, there is an Event asset created called Event Asset Example. 
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Events - 07.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/SOAP/SOAP - Events - 07.jpg" alt=""/>            
                     <p> 
                         In the inspector, the PauseGame method is subscribed to the onGamePaused Event, the PrintMessageWithAsset is subscribed to the onAssetCall Event and the Event asset is set to both Events.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Events - 08.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/SOAP/SOAP - Events - 08.jpg" alt=""/>            
                     <p> 
                         When the Run() method is called, both events will trigger.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/SOAP/SOAP - Events - 11.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/SOAP/SOAP - Events - 11.jpg" alt=""/>            
                 </div>
             )}/>
 
             <p className="pad-left-2 pad-top-2">
-                You can create a Value Asset by going to the Unity menu, <b1>Assets {">"} Create {">"} Magikus {">"} SOAP System {">"} [Type] Asset</b1>, (replacing [type] with the specific Value Asset type required). 
+                You can create a Value Asset by going to the Unity menu, <b1>Assets {">"} Create {">"} Magikus {">"} SOAP Assets {">"} [Type] Asset</b1>, (replacing [type] with the specific Value Asset type required). 
                 <br/>
                 To implement them, add the Value Asset field in your scripts and drag and drop the asset onto the desired component's field in the Inspector or assign it through code. 
                 <br/>
@@ -341,16 +341,16 @@ export default function Function() {
                     <p> 
                         In this example, a FloatAsset Scriptable Object is created and linked to a script. 
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Value Assets - 01.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/SOAP/SOAP - Value Assets - 01.jpg" alt=""/>            
                     <p> 
                         The onValueChange action is subscribed to a method (OnHealthChanged) that logs the new health value. 
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Value Assets - 02.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/SOAP/SOAP - Value Assets - 03.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/SOAP/SOAP - Value Assets - 02.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/SOAP/SOAP - Value Assets - 03.jpg" alt=""/>            
                     <p> 
                         The TakeDamage method modifies the FloatAsset value, triggering the onValueChange event.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Value Assets - 01.gif" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/SOAP/SOAP - Value Assets - 01.gif" alt=""/>            
                 </div>
             )}/>
             <Group title="Example 05: Using an IntAsset for Score Tracking" content={(
@@ -358,16 +358,16 @@ export default function Function() {
                     <p> 
                         In this example, an IntAsset Scriptable Object is created for score tracking. 
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Value Assets - 04.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/SOAP/SOAP - Value Assets - 04.jpg" alt=""/>            
                     <p> 
                         The onValueChange action updates the score display or triggers other score-related effects. 
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Value Assets - 05.jpg" alt=""/>            
-                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/SOAP/SOAP - Value Assets - 06.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/SOAP/SOAP - Value Assets - 05.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Structures/SOAP/SOAP - Value Assets - 06.jpg" alt=""/>            
                     <p> 
                         The AddScore method adjusts the IntAsset value and triggers the event.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Systems/SOAP/SOAP - Value Assets - 02.gif" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border" src="images/Library/Structures/SOAP/SOAP - Value Assets - 02.gif" alt=""/>            
                 </div>
             )}/>
 
@@ -376,7 +376,6 @@ export default function Function() {
                 <li>The Event structure is designed to minimize overhead by checking for null references and managing subscriptions effectively.</li>
                 <li>The Event drawer allows easy management of event settings and assignments directly from the Unity Inspector.</li>
                 <li>Ensure that the event assets are properly configured in the inspector to prevent runtime errors.</li>
-
                 <li>By using Value Assets, scripts can remain decoupled, which simplifies code maintenance and enhances modularity.</li>
                 <li>Ensure that all event handlers are properly unsubscribed when the script is destroyed or no longer needed to prevent memory leaks.</li>
                 <li>Value Assets can be expanded or customized to support additional types or behaviors, enhancing their utility.</li>

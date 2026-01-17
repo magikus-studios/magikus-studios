@@ -27,13 +27,13 @@ export default function Function() {
             </p>
             <ul>
                 <li><b1>PoolManager</b1>: The central controller responsible for managing object pooling, instantiating objects and handling pool constraints.</li>
-                <li><b1>PoolObjectController</b1>: Attached to individual objects, allowing them to be returned to the pool and properly managed.</li>
+                <li><b1>PoolObject</b1>: Attached to individual objects, allowing them to be returned to the pool and properly managed.</li>
                 <li><b1>PoolSettingsAsset</b1>: A configurable asset that defines pooling parameters such as the initial object count, batch size and min/max limits.</li>
             </ul>
             <p className="pad-left-2">
                 The PoolManager initializes the pool using the settings defined in PoolSettingsAsset.
                 When an object is needed, by using the <b2>SpawnObject()</b2> method, the PoolManager retrieves an available object from the pool (or instantiates a new one if necessary) and spawns it.
-                The PoolObjectController attached to the object ensures that it can be properly returned to the pool when no longer needed by calling the <b2>Kill()</b2> method.
+                The PoolObject attached to the object ensures that it can be properly returned to the pool when no longer needed by calling the <b2>Kill()</b2> method.
                 When an object is no longer in use, it is sent back to the PoolManager, where it may be deactivated (if DeactivateObjectsInPool is enabled) and stored for future use.
                 Automatic cleanup and autofill mechanisms keep the pool optimized based on the defined constraints.
             </p>
@@ -65,10 +65,10 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-            <Group title="Pool Object Controller" content={(
+            <Group title="Pool Object" content={(
                 <div>
                     <p>
-                        The PoolObjectController is attached to objects that should be pooled. 
+                        The PoolObject is attached to objects that should be pooled. 
                         It enables objects to be returned to the pool when no longer in use.
                     </p>
                     <h5 className="c-light-1">Methods</h5>
@@ -128,11 +128,11 @@ export default function Function() {
                     <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Pool/Pool - 02.jpg" alt=""/>            
                 </div>
             )}/>
-            <Group title="Step 02: Configure the PoolObjectController" content={(
+            <Group title="Step 02: Configure the PoolObject" content={(
                 <div>
                     <p> 
-                        Attach the PoolObjectController script to the objects that need pooling.
-                        You can find the PoolObjectController script in the Components menu, <b1>Magikus {">"} Pool System {">"} Pool Object Controller</b1>. 
+                        Attach the PoolObject script to the objects that need pooling.
+                        You can find the PoolObject script in the Components menu, <b1>Magikus {">"} Pool System {">"} Pool Object</b1>. 
                     </p>
                     <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Systems/Pool/Pool - 04.gif" alt=""/>            
                     <p> 

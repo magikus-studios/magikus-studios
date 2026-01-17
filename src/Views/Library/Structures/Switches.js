@@ -217,22 +217,6 @@ export default function Function() {
                     </ul>
                 </div>
             )}/>
-            <Group title="TimeScaleSwitch" content={(
-                <div>
-                    <h5 className="c-light-1">Properties</h5>
-                    <ul className="property-list">
-                        <li><b2>bool</b2> <b1>State</b1>: Reflects the current state of the switch, indicating whether it is using the TimeScale value (false) or the TimeScaleAsset value (true)</li>
-                        <li><b2>float</b2> <b1>Delta</b1>: Retrieves the active delta time value of the switch, which corresponds to its current state</li>
-                        <li><b2>float</b2> <b1>FixedDelta</b1>: Retrieves the active fixed delta time value of the switch, which corresponds to its current state</li>
-                        <li><b2>float</b2> <b1>CurrentDelta</b1>: Retrieves the active current delta time value of the switch, which corresponds to its current state</li>
-                        <li><b2>float</b2> <b1>Scale</b1>: Retrieves the active time scale value of the switch, which corresponds to its current state</li>
-                        <li><b2>bool</b2> <b1>UseUnscaledTime</b1>: Retrieves the active use of unscaled time parameter value of the switch, which corresponds to its current state</li>
-                        <li><b2>bool</b2> <b1>UseFixedTime</b1>: Retrieves the active use of fixed time parameter value of the switch, which corresponds to its current state</li>
-                        <li><b2>TimeScale</b2> <b1>TimeScaleValue</b1>: Stores the value of the associated TimeScale</li>
-                        <li><b2>TimeScaleAsset</b2> <b1>AssetValue</b1>: Stores the value of the associated TimeScaleAsset</li>
-                    </ul>
-                </div>
-            )}/>
 
 
             <h3 className="p-2">Examples</h3>

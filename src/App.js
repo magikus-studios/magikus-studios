@@ -46,15 +46,17 @@ import LibraryStructuresToggles from "Views/Library/Structures/Toggles.js";
 import LibraryStructuresFlexors from "Views/Library/Structures/Flexors.js";
 import LibraryStructuresSwitches from "Views/Library/Structures/Switches.js";
 import LibraryStructuresTier from "Views/Library/Structures/Tier.js";
+import LibraryStructuresClist from "Views/Library/Structures/Clist.js";
+import LibraryStructuresInteref from "Views/Library/Structures/Interef.js";
+import LibraryStructuresLabel from "Views/Library/Structures/Label.js";
+import LibraryStructuresTimescale from "Views/Library/Structures/Timescale.js";
+import LibraryStructuresSOAP from "Views/Library/Structures/SOAP.js";
 import LibraryStructuresCycle from "Views/Library/Structures/Cycle.js";
 import LibraryStructuresState from "Views/Library/Structures/State.js";
 import LibraryStructuresTween from "Views/Library/Structures/Tween.js";
 
 import LibrarySystems from "Views/Library/Systems.js";
 import LibrarySystemsPool from "Views/Library/Systems/Pool.js";
-import LibrarySystemsLabel from "Views/Library/Systems/Label.js";
-import LibrarySystemsTimescale from "Views/Library/Systems/Timescale.js";
-import LibrarySystemsSOAP from "Views/Library/Systems/SOAP.js";
 import LibrarySystemsAnimation from "Views/Library/Systems/Animation.js";
 import LibrarySystemsTweak from "Views/Library/Systems/Tweak.js";
 import LibrarySystemsAudio from "Views/Library/Systems/Audio.js";
@@ -125,15 +127,17 @@ export default function App() {
           <Route exact path="/magikus/structures/flexors" element={<Magikus content={<LibraryStructuresFlexors />} menu={LibraryMenu} />}></Route>
           <Route exact path="/magikus/structures/switches" element={<Magikus content={<LibraryStructuresSwitches />} menu={LibraryMenu} />}></Route>
           <Route exact path="/magikus/structures/tier" element={<Magikus content={<LibraryStructuresTier />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/magikus/structures/clist" element={<Magikus content={<LibraryStructuresClist />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/magikus/structures/interef" element={<Magikus content={<LibraryStructuresInteref />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/magikus/structures/label" element={<Magikus content={<LibraryStructuresLabel />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/magikus/structures/timescale" element={<Magikus content={<LibraryStructuresTimescale />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/magikus/structures/SOAP" element={<Magikus content={<LibraryStructuresSOAP />} menu={LibraryMenu} />}></Route>
           <Route exact path="/magikus/structures/cycle" element={<Magikus content={<LibraryStructuresCycle />} menu={LibraryMenu} />}></Route>
           <Route exact path="/magikus/structures/state" element={<Magikus content={<LibraryStructuresState />} menu={LibraryMenu} />}></Route>
           <Route exact path="/magikus/structures/tween" element={<Magikus content={<LibraryStructuresTween />} menu={LibraryMenu} />}></Route>
           
           <Route exact path="/magikus/systems" element={<Magikus content={<LibrarySystems />} menu={LibraryMenu} />}></Route>
           <Route exact path="/magikus/systems/pool" element={<Magikus content={<LibrarySystemsPool />} menu={LibraryMenu} />}></Route>
-          <Route exact path="/magikus/systems/label" element={<Magikus content={<LibrarySystemsLabel />} menu={LibraryMenu} />}></Route>
-          <Route exact path="/magikus/systems/timescale" element={<Magikus content={<LibrarySystemsTimescale />} menu={LibraryMenu} />}></Route>
-          <Route exact path="/magikus/systems/SOAP" element={<Magikus content={<LibrarySystemsSOAP />} menu={LibraryMenu} />}></Route>
           
           <Route exact path="/magikus/tools" element={<Magikus content={<LibraryTools />} menu={LibraryMenu} />}></Route>
           <Route exact path="/magikus/tools/hierarchyEditor" element={<Magikus content={<LibraryToolsHierarchyEditor />} menu={LibraryMenu} />}></Route>

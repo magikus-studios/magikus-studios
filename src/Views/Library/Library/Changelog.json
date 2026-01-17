@@ -1,5 +1,39 @@
 [
         {
+            "version": "4.0.0",
+            "date": "2026-TBD-TBD"
+            ,"added": [
+                { "feature": "Structure: Interef Wraper - Added Feature" }
+                ,{ "feature": "System: Audio System - Added Feature" }
+                ,{ "feature": "System: Animation System - Added Feature" }
+                ,{ "feature": "System: Tweak System - Added Feature" }
+                ,{ "feature": "System: Dialog System - Added Feature" }
+                ,{ "feature": "System: Resource System - Added Feature" }
+                ,{ "feature": "System: Health System - Added Feature" }
+                ,{ "feature": "System: Score System - Added Feature" }
+                ,{ "feature": "System: Lives System - Added Feature" }
+                ,{ "feature": "System: Level System - Added Feature" }
+            ]
+            ,"changed": [
+                { "feature": "Structure: Clist Wraper - Moved to independant structure from Collapable decorator" }
+                ,{ "feature": "Structure: Label Asset - Moved to structures from systems" }
+                ,{ "feature": "Structure: Label Asset - Label Controler was renamed to Label Gate" }
+                ,{ "feature": "Structure: Label Asset - Label Gate adds new comunication functionality" }
+                ,{ "feature": "Structure: Timescale Asset - Moved to structures from systems" }
+                ,{ "feature": "Structure: Timescale Asset - Master asset selector serialization" }
+                ,{ "feature": "Structure: Timescale Asset - Set Scale Without Notify Feature (Skip feature became depricated)" }
+                ,{ "feature": "Structure: Timescale Asset - Pause functionality added" }
+                ,{ "feature": "Structure: SOAP Asset - Moved to structures from systems" }
+                ,{ "feature": "Structure: SOAP Asset - Set Value Without Notify Feature (Skip feature became depricated)" }
+                ,{ "feature": "Structure: Debase Abstract - Debase structure became Debase Abstract" }
+                ,{ "feature": "System: Pool System - Pool Object Controller became Pool Object" }
+                ,{ "feature": "System: Pool System - Time Scale became Timescale" }
+            ]
+            ,"removed": [
+                { "feature": "Structure - Switch: Timescale Switch structrure was removed" }
+        ]
+        },
+        {
             "version": "3.1.0",
             "date": "2025-09-10"
             ,"added": [
@@ -16,7 +50,7 @@
                 ,{ "feature": "Machines: Updaters where placed inside Cycles" }
             ]
             ,"fixed": [
-                { "feature": "Script Manager: Fixed bug that caused icons not to be setted in newer Unity versions." }
+                { "feature": "Script Manager: Fixed bug that caused icons not to be setted in newer Unity versions" }
             ]
         },
        {

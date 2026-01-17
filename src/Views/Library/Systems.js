@@ -20,27 +20,25 @@ export default function Function() {
                 Each system is crafted with modularity and extensibility, ensuring easy adaptation and customization for any game project.
             </p>
 
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Library/05 - [1950x1300] Systems V2.png" alt=""/>            
+            </div>
 
-            <a href="/#/magikus/systems/label" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Label System</h4></a>
-            <p className="pad-left-3">
-                The Label structure is a scriptable object in Unity that provides an alternative to string identifiers, allowing developers to tag and categorize gameObjects and assets for improved management in complex projects.
-            </p>
-
-            <a href="/#/magikus/systems/timescale" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Timescale System</h4></a>
-            <p className="pad-left-3">
-                The Timescale system provides a solution for managing and synchronizing time across Unity objects, allowing consistent timing, independent pausing and time effects like slow motion or fast-forwarding, enhancing cohesive gameplay experiences.
-            </p>
-
-            <a href="/#/magikus/systems/SOAP" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">SOAP System</h4></a>
-            <p className="pad-left-3">
-                The SOAP system in Unity enhances modularity and efficiency by using scriptable objects to centralize event handling and data sharing, enabling decoupled communication, streamlined scene management and maintainable project architecture.
-            </p>
-
-            <a href="/#/magikus/systems/pool" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Pool System</h4></a>
-            <p className="pad-left-3">
-                The Pool system provides an optimized way to manage GameObjects in Unity by reusing inactive objects instead of destroying and recreating them reducing performance overhead related to memory allocation and garbage collection.
-            </p>
-
+            <div className="container mar-bottom-3">
+                <div className="row">
+                    <div className="col-lg-7 col-md-12">
+                        <a href="/#/magikus/systems/pool" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Pool System</h4></a>
+                        <p className="pad-left-3">
+                            The Pool system provides an optimized way to manage GameObjects in Unity by reusing inactive objects instead of destroying and recreating them reducing performance overhead related to memory allocation and garbage collection.
+                        </p>
+                    </div>
+                    <div className="p-2 col-lg-5 col-md-12">
+                        <a href="/#/magikus/systems/pool" className="t-dec-none vertical-center" onClick={scrollUp}>
+                            <img className="block-center img-border w-80" src="images/Library/Systems/Pool/Pool - 02.gif" alt=""/>            
+                        </a>
+                    </div>
+                </div>
+            </div>
 {/*
             <a href="/#/magikus/systems/animation" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Animation System</h4></a>
             <p className="pad-left-3">
