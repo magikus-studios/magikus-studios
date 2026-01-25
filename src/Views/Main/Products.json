@@ -1,13 +1,14 @@
 [
     {
         "title": "Magikus",
-        "description": "Magikus is a Unity development toolkit that streamlines development with utilities, tools and solutions boosting productivity, reducing repetitive tasks and helping developers focus on creative game logic.",
-        "description2": "It is designed to reduce boilerplate and improve code maintainability and its extensible architecture promotes decoupled design, making it ideal for scalable and efficient game development.",
-        "description3": "It is an ideal companion for game developers. Check it out!",
-        "image": "images/Products/[420x280] Magikus.png",
+        "description": "Magikus is a modular Unity development toolkit that helps you work faster, write less and stay in control by reducing boilerplate and repetitive patterns.",
+        "description2": "It provides utilities, structures and systems that improve code readability, inspector clarity and long-term maintainability through a decoupled, extensible architecture.",
+        "description3": "Designed as a practical companion for real-world game development, Magikus lets you focus on creative logic instead of fighting your tools.",
+        "image": "images/Products/[1950x1300] Magikus V2.png",
         "link": "/#/magikus",
         "newTab": false
     }
+
     ,{
         "title": "Spacesky",
         "description": "Magikus is a Unity development toolkit that streamlines development with utilities, tools and solutions boosting productivity, reducing repetitive tasks and helping developers focus on creative game logic.",
