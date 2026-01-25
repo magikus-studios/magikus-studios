@@ -34,7 +34,7 @@ export default function Function() {
                 Some of it's key benefits are that it is asset‑based and reusable, it has inspector‑driven setup, supports sequences, looping and intensity scaling, works on multiple targets at once and decouples animation logic from GameObjects.
             </p>
             <div className="p-2">
-                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Tweak/Tweak - 0.jpg" alt=""/>            
+                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Tweak/Tweak - 01.gif" alt=""/>            
             </div>
 
 
@@ -340,49 +340,65 @@ export default function Function() {
             <Group title="Step 01: Create a Tweak Asset" content={(
                 <div>
                     <p> 
-                        In the Unity menu go to <b1>Assets {">"} Create {">"} Magikus {">"} Tweak System {">"} (Position, Scale, Rotation, Color or Sequence) Tweak Asset</b1> and name the asset (e.g. UI_Pulse, Pickup_Bounce).
+                        In the Unity menu go to <b1>Assets {">"} Create {">"} Magikus {">"} Tweak System {">"} Tweak (Position, Scale, Rotation or Color) Asset</b1> and name the asset (e.g. UI_Pulse, Pickup_Bounce).
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Systems/Tweak/Tweak - 0.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-70" src="images/Library/Systems/Tweak/Tweak - 01.jpg" alt=""/>            
                     <p> 
                         Configure each tweak’s parameters (curves, durations, directions or values).
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Systems/Tweak/Tweak - 0.jpg" alt=""/>            
+                    <div className="center-content">
+                        <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Systems/Tweak/Tweak - 03.jpg" alt=""/>            
+                        <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Systems/Tweak/Tweak - 02.jpg" alt=""/>            
+                    </div>
                     <p> 
                         You can enable looping if the effect should repeat or adjust per‑step speed or ordering if using a sequence.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Systems/Tweak/Tweak - 0.jpg" alt=""/>            
                 </div>
             )}/>
-            <Group title="Step 02: Add a TweakManager to a GameObject" content={(
+            <Group title="Step 02: Create Tweak Sequences" content={(
+                <div>
+                    <p> 
+                        In the Unity menu go to <b1>Assets {">"} Create {">"} Magikus {">"} Tweak System {">"} Tweak Sequence Asset</b1> and name the asset (e.g. Jump).
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-70" src="images/Library/Systems/Tweak/Tweak - 04.jpg" alt=""/>            
+                    <p> 
+                        Add an item to the sequences list and assign Tweak Assets for each group you want to play simultaneously.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Tweak/Tweak - 05.jpg" alt=""/>            
+                    <p> 
+                        After all tweaks of a group are finished, the sequence will start the next group of tweaks.
+                    </p>
+                </div>
+            )}/>
+            <Group title="Step 03: Add a TweakManager to a GameObject" content={(
                 <div>
                     <p> 
                         Select the GameObject that will control the tweak and click "Add Component" and go to <b1>Magikus {">"} Tweak System {">"} Tweak Manager</b1>
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Systems/Tweak/Tweak - 0.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Tweak/Tweak - 02.gif" alt=""/>            
                     <p> 
                         Assign your previously created Tweak Asset.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Systems/Tweak/Tweak - 0.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Tweak/Tweak - 06.jpg" alt=""/>            
                     <p> 
                         The TweakManager acts as the playback controller for the system.
                     </p>
                 </div>
             )}/>
-            <Group title="Step 03: Assign Target GameObjects" content={(
+            <Group title="Step 04: Assign Target GameObjects" content={(
                 <div>
                     <p> 
                         In the Targets list, add one or more GameObjects.
                         If no targets are assigned, the manager will default to its own GameObject.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Systems/Tweak/Tweak - 0.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Tweak/Tweak - 07.jpg" alt=""/>            
                     <p> 
                         All targets will receive the same tweak simultaneously.
                         This makes it easy to synchronize effects across multiple objects.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Systems/Tweak/Tweak - 0.jpg" alt=""/>            
                 </div>
             )}/>
-            <Group title="Step 04: Configure Playback Settings" content={(
+            <Group title="Step 05: Configure Playback Settings" content={(
                 <div>
                     <p> 
                         From the TweakManager inspector you can configure the framerate to control how fast the tweak progresses
@@ -390,35 +406,34 @@ export default function Function() {
                         , whether the tweak should automatically play when the scene starts or when a new asset is assigned at runtime
                          or even set the timescale to determine whether the tweak uses scaled or unscaled time.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Systems/Tweak/Tweak - 0.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Tweak/Tweak - 08.jpg" alt=""/>            
                     <p> 
                         These settings allow a single asset to be reused in multiple contexts with different behaviours.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Systems/Tweak/Tweak - 0.jpg" alt=""/>            
                 </div>
             )}/>
-            <Group title="Step 05: Control the Tweak" content={(
+            <Group title="Step 06: Control the Tweak" content={(
                 <div>
                     <p> 
                         You can control playback in several ways: with inspector buttons (Play, Pause, Stop, Restart), using Unity Events or with direct method calls from other scripts.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Systems/Tweak/Tweak - 0.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Tweak/Tweak - 09.jpg" alt=""/>            
                     <p> 
                         Common use cases are triggering a tweak on interaction, or looping ambient motion or chaining effects using events.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Systems/Tweak/Tweak - 0.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Tweak/Tweak - 10.jpg" alt=""/>            
                 </div>
             )}/>
-            <Group title="Step 06: React to Events (Optional)" content={(
+            <Group title="Step 07: React to Events (Optional)" content={(
                 <div>
                     <p> 
                         The TweakManager exposes events such as OnAssetSet, OnCycleEnd and OnFinish.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Systems/Tweak/Tweak - 0.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Tweak/Tweak - 11.jpg" alt=""/>            
                     <p> 
                         These can be hooked into UnityEvents to trigger sounds, gameplay logic or additional tweaks.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Systems/Tweak/Tweak - 0.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Tweak/Tweak - 12.jpg" alt=""/>            
                 </div>
             )}/>
 

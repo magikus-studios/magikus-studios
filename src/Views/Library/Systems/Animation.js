@@ -32,7 +32,7 @@ export default function Function() {
                 Some of it's key benefits are no Animator Controllers, animation clips or state machines are required, animations are defined directly from sprite frames, clear playback logic controlled by a manager, fast iteration and easy debugging.
             </p>
             <div className="p-2">
-                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Animation/Animation - 0.jpg" alt=""/>            
+                <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Animation/Animation - 01.gif" alt=""/>            
             </div>
 
 
@@ -167,12 +167,12 @@ export default function Function() {
                     <p> 
                         Before using the system, make sure you have a sprite sheet imported into Unity or Individual sprite files.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Systems/Animation/Animation - 0.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Animation/Animation - 01.jpg" alt=""/>            
                     <p> 
                         If using a sprite sheet, set the texture’s Sprite Mode to Multiple, slice the sheet in the Sprite Editor and apply changes.
                         Each frame must be a valid Sprite.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Systems/Animation/Animation - 0.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Animation/Animation - 02.jpg" alt=""/>            
                 </div>
             )}/>
             <Group title="Step 02: Create an Framelist Asset" content={(
@@ -180,11 +180,14 @@ export default function Function() {
                     <p> 
                         In the Unity menu go to <b1>Assets {">"} Create {">"} Magikus {">"} Animation System {">"} Framelist Asset</b1> and name the asset (e.g. PlayerAnimations, ExplosionAnimations).
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Systems/Animation/Animation - 0.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-70" src="images/Library/Systems/Animation/Animation - 03.jpg" alt=""/>            
+                    <p> 
+                        Select the Framelist Asset in the Inspector and assign a list of frames (Sprites).
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Animation/Animation - 04.jpg" alt=""/>            
                     <p> 
                         This asset will store all sprite frames for a given animation.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Systems/Animation/Animation - 0.jpg" alt=""/>            
                 </div>
             )}/>
             <Group title="Step 03: Create an Animation Asset" content={(
@@ -192,24 +195,23 @@ export default function Function() {
                     <p> 
                         In the Unity menu go to <b1>Assets {">"} Create {">"} Magikus {">"} Animation System {">"} Animation Asset</b1> and name the asset (e.g. LoopAnimations, BlinkAnimations).
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Systems/Animation/Animation - 0.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-70" src="images/Library/Systems/Animation/Animation - 05.jpg" alt=""/>            
                     <p> 
                         This asset will store all settings for a given animation.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Systems/Animation/Animation - 0.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Animation/Animation - 06.jpg" alt=""/>            
                 </div>
             )}/>
             <Group title="Step 04: Define the Animation Inside the Asset" content={(
                 <div>
                     <p> 
-                        Select the Animation Asset in the Inspector and assign a list of frames (Sprites).
+                        Select the Animation Asset in the Inspector and configure playback settings such as frame rate, speed, looping behavior, optional start or end behavior.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Systems/Animation/Animation - 0.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Animation/Animation - 07.jpg" alt=""/>            
                     <p> 
-                        Configure playback settings such as frame rate, speed, looping behavior, optional start or end behavior.
                         Each animation is essentially a sequence of sprites played over time.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Systems/Animation/Animation - 0.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Animation/Animation - 08.jpg" alt=""/>            
                 </div>
             )}/>
             <Group title="Step 05: Add an Animation Manager to a GameObject" content={(
@@ -217,27 +219,32 @@ export default function Function() {
                     <p> 
                         Select the GameObject you want to animate and ensure it has a SpriteRenderer or an Image component (optional).
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Systems/Animation/Animation - 0.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Animation/Animation - 09.jpg" alt=""/>            
                     <p> 
                         Click "Add Component" and go to <b1>Magikus {">"} Animation System {">"} Animation Manager</b1>
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Systems/Animation/Animation - 0.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Animation/Animation - 02.gif" alt=""/>            
                     <p> 
                         The Animation Manager is responsible for updating the SpriteRenderer, advancing animation frames and switching animations.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Animation/Animation - 0.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Animation/Animation - 10.jpg" alt=""/>            
                 </div>
             )}/>
-            <Group title="Step 06: Assign the Animation Asset" content={(
+            <Group title="Step 06: Assign the Asset to the Manager" content={(
                 <div>
                     <p> 
-                        Select the GameObject with the Animation Manager and assign the previously created Animation Asset.
+                        Select the GameObject with the Animation Manager and assign the previously created Filelist Asset.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Systems/Animation/Animation - 0.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Animation/Animation - 11.jpg" alt=""/>            
                     <p> 
-                        Make sure that the target Renderer reference is correctly assigned.
+                        Then assign the previously created Animation Asset.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Systems/Animation/Animation - 0.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Animation/Animation - 12.jpg" alt=""/>            
+                    <p> 
+                        Make sure that the target Renderer reference is correctly assigned. 
+                        You can choose betwen an UI Image renderer or a Sprite renderer.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Animation/Animation - 13.jpg" alt=""/>            
                     <p> 
                         At this point, the manager knows which animations exist and where to render them.
                     </p>
@@ -248,7 +255,7 @@ export default function Function() {
                     <p> 
                         From the Animation Manager Inspector, configure the default or starting animation, the playback mode (loop, single play, etc.) and the timing or speed overrides (if available).
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Systems/Animation/Animation - 0.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Animation/Animation - 14.jpg" alt=""/>            
                     <p> 
                         This defines the animation behavior when the object becomes active.
                     </p>
@@ -258,9 +265,6 @@ export default function Function() {
                 <div>
                     <p> 
                         Animations can be triggered using UnityEvents, Hooks and/or Buttons.
-                    </p>
-                    <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Systems/Animation/Animation - 0.jpg" alt=""/>            
-                    <p> 
                         Common workflows include:
                         <ul>
                             <li>Playing a walk animation on movement</li>
@@ -269,6 +273,11 @@ export default function Function() {
                         </ul>
                         All of this can be wired directly from the Inspector.
                     </p>
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Animation/Animation - 15.jpg" alt=""/>            
+                    <p> 
+                        Also, you can use Animation hooks to trigger other events.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Animation/Animation - 16.jpg" alt=""/>            
                 </div>
             )}/>
             <Group title="Step 09: Test and Iterate" content={(
@@ -276,11 +285,11 @@ export default function Function() {
                     <p> 
                         Enter Play Mode and trigger animations.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Systems/Animation/Animation - 0.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-60" src="images/Library/Systems/Animation/Animation - 17.jpg" alt=""/>            
                     <p> 
                         You can adjust the frame order, the speed, the looping behaviour and the default animation at runtime.
                     </p>
-                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Systems/Animation/Animation - 0.jpg" alt=""/>            
+                    <img className="block-center mar-bottom-3 img-border w-90" src="images/Library/Systems/Animation/Animation - 03.gif" alt=""/>            
                     <p> 
                         Because animations are data-driven, iteration is fast and safe.
                     </p>

@@ -66,7 +66,7 @@ export default function Function() {
                     </div>
                     <div className="p-2 col-lg-5 col-md-12">
                         <a href="/#/magikus/systems/animation" className="t-dec-none vertical-center" onClick={scrollUp}>
-                            <img className="block-center img-border w-80" src="images/Library/Systems/Pool/Pool - 02.gif" alt=""/>            
+                            <img className="block-center img-border w-80" src="images/Library/Systems/Animation/Animation - 01.gif" alt=""/>            
                         </a>
                     </div>
                 </div>
@@ -84,7 +84,7 @@ export default function Function() {
                     </div>
                     <div className="p-2 col-lg-5 col-md-12">
                         <a href="/#/magikus/systems/tweak" className="t-dec-none vertical-center" onClick={scrollUp}>
-                            <img className="block-center img-border w-80" src="images/Library/Systems/Pool/Pool - 02.gif" alt=""/>            
+                            <img className="block-center img-border w-80" src="images/Library/Systems/Tweak/Tweak - 01.gif" alt=""/>            
                         </a>
                     </div>
                 </div>
