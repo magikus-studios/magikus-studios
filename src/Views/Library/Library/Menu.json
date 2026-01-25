@@ -70,14 +70,14 @@
     }
     ,{
         "label": "Systems",
-        "count": 1,
+        "count": 4,
         "hide": false,
         "items": [
             { "label": "[Systems]", "link": "/#/magikus/systems", "hide": false, "new": false  },
             { "label": "Pool", "link": "/#/magikus/systems/pool", "hide": false, "new": true  },
-            { "label": "Animation", "link": "/#/magikus/systems/animation", "hide": true, "new": false },
-            { "label": "Tweak", "link": "/#/magikus/systems/tweak", "hide": true, "new": false },
-            { "label": "Audio", "link": "/#/magikus/systems/audio", "hide": true, "new": false },
+            { "label": "Audio", "link": "/#/magikus/systems/audio", "hide": false, "new": true },
+            { "label": "Animation", "link": "/#/magikus/systems/animation", "hide": false, "new": true },
+            { "label": "Tweak", "link": "/#/magikus/systems/tweak", "hide": false, "new": true },
             { "label": "Dialog System *", "link": "/#/magikus/systems/dialog", "hide": true, "new": false },
             { "label": "Navigation System *", "link": "/#/magikus/systems/navigation", "hide": true, "new": false }
         ]

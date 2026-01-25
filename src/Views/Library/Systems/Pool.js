@@ -3,7 +3,6 @@ import Group from "Components/Group";
 
 export default function Function() {
 
-
     return (
         <div className="c-light-2">           
             <h1 className="text-center pad-top-4">Pool System</h1>

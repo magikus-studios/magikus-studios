@@ -39,28 +39,58 @@ export default function Function() {
                     </div>
                 </div>
             </div>
+
+            <div className="container mar-bottom-3">
+                <div className="row">
+                    <div className="col-lg-7 col-md-12">
+                        <a href="/#/magikus/systems/audio" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Audio System</h4></a>
+                        <p className="pad-left-3">
+                            The Audio System is a modular, Inspector-driven Unity framework that separates libraries, managers, mixers and channels for precise, flexible audio control without using the built-in AudioMixer.
+                        </p>
+                    </div>
+                    <div className="p-2 col-lg-5 col-md-12">
+                        <a href="/#/magikus/systems/audio" className="t-dec-none vertical-center" onClick={scrollUp}>
+                            <img className="block-center img-border w-80" src="images/Library/Systems/Audio/Audio - 02.gif" alt=""/>            
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div className="container mar-bottom-3">
+                <div className="row">
+                    <div className="col-lg-7 col-md-12">
+                        <a href="/#/magikus/systems/animation" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Animation System</h4></a>
+                        <p className="pad-left-3">
+                            The Animation System is a clean, Inspector-driven sprite animation solution for Unity that builds animations from sprite frames and plays them through a dedicated manager, offering clearer logic, faster iteration, and greater control without relying on Animator Controllers.
+                        </p>
+                    </div>
+                    <div className="p-2 col-lg-5 col-md-12">
+                        <a href="/#/magikus/systems/animation" className="t-dec-none vertical-center" onClick={scrollUp}>
+                            <img className="block-center img-border w-80" src="images/Library/Systems/Pool/Pool - 02.gif" alt=""/>            
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div className="container mar-bottom-3">
+                <div className="row">
+                    <div className="col-lg-7 col-md-12">
+                        <a href="/#/magikus/systems/tweak" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Tweak System</h4></a>
+                        <p className="pad-left-3">
+                            The Tweak system provides a dynamic solution for adjusting the position, rotation, scale and color of GameObjects 
+                            with ease. It enables developers to create intricate, animated changes to objects without having to write 
+                            custom scripts. The Tweak system supports complex tweaks, including sequences and randomized effects, for both 2D and 3D objects.
+                        </p>
+                    </div>
+                    <div className="p-2 col-lg-5 col-md-12">
+                        <a href="/#/magikus/systems/tweak" className="t-dec-none vertical-center" onClick={scrollUp}>
+                            <img className="block-center img-border w-80" src="images/Library/Systems/Pool/Pool - 02.gif" alt=""/>            
+                        </a>
+                    </div>
+                </div>
+            </div>
+
 {/*
-            <a href="/#/magikus/systems/animation" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Animation System</h4></a>
-            <p className="pad-left-3">
-                The Animation system is designed to simplify the creation and management of sprite-based animations in Unity. 
-                It consists of two core components: the Sprite Animator and the Sprite Animation Asset. Together, these tools 
-                make it easy to create, edit and control animations for SpriteRenderer and UI Image components.
-            </p>
-
-            <a href="/#/magikus/systems/tweak" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Tweak System</h4></a>
-            <p className="pad-left-3">
-                The Tweak system provides a dynamic solution for adjusting the position, rotation, scale and color of GameObjects 
-                with ease. It enables developers to create intricate, animated changes to objects without having to write 
-                custom scripts. The Tweak system supports complex tweaks, including sequences and randomized effects, for both 2D and 3D objects.
-            </p>
-
-            <a href="/#/magikus/systems/audio" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Audio System</h4></a>
-            <p className="pad-left-3">
-                The Audio system simplifies the process of managing background music, sound effects and audio events in your game. 
-                Designed for ease of use, this system enables you to control audio playback without needing to write complex audio 
-                management code. The Audio system allows developers to manage complex audio setups for their games without needing 
-                extensive scripting knowledge, making it ideal for both designers and programmers.
-            </p>
 
             <a href="/#/magikus/systems/dialog" className="t-dec-none" onClick={scrollUp}><h4 className="c-light-1 c-light-3-h p-3">Dialog System</h4></a>
             <p className="pad-left-3">

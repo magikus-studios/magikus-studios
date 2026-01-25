@@ -5,562 +5,411 @@ export default function Function() {
 
     return (
         <div className="c-light-2">           
-            <h1 className="text-center">Audio System</h1>
-            <p>
-                The Magikus Audio System is a robust collection of components and assets
-                designed to elevate audio manipulation in your projects. It offers extensive functionality
-                for managing background music and sound effects with flexibility and efficiency. With a
-                focus on ease of use, the system provides a visual interface that eliminates the need for
-                coding, while still offering high levels of customization through scripts.
+            <h1 className="text-center pad-top-4">Audio System</h1>
+            <h6 className="ts-i text-center pad-bottom-3 c-light-4 ft-secondary">
+                Modular Audio Control
+            </h6>
+            
+            <h3 className="p-2">Overview</h3>
+            <p className="pad-left-2 pad-bottom-2">
+                The Audio System provides a clean and extensible way to manage audio in Unity without relying directly on Unity’s built-in AudioMixer workflow. By separating libraries, managers, mixers and channels, it allows precise control over playback logic while remaining flexible and easy to configure in the Inspector.
+                It is well-suited for:                    
             </p>
-
-            <h2>How it Works</h2>
-            <p>
-                The Magikus Audio System consists of two primary components: the Sound
-                Manager and the Sound Library Asset. The Sound Asset, implemented as a scriptable
-                object, contains a playlist of sounds and all the essential information for each sound,
-                including volume levels, pitch levels, and various options. The Sound Manager, a
-                component attached to a game object, controls and manages the Sound Library Asset,
-                enabling sound playback and manipulation. It offers a wide range of settings to customize
-                sound management. Additionally, the system incorporates a Sound Master Asset for
-                controlling volume and pitch levels globally, along with a Label system to conveniently
-                reference sounds without relying on indices or string names.
+            <ul>
+                <li>Music systems</li>
+                <li>Ambient sound control</li>
+                <li>Layered audio playback</li>                
+                <li>Event-driven audio behaviors</li>
+            </ul>
+            <p className="pad-left-2 pad-bottom-2">
+                When combined with other Magikus systems, it becomes a powerful, scalable foundation for audio management in both small and large projects.
             </p>
+            <div className="p-2">
+                <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Audio/Audio - 01.jpg" alt=""/>            
+            </div>
 
-            <h2>Components</h2>
-
-            <Group title="Sound Manager Component" content={(
-                <div className="p-3">
-                    <p>
-                        The Sound Manager component facilitates the playback of audio clips using a list
-                        of sounds stored in a Sound Library Asset. It offers various properties and methods to
-                        control playback, volume, and other sound settings. You can play sounds, pause and
-                        unpause them, and stop them entirely. The Sound Manager also keeps track of the
-                        currently playing sound and allows seamless looping through the library.
-                    </p>
-
-
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
-                    <ul className="property-list pad-left-3">
+           <h3 className="p-2">Introduction</h3>
+            <p className="pad-left-2">
+                The Audio System provides a modular, data-driven way to manage sound playback in Unity.
+                It is built around the separation of what plays (sounds), how they are grouped (channels and mixers), and how they are controlled (managers and events).
+                The system is designed to be Inspector-friendly, Event-driven and  Compatible with Magikus utilities (Labels, Events, Timescale, Flexor).
+                At its core, the system consists of:
+            </p>
+            <ul>
+                <li><b1>AudioManager</b1>: The main runtime controller used to play, pause, stop, fade, and sequence sounds.</li>
+                <li><b1>AudioLibraryAsset</b1>: A ScriptableObject that defines and stores a collection of sounds.</li>
+                <li><b1>AudioSound</b1>: A single sound entry with playback state and AudioSource handling.</li>
+                <li><b1>AudioMixerAsset</b1>: A global mixer-like asset that controls volume and pitch per channel.</li>
+                <li><b1>AudioChannel</b1>: A runtime channel that applies volume and pitch modifiers to sounds.</li>
+            </ul>
+            <Group title="Audio Manager" content={(
+                <div>
+                    <h5 className="c-light-1">Enums</h5> 
+                    <ul className="property-list">
                         <li>
-                            <b>Play(): </b>
-                            Plays the sound at the current index in the SoundLibraryAsset. If
-                            PlayOneTrackAtATime is enabled, it stops all other sounds before playing.
-                        </li>
-                        <li>
-                            <b>Pause(): </b>
-                            Pauses the currently playing sound at the current index.
-                        </li>
-                        <li>
-                            <b>Unpause(): </b>
-                            Unpauses the currently paused sound at the current index.
-                        </li>
-                        <li>
-                            <b>Stop(): </b>
-                            Stops the currently playing or paused sound at the current index.
-                        </li>
-                        <li>
-                            <b>Next(): </b>
-                            Stops the current sound and plays the next sound in the SoundLibraryAsset.
-                            If the current sound is the last one, it loops back to the first sound.
-                        </li>
-                        <li>
-                            <b>Previous(): </b>
-                            Stops the current sound and plays the previous sound in the
-                            SoundLibraryAsset. If the current sound is the first one, it loops back to the last
-                            sound.
-                        </li>
-                        <li>
-                            <b>Random(): </b>
-                            Stops the current sound and plays a random sound from the
-                            SoundLibraryAsset.
-                        </li>
-                        <li>
-                            <b>SetVolume(float volume): </b>
-                            Sets the volume level of the SoundManager. The volume
-                            value should be between 0 and 1, where 0 is silent and 1 is the maximum volume.
-                        </li>
-                        <li>
-                            <b>Play(string sound): </b>
-                            Plays the sound with the specified name from the
-                            SoundLibraryAsset. If PlayOneTrackAtATime is enabled, it stops all other sounds
-                            before playing.
-                        </li>
-                        <li>
-                            <b>Play(SoundLabelAsset sound): </b>
-                            Plays the sound referenced by the specified
-                            SoundLabelAsset from the SoundLibraryAsset. If PlayOneTrackAtATime is enabled,
-                            it stops all other sounds before playing.
-                        </li>
-                        <li>
-                            <b>Pause(string sound): </b>
-                            Pauses the sound with the specified name from the
-                            SoundLibraryAsset.
-                        </li>
-                        <li>
-                            <b>Pause(SoundLabelAsset sound): </b>
-                            Pauses the sound referenced by the specified
-                            SoundLabelAsset from the SoundLibraryAsset.
-                        </li>
-                        <li>
-                            <b>Unpause(string sound): </b>
-                            Unpauses the sound with the specified name from the
-                            SoundLibraryAsset.
-                        </li>
-                        <li>
-                            <b>Unpause(SoundLabelAsset sound): </b>
-                            Unpauses the sound referenced by the
-                            specified SoundLabelAsset from the SoundLibraryAsset.
-                        </li>
-                        <li>
-                            <b>Stop(string sound): </b>
-                            Stops the sound with the specified name from the
-                            SoundLibraryAsset.
-                        </li>
-                        <li>
-                            <b>Stop(SoundLabelAsset sound): </b>
-                            Stops the sound referenced by the specified
-                            SoundLabelAsset from the SoundLibraryAsset.
-                        </li>
-                        <li>
-                            <b>Play(int index): </b>
-                            Plays the sound at the specified index in the SoundLibraryAsset. If
-                            PlayOneTrackAtATime is enabled, it stops all other sounds before playing.
-                        </li>
-                        <li>
-                            <b>Pause(int index): </b>
-                            Pauses the sound at the specified index in the
-                            SoundLibraryAsset.
-                        </li>
-                        <li>
-                            <b>Unpause(int index): </b>
-                            Unpauses the sound at the specified index in the
-                            SoundLibraryAsset.
-                        </li>
-                        <li>
-                            <b>Stop(int index): </b>
-                            Stops the sound at the specified index in the SoundLibraryAsset.
-                        </li>
-                        <li>
-                            <b>PauseAllTracks(): </b>
-                            Pauses all sounds currently playing.
-                        </li>
-                        <li>
-                            <b>UnpauseAllTracks(): </b>
-                            Unpauses all paused sounds.
-                        </li>
-                        <li>
-                            <b>StopAllTracks(): </b>
-                            Stops all sounds currently playing or paused.
-                        </li>
-                        <li>
-                            <b>FadeIn(): </b>
-                            Initiates a fade-in effect, gradually increasing the volume from 0 to 1.
-                        </li>
-                        <li>
-                            <b>FadeOut(): </b>
-                            Initiates a fade-out effect, gradually decreasing the volume from the
-                            current volume level to 0.
-                        </li>
-                        <li>
-                            <b>FadeIn(float targetVolume): </b>
-                            Initiates a fade-in effect with a specified target
-                            volume, gradually increasing the volume from 0 to the target volume level.
-                        </li>
-                    </ul>
-
-                    <h5 className="c-light-1 pad-left-3">Events</h5>
-                    <ul className="property-list pad-left-3">
-                        <li>
-                            <b>OnPlay (UnityEvent{'<'}string{'>'}): </b>
-                            Invoked every time a sound is played. The string
-                            value represents the name of the sound.
-                        </li>
-                        <li>
-                            <b>OnPause (UnityEvent{'<'}string{'>'}): </b>
-                            Invoked every time a sound is paused. The string
-                            value represents the name of the sound.
-                        </li>
-                        <li>
-                            <b>OnUnpause (UnityEvent{'<'}string{'>'}): </b>
-                            Invoked every time a sound is unpaused. The
-                            string value represents the name of the sound.
-                        </li>
-                        <li>
-                            <b>OnStop (UnityEvent{'<'}string{'>'}): </b>
-                            Invoked every time a sound is stopped. The string
-                            value represents the name of the sound.
-                        </li>
-                        <li>
-                            <b>OnFadeInEnd (UnityEvent): </b>
-                            Invoked when the SoundManager finishes fading in.
-                        </li>
-                        <li>
-                            <b>OnFadeOutEnd (UnityEvent): </b>
-                            Invoked when the SoundManager finishes fading out.
-                        </li>
-                    </ul>
-
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
-                    <ul className="property-list pad-left-3">
-                        <li>
-                            <b>Library (SoundLibraryAsset): </b>
-                            Specifies the SoundLibraryAsset that contains the
-                            sounds to be used by the SoundManager.
-                        </li>
-                        <li>
-                            <b>Master (SoundMasterAsset): </b>
-                            Allows control over the volume and pitch levels of
-                            the sounds used by the SoundManager.
-                        </li>
-                        <li>
-                            <b>Volume (float): </b>
-                            Sets the volume level of the SoundManager. The volume range is
-                            between 0 and 1, where 0 is silent and 1 is the maximum volume. This volume level
-                            affects all sounds that use this SoundManager
-                        </li>
-                        <li>
-                            <b>PlayOneTrackAtATime (bool): </b>
-                            When enabled, stops all other sounds when a new
-                            sound is played by the SoundManager. Only one sound can be played at a time.
-                        </li>
-                        <li>
-                            <b>UseUnscaledTime (bool): </b>
-                            When enabled, the SoundManager and all sounds are not
-                            affected by the TimeScale property. Time is based on unscaled deltaTime.
-                        </li>
-                        <li>
-                            <b>Mode (PLAYMODE enum): </b>
-                            Controls the flow of the playlist and determines the
-                            action to take when the current sound finishes playing. The available modes are:
+                            <b2>PLAYMODE</b2> <b1>[None - Loop - Random - Repeat]</b1>:
+                            Defines the automatic playback behavior when a sound finishes.
                             <ul>
-                                <li> <b>None: </b> No action is taken and playback stops. </li>
-                                <li> <b>Loop: </b> Automatically plays the next sound in the library. </li>
-                                <li> <b>Random: </b> Automatically plays a random sound from the library. </li>
-                                <li> <b>Repeat: </b> Automatically repeats the same sound. </li>
+                                <li>None: No automatic playback, audio stops when finished.</li>
+                                <li>Loop: Plays the next sound in the library sequentially.</li>
+                                <li>Random: Plays a randomly selected sound from the library.</li>
+                                <li>Repeat: Replays the currently active sound.</li>
                             </ul>
                         </li>
-                        <li>
-                            <b>FadeInDuration (float): </b>
-                            Specifies the duration in seconds for the fade-in effect
-                            when transitioning to a sound. The fade-in effect gradually increases the volume
-                            from 0 to the specified volume level.
-                        </li>
-                        <li>
-                            <b>FadeInCurve (AnimationCurve): </b>
-                            Determines the volume values for the fade-in
-                            effect over time. The curve should start at time 0 with a value of 0 and end at time
-                            1 with a value of 1.
-                        </li>
-                        <li>
-                            <b>FadeOutDuration (float): </b>
-                            Specifies the duration in seconds for the fade-out effect
-                            when transitioning between sounds. The fade-out effect gradually decreases the
-                            volume from the current volume level to 0.
-                        </li>
-                        <li>
-                            <b>FadeOutCurve (AnimationCurve): </b>
-                            Determines the volume values for the fade-out
-                            effect over time. The curve should start at time 0 with a value of 1 and end at time
-                            1 with a value of 0.
-                        </li>
+                    </ul> 
+
+                    <h5 className="c-light-1">Properties</h5>
+                    <ul className="property-list"> 
+                        <li><b2>AudioLibraryAsset</b2> <b1>Library</b1>: Audio library asset that defines the list of sounds managed by this AudioManager.</li>
+                        <li><b2>AudioMixerAsset</b2> <b1>Mixer</b1>: Optional audio mixer asset used to apply global volume and pitch modifiers.</li>
+                        <li><b2>Label</b2> <b1>ChannelLabel</b1>: Label used to retrieve an AudioChannel from the assigned AudioMixer.</li>
+                        <li><b2>float</b2> <b1>Volume</b1>: Local volume multiplier applied to all sounds played by this AudioManager.</li>
+                        <li><b2>bool</b2> <b1>Mute</b1>: Mutes all sounds managed by this AudioManager.</li>
+                        <li><b2>PLAYMODE</b2> <b1>Mode</b1>: Playback mode that defines how sounds are selected when the current sound finishes.</li>
+                        <li><b2>bool</b2> <b1>PlayOneTrackAtATime</b1>: If enabled, stops all currently playing sounds before starting a new one.</li>
+                        <li><b2>Timescale</b2> <b1>Timescale</b1>: Timescale used for fade transitions and playback timing.</li>
+                        <li><b2>Flexor2&lt;float, AnimationCurve&gt;</b2> <b1>FadeIn</b1>: Duration and easing curve used for fade-in effects.</li>
+                        <li><b2>Flexor2&lt;float, AnimationCurve&gt;</b2> <b1>FadeOut</b1>: Duration and easing curve used for fade-out effects.</li>
+                        <li><b2>bool</b2> <b1>FadeInOnPlay</b1>: If enabled, audio fades in automatically when playback starts.</li>
+                        <li><b2>bool</b2> <b1>FadeOnPause</b1>: If enabled, audio fades out before pausing.</li>
+                        <li><b2>bool</b2> <b1>FadeOutOnStop</b1>: If enabled, audio fades out before stopping.</li>
+                    </ul>
+
+                    <h5 className="c-light-1">Methods</h5> 
+                    <ul className="property-list"> 
+                        <li><b2>void</b2> <b1>Play</b1>(): Plays the currently selected sound.</li>
+                        <li><b2>void</b2> <b1>Play</b1>(<b2>Label</b2> <b1>sound</b1>): Plays a sound identified by its label.</li>
+                        <li><b2>void</b2> <b1>Play</b1>(<b2>int</b2> <b1>index</b1>): Plays a sound at the specified index in the audio library.</li>
+                        <br/>
+                        <li><b2>void</b2> <b1>Toggle</b1>(): Plays the currently selected sound if it is not playing, else it stops it.</li>
+                        <li><b2>void</b2> <b1>Toggle</b1>(<b2>Label</b2> <b1>sound</b1>): Plays a sound identified by its label if it is not playing, else it stops it.</li>
+                        <li><b2>void</b2> <b1>Toggle</b1>(<b2>int</b2> <b1>index</b1>): Plays a sound at the specified index in the audio library if it is not playing, else it stops it.</li>
+                        <br/>
+                        <li><b2>void</b2> <b1>Pause</b1>(): Pauses the currently selected sound.</li>
+                        <li><b2>void</b2> <b1>Pause</b1>(<b2>Label</b2> <b1>sound</b1>): Pauses a sound identified by its label.</li>
+                        <li><b2>void</b2> <b1>Pause</b1>(<b2>int</b2> <b1>index</b1>): Pauses the sound at the specified index.</li>
+                        <br/>
+                        <li><b2>void</b2> <b1>Unpause</b1>(): Unpauses the currently selected sound.</li>
+                        <li><b2>void</b2> <b1>Unpause</b1>(<b2>Label</b2> <b1>sound</b1>): Unpauses a sound identified by its label.</li>
+                        <li><b2>void</b2> <b1>Unpause</b1>(<b2>int</b2> <b1>index</b1>): Unpauses the sound at the specified index.</li>
+                        <br/>
+                        <li><b2>void</b2> <b1>Stop</b1>(): Stops the currently selected sound.</li>
+                        <li><b2>void</b2> <b1>Stop</b1>(<b2>Label</b2> <b1>sound</b1>): Stops a sound identified by its label.</li>
+                        <li><b2>void</b2> <b1>Stop</b1>(<b2>int</b2> <b1>index</b1>): Stops the sound at the specified index.</li>
+                        <br/>
+                        <li><b2>void</b2> <b1>Next</b1>(): Stops the current sound and plays the next sound in the library.</li>
+                        <li><b2>void</b2> <b1>Previous</b1>(): Stops the current sound and plays the previous sound in the library.</li>
+                        <li><b2>void</b2> <b1>Random</b1>(): Stops the current sound and plays a random sound from the library.</li>
+                        <li><b2>void</b2> <b1>SetVolume</b1>(<b2>float</b2> <b1>volume</b1>): Sets the local volume multiplier for this AudioManager.</li>
+                        <br/>
+                        <li><b2>void</b2> <b1>PauseAllTracks</b1>(): Pauses all sounds managed by this AudioManager.</li>
+                        <li><b2>void</b2> <b1>UnpauseAllTracks</b1>(): Unpauses all sounds managed by this AudioManager.</li>
+                        <li><b2>void</b2> <b1>StopAllTracks</b1>(): Stops all sounds managed by this AudioManager.</li>
+                        <br/>
+                        <li><b2>void</b2> <b1>FadeIn</b1>(): Fades audio volume to full using the configured fade-in settings.</li>
+                        <li><b2>void</b2> <b1>FadeOut</b1>(): Fades audio volume to zero using the configured fade-out settings.</li>
+                        <li><b2>void</b2> <b1>FadeTo</b1>(<b2>float</b2> <b1>targetVolume</b1>, <b2>float</b2> <b1>duration</b1>, <b2>AnimationCurve</b2> <b1>easingCurve</b1>, <b2>Action</b2> <b1>onFinish</b1>): Smoothly fades volume to a target value over time, optionally using a custom curve and callback.</li>
+                    </ul>
+
+                    <h5 className="c-light-1">Events</h5>
+                    <ul className="property-list">
+                        <li><b2>Event&lt;string&gt;</b2> <b1>OnPlay</b1>: Triggered when a sound starts playing, sending the sound label.</li>
+                        <li><b2>Event&lt;string&gt;</b2> <b1>OnPause</b1>: Triggered when a sound is paused, sending the sound label.</li>
+                        <li><b2>Event&lt;string&gt;</b2> <b1>OnUnpause</b1>: Triggered when a sound is unpaused, sending the sound label.</li>
+                        <li><b2>Event&lt;string&gt;</b2> <b1>OnStop</b1>: Triggered when a sound is stopped, sending the sound label.</li>
+                        <li><b2>EventVoid</b2> <b1>OnFadeInEnd</b1>: Triggered when a fade-in operation finishes.</li>
+                        <li><b2>EventVoid</b2> <b1>OnFadeOutEnd</b1>: Triggered when a fade-out operation finishes.</li>
                     </ul>
                 </div>
             )}/>
-            <Group title="Sprite Library Asset Scriptable Object" content={(
-                <div className="p-3">
-                    <p>
-                        The Sound Library Asset is a scriptable object that empowers you to define and
-                        configure sound playlists for your game. It consists of a list of Sound Assets and provides
-                        convenient properties to modify multiple sounds simultaneously, such as volume and pitch
-                        levels.
+            <Group title="Audio Library Asset" content={(
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
+                    <ul className="property-list">
+                        <li><b2>private Clist{"<AudioSound>"}</b2> <b1>SoundList</b1>: List of sounds in this audio library.</li>
+                        <li><b2>int</b2> <b1>Count</b1>: Total number of sounds contained in this audio library.</li>
+                    </ul>
+                    <h5 className="c-light-1">Methods</h5>
+                    <ul className="property-list">
+                        <li><b2>void</b2> <b1>CreateSoundManagers</b1>(<b2>GameObject</b2> <b1>owner</b1>, <b2>Timescale</b2> <b1>timescale</b1>): Instantiates and initializes all AudioSound instances under the given GameObject.</li>
+                        <li><b2>AudioSound</b2> <b1>GetSound</b1>(<b2>int</b2> <b1>index</b1>): Returns the AudioSound at the specified index.</li>
+                        <li><b2>int</b2> <b1>GetIndex</b1>(<b2>Label</b2> <b1>label</b1>): Returns the index of the sound identified by the given label, or -1 if not found.</li>
+                        <li><b2>void</b2> <b1>PauseAllSounds</b1>(): Pauses all sounds in the library.</li>
+                        <li><b2>void</b2> <b1>UnpauseAllSounds</b1>(): Unpauses all paused sounds in the library.</li>
+                        <li><b2>void</b2> <b1>StopAllSounds</b1>(): Stops all sounds immediately.</li>
+                        <li><b2>void</b2> <b1>UpdateSoundsValues</b1>(<b2>float</b2> <b1>volume</b1>, <b2>float</b2> <b1>pitch</b1>): Updates volume and pitch values for all sounds in the library.</li>
+                    </ul>
+                </div>
+            )}/>
+            <Group title="Audio Sound" content={(
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
+                    <ul className="property-list">
+                        <li><b2>Label</b2> <b1>Label</b1>: Identifier used to reference and play this sound.</li>
+                        <li><b2>AudioClip</b2> <b1>Clip</b1>: Audio clip used as the sound source for playback.</li>
+                        <li><b2>float</b2> <b1>Volume</b1>: Base volume multiplier applied to this sound before manager, channel and mixer modifiers.</li>
+                        <li><b2>float</b2> <b1>Pitch</b1>: Base pitch multiplier applied to this sound before global pitch modifiers.</li>
+                        <li><b2>bool</b2> <b1>Loop</b1>: Determines whether this sound loops continuously when played.</li>
+                        <li><b2>bool</b2> <b1>UsePool</b1>: Enables AudioSource pooling for this sound, allowing multiple instances to play simultaneously.</li>
+                        <li><b2>int</b2> <b1>MinPoolSize</b1>: Minimum number of AudioSource instances kept alive in the pool when pooling is enabled.</li>
+                        <li><b2>Toggle&lt;int&gt;</b2> <b1>MaxPoolSize</b1>: Optional maximum number of AudioSource instances allowed in the pool (no maximun pooling growth when unset).</li>
+                        <li><b2>Toggle&lt;float&gt;</b2> <b1>PoolCleanupRate</b1>: Optional interval used to clean unused AudioSource instances from the pool (no cleanup when unset).</li>
+                        <li><b2>float</b2> <b1>PoolUpdateRate</b1>: Update interval used to manage and refresh the AudioSource pool (Best set to 0.1f for optimization).</li>
+                        <li><b2>bool</b2> <b1>IsFinished</b1>: Indicates whether the sound has finished playing.</li>
+                    </ul>
+                    <h5 className="c-light-1">Methods</h5>
+                    <ul className="property-list">
+                        <li><b2>void</b2> <b1>Play</b1>(): Starts audio playback.</li>
+                        <li><b2>void</b2> <b1>Pause</b1>(): Pauses audio playback.</li>
+                        <li><b2>void</b2> <b1>Unpause</b1>(): Resumes playback from a paused state.</li>
+                        <li><b2>void</b2> <b1>Stop</b1>(): Stops playback and resets the sound.</li>
+                        <li><b2>void</b2> <b1>SetValues</b1>(<b2>float</b2> <b1>volume</b1>, <b2>float</b2> <b1>pitch</b1>): Applies volume and pitch values to the underlying AudioSource.</li>
+                    </ul>
+                </div>
+            )}/>
+            <Group title="Audio Mixer Asset" content={(
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
+                    <ul className="property-list">
+                        <li><b2>float</b2> <b1>Volume = 1f</b1>: Global volume multiplier applied to all audio channels.</li>
+                        <li><b2>float</b2> <b1>Pitch = 1f</b1>: Global pitch multiplier applied to all audio channels.</li>
+                    </ul>
+                    <h5 className="c-light-1">Methods</h5>
+                    <ul className="property-list">
+                        <li><b2>AudioChannel</b2> <b1>GetChannel</b1>(<b2>Label</b2> <b1>label</b1>): Retrieves the audio channel associated with the given label.</li>
+                        <li><b2>void</b2> <b1>SetVolume</b1>(<b2>float</b2> <b1>volume</b1>): Sets the global mixer volume.</li>
+                        <li><b2>void</b2> <b1>SetPitch</b1>(<b2>float</b2> <b1>pitch</b1>): Sets the global mixer pitch.</li>
+                        <li><b2>void</b2> <b1>OnChangeSubscribe</b1>(<b2>Action</b2> <b1>callback</b1>): Subscribes to mixer value change notifications.</li>
+                        <li><b2>void</b2> <b1>OnChangeUnsubscribe</b1>(<b2>Action</b2> <b1>callback</b1>): Unsubscribes from mixer value change notifications.</li>
+                    </ul>
+                </div>
+            )}/>
+            <Group title="Audio Channel" content={(
+                <div>
+                    <h5 className="c-light-1">Properties</h5>
+                    <ul className="property-list">
+                        <li><b2>float</b2> <b1>Volume = 1f</b1>: Volume multiplier applied to all sounds routed through this channel.</li>
+                        <li><b2>float</b2> <b1>Pitch = 1f</b1>: Pitch multiplier applied to all sounds routed through this channel.</li>
+                    </ul>
+                    <h5 className="c-light-1">Methods</h5>
+                    <ul className="property-list">
+                        <li><b2>void</b2> <b1>SetVolume</b1>(<b2>float</b2> <b1>volume</b1>): Sets the channel volume.</li>
+                        <li><b2>void</b2> <b1>SetPitch</b1>(<b2>float</b2> <b1>pitch</b1>): Sets the channel pitch.</li>
+                        <li><b2>void</b2> <b1>OnChangeSubscribe</b1>(<b2>Action</b2> <b1>callback</b1>): Subscribes to channel value change notifications.</li>
+                        <li><b2>void</b2> <b1>OnChangeUnsubscribe</b1>(<b2>Action</b2> <b1>callback</b1>): Unsubscribes from channel value change notifications.</li>
+                    </ul>
+                </div>
+            )}/>
+
+
+            <h3 className="p-2">Examples</h3>
+            <p className="pad-left-2">
+                This guide explains how to start using the Audio System from scratch:
+            </p>
+
+            <Group title="Step 01: Create an Audio Library Asset" content={(
+                <div>
+                    <p> 
+                        The Audio Library is where all sounds are defined. Nothing can play without it.                        
                     </p>
-
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
-                    <ul className="property-list pad-left-3">
-                        <li>
-                            <b>Volume (float): </b>
-                            Sets the volume level of the entire library. The volume range is
-                            between 0 and 2. This volume level will affect all sounds within the library.
-                        </li>
-                        <li>
-                            <b>Pitch (float): </b>
-                            Sets the pitch level of the entire library. The pitch range is between 0.1
-                            and 3. This pitch level will affect all sounds within the library.
-                        </li>
-                        <li>
-                            <b>List (List{'<'}SoundAsset{'>'}): </b>
-                            A list of SoundAsset objects that make up the sound
-                            library. Each SoundAsset represents a sound clip along with its associated settings
-                            and options. You can add, remove, and modify SoundAssets in the list to customize
-                            your sound library.
-                        </li>
-                    </ul>
-                </div>
-            )}/>
-            <Group title="Sound Asset Object" content={(
-                <div className="p-3">
-                    <p>
-                        The Sound Asset represents an individual sound within the Sound Library Asset. It
-                        allows you to customize various properties for each sound, including the audio clip, name,
-                        and Sound Label Asset for referencing. You can set unique settings for volume, pitch,
-                        looping, and pool usage, making it ideal for sounds that require repeated usage.
+                    <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Systems/Audio/Audio - 02.jpg" alt=""/>            
+                    <p> 
+                        In the Unity menu go to <b1>Assets {">"} Create {">"} Magikus {">"} Audio System {">"} Audio Library Asset</b1> and name the asset (e.g. MusicLibrary). 
                     </p>
-
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
-                    <ul className="property-list pad-left-3">
-                        <li>
-                            <b>Clip (AudioClip): </b>The AudioClip that contains the sound to be used.
-                        </li>
-                        <li>
-                            <b>Name (string): </b>The name used to reference this sound (optional).
-                        </li>
-                        <li>
-                            <b>Label (SoundLabelAsset): </b>The SoundLabelAsset to use as a reference for this
-                            sound (optional).
-                        </li>
-                        <li>
-                            <b>Volume (float): </b>Sets the volume level for every instance of this sound. The volume
-                            range is between 0 and 2. This volume level will affect all instances of the sound.
-                        </li>
-                        <li>
-                            <b>Pitch(float): </b> Sets the pitch level for every instance of this sound. The pitch range is
-                            between 0.1 and 3. This pitch level will affect all instances of the sound.
-                        </li>
-                        <li>
-                            <b>Loop(bool): </b> Determines whether this sound should loop or not.
-                        </li>
-                        <li>
-                            <b>UsePool(bool): </b> Determines whether this sound should create new instances every
-                            time it plays or reuse a single instance. Enabling this option improves sound quality
-                            but may impact performance. When set to true, all instances will be stored in a pool
-                            when not in use and made available for later usage.
-                        </li>
-                        <li>
-                            <b>MinPoolSize(int): </b> Specifies the minimum number of instances available for use.
-                        </li>
-                        <li>
-                            <b>LimitedPoolSize(bool): </b> Determines whether there should be a maximum limit on
-                            the number of instances created.
-                        </li>
-                        <li>
-                            <b>MaxPoolSize(int): </b>
-                            Specifies the maximum number of instances available for use.
-                            If no instances are available in the pool, a playing instance will be restarted. This
-                            feature is only used when Limited pool size is set to true.
-                        </li>
-                        <li>
-                            <b>UpdateRate(float): </b> The rate in seconds at which the AudioManager checks the
-                            state of each playing sound.
-                        </li>
-                        <li>
-                            <b>PoolCleanup(bool): </b> Determines whether this sound should clean up unused
-                            instances after a certain amount of time.
-                        </li>
-                        <li>
-                            <b>CleanupRate(float): </b> The rate in seconds at which the AudioManager cleans up
-                            unused instances. This determines how often one unused instance is cleaned.
-                        </li>
-                    </ul>
-                </div>
-            )}/>
-            <Group title="Sound Master Asset Scriptable Object" content={(
-                <div className="p-3">
-                    <p>
-                        The SoundMasterAsset is a scriptable object that allows you have a global control
-                        of the volume and pitch levels. You can set this levels via code but it is perfect for using
-                        unity events through the inspector without having to use any code. The fact that this is a
-                        scriptable object allows you to configure audio settings in different scenes without having
-                        to worry about any problems.
+                    <img className="block-center mar-bottom-3 img-border w-70" src="images/Library/Systems/Audio/Audio - 03.jpg" alt=""/>            
+                    <p> 
+                        This asset will store all your sounds and their playback configuration.
                     </p>
-
-                    <h5 className="c-light-1 pad-left-3">Methods</h5>
-                    <ul className="property-list pad-left-3">
-                        <li>
-                            <b>OnChangeSubscribe(Action action): </b>Subscribes to the event triggered when the
-                            volume or pitch of the master asset changes. This feature is used for internal
-                            purposes.
-                        </li>
-                        <li>
-                            <b>OnChangeUnsubscribe(Action action): </b>Unsubscribes from the event triggered
-                            when the volume or pitch of the master asset changes. This feature is used for
-                            internal purposes.
-                        </li>
-                        <li> 
-                            <b>Mute(): </b>Mutes all the sounds affected by this master asset.
-                        </li>
-                        <li> 
-                            <b>Unmute(): </b>Unmutes all the sounds affected by this master asset.
-                        </li>
-                        <li> 
-                            <b>ToggleMute(): </b>Toggles the mute state of the sounds affected by this master asset.
-                        </li>
-                        <li> 
-                            <b>SetVolume(float amount): </b>Sets the volume level of the master asset.
-                        </li>
-                        <li> 
-                            <b>RaiseVolume(float amount): </b>Increases the volume level of the master asset.
-                        </li>
-                        <li> 
-                            <b>LowerVolume(float amount): </b>Decreases the volume level of the master asset.
-                        </li>
-                        <li> 
-                            <b>SetVolume(int amount): </b>Sets the volume level of the master asset based on a
-                            percentage.
-                        </li>
-                        <li> 
-                            <b>RaiseVolume(int amount): </b>Increases the volume level of the master asset based
-                            on a percentage.
-                        </li>
-                        <li> 
-                            <b>LowerVolume(int amount): </b>Decreases the volume level of the master asset based
-                            on a percentage.
-                        </li>
-                        <li> 
-                            <b>SetPitch(float amount): </b>Sets the pitch level of the master asset.
-                        </li>
-                        <li> 
-                            <b>RaisePitch(float amount): </b>Increases the pitch level of the master asset.
-                        </li>
-                        <li> 
-                            <b>LowerPitch(float amount): </b>Decreases the pitch level of the master asset.
-                        </li>
-                        <li> 
-                            <b>SetPitch(int amount): </b>Sets the pitch level of the master asset based on a
-                            percentage.
-                        </li>
-                        <li> 
-                            <b>RaisePitch(int amount): </b>Increases the pitch level of the master asset based on a
-                            percentage.
-                        </li>
-                        <li> 
-                            <b>LowerPitch(int amount): </b>Decreases the pitch level of the master asset based on a
-                            percentage.
-                        </li>
-                        <li> 
-                            <b>SetVolumeValueToSlider(Slider slider): </b>Sets the value of a slider component to
-                            match the current volume level of the master asset. This feature facilitates
-                            simplified UI creation.
-                        </li>
-                        <li> 
-                            <b>SetPitchValueToSlider(Slider slider): </b>Sets the value of a slider component to
-                            match the current pitch level of the master asset. This feature facilitates simplified
-                            UI creation.
-                        </li>
-                        <li> 
-                            <b>SetMuteValueToGameObject(GameObject gameObject): </b>Sets the active state of a
-                            GameObject based on the mute state of the master asset. This feature facilitates
-                            simplified UI creation.
-                        </li>
-                    </ul>
-
-                    <h5 className="c-light-1 pad-left-3">Properties</h5>
-                    <ul className="property-list pad-left-3">
-                        <li> 
-                            <b>Volume (float): </b>Sets the volume level of the master asset. The volume range is
-                            between 0 and 2. This volume level will affect all sounds that use this master
-                            asset.
-                        </li>
-                        <li>                        
-                            <b>Pitch (float): </b>Sets the pitch level of the master asset. The pitch range is between
-                            0.1 and 3. This pitch level will affect all sounds that use this master asset.
-                        </li>
-                        <li>                        
-                            <b>IsMute (bool): </b>When enabled, all the sounds affected by this master asset will be
-                            muted.
-                        </li>
-                    </ul>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Audio/Audio - 04.jpg" alt=""/>            
                 </div>
             )}/>
-            <Group title="Sprite Label Asset Scriptable Object" content={(
-                <div className="p-3">
-                    <p>
-                        The Sound Label Asset offers a simple and intuitive label system for referencing
-                        sounds. It eliminates the need for string or index-based references, reducing the risk of
-                        misspelled names. With the Sound Label Asset, you can easily modify and set variable
-                        names without worrying about errors.
+            <Group title="Step 02: Add Sounds to the Library" content={(
+                <div>
+                    <p> 
+                        Select the AudioLibraryAsset, in the Inspector, locate the Sounds list and click "Add" to create a new sound entry.                       
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Audio/Audio - 05.jpg" alt=""/>            
+                    <p> 
+                        For each sound, assign an AudioClip, set a Label (used to identify and play the sound), configure volume, pitch and looping.
+                        Repeat this step for every sound you want to use (music, SFX, ambient, etc.).
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Audio/Audio - 06.jpg" alt=""/>            
+                    <p> 
+                        Also, you can decide for each sound if you want to use a unique sound object or multiple ones with a pool for them.
+                        If you decide to use a pool for the sound, you can configure the min pool size, the max pool size (optional), the pool cleanup rate (optional) and the update rate for the cleanup.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Audio/Audio - 07.jpg" alt=""/>            
+                    <p> 
+                        Think of the Audio Library as a catalog, not a player.                       
                     </p>
                 </div>
             )}/>
+            <Group title="Step 03: Create an Audio Mixer Asset (Optional but Recommended)" content={(
+                <div>
+                    <p> 
+                        The Audio Mixer Asset controls global and grouped audio behavior.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Audio/Audio - 08.jpg" alt=""/>            
+                    <p> 
+                        In the Unity menu go to <b1>Assets {">"} Create {">"} Magikus {">"} Audio System {">"} Audio Mixer Asset</b1> and name it (e.g. GlobalAudioMixer).
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-70" src="images/Library/Systems/Audio/Audio - 09.jpg" alt=""/>            
+                    <p> 
+                        This asset allows you to, control master volume, create multiple channels (Music, SFX, UI, Ambient) and adjust pitch and volume per channel.
+                    </p>
+                </div>
+            )}/>
+            <Group title="Step 04: Define Audio Channels (Optional)" content={(
+                <div>
+                    <p> 
+                        If you created a Mixer, select the AudioMixerAsset.
+                        In the Inspector, find the Channels list and Add one or more channels.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Audio/Audio - 10.jpg" alt=""/>            
+                    <p> 
+                        For each channel, assign a Label (e.g. Music, SFX) and set the volume, the pitch and the mute state.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Audio/Audio - 11.jpg" alt=""/>            
+                    <p> 
+                        Channels act as group modifiers that affect all sounds routed through them.
+                    </p>
+                </div>
+            )}/>
+            <Group title="Step 05: Add an AudioManager to the Scene" content={(
+                <div>
+                    <p> 
+                        The AudioManager is the runtime controller that plays sounds.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-40" src="images/Library/Systems/Audio/Audio - 12.jpg" alt=""/>            
+                    <p> 
+                        Create or select a GameObject in the scene (e.g. Audio Manager) then click "Add Component" and go to <b1>Magikus {">"} Audio System {">"} Audio Manager</b1>
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Audio/Audio - 01.gif" alt=""/>            
+                    <p> 
+                        This component is what you will interact with through events, hooks or scripts.
+                    </p>
+                </div>
+            )}/>
+            <Group title="Step 06: Assign the Audio Library" content={(
+                <div>
+                    <p>                     
+                        Select the GameObject with the AudioManager.
+                        In the Inspector, assign your AudioLibraryAsset to the property Library.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Audio/Audio - 13.jpg" alt=""/>            
+                    <p> 
+                        At this point, the AudioManager knows what sounds exist, but not how to group or modify them.
+                    </p>
+                </div>
+            )}/>
+            <Group title="Step 07: Assign the Audio Mixer and Channel (Optional)" content={(
+                <div>
+                    <p> 
+                        If you are using a Mixer, assign your AudioMixerAsset to the Mixer property.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Audio/Audio - 14.jpg" alt=""/>            
+                    <p> 
+                        (Optional) Assign a Channel Label.
+                        If no channel is assigned, the AudioManager uses a default local channel.
+                        If a channel is assigned, all sounds played by this manager will be affected by that channel.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Audio/Audio - 15.jpg" alt=""/>            
+                    <p> 
+                        This is useful for a dedicated Music AudioManager and a dedicated SFX AudioManager.
+                    </p>
+                </div>
+            )}/>
+            <Group title="Step 08: Configure Playback Behavior" content={(
+                <div>
+                    <p> 
+                        Still on the AudioManager, configure how sounds behave.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Audio/Audio - 16.jpg" alt=""/>            
+                    <p> 
+                        Play Mode:
+                        <ul>
+                            <li>None: plays once and stops</li>
+                            <li>Loop: moves to the next sound automatically</li>
+                            <li>Random: plays random sounds</li>
+                            <li>Repeat: repeats the same sound</li>
+                        </ul>
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Audio/Audio - 17.jpg" alt=""/>            
+                    <p> 
+                        Enable Play One Track At A Time to stop previous sounds when a new one starts.
+                    </p>
+                </div>
+            )}/>
+            <Group title="Step 09: Configure Fading (Optional)" content={(
+                <div>
+                    <p> 
+                        Fading enables smooth audio transitions.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Audio/Audio - 18.jpg" alt=""/>            
+                    <p> 
+                        Assign a Timescale (optional but recommended).
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Audio/Audio - 19.jpg" alt=""/>            
+                    <p> 
+                        Configure Fade In duration and curve, Fade Out duration and curve and enable Fade In On Play, Fade Out On Stop and/or Fade On Pause (if needed)
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Audio/Audio - 20.jpg" alt=""/>            
+                    <p> 
+                        This allows smooth music starts, soft audio stops and non-abrupt transitions.
+                    </p>
+                </div>
+            )}/>
+            <Group title="Step 10: Hook Audio to Events (No Code Required)" content={(
+                <div>
+                    <p> 
+                        The Audio System is designed to work with Events and Hooks.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Audio/Audio - 21.jpg" alt=""/>            
+                    <p> 
+                        Example workflows:
+                        <ul>
+                            <li>Button click → Play UI sound</li>
+                            <li>Trigger enter → Play ambient sound</li>
+                            <li>Game state change → Switch music</li>
+                        </ul>
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Audio/Audio - 22.jpg" alt=""/>            
+                    <p> 
+                        In the Inspector, locate the On Play / On Stop / On Pause events and assign listeners.
+                        Use Labels to target specific sounds.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Audio/Audio - 23.jpg" alt=""/>            
+                    <p> 
+                        You can also call AudioManager methods from other UnityEvents and custom controllers.
+                    </p>
+                </div>
+            )}/>
+            <Group title="Step 11: Test in Play Mode" content={(
+                <div>
+                    <p> 
+                        Enter Play Mode and trigger playback via Inspector buttons, Events and/or Hooks.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Audio/Audio - 24.jpg" alt=""/>            
+                    <p> 
+                        Adjust mixer volumes, channel settings and fade curves.
+                    </p>
+                    <img className="block-center mar-bottom-3 img-border w-50" src="images/Library/Systems/Audio/Audio - 25.jpg" alt=""/>            
+                    <p> 
+                        Changes are reflected immediately at runtime.
+                    </p>
+                </div>
+            )}/>
 
-            <h2>How to Use</h2>
-            <p>
-                To add the <b>Sound Manager Component</b> to a GameObject, follow these steps:
-            </p>
-            <ol>
-                <li>
-                    Select the GameObject to which you want to add the Manager component.
-                </li>
-                <li>
-                    Open the Components menu.
-                </li>
-                <li>
-                    Navigate to Magikus {'->'} Sound Manager.
-                </li>
-                <li>
-                    Click on the desired option to add the corresponding Manager component to the
-                    selected GameObject.
-                </li>
-            </ol>
 
-            <p>
-                To create a new <b>Sound Library Asset</b>, follow these steps:
-            </p>
-            <ol>
-                <li>
-                    Right-click on the desired folder in the Project window (where you want to create
-                    the asset).
-                </li>
-                <li>
-                    From the context menu, go to Create {'->'} Magikus {'->'} Audio System {'->'} Sound Library
-                    Asset.
-                </li>
-                <li>
-                    A new Sound Library Asset will be created in the selected folder, ready for
-                    customization and configuration.
-                </li>
-            </ol>
-
-            <p>
-                To create a new <b>Sound Master Asset</b>, follow these steps:
-            </p>
-            <ol>
-                <li>
-                    Right-click on the desired folder in the Project window (where you want to create
-                    the asset).
-                </li>
-                <li>
-                    From the context menu, go to Create {'->'} Magikus {'->'} Audio System {'->'} Sound Master
-                    Asset.
-                </li>
-                <li>
-                    A new Sound Master Asset will be created in the selected folder, ready for
-                    customization and configuration.
-                </li>
-            </ol>
-
-            <p>
-                To create a new <b>Sound Label Asset</b>, follow these steps:
-            </p>
-            <ol>
-                <li>
-                    Right-click on the desired folder in the Project window (where you want to create
-                    the asset).
-                </li>
-                <li>
-                    From the context menu, go to Create {'->'} Magikus {'->'} Audio System {'->'} Sound Label
-                    Asset.
-                </li>
-                <li>
-                    A new Sound Label Asset will be created in the selected folder, ready for
-                    customization and configuration.
-                </li>
-            </ol>
-
-            <p>
-                These steps allow you to conveniently access the Sound Manager component and create
-                new Sound Library, Sound Master and Sound Label Assets within the Unity editor.
-            </p>
+            <h3 className="p-2">Notes</h3>
+            <ul>
+                <li>If no <b1>AudioMixerAsset</b1> is assigned, the <b1>AudioManager</b1> creates a local <b1>AudioChannel</b1></li>
+                <li>All sounds are instantiated and managed by the <b1>AudioLibraryAsset</b1> at runtime</li>
+                <li>The system supports multiple simultaneous sounds, unless <b2>PlayOneTrackAtATime</b2> is enabled</li>
+                <li>Fade operations are protected against overlap</li>
+                <li>Labels are used instead of string IDs to ensure safe, inspector-friendly references</li>
+                <li>The <b1>AudioManager</b1> is compatible with Magikus Events, Hooks, and Timescale systems</li>
+            </ul>
         </div>
     );
 }

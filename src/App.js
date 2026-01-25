@@ -57,9 +57,9 @@ import LibraryStructuresTween from "Views/Library/Structures/Tween.js";
 
 import LibrarySystems from "Views/Library/Systems.js";
 import LibrarySystemsPool from "Views/Library/Systems/Pool.js";
+import LibrarySystemsAudio from "Views/Library/Systems/Audio.js";
 import LibrarySystemsAnimation from "Views/Library/Systems/Animation.js";
 import LibrarySystemsTweak from "Views/Library/Systems/Tweak.js";
-import LibrarySystemsAudio from "Views/Library/Systems/Audio.js";
 
 import LibraryTools from "Views/Library/Tools.js";
 import LibraryToolsHierarchyEditor from "Views/Library/Tools/HierarchyEditor.js";
@@ -138,6 +138,9 @@ export default function App() {
           
           <Route exact path="/magikus/systems" element={<Magikus content={<LibrarySystems />} menu={LibraryMenu} />}></Route>
           <Route exact path="/magikus/systems/pool" element={<Magikus content={<LibrarySystemsPool />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/magikus/systems/audio" element={<Magikus content={<LibrarySystemsAudio />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/magikus/systems/animation" element={<Magikus content={<LibrarySystemsAnimation />} menu={LibraryMenu} />}></Route>
+          <Route exact path="/magikus/systems/tweak" element={<Magikus content={<LibrarySystemsTweak />} menu={LibraryMenu} />}></Route>          
           
           <Route exact path="/magikus/tools" element={<Magikus content={<LibraryTools />} menu={LibraryMenu} />}></Route>
           <Route exact path="/magikus/tools/hierarchyEditor" element={<Magikus content={<LibraryToolsHierarchyEditor />} menu={LibraryMenu} />}></Route>
@@ -146,9 +149,6 @@ export default function App() {
           <Route exact path="/magikus/tools/scriptManager" element={<Magikus content={<LibraryToolsScriptManager />} menu={LibraryMenu} />}></Route>
 
 {/* 
-          <Route exact path="/magikus/systems/animation" element={<Magikus content={<LibrarySystemsAnimation />} menu={LibraryMenu} />}></Route>
-          <Route exact path="/magikus/systems/tweak" element={<Magikus content={<LibrarySystemsTweak />} menu={LibraryMenu} />}></Route>          
-          <Route exact path="/magikus/systems/audio" element={<Magikus content={<LibrarySystemsAudio />} menu={LibraryMenu} />}></Route>
 
           <Route exact path="/magikus/structures/grids" element={<Magikus content={<LibraryStructuresGrids />} menu={LibraryMenu} />}></Route>
           <Route exact path="/magikus/systems/dialog" element={<Magikus content={<LibrarySystemsDialog />} menu={LibraryMenu} />}></Route>
