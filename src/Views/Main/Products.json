@@ -1,7 +1,7 @@
 [
     {
         "title": "Magikus",
-        "description": "Magikus is a modular Unity development toolkit that helps you work faster, write less and stay in control by reducing boilerplate and repetitive patterns.",
+        "description": "Magikus is a modular Unity development toolkit that helps you write less and work faster by reducing boilerplate and repetitive patterns.",
         "description2": "It provides utilities, structures and systems that improve code readability, inspector clarity and long-term maintainability through a decoupled, extensible architecture.",
         "description3": "Designed as a practical companion for real-world game development, Magikus lets you focus on creative logic instead of fighting your tools.",
         "image": "images/Products/[1950x1300] Magikus V2.png",
